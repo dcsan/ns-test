@@ -1,0 +1,1109 @@
+name: OpenAL
+items:
+- Name: 'alEnable'
+  JsName: 'alEnable'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+- Name: 'alDisable'
+  JsName: 'alDisable'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+- Name: 'alIsEnabled'
+  JsName: 'alIsEnabled'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Char
+  - Type: Int
+- Name: 'alGetString'
+  JsName: 'alGetString'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: Int
+- Name: 'alGetBooleanv'
+  JsName: 'alGetBooleanv'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: CString
+- Name: 'alGetIntegerv'
+  JsName: 'alGetIntegerv'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'alGetFloatv'
+  JsName: 'alGetFloatv'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'alGetDoublev'
+  JsName: 'alGetDoublev'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Double
+- Name: 'alGetBoolean'
+  JsName: 'alGetBoolean'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Char
+  - Type: Int
+- Name: 'alGetInteger'
+  JsName: 'alGetInteger'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Int
+- Name: 'alGetFloat'
+  JsName: 'alGetFloat'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Float
+  - Type: Int
+- Name: 'alGetDouble'
+  JsName: 'alGetDouble'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Int
+- Name: 'alGetError'
+  JsName: 'alGetError'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+- Name: 'alIsExtensionPresent'
+  JsName: 'alIsExtensionPresent'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Char
+  - Type: CString
+- Name: 'alGetProcAddress'
+  JsName: 'alGetProcAddress'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'alGetEnumValue'
+  JsName: 'alGetEnumValue'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: CString
+- Name: 'alListenerf'
+  JsName: 'alListenerf'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Float
+- Name: 'alListener3f'
+  JsName: 'alListener3f'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Float
+  - Type: Float
+  - Type: Float
+- Name: 'alListenerfv'
+  JsName: 'alListenerfv'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'alListeneri'
+  JsName: 'alListeneri'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+- Name: 'alListener3i'
+  JsName: 'alListener3i'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+- Name: 'alListeneriv'
+  JsName: 'alListeneriv'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'alGetListenerf'
+  JsName: 'alGetListenerf'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'alGetListener3f'
+  JsName: 'alGetListener3f'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+  - Type: Pointer
+    PointerType:
+      Type: Float
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'alGetListenerfv'
+  JsName: 'alGetListenerfv'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'alGetListeneri'
+  JsName: 'alGetListeneri'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'alGetListener3i'
+  JsName: 'alGetListener3i'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'alGetListeneriv'
+  JsName: 'alGetListeneriv'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'alGenSources'
+  JsName: 'alGenSources'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'alDeleteSources'
+  JsName: 'alDeleteSources'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'alIsSource'
+  JsName: 'alIsSource'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Char
+  - Type: UInt
+- Name: 'alSourcef'
+  JsName: 'alSourcef'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Float
+- Name: 'alSource3f'
+  JsName: 'alSource3f'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Float
+  - Type: Float
+  - Type: Float
+- Name: 'alSourcefv'
+  JsName: 'alSourcefv'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'alSourcei'
+  JsName: 'alSourcei'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+- Name: 'alSource3i'
+  JsName: 'alSource3i'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+- Name: 'alSourceiv'
+  JsName: 'alSourceiv'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'alGetSourcef'
+  JsName: 'alGetSourcef'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'alGetSource3f'
+  JsName: 'alGetSource3f'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+  - Type: Pointer
+    PointerType:
+      Type: Float
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'alGetSourcefv'
+  JsName: 'alGetSourcefv'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'alGetSourcei'
+  JsName: 'alGetSourcei'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'alGetSource3i'
+  JsName: 'alGetSource3i'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'alGetSourceiv'
+  JsName: 'alGetSourceiv'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'alSourcePlayv'
+  JsName: 'alSourcePlayv'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'alSourceStopv'
+  JsName: 'alSourceStopv'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'alSourceRewindv'
+  JsName: 'alSourceRewindv'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'alSourcePausev'
+  JsName: 'alSourcePausev'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'alSourcePlay'
+  JsName: 'alSourcePlay'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'alSourceStop'
+  JsName: 'alSourceStop'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'alSourceRewind'
+  JsName: 'alSourceRewind'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'alSourcePause'
+  JsName: 'alSourcePause'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'alSourceQueueBuffers'
+  JsName: 'alSourceQueueBuffers'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'alSourceUnqueueBuffers'
+  JsName: 'alSourceUnqueueBuffers'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'alGenBuffers'
+  JsName: 'alGenBuffers'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'alDeleteBuffers'
+  JsName: 'alDeleteBuffers'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'alIsBuffer'
+  JsName: 'alIsBuffer'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Char
+  - Type: UInt
+- Name: 'alBufferData'
+  JsName: 'alBufferData'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Int
+- Name: 'alBufferf'
+  JsName: 'alBufferf'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Float
+- Name: 'alBuffer3f'
+  JsName: 'alBuffer3f'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Float
+  - Type: Float
+  - Type: Float
+- Name: 'alBufferfv'
+  JsName: 'alBufferfv'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'alBufferi'
+  JsName: 'alBufferi'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+- Name: 'alBuffer3i'
+  JsName: 'alBuffer3i'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+- Name: 'alBufferiv'
+  JsName: 'alBufferiv'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'alGetBufferf'
+  JsName: 'alGetBufferf'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'alGetBuffer3f'
+  JsName: 'alGetBuffer3f'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+  - Type: Pointer
+    PointerType:
+      Type: Float
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'alGetBufferfv'
+  JsName: 'alGetBufferfv'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'alGetBufferi'
+  JsName: 'alGetBufferi'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'alGetBuffer3i'
+  JsName: 'alGetBuffer3i'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'alGetBufferiv'
+  JsName: 'alGetBufferiv'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'alDopplerFactor'
+  JsName: 'alDopplerFactor'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Float
+- Name: 'alDopplerVelocity'
+  JsName: 'alDopplerVelocity'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Float
+- Name: 'alSpeedOfSound'
+  JsName: 'alSpeedOfSound'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Float
+- Name: 'alDistanceModel'
+  JsName: 'alDistanceModel'
+  Module: 'OpenAL.AL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+- Name: 'alcCreateContext'
+  JsName: 'alcCreateContext'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'alcMakeContextCurrent'
+  JsName: 'alcMakeContextCurrent'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Char
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'alcProcessContext'
+  JsName: 'alcProcessContext'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'alcSuspendContext'
+  JsName: 'alcSuspendContext'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'alcDestroyContext'
+  JsName: 'alcDestroyContext'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'alcGetCurrentContext'
+  JsName: 'alcGetCurrentContext'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'alcGetContextsDevice'
+  JsName: 'alcGetContextsDevice'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'alcOpenDevice'
+  JsName: 'alcOpenDevice'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'alcCloseDevice'
+  JsName: 'alcCloseDevice'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Char
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'alcGetError'
+  JsName: 'alcGetError'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'alcIsExtensionPresent'
+  JsName: 'alcIsExtensionPresent'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Char
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'alcGetProcAddress'
+  JsName: 'alcGetProcAddress'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'alcGetEnumValue'
+  JsName: 'alcGetEnumValue'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'alcGetString'
+  JsName: 'alcGetString'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'alcGetIntegerv'
+  JsName: 'alcGetIntegerv'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'alcCaptureOpenDevice'
+  JsName: 'alcCaptureOpenDevice'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+- Name: 'alcCaptureCloseDevice'
+  JsName: 'alcCaptureCloseDevice'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Char
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'alcCaptureStart'
+  JsName: 'alcCaptureStart'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'alcCaptureStop'
+  JsName: 'alcCaptureStop'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'alcCaptureSamples'
+  JsName: 'alcCaptureSamples'
+  Module: 'OpenAL.ALC'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+...

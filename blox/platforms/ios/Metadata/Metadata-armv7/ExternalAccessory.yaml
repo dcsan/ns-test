@@ -1,0 +1,856 @@
+name: ExternalAccessory
+items:
+- Name: 'EABluetoothAccessoryPickerErrorCode'
+  JsName: 'EABluetoothAccessoryPickerErrorCode'
+  Module: 'ExternalAccessory.EAAccessoryManager'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"EABluetoothAccessoryPickerAlreadyConnected":0,"EABluetoothAccessoryPickerResultNotFound":1,"EABluetoothAccessoryPickerResultCancelled":2,"EABluetoothAccessoryPickerResultFailed":3})
+- Name: 'EABluetoothAccessoryPickerErrorDomain'
+  JsName: 'EABluetoothAccessoryPickerErrorDomain'
+  Module: 'ExternalAccessory.EAAccessoryManager'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'EAAccessoryDidConnectNotification'
+  JsName: 'EAAccessoryDidConnectNotification'
+  Module: 'ExternalAccessory.EAAccessoryManager'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'EAAccessoryDidDisconnectNotification'
+  JsName: 'EAAccessoryDidDisconnectNotification'
+  Module: 'ExternalAccessory.EAAccessoryManager'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'EAAccessoryKey'
+  JsName: 'EAAccessoryKey'
+  Module: 'ExternalAccessory.EAAccessoryManager'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'EAAccessorySelectedKey'
+  JsName: 'EAAccessorySelectedKey'
+  Module: 'ExternalAccessory.EAAccessoryManager'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'EAAccessoryManager'
+  JsName: 'EAAccessoryManager'
+  Module: 'ExternalAccessory.EAAccessoryManager'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'registerForLocalNotifications'
+    JsName: 'registerForLocalNotifications'
+    Module: 'ExternalAccessory.EAAccessoryManager'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'registerForLocalNotifications'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'showBluetoothAccessoryPickerWithNameFilter:completion:'
+    JsName: 'showBluetoothAccessoryPickerWithNameFilterCompletion'
+    Module: 'ExternalAccessory.EAAccessoryManager'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'showBluetoothAccessoryPickerWithNameFilter:completion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'unregisterForLocalNotifications'
+    JsName: 'unregisterForLocalNotifications'
+    Module: 'ExternalAccessory.EAAccessoryManager'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'unregisterForLocalNotifications'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  StaticMethods:
+  - Name: 'sharedAccessoryManager'
+    JsName: 'sharedAccessoryManager'
+    Module: 'ExternalAccessory.EAAccessoryManager'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'sharedAccessoryManager'
+    Signature:
+    - Type: Interface
+      Module: ExternalAccessory.EAAccessoryManager
+      Name: EAAccessoryManager
+    TypeEncoding: '@8@0:4'
+  Properties:
+  - Name: 'connectedAccessories'
+    JsName: 'connectedAccessories'
+    Module: 'ExternalAccessory.EAAccessoryManager'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'connectedAccessories'
+      JsName: 'connectedAccessories'
+      Module: 'ExternalAccessory.EAAccessoryManager'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'connectedAccessories'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'EAConnectionIDNone'
+  JsName: 'EAConnectionIDNone'
+  Module: 'ExternalAccessory.EAAccessory'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'EAAccessory'
+  JsName: 'EAAccessory'
+  Module: 'ExternalAccessory.EAAccessory'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'connected'
+    JsName: 'connected'
+    Module: 'ExternalAccessory.EAAccessory'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isConnected'
+      JsName: 'isConnected'
+      Module: 'ExternalAccessory.EAAccessory'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isConnected'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'connectionID'
+    JsName: 'connectionID'
+    Module: 'ExternalAccessory.EAAccessory'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'connectionID'
+      JsName: 'connectionID'
+      Module: 'ExternalAccessory.EAAccessory'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'connectionID'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'ExternalAccessory.EAAccessory'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'ExternalAccessory.EAAccessory'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: ExternalAccessory.EAAccessory
+          Name: EAAccessoryDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'ExternalAccessory.EAAccessory'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: ExternalAccessory.EAAccessory
+          Name: EAAccessoryDelegate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'firmwareRevision'
+    JsName: 'firmwareRevision'
+    Module: 'ExternalAccessory.EAAccessory'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'firmwareRevision'
+      JsName: 'firmwareRevision'
+      Module: 'ExternalAccessory.EAAccessory'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'firmwareRevision'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'hardwareRevision'
+    JsName: 'hardwareRevision'
+    Module: 'ExternalAccessory.EAAccessory'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'hardwareRevision'
+      JsName: 'hardwareRevision'
+      Module: 'ExternalAccessory.EAAccessory'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'hardwareRevision'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'manufacturer'
+    JsName: 'manufacturer'
+    Module: 'ExternalAccessory.EAAccessory'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'manufacturer'
+      JsName: 'manufacturer'
+      Module: 'ExternalAccessory.EAAccessory'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'manufacturer'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'modelNumber'
+    JsName: 'modelNumber'
+    Module: 'ExternalAccessory.EAAccessory'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'modelNumber'
+      JsName: 'modelNumber'
+      Module: 'ExternalAccessory.EAAccessory'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'modelNumber'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'ExternalAccessory.EAAccessory'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'ExternalAccessory.EAAccessory'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'protocolStrings'
+    JsName: 'protocolStrings'
+    Module: 'ExternalAccessory.EAAccessory'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'protocolStrings'
+      JsName: 'protocolStrings'
+      Module: 'ExternalAccessory.EAAccessory'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'protocolStrings'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'serialNumber'
+    JsName: 'serialNumber'
+    Module: 'ExternalAccessory.EAAccessory'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'serialNumber'
+      JsName: 'serialNumber'
+      Module: 'ExternalAccessory.EAAccessory'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'serialNumber'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'EAAccessoryDelegate'
+  JsName: 'EAAccessoryDelegate'
+  Module: 'ExternalAccessory.EAAccessory'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'accessoryDidDisconnect:'
+    JsName: 'accessoryDidDisconnect'
+    Module: 'ExternalAccessory.EAAccessory'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'accessoryDidDisconnect:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: ExternalAccessory.EAAccessory
+      Name: EAAccessory
+    TypeEncoding: 'v12@0:4@8'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'EASession'
+  JsName: 'EASession'
+  Module: 'ExternalAccessory.EASession'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithAccessory:forProtocol:'
+    JsName: 'initWithAccessoryForProtocol'
+    Module: 'ExternalAccessory.EASession'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithAccessory:forProtocol:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: ExternalAccessory.EAAccessory
+      Name: EAAccessory
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@16@0:4@8@12'
+  StaticMethods: []
+  Properties:
+  - Name: 'accessory'
+    JsName: 'accessory'
+    Module: 'ExternalAccessory.EASession'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'accessory'
+      JsName: 'accessory'
+      Module: 'ExternalAccessory.EASession'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'accessory'
+      Signature:
+      - Type: Interface
+        Module: ExternalAccessory.EAAccessory
+        Name: EAAccessory
+      TypeEncoding: '@8@0:4'
+  - Name: 'inputStream'
+    JsName: 'inputStream'
+    Module: 'ExternalAccessory.EASession'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'inputStream'
+      JsName: 'inputStream'
+      Module: 'ExternalAccessory.EASession'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'inputStream'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSStream
+        Name: NSInputStream
+      TypeEncoding: '@8@0:4'
+  - Name: 'outputStream'
+    JsName: 'outputStream'
+    Module: 'ExternalAccessory.EASession'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'outputStream'
+      JsName: 'outputStream'
+      Module: 'ExternalAccessory.EASession'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'outputStream'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSStream
+        Name: NSOutputStream
+      TypeEncoding: '@8@0:4'
+  - Name: 'protocolString'
+    JsName: 'protocolString'
+    Module: 'ExternalAccessory.EASession'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'protocolString'
+      JsName: 'protocolString'
+      Module: 'ExternalAccessory.EASession'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'protocolString'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'EAWiFiUnconfiguredAccessoryBrowserState'
+  JsName: 'EAWiFiUnconfiguredAccessoryBrowserState'
+  Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"EAWiFiUnconfiguredAccessoryBrowserStateWiFiUnavailable":0,"EAWiFiUnconfiguredAccessoryBrowserStateStopped":1,"EAWiFiUnconfiguredAccessoryBrowserStateSearching":2,"EAWiFiUnconfiguredAccessoryBrowserStateConfiguring":3})
+- Name: 'EAWiFiUnconfiguredAccessoryConfigurationStatus'
+  JsName: 'EAWiFiUnconfiguredAccessoryConfigurationStatus'
+  Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"EAWiFiUnconfiguredAccessoryConfigurationStatusSuccess":0,"EAWiFiUnconfiguredAccessoryConfigurationStatusUserCancelledConfiguration":1,"EAWiFiUnconfiguredAccessoryConfigurationStatusFailed":2})
+- Name: 'EAWiFiUnconfiguredAccessoryBrowser'
+  JsName: 'EAWiFiUnconfiguredAccessoryBrowser'
+  Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'configureAccessory:withConfigurationUIOnViewController:'
+    JsName: 'configureAccessoryWithConfigurationUIOnViewController'
+    Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'configureAccessory:withConfigurationUIOnViewController:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: ExternalAccessory.EAWiFiUnconfiguredAccessory
+      Name: EAWiFiUnconfiguredAccessory
+    - Type: Interface
+      Module: UIKit.UIViewController
+      Name: UIViewController
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'initWithDelegate:queue:'
+    JsName: 'initWithDelegateQueue'
+    Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithDelegate:queue:'
+    Signature:
+    - Type: Instancetype
+    - Type: Id
+      WithProtocols:
+      - Module: ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser
+        Name: EAWiFiUnconfiguredAccessoryBrowserDelegate
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    TypeEncoding: '@16@0:4@8@12'
+  - Name: 'startSearchingForUnconfiguredAccessoriesMatchingPredicate:'
+    JsName: 'startSearchingForUnconfiguredAccessoriesMatchingPredicate'
+    Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startSearchingForUnconfiguredAccessoriesMatchingPredicate:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'stopSearchingForUnconfiguredAccessories'
+    JsName: 'stopSearchingForUnconfiguredAccessories'
+    Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopSearchingForUnconfiguredAccessories'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  StaticMethods: []
+  Properties:
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser
+          Name: EAWiFiUnconfiguredAccessoryBrowserDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser
+          Name: EAWiFiUnconfiguredAccessoryBrowserDelegate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'unconfiguredAccessories'
+    JsName: 'unconfiguredAccessories'
+    Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'unconfiguredAccessories'
+      JsName: 'unconfiguredAccessories'
+      Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'unconfiguredAccessories'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSSet
+        Name: NSSet
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'EAWiFiUnconfiguredAccessoryBrowserDelegate'
+  JsName: 'EAWiFiUnconfiguredAccessoryBrowserDelegate'
+  Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'accessoryBrowser:didFindUnconfiguredAccessories:'
+    JsName: 'accessoryBrowserDidFindUnconfiguredAccessories'
+    Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'accessoryBrowser:didFindUnconfiguredAccessories:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser
+      Name: EAWiFiUnconfiguredAccessoryBrowser
+    - Type: Interface
+      Module: Foundation.NSSet
+      Name: NSSet
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'accessoryBrowser:didFinishConfiguringAccessory:withStatus:'
+    JsName: 'accessoryBrowserDidFinishConfiguringAccessoryWithStatus'
+    Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'accessoryBrowser:didFinishConfiguringAccessory:withStatus:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser
+      Name: EAWiFiUnconfiguredAccessoryBrowser
+    - Type: Interface
+      Module: ExternalAccessory.EAWiFiUnconfiguredAccessory
+      Name: EAWiFiUnconfiguredAccessory
+    - Type: Int
+    TypeEncoding: 'v20@0:4@8@12i16'
+  - Name: 'accessoryBrowser:didRemoveUnconfiguredAccessories:'
+    JsName: 'accessoryBrowserDidRemoveUnconfiguredAccessories'
+    Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'accessoryBrowser:didRemoveUnconfiguredAccessories:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser
+      Name: EAWiFiUnconfiguredAccessoryBrowser
+    - Type: Interface
+      Module: Foundation.NSSet
+      Name: NSSet
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'accessoryBrowser:didUpdateState:'
+    JsName: 'accessoryBrowserDidUpdateState'
+    Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'accessoryBrowser:didUpdateState:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: ExternalAccessory.EAWiFiUnconfiguredAccessoryBrowser
+      Name: EAWiFiUnconfiguredAccessoryBrowser
+    - Type: Int
+    TypeEncoding: 'v16@0:4@8i12'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'EAWiFiUnconfiguredAccessoryProperties'
+  JsName: 'EAWiFiUnconfiguredAccessoryProperties'
+  Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessory'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"EAWiFiUnconfiguredAccessoryPropertySupportsAirPlay":1,"EAWiFiUnconfiguredAccessoryPropertySupportsAirPrint":2,"EAWiFiUnconfiguredAccessoryPropertySupportsHomeKit":4})
+- Name: 'EAWiFiUnconfiguredAccessory'
+  JsName: 'EAWiFiUnconfiguredAccessory'
+  Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessory'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'macAddress'
+    JsName: 'macAddress'
+    Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'macAddress'
+      JsName: 'macAddress'
+      Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessory'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'macAddress'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'manufacturer'
+    JsName: 'manufacturer'
+    Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'manufacturer'
+      JsName: 'manufacturer'
+      Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessory'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'manufacturer'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'model'
+    JsName: 'model'
+    Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'model'
+      JsName: 'model'
+      Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessory'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'model'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessory'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'properties'
+    JsName: 'properties'
+    Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'properties'
+      JsName: 'properties'
+      Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessory'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'properties'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'ssid'
+    JsName: 'ssid'
+    Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'ssid'
+      JsName: 'ssid'
+      Module: 'ExternalAccessory.EAWiFiUnconfiguredAccessory'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'ssid'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+...

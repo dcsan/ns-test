@@ -1,0 +1,936 @@
+name: iAd
+items:
+- Name: 'ADErrorDomain'
+  JsName: 'ADErrorDomain'
+  Module: 'iAd.ADBannerView'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ADError'
+  JsName: 'ADError'
+  Module: 'iAd.ADBannerView'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"ADErrorUnknown":0,"ADErrorServerFailure":1,"ADErrorLoadingThrottled":2,"ADErrorInventoryUnavailable":3,"ADErrorConfigurationError":4,"ADErrorBannerVisibleWithoutContent":5,"ADErrorApplicationInactive":6,"ADErrorAdUnloaded":7})
+- Name: 'ADAdType'
+  JsName: 'ADAdType'
+  Module: 'iAd.ADBannerView'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"ADAdTypeBanner":0,"ADAdTypeMediumRectangle":1})
+- Name: 'ADBannerView'
+  JsName: 'ADBannerView'
+  Module: 'iAd.ADBannerView'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'cancelBannerViewAction'
+    JsName: 'cancelBannerViewAction'
+    Module: 'iAd.ADBannerView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancelBannerViewAction'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'initWithAdType:'
+    JsName: 'initWithAdType'
+    Module: 'iAd.ADBannerView'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithAdType:'
+    Signature:
+    - Type: Instancetype
+    - Type: Int
+    TypeEncoding: '@12@0:4i8'
+  StaticMethods:
+  - Name: 'sizeFromBannerContentSizeIdentifier:'
+    JsName: 'sizeFromBannerContentSizeIdentifier'
+    Module: 'iAd.ADBannerView_Deprecated'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'sizeFromBannerContentSizeIdentifier:'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGSize
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '{CGSize=ff}12@0:4@8'
+  Properties:
+  - Name: 'adType'
+    JsName: 'adType'
+    Module: 'iAd.ADBannerView'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'adType'
+      JsName: 'adType'
+      Module: 'iAd.ADBannerView'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'adType'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  - Name: 'advertisingSection'
+    JsName: 'advertisingSection'
+    Module: 'iAd.ADBannerView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'advertisingSection'
+      JsName: 'advertisingSection'
+      Module: 'iAd.ADBannerView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'advertisingSection'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setAdvertisingSection:'
+      JsName: 'setAdvertisingSection'
+      Module: 'iAd.ADBannerView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAdvertisingSection:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'bannerLoaded'
+    JsName: 'bannerLoaded'
+    Module: 'iAd.ADBannerView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isBannerLoaded'
+      JsName: 'isBannerLoaded'
+      Module: 'iAd.ADBannerView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isBannerLoaded'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'bannerViewActionInProgress'
+    JsName: 'bannerViewActionInProgress'
+    Module: 'iAd.ADBannerView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isBannerViewActionInProgress'
+      JsName: 'isBannerViewActionInProgress'
+      Module: 'iAd.ADBannerView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isBannerViewActionInProgress'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'currentContentSizeIdentifier'
+    JsName: 'currentContentSizeIdentifier'
+    Module: 'iAd.ADBannerView_Deprecated'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'currentContentSizeIdentifier'
+      JsName: 'currentContentSizeIdentifier'
+      Module: 'iAd.ADBannerView_Deprecated'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'currentContentSizeIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setCurrentContentSizeIdentifier:'
+      JsName: 'setCurrentContentSizeIdentifier'
+      Module: 'iAd.ADBannerView_Deprecated'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCurrentContentSizeIdentifier:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'iAd.ADBannerView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'iAd.ADBannerView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: iAd.ADBannerView
+          Name: ADBannerViewDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'iAd.ADBannerView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: iAd.ADBannerView
+          Name: ADBannerViewDelegate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'requiredContentSizeIdentifiers'
+    JsName: 'requiredContentSizeIdentifiers'
+    Module: 'iAd.ADBannerView_Deprecated'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'requiredContentSizeIdentifiers'
+      JsName: 'requiredContentSizeIdentifiers'
+      Module: 'iAd.ADBannerView_Deprecated'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'requiredContentSizeIdentifiers'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSSet
+        Name: NSSet
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setRequiredContentSizeIdentifiers:'
+      JsName: 'setRequiredContentSizeIdentifiers'
+      Module: 'iAd.ADBannerView_Deprecated'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRequiredContentSizeIdentifiers:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSSet
+        Name: NSSet
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: UIKit.UIView
+    Name: UIView
+  Type: Interface
+- Name: 'ADBannerViewDelegate'
+  JsName: 'ADBannerViewDelegate'
+  Module: 'iAd.ADBannerView'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'bannerViewActionDidFinish:'
+    JsName: 'bannerViewActionDidFinish'
+    Module: 'iAd.ADBannerView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'bannerViewActionDidFinish:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: iAd.ADBannerView
+      Name: ADBannerView
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'bannerViewActionShouldBegin:willLeaveApplication:'
+    JsName: 'bannerViewActionShouldBeginWillLeaveApplication'
+    Module: 'iAd.ADBannerView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'bannerViewActionShouldBegin:willLeaveApplication:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: iAd.ADBannerView
+      Name: ADBannerView
+    - Type: Bool
+    TypeEncoding: 'c16@0:4@8c12'
+  - Name: 'bannerView:didFailToReceiveAdWithError:'
+    JsName: 'bannerViewDidFailToReceiveAdWithError'
+    Module: 'iAd.ADBannerView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'bannerView:didFailToReceiveAdWithError:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: iAd.ADBannerView
+      Name: ADBannerView
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'bannerViewDidLoadAd:'
+    JsName: 'bannerViewDidLoadAd'
+    Module: 'iAd.ADBannerView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'bannerViewDidLoadAd:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: iAd.ADBannerView
+      Name: ADBannerView
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'bannerViewWillLoadAd:'
+    JsName: 'bannerViewWillLoadAd'
+    Module: 'iAd.ADBannerView'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'bannerViewWillLoadAd:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: iAd.ADBannerView
+      Name: ADBannerView
+    TypeEncoding: 'v12@0:4@8'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'ADBannerContentSizeIdentifier320x50'
+  JsName: 'ADBannerContentSizeIdentifier320x50'
+  Module: 'iAd.ADBannerView_Deprecated'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ADBannerContentSizeIdentifier480x32'
+  JsName: 'ADBannerContentSizeIdentifier480x32'
+  Module: 'iAd.ADBannerView_Deprecated'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ADBannerContentSizeIdentifierPortrait'
+  JsName: 'ADBannerContentSizeIdentifierPortrait'
+  Module: 'iAd.ADBannerView_Deprecated'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ADBannerContentSizeIdentifierLandscape'
+  JsName: 'ADBannerContentSizeIdentifierLandscape'
+  Module: 'iAd.ADBannerView_Deprecated'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ADClient'
+  JsName: 'ADClient'
+  Module: 'iAd.ADClient'
+  IntroducedIn: 7.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addClientToSegments:replaceExisting:'
+    JsName: 'addClientToSegmentsReplaceExisting'
+    Module: 'iAd.ADClient'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addClientToSegments:replaceExisting:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Bool
+    TypeEncoding: 'v16@0:4@8c12'
+  - Name: 'determineAppInstallationAttributionWithCompletionHandler:'
+    JsName: 'determineAppInstallationAttributionWithCompletionHandler'
+    Module: 'iAd.ADClient'
+    IntroducedIn: 7.1
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'determineAppInstallationAttributionWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+    TypeEncoding: 'v12@0:4@?8'
+  - Name: 'lookupAdConversionDetails:'
+    JsName: 'lookupAdConversionDetails'
+    Module: 'iAd.ADClient'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'lookupAdConversionDetails:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+    TypeEncoding: 'v12@0:4@?8'
+  StaticMethods:
+  - Name: 'sharedClient'
+    JsName: 'sharedClient'
+    Module: 'iAd.ADClient'
+    IntroducedIn: 7.1
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'sharedClient'
+    Signature:
+    - Type: Interface
+      Module: iAd.ADClient
+      Name: ADClient
+    TypeEncoding: '@8@0:4'
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'ADInterstitialAd'
+  JsName: 'ADInterstitialAd'
+  Module: 'iAd.ADInterstitialAd'
+  IntroducedIn: 4.3
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'cancelAction'
+    JsName: 'cancelAction'
+    Module: 'iAd.ADInterstitialAd'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancelAction'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'presentFromViewController:'
+    JsName: 'presentFromViewController'
+    Module: 'iAd.ADInterstitialAd'
+    IntroducedIn: 4.3
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'presentFromViewController:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UIViewController
+      Name: UIViewController
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'presentInView:'
+    JsName: 'presentInView'
+    Module: 'iAd.ADInterstitialAd'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'presentInView:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: UIKit.UIView
+      Name: UIView
+    TypeEncoding: 'c12@0:4@8'
+  StaticMethods: []
+  Properties:
+  - Name: 'actionInProgress'
+    JsName: 'actionInProgress'
+    Module: 'iAd.ADInterstitialAd'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isActionInProgress'
+      JsName: 'isActionInProgress'
+      Module: 'iAd.ADInterstitialAd'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isActionInProgress'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'iAd.ADInterstitialAd'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'iAd.ADInterstitialAd'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: iAd.ADInterstitialAd
+          Name: ADInterstitialAdDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'iAd.ADInterstitialAd'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: iAd.ADInterstitialAd
+          Name: ADInterstitialAdDelegate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'loaded'
+    JsName: 'loaded'
+    Module: 'iAd.ADInterstitialAd'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isLoaded'
+      JsName: 'isLoaded'
+      Module: 'iAd.ADInterstitialAd'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isLoaded'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'ADInterstitialAdDelegate'
+  JsName: 'ADInterstitialAdDelegate'
+  Module: 'iAd.ADInterstitialAd'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'interstitialAdActionDidFinish:'
+    JsName: 'interstitialAdActionDidFinish'
+    Module: 'iAd.ADInterstitialAd'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'interstitialAdActionDidFinish:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: iAd.ADInterstitialAd
+      Name: ADInterstitialAd
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'interstitialAdActionShouldBegin:willLeaveApplication:'
+    JsName: 'interstitialAdActionShouldBeginWillLeaveApplication'
+    Module: 'iAd.ADInterstitialAd'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'interstitialAdActionShouldBegin:willLeaveApplication:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: iAd.ADInterstitialAd
+      Name: ADInterstitialAd
+    - Type: Bool
+    TypeEncoding: 'c16@0:4@8c12'
+  - Name: 'interstitialAd:didFailWithError:'
+    JsName: 'interstitialAdDidFailWithError'
+    Module: 'iAd.ADInterstitialAd'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'interstitialAd:didFailWithError:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: iAd.ADInterstitialAd
+      Name: ADInterstitialAd
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'interstitialAdDidLoad:'
+    JsName: 'interstitialAdDidLoad'
+    Module: 'iAd.ADInterstitialAd'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'interstitialAdDidLoad:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: iAd.ADInterstitialAd
+      Name: ADInterstitialAd
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'interstitialAdDidUnload:'
+    JsName: 'interstitialAdDidUnload'
+    Module: 'iAd.ADInterstitialAd'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'interstitialAdDidUnload:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: iAd.ADInterstitialAd
+      Name: ADInterstitialAd
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'interstitialAdWillLoad:'
+    JsName: 'interstitialAdWillLoad'
+    Module: 'iAd.ADInterstitialAd'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'interstitialAdWillLoad:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: iAd.ADInterstitialAd
+      Name: ADInterstitialAd
+    TypeEncoding: 'v12@0:4@8'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'iAdPreroll'
+  JsName: 'iAdPreroll'
+  Module: 'iAd.MPMoviePlayerController_iAdPreroll'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'cancelPreroll'
+    JsName: 'cancelPreroll'
+    Module: 'iAd.MPMoviePlayerController_iAdPreroll'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancelPreroll'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'playPrerollAdWithCompletionHandler:'
+    JsName: 'playPrerollAdWithCompletionHandler'
+    Module: 'iAd.MPMoviePlayerController_iAdPreroll'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'playPrerollAdWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v12@0:4@?8'
+  StaticMethods:
+  - Name: 'preparePrerollAds'
+    JsName: 'preparePrerollAds'
+    Module: 'iAd.MPMoviePlayerController_iAdPreroll'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'preparePrerollAds'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  Properties: []
+  Protocols: []
+  ExtendedInterface:
+    Module: MediaPlayer.MPMoviePlayerController
+    Name: MPMoviePlayerController
+  Type: Category
+- Name: 'iAdPreroll'
+  JsName: 'iAdPreroll'
+  Module: 'iAd.AVPlayerViewController_iAdPreroll'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'cancelPreroll'
+    JsName: 'cancelPreroll'
+    Module: 'iAd.AVPlayerViewController_iAdPreroll'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancelPreroll'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'playPrerollAdWithCompletionHandler:'
+    JsName: 'playPrerollAdWithCompletionHandler'
+    Module: 'iAd.AVPlayerViewController_iAdPreroll'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'playPrerollAdWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v12@0:4@?8'
+  StaticMethods:
+  - Name: 'preparePrerollAds'
+    JsName: 'preparePrerollAds'
+    Module: 'iAd.AVPlayerViewController_iAdPreroll'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'preparePrerollAds'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  Properties: []
+  Protocols: []
+  ExtendedInterface:
+    Module: AVKit.AVPlayerViewController
+    Name: AVPlayerViewController
+  Type: Category
+- Name: 'ADInterstitialPresentationPolicy'
+  JsName: 'ADInterstitialPresentationPolicy'
+  Module: 'iAd.UIViewControlleriAdAdditions'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"ADInterstitialPresentationPolicyNone":0,"ADInterstitialPresentationPolicyAutomatic":1,"ADInterstitialPresentationPolicyManual":2})
+- Name: 'iAdAdditions'
+  JsName: 'iAdAdditions'
+  Module: 'iAd.UIViewControlleriAdAdditions'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'requestInterstitialAdPresentation'
+    JsName: 'requestInterstitialAdPresentation'
+    Module: 'iAd.UIViewControlleriAdAdditions'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'requestInterstitialAdPresentation'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  StaticMethods:
+  - Name: 'prepareInterstitialAds'
+    JsName: 'prepareInterstitialAds'
+    Module: 'iAd.UIViewControlleriAdAdditions'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'prepareInterstitialAds'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  Properties:
+  - Name: 'canDisplayBannerAds'
+    JsName: 'canDisplayBannerAds'
+    Module: 'iAd.UIViewControlleriAdAdditions'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'canDisplayBannerAds'
+      JsName: 'canDisplayBannerAds'
+      Module: 'iAd.UIViewControlleriAdAdditions'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'canDisplayBannerAds'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setCanDisplayBannerAds:'
+      JsName: 'setCanDisplayBannerAds'
+      Module: 'iAd.UIViewControlleriAdAdditions'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCanDisplayBannerAds:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'displayingBannerAd'
+    JsName: 'displayingBannerAd'
+    Module: 'iAd.UIViewControlleriAdAdditions'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isDisplayingBannerAd'
+      JsName: 'isDisplayingBannerAd'
+      Module: 'iAd.UIViewControlleriAdAdditions'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isDisplayingBannerAd'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'interstitialPresentationPolicy'
+    JsName: 'interstitialPresentationPolicy'
+    Module: 'iAd.UIViewControlleriAdAdditions'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'interstitialPresentationPolicy'
+      JsName: 'interstitialPresentationPolicy'
+      Module: 'iAd.UIViewControlleriAdAdditions'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'interstitialPresentationPolicy'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setInterstitialPresentationPolicy:'
+      JsName: 'setInterstitialPresentationPolicy'
+      Module: 'iAd.UIViewControlleriAdAdditions'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setInterstitialPresentationPolicy:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'originalContentView'
+    JsName: 'originalContentView'
+    Module: 'iAd.UIViewControlleriAdAdditions'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'originalContentView'
+      JsName: 'originalContentView'
+      Module: 'iAd.UIViewControlleriAdAdditions'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'originalContentView'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIView
+        Name: UIView
+      TypeEncoding: '@8@0:4'
+  - Name: 'presentingFullScreenAd'
+    JsName: 'presentingFullScreenAd'
+    Module: 'iAd.UIViewControlleriAdAdditions'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isPresentingFullScreenAd'
+      JsName: 'isPresentingFullScreenAd'
+      Module: 'iAd.UIViewControlleriAdAdditions'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isPresentingFullScreenAd'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'shouldPresentInterstitialAd'
+    JsName: 'shouldPresentInterstitialAd'
+    Module: 'iAd.UIViewControlleriAdAdditions'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'shouldPresentInterstitialAd'
+      JsName: 'shouldPresentInterstitialAd'
+      Module: 'iAd.UIViewControlleriAdAdditions'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'shouldPresentInterstitialAd'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  Protocols: []
+  ExtendedInterface:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Category
+...

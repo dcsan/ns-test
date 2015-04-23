@@ -1,0 +1,1303 @@
+name: MultipeerConnectivity
+items:
+- Name: 'MCErrorDomain'
+  JsName: 'MCErrorDomain'
+  Module: 'MultipeerConnectivity.MCError'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MCErrorCode'
+  JsName: 'MCErrorCode'
+  Module: 'MultipeerConnectivity.MCError'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MCErrorUnknown":0,"MCErrorNotConnected":1,"MCErrorInvalidParameter":2,"MCErrorUnsupported":3,"MCErrorTimedOut":4,"MCErrorCancelled":5,"MCErrorUnavailable":6})
+- Name: 'MCPeerID'
+  JsName: 'MCPeerID'
+  Module: 'MultipeerConnectivity.MCPeerID'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithDisplayName:'
+    JsName: 'initWithDisplayName'
+    Module: 'MultipeerConnectivity.MCPeerID'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithDisplayName:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'displayName'
+    JsName: 'displayName'
+    Module: 'MultipeerConnectivity.MCPeerID'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'displayName'
+      JsName: 'displayName'
+      Module: 'MultipeerConnectivity.MCPeerID'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'displayName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MCSessionSendDataMode'
+  JsName: 'MCSessionSendDataMode'
+  Module: 'MultipeerConnectivity.MCSession'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MCSessionSendDataReliable":0,"MCSessionSendDataUnreliable":1})
+- Name: 'MCSessionState'
+  JsName: 'MCSessionState'
+  Module: 'MultipeerConnectivity.MCSession'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MCSessionStateNotConnected":0,"MCSessionStateConnecting":1,"MCSessionStateConnected":2})
+- Name: 'MCEncryptionPreference'
+  JsName: 'MCEncryptionPreference'
+  Module: 'MultipeerConnectivity.MCSession'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MCEncryptionOptional":0,"MCEncryptionRequired":1,"MCEncryptionNone":2})
+- Name: 'kMCSessionMinimumNumberOfPeers'
+  JsName: 'kMCSessionMinimumNumberOfPeers'
+  Module: 'MultipeerConnectivity.MCSession'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: ULong
+- Name: 'kMCSessionMaximumNumberOfPeers'
+  JsName: 'kMCSessionMaximumNumberOfPeers'
+  Module: 'MultipeerConnectivity.MCSession'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: ULong
+- Name: 'MCSession'
+  JsName: 'MCSession'
+  Module: 'MultipeerConnectivity.MCSession'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'cancelConnectPeer:'
+    JsName: 'cancelConnectPeer'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancelConnectPeer:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'connectPeer:withNearbyConnectionData:'
+    JsName: 'connectPeerWithNearbyConnectionData'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'connectPeer:withNearbyConnectionData:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'disconnect'
+    JsName: 'disconnect'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'disconnect'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'initWithPeer:'
+    JsName: 'initWithPeer'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithPeer:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'initWithPeer:securityIdentity:encryptionPreference:'
+    JsName: 'initWithPeerSecurityIdentityEncryptionPreference'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithPeer:securityIdentity:encryptionPreference:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Long
+    TypeEncoding: '@40@0:8@16@24q32'
+  - Name: 'nearbyConnectionDataForPeer:withCompletionHandler:'
+    JsName: 'nearbyConnectionDataForPeerWithCompletionHandler'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'nearbyConnectionDataForPeer:withCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'sendData:toPeers:withMode:error:'
+    JsName: 'sendDataToPeersWithModeError'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'sendData:toPeers:withMode:error:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Long
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'B48@0:8@16@24q32^@40'
+  - Name: 'sendResourceAtURL:withName:toPeer:withCompletionHandler:'
+    JsName: 'sendResourceAtURLWithNameToPeerWithCompletionHandler'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'sendResourceAtURL:withName:toPeer:withCompletionHandler:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSProgress
+      Name: NSProgress
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@48@0:8@16@24@32@?40'
+  - Name: 'startStreamWithName:toPeer:error:'
+    JsName: 'startStreamWithNameToPeerError'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startStreamWithName:toPeer:error:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSStream
+      Name: NSOutputStream
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@40@0:8@16@24^@32'
+  StaticMethods: []
+  Properties:
+  - Name: 'connectedPeers'
+    JsName: 'connectedPeers'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'connectedPeers'
+      JsName: 'connectedPeers'
+      Module: 'MultipeerConnectivity.MCSession'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'connectedPeers'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'MultipeerConnectivity.MCSession'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: MultipeerConnectivity.MCSession
+          Name: MCSessionDelegate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'MultipeerConnectivity.MCSession'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: MultipeerConnectivity.MCSession
+          Name: MCSessionDelegate
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'encryptionPreference'
+    JsName: 'encryptionPreference'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'encryptionPreference'
+      JsName: 'encryptionPreference'
+      Module: 'MultipeerConnectivity.MCSession'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'encryptionPreference'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+  - Name: 'myPeerID'
+    JsName: 'myPeerID'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'myPeerID'
+      JsName: 'myPeerID'
+      Module: 'MultipeerConnectivity.MCSession'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'myPeerID'
+      Signature:
+      - Type: Interface
+        Module: MultipeerConnectivity.MCPeerID
+        Name: MCPeerID
+      TypeEncoding: '@16@0:8'
+  - Name: 'securityIdentity'
+    JsName: 'securityIdentity'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'securityIdentity'
+      JsName: 'securityIdentity'
+      Module: 'MultipeerConnectivity.MCSession'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'securityIdentity'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MCSessionDelegate'
+  JsName: 'MCSessionDelegate'
+  Module: 'MultipeerConnectivity.MCSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'session:didFinishReceivingResourceWithName:fromPeer:atURL:withError:'
+    JsName: 'sessionDidFinishReceivingResourceWithNameFromPeerAtURLWithError'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'session:didFinishReceivingResourceWithName:fromPeer:atURL:withError:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MultipeerConnectivity.MCSession
+      Name: MCSession
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v56@0:8@16@24@32@40@48'
+  - Name: 'session:didReceiveCertificate:fromPeer:certificateHandler:'
+    JsName: 'sessionDidReceiveCertificateFromPeerCertificateHandler'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'session:didReceiveCertificate:fromPeer:certificateHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MultipeerConnectivity.MCSession
+      Name: MCSession
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+    TypeEncoding: 'v48@0:8@16@24@32@?40'
+  - Name: 'session:didReceiveData:fromPeer:'
+    JsName: 'sessionDidReceiveDataFromPeer'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'session:didReceiveData:fromPeer:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MultipeerConnectivity.MCSession
+      Name: MCSession
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    TypeEncoding: 'v40@0:8@16@24@32'
+  - Name: 'session:didReceiveStream:withName:fromPeer:'
+    JsName: 'sessionDidReceiveStreamWithNameFromPeer'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'session:didReceiveStream:withName:fromPeer:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MultipeerConnectivity.MCSession
+      Name: MCSession
+    - Type: Interface
+      Module: Foundation.NSStream
+      Name: NSInputStream
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    TypeEncoding: 'v48@0:8@16@24@32@40'
+  - Name: 'session:didStartReceivingResourceWithName:fromPeer:withProgress:'
+    JsName: 'sessionDidStartReceivingResourceWithNameFromPeerWithProgress'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'session:didStartReceivingResourceWithName:fromPeer:withProgress:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MultipeerConnectivity.MCSession
+      Name: MCSession
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    - Type: Interface
+      Module: Foundation.NSProgress
+      Name: NSProgress
+    TypeEncoding: 'v48@0:8@16@24@32@40'
+  - Name: 'session:peer:didChangeState:'
+    JsName: 'sessionPeerDidChangeState'
+    Module: 'MultipeerConnectivity.MCSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'session:peer:didChangeState:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MultipeerConnectivity.MCSession
+      Name: MCSession
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    - Type: Long
+    TypeEncoding: 'v40@0:8@16@24q32'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MCNearbyServiceAdvertiser'
+  JsName: 'MCNearbyServiceAdvertiser'
+  Module: 'MultipeerConnectivity.MCNearbyServiceAdvertiser'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithPeer:discoveryInfo:serviceType:'
+    JsName: 'initWithPeerDiscoveryInfoServiceType'
+    Module: 'MultipeerConnectivity.MCNearbyServiceAdvertiser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithPeer:discoveryInfo:serviceType:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@40@0:8@16@24@32'
+  - Name: 'startAdvertisingPeer'
+    JsName: 'startAdvertisingPeer'
+    Module: 'MultipeerConnectivity.MCNearbyServiceAdvertiser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startAdvertisingPeer'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'stopAdvertisingPeer'
+    JsName: 'stopAdvertisingPeer'
+    Module: 'MultipeerConnectivity.MCNearbyServiceAdvertiser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopAdvertisingPeer'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods: []
+  Properties:
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'MultipeerConnectivity.MCNearbyServiceAdvertiser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'MultipeerConnectivity.MCNearbyServiceAdvertiser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: MultipeerConnectivity.MCNearbyServiceAdvertiser
+          Name: MCNearbyServiceAdvertiserDelegate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'MultipeerConnectivity.MCNearbyServiceAdvertiser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: MultipeerConnectivity.MCNearbyServiceAdvertiser
+          Name: MCNearbyServiceAdvertiserDelegate
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'discoveryInfo'
+    JsName: 'discoveryInfo'
+    Module: 'MultipeerConnectivity.MCNearbyServiceAdvertiser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'discoveryInfo'
+      JsName: 'discoveryInfo'
+      Module: 'MultipeerConnectivity.MCNearbyServiceAdvertiser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'discoveryInfo'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: '@16@0:8'
+  - Name: 'myPeerID'
+    JsName: 'myPeerID'
+    Module: 'MultipeerConnectivity.MCNearbyServiceAdvertiser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'myPeerID'
+      JsName: 'myPeerID'
+      Module: 'MultipeerConnectivity.MCNearbyServiceAdvertiser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'myPeerID'
+      Signature:
+      - Type: Interface
+        Module: MultipeerConnectivity.MCPeerID
+        Name: MCPeerID
+      TypeEncoding: '@16@0:8'
+  - Name: 'serviceType'
+    JsName: 'serviceType'
+    Module: 'MultipeerConnectivity.MCNearbyServiceAdvertiser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'serviceType'
+      JsName: 'serviceType'
+      Module: 'MultipeerConnectivity.MCNearbyServiceAdvertiser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'serviceType'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MCNearbyServiceAdvertiserDelegate'
+  JsName: 'MCNearbyServiceAdvertiserDelegate'
+  Module: 'MultipeerConnectivity.MCNearbyServiceAdvertiser'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'advertiser:didNotStartAdvertisingPeer:'
+    JsName: 'advertiserDidNotStartAdvertisingPeer'
+    Module: 'MultipeerConnectivity.MCNearbyServiceAdvertiser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'advertiser:didNotStartAdvertisingPeer:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MultipeerConnectivity.MCNearbyServiceAdvertiser
+      Name: MCNearbyServiceAdvertiser
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'advertiser:didReceiveInvitationFromPeer:withContext:invitationHandler:'
+    JsName: 'advertiserDidReceiveInvitationFromPeerWithContextInvitationHandler'
+    Module: 'MultipeerConnectivity.MCNearbyServiceAdvertiser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'advertiser:didReceiveInvitationFromPeer:withContext:invitationHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MultipeerConnectivity.MCNearbyServiceAdvertiser
+      Name: MCNearbyServiceAdvertiser
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+      - Type: Interface
+        Module: MultipeerConnectivity.MCSession
+        Name: MCSession
+    TypeEncoding: 'v48@0:8@16@24@32@?40'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MCNearbyServiceBrowser'
+  JsName: 'MCNearbyServiceBrowser'
+  Module: 'MultipeerConnectivity.MCNearbyServiceBrowser'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithPeer:serviceType:'
+    JsName: 'initWithPeerServiceType'
+    Module: 'MultipeerConnectivity.MCNearbyServiceBrowser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithPeer:serviceType:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'invitePeer:toSession:withContext:timeout:'
+    JsName: 'invitePeerToSessionWithContextTimeout'
+    Module: 'MultipeerConnectivity.MCNearbyServiceBrowser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'invitePeer:toSession:withContext:timeout:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    - Type: Interface
+      Module: MultipeerConnectivity.MCSession
+      Name: MCSession
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Double
+    TypeEncoding: 'v48@0:8@16@24@32d40'
+  - Name: 'startBrowsingForPeers'
+    JsName: 'startBrowsingForPeers'
+    Module: 'MultipeerConnectivity.MCNearbyServiceBrowser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startBrowsingForPeers'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'stopBrowsingForPeers'
+    JsName: 'stopBrowsingForPeers'
+    Module: 'MultipeerConnectivity.MCNearbyServiceBrowser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopBrowsingForPeers'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods: []
+  Properties:
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'MultipeerConnectivity.MCNearbyServiceBrowser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'MultipeerConnectivity.MCNearbyServiceBrowser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: MultipeerConnectivity.MCNearbyServiceBrowser
+          Name: MCNearbyServiceBrowserDelegate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'MultipeerConnectivity.MCNearbyServiceBrowser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: MultipeerConnectivity.MCNearbyServiceBrowser
+          Name: MCNearbyServiceBrowserDelegate
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'myPeerID'
+    JsName: 'myPeerID'
+    Module: 'MultipeerConnectivity.MCNearbyServiceBrowser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'myPeerID'
+      JsName: 'myPeerID'
+      Module: 'MultipeerConnectivity.MCNearbyServiceBrowser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'myPeerID'
+      Signature:
+      - Type: Interface
+        Module: MultipeerConnectivity.MCPeerID
+        Name: MCPeerID
+      TypeEncoding: '@16@0:8'
+  - Name: 'serviceType'
+    JsName: 'serviceType'
+    Module: 'MultipeerConnectivity.MCNearbyServiceBrowser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'serviceType'
+      JsName: 'serviceType'
+      Module: 'MultipeerConnectivity.MCNearbyServiceBrowser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'serviceType'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MCNearbyServiceBrowserDelegate'
+  JsName: 'MCNearbyServiceBrowserDelegate'
+  Module: 'MultipeerConnectivity.MCNearbyServiceBrowser'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'browser:didNotStartBrowsingForPeers:'
+    JsName: 'browserDidNotStartBrowsingForPeers'
+    Module: 'MultipeerConnectivity.MCNearbyServiceBrowser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'browser:didNotStartBrowsingForPeers:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MultipeerConnectivity.MCNearbyServiceBrowser
+      Name: MCNearbyServiceBrowser
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'browser:foundPeer:withDiscoveryInfo:'
+    JsName: 'browserFoundPeerWithDiscoveryInfo'
+    Module: 'MultipeerConnectivity.MCNearbyServiceBrowser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'browser:foundPeer:withDiscoveryInfo:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MultipeerConnectivity.MCNearbyServiceBrowser
+      Name: MCNearbyServiceBrowser
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: 'v40@0:8@16@24@32'
+  - Name: 'browser:lostPeer:'
+    JsName: 'browserLostPeer'
+    Module: 'MultipeerConnectivity.MCNearbyServiceBrowser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'browser:lostPeer:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MultipeerConnectivity.MCNearbyServiceBrowser
+      Name: MCNearbyServiceBrowser
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    TypeEncoding: 'v32@0:8@16@24'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MCBrowserViewController'
+  JsName: 'MCBrowserViewController'
+  Module: 'MultipeerConnectivity.MCBrowserViewController'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithBrowser:session:'
+    JsName: 'initWithBrowserSession'
+    Module: 'MultipeerConnectivity.MCBrowserViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithBrowser:session:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: MultipeerConnectivity.MCNearbyServiceBrowser
+      Name: MCNearbyServiceBrowser
+    - Type: Interface
+      Module: MultipeerConnectivity.MCSession
+      Name: MCSession
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'initWithServiceType:session:'
+    JsName: 'initWithServiceTypeSession'
+    Module: 'MultipeerConnectivity.MCBrowserViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithServiceType:session:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: MultipeerConnectivity.MCSession
+      Name: MCSession
+    TypeEncoding: '@32@0:8@16@24'
+  StaticMethods: []
+  Properties:
+  - Name: 'browser'
+    JsName: 'browser'
+    Module: 'MultipeerConnectivity.MCBrowserViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'browser'
+      JsName: 'browser'
+      Module: 'MultipeerConnectivity.MCBrowserViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'browser'
+      Signature:
+      - Type: Interface
+        Module: MultipeerConnectivity.MCNearbyServiceBrowser
+        Name: MCNearbyServiceBrowser
+      TypeEncoding: '@16@0:8'
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'MultipeerConnectivity.MCBrowserViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'MultipeerConnectivity.MCBrowserViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: MultipeerConnectivity.MCBrowserViewController
+          Name: MCBrowserViewControllerDelegate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'MultipeerConnectivity.MCBrowserViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: MultipeerConnectivity.MCBrowserViewController
+          Name: MCBrowserViewControllerDelegate
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'maximumNumberOfPeers'
+    JsName: 'maximumNumberOfPeers'
+    Module: 'MultipeerConnectivity.MCBrowserViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'maximumNumberOfPeers'
+      JsName: 'maximumNumberOfPeers'
+      Module: 'MultipeerConnectivity.MCBrowserViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'maximumNumberOfPeers'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setMaximumNumberOfPeers:'
+      JsName: 'setMaximumNumberOfPeers'
+      Module: 'MultipeerConnectivity.MCBrowserViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMaximumNumberOfPeers:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'minimumNumberOfPeers'
+    JsName: 'minimumNumberOfPeers'
+    Module: 'MultipeerConnectivity.MCBrowserViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'minimumNumberOfPeers'
+      JsName: 'minimumNumberOfPeers'
+      Module: 'MultipeerConnectivity.MCBrowserViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'minimumNumberOfPeers'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setMinimumNumberOfPeers:'
+      JsName: 'setMinimumNumberOfPeers'
+      Module: 'MultipeerConnectivity.MCBrowserViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMinimumNumberOfPeers:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'session'
+    JsName: 'session'
+    Module: 'MultipeerConnectivity.MCBrowserViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'session'
+      JsName: 'session'
+      Module: 'MultipeerConnectivity.MCBrowserViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'session'
+      Signature:
+      - Type: Interface
+        Module: MultipeerConnectivity.MCSession
+        Name: MCSession
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: MultipeerConnectivity.MCNearbyServiceBrowser
+    Name: MCNearbyServiceBrowserDelegate
+  Base:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Interface
+- Name: 'MCBrowserViewControllerDelegate'
+  JsName: 'MCBrowserViewControllerDelegate'
+  Module: 'MultipeerConnectivity.MCBrowserViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'browserViewControllerDidFinish:'
+    JsName: 'browserViewControllerDidFinish'
+    Module: 'MultipeerConnectivity.MCBrowserViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'browserViewControllerDidFinish:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MultipeerConnectivity.MCBrowserViewController
+      Name: MCBrowserViewController
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'browserViewController:shouldPresentNearbyPeer:withDiscoveryInfo:'
+    JsName: 'browserViewControllerShouldPresentNearbyPeerWithDiscoveryInfo'
+    Module: 'MultipeerConnectivity.MCBrowserViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'browserViewController:shouldPresentNearbyPeer:withDiscoveryInfo:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: MultipeerConnectivity.MCBrowserViewController
+      Name: MCBrowserViewController
+    - Type: Interface
+      Module: MultipeerConnectivity.MCPeerID
+      Name: MCPeerID
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: 'B40@0:8@16@24@32'
+  - Name: 'browserViewControllerWasCancelled:'
+    JsName: 'browserViewControllerWasCancelled'
+    Module: 'MultipeerConnectivity.MCBrowserViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'browserViewControllerWasCancelled:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MultipeerConnectivity.MCBrowserViewController
+      Name: MCBrowserViewController
+    TypeEncoding: 'v24@0:8@16'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MCAdvertiserAssistant'
+  JsName: 'MCAdvertiserAssistant'
+  Module: 'MultipeerConnectivity.MCAdvertiserAssistant'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithServiceType:discoveryInfo:session:'
+    JsName: 'initWithServiceTypeDiscoveryInfoSession'
+    Module: 'MultipeerConnectivity.MCAdvertiserAssistant'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithServiceType:discoveryInfo:session:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Interface
+      Module: MultipeerConnectivity.MCSession
+      Name: MCSession
+    TypeEncoding: '@40@0:8@16@24@32'
+  - Name: 'start'
+    JsName: 'start'
+    Module: 'MultipeerConnectivity.MCAdvertiserAssistant'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'start'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'stop'
+    JsName: 'stop'
+    Module: 'MultipeerConnectivity.MCAdvertiserAssistant'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stop'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods: []
+  Properties:
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'MultipeerConnectivity.MCAdvertiserAssistant'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'MultipeerConnectivity.MCAdvertiserAssistant'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: MultipeerConnectivity.MCAdvertiserAssistant
+          Name: MCAdvertiserAssistantDelegate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'MultipeerConnectivity.MCAdvertiserAssistant'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: MultipeerConnectivity.MCAdvertiserAssistant
+          Name: MCAdvertiserAssistantDelegate
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'discoveryInfo'
+    JsName: 'discoveryInfo'
+    Module: 'MultipeerConnectivity.MCAdvertiserAssistant'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'discoveryInfo'
+      JsName: 'discoveryInfo'
+      Module: 'MultipeerConnectivity.MCAdvertiserAssistant'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'discoveryInfo'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: '@16@0:8'
+  - Name: 'serviceType'
+    JsName: 'serviceType'
+    Module: 'MultipeerConnectivity.MCAdvertiserAssistant'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'serviceType'
+      JsName: 'serviceType'
+      Module: 'MultipeerConnectivity.MCAdvertiserAssistant'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'serviceType'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'session'
+    JsName: 'session'
+    Module: 'MultipeerConnectivity.MCAdvertiserAssistant'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'session'
+      JsName: 'session'
+      Module: 'MultipeerConnectivity.MCAdvertiserAssistant'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'session'
+      Signature:
+      - Type: Interface
+        Module: MultipeerConnectivity.MCSession
+        Name: MCSession
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MCAdvertiserAssistantDelegate'
+  JsName: 'MCAdvertiserAssistantDelegate'
+  Module: 'MultipeerConnectivity.MCAdvertiserAssistant'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'advertiserAssistantDidDismissInvitation:'
+    JsName: 'advertiserAssistantDidDismissInvitation'
+    Module: 'MultipeerConnectivity.MCAdvertiserAssistant'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'advertiserAssistantDidDismissInvitation:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MultipeerConnectivity.MCAdvertiserAssistant
+      Name: MCAdvertiserAssistant
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'advertiserAssistantWillPresentInvitation:'
+    JsName: 'advertiserAssistantWillPresentInvitation'
+    Module: 'MultipeerConnectivity.MCAdvertiserAssistant'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'advertiserAssistantWillPresentInvitation:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MultipeerConnectivity.MCAdvertiserAssistant
+      Name: MCAdvertiserAssistant
+    TypeEncoding: 'v24@0:8@16'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+...

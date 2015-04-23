@@ -1,0 +1,82 @@
+name: PhotosUI
+items:
+- Name: 'PHContentEditingController'
+  JsName: 'PHContentEditingController'
+  Module: 'PhotosUI.PHContentEditingController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'cancelContentEditing'
+    JsName: 'cancelContentEditing'
+    Module: 'PhotosUI.PHContentEditingController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancelContentEditing'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'canHandleAdjustmentData:'
+    JsName: 'canHandleAdjustmentData'
+    Module: 'PhotosUI.PHContentEditingController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'canHandleAdjustmentData:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Photos.PHAdjustmentData
+      Name: PHAdjustmentData
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'finishContentEditingWithCompletionHandler:'
+    JsName: 'finishContentEditingWithCompletionHandler'
+    Module: 'PhotosUI.PHContentEditingController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'finishContentEditingWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Photos.PHContentEditingOutput
+        Name: PHContentEditingOutput
+    TypeEncoding: 'v24@0:8@?16'
+  - Name: 'startContentEditingWithInput:placeholderImage:'
+    JsName: 'startContentEditingWithInputPlaceholderImage'
+    Module: 'PhotosUI.PHContentEditingController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startContentEditingWithInput:placeholderImage:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Photos.PHContentEditingInput
+      Name: PHContentEditingInput
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    TypeEncoding: 'v32@0:8@16@24'
+  StaticMethods: []
+  Properties:
+  - Name: 'shouldShowCancelConfirmation'
+    JsName: 'shouldShowCancelConfirmation'
+    Module: 'PhotosUI.PHContentEditingController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'shouldShowCancelConfirmation'
+      JsName: 'shouldShowCancelConfirmation'
+      Module: 'PhotosUI.PHContentEditingController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'shouldShowCancelConfirmation'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+...

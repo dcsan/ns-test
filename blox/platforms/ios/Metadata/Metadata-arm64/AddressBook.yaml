@@ -1,0 +1,2073 @@
+name: AddressBook
+items:
+- Name: 'kABPersonType'
+  JsName: 'kABPersonType'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kABGroupType'
+  JsName: 'kABGroupType'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kABSourceType'
+  JsName: 'kABSourceType'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kABInvalidPropertyType'
+  JsName: 'kABInvalidPropertyType'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kABStringPropertyType'
+  JsName: 'kABStringPropertyType'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kABIntegerPropertyType'
+  JsName: 'kABIntegerPropertyType'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kABRealPropertyType'
+  JsName: 'kABRealPropertyType'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kABDateTimePropertyType'
+  JsName: 'kABDateTimePropertyType'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kABDictionaryPropertyType'
+  JsName: 'kABDictionaryPropertyType'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'kABMultiStringPropertyType'
+  JsName: 'kABMultiStringPropertyType'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 257
+- Name: 'kABMultiIntegerPropertyType'
+  JsName: 'kABMultiIntegerPropertyType'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 258
+- Name: 'kABMultiRealPropertyType'
+  JsName: 'kABMultiRealPropertyType'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 259
+- Name: 'kABMultiDateTimePropertyType'
+  JsName: 'kABMultiDateTimePropertyType'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 260
+- Name: 'kABMultiDictionaryPropertyType'
+  JsName: 'kABMultiDictionaryPropertyType'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 261
+- Name: 'ABRecordGetRecordID'
+  JsName: 'ABRecordGetRecordID'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABRecordGetRecordType'
+  JsName: 'ABRecordGetRecordType'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABRecordCopyValue'
+  JsName: 'ABRecordCopyValue'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'ABRecordSetValue'
+  JsName: 'ABRecordSetValue'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFError
+      Name: NSError
+- Name: 'ABRecordRemoveValue'
+  JsName: 'ABRecordRemoveValue'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFError
+      Name: NSError
+- Name: 'ABRecordCopyCompositeName'
+  JsName: 'ABRecordCopyCompositeName'
+  Module: 'AddressBook.ABRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABAddressBookErrorDomain'
+  JsName: 'ABAddressBookErrorDomain'
+  Module: 'AddressBook.ABAddressBook'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABOperationNotPermittedByStoreError'
+  JsName: 'kABOperationNotPermittedByStoreError'
+  Module: 'AddressBook.ABAddressBook'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kABOperationNotPermittedByUserError'
+  JsName: 'kABOperationNotPermittedByUserError'
+  Module: 'AddressBook.ABAddressBook'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'ABAuthorizationStatus'
+  JsName: 'ABAuthorizationStatus'
+  Module: 'AddressBook.ABAddressBook'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kABAuthorizationStatusNotDetermined":0,"kABAuthorizationStatusRestricted":1,"kABAuthorizationStatusDenied":2,"kABAuthorizationStatusAuthorized":3})
+- Name: 'ABAddressBookGetAuthorizationStatus'
+  JsName: 'ABAddressBookGetAuthorizationStatus'
+  Module: 'AddressBook.ABAddressBook'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+- Name: 'ABAddressBookCreateWithOptions'
+  JsName: 'ABAddressBookCreateWithOptions'
+  Module: 'AddressBook.ABAddressBook'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFError
+      Name: NSError
+- Name: 'ABAddressBookCreate'
+  JsName: 'ABAddressBookCreate'
+  Module: 'AddressBook.ABAddressBook'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABAddressBookRequestAccessWithCompletion'
+  JsName: 'ABAddressBookRequestAccessWithCompletion'
+  Module: 'AddressBook.ABAddressBook'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Block
+    Signature:
+    - Type: Void
+    - Type: Bool
+    - Type: Interface
+      Module: CoreFoundation.CFError
+      Name: NSError
+- Name: 'ABAddressBookSave'
+  JsName: 'ABAddressBookSave'
+  Module: 'AddressBook.ABAddressBook'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFError
+      Name: NSError
+- Name: 'ABAddressBookHasUnsavedChanges'
+  JsName: 'ABAddressBookHasUnsavedChanges'
+  Module: 'AddressBook.ABAddressBook'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABAddressBookAddRecord'
+  JsName: 'ABAddressBookAddRecord'
+  Module: 'AddressBook.ABAddressBook'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFError
+      Name: NSError
+- Name: 'ABAddressBookRemoveRecord'
+  JsName: 'ABAddressBookRemoveRecord'
+  Module: 'AddressBook.ABAddressBook'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFError
+      Name: NSError
+- Name: 'ABAddressBookCopyLocalizedLabel'
+  JsName: 'ABAddressBookCopyLocalizedLabel'
+  Module: 'AddressBook.ABAddressBook'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'ABAddressBookRegisterExternalChangeCallback'
+  JsName: 'ABAddressBookRegisterExternalChangeCallback'
+  Module: 'AddressBook.ABAddressBook'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Interface
+      Module: CoreFoundation.CFDictionary
+      Name: NSDictionary
+    - Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABAddressBookUnregisterExternalChangeCallback'
+  JsName: 'ABAddressBookUnregisterExternalChangeCallback'
+  Module: 'AddressBook.ABAddressBook'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Interface
+      Module: CoreFoundation.CFDictionary
+      Name: NSDictionary
+    - Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABAddressBookRevert'
+  JsName: 'ABAddressBookRevert'
+  Module: 'AddressBook.ABAddressBook'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kABSourceTypeLocal'
+  JsName: 'kABSourceTypeLocal'
+  Module: 'AddressBook.ABSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kABSourceTypeExchange'
+  JsName: 'kABSourceTypeExchange'
+  Module: 'AddressBook.ABSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kABSourceTypeExchangeGAL'
+  JsName: 'kABSourceTypeExchangeGAL'
+  Module: 'AddressBook.ABSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16777217
+- Name: 'kABSourceTypeMobileMe'
+  JsName: 'kABSourceTypeMobileMe'
+  Module: 'AddressBook.ABSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kABSourceTypeLDAP'
+  JsName: 'kABSourceTypeLDAP'
+  Module: 'AddressBook.ABSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16777219
+- Name: 'kABSourceTypeCardDAV'
+  JsName: 'kABSourceTypeCardDAV'
+  Module: 'AddressBook.ABSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kABSourceTypeCardDAVSearch'
+  JsName: 'kABSourceTypeCardDAVSearch'
+  Module: 'AddressBook.ABSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16777220
+- Name: 'kABSourceNameProperty'
+  JsName: 'kABSourceNameProperty'
+  Module: 'AddressBook.ABSource'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABSourceTypeProperty'
+  JsName: 'kABSourceTypeProperty'
+  Module: 'AddressBook.ABSource'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'ABAddressBookCopyDefaultSource'
+  JsName: 'ABAddressBookCopyDefaultSource'
+  Module: 'AddressBook.ABSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABAddressBookGetSourceWithRecordID'
+  JsName: 'ABAddressBookGetSourceWithRecordID'
+  Module: 'AddressBook.ABSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'ABAddressBookCopyArrayOfAllSources'
+  JsName: 'ABAddressBookCopyArrayOfAllSources'
+  Module: 'AddressBook.ABSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABPersonCreate'
+  JsName: 'ABPersonCreate'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABPersonCreateInSource'
+  JsName: 'ABPersonCreateInSource'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABPersonCopySource'
+  JsName: 'ABPersonCopySource'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABPersonCopyArrayOfAllLinkedPeople'
+  JsName: 'ABPersonCopyArrayOfAllLinkedPeople'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABPersonGetTypeOfProperty'
+  JsName: 'ABPersonGetTypeOfProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: Int
+- Name: 'ABPersonCopyLocalizedPropertyName'
+  JsName: 'ABPersonCopyLocalizedPropertyName'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Int
+- Name: 'kABPersonSortByFirstName'
+  JsName: 'kABPersonSortByFirstName'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kABPersonSortByLastName'
+  JsName: 'kABPersonSortByLastName'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'ABPersonGetSortOrdering'
+  JsName: 'ABPersonGetSortOrdering'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+- Name: 'kABPersonCompositeNameFormatFirstNameFirst'
+  JsName: 'kABPersonCompositeNameFormatFirstNameFirst'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kABPersonCompositeNameFormatLastNameFirst'
+  JsName: 'kABPersonCompositeNameFormatLastNameFirst'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'ABPersonGetCompositeNameFormat'
+  JsName: 'ABPersonGetCompositeNameFormat'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+- Name: 'ABPersonGetCompositeNameFormatForRecord'
+  JsName: 'ABPersonGetCompositeNameFormatForRecord'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABPersonCopyCompositeNameDelimiterForRecord'
+  JsName: 'ABPersonCopyCompositeNameDelimiterForRecord'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: '528'
+  JsName: 'ABPersonImageFormat'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kABPersonImageFormatThumbnail":0,"kABPersonImageFormatOriginalSize":2})
+- Name: 'ABPersonSetImageData'
+  JsName: 'ABPersonSetImageData'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFError
+      Name: NSError
+- Name: 'ABPersonCopyImageData'
+  JsName: 'ABPersonCopyImageData'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABPersonCopyImageDataWithFormat'
+  JsName: 'ABPersonCopyImageDataWithFormat'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'ABPersonHasImageData'
+  JsName: 'ABPersonHasImageData'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABPersonRemoveImageData'
+  JsName: 'ABPersonRemoveImageData'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFError
+      Name: NSError
+- Name: 'ABPersonComparePeopleByName'
+  JsName: 'ABPersonComparePeopleByName'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'ABAddressBookGetPersonCount'
+  JsName: 'ABAddressBookGetPersonCount'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABAddressBookGetPersonWithRecordID'
+  JsName: 'ABAddressBookGetPersonWithRecordID'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'ABAddressBookCopyArrayOfAllPeople'
+  JsName: 'ABAddressBookCopyArrayOfAllPeople'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABAddressBookCopyArrayOfAllPeopleInSource'
+  JsName: 'ABAddressBookCopyArrayOfAllPeopleInSource'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABAddressBookCopyArrayOfAllPeopleInSourceWithSortOrdering'
+  JsName: 'ABAddressBookCopyArrayOfAllPeopleInSourceWithSortOrdering'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'ABAddressBookCopyPeopleWithName'
+  JsName: 'ABAddressBookCopyPeopleWithName'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'ABPersonCreatePeopleInSourceWithVCardRepresentation'
+  JsName: 'ABPersonCreatePeopleInSourceWithVCardRepresentation'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+- Name: 'ABPersonCreateVCardRepresentationWithPeople'
+  JsName: 'ABPersonCreateVCardRepresentationWithPeople'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+- Name: 'kABWorkLabel'
+  JsName: 'kABWorkLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABHomeLabel'
+  JsName: 'kABHomeLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABOtherLabel'
+  JsName: 'kABOtherLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonFirstNameProperty'
+  JsName: 'kABPersonFirstNameProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonLastNameProperty'
+  JsName: 'kABPersonLastNameProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonMiddleNameProperty'
+  JsName: 'kABPersonMiddleNameProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonPrefixProperty'
+  JsName: 'kABPersonPrefixProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonSuffixProperty'
+  JsName: 'kABPersonSuffixProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonNicknameProperty'
+  JsName: 'kABPersonNicknameProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonFirstNamePhoneticProperty'
+  JsName: 'kABPersonFirstNamePhoneticProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonLastNamePhoneticProperty'
+  JsName: 'kABPersonLastNamePhoneticProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonMiddleNamePhoneticProperty'
+  JsName: 'kABPersonMiddleNamePhoneticProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonOrganizationProperty'
+  JsName: 'kABPersonOrganizationProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonJobTitleProperty'
+  JsName: 'kABPersonJobTitleProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonDepartmentProperty'
+  JsName: 'kABPersonDepartmentProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonEmailProperty'
+  JsName: 'kABPersonEmailProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonBirthdayProperty'
+  JsName: 'kABPersonBirthdayProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonNoteProperty'
+  JsName: 'kABPersonNoteProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonCreationDateProperty'
+  JsName: 'kABPersonCreationDateProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonModificationDateProperty'
+  JsName: 'kABPersonModificationDateProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonAddressProperty'
+  JsName: 'kABPersonAddressProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonAddressStreetKey'
+  JsName: 'kABPersonAddressStreetKey'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonAddressCityKey'
+  JsName: 'kABPersonAddressCityKey'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonAddressStateKey'
+  JsName: 'kABPersonAddressStateKey'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonAddressZIPKey'
+  JsName: 'kABPersonAddressZIPKey'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonAddressCountryKey'
+  JsName: 'kABPersonAddressCountryKey'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonAddressCountryCodeKey'
+  JsName: 'kABPersonAddressCountryCodeKey'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonDateProperty'
+  JsName: 'kABPersonDateProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonAnniversaryLabel'
+  JsName: 'kABPersonAnniversaryLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonKindProperty'
+  JsName: 'kABPersonKindProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonKindPerson'
+  JsName: 'kABPersonKindPerson'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFNumber
+    Name: NSNumber
+- Name: 'kABPersonKindOrganization'
+  JsName: 'kABPersonKindOrganization'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFNumber
+    Name: NSNumber
+- Name: 'kABPersonPhoneProperty'
+  JsName: 'kABPersonPhoneProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonPhoneMobileLabel'
+  JsName: 'kABPersonPhoneMobileLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonPhoneIPhoneLabel'
+  JsName: 'kABPersonPhoneIPhoneLabel'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonPhoneMainLabel'
+  JsName: 'kABPersonPhoneMainLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonPhoneHomeFAXLabel'
+  JsName: 'kABPersonPhoneHomeFAXLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonPhoneWorkFAXLabel'
+  JsName: 'kABPersonPhoneWorkFAXLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonPhoneOtherFAXLabel'
+  JsName: 'kABPersonPhoneOtherFAXLabel'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonPhonePagerLabel'
+  JsName: 'kABPersonPhonePagerLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonInstantMessageProperty'
+  JsName: 'kABPersonInstantMessageProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonInstantMessageServiceKey'
+  JsName: 'kABPersonInstantMessageServiceKey'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonInstantMessageServiceYahoo'
+  JsName: 'kABPersonInstantMessageServiceYahoo'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonInstantMessageServiceJabber'
+  JsName: 'kABPersonInstantMessageServiceJabber'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonInstantMessageServiceMSN'
+  JsName: 'kABPersonInstantMessageServiceMSN'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonInstantMessageServiceICQ'
+  JsName: 'kABPersonInstantMessageServiceICQ'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonInstantMessageServiceAIM'
+  JsName: 'kABPersonInstantMessageServiceAIM'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonInstantMessageServiceQQ'
+  JsName: 'kABPersonInstantMessageServiceQQ'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonInstantMessageServiceGoogleTalk'
+  JsName: 'kABPersonInstantMessageServiceGoogleTalk'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonInstantMessageServiceSkype'
+  JsName: 'kABPersonInstantMessageServiceSkype'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonInstantMessageServiceFacebook'
+  JsName: 'kABPersonInstantMessageServiceFacebook'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonInstantMessageServiceGaduGadu'
+  JsName: 'kABPersonInstantMessageServiceGaduGadu'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonInstantMessageUsernameKey'
+  JsName: 'kABPersonInstantMessageUsernameKey'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonURLProperty'
+  JsName: 'kABPersonURLProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonHomePageLabel'
+  JsName: 'kABPersonHomePageLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonRelatedNamesProperty'
+  JsName: 'kABPersonRelatedNamesProperty'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonFatherLabel'
+  JsName: 'kABPersonFatherLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonMotherLabel'
+  JsName: 'kABPersonMotherLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonParentLabel'
+  JsName: 'kABPersonParentLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonBrotherLabel'
+  JsName: 'kABPersonBrotherLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonSisterLabel'
+  JsName: 'kABPersonSisterLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonChildLabel'
+  JsName: 'kABPersonChildLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonFriendLabel'
+  JsName: 'kABPersonFriendLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonSpouseLabel'
+  JsName: 'kABPersonSpouseLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonPartnerLabel'
+  JsName: 'kABPersonPartnerLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonAssistantLabel'
+  JsName: 'kABPersonAssistantLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonManagerLabel'
+  JsName: 'kABPersonManagerLabel'
+  Module: 'AddressBook.ABPerson'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonSocialProfileProperty'
+  JsName: 'kABPersonSocialProfileProperty'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonSocialProfileURLKey'
+  JsName: 'kABPersonSocialProfileURLKey'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonSocialProfileServiceKey'
+  JsName: 'kABPersonSocialProfileServiceKey'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonSocialProfileUsernameKey'
+  JsName: 'kABPersonSocialProfileUsernameKey'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonSocialProfileUserIdentifierKey'
+  JsName: 'kABPersonSocialProfileUserIdentifierKey'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonSocialProfileServiceTwitter'
+  JsName: 'kABPersonSocialProfileServiceTwitter'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonSocialProfileServiceSinaWeibo'
+  JsName: 'kABPersonSocialProfileServiceSinaWeibo'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonSocialProfileServiceGameCenter'
+  JsName: 'kABPersonSocialProfileServiceGameCenter'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonSocialProfileServiceFacebook'
+  JsName: 'kABPersonSocialProfileServiceFacebook'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonSocialProfileServiceMyspace'
+  JsName: 'kABPersonSocialProfileServiceMyspace'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonSocialProfileServiceLinkedIn'
+  JsName: 'kABPersonSocialProfileServiceLinkedIn'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonSocialProfileServiceFlickr'
+  JsName: 'kABPersonSocialProfileServiceFlickr'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonAlternateBirthdayProperty'
+  JsName: 'kABPersonAlternateBirthdayProperty'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kABPersonAlternateBirthdayCalendarIdentifierKey'
+  JsName: 'kABPersonAlternateBirthdayCalendarIdentifierKey'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonAlternateBirthdayEraKey'
+  JsName: 'kABPersonAlternateBirthdayEraKey'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonAlternateBirthdayYearKey'
+  JsName: 'kABPersonAlternateBirthdayYearKey'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonAlternateBirthdayMonthKey'
+  JsName: 'kABPersonAlternateBirthdayMonthKey'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonAlternateBirthdayIsLeapMonthKey'
+  JsName: 'kABPersonAlternateBirthdayIsLeapMonthKey'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABPersonAlternateBirthdayDayKey'
+  JsName: 'kABPersonAlternateBirthdayDayKey'
+  Module: 'AddressBook.ABPerson'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kABGroupNameProperty'
+  JsName: 'kABGroupNameProperty'
+  Module: 'AddressBook.ABGroup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'ABGroupCreate'
+  JsName: 'ABGroupCreate'
+  Module: 'AddressBook.ABGroup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABGroupCreateInSource'
+  JsName: 'ABGroupCreateInSource'
+  Module: 'AddressBook.ABGroup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABGroupCopySource'
+  JsName: 'ABGroupCopySource'
+  Module: 'AddressBook.ABGroup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABGroupCopyArrayOfAllMembers'
+  JsName: 'ABGroupCopyArrayOfAllMembers'
+  Module: 'AddressBook.ABGroup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABGroupCopyArrayOfAllMembersWithSortOrdering'
+  JsName: 'ABGroupCopyArrayOfAllMembersWithSortOrdering'
+  Module: 'AddressBook.ABGroup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'ABGroupAddMember'
+  JsName: 'ABGroupAddMember'
+  Module: 'AddressBook.ABGroup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFError
+      Name: NSError
+- Name: 'ABGroupRemoveMember'
+  JsName: 'ABGroupRemoveMember'
+  Module: 'AddressBook.ABGroup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFError
+      Name: NSError
+- Name: 'ABAddressBookGetGroupWithRecordID'
+  JsName: 'ABAddressBookGetGroupWithRecordID'
+  Module: 'AddressBook.ABGroup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'ABAddressBookGetGroupCount'
+  JsName: 'ABAddressBookGetGroupCount'
+  Module: 'AddressBook.ABGroup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABAddressBookCopyArrayOfAllGroups'
+  JsName: 'ABAddressBookCopyArrayOfAllGroups'
+  Module: 'AddressBook.ABGroup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABAddressBookCopyArrayOfAllGroupsInSource'
+  JsName: 'ABAddressBookCopyArrayOfAllGroupsInSource'
+  Module: 'AddressBook.ABGroup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABMultiValueGetPropertyType'
+  JsName: 'ABMultiValueGetPropertyType'
+  Module: 'AddressBook.ABMultiValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABMultiValueGetCount'
+  JsName: 'ABMultiValueGetCount'
+  Module: 'AddressBook.ABMultiValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABMultiValueCopyValueAtIndex'
+  JsName: 'ABMultiValueCopyValueAtIndex'
+  Module: 'AddressBook.ABMultiValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Long
+- Name: 'ABMultiValueCopyArrayOfAllValues'
+  JsName: 'ABMultiValueCopyArrayOfAllValues'
+  Module: 'AddressBook.ABMultiValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABMultiValueCopyLabelAtIndex'
+  JsName: 'ABMultiValueCopyLabelAtIndex'
+  Module: 'AddressBook.ABMultiValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Long
+- Name: 'ABMultiValueGetIndexForIdentifier'
+  JsName: 'ABMultiValueGetIndexForIdentifier'
+  Module: 'AddressBook.ABMultiValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'ABMultiValueGetIdentifierAtIndex'
+  JsName: 'ABMultiValueGetIdentifierAtIndex'
+  Module: 'AddressBook.ABMultiValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Long
+- Name: 'ABMultiValueGetFirstIndexOfValue'
+  JsName: 'ABMultiValueGetFirstIndexOfValue'
+  Module: 'AddressBook.ABMultiValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABMultiValueCreateMutable'
+  JsName: 'ABMultiValueCreateMutable'
+  Module: 'AddressBook.ABMultiValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'ABMultiValueCreateMutableCopy'
+  JsName: 'ABMultiValueCreateMutableCopy'
+  Module: 'AddressBook.ABMultiValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'ABMultiValueAddValueAndLabel'
+  JsName: 'ABMultiValueAddValueAndLabel'
+  Module: 'AddressBook.ABMultiValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'ABMultiValueInsertValueAndLabelAtIndex'
+  JsName: 'ABMultiValueInsertValueAndLabelAtIndex'
+  Module: 'AddressBook.ABMultiValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'ABMultiValueRemoveValueAndLabelAtIndex'
+  JsName: 'ABMultiValueRemoveValueAndLabelAtIndex'
+  Module: 'AddressBook.ABMultiValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Long
+- Name: 'ABMultiValueReplaceValueAtIndex'
+  JsName: 'ABMultiValueReplaceValueAtIndex'
+  Module: 'AddressBook.ABMultiValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Long
+- Name: 'ABMultiValueReplaceLabelAtIndex'
+  JsName: 'ABMultiValueReplaceLabelAtIndex'
+  Module: 'AddressBook.ABMultiValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Long
+...

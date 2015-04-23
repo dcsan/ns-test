@@ -1,0 +1,62 @@
+name: AdSupport
+items:
+- Name: 'ASIdentifierManager'
+  JsName: 'ASIdentifierManager'
+  Module: 'AdSupport.ASIdentifierManager'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'sharedManager'
+    JsName: 'sharedManager'
+    Module: 'AdSupport.ASIdentifierManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'sharedManager'
+    Signature:
+    - Type: Interface
+      Module: AdSupport.ASIdentifierManager
+      Name: ASIdentifierManager
+    TypeEncoding: '@8@0:4'
+  Properties:
+  - Name: 'advertisingIdentifier'
+    JsName: 'advertisingIdentifier'
+    Module: 'AdSupport.ASIdentifierManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'advertisingIdentifier'
+      JsName: 'advertisingIdentifier'
+      Module: 'AdSupport.ASIdentifierManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'advertisingIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSUUID
+        Name: NSUUID
+      TypeEncoding: '@8@0:4'
+  - Name: 'advertisingTrackingEnabled'
+    JsName: 'advertisingTrackingEnabled'
+    Module: 'AdSupport.ASIdentifierManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isAdvertisingTrackingEnabled'
+      JsName: 'isAdvertisingTrackingEnabled'
+      Module: 'AdSupport.ASIdentifierManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isAdvertisingTrackingEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+...

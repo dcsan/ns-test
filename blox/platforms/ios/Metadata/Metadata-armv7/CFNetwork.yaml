@@ -1,0 +1,3095 @@
+name: CFNetwork
+items:
+- Name: 'kCFErrorDomainCFNetwork'
+  JsName: 'kCFErrorDomainCFNetwork'
+  Module: 'CFNetwork.CFNetworkErrors'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFErrorDomainWinSock'
+  JsName: 'kCFErrorDomainWinSock'
+  Module: 'CFNetwork.CFNetworkErrors'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CFNetworkErrors'
+  JsName: 'CFNetworkErrors'
+  Module: 'CFNetwork.CFNetworkErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCFHostErrorHostNotFound":1,"kCFHostErrorUnknown":2,"kCFSOCKSErrorUnknownClientVersion":100,"kCFSOCKSErrorUnsupportedServerVersion":101,"kCFSOCKS4ErrorRequestFailed":110,"kCFSOCKS4ErrorIdentdFailed":111,"kCFSOCKS4ErrorIdConflict":112,"kCFSOCKS4ErrorUnknownStatusCode":113,"kCFSOCKS5ErrorBadState":120,"kCFSOCKS5ErrorBadResponseAddr":121,"kCFSOCKS5ErrorBadCredentials":122,"kCFSOCKS5ErrorUnsupportedNegotiationMethod":123,"kCFSOCKS5ErrorNoAcceptableMethod":124,"kCFFTPErrorUnexpectedStatusCode":200,"kCFErrorHTTPAuthenticationTypeUnsupported":300,"kCFErrorHTTPBadCredentials":301,"kCFErrorHTTPConnectionLost":302,"kCFErrorHTTPParseFailure":303,"kCFErrorHTTPRedirectionLoopDetected":304,"kCFErrorHTTPBadURL":305,"kCFErrorHTTPProxyConnectionFailure":306,"kCFErrorHTTPBadProxyCredentials":307,"kCFErrorPACFileError":308,"kCFErrorPACFileAuth":309,"kCFErrorHTTPSProxyConnectionFailure":310,"kCFStreamErrorHTTPSProxyFailureUnexpectedResponseToCONNECTMethod":311,"kCFURLErrorBackgroundSessionInUseByAnotherProcess":-996,"kCFURLErrorBackgroundSessionWasDisconnected":-997,"kCFURLErrorUnknown":-998,"kCFURLErrorCancelled":-999,"kCFURLErrorBadURL":-1000,"kCFURLErrorTimedOut":-1001,"kCFURLErrorUnsupportedURL":-1002,"kCFURLErrorCannotFindHost":-1003,"kCFURLErrorCannotConnectToHost":-1004,"kCFURLErrorNetworkConnectionLost":-1005,"kCFURLErrorDNSLookupFailed":-1006,"kCFURLErrorHTTPTooManyRedirects":-1007,"kCFURLErrorResourceUnavailable":-1008,"kCFURLErrorNotConnectedToInternet":-1009,"kCFURLErrorRedirectToNonExistentLocation":-1010,"kCFURLErrorBadServerResponse":-1011,"kCFURLErrorUserCancelledAuthentication":-1012,"kCFURLErrorUserAuthenticationRequired":-1013,"kCFURLErrorZeroByteResource":-1014,"kCFURLErrorCannotDecodeRawData":-1015,"kCFURLErrorCannotDecodeContentData":-1016,"kCFURLErrorCannotParseResponse":-1017,"kCFURLErrorInternationalRoamingOff":-1018,"kCFURLErrorCallIsActive":-1019,"kCFURLErrorDataNotAllowed":-1020,"kCFURLErrorRequestBodyStreamExhausted":-1021,"kCFURLErrorFileDoesNotExist":-1100,"kCFURLErrorFileIsDirectory":-1101,"kCFURLErrorNoPermissionsToReadFile":-1102,"kCFURLErrorDataLengthExceedsMaximum":-1103,"kCFURLErrorSecureConnectionFailed":-1200,"kCFURLErrorServerCertificateHasBadDate":-1201,"kCFURLErrorServerCertificateUntrusted":-1202,"kCFURLErrorServerCertificateHasUnknownRoot":-1203,"kCFURLErrorServerCertificateNotYetValid":-1204,"kCFURLErrorClientCertificateRejected":-1205,"kCFURLErrorClientCertificateRequired":-1206,"kCFURLErrorCannotLoadFromNetwork":-2000,"kCFURLErrorCannotCreateFile":-3000,"kCFURLErrorCannotOpenFile":-3001,"kCFURLErrorCannotCloseFile":-3002,"kCFURLErrorCannotWriteToFile":-3003,"kCFURLErrorCannotRemoveFile":-3004,"kCFURLErrorCannotMoveFile":-3005,"kCFURLErrorDownloadDecodingFailedMidStream":-3006,"kCFURLErrorDownloadDecodingFailedToComplete":-3007,"kCFHTTPCookieCannotParseCookieFile":-4000,"kCFNetServiceErrorUnknown":-72000,"kCFNetServiceErrorCollision":-72001,"kCFNetServiceErrorNotFound":-72002,"kCFNetServiceErrorInProgress":-72003,"kCFNetServiceErrorBadArgument":-72004,"kCFNetServiceErrorCancel":-72005,"kCFNetServiceErrorInvalid":-72006,"kCFNetServiceErrorTimeout":-72007,"kCFNetServiceErrorDNSServiceFailure":-73000})
+- Name: 'kCFURLErrorFailingURLErrorKey'
+  JsName: 'kCFURLErrorFailingURLErrorKey'
+  Module: 'CFNetwork.CFNetworkErrors'
+  IntroducedIn: 2.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFURLErrorFailingURLStringErrorKey'
+  JsName: 'kCFURLErrorFailingURLStringErrorKey'
+  Module: 'CFNetwork.CFNetworkErrors'
+  IntroducedIn: 2.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFGetAddrInfoFailureKey'
+  JsName: 'kCFGetAddrInfoFailureKey'
+  Module: 'CFNetwork.CFNetworkErrors'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFSOCKSStatusCodeKey'
+  JsName: 'kCFSOCKSStatusCodeKey'
+  Module: 'CFNetwork.CFNetworkErrors'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFSOCKSVersionKey'
+  JsName: 'kCFSOCKSVersionKey'
+  Module: 'CFNetwork.CFNetworkErrors'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFSOCKSNegotiationMethodKey'
+  JsName: 'kCFSOCKSNegotiationMethodKey'
+  Module: 'CFNetwork.CFNetworkErrors'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFDNSServiceFailureKey'
+  JsName: 'kCFDNSServiceFailureKey'
+  Module: 'CFNetwork.CFNetworkErrors'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFFTPStatusCodeKey'
+  JsName: 'kCFFTPStatusCodeKey'
+  Module: 'CFNetwork.CFNetworkErrors'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamErrorDomainNetDB'
+  JsName: 'kCFStreamErrorDomainNetDB'
+  Module: 'CFNetwork.CFHost'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Long
+- Name: 'kCFStreamErrorDomainSystemConfiguration'
+  JsName: 'kCFStreamErrorDomainSystemConfiguration'
+  Module: 'CFNetwork.CFHost'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Long
+- Name: 'CFHostInfoType'
+  JsName: 'CFHostInfoType'
+  Module: 'CFNetwork.CFHost'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCFHostAddresses":0,"kCFHostNames":1,"kCFHostReachability":2})
+- Name: 'CFHostClientContext'
+  JsName: 'CFHostClientContext'
+  Module: 'CFNetwork.CFHost'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: version
+    Signature:
+      Type: Long
+  - Name: info
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: retain
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: release
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: copyDescription
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Interface
+        Module: CoreFoundation.CFBase
+        Name: NSString
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  Type: Struct
+- Name: 'CFHostGetTypeID'
+  JsName: 'CFHostGetTypeID'
+  Module: 'CFNetwork.CFHost'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CFHostCreateWithName'
+  JsName: 'CFHostCreateWithName'
+  Module: 'CFNetwork.CFHost'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CFHostCreateWithAddress'
+  JsName: 'CFHostCreateWithAddress'
+  Module: 'CFNetwork.CFHost'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+- Name: 'CFHostCreateCopy'
+  JsName: 'CFHostCreateCopy'
+  Module: 'CFNetwork.CFHost'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFHostStartInfoResolution'
+  JsName: 'CFHostStartInfoResolution'
+  Module: 'CFNetwork.CFHost'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreFoundation.CFStream
+      Name: CFStreamError
+- Name: 'CFHostGetAddressing'
+  JsName: 'CFHostGetAddressing'
+  Module: 'CFNetwork.CFHost'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'CFHostGetNames'
+  JsName: 'CFHostGetNames'
+  Module: 'CFNetwork.CFHost'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'CFHostGetReachability'
+  JsName: 'CFHostGetReachability'
+  Module: 'CFNetwork.CFHost'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'CFHostCancelInfoResolution'
+  JsName: 'CFHostCancelInfoResolution'
+  Module: 'CFNetwork.CFHost'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'CFHostSetClient'
+  JsName: 'CFHostSetClient'
+  Module: 'CFNetwork.CFHost'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreFoundation.CFStream
+        Name: CFStreamError
+    - Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CFNetwork.CFHost
+      Name: CFHostClientContext
+- Name: 'CFHostScheduleWithRunLoop'
+  JsName: 'CFHostScheduleWithRunLoop'
+  Module: 'CFNetwork.CFHost'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CFHostUnscheduleFromRunLoop'
+  JsName: 'CFHostUnscheduleFromRunLoop'
+  Module: 'CFNetwork.CFHost'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamErrorDomainMach'
+  JsName: 'kCFStreamErrorDomainMach'
+  Module: 'CFNetwork.CFNetServices'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Long
+- Name: 'kCFStreamErrorDomainNetServices'
+  JsName: 'kCFStreamErrorDomainNetServices'
+  Module: 'CFNetwork.CFNetServices'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Long
+- Name: 'CFNetServicesError'
+  JsName: 'CFNetServicesError'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCFNetServicesErrorUnknown":-72000,"kCFNetServicesErrorCollision":-72001,"kCFNetServicesErrorNotFound":-72002,"kCFNetServicesErrorInProgress":-72003,"kCFNetServicesErrorBadArgument":-72004,"kCFNetServicesErrorCancel":-72005,"kCFNetServicesErrorInvalid":-72006,"kCFNetServicesErrorTimeout":-72007})
+- Name: 'CFNetServiceMonitorType'
+  JsName: 'CFNetServiceMonitorType'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCFNetServiceMonitorTXT":1})
+- Name: 'CFNetServiceRegisterFlags'
+  JsName: 'CFNetServiceRegisterFlags'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCFNetServiceFlagNoAutoRename":1})
+- Name: 'CFNetServiceBrowserFlags'
+  JsName: 'CFNetServiceBrowserFlags'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCFNetServiceFlagMoreComing":1,"kCFNetServiceFlagIsDomain":2,"kCFNetServiceFlagIsDefault":4,"kCFNetServiceFlagIsRegistrationDomain":4,"kCFNetServiceFlagRemove":8})
+- Name: 'CFNetServiceClientContext'
+  JsName: 'CFNetServiceClientContext'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: version
+    Signature:
+      Type: Long
+  - Name: info
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: retain
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: release
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: copyDescription
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Interface
+        Module: CoreFoundation.CFBase
+        Name: NSString
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  Type: Struct
+- Name: 'CFNetServiceGetTypeID'
+  JsName: 'CFNetServiceGetTypeID'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CFNetServiceMonitorGetTypeID'
+  JsName: 'CFNetServiceMonitorGetTypeID'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CFNetServiceBrowserGetTypeID'
+  JsName: 'CFNetServiceBrowserGetTypeID'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CFNetServiceCreate'
+  JsName: 'CFNetServiceCreate'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Long
+- Name: 'CFNetServiceCreateCopy'
+  JsName: 'CFNetServiceCreateCopy'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFNetServiceGetDomain'
+  JsName: 'CFNetServiceGetDomain'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFNetServiceGetType'
+  JsName: 'CFNetServiceGetType'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFNetServiceGetName'
+  JsName: 'CFNetServiceGetName'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFNetServiceRegisterWithOptions'
+  JsName: 'CFNetServiceRegisterWithOptions'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreFoundation.CFStream
+      Name: CFStreamError
+- Name: 'CFNetServiceResolveWithTimeout'
+  JsName: 'CFNetServiceResolveWithTimeout'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreFoundation.CFStream
+      Name: CFStreamError
+- Name: 'CFNetServiceCancel'
+  JsName: 'CFNetServiceCancel'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFNetServiceGetTargetHost'
+  JsName: 'CFNetServiceGetTargetHost'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFNetServiceGetPortNumber'
+  JsName: 'CFNetServiceGetPortNumber'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFNetServiceGetAddressing'
+  JsName: 'CFNetServiceGetAddressing'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFNetServiceGetTXTData'
+  JsName: 'CFNetServiceGetTXTData'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFNetServiceSetTXTData'
+  JsName: 'CFNetServiceSetTXTData'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+- Name: 'CFNetServiceCreateDictionaryWithTXTData'
+  JsName: 'CFNetServiceCreateDictionaryWithTXTData'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+- Name: 'CFNetServiceCreateTXTDataWithDictionary'
+  JsName: 'CFNetServiceCreateTXTDataWithDictionary'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CFNetServiceSetClient'
+  JsName: 'CFNetServiceSetClient'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreFoundation.CFStream
+        Name: CFStreamError
+    - Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CFNetwork.CFNetServices
+      Name: CFNetServiceClientContext
+- Name: 'CFNetServiceScheduleWithRunLoop'
+  JsName: 'CFNetServiceScheduleWithRunLoop'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CFNetServiceUnscheduleFromRunLoop'
+  JsName: 'CFNetServiceUnscheduleFromRunLoop'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CFNetServiceMonitorCreate'
+  JsName: 'CFNetServiceMonitorCreate'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Interface
+      Module: CoreFoundation.CFData
+      Name: NSData
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreFoundation.CFStream
+        Name: CFStreamError
+    - Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CFNetwork.CFNetServices
+      Name: CFNetServiceClientContext
+- Name: 'CFNetServiceMonitorInvalidate'
+  JsName: 'CFNetServiceMonitorInvalidate'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFNetServiceMonitorStart'
+  JsName: 'CFNetServiceMonitorStart'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreFoundation.CFStream
+      Name: CFStreamError
+- Name: 'CFNetServiceMonitorStop'
+  JsName: 'CFNetServiceMonitorStop'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreFoundation.CFStream
+      Name: CFStreamError
+- Name: 'CFNetServiceMonitorScheduleWithRunLoop'
+  JsName: 'CFNetServiceMonitorScheduleWithRunLoop'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CFNetServiceMonitorUnscheduleFromRunLoop'
+  JsName: 'CFNetServiceMonitorUnscheduleFromRunLoop'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CFNetServiceBrowserCreate'
+  JsName: 'CFNetServiceBrowserCreate'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: ULong
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreFoundation.CFStream
+        Name: CFStreamError
+    - Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CFNetwork.CFNetServices
+      Name: CFNetServiceClientContext
+- Name: 'CFNetServiceBrowserInvalidate'
+  JsName: 'CFNetServiceBrowserInvalidate'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFNetServiceBrowserSearchForDomains'
+  JsName: 'CFNetServiceBrowserSearchForDomains'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreFoundation.CFStream
+      Name: CFStreamError
+- Name: 'CFNetServiceBrowserSearchForServices'
+  JsName: 'CFNetServiceBrowserSearchForServices'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreFoundation.CFStream
+      Name: CFStreamError
+- Name: 'CFNetServiceBrowserStopSearch'
+  JsName: 'CFNetServiceBrowserStopSearch'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreFoundation.CFStream
+      Name: CFStreamError
+- Name: 'CFNetServiceBrowserScheduleWithRunLoop'
+  JsName: 'CFNetServiceBrowserScheduleWithRunLoop'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CFNetServiceBrowserUnscheduleFromRunLoop'
+  JsName: 'CFNetServiceBrowserUnscheduleFromRunLoop'
+  Module: 'CFNetwork.CFNetServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertySSLContext'
+  JsName: 'kCFStreamPropertySSLContext'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertySSLPeerTrust'
+  JsName: 'kCFStreamPropertySSLPeerTrust'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamSSLValidatesCertificateChain'
+  JsName: 'kCFStreamSSLValidatesCertificateChain'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertySSLSettings'
+  JsName: 'kCFStreamPropertySSLSettings'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamSSLLevel'
+  JsName: 'kCFStreamSSLLevel'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamSSLPeerName'
+  JsName: 'kCFStreamSSLPeerName'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamSSLCertificates'
+  JsName: 'kCFStreamSSLCertificates'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamSSLIsServer'
+  JsName: 'kCFStreamSSLIsServer'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamNetworkServiceType'
+  JsName: 'kCFStreamNetworkServiceType'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamNetworkServiceTypeVoIP'
+  JsName: 'kCFStreamNetworkServiceTypeVoIP'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamNetworkServiceTypeVideo'
+  JsName: 'kCFStreamNetworkServiceTypeVideo'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamNetworkServiceTypeVoice'
+  JsName: 'kCFStreamNetworkServiceTypeVoice'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamNetworkServiceTypeBackground'
+  JsName: 'kCFStreamNetworkServiceTypeBackground'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyNoCellular'
+  JsName: 'kCFStreamPropertyNoCellular'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyConnectionIsCellular'
+  JsName: 'kCFStreamPropertyConnectionIsCellular'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamErrorDomainWinSock'
+  JsName: 'kCFStreamErrorDomainWinSock'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Long
+- Name: 'kCFStreamErrorDomainSOCKS'
+  JsName: 'kCFStreamErrorDomainSOCKS'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kCFStreamErrorSOCKSSubDomainNone'
+  JsName: 'kCFStreamErrorSOCKSSubDomainNone'
+  Module: 'CFNetwork.CFSocketStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kCFStreamErrorSOCKSSubDomainVersionCode'
+  JsName: 'kCFStreamErrorSOCKSSubDomainVersionCode'
+  Module: 'CFNetwork.CFSocketStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kCFStreamErrorSOCKS4SubDomainResponse'
+  JsName: 'kCFStreamErrorSOCKS4SubDomainResponse'
+  Module: 'CFNetwork.CFSocketStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kCFStreamErrorSOCKS5SubDomainUserPass'
+  JsName: 'kCFStreamErrorSOCKS5SubDomainUserPass'
+  Module: 'CFNetwork.CFSocketStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kCFStreamErrorSOCKS5SubDomainMethod'
+  JsName: 'kCFStreamErrorSOCKS5SubDomainMethod'
+  Module: 'CFNetwork.CFSocketStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kCFStreamErrorSOCKS5SubDomainResponse'
+  JsName: 'kCFStreamErrorSOCKS5SubDomainResponse'
+  Module: 'CFNetwork.CFSocketStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'kCFStreamErrorSOCKS5BadResponseAddr'
+  JsName: 'kCFStreamErrorSOCKS5BadResponseAddr'
+  Module: 'CFNetwork.CFSocketStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kCFStreamErrorSOCKS5BadState'
+  JsName: 'kCFStreamErrorSOCKS5BadState'
+  Module: 'CFNetwork.CFSocketStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kCFStreamErrorSOCKSUnknownClientVersion'
+  JsName: 'kCFStreamErrorSOCKSUnknownClientVersion'
+  Module: 'CFNetwork.CFSocketStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kCFStreamErrorSOCKS4RequestFailed'
+  JsName: 'kCFStreamErrorSOCKS4RequestFailed'
+  Module: 'CFNetwork.CFSocketStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 91
+- Name: 'kCFStreamErrorSOCKS4IdentdFailed'
+  JsName: 'kCFStreamErrorSOCKS4IdentdFailed'
+  Module: 'CFNetwork.CFSocketStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 92
+- Name: 'kCFStreamErrorSOCKS4IdConflict'
+  JsName: 'kCFStreamErrorSOCKS4IdConflict'
+  Module: 'CFNetwork.CFSocketStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 93
+- Name: 'kSOCKS5NoAcceptableMethod'
+  JsName: 'kSOCKS5NoAcceptableMethod'
+  Module: 'CFNetwork.CFSocketStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 255
+- Name: 'kCFStreamPropertySOCKSProxy'
+  JsName: 'kCFStreamPropertySOCKSProxy'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertySOCKSProxyHost'
+  JsName: 'kCFStreamPropertySOCKSProxyHost'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertySOCKSProxyPort'
+  JsName: 'kCFStreamPropertySOCKSProxyPort'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertySOCKSVersion'
+  JsName: 'kCFStreamPropertySOCKSVersion'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamSocketSOCKSVersion4'
+  JsName: 'kCFStreamSocketSOCKSVersion4'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamSocketSOCKSVersion5'
+  JsName: 'kCFStreamSocketSOCKSVersion5'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertySOCKSUser'
+  JsName: 'kCFStreamPropertySOCKSUser'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertySOCKSPassword'
+  JsName: 'kCFStreamPropertySOCKSPassword'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyProxyLocalBypass'
+  JsName: 'kCFStreamPropertyProxyLocalBypass'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamErrorDomainSSL'
+  JsName: 'kCFStreamErrorDomainSSL'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kCFStreamPropertySocketSecurityLevel'
+  JsName: 'kCFStreamPropertySocketSecurityLevel'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamSocketSecurityLevelNone'
+  JsName: 'kCFStreamSocketSecurityLevelNone'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamSocketSecurityLevelSSLv2'
+  JsName: 'kCFStreamSocketSecurityLevelSSLv2'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamSocketSecurityLevelSSLv3'
+  JsName: 'kCFStreamSocketSecurityLevelSSLv3'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamSocketSecurityLevelTLSv1'
+  JsName: 'kCFStreamSocketSecurityLevelTLSv1'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamSocketSecurityLevelNegotiatedSSL'
+  JsName: 'kCFStreamSocketSecurityLevelNegotiatedSSL'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyShouldCloseNativeSocket'
+  JsName: 'kCFStreamPropertyShouldCloseNativeSocket'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertySocketRemoteHost'
+  JsName: 'kCFStreamPropertySocketRemoteHost'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertySocketRemoteNetService'
+  JsName: 'kCFStreamPropertySocketRemoteNetService'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CFStreamCreatePairWithSocketToCFHost'
+  JsName: 'CFStreamCreatePairWithSocketToCFHost'
+  Module: 'CFNetwork.CFSocketStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFStream
+      Name: NSInputStream
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFStream
+      Name: NSOutputStream
+- Name: 'CFStreamCreatePairWithSocketToNetService'
+  JsName: 'CFStreamCreatePairWithSocketToNetService'
+  Module: 'CFNetwork.CFSocketStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFStream
+      Name: NSInputStream
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFStream
+      Name: NSOutputStream
+- Name: 'kCFStreamPropertySSLPeerCertificates'
+  JsName: 'kCFStreamPropertySSLPeerCertificates'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamSSLAllowsExpiredCertificates'
+  JsName: 'kCFStreamSSLAllowsExpiredCertificates'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamSSLAllowsExpiredRoots'
+  JsName: 'kCFStreamSSLAllowsExpiredRoots'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamSSLAllowsAnyRoot'
+  JsName: 'kCFStreamSSLAllowsAnyRoot'
+  Module: 'CFNetwork.CFSocketStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamErrorDomainFTP'
+  JsName: 'kCFStreamErrorDomainFTP'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Long
+- Name: 'kCFStreamPropertyFTPUserName'
+  JsName: 'kCFStreamPropertyFTPUserName'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyFTPPassword'
+  JsName: 'kCFStreamPropertyFTPPassword'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyFTPUsePassiveMode'
+  JsName: 'kCFStreamPropertyFTPUsePassiveMode'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyFTPResourceSize'
+  JsName: 'kCFStreamPropertyFTPResourceSize'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyFTPFetchResourceInfo'
+  JsName: 'kCFStreamPropertyFTPFetchResourceInfo'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyFTPFileTransferOffset'
+  JsName: 'kCFStreamPropertyFTPFileTransferOffset'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyFTPAttemptPersistentConnection'
+  JsName: 'kCFStreamPropertyFTPAttemptPersistentConnection'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyFTPProxy'
+  JsName: 'kCFStreamPropertyFTPProxy'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyFTPProxyHost'
+  JsName: 'kCFStreamPropertyFTPProxyHost'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyFTPProxyPort'
+  JsName: 'kCFStreamPropertyFTPProxyPort'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyFTPProxyUser'
+  JsName: 'kCFStreamPropertyFTPProxyUser'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyFTPProxyPassword'
+  JsName: 'kCFStreamPropertyFTPProxyPassword'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFFTPResourceMode'
+  JsName: 'kCFFTPResourceMode'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFFTPResourceName'
+  JsName: 'kCFFTPResourceName'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFFTPResourceOwner'
+  JsName: 'kCFFTPResourceOwner'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFFTPResourceGroup'
+  JsName: 'kCFFTPResourceGroup'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFFTPResourceLink'
+  JsName: 'kCFFTPResourceLink'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFFTPResourceSize'
+  JsName: 'kCFFTPResourceSize'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFFTPResourceType'
+  JsName: 'kCFFTPResourceType'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFFTPResourceModDate'
+  JsName: 'kCFFTPResourceModDate'
+  Module: 'CFNetwork.CFFTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CFReadStreamCreateWithFTPURL'
+  JsName: 'CFReadStreamCreateWithFTPURL'
+  Module: 'CFNetwork.CFFTPStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFStream
+    Name: NSInputStream
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+- Name: 'CFFTPCreateParsedResourceListing'
+  JsName: 'CFFTPCreateParsedResourceListing'
+  Module: 'CFNetwork.CFFTPStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFDictionary
+      Name: NSDictionary
+- Name: 'CFWriteStreamCreateWithFTPURL'
+  JsName: 'CFWriteStreamCreateWithFTPURL'
+  Module: 'CFNetwork.CFFTPStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFStream
+    Name: NSOutputStream
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+- Name: 'kCFHTTPVersion1_0'
+  JsName: 'kCFHTTPVersion1_0'
+  Module: 'CFNetwork.CFHTTPMessage'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFHTTPVersion1_1'
+  JsName: 'kCFHTTPVersion1_1'
+  Module: 'CFNetwork.CFHTTPMessage'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFHTTPAuthenticationSchemeBasic'
+  JsName: 'kCFHTTPAuthenticationSchemeBasic'
+  Module: 'CFNetwork.CFHTTPMessage'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFHTTPAuthenticationSchemeDigest'
+  JsName: 'kCFHTTPAuthenticationSchemeDigest'
+  Module: 'CFNetwork.CFHTTPMessage'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFHTTPAuthenticationSchemeNTLM'
+  JsName: 'kCFHTTPAuthenticationSchemeNTLM'
+  Module: 'CFNetwork.CFHTTPMessage'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFHTTPAuthenticationSchemeKerberos'
+  JsName: 'kCFHTTPAuthenticationSchemeKerberos'
+  Module: 'CFNetwork.CFHTTPMessage'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFHTTPAuthenticationSchemeNegotiate'
+  JsName: 'kCFHTTPAuthenticationSchemeNegotiate'
+  Module: 'CFNetwork.CFHTTPMessage'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFHTTPAuthenticationSchemeNegotiate2'
+  JsName: 'kCFHTTPAuthenticationSchemeNegotiate2'
+  Module: 'CFNetwork.CFHTTPMessage'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFHTTPAuthenticationSchemeXMobileMeAuthToken'
+  JsName: 'kCFHTTPAuthenticationSchemeXMobileMeAuthToken'
+  Module: 'CFNetwork.CFHTTPMessage'
+  IntroducedIn: 4.3
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFHTTPAuthenticationSchemeOAuth1'
+  JsName: 'kCFHTTPAuthenticationSchemeOAuth1'
+  Module: 'CFNetwork.CFHTTPMessage'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CFHTTPMessageGetTypeID'
+  JsName: 'CFHTTPMessageGetTypeID'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CFHTTPMessageCreateRequest'
+  JsName: 'CFHTTPMessageCreateRequest'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CFHTTPMessageCreateResponse'
+  JsName: 'CFHTTPMessageCreateResponse'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Long
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CFHTTPMessageCreateEmpty'
+  JsName: 'CFHTTPMessageCreateEmpty'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Bool
+- Name: 'CFHTTPMessageCreateCopy'
+  JsName: 'CFHTTPMessageCreateCopy'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFHTTPMessageIsRequest'
+  JsName: 'CFHTTPMessageIsRequest'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFHTTPMessageCopyVersion'
+  JsName: 'CFHTTPMessageCopyVersion'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFHTTPMessageCopyBody'
+  JsName: 'CFHTTPMessageCopyBody'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFHTTPMessageSetBody'
+  JsName: 'CFHTTPMessageSetBody'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+- Name: 'CFHTTPMessageCopyHeaderFieldValue'
+  JsName: 'CFHTTPMessageCopyHeaderFieldValue'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CFHTTPMessageCopyAllHeaderFields'
+  JsName: 'CFHTTPMessageCopyAllHeaderFields'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFHTTPMessageSetHeaderFieldValue'
+  JsName: 'CFHTTPMessageSetHeaderFieldValue'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CFHTTPMessageAppendBytes'
+  JsName: 'CFHTTPMessageAppendBytes'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Long
+- Name: 'CFHTTPMessageIsHeaderComplete'
+  JsName: 'CFHTTPMessageIsHeaderComplete'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFHTTPMessageCopySerializedMessage'
+  JsName: 'CFHTTPMessageCopySerializedMessage'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFHTTPMessageCopyRequestURL'
+  JsName: 'CFHTTPMessageCopyRequestURL'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFHTTPMessageCopyRequestMethod'
+  JsName: 'CFHTTPMessageCopyRequestMethod'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFHTTPMessageAddAuthentication'
+  JsName: 'CFHTTPMessageAddAuthentication'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Bool
+- Name: 'CFHTTPMessageGetResponseStatusCode'
+  JsName: 'CFHTTPMessageGetResponseStatusCode'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFHTTPMessageCopyResponseStatusLine'
+  JsName: 'CFHTTPMessageCopyResponseStatusLine'
+  Module: 'CFNetwork.CFHTTPMessage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kCFStreamErrorDomainHTTP'
+  JsName: 'kCFStreamErrorDomainHTTP'
+  Module: 'CFNetwork.CFHTTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Long
+- Name: 'CFStreamErrorHTTP'
+  JsName: 'CFStreamErrorHTTP'
+  Module: 'CFNetwork.CFHTTPStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCFStreamErrorHTTPParseFailure":-1,"kCFStreamErrorHTTPRedirectionLoop":-2,"kCFStreamErrorHTTPBadURL":-3})
+- Name: 'kCFStreamPropertyHTTPResponseHeader'
+  JsName: 'kCFStreamPropertyHTTPResponseHeader'
+  Module: 'CFNetwork.CFHTTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyHTTPFinalURL'
+  JsName: 'kCFStreamPropertyHTTPFinalURL'
+  Module: 'CFNetwork.CFHTTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyHTTPFinalRequest'
+  JsName: 'kCFStreamPropertyHTTPFinalRequest'
+  Module: 'CFNetwork.CFHTTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyHTTPProxy'
+  JsName: 'kCFStreamPropertyHTTPProxy'
+  Module: 'CFNetwork.CFHTTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyHTTPProxyHost'
+  JsName: 'kCFStreamPropertyHTTPProxyHost'
+  Module: 'CFNetwork.CFHTTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyHTTPProxyPort'
+  JsName: 'kCFStreamPropertyHTTPProxyPort'
+  Module: 'CFNetwork.CFHTTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyHTTPSProxyHost'
+  JsName: 'kCFStreamPropertyHTTPSProxyHost'
+  Module: 'CFNetwork.CFHTTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyHTTPSProxyPort'
+  JsName: 'kCFStreamPropertyHTTPSProxyPort'
+  Module: 'CFNetwork.CFHTTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyHTTPShouldAutoredirect'
+  JsName: 'kCFStreamPropertyHTTPShouldAutoredirect'
+  Module: 'CFNetwork.CFHTTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyHTTPAttemptPersistentConnection'
+  JsName: 'kCFStreamPropertyHTTPAttemptPersistentConnection'
+  Module: 'CFNetwork.CFHTTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFStreamPropertyHTTPRequestBytesWrittenCount'
+  JsName: 'kCFStreamPropertyHTTPRequestBytesWrittenCount'
+  Module: 'CFNetwork.CFHTTPStream'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CFReadStreamCreateForHTTPRequest'
+  JsName: 'CFReadStreamCreateForHTTPRequest'
+  Module: 'CFNetwork.CFHTTPStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFStream
+    Name: NSInputStream
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFReadStreamCreateForStreamedHTTPRequest'
+  JsName: 'CFReadStreamCreateForStreamedHTTPRequest'
+  Module: 'CFNetwork.CFHTTPStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFStream
+    Name: NSInputStream
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFStream
+    Name: NSInputStream
+- Name: 'CFStreamErrorHTTPAuthentication'
+  JsName: 'CFStreamErrorHTTPAuthentication'
+  Module: 'CFNetwork.CFHTTPAuthentication'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCFStreamErrorHTTPAuthenticationTypeUnsupported":-1000,"kCFStreamErrorHTTPAuthenticationBadUserName":-1001,"kCFStreamErrorHTTPAuthenticationBadPassword":-1002})
+- Name: 'kCFHTTPAuthenticationUsername'
+  JsName: 'kCFHTTPAuthenticationUsername'
+  Module: 'CFNetwork.CFHTTPAuthentication'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFHTTPAuthenticationPassword'
+  JsName: 'kCFHTTPAuthenticationPassword'
+  Module: 'CFNetwork.CFHTTPAuthentication'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFHTTPAuthenticationAccountDomain'
+  JsName: 'kCFHTTPAuthenticationAccountDomain'
+  Module: 'CFNetwork.CFHTTPAuthentication'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CFHTTPAuthenticationGetTypeID'
+  JsName: 'CFHTTPAuthenticationGetTypeID'
+  Module: 'CFNetwork.CFHTTPAuthentication'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CFHTTPAuthenticationCreateFromResponse'
+  JsName: 'CFHTTPAuthenticationCreateFromResponse'
+  Module: 'CFNetwork.CFHTTPAuthentication'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFHTTPAuthenticationIsValid'
+  JsName: 'CFHTTPAuthenticationIsValid'
+  Module: 'CFNetwork.CFHTTPAuthentication'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreFoundation.CFStream
+      Name: CFStreamError
+- Name: 'CFHTTPAuthenticationAppliesToRequest'
+  JsName: 'CFHTTPAuthenticationAppliesToRequest'
+  Module: 'CFNetwork.CFHTTPAuthentication'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFHTTPAuthenticationRequiresOrderedRequests'
+  JsName: 'CFHTTPAuthenticationRequiresOrderedRequests'
+  Module: 'CFNetwork.CFHTTPAuthentication'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFHTTPMessageApplyCredentials'
+  JsName: 'CFHTTPMessageApplyCredentials'
+  Module: 'CFNetwork.CFHTTPAuthentication'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreFoundation.CFStream
+      Name: CFStreamError
+- Name: 'CFHTTPMessageApplyCredentialDictionary'
+  JsName: 'CFHTTPMessageApplyCredentialDictionary'
+  Module: 'CFNetwork.CFHTTPAuthentication'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreFoundation.CFStream
+      Name: CFStreamError
+- Name: 'CFHTTPAuthenticationCopyRealm'
+  JsName: 'CFHTTPAuthenticationCopyRealm'
+  Module: 'CFNetwork.CFHTTPAuthentication'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFHTTPAuthenticationCopyDomains'
+  JsName: 'CFHTTPAuthenticationCopyDomains'
+  Module: 'CFNetwork.CFHTTPAuthentication'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFHTTPAuthenticationCopyMethod'
+  JsName: 'CFHTTPAuthenticationCopyMethod'
+  Module: 'CFNetwork.CFHTTPAuthentication'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFHTTPAuthenticationRequiresUserNameAndPassword'
+  JsName: 'CFHTTPAuthenticationRequiresUserNameAndPassword'
+  Module: 'CFNetwork.CFHTTPAuthentication'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFHTTPAuthenticationRequiresAccountDomain'
+  JsName: 'CFHTTPAuthenticationRequiresAccountDomain'
+  Module: 'CFNetwork.CFHTTPAuthentication'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFNetDiagnosticStatusValues'
+  JsName: 'CFNetDiagnosticStatusValues'
+  Module: 'CFNetwork.CFNetDiagnostics'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCFNetDiagnosticNoErr":0,"kCFNetDiagnosticErr":-66560,"kCFNetDiagnosticConnectionUp":-66559,"kCFNetDiagnosticConnectionIndeterminate":-66558,"kCFNetDiagnosticConnectionDown":-66557})
+- Name: 'CFNetDiagnosticCreateWithStreams'
+  JsName: 'CFNetDiagnosticCreateWithStreams'
+  Module: 'CFNetwork.CFNetDiagnostics'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFStream
+    Name: NSInputStream
+  - Type: Interface
+    Module: CoreFoundation.CFStream
+    Name: NSOutputStream
+- Name: 'CFNetDiagnosticCreateWithURL'
+  JsName: 'CFNetDiagnosticCreateWithURL'
+  Module: 'CFNetwork.CFNetDiagnostics'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+- Name: 'CFNetDiagnosticSetName'
+  JsName: 'CFNetDiagnosticSetName'
+  Module: 'CFNetwork.CFNetDiagnostics'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CFNetDiagnosticDiagnoseProblemInteractively'
+  JsName: 'CFNetDiagnosticDiagnoseProblemInteractively'
+  Module: 'CFNetwork.CFNetDiagnostics'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CFNetDiagnosticCopyNetworkStatusPassively'
+  JsName: 'CFNetDiagnosticCopyNetworkStatusPassively'
+  Module: 'CFNetwork.CFNetDiagnostics'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFBase
+      Name: NSString
+- Name: 'CFNetworkCopySystemProxySettings'
+  JsName: 'CFNetworkCopySystemProxySettings'
+  Module: 'CFNetwork.CFProxySupport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CFNetworkCopyProxiesForURL'
+  JsName: 'CFNetworkCopyProxiesForURL'
+  Module: 'CFNetwork.CFProxySupport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CFNetworkCopyProxiesForAutoConfigurationScript'
+  JsName: 'CFNetworkCopyProxiesForAutoConfigurationScript'
+  Module: 'CFNetwork.CFProxySupport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFError
+      Name: NSError
+- Name: 'CFNetworkExecuteProxyAutoConfigurationScript'
+  JsName: 'CFNetworkExecuteProxyAutoConfigurationScript'
+  Module: 'CFNetwork.CFProxySupport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Interface
+      Module: CoreFoundation.CFArray
+      Name: NSArray
+    - Type: Interface
+      Module: CoreFoundation.CFError
+      Name: NSError
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreFoundation.CFStream
+      Name: CFStreamClientContext
+- Name: 'CFNetworkExecuteProxyAutoConfigurationURL'
+  JsName: 'CFNetworkExecuteProxyAutoConfigurationURL'
+  Module: 'CFNetwork.CFProxySupport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Interface
+      Module: CoreFoundation.CFArray
+      Name: NSArray
+    - Type: Interface
+      Module: CoreFoundation.CFError
+      Name: NSError
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreFoundation.CFStream
+      Name: CFStreamClientContext
+- Name: 'kCFProxyTypeKey'
+  JsName: 'kCFProxyTypeKey'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFProxyHostNameKey'
+  JsName: 'kCFProxyHostNameKey'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFProxyPortNumberKey'
+  JsName: 'kCFProxyPortNumberKey'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFProxyAutoConfigurationURLKey'
+  JsName: 'kCFProxyAutoConfigurationURLKey'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFProxyAutoConfigurationJavaScriptKey'
+  JsName: 'kCFProxyAutoConfigurationJavaScriptKey'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFProxyUsernameKey'
+  JsName: 'kCFProxyUsernameKey'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFProxyPasswordKey'
+  JsName: 'kCFProxyPasswordKey'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFProxyTypeNone'
+  JsName: 'kCFProxyTypeNone'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFProxyTypeHTTP'
+  JsName: 'kCFProxyTypeHTTP'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFProxyTypeHTTPS'
+  JsName: 'kCFProxyTypeHTTPS'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFProxyTypeSOCKS'
+  JsName: 'kCFProxyTypeSOCKS'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFProxyTypeFTP'
+  JsName: 'kCFProxyTypeFTP'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFProxyTypeAutoConfigurationURL'
+  JsName: 'kCFProxyTypeAutoConfigurationURL'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFProxyTypeAutoConfigurationJavaScript'
+  JsName: 'kCFProxyTypeAutoConfigurationJavaScript'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFProxyAutoConfigurationHTTPResponseKey'
+  JsName: 'kCFProxyAutoConfigurationHTTPResponseKey'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFNetworkProxiesHTTPEnable'
+  JsName: 'kCFNetworkProxiesHTTPEnable'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFNetworkProxiesHTTPPort'
+  JsName: 'kCFNetworkProxiesHTTPPort'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFNetworkProxiesHTTPProxy'
+  JsName: 'kCFNetworkProxiesHTTPProxy'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFNetworkProxiesProxyAutoConfigEnable'
+  JsName: 'kCFNetworkProxiesProxyAutoConfigEnable'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFNetworkProxiesProxyAutoConfigURLString'
+  JsName: 'kCFNetworkProxiesProxyAutoConfigURLString'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCFNetworkProxiesProxyAutoConfigJavaScript'
+  JsName: 'kCFNetworkProxiesProxyAutoConfigJavaScript'
+  Module: 'CFNetwork.CFProxySupport'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+...

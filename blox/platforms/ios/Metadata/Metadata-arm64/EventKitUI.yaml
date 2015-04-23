@@ -1,0 +1,585 @@
+name: EventKitUI
+items:
+- Name: '1217'
+  JsName: 'EKEventEditViewAction'
+  Module: 'EventKitUI.EKEventEditViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"EKEventEditViewActionCanceled":0,"EKEventEditViewActionSaved":1,"EKEventEditViewActionDeleted":2,"EKEventEditViewActionCancelled":0})
+- Name: 'EKEventEditViewController'
+  JsName: 'EKEventEditViewController'
+  Module: 'EventKitUI.EKEventEditViewController'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'cancelEditing'
+    JsName: 'cancelEditing'
+    Module: 'EventKitUI.EKEventEditViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancelEditing'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods: []
+  Properties:
+  - Name: 'editViewDelegate'
+    JsName: 'editViewDelegate'
+    Module: 'EventKitUI.EKEventEditViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'editViewDelegate'
+      JsName: 'editViewDelegate'
+      Module: 'EventKitUI.EKEventEditViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'editViewDelegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: EventKitUI.EKEventEditViewController
+          Name: EKEventEditViewDelegate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setEditViewDelegate:'
+      JsName: 'setEditViewDelegate'
+      Module: 'EventKitUI.EKEventEditViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setEditViewDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: EventKitUI.EKEventEditViewController
+          Name: EKEventEditViewDelegate
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'event'
+    JsName: 'event'
+    Module: 'EventKitUI.EKEventEditViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'event'
+      JsName: 'event'
+      Module: 'EventKitUI.EKEventEditViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'event'
+      Signature:
+      - Type: Interface
+        Module: EventKit.EKEvent
+        Name: EKEvent
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setEvent:'
+      JsName: 'setEvent'
+      Module: 'EventKitUI.EKEventEditViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setEvent:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: EventKit.EKEvent
+        Name: EKEvent
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'eventStore'
+    JsName: 'eventStore'
+    Module: 'EventKitUI.EKEventEditViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'eventStore'
+      JsName: 'eventStore'
+      Module: 'EventKitUI.EKEventEditViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'eventStore'
+      Signature:
+      - Type: Interface
+        Module: EventKit.EKEventStore
+        Name: EKEventStore
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setEventStore:'
+      JsName: 'setEventStore'
+      Module: 'EventKitUI.EKEventEditViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setEventStore:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: EventKit.EKEventStore
+        Name: EKEventStore
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: UIKit.UINavigationController
+    Name: UINavigationController
+  Type: Interface
+- Name: 'EKEventEditViewDelegate'
+  JsName: 'EKEventEditViewDelegate'
+  Module: 'EventKitUI.EKEventEditViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'eventEditViewControllerDefaultCalendarForNewEvents:'
+    JsName: 'eventEditViewControllerDefaultCalendarForNewEvents'
+    Module: 'EventKitUI.EKEventEditViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'eventEditViewControllerDefaultCalendarForNewEvents:'
+    Signature:
+    - Type: Interface
+      Module: EventKit.EKCalendar
+      Name: EKCalendar
+    - Type: Interface
+      Module: EventKitUI.EKEventEditViewController
+      Name: EKEventEditViewController
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'eventEditViewController:didCompleteWithAction:'
+    JsName: 'eventEditViewControllerDidCompleteWithAction'
+    Module: 'EventKitUI.EKEventEditViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'eventEditViewController:didCompleteWithAction:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: EventKitUI.EKEventEditViewController
+      Name: EKEventEditViewController
+    - Type: UInt
+    TypeEncoding: 'v28@0:8@16i24'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: '1218'
+  JsName: 'EKEventViewAction'
+  Module: 'EventKitUI.EKEventViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"EKEventViewActionDone":0,"EKEventViewActionResponded":1,"EKEventViewActionDeleted":2})
+- Name: 'EKEventViewController'
+  JsName: 'EKEventViewController'
+  Module: 'EventKitUI.EKEventViewController'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'allowsCalendarPreview'
+    JsName: 'allowsCalendarPreview'
+    Module: 'EventKitUI.EKEventViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'allowsCalendarPreview'
+      JsName: 'allowsCalendarPreview'
+      Module: 'EventKitUI.EKEventViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'allowsCalendarPreview'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setAllowsCalendarPreview:'
+      JsName: 'setAllowsCalendarPreview'
+      Module: 'EventKitUI.EKEventViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAllowsCalendarPreview:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'allowsEditing'
+    JsName: 'allowsEditing'
+    Module: 'EventKitUI.EKEventViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'allowsEditing'
+      JsName: 'allowsEditing'
+      Module: 'EventKitUI.EKEventViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'allowsEditing'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setAllowsEditing:'
+      JsName: 'setAllowsEditing'
+      Module: 'EventKitUI.EKEventViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAllowsEditing:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'EventKitUI.EKEventViewController'
+    IntroducedIn: 4.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'EventKitUI.EKEventViewController'
+      IntroducedIn: 4.2
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: EventKitUI.EKEventViewController
+          Name: EKEventViewDelegate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'EventKitUI.EKEventViewController'
+      IntroducedIn: 4.2
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: EventKitUI.EKEventViewController
+          Name: EKEventViewDelegate
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'event'
+    JsName: 'event'
+    Module: 'EventKitUI.EKEventViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'event'
+      JsName: 'event'
+      Module: 'EventKitUI.EKEventViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'event'
+      Signature:
+      - Type: Interface
+        Module: EventKit.EKEvent
+        Name: EKEvent
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setEvent:'
+      JsName: 'setEvent'
+      Module: 'EventKitUI.EKEventViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setEvent:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: EventKit.EKEvent
+        Name: EKEvent
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Interface
+- Name: 'EKEventViewDelegate'
+  JsName: 'EKEventViewDelegate'
+  Module: 'EventKitUI.EKEventViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'eventViewController:didCompleteWithAction:'
+    JsName: 'eventViewControllerDidCompleteWithAction'
+    Module: 'EventKitUI.EKEventViewController'
+    IntroducedIn: 4.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'eventViewController:didCompleteWithAction:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: EventKitUI.EKEventViewController
+      Name: EKEventViewController
+    - Type: UInt
+    TypeEncoding: 'v28@0:8@16i24'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: '1219'
+  JsName: 'EKCalendarChooserSelectionStyle'
+  Module: 'EventKitUI.EKCalendarChooser'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"EKCalendarChooserSelectionStyleSingle":0,"EKCalendarChooserSelectionStyleMultiple":1})
+- Name: '1220'
+  JsName: 'EKCalendarChooserDisplayStyle'
+  Module: 'EventKitUI.EKCalendarChooser'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"EKCalendarChooserDisplayAllCalendars":0,"EKCalendarChooserDisplayWritableCalendarsOnly":1})
+- Name: 'EKCalendarChooser'
+  JsName: 'EKCalendarChooser'
+  Module: 'EventKitUI.EKCalendarChooser'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithSelectionStyle:displayStyle:entityType:eventStore:'
+    JsName: 'initWithSelectionStyleDisplayStyleEntityTypeEventStore'
+    Module: 'EventKitUI.EKCalendarChooser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithSelectionStyle:displayStyle:entityType:eventStore:'
+    Signature:
+    - Type: Instancetype
+    - Type: UInt
+    - Type: UInt
+    - Type: ULong
+    - Type: Interface
+      Module: EventKit.EKEventStore
+      Name: EKEventStore
+    TypeEncoding: '@40@0:8i16i20Q24@32'
+  - Name: 'initWithSelectionStyle:displayStyle:eventStore:'
+    JsName: 'initWithSelectionStyleDisplayStyleEventStore'
+    Module: 'EventKitUI.EKCalendarChooser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithSelectionStyle:displayStyle:eventStore:'
+    Signature:
+    - Type: Instancetype
+    - Type: UInt
+    - Type: UInt
+    - Type: Interface
+      Module: EventKit.EKEventStore
+      Name: EKEventStore
+    TypeEncoding: '@32@0:8i16i20@24'
+  StaticMethods: []
+  Properties:
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'EventKitUI.EKCalendarChooser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'EventKitUI.EKCalendarChooser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: EventKitUI.EKCalendarChooser
+          Name: EKCalendarChooserDelegate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'EventKitUI.EKCalendarChooser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: EventKitUI.EKCalendarChooser
+          Name: EKCalendarChooserDelegate
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'selectedCalendars'
+    JsName: 'selectedCalendars'
+    Module: 'EventKitUI.EKCalendarChooser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'selectedCalendars'
+      JsName: 'selectedCalendars'
+      Module: 'EventKitUI.EKCalendarChooser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'selectedCalendars'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSSet
+        Name: NSSet
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setSelectedCalendars:'
+      JsName: 'setSelectedCalendars'
+      Module: 'EventKitUI.EKCalendarChooser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSelectedCalendars:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSSet
+        Name: NSSet
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'selectionStyle'
+    JsName: 'selectionStyle'
+    Module: 'EventKitUI.EKCalendarChooser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'selectionStyle'
+      JsName: 'selectionStyle'
+      Module: 'EventKitUI.EKCalendarChooser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'selectionStyle'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'i16@0:8'
+  - Name: 'showsCancelButton'
+    JsName: 'showsCancelButton'
+    Module: 'EventKitUI.EKCalendarChooser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'showsCancelButton'
+      JsName: 'showsCancelButton'
+      Module: 'EventKitUI.EKCalendarChooser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'showsCancelButton'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setShowsCancelButton:'
+      JsName: 'setShowsCancelButton'
+      Module: 'EventKitUI.EKCalendarChooser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShowsCancelButton:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'showsDoneButton'
+    JsName: 'showsDoneButton'
+    Module: 'EventKitUI.EKCalendarChooser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'showsDoneButton'
+      JsName: 'showsDoneButton'
+      Module: 'EventKitUI.EKCalendarChooser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'showsDoneButton'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setShowsDoneButton:'
+      JsName: 'setShowsDoneButton'
+      Module: 'EventKitUI.EKCalendarChooser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShowsDoneButton:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  Protocols: []
+  Base:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Interface
+- Name: 'EKCalendarChooserDelegate'
+  JsName: 'EKCalendarChooserDelegate'
+  Module: 'EventKitUI.EKCalendarChooser'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'calendarChooserDidCancel:'
+    JsName: 'calendarChooserDidCancel'
+    Module: 'EventKitUI.EKCalendarChooser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'calendarChooserDidCancel:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: EventKitUI.EKCalendarChooser
+      Name: EKCalendarChooser
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'calendarChooserDidFinish:'
+    JsName: 'calendarChooserDidFinish'
+    Module: 'EventKitUI.EKCalendarChooser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'calendarChooserDidFinish:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: EventKitUI.EKCalendarChooser
+      Name: EKCalendarChooser
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'calendarChooserSelectionDidChange:'
+    JsName: 'calendarChooserSelectionDidChange'
+    Module: 'EventKitUI.EKCalendarChooser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'calendarChooserSelectionDidChange:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: EventKitUI.EKCalendarChooser
+      Name: EKCalendarChooser
+    TypeEncoding: 'v24@0:8@16'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+...

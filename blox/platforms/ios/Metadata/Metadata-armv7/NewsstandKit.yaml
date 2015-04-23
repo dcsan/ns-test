@@ -1,0 +1,423 @@
+name: NewsstandKit
+items:
+- Name: 'NKLibrary'
+  JsName: 'NKLibrary'
+  Module: 'NewsstandKit.NKLibrary'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addIssueWithName:date:'
+    JsName: 'addIssueWithNameDate'
+    Module: 'NewsstandKit.NKLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addIssueWithName:date:'
+    Signature:
+    - Type: Interface
+      Module: NewsstandKit.NKIssue
+      Name: NKIssue
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    TypeEncoding: '@16@0:4@8@12'
+  - Name: 'issueWithName:'
+    JsName: 'issueWithName'
+    Module: 'NewsstandKit.NKLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'issueWithName:'
+    Signature:
+    - Type: Interface
+      Module: NewsstandKit.NKIssue
+      Name: NKIssue
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'removeIssue:'
+    JsName: 'removeIssue'
+    Module: 'NewsstandKit.NKLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeIssue:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: NewsstandKit.NKIssue
+      Name: NKIssue
+    TypeEncoding: 'v12@0:4@8'
+  StaticMethods:
+  - Name: 'sharedLibrary'
+    JsName: 'sharedLibrary'
+    Module: 'NewsstandKit.NKLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'sharedLibrary'
+    Signature:
+    - Type: Interface
+      Module: NewsstandKit.NKLibrary
+      Name: NKLibrary
+    TypeEncoding: '@8@0:4'
+  Properties:
+  - Name: 'currentlyReadingIssue'
+    JsName: 'currentlyReadingIssue'
+    Module: 'NewsstandKit.NKLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'currentlyReadingIssue'
+      JsName: 'currentlyReadingIssue'
+      Module: 'NewsstandKit.NKLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'currentlyReadingIssue'
+      Signature:
+      - Type: Interface
+        Module: NewsstandKit.NKIssue
+        Name: NKIssue
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setCurrentlyReadingIssue:'
+      JsName: 'setCurrentlyReadingIssue'
+      Module: 'NewsstandKit.NKLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCurrentlyReadingIssue:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: NewsstandKit.NKIssue
+        Name: NKIssue
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'downloadingAssets'
+    JsName: 'downloadingAssets'
+    Module: 'NewsstandKit.NKLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'downloadingAssets'
+      JsName: 'downloadingAssets'
+      Module: 'NewsstandKit.NKLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'downloadingAssets'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'issues'
+    JsName: 'issues'
+    Module: 'NewsstandKit.NKLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'issues'
+      JsName: 'issues'
+      Module: 'NewsstandKit.NKLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'issues'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'NKIssueDownloadCompletedNotification'
+  JsName: 'NKIssueDownloadCompletedNotification'
+  Module: 'NewsstandKit.NKIssue'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'NKIssueContentStatus'
+  JsName: 'NKIssueContentStatus'
+  Module: 'NewsstandKit.NKIssue'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"NKIssueContentStatusNone":0,"NKIssueContentStatusDownloading":1,"NKIssueContentStatusAvailable":2})
+- Name: 'NKIssue'
+  JsName: 'NKIssue'
+  Module: 'NewsstandKit.NKIssue'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addAssetWithRequest:'
+    JsName: 'addAssetWithRequest'
+    Module: 'NewsstandKit.NKIssue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addAssetWithRequest:'
+    Signature:
+    - Type: Interface
+      Module: NewsstandKit.NKAssetDownload
+      Name: NKAssetDownload
+    - Type: Interface
+      Module: Foundation.NSURLRequest
+      Name: NSURLRequest
+    TypeEncoding: '@12@0:4@8'
+  StaticMethods: []
+  Properties:
+  - Name: 'contentURL'
+    JsName: 'contentURL'
+    Module: 'NewsstandKit.NKIssue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'contentURL'
+      JsName: 'contentURL'
+      Module: 'NewsstandKit.NKIssue'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'contentURL'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@8@0:4'
+  - Name: 'date'
+    JsName: 'date'
+    Module: 'NewsstandKit.NKIssue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'date'
+      JsName: 'date'
+      Module: 'NewsstandKit.NKIssue'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'date'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'downloadingAssets'
+    JsName: 'downloadingAssets'
+    Module: 'NewsstandKit.NKIssue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'downloadingAssets'
+      JsName: 'downloadingAssets'
+      Module: 'NewsstandKit.NKIssue'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'downloadingAssets'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'NewsstandKit.NKIssue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'NewsstandKit.NKIssue'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'status'
+    JsName: 'status'
+    Module: 'NewsstandKit.NKIssue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'status'
+      JsName: 'status'
+      Module: 'NewsstandKit.NKIssue'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'status'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'NKAssetDownload'
+  JsName: 'NKAssetDownload'
+  Module: 'NewsstandKit.NKAssetDownload'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'downloadWithDelegate:'
+    JsName: 'downloadWithDelegate'
+    Module: 'NewsstandKit.NKAssetDownload'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'downloadWithDelegate:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSURLConnection
+      Name: NSURLConnection
+    - Type: Id
+      WithProtocols:
+      - Module: Foundation.NSURLConnection
+        Name: NSURLConnectionDownloadDelegate
+    TypeEncoding: '@12@0:4@8'
+  StaticMethods: []
+  Properties:
+  - Name: 'identifier'
+    JsName: 'identifier'
+    Module: 'NewsstandKit.NKAssetDownload'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'identifier'
+      JsName: 'identifier'
+      Module: 'NewsstandKit.NKAssetDownload'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'identifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'issue'
+    JsName: 'issue'
+    Module: 'NewsstandKit.NKAssetDownload'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'issue'
+      JsName: 'issue'
+      Module: 'NewsstandKit.NKAssetDownload'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'issue'
+      Signature:
+      - Type: Interface
+        Module: NewsstandKit.NKIssue
+        Name: NKIssue
+      TypeEncoding: '@8@0:4'
+  - Name: 'URLRequest'
+    JsName: 'URLRequest'
+    Module: 'NewsstandKit.NKAssetDownload'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'URLRequest'
+      JsName: 'URLRequest'
+      Module: 'NewsstandKit.NKAssetDownload'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'URLRequest'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURLRequest
+        Name: NSURLRequest
+      TypeEncoding: '@8@0:4'
+  - Name: 'userInfo'
+    JsName: 'userInfo'
+    Module: 'NewsstandKit.NKAssetDownload'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'userInfo'
+      JsName: 'userInfo'
+      Module: 'NewsstandKit.NKAssetDownload'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'userInfo'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setUserInfo:'
+      JsName: 'setUserInfo'
+      Module: 'NewsstandKit.NKAssetDownload'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setUserInfo:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'NKAssetDownloadAdditions'
+  JsName: 'NKAssetDownloadAdditions'
+  Module: 'NewsstandKit.NKNSURLConnectionAdditions'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'newsstandAssetDownload'
+    JsName: 'newsstandAssetDownload'
+    Module: 'NewsstandKit.NKNSURLConnectionAdditions'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'newsstandAssetDownload'
+      JsName: 'newsstandAssetDownload'
+      Module: 'NewsstandKit.NKNSURLConnectionAdditions'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      - MethodOwnsReturnedCocoaObject
+      Selector: 'newsstandAssetDownload'
+      Signature:
+      - Type: Interface
+        Module: NewsstandKit.NKAssetDownload
+        Name: NKAssetDownload
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  ExtendedInterface:
+    Module: Foundation.NSURLConnection
+    Name: NSURLConnection
+  Type: Category
+...

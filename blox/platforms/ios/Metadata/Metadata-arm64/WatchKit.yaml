@@ -1,0 +1,1676 @@
+name: WatchKit
+items:
+- Name: 'WatchKitErrorDomain'
+  JsName: 'WatchKitErrorDomain'
+  Module: 'WatchKit.WKError'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'WatchKitErrorCode'
+  JsName: 'WatchKitErrorCode'
+  Module: 'WatchKit.WKError'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"WatchKitUnknownError":1,"WatchKitApplicationDelegateWatchKitRequestReplyNotCalledError":2})
+- Name: 'WKUserNotificationInterfaceType'
+  JsName: 'WKUserNotificationInterfaceType'
+  Module: 'WatchKit.WKInterfaceController'
+  IntroducedIn: 8.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"WKUserNotificationInterfaceTypeDefault":0,"WKUserNotificationInterfaceTypeCustom":1})
+- Name: 'WKMenuItemIcon'
+  JsName: 'WKMenuItemIcon'
+  Module: 'WatchKit.WKInterfaceController'
+  IntroducedIn: 8.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"WKMenuItemIconAccept":0,"WKMenuItemIconAdd":1,"WKMenuItemIconBlock":2,"WKMenuItemIconDecline":3,"WKMenuItemIconInfo":4,"WKMenuItemIconMaybe":5,"WKMenuItemIconMore":6,"WKMenuItemIconMute":7,"WKMenuItemIconPause":8,"WKMenuItemIconPlay":9,"WKMenuItemIconRepeat":10,"WKMenuItemIconResume":11,"WKMenuItemIconShare":12,"WKMenuItemIconShuffle":13,"WKMenuItemIconSpeaker":14,"WKMenuItemIconTrash":15})
+- Name: 'WKTextInputMode'
+  JsName: 'WKTextInputMode'
+  Module: 'WatchKit.WKInterfaceController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"WKTextInputModePlain":0,"WKTextInputModeAllowEmoji":1,"WKTextInputModeAllowAnimatedEmoji":2})
+- Name: 'WKInterfaceController'
+  JsName: 'WKInterfaceController'
+  Module: 'WatchKit.WKInterfaceController'
+  IntroducedIn: 8.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addMenuItemWithImageNamed:title:action:'
+    JsName: 'addMenuItemWithImageNamedTitleAction'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addMenuItemWithImageNamed:title:action:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Selector
+    TypeEncoding: 'v40@0:8@16@24:32'
+  - Name: 'addMenuItemWithImage:title:action:'
+    JsName: 'addMenuItemWithImageTitleAction'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addMenuItemWithImage:title:action:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Selector
+    TypeEncoding: 'v40@0:8@16@24:32'
+  - Name: 'addMenuItemWithItemIcon:title:action:'
+    JsName: 'addMenuItemWithItemIconTitleAction'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addMenuItemWithItemIcon:title:action:'
+    Signature:
+    - Type: Void
+    - Type: Long
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Selector
+    TypeEncoding: 'v40@0:8q16@24:32'
+  - Name: 'awakeWithContext:'
+    JsName: 'awakeWithContext'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'awakeWithContext:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'becomeCurrentPage'
+    JsName: 'becomeCurrentPage'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'becomeCurrentPage'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'clearAllMenuItems'
+    JsName: 'clearAllMenuItems'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'clearAllMenuItems'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'contextForSegueWithIdentifier:'
+    JsName: 'contextForSegueWithIdentifier'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'contextForSegueWithIdentifier:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'contextForSegueWithIdentifier:inTable:rowIndex:'
+    JsName: 'contextForSegueWithIdentifierInTableRowIndex'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'contextForSegueWithIdentifier:inTable:rowIndex:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: WatchKit.WKInterfaceTable
+      Name: WKInterfaceTable
+    - Type: Long
+    TypeEncoding: '@40@0:8@16@24q32'
+  - Name: 'contextsForSegueWithIdentifier:'
+    JsName: 'contextsForSegueWithIdentifier'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'contextsForSegueWithIdentifier:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'contextsForSegueWithIdentifier:inTable:rowIndex:'
+    JsName: 'contextsForSegueWithIdentifierInTableRowIndex'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'contextsForSegueWithIdentifier:inTable:rowIndex:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: WatchKit.WKInterfaceTable
+      Name: WKInterfaceTable
+    - Type: Long
+    TypeEncoding: '@40@0:8@16@24q32'
+  - Name: 'didDeactivate'
+    JsName: 'didDeactivate'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'didDeactivate'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'dismissController'
+    JsName: 'dismissController'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'dismissController'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'dismissTextInputController'
+    JsName: 'dismissTextInputController'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'dismissTextInputController'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'handleActionWithIdentifier:forLocalNotification:'
+    JsName: 'handleActionWithIdentifierForLocalNotification'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'handleActionWithIdentifier:forLocalNotification:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: UIKit.UILocalNotification
+      Name: UILocalNotification
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'handleActionWithIdentifier:forRemoteNotification:'
+    JsName: 'handleActionWithIdentifierForRemoteNotification'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'handleActionWithIdentifier:forRemoteNotification:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'handleUserActivity:'
+    JsName: 'handleUserActivity'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'handleUserActivity:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'invalidateUserActivity'
+    JsName: 'invalidateUserActivity'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'invalidateUserActivity'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'popController'
+    JsName: 'popController'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'popController'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'popToRootController'
+    JsName: 'popToRootController'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'popToRootController'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'presentControllerWithName:context:'
+    JsName: 'presentControllerWithNameContext'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'presentControllerWithName:context:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'presentControllerWithNames:contexts:'
+    JsName: 'presentControllerWithNamesContexts'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'presentControllerWithNames:contexts:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'presentTextInputControllerWithSuggestions:allowedInputMode:completion:'
+    JsName: 'presentTextInputControllerWithSuggestionsAllowedInputModeCompletion'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'presentTextInputControllerWithSuggestions:allowedInputMode:completion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Long
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+    TypeEncoding: 'v40@0:8@16q24@?32'
+  - Name: 'pushControllerWithName:context:'
+    JsName: 'pushControllerWithNameContext'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'pushControllerWithName:context:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'setTitle:'
+    JsName: 'setTitle'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setTitle:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'table:didSelectRowAtIndex:'
+    JsName: 'tableDidSelectRowAtIndex'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'table:didSelectRowAtIndex:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: WatchKit.WKInterfaceTable
+      Name: WKInterfaceTable
+    - Type: Long
+    TypeEncoding: 'v32@0:8@16q24'
+  - Name: 'updateUserActivity:userInfo:webpageURL:'
+    JsName: 'updateUserActivityUserInfoWebpageURL'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'updateUserActivity:userInfo:webpageURL:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    TypeEncoding: 'v40@0:8@16@24@32'
+  - Name: 'willActivate'
+    JsName: 'willActivate'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'willActivate'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods:
+  - Name: 'openParentApplication:reply:'
+    JsName: 'openParentApplicationReply'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'openParentApplication:reply:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'B32@0:8@16@?24'
+  - Name: 'reloadRootControllersWithNames:contexts:'
+    JsName: 'reloadRootControllersWithNamesContexts'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'reloadRootControllersWithNames:contexts:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v32@0:8@16@24'
+  Properties:
+  - Name: 'contentFrame'
+    JsName: 'contentFrame'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'contentFrame'
+      JsName: 'contentFrame'
+      Module: 'WatchKit.WKInterfaceController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'contentFrame'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGRect
+      TypeEncoding: '{CGRect={CGPoint=dd}{CGSize=dd}}16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'WKUserNotificationInterfaceController'
+  JsName: 'WKUserNotificationInterfaceController'
+  Module: 'WatchKit.WKInterfaceController'
+  IntroducedIn: 8.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'didReceiveLocalNotification:withCompletion:'
+    JsName: 'didReceiveLocalNotificationWithCompletion'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'didReceiveLocalNotification:withCompletion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UILocalNotification
+      Name: UILocalNotification
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Long
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'didReceiveRemoteNotification:withCompletion:'
+    JsName: 'didReceiveRemoteNotificationWithCompletion'
+    Module: 'WatchKit.WKInterfaceController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'didReceiveRemoteNotification:withCompletion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Long
+    TypeEncoding: 'v32@0:8@16@?24'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: WatchKit.WKInterfaceController
+    Name: WKInterfaceController
+  Type: Interface
+- Name: 'WKInterfaceObject'
+  JsName: 'WKInterfaceObject'
+  Module: 'WatchKit.WKInterfaceObject'
+  IntroducedIn: 8.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'setAccessibilityHint:'
+    JsName: 'setAccessibilityHint'
+    Module: 'WatchKit.WKInterfaceObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setAccessibilityHint:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setAccessibilityImageRegions:'
+    JsName: 'setAccessibilityImageRegions'
+    Module: 'WatchKit.WKInterfaceObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setAccessibilityImageRegions:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setAccessibilityLabel:'
+    JsName: 'setAccessibilityLabel'
+    Module: 'WatchKit.WKInterfaceObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setAccessibilityLabel:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setAccessibilityTraits:'
+    JsName: 'setAccessibilityTraits'
+    Module: 'WatchKit.WKInterfaceObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setAccessibilityTraits:'
+    Signature:
+    - Type: Void
+    - Type: ULongLong
+    TypeEncoding: 'v24@0:8Q16'
+  - Name: 'setAccessibilityValue:'
+    JsName: 'setAccessibilityValue'
+    Module: 'WatchKit.WKInterfaceObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setAccessibilityValue:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setAlpha:'
+    JsName: 'setAlpha'
+    Module: 'WatchKit.WKInterfaceObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setAlpha:'
+    Signature:
+    - Type: Void
+    - Type: Double
+    TypeEncoding: 'v24@0:8d16'
+  - Name: 'setHeight:'
+    JsName: 'setHeight'
+    Module: 'WatchKit.WKInterfaceObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setHeight:'
+    Signature:
+    - Type: Void
+    - Type: Double
+    TypeEncoding: 'v24@0:8d16'
+  - Name: 'setHidden:'
+    JsName: 'setHidden'
+    Module: 'WatchKit.WKInterfaceObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setHidden:'
+    Signature:
+    - Type: Void
+    - Type: Bool
+    TypeEncoding: 'v20@0:8B16'
+  - Name: 'setIsAccessibilityElement:'
+    JsName: 'setIsAccessibilityElement'
+    Module: 'WatchKit.WKInterfaceObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setIsAccessibilityElement:'
+    Signature:
+    - Type: Void
+    - Type: Bool
+    TypeEncoding: 'v20@0:8B16'
+  - Name: 'setWidth:'
+    JsName: 'setWidth'
+    Module: 'WatchKit.WKInterfaceObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setWidth:'
+    Signature:
+    - Type: Void
+    - Type: Double
+    TypeEncoding: 'v24@0:8d16'
+  StaticMethods: []
+  Properties:
+  - Name: 'interfaceProperty'
+    JsName: 'interfaceProperty'
+    Module: 'WatchKit.WKInterfaceObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'interfaceProperty'
+      JsName: 'interfaceProperty'
+      Module: 'WatchKit.WKInterfaceObject'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'interfaceProperty'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'WKAccessibilityImageRegion'
+  JsName: 'WKAccessibilityImageRegion'
+  Module: 'WatchKit.WKInterfaceObject'
+  IntroducedIn: 8.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'frame'
+    JsName: 'frame'
+    Module: 'WatchKit.WKInterfaceObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'frame'
+      JsName: 'frame'
+      Module: 'WatchKit.WKInterfaceObject'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'frame'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGRect
+      TypeEncoding: '{CGRect={CGPoint=dd}{CGSize=dd}}16@0:8'
+    Setter:
+      Name: 'setFrame:'
+      JsName: 'setFrame'
+      Module: 'WatchKit.WKInterfaceObject'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setFrame:'
+      Signature:
+      - Type: Void
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGRect
+      TypeEncoding: 'v48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16'
+  - Name: 'label'
+    JsName: 'label'
+    Module: 'WatchKit.WKInterfaceObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'label'
+      JsName: 'label'
+      Module: 'WatchKit.WKInterfaceObject'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'label'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setLabel:'
+      JsName: 'setLabel'
+      Module: 'WatchKit.WKInterfaceObject'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLabel:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'WKInterfaceDevice'
+  JsName: 'WKInterfaceDevice'
+  Module: 'WatchKit.WKInterfaceDevice'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addCachedImage:name:'
+    JsName: 'addCachedImageName'
+    Module: 'WatchKit.WKInterfaceDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addCachedImage:name:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'B32@0:8@16@24'
+  - Name: 'addCachedImageWithData:name:'
+    JsName: 'addCachedImageWithDataName'
+    Module: 'WatchKit.WKInterfaceDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addCachedImageWithData:name:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'B32@0:8@16@24'
+  - Name: 'removeAllCachedImages'
+    JsName: 'removeAllCachedImages'
+    Module: 'WatchKit.WKInterfaceDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeAllCachedImages'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'removeCachedImageWithName:'
+    JsName: 'removeCachedImageWithName'
+    Module: 'WatchKit.WKInterfaceDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeCachedImageWithName:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v24@0:8@16'
+  StaticMethods:
+  - Name: 'currentDevice'
+    JsName: 'currentDevice'
+    Module: 'WatchKit.WKInterfaceDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'currentDevice'
+    Signature:
+    - Type: Interface
+      Module: WatchKit.WKInterfaceDevice
+      Name: WKInterfaceDevice
+    TypeEncoding: '@16@0:8'
+  Properties:
+  - Name: 'cachedImages'
+    JsName: 'cachedImages'
+    Module: 'WatchKit.WKInterfaceDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'cachedImages'
+      JsName: 'cachedImages'
+      Module: 'WatchKit.WKInterfaceDevice'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'cachedImages'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: '@16@0:8'
+  - Name: 'preferredContentSizeCategory'
+    JsName: 'preferredContentSizeCategory'
+    Module: 'WatchKit.WKInterfaceDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'preferredContentSizeCategory'
+      JsName: 'preferredContentSizeCategory'
+      Module: 'WatchKit.WKInterfaceDevice'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'preferredContentSizeCategory'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'screenBounds'
+    JsName: 'screenBounds'
+    Module: 'WatchKit.WKInterfaceDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'screenBounds'
+      JsName: 'screenBounds'
+      Module: 'WatchKit.WKInterfaceDevice'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'screenBounds'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGRect
+      TypeEncoding: '{CGRect={CGPoint=dd}{CGSize=dd}}16@0:8'
+  - Name: 'screenScale'
+    JsName: 'screenScale'
+    Module: 'WatchKit.WKInterfaceDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'screenScale'
+      JsName: 'screenScale'
+      Module: 'WatchKit.WKInterfaceDevice'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'screenScale'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'WKInterfaceButton'
+  JsName: 'WKInterfaceButton'
+  Module: 'WatchKit.WKInterfaceButton'
+  IntroducedIn: 8.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'setAttributedTitle:'
+    JsName: 'setAttributedTitle'
+    Module: 'WatchKit.WKInterfaceButton'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setAttributedTitle:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSAttributedString
+      Name: NSAttributedString
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setBackgroundColor:'
+    JsName: 'setBackgroundColor'
+    Module: 'WatchKit.WKInterfaceButton'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setBackgroundColor:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UIColor
+      Name: UIColor
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setBackgroundImage:'
+    JsName: 'setBackgroundImage'
+    Module: 'WatchKit.WKInterfaceButton'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setBackgroundImage:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setBackgroundImageData:'
+    JsName: 'setBackgroundImageData'
+    Module: 'WatchKit.WKInterfaceButton'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setBackgroundImageData:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setBackgroundImageNamed:'
+    JsName: 'setBackgroundImageNamed'
+    Module: 'WatchKit.WKInterfaceButton'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setBackgroundImageNamed:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setEnabled:'
+    JsName: 'setEnabled'
+    Module: 'WatchKit.WKInterfaceButton'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setEnabled:'
+    Signature:
+    - Type: Void
+    - Type: Bool
+    TypeEncoding: 'v20@0:8B16'
+  - Name: 'setTitle:'
+    JsName: 'setTitle'
+    Module: 'WatchKit.WKInterfaceButton'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setTitle:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v24@0:8@16'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: WatchKit.WKInterfaceObject
+    Name: WKInterfaceObject
+  Type: Interface
+- Name: 'WKInterfaceGroup'
+  JsName: 'WKInterfaceGroup'
+  Module: 'WatchKit.WKInterfaceGroup'
+  IntroducedIn: 8.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'setBackgroundColor:'
+    JsName: 'setBackgroundColor'
+    Module: 'WatchKit.WKInterfaceGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setBackgroundColor:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UIColor
+      Name: UIColor
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setBackgroundImage:'
+    JsName: 'setBackgroundImage'
+    Module: 'WatchKit.WKInterfaceGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setBackgroundImage:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setBackgroundImageData:'
+    JsName: 'setBackgroundImageData'
+    Module: 'WatchKit.WKInterfaceGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setBackgroundImageData:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setBackgroundImageNamed:'
+    JsName: 'setBackgroundImageNamed'
+    Module: 'WatchKit.WKInterfaceGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setBackgroundImageNamed:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setCornerRadius:'
+    JsName: 'setCornerRadius'
+    Module: 'WatchKit.WKInterfaceGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setCornerRadius:'
+    Signature:
+    - Type: Void
+    - Type: Double
+    TypeEncoding: 'v24@0:8d16'
+  - Name: 'startAnimating'
+    JsName: 'startAnimating'
+    Module: 'WatchKit.WKInterfaceGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startAnimating'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'startAnimatingWithImagesInRange:duration:repeatCount:'
+    JsName: 'startAnimatingWithImagesInRangeDurationRepeatCount'
+    Module: 'WatchKit.WKInterfaceGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startAnimatingWithImagesInRange:duration:repeatCount:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: Foundation.NSRange
+      Name: NSRange
+    - Type: Double
+    - Type: Long
+    TypeEncoding: 'v48@0:8{_NSRange=QQ}16d32q40'
+  - Name: 'stopAnimating'
+    JsName: 'stopAnimating'
+    Module: 'WatchKit.WKInterfaceGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopAnimating'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: WatchKit.WKInterfaceObject
+    Name: WKInterfaceObject
+  Type: Interface
+- Name: 'WKInterfaceImage'
+  JsName: 'WKInterfaceImage'
+  Module: 'WatchKit.WKInterfaceImage'
+  IntroducedIn: 8.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'setImage:'
+    JsName: 'setImage'
+    Module: 'WatchKit.WKInterfaceImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setImage:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setImageData:'
+    JsName: 'setImageData'
+    Module: 'WatchKit.WKInterfaceImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setImageData:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setImageNamed:'
+    JsName: 'setImageNamed'
+    Module: 'WatchKit.WKInterfaceImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setImageNamed:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setTintColor:'
+    JsName: 'setTintColor'
+    Module: 'WatchKit.WKInterfaceImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setTintColor:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UIColor
+      Name: UIColor
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'startAnimating'
+    JsName: 'startAnimating'
+    Module: 'WatchKit.WKInterfaceImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startAnimating'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'startAnimatingWithImagesInRange:duration:repeatCount:'
+    JsName: 'startAnimatingWithImagesInRangeDurationRepeatCount'
+    Module: 'WatchKit.WKInterfaceImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startAnimatingWithImagesInRange:duration:repeatCount:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: Foundation.NSRange
+      Name: NSRange
+    - Type: Double
+    - Type: Long
+    TypeEncoding: 'v48@0:8{_NSRange=QQ}16d32q40'
+  - Name: 'stopAnimating'
+    JsName: 'stopAnimating'
+    Module: 'WatchKit.WKInterfaceImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopAnimating'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: WatchKit.WKInterfaceObject
+    Name: WKInterfaceObject
+  Type: Interface
+- Name: 'WKInterfaceLabel'
+  JsName: 'WKInterfaceLabel'
+  Module: 'WatchKit.WKInterfaceLabel'
+  IntroducedIn: 8.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'setAttributedText:'
+    JsName: 'setAttributedText'
+    Module: 'WatchKit.WKInterfaceLabel'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setAttributedText:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSAttributedString
+      Name: NSAttributedString
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setText:'
+    JsName: 'setText'
+    Module: 'WatchKit.WKInterfaceLabel'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setText:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setTextColor:'
+    JsName: 'setTextColor'
+    Module: 'WatchKit.WKInterfaceLabel'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setTextColor:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UIColor
+      Name: UIColor
+    TypeEncoding: 'v24@0:8@16'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: WatchKit.WKInterfaceObject
+    Name: WKInterfaceObject
+  Type: Interface
+- Name: 'WKInterfaceDate'
+  JsName: 'WKInterfaceDate'
+  Module: 'WatchKit.WKInterfaceDate'
+  IntroducedIn: 8.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'setCalendar:'
+    JsName: 'setCalendar'
+    Module: 'WatchKit.WKInterfaceDate'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setCalendar:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSCalendar
+      Name: NSCalendar
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setTextColor:'
+    JsName: 'setTextColor'
+    Module: 'WatchKit.WKInterfaceDate'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setTextColor:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UIColor
+      Name: UIColor
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setTimeZone:'
+    JsName: 'setTimeZone'
+    Module: 'WatchKit.WKInterfaceDate'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setTimeZone:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSTimeZone
+      Name: NSTimeZone
+    TypeEncoding: 'v24@0:8@16'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: WatchKit.WKInterfaceObject
+    Name: WKInterfaceObject
+  Type: Interface
+- Name: 'WKInterfaceTimer'
+  JsName: 'WKInterfaceTimer'
+  Module: 'WatchKit.WKInterfaceTimer'
+  IntroducedIn: 8.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'setDate:'
+    JsName: 'setDate'
+    Module: 'WatchKit.WKInterfaceTimer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setDate:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setTextColor:'
+    JsName: 'setTextColor'
+    Module: 'WatchKit.WKInterfaceTimer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setTextColor:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UIColor
+      Name: UIColor
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'start'
+    JsName: 'start'
+    Module: 'WatchKit.WKInterfaceTimer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'start'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'stop'
+    JsName: 'stop'
+    Module: 'WatchKit.WKInterfaceTimer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stop'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: WatchKit.WKInterfaceObject
+    Name: WKInterfaceObject
+  Type: Interface
+- Name: 'WKInterfaceTable'
+  JsName: 'WKInterfaceTable'
+  Module: 'WatchKit.WKInterfaceTable'
+  IntroducedIn: 8.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'insertRowsAtIndexes:withRowType:'
+    JsName: 'insertRowsAtIndexesWithRowType'
+    Module: 'WatchKit.WKInterfaceTable'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'insertRowsAtIndexes:withRowType:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSIndexSet
+      Name: NSIndexSet
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'removeRowsAtIndexes:'
+    JsName: 'removeRowsAtIndexes'
+    Module: 'WatchKit.WKInterfaceTable'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeRowsAtIndexes:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSIndexSet
+      Name: NSIndexSet
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'rowControllerAtIndex:'
+    JsName: 'rowControllerAtIndex'
+    Module: 'WatchKit.WKInterfaceTable'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'rowControllerAtIndex:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Long
+    TypeEncoding: '@24@0:8q16'
+  - Name: 'scrollToRowAtIndex:'
+    JsName: 'scrollToRowAtIndex'
+    Module: 'WatchKit.WKInterfaceTable'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'scrollToRowAtIndex:'
+    Signature:
+    - Type: Void
+    - Type: Long
+    TypeEncoding: 'v24@0:8q16'
+  - Name: 'setNumberOfRows:withRowType:'
+    JsName: 'setNumberOfRowsWithRowType'
+    Module: 'WatchKit.WKInterfaceTable'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setNumberOfRows:withRowType:'
+    Signature:
+    - Type: Void
+    - Type: Long
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v32@0:8q16@24'
+  - Name: 'setRowTypes:'
+    JsName: 'setRowTypes'
+    Module: 'WatchKit.WKInterfaceTable'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setRowTypes:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'numberOfRows'
+    JsName: 'numberOfRows'
+    Module: 'WatchKit.WKInterfaceTable'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'numberOfRows'
+      JsName: 'numberOfRows'
+      Module: 'WatchKit.WKInterfaceTable'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'numberOfRows'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+  Protocols: []
+  Base:
+    Module: WatchKit.WKInterfaceObject
+    Name: WKInterfaceObject
+  Type: Interface
+- Name: 'WKInterfaceMapPinColor'
+  JsName: 'WKInterfaceMapPinColor'
+  Module: 'WatchKit.WKInterfaceMap'
+  IntroducedIn: 8.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"WKInterfaceMapPinColorRed":0,"WKInterfaceMapPinColorGreen":1,"WKInterfaceMapPinColorPurple":2})
+- Name: 'WKInterfaceMap'
+  JsName: 'WKInterfaceMap'
+  Module: 'WatchKit.WKInterfaceMap'
+  IntroducedIn: 8.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addAnnotation:withImage:centerOffset:'
+    JsName: 'addAnnotationWithImageCenterOffset'
+    Module: 'WatchKit.WKInterfaceMap'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addAnnotation:withImage:centerOffset:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+    TypeEncoding: 'v56@0:8{?=dd}16@32{CGPoint=dd}40'
+  - Name: 'addAnnotation:withImageNamed:centerOffset:'
+    JsName: 'addAnnotationWithImageNamedCenterOffset'
+    Module: 'WatchKit.WKInterfaceMap'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addAnnotation:withImageNamed:centerOffset:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+    TypeEncoding: 'v56@0:8{?=dd}16@32{CGPoint=dd}40'
+  - Name: 'addAnnotation:withPinColor:'
+    JsName: 'addAnnotationWithPinColor'
+    Module: 'WatchKit.WKInterfaceMap'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addAnnotation:withPinColor:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+    - Type: Long
+    TypeEncoding: 'v40@0:8{?=dd}16q32'
+  - Name: 'removeAllAnnotations'
+    JsName: 'removeAllAnnotations'
+    Module: 'WatchKit.WKInterfaceMap'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeAllAnnotations'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'setRegion:'
+    JsName: 'setRegion'
+    Module: 'WatchKit.WKInterfaceMap'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setRegion:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKCoordinateRegion
+    TypeEncoding: 'v48@0:8{?={?=dd}{?=dd}}16'
+  - Name: 'setVisibleMapRect:'
+    JsName: 'setVisibleMapRect'
+    Module: 'WatchKit.WKInterfaceMap'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setVisibleMapRect:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    TypeEncoding: 'v48@0:8{?={?=dd}{?=dd}}16'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: WatchKit.WKInterfaceObject
+    Name: WKInterfaceObject
+  Type: Interface
+- Name: 'WKInterfaceSeparator'
+  JsName: 'WKInterfaceSeparator'
+  Module: 'WatchKit.WKInterfaceSeparator'
+  IntroducedIn: 8.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'setColor:'
+    JsName: 'setColor'
+    Module: 'WatchKit.WKInterfaceSeparator'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setColor:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UIColor
+      Name: UIColor
+    TypeEncoding: 'v24@0:8@16'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: WatchKit.WKInterfaceObject
+    Name: WKInterfaceObject
+  Type: Interface
+- Name: 'WKInterfaceSlider'
+  JsName: 'WKInterfaceSlider'
+  Module: 'WatchKit.WKInterfaceSlider'
+  IntroducedIn: 8.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'setColor:'
+    JsName: 'setColor'
+    Module: 'WatchKit.WKInterfaceSlider'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setColor:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UIColor
+      Name: UIColor
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setEnabled:'
+    JsName: 'setEnabled'
+    Module: 'WatchKit.WKInterfaceSlider'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setEnabled:'
+    Signature:
+    - Type: Void
+    - Type: Bool
+    TypeEncoding: 'v20@0:8B16'
+  - Name: 'setNumberOfSteps:'
+    JsName: 'setNumberOfSteps'
+    Module: 'WatchKit.WKInterfaceSlider'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setNumberOfSteps:'
+    Signature:
+    - Type: Void
+    - Type: Long
+    TypeEncoding: 'v24@0:8q16'
+  - Name: 'setValue:'
+    JsName: 'setValue'
+    Module: 'WatchKit.WKInterfaceSlider'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setValue:'
+    Signature:
+    - Type: Void
+    - Type: Float
+    TypeEncoding: 'v20@0:8f16'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: WatchKit.WKInterfaceObject
+    Name: WKInterfaceObject
+  Type: Interface
+- Name: 'WKInterfaceSwitch'
+  JsName: 'WKInterfaceSwitch'
+  Module: 'WatchKit.WKInterfaceSwitch'
+  IntroducedIn: 8.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'setAttributedTitle:'
+    JsName: 'setAttributedTitle'
+    Module: 'WatchKit.WKInterfaceSwitch'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setAttributedTitle:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSAttributedString
+      Name: NSAttributedString
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setColor:'
+    JsName: 'setColor'
+    Module: 'WatchKit.WKInterfaceSwitch'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setColor:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UIColor
+      Name: UIColor
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setEnabled:'
+    JsName: 'setEnabled'
+    Module: 'WatchKit.WKInterfaceSwitch'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setEnabled:'
+    Signature:
+    - Type: Void
+    - Type: Bool
+    TypeEncoding: 'v20@0:8B16'
+  - Name: 'setOn:'
+    JsName: 'setOn'
+    Module: 'WatchKit.WKInterfaceSwitch'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setOn:'
+    Signature:
+    - Type: Void
+    - Type: Bool
+    TypeEncoding: 'v20@0:8B16'
+  - Name: 'setTitle:'
+    JsName: 'setTitle'
+    Module: 'WatchKit.WKInterfaceSwitch'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setTitle:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v24@0:8@16'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: WatchKit.WKInterfaceObject
+    Name: WKInterfaceObject
+  Type: Interface
+...

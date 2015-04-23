@@ -1,0 +1,1939 @@
+name: WebKit
+items:
+- Name: 'WKBackForwardListItem'
+  JsName: 'WKBackForwardListItem'
+  Module: 'WebKit.WKBackForwardListItem'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'initialURL'
+    JsName: 'initialURL'
+    Module: 'WebKit.WKBackForwardListItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'initialURL'
+      JsName: 'initialURL'
+      Module: 'WebKit.WKBackForwardListItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'initialURL'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@16@0:8'
+  - Name: 'title'
+    JsName: 'title'
+    Module: 'WebKit.WKBackForwardListItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'title'
+      JsName: 'title'
+      Module: 'WebKit.WKBackForwardListItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'title'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'URL'
+    JsName: 'URL'
+    Module: 'WebKit.WKBackForwardListItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'URL'
+      JsName: 'URL'
+      Module: 'WebKit.WKBackForwardListItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'URL'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'WKBackForwardList'
+  JsName: 'WKBackForwardList'
+  Module: 'WebKit.WKBackForwardList'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'itemAtIndex:'
+    JsName: 'itemAtIndex'
+    Module: 'WebKit.WKBackForwardList'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'itemAtIndex:'
+    Signature:
+    - Type: Interface
+      Module: WebKit.WKBackForwardListItem
+      Name: WKBackForwardListItem
+    - Type: Long
+    TypeEncoding: '@24@0:8q16'
+  StaticMethods: []
+  Properties:
+  - Name: 'backItem'
+    JsName: 'backItem'
+    Module: 'WebKit.WKBackForwardList'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'backItem'
+      JsName: 'backItem'
+      Module: 'WebKit.WKBackForwardList'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'backItem'
+      Signature:
+      - Type: Interface
+        Module: WebKit.WKBackForwardListItem
+        Name: WKBackForwardListItem
+      TypeEncoding: '@16@0:8'
+  - Name: 'backList'
+    JsName: 'backList'
+    Module: 'WebKit.WKBackForwardList'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'backList'
+      JsName: 'backList'
+      Module: 'WebKit.WKBackForwardList'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'backList'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  - Name: 'currentItem'
+    JsName: 'currentItem'
+    Module: 'WebKit.WKBackForwardList'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'currentItem'
+      JsName: 'currentItem'
+      Module: 'WebKit.WKBackForwardList'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'currentItem'
+      Signature:
+      - Type: Interface
+        Module: WebKit.WKBackForwardListItem
+        Name: WKBackForwardListItem
+      TypeEncoding: '@16@0:8'
+  - Name: 'forwardItem'
+    JsName: 'forwardItem'
+    Module: 'WebKit.WKBackForwardList'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'forwardItem'
+      JsName: 'forwardItem'
+      Module: 'WebKit.WKBackForwardList'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'forwardItem'
+      Signature:
+      - Type: Interface
+        Module: WebKit.WKBackForwardListItem
+        Name: WKBackForwardListItem
+      TypeEncoding: '@16@0:8'
+  - Name: 'forwardList'
+    JsName: 'forwardList'
+    Module: 'WebKit.WKBackForwardList'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'forwardList'
+      JsName: 'forwardList'
+      Module: 'WebKit.WKBackForwardList'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'forwardList'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'WKErrorDomain'
+  JsName: 'WKErrorDomain'
+  Module: 'WebKit.WKError'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'WKErrorCode'
+  JsName: 'WKErrorCode'
+  Module: 'WebKit.WKError'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"WKErrorUnknown":1,"WKErrorWebContentProcessTerminated":2,"WKErrorWebViewInvalidated":3,"WKErrorJavaScriptExceptionOccurred":4})
+- Name: 'WKFrameInfo'
+  JsName: 'WKFrameInfo'
+  Module: 'WebKit.WKFrameInfo'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'mainFrame'
+    JsName: 'mainFrame'
+    Module: 'WebKit.WKFrameInfo'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isMainFrame'
+      JsName: 'isMainFrame'
+      Module: 'WebKit.WKFrameInfo'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isMainFrame'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'request'
+    JsName: 'request'
+    Module: 'WebKit.WKFrameInfo'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'request'
+      JsName: 'request'
+      Module: 'WebKit.WKFrameInfo'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'request'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURLRequest
+        Name: NSURLRequest
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'WKNavigation'
+  JsName: 'WKNavigation'
+  Module: 'WebKit.WKNavigation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'WKNavigationType'
+  JsName: 'WKNavigationType'
+  Module: 'WebKit.WKNavigationAction'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"WKNavigationTypeLinkActivated":0,"WKNavigationTypeFormSubmitted":1,"WKNavigationTypeBackForward":2,"WKNavigationTypeReload":3,"WKNavigationTypeFormResubmitted":4,"WKNavigationTypeOther":-1})
+- Name: 'WKNavigationAction'
+  JsName: 'WKNavigationAction'
+  Module: 'WebKit.WKNavigationAction'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'navigationType'
+    JsName: 'navigationType'
+    Module: 'WebKit.WKNavigationAction'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'navigationType'
+      JsName: 'navigationType'
+      Module: 'WebKit.WKNavigationAction'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'navigationType'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+  - Name: 'request'
+    JsName: 'request'
+    Module: 'WebKit.WKNavigationAction'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'request'
+      JsName: 'request'
+      Module: 'WebKit.WKNavigationAction'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'request'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURLRequest
+        Name: NSURLRequest
+      TypeEncoding: '@16@0:8'
+  - Name: 'sourceFrame'
+    JsName: 'sourceFrame'
+    Module: 'WebKit.WKNavigationAction'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'sourceFrame'
+      JsName: 'sourceFrame'
+      Module: 'WebKit.WKNavigationAction'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'sourceFrame'
+      Signature:
+      - Type: Interface
+        Module: WebKit.WKFrameInfo
+        Name: WKFrameInfo
+      TypeEncoding: '@16@0:8'
+  - Name: 'targetFrame'
+    JsName: 'targetFrame'
+    Module: 'WebKit.WKNavigationAction'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'targetFrame'
+      JsName: 'targetFrame'
+      Module: 'WebKit.WKNavigationAction'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'targetFrame'
+      Signature:
+      - Type: Interface
+        Module: WebKit.WKFrameInfo
+        Name: WKFrameInfo
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'WKNavigationActionPolicy'
+  JsName: 'WKNavigationActionPolicy'
+  Module: 'WebKit.WKNavigationDelegate'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"WKNavigationActionPolicyCancel":0,"WKNavigationActionPolicyAllow":1})
+- Name: 'WKNavigationResponsePolicy'
+  JsName: 'WKNavigationResponsePolicy'
+  Module: 'WebKit.WKNavigationDelegate'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"WKNavigationResponsePolicyCancel":0,"WKNavigationResponsePolicyAllow":1})
+- Name: 'WKNavigationDelegate'
+  JsName: 'WKNavigationDelegate'
+  Module: 'WebKit.WKNavigationDelegate'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'webView:decidePolicyForNavigationAction:decisionHandler:'
+    JsName: 'webViewDecidePolicyForNavigationActionDecisionHandler'
+    Module: 'WebKit.WKNavigationDelegate'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'webView:decidePolicyForNavigationAction:decisionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: WebKit.WKWebView
+      Name: WKWebView
+    - Type: Interface
+      Module: WebKit.WKNavigationAction
+      Name: WKNavigationAction
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Long
+    TypeEncoding: 'v40@0:8@16@24@?32'
+  - Name: 'webView:decidePolicyForNavigationResponse:decisionHandler:'
+    JsName: 'webViewDecidePolicyForNavigationResponseDecisionHandler'
+    Module: 'WebKit.WKNavigationDelegate'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'webView:decidePolicyForNavigationResponse:decisionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: WebKit.WKWebView
+      Name: WKWebView
+    - Type: Interface
+      Module: WebKit.WKNavigationResponse
+      Name: WKNavigationResponse
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Long
+    TypeEncoding: 'v40@0:8@16@24@?32'
+  - Name: 'webView:didCommitNavigation:'
+    JsName: 'webViewDidCommitNavigation'
+    Module: 'WebKit.WKNavigationDelegate'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'webView:didCommitNavigation:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: WebKit.WKWebView
+      Name: WKWebView
+    - Type: Interface
+      Module: WebKit.WKNavigation
+      Name: WKNavigation
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'webView:didFailNavigation:withError:'
+    JsName: 'webViewDidFailNavigationWithError'
+    Module: 'WebKit.WKNavigationDelegate'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'webView:didFailNavigation:withError:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: WebKit.WKWebView
+      Name: WKWebView
+    - Type: Interface
+      Module: WebKit.WKNavigation
+      Name: WKNavigation
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v40@0:8@16@24@32'
+  - Name: 'webView:didFailProvisionalNavigation:withError:'
+    JsName: 'webViewDidFailProvisionalNavigationWithError'
+    Module: 'WebKit.WKNavigationDelegate'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'webView:didFailProvisionalNavigation:withError:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: WebKit.WKWebView
+      Name: WKWebView
+    - Type: Interface
+      Module: WebKit.WKNavigation
+      Name: WKNavigation
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v40@0:8@16@24@32'
+  - Name: 'webView:didFinishNavigation:'
+    JsName: 'webViewDidFinishNavigation'
+    Module: 'WebKit.WKNavigationDelegate'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'webView:didFinishNavigation:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: WebKit.WKWebView
+      Name: WKWebView
+    - Type: Interface
+      Module: WebKit.WKNavigation
+      Name: WKNavigation
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'webView:didReceiveAuthenticationChallenge:completionHandler:'
+    JsName: 'webViewDidReceiveAuthenticationChallengeCompletionHandler'
+    Module: 'WebKit.WKNavigationDelegate'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'webView:didReceiveAuthenticationChallenge:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: WebKit.WKWebView
+      Name: WKWebView
+    - Type: Interface
+      Module: Foundation.NSURLAuthenticationChallenge
+      Name: NSURLAuthenticationChallenge
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Long
+      - Type: Interface
+        Module: Foundation.NSURLCredential
+        Name: NSURLCredential
+    TypeEncoding: 'v40@0:8@16@24@?32'
+  - Name: 'webView:didReceiveServerRedirectForProvisionalNavigation:'
+    JsName: 'webViewDidReceiveServerRedirectForProvisionalNavigation'
+    Module: 'WebKit.WKNavigationDelegate'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'webView:didReceiveServerRedirectForProvisionalNavigation:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: WebKit.WKWebView
+      Name: WKWebView
+    - Type: Interface
+      Module: WebKit.WKNavigation
+      Name: WKNavigation
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'webView:didStartProvisionalNavigation:'
+    JsName: 'webViewDidStartProvisionalNavigation'
+    Module: 'WebKit.WKNavigationDelegate'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'webView:didStartProvisionalNavigation:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: WebKit.WKWebView
+      Name: WKWebView
+    - Type: Interface
+      Module: WebKit.WKNavigation
+      Name: WKNavigation
+    TypeEncoding: 'v32@0:8@16@24'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'WKNavigationResponse'
+  JsName: 'WKNavigationResponse'
+  Module: 'WebKit.WKNavigationResponse'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'canShowMIMEType'
+    JsName: 'canShowMIMEType'
+    Module: 'WebKit.WKNavigationResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'canShowMIMEType'
+      JsName: 'canShowMIMEType'
+      Module: 'WebKit.WKNavigationResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'canShowMIMEType'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'forMainFrame'
+    JsName: 'forMainFrame'
+    Module: 'WebKit.WKNavigationResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isForMainFrame'
+      JsName: 'isForMainFrame'
+      Module: 'WebKit.WKNavigationResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isForMainFrame'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'response'
+    JsName: 'response'
+    Module: 'WebKit.WKNavigationResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'response'
+      JsName: 'response'
+      Module: 'WebKit.WKNavigationResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'response'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURLResponse
+        Name: NSURLResponse
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'WKPreferences'
+  JsName: 'WKPreferences'
+  Module: 'WebKit.WKPreferences'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'javaScriptCanOpenWindowsAutomatically'
+    JsName: 'javaScriptCanOpenWindowsAutomatically'
+    Module: 'WebKit.WKPreferences'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'javaScriptCanOpenWindowsAutomatically'
+      JsName: 'javaScriptCanOpenWindowsAutomatically'
+      Module: 'WebKit.WKPreferences'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'javaScriptCanOpenWindowsAutomatically'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setJavaScriptCanOpenWindowsAutomatically:'
+      JsName: 'setJavaScriptCanOpenWindowsAutomatically'
+      Module: 'WebKit.WKPreferences'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setJavaScriptCanOpenWindowsAutomatically:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'javaScriptEnabled'
+    JsName: 'javaScriptEnabled'
+    Module: 'WebKit.WKPreferences'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'javaScriptEnabled'
+      JsName: 'javaScriptEnabled'
+      Module: 'WebKit.WKPreferences'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'javaScriptEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setJavaScriptEnabled:'
+      JsName: 'setJavaScriptEnabled'
+      Module: 'WebKit.WKPreferences'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setJavaScriptEnabled:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'minimumFontSize'
+    JsName: 'minimumFontSize'
+    Module: 'WebKit.WKPreferences'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'minimumFontSize'
+      JsName: 'minimumFontSize'
+      Module: 'WebKit.WKPreferences'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'minimumFontSize'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+    Setter:
+      Name: 'setMinimumFontSize:'
+      JsName: 'setMinimumFontSize'
+      Module: 'WebKit.WKPreferences'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMinimumFontSize:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v24@0:8d16'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'WKProcessPool'
+  JsName: 'WKProcessPool'
+  Module: 'WebKit.WKProcessPool'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'WKScriptMessage'
+  JsName: 'WKScriptMessage'
+  Module: 'WebKit.WKScriptMessage'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'body'
+    JsName: 'body'
+    Module: 'WebKit.WKScriptMessage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'body'
+      JsName: 'body'
+      Module: 'WebKit.WKScriptMessage'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'body'
+      Signature:
+      - Type: Id
+        WithProtocols: []
+      TypeEncoding: '@16@0:8'
+  - Name: 'frameInfo'
+    JsName: 'frameInfo'
+    Module: 'WebKit.WKScriptMessage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'frameInfo'
+      JsName: 'frameInfo'
+      Module: 'WebKit.WKScriptMessage'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'frameInfo'
+      Signature:
+      - Type: Interface
+        Module: WebKit.WKFrameInfo
+        Name: WKFrameInfo
+      TypeEncoding: '@16@0:8'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'WebKit.WKScriptMessage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'WebKit.WKScriptMessage'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'webView'
+    JsName: 'webView'
+    Module: 'WebKit.WKScriptMessage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'webView'
+      JsName: 'webView'
+      Module: 'WebKit.WKScriptMessage'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'webView'
+      Signature:
+      - Type: Interface
+        Module: WebKit.WKWebView
+        Name: WKWebView
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'WKScriptMessageHandler'
+  JsName: 'WKScriptMessageHandler'
+  Module: 'WebKit.WKScriptMessageHandler'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'userContentController:didReceiveScriptMessage:'
+    JsName: 'userContentControllerDidReceiveScriptMessage'
+    Module: 'WebKit.WKScriptMessageHandler'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'userContentController:didReceiveScriptMessage:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: WebKit.WKUserContentController
+      Name: WKUserContentController
+    - Type: Interface
+      Module: WebKit.WKScriptMessage
+      Name: WKScriptMessage
+    TypeEncoding: 'v32@0:8@16@24'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'WKUIDelegate'
+  JsName: 'WKUIDelegate'
+  Module: 'WebKit.WKUIDelegate'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:'
+    JsName: 'webViewCreateWebViewWithConfigurationForNavigationActionWindowFeatures'
+    Module: 'WebKit.WKUIDelegate'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:'
+    Signature:
+    - Type: Interface
+      Module: WebKit.WKWebView
+      Name: WKWebView
+    - Type: Interface
+      Module: WebKit.WKWebView
+      Name: WKWebView
+    - Type: Interface
+      Module: WebKit.WKWebViewConfiguration
+      Name: WKWebViewConfiguration
+    - Type: Interface
+      Module: WebKit.WKNavigationAction
+      Name: WKNavigationAction
+    - Type: Interface
+      Module: WebKit.WKWindowFeatures
+      Name: WKWindowFeatures
+    TypeEncoding: '@48@0:8@16@24@32@40'
+  - Name: 'webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:completionHandler:'
+    JsName: 'webViewRunJavaScriptAlertPanelWithMessageInitiatedByFrameCompletionHandler'
+    Module: 'WebKit.WKUIDelegate'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: WebKit.WKWebView
+      Name: WKWebView
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: WebKit.WKFrameInfo
+      Name: WKFrameInfo
+    - Type: Block
+      Signature:
+      - Type: Void
+    TypeEncoding: 'v48@0:8@16@24@32@?40'
+  - Name: 'webView:runJavaScriptConfirmPanelWithMessage:initiatedByFrame:completionHandler:'
+    JsName: 'webViewRunJavaScriptConfirmPanelWithMessageInitiatedByFrameCompletionHandler'
+    Module: 'WebKit.WKUIDelegate'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'webView:runJavaScriptConfirmPanelWithMessage:initiatedByFrame:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: WebKit.WKWebView
+      Name: WKWebView
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: WebKit.WKFrameInfo
+      Name: WKFrameInfo
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+    TypeEncoding: 'v48@0:8@16@24@32@?40'
+  - Name: 'webView:runJavaScriptTextInputPanelWithPrompt:defaultText:initiatedByFrame:completionHandler:'
+    JsName: 'webViewRunJavaScriptTextInputPanelWithPromptDefaultTextInitiatedByFrameCompletionHandler'
+    Module: 'WebKit.WKUIDelegate'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'webView:runJavaScriptTextInputPanelWithPrompt:defaultText:initiatedByFrame:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: WebKit.WKWebView
+      Name: WKWebView
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: WebKit.WKFrameInfo
+      Name: WKFrameInfo
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+    TypeEncoding: 'v56@0:8@16@24@32@40@?48'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'WKUserContentController'
+  JsName: 'WKUserContentController'
+  Module: 'WebKit.WKUserContentController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addScriptMessageHandler:name:'
+    JsName: 'addScriptMessageHandlerName'
+    Module: 'WebKit.WKUserContentController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addScriptMessageHandler:name:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: WebKit.WKScriptMessageHandler
+        Name: WKScriptMessageHandler
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'addUserScript:'
+    JsName: 'addUserScript'
+    Module: 'WebKit.WKUserContentController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addUserScript:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: WebKit.WKUserScript
+      Name: WKUserScript
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'removeAllUserScripts'
+    JsName: 'removeAllUserScripts'
+    Module: 'WebKit.WKUserContentController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeAllUserScripts'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'removeScriptMessageHandlerForName:'
+    JsName: 'removeScriptMessageHandlerForName'
+    Module: 'WebKit.WKUserContentController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeScriptMessageHandlerForName:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'userScripts'
+    JsName: 'userScripts'
+    Module: 'WebKit.WKUserContentController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'userScripts'
+      JsName: 'userScripts'
+      Module: 'WebKit.WKUserContentController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'userScripts'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'WKUserScriptInjectionTime'
+  JsName: 'WKUserScriptInjectionTime'
+  Module: 'WebKit.WKUserScript'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"WKUserScriptInjectionTimeAtDocumentStart":0,"WKUserScriptInjectionTimeAtDocumentEnd":1})
+- Name: 'WKUserScript'
+  JsName: 'WKUserScript'
+  Module: 'WebKit.WKUserScript'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithSource:injectionTime:forMainFrameOnly:'
+    JsName: 'initWithSourceInjectionTimeForMainFrameOnly'
+    Module: 'WebKit.WKUserScript'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithSource:injectionTime:forMainFrameOnly:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Long
+    - Type: Bool
+    TypeEncoding: '@36@0:8@16q24B32'
+  StaticMethods: []
+  Properties:
+  - Name: 'forMainFrameOnly'
+    JsName: 'forMainFrameOnly'
+    Module: 'WebKit.WKUserScript'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isForMainFrameOnly'
+      JsName: 'isForMainFrameOnly'
+      Module: 'WebKit.WKUserScript'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isForMainFrameOnly'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'injectionTime'
+    JsName: 'injectionTime'
+    Module: 'WebKit.WKUserScript'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'injectionTime'
+      JsName: 'injectionTime'
+      Module: 'WebKit.WKUserScript'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'injectionTime'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+  - Name: 'source'
+    JsName: 'source'
+    Module: 'WebKit.WKUserScript'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'source'
+      JsName: 'source'
+      Module: 'WebKit.WKUserScript'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'source'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'WKWebView'
+  JsName: 'WKWebView'
+  Module: 'WebKit.WKWebView'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'evaluateJavaScript:completionHandler:'
+    JsName: 'evaluateJavaScriptCompletionHandler'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'evaluateJavaScript:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols: []
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'goBack'
+    JsName: 'goBack'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'goBack'
+    Signature:
+    - Type: Interface
+      Module: WebKit.WKNavigation
+      Name: WKNavigation
+    TypeEncoding: '@16@0:8'
+  - Name: 'goForward'
+    JsName: 'goForward'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'goForward'
+    Signature:
+    - Type: Interface
+      Module: WebKit.WKNavigation
+      Name: WKNavigation
+    TypeEncoding: '@16@0:8'
+  - Name: 'goToBackForwardListItem:'
+    JsName: 'goToBackForwardListItem'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'goToBackForwardListItem:'
+    Signature:
+    - Type: Interface
+      Module: WebKit.WKNavigation
+      Name: WKNavigation
+    - Type: Interface
+      Module: WebKit.WKBackForwardListItem
+      Name: WKBackForwardListItem
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'initWithFrame:configuration:'
+    JsName: 'initWithFrameConfiguration'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithFrame:configuration:'
+    Signature:
+    - Type: Instancetype
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Interface
+      Module: WebKit.WKWebViewConfiguration
+      Name: WKWebViewConfiguration
+    TypeEncoding: '@56@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16@48'
+  - Name: 'loadHTMLString:baseURL:'
+    JsName: 'loadHTMLStringBaseURL'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'loadHTMLString:baseURL:'
+    Signature:
+    - Type: Interface
+      Module: WebKit.WKNavigation
+      Name: WKNavigation
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'loadRequest:'
+    JsName: 'loadRequest'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'loadRequest:'
+    Signature:
+    - Type: Interface
+      Module: WebKit.WKNavigation
+      Name: WKNavigation
+    - Type: Interface
+      Module: Foundation.NSURLRequest
+      Name: NSURLRequest
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'reload'
+    JsName: 'reload'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'reload'
+    Signature:
+    - Type: Interface
+      Module: WebKit.WKNavigation
+      Name: WKNavigation
+    TypeEncoding: '@16@0:8'
+  - Name: 'reloadFromOrigin'
+    JsName: 'reloadFromOrigin'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'reloadFromOrigin'
+    Signature:
+    - Type: Interface
+      Module: WebKit.WKNavigation
+      Name: WKNavigation
+    TypeEncoding: '@16@0:8'
+  - Name: 'stopLoading'
+    JsName: 'stopLoading'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopLoading'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods: []
+  Properties:
+  - Name: 'allowsBackForwardNavigationGestures'
+    JsName: 'allowsBackForwardNavigationGestures'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'allowsBackForwardNavigationGestures'
+      JsName: 'allowsBackForwardNavigationGestures'
+      Module: 'WebKit.WKWebView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'allowsBackForwardNavigationGestures'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setAllowsBackForwardNavigationGestures:'
+      JsName: 'setAllowsBackForwardNavigationGestures'
+      Module: 'WebKit.WKWebView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAllowsBackForwardNavigationGestures:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'backForwardList'
+    JsName: 'backForwardList'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'backForwardList'
+      JsName: 'backForwardList'
+      Module: 'WebKit.WKWebView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'backForwardList'
+      Signature:
+      - Type: Interface
+        Module: WebKit.WKBackForwardList
+        Name: WKBackForwardList
+      TypeEncoding: '@16@0:8'
+  - Name: 'canGoBack'
+    JsName: 'canGoBack'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'canGoBack'
+      JsName: 'canGoBack'
+      Module: 'WebKit.WKWebView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'canGoBack'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'canGoForward'
+    JsName: 'canGoForward'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'canGoForward'
+      JsName: 'canGoForward'
+      Module: 'WebKit.WKWebView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'canGoForward'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'configuration'
+    JsName: 'configuration'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'configuration'
+      JsName: 'configuration'
+      Module: 'WebKit.WKWebView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'configuration'
+      Signature:
+      - Type: Interface
+        Module: WebKit.WKWebViewConfiguration
+        Name: WKWebViewConfiguration
+      TypeEncoding: '@16@0:8'
+  - Name: 'estimatedProgress'
+    JsName: 'estimatedProgress'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'estimatedProgress'
+      JsName: 'estimatedProgress'
+      Module: 'WebKit.WKWebView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'estimatedProgress'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+  - Name: 'hasOnlySecureContent'
+    JsName: 'hasOnlySecureContent'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'hasOnlySecureContent'
+      JsName: 'hasOnlySecureContent'
+      Module: 'WebKit.WKWebView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'hasOnlySecureContent'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'loading'
+    JsName: 'loading'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isLoading'
+      JsName: 'isLoading'
+      Module: 'WebKit.WKWebView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isLoading'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'navigationDelegate'
+    JsName: 'navigationDelegate'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'navigationDelegate'
+      JsName: 'navigationDelegate'
+      Module: 'WebKit.WKWebView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'navigationDelegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: WebKit.WKNavigationDelegate
+          Name: WKNavigationDelegate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setNavigationDelegate:'
+      JsName: 'setNavigationDelegate'
+      Module: 'WebKit.WKWebView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setNavigationDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: WebKit.WKNavigationDelegate
+          Name: WKNavigationDelegate
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'scrollView'
+    JsName: 'scrollView'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'scrollView'
+      JsName: 'scrollView'
+      Module: 'WebKit.WKWebView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'scrollView'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIScrollView
+        Name: UIScrollView
+      TypeEncoding: '@16@0:8'
+  - Name: 'title'
+    JsName: 'title'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'title'
+      JsName: 'title'
+      Module: 'WebKit.WKWebView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'title'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'UIDelegate'
+    JsName: 'UIDelegate'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'UIDelegate'
+      JsName: 'UIDelegate'
+      Module: 'WebKit.WKWebView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'UIDelegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: WebKit.WKUIDelegate
+          Name: WKUIDelegate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setUIDelegate:'
+      JsName: 'setUIDelegate'
+      Module: 'WebKit.WKWebView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setUIDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: WebKit.WKUIDelegate
+          Name: WKUIDelegate
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'URL'
+    JsName: 'URL'
+    Module: 'WebKit.WKWebView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'URL'
+      JsName: 'URL'
+      Module: 'WebKit.WKWebView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'URL'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: UIKit.UIView
+    Name: UIView
+  Type: Interface
+- Name: 'WKSelectionGranularity'
+  JsName: 'WKSelectionGranularity'
+  Module: 'WebKit.WKWebViewConfiguration'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"WKSelectionGranularityDynamic":0,"WKSelectionGranularityCharacter":1})
+- Name: 'WKWebViewConfiguration'
+  JsName: 'WKWebViewConfiguration'
+  Module: 'WebKit.WKWebViewConfiguration'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'allowsInlineMediaPlayback'
+    JsName: 'allowsInlineMediaPlayback'
+    Module: 'WebKit.WKWebViewConfiguration'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'allowsInlineMediaPlayback'
+      JsName: 'allowsInlineMediaPlayback'
+      Module: 'WebKit.WKWebViewConfiguration'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'allowsInlineMediaPlayback'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setAllowsInlineMediaPlayback:'
+      JsName: 'setAllowsInlineMediaPlayback'
+      Module: 'WebKit.WKWebViewConfiguration'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAllowsInlineMediaPlayback:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'mediaPlaybackAllowsAirPlay'
+    JsName: 'mediaPlaybackAllowsAirPlay'
+    Module: 'WebKit.WKWebViewConfiguration'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'mediaPlaybackAllowsAirPlay'
+      JsName: 'mediaPlaybackAllowsAirPlay'
+      Module: 'WebKit.WKWebViewConfiguration'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mediaPlaybackAllowsAirPlay'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setMediaPlaybackAllowsAirPlay:'
+      JsName: 'setMediaPlaybackAllowsAirPlay'
+      Module: 'WebKit.WKWebViewConfiguration'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMediaPlaybackAllowsAirPlay:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'mediaPlaybackRequiresUserAction'
+    JsName: 'mediaPlaybackRequiresUserAction'
+    Module: 'WebKit.WKWebViewConfiguration'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'mediaPlaybackRequiresUserAction'
+      JsName: 'mediaPlaybackRequiresUserAction'
+      Module: 'WebKit.WKWebViewConfiguration'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mediaPlaybackRequiresUserAction'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setMediaPlaybackRequiresUserAction:'
+      JsName: 'setMediaPlaybackRequiresUserAction'
+      Module: 'WebKit.WKWebViewConfiguration'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMediaPlaybackRequiresUserAction:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'preferences'
+    JsName: 'preferences'
+    Module: 'WebKit.WKWebViewConfiguration'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'preferences'
+      JsName: 'preferences'
+      Module: 'WebKit.WKWebViewConfiguration'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'preferences'
+      Signature:
+      - Type: Interface
+        Module: WebKit.WKPreferences
+        Name: WKPreferences
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setPreferences:'
+      JsName: 'setPreferences'
+      Module: 'WebKit.WKWebViewConfiguration'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPreferences:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: WebKit.WKPreferences
+        Name: WKPreferences
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'processPool'
+    JsName: 'processPool'
+    Module: 'WebKit.WKWebViewConfiguration'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'processPool'
+      JsName: 'processPool'
+      Module: 'WebKit.WKWebViewConfiguration'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'processPool'
+      Signature:
+      - Type: Interface
+        Module: WebKit.WKProcessPool
+        Name: WKProcessPool
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setProcessPool:'
+      JsName: 'setProcessPool'
+      Module: 'WebKit.WKWebViewConfiguration'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setProcessPool:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: WebKit.WKProcessPool
+        Name: WKProcessPool
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'selectionGranularity'
+    JsName: 'selectionGranularity'
+    Module: 'WebKit.WKWebViewConfiguration'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'selectionGranularity'
+      JsName: 'selectionGranularity'
+      Module: 'WebKit.WKWebViewConfiguration'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'selectionGranularity'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+    Setter:
+      Name: 'setSelectionGranularity:'
+      JsName: 'setSelectionGranularity'
+      Module: 'WebKit.WKWebViewConfiguration'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSelectionGranularity:'
+      Signature:
+      - Type: Void
+      - Type: Long
+      TypeEncoding: 'v24@0:8q16'
+  - Name: 'suppressesIncrementalRendering'
+    JsName: 'suppressesIncrementalRendering'
+    Module: 'WebKit.WKWebViewConfiguration'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'suppressesIncrementalRendering'
+      JsName: 'suppressesIncrementalRendering'
+      Module: 'WebKit.WKWebViewConfiguration'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'suppressesIncrementalRendering'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setSuppressesIncrementalRendering:'
+      JsName: 'setSuppressesIncrementalRendering'
+      Module: 'WebKit.WKWebViewConfiguration'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSuppressesIncrementalRendering:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'userContentController'
+    JsName: 'userContentController'
+    Module: 'WebKit.WKWebViewConfiguration'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'userContentController'
+      JsName: 'userContentController'
+      Module: 'WebKit.WKWebViewConfiguration'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'userContentController'
+      Signature:
+      - Type: Interface
+        Module: WebKit.WKUserContentController
+        Name: WKUserContentController
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setUserContentController:'
+      JsName: 'setUserContentController'
+      Module: 'WebKit.WKWebViewConfiguration'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setUserContentController:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: WebKit.WKUserContentController
+        Name: WKUserContentController
+      TypeEncoding: 'v24@0:8@16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'WKWindowFeatures'
+  JsName: 'WKWindowFeatures'
+  Module: 'WebKit.WKWindowFeatures'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'allowsResizing'
+    JsName: 'allowsResizing'
+    Module: 'WebKit.WKWindowFeatures'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'allowsResizing'
+      JsName: 'allowsResizing'
+      Module: 'WebKit.WKWindowFeatures'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'allowsResizing'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@16@0:8'
+  - Name: 'height'
+    JsName: 'height'
+    Module: 'WebKit.WKWindowFeatures'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'height'
+      JsName: 'height'
+      Module: 'WebKit.WKWindowFeatures'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'height'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@16@0:8'
+  - Name: 'menuBarVisibility'
+    JsName: 'menuBarVisibility'
+    Module: 'WebKit.WKWindowFeatures'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'menuBarVisibility'
+      JsName: 'menuBarVisibility'
+      Module: 'WebKit.WKWindowFeatures'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'menuBarVisibility'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@16@0:8'
+  - Name: 'statusBarVisibility'
+    JsName: 'statusBarVisibility'
+    Module: 'WebKit.WKWindowFeatures'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'statusBarVisibility'
+      JsName: 'statusBarVisibility'
+      Module: 'WebKit.WKWindowFeatures'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'statusBarVisibility'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@16@0:8'
+  - Name: 'toolbarsVisibility'
+    JsName: 'toolbarsVisibility'
+    Module: 'WebKit.WKWindowFeatures'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'toolbarsVisibility'
+      JsName: 'toolbarsVisibility'
+      Module: 'WebKit.WKWindowFeatures'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'toolbarsVisibility'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@16@0:8'
+  - Name: 'width'
+    JsName: 'width'
+    Module: 'WebKit.WKWindowFeatures'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'width'
+      JsName: 'width'
+      Module: 'WebKit.WKWindowFeatures'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'width'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@16@0:8'
+  - Name: 'x'
+    JsName: 'x'
+    Module: 'WebKit.WKWindowFeatures'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'x'
+      JsName: 'x'
+      Module: 'WebKit.WKWindowFeatures'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'x'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@16@0:8'
+  - Name: 'y'
+    JsName: 'y'
+    Module: 'WebKit.WKWindowFeatures'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'y'
+      JsName: 'y'
+      Module: 'WebKit.WKWindowFeatures'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'y'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+...

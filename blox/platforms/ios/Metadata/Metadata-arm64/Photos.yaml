@@ -1,0 +1,3886 @@
+name: Photos
+items:
+- Name: 'PHAuthorizationStatus'
+  JsName: 'PHAuthorizationStatus'
+  Module: 'Photos.PHPhotoLibrary'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PHAuthorizationStatusNotDetermined":0,"PHAuthorizationStatusRestricted":1,"PHAuthorizationStatusDenied":2,"PHAuthorizationStatusAuthorized":3})
+- Name: 'PHPhotoLibraryChangeObserver'
+  JsName: 'PHPhotoLibraryChangeObserver'
+  Module: 'Photos.PHPhotoLibrary'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'photoLibraryDidChange:'
+    JsName: 'photoLibraryDidChange'
+    Module: 'Photos.PHPhotoLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'photoLibraryDidChange:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Photos.PHChange
+      Name: PHChange
+    TypeEncoding: 'v24@0:8@16'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'PHPhotoLibrary'
+  JsName: 'PHPhotoLibrary'
+  Module: 'Photos.PHPhotoLibrary'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'performChangesAndWait:error:'
+    JsName: 'performChangesAndWaitError'
+    Module: 'Photos.PHPhotoLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'performChangesAndWait:error:'
+    Signature:
+    - Type: Bool
+    - Type: Block
+      Signature:
+      - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'B32@0:8@?16^@24'
+  - Name: 'performChanges:completionHandler:'
+    JsName: 'performChangesCompletionHandler'
+    Module: 'Photos.PHPhotoLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'performChanges:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@?16@?24'
+  - Name: 'registerChangeObserver:'
+    JsName: 'registerChangeObserver'
+    Module: 'Photos.PHPhotoLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'registerChangeObserver:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Photos.PHPhotoLibrary
+        Name: PHPhotoLibraryChangeObserver
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'unregisterChangeObserver:'
+    JsName: 'unregisterChangeObserver'
+    Module: 'Photos.PHPhotoLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'unregisterChangeObserver:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Photos.PHPhotoLibrary
+        Name: PHPhotoLibraryChangeObserver
+    TypeEncoding: 'v24@0:8@16'
+  StaticMethods:
+  - Name: 'authorizationStatus'
+    JsName: 'authorizationStatus'
+    Module: 'Photos.PHPhotoLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'authorizationStatus'
+    Signature:
+    - Type: Long
+    TypeEncoding: 'q16@0:8'
+  - Name: 'requestAuthorization:'
+    JsName: 'requestAuthorization'
+    Module: 'Photos.PHPhotoLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'requestAuthorization:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Long
+    TypeEncoding: 'v24@0:8@?16'
+  - Name: 'sharedPhotoLibrary'
+    JsName: 'sharedPhotoLibrary'
+    Module: 'Photos.PHPhotoLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'sharedPhotoLibrary'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHPhotoLibrary
+      Name: PHPhotoLibrary
+    TypeEncoding: '@16@0:8'
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PHCollectionListType'
+  JsName: 'PHCollectionListType'
+  Module: 'Photos.PhotosTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PHCollectionListTypeMomentList":1,"PHCollectionListTypeFolder":2,"PHCollectionListTypeSmartFolder":3})
+- Name: 'PHCollectionListSubtype'
+  JsName: 'PHCollectionListSubtype'
+  Module: 'Photos.PhotosTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PHCollectionListSubtypeMomentListCluster":1,"PHCollectionListSubtypeMomentListYear":2,"PHCollectionListSubtypeRegularFolder":100,"PHCollectionListSubtypeSmartFolderEvents":200,"PHCollectionListSubtypeSmartFolderFaces":201,"PHCollectionListSubtypeAny":9223372036854775807})
+- Name: 'PHCollectionEditOperation'
+  JsName: 'PHCollectionEditOperation'
+  Module: 'Photos.PhotosTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PHCollectionEditOperationDeleteContent":1,"PHCollectionEditOperationRemoveContent":2,"PHCollectionEditOperationAddContent":3,"PHCollectionEditOperationCreateContent":4,"PHCollectionEditOperationRearrangeContent":5,"PHCollectionEditOperationDelete":6,"PHCollectionEditOperationRename":7})
+- Name: 'PHAssetCollectionType'
+  JsName: 'PHAssetCollectionType'
+  Module: 'Photos.PhotosTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PHAssetCollectionTypeAlbum":1,"PHAssetCollectionTypeSmartAlbum":2,"PHAssetCollectionTypeMoment":3})
+- Name: 'PHAssetCollectionSubtype'
+  JsName: 'PHAssetCollectionSubtype'
+  Module: 'Photos.PhotosTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PHAssetCollectionSubtypeAlbumRegular":2,"PHAssetCollectionSubtypeAlbumSyncedEvent":3,"PHAssetCollectionSubtypeAlbumSyncedFaces":4,"PHAssetCollectionSubtypeAlbumSyncedAlbum":5,"PHAssetCollectionSubtypeAlbumImported":6,"PHAssetCollectionSubtypeAlbumMyPhotoStream":100,"PHAssetCollectionSubtypeAlbumCloudShared":101,"PHAssetCollectionSubtypeSmartAlbumGeneric":200,"PHAssetCollectionSubtypeSmartAlbumPanoramas":201,"PHAssetCollectionSubtypeSmartAlbumVideos":202,"PHAssetCollectionSubtypeSmartAlbumFavorites":203,"PHAssetCollectionSubtypeSmartAlbumTimelapses":204,"PHAssetCollectionSubtypeSmartAlbumAllHidden":205,"PHAssetCollectionSubtypeSmartAlbumRecentlyAdded":206,"PHAssetCollectionSubtypeSmartAlbumBursts":207,"PHAssetCollectionSubtypeSmartAlbumSlomoVideos":208,"PHAssetCollectionSubtypeSmartAlbumUserLibrary":209,"PHAssetCollectionSubtypeAny":9223372036854775807})
+- Name: 'PHAssetEditOperation'
+  JsName: 'PHAssetEditOperation'
+  Module: 'Photos.PhotosTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PHAssetEditOperationDelete":1,"PHAssetEditOperationContent":2,"PHAssetEditOperationProperties":3})
+- Name: 'PHAssetMediaType'
+  JsName: 'PHAssetMediaType'
+  Module: 'Photos.PhotosTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PHAssetMediaTypeUnknown":0,"PHAssetMediaTypeImage":1,"PHAssetMediaTypeVideo":2,"PHAssetMediaTypeAudio":3})
+- Name: 'PHAssetMediaSubtype'
+  JsName: 'PHAssetMediaSubtype'
+  Module: 'Photos.PhotosTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PHAssetMediaSubtypeNone":0,"PHAssetMediaSubtypePhotoPanorama":1,"PHAssetMediaSubtypePhotoHDR":2,"PHAssetMediaSubtypeVideoStreamed":65536,"PHAssetMediaSubtypeVideoHighFrameRate":131072,"PHAssetMediaSubtypeVideoTimelapse":262144})
+- Name: 'PHAssetBurstSelectionType'
+  JsName: 'PHAssetBurstSelectionType'
+  Module: 'Photos.PhotosTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PHAssetBurstSelectionTypeNone":0,"PHAssetBurstSelectionTypeAutoPick":1,"PHAssetBurstSelectionTypeUserPick":2})
+- Name: 'PHObject'
+  JsName: 'PHObject'
+  Module: 'Photos.PHObject'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'localIdentifier'
+    JsName: 'localIdentifier'
+    Module: 'Photos.PHObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'localIdentifier'
+      JsName: 'localIdentifier'
+      Module: 'Photos.PHObject'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'localIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PHObjectPlaceholder'
+  JsName: 'PHObjectPlaceholder'
+  Module: 'Photos.PHObject'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: Photos.PHObject
+    Name: PHObject
+  Type: Interface
+- Name: 'PHAsset'
+  JsName: 'PHAsset'
+  Module: 'Photos.PHAsset'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'cancelContentEditingInputRequest:'
+    JsName: 'cancelContentEditingInputRequest'
+    Module: 'Photos.PHAssetChangeRequest'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancelContentEditingInputRequest:'
+    Signature:
+    - Type: Void
+    - Type: ULong
+    TypeEncoding: 'v24@0:8Q16'
+  - Name: 'canPerformEditOperation:'
+    JsName: 'canPerformEditOperation'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'canPerformEditOperation:'
+    Signature:
+    - Type: Bool
+    - Type: Long
+    TypeEncoding: 'B24@0:8q16'
+  - Name: 'requestContentEditingInputWithOptions:completionHandler:'
+    JsName: 'requestContentEditingInputWithOptionsCompletionHandler'
+    Module: 'Photos.PHAssetChangeRequest'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'requestContentEditingInputWithOptions:completionHandler:'
+    Signature:
+    - Type: ULong
+    - Type: Interface
+      Module: Photos.PHAssetChangeRequest
+      Name: PHContentEditingInputRequestOptions
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Photos.PHContentEditingInput
+        Name: PHContentEditingInput
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+    TypeEncoding: 'Q32@0:8@16@?24'
+  StaticMethods:
+  - Name: 'fetchAssetsInAssetCollection:options:'
+    JsName: 'fetchAssetsInAssetCollectionOptions'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchAssetsInAssetCollection:options:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Interface
+      Module: Photos.PHCollection
+      Name: PHAssetCollection
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'fetchAssetsWithALAssetURLs:options:'
+    JsName: 'fetchAssetsWithALAssetURLsOptions'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchAssetsWithALAssetURLs:options:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'fetchAssetsWithBurstIdentifier:options:'
+    JsName: 'fetchAssetsWithBurstIdentifierOptions'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchAssetsWithBurstIdentifier:options:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'fetchAssetsWithLocalIdentifiers:options:'
+    JsName: 'fetchAssetsWithLocalIdentifiersOptions'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchAssetsWithLocalIdentifiers:options:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'fetchAssetsWithMediaType:options:'
+    JsName: 'fetchAssetsWithMediaTypeOptions'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchAssetsWithMediaType:options:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Long
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@32@0:8q16@24'
+  - Name: 'fetchAssetsWithOptions:'
+    JsName: 'fetchAssetsWithOptions'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchAssetsWithOptions:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'fetchKeyAssetsInAssetCollection:options:'
+    JsName: 'fetchKeyAssetsInAssetCollectionOptions'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchKeyAssetsInAssetCollection:options:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Interface
+      Module: Photos.PHCollection
+      Name: PHAssetCollection
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@32@0:8@16@24'
+  Properties:
+  - Name: 'burstIdentifier'
+    JsName: 'burstIdentifier'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'burstIdentifier'
+      JsName: 'burstIdentifier'
+      Module: 'Photos.PHAsset'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'burstIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'burstSelectionTypes'
+    JsName: 'burstSelectionTypes'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'burstSelectionTypes'
+      JsName: 'burstSelectionTypes'
+      Module: 'Photos.PHAsset'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'burstSelectionTypes'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'creationDate'
+    JsName: 'creationDate'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'creationDate'
+      JsName: 'creationDate'
+      Module: 'Photos.PHAsset'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'creationDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@16@0:8'
+  - Name: 'duration'
+    JsName: 'duration'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'duration'
+      JsName: 'duration'
+      Module: 'Photos.PHAsset'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'duration'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+  - Name: 'favorite'
+    JsName: 'favorite'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isFavorite'
+      JsName: 'isFavorite'
+      Module: 'Photos.PHAsset'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isFavorite'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'hidden'
+    JsName: 'hidden'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isHidden'
+      JsName: 'isHidden'
+      Module: 'Photos.PHAsset'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isHidden'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'location'
+    JsName: 'location'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'location'
+      JsName: 'location'
+      Module: 'Photos.PHAsset'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'location'
+      Signature:
+      - Type: Interface
+        Module: CoreLocation.CLLocation
+        Name: CLLocation
+      TypeEncoding: '@16@0:8'
+  - Name: 'mediaSubtypes'
+    JsName: 'mediaSubtypes'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'mediaSubtypes'
+      JsName: 'mediaSubtypes'
+      Module: 'Photos.PHAsset'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mediaSubtypes'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'mediaType'
+    JsName: 'mediaType'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'mediaType'
+      JsName: 'mediaType'
+      Module: 'Photos.PHAsset'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mediaType'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+  - Name: 'modificationDate'
+    JsName: 'modificationDate'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'modificationDate'
+      JsName: 'modificationDate'
+      Module: 'Photos.PHAsset'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'modificationDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@16@0:8'
+  - Name: 'pixelHeight'
+    JsName: 'pixelHeight'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'pixelHeight'
+      JsName: 'pixelHeight'
+      Module: 'Photos.PHAsset'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'pixelHeight'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'pixelWidth'
+    JsName: 'pixelWidth'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'pixelWidth'
+      JsName: 'pixelWidth'
+      Module: 'Photos.PHAsset'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'pixelWidth'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'representsBurst'
+    JsName: 'representsBurst'
+    Module: 'Photos.PHAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'representsBurst'
+      JsName: 'representsBurst'
+      Module: 'Photos.PHAsset'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'representsBurst'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  Protocols: []
+  Base:
+    Module: Photos.PHObject
+    Name: PHObject
+  Type: Interface
+- Name: 'PHCollection'
+  JsName: 'PHCollection'
+  Module: 'Photos.PHCollection'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'canPerformEditOperation:'
+    JsName: 'canPerformEditOperation'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'canPerformEditOperation:'
+    Signature:
+    - Type: Bool
+    - Type: Long
+    TypeEncoding: 'B24@0:8q16'
+  StaticMethods:
+  - Name: 'fetchCollectionsInCollectionList:options:'
+    JsName: 'fetchCollectionsInCollectionListOptions'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchCollectionsInCollectionList:options:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Interface
+      Module: Photos.PHCollection
+      Name: PHCollectionList
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'fetchTopLevelUserCollectionsWithOptions:'
+    JsName: 'fetchTopLevelUserCollectionsWithOptions'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchTopLevelUserCollectionsWithOptions:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@24@0:8@16'
+  Properties:
+  - Name: 'canContainAssets'
+    JsName: 'canContainAssets'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'canContainAssets'
+      JsName: 'canContainAssets'
+      Module: 'Photos.PHCollection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'canContainAssets'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'canContainCollections'
+    JsName: 'canContainCollections'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'canContainCollections'
+      JsName: 'canContainCollections'
+      Module: 'Photos.PHCollection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'canContainCollections'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'localizedTitle'
+    JsName: 'localizedTitle'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'localizedTitle'
+      JsName: 'localizedTitle'
+      Module: 'Photos.PHCollection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'localizedTitle'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: Photos.PHObject
+    Name: PHObject
+  Type: Interface
+- Name: 'PHAssetCollection'
+  JsName: 'PHAssetCollection'
+  Module: 'Photos.PHCollection'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'fetchAssetCollectionsContainingAsset:withType:options:'
+    JsName: 'fetchAssetCollectionsContainingAssetWithTypeOptions'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchAssetCollectionsContainingAsset:withType:options:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Interface
+      Module: Photos.PHAsset
+      Name: PHAsset
+    - Type: Long
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@40@0:8@16q24@32'
+  - Name: 'fetchAssetCollectionsWithALAssetGroupURLs:options:'
+    JsName: 'fetchAssetCollectionsWithALAssetGroupURLsOptions'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchAssetCollectionsWithALAssetGroupURLs:options:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'fetchAssetCollectionsWithLocalIdentifiers:options:'
+    JsName: 'fetchAssetCollectionsWithLocalIdentifiersOptions'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchAssetCollectionsWithLocalIdentifiers:options:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'fetchAssetCollectionsWithType:subtype:options:'
+    JsName: 'fetchAssetCollectionsWithTypeSubtypeOptions'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchAssetCollectionsWithType:subtype:options:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Long
+    - Type: Long
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@40@0:8q16q24@32'
+  - Name: 'fetchMomentsInMomentList:options:'
+    JsName: 'fetchMomentsInMomentListOptions'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchMomentsInMomentList:options:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Interface
+      Module: Photos.PHCollection
+      Name: PHCollectionList
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'fetchMomentsWithOptions:'
+    JsName: 'fetchMomentsWithOptions'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchMomentsWithOptions:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'transientAssetCollectionWithAssetFetchResult:title:'
+    JsName: 'transientAssetCollectionWithAssetFetchResultTitle'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'transientAssetCollectionWithAssetFetchResult:title:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHCollection
+      Name: PHAssetCollection
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'transientAssetCollectionWithAssets:title:'
+    JsName: 'transientAssetCollectionWithAssetsTitle'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'transientAssetCollectionWithAssets:title:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHCollection
+      Name: PHAssetCollection
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@32@0:8@16@24'
+  Properties:
+  - Name: 'approximateLocation'
+    JsName: 'approximateLocation'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'approximateLocation'
+      JsName: 'approximateLocation'
+      Module: 'Photos.PHCollection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'approximateLocation'
+      Signature:
+      - Type: Interface
+        Module: CoreLocation.CLLocation
+        Name: CLLocation
+      TypeEncoding: '@16@0:8'
+  - Name: 'assetCollectionSubtype'
+    JsName: 'assetCollectionSubtype'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'assetCollectionSubtype'
+      JsName: 'assetCollectionSubtype'
+      Module: 'Photos.PHCollection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'assetCollectionSubtype'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+  - Name: 'assetCollectionType'
+    JsName: 'assetCollectionType'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'assetCollectionType'
+      JsName: 'assetCollectionType'
+      Module: 'Photos.PHCollection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'assetCollectionType'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+  - Name: 'endDate'
+    JsName: 'endDate'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'endDate'
+      JsName: 'endDate'
+      Module: 'Photos.PHCollection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'endDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@16@0:8'
+  - Name: 'estimatedAssetCount'
+    JsName: 'estimatedAssetCount'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'estimatedAssetCount'
+      JsName: 'estimatedAssetCount'
+      Module: 'Photos.PHCollection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'estimatedAssetCount'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'localizedLocationNames'
+    JsName: 'localizedLocationNames'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'localizedLocationNames'
+      JsName: 'localizedLocationNames'
+      Module: 'Photos.PHCollection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'localizedLocationNames'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  - Name: 'startDate'
+    JsName: 'startDate'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'startDate'
+      JsName: 'startDate'
+      Module: 'Photos.PHCollection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'startDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: Photos.PHCollection
+    Name: PHCollection
+  Type: Interface
+- Name: 'PHCollectionList'
+  JsName: 'PHCollectionList'
+  Module: 'Photos.PHCollection'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'fetchCollectionListsContainingCollection:options:'
+    JsName: 'fetchCollectionListsContainingCollectionOptions'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchCollectionListsContainingCollection:options:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Interface
+      Module: Photos.PHCollection
+      Name: PHCollection
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'fetchCollectionListsWithLocalIdentifiers:options:'
+    JsName: 'fetchCollectionListsWithLocalIdentifiersOptions'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchCollectionListsWithLocalIdentifiers:options:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'fetchCollectionListsWithType:subtype:options:'
+    JsName: 'fetchCollectionListsWithTypeSubtypeOptions'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchCollectionListsWithType:subtype:options:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Long
+    - Type: Long
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@40@0:8q16q24@32'
+  - Name: 'fetchMomentListsWithSubtype:containingMoment:options:'
+    JsName: 'fetchMomentListsWithSubtypeContainingMomentOptions'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchMomentListsWithSubtype:containingMoment:options:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Long
+    - Type: Interface
+      Module: Photos.PHCollection
+      Name: PHAssetCollection
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@40@0:8q16@24@32'
+  - Name: 'fetchMomentListsWithSubtype:options:'
+    JsName: 'fetchMomentListsWithSubtypeOptions'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchMomentListsWithSubtype:options:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Long
+    - Type: Interface
+      Module: Photos.PHFetchOptions
+      Name: PHFetchOptions
+    TypeEncoding: '@32@0:8q16@24'
+  - Name: 'transientCollectionListWithCollectionsFetchResult:title:'
+    JsName: 'transientCollectionListWithCollectionsFetchResultTitle'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'transientCollectionListWithCollectionsFetchResult:title:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHCollection
+      Name: PHCollectionList
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'transientCollectionListWithCollections:title:'
+    JsName: 'transientCollectionListWithCollectionsTitle'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'transientCollectionListWithCollections:title:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHCollection
+      Name: PHCollectionList
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@32@0:8@16@24'
+  Properties:
+  - Name: 'collectionListSubtype'
+    JsName: 'collectionListSubtype'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'collectionListSubtype'
+      JsName: 'collectionListSubtype'
+      Module: 'Photos.PHCollection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'collectionListSubtype'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+  - Name: 'collectionListType'
+    JsName: 'collectionListType'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'collectionListType'
+      JsName: 'collectionListType'
+      Module: 'Photos.PHCollection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'collectionListType'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+  - Name: 'endDate'
+    JsName: 'endDate'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'endDate'
+      JsName: 'endDate'
+      Module: 'Photos.PHCollection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'endDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@16@0:8'
+  - Name: 'localizedLocationNames'
+    JsName: 'localizedLocationNames'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'localizedLocationNames'
+      JsName: 'localizedLocationNames'
+      Module: 'Photos.PHCollection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'localizedLocationNames'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  - Name: 'startDate'
+    JsName: 'startDate'
+    Module: 'Photos.PHCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'startDate'
+      JsName: 'startDate'
+      Module: 'Photos.PHCollection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'startDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: Photos.PHCollection
+    Name: PHCollection
+  Type: Interface
+- Name: 'PHFetchOptions'
+  JsName: 'PHFetchOptions'
+  Module: 'Photos.PHFetchOptions'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'includeAllBurstAssets'
+    JsName: 'includeAllBurstAssets'
+    Module: 'Photos.PHFetchOptions'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'includeAllBurstAssets'
+      JsName: 'includeAllBurstAssets'
+      Module: 'Photos.PHFetchOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'includeAllBurstAssets'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setIncludeAllBurstAssets:'
+      JsName: 'setIncludeAllBurstAssets'
+      Module: 'Photos.PHFetchOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setIncludeAllBurstAssets:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'includeHiddenAssets'
+    JsName: 'includeHiddenAssets'
+    Module: 'Photos.PHFetchOptions'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'includeHiddenAssets'
+      JsName: 'includeHiddenAssets'
+      Module: 'Photos.PHFetchOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'includeHiddenAssets'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setIncludeHiddenAssets:'
+      JsName: 'setIncludeHiddenAssets'
+      Module: 'Photos.PHFetchOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setIncludeHiddenAssets:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'predicate'
+    JsName: 'predicate'
+    Module: 'Photos.PHFetchOptions'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'predicate'
+      JsName: 'predicate'
+      Module: 'Photos.PHFetchOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'predicate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSPredicate
+        Name: NSPredicate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setPredicate:'
+      JsName: 'setPredicate'
+      Module: 'Photos.PHFetchOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPredicate:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSPredicate
+        Name: NSPredicate
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'sortDescriptors'
+    JsName: 'sortDescriptors'
+    Module: 'Photos.PHFetchOptions'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'sortDescriptors'
+      JsName: 'sortDescriptors'
+      Module: 'Photos.PHFetchOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'sortDescriptors'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setSortDescriptors:'
+      JsName: 'setSortDescriptors'
+      Module: 'Photos.PHFetchOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSortDescriptors:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'wantsIncrementalChangeDetails'
+    JsName: 'wantsIncrementalChangeDetails'
+    Module: 'Photos.PHFetchOptions'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'wantsIncrementalChangeDetails'
+      JsName: 'wantsIncrementalChangeDetails'
+      Module: 'Photos.PHFetchOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'wantsIncrementalChangeDetails'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setWantsIncrementalChangeDetails:'
+      JsName: 'setWantsIncrementalChangeDetails'
+      Module: 'Photos.PHFetchOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setWantsIncrementalChangeDetails:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PHFetchResult'
+  JsName: 'PHFetchResult'
+  Module: 'Photos.PHFetchResult'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'containsObject:'
+    JsName: 'containsObject'
+    Module: 'Photos.PHFetchResult'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'containsObject:'
+    Signature:
+    - Type: Bool
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'countOfAssetsWithMediaType:'
+    JsName: 'countOfAssetsWithMediaType'
+    Module: 'Photos.PHFetchResult'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'countOfAssetsWithMediaType:'
+    Signature:
+    - Type: ULong
+    - Type: Long
+    TypeEncoding: 'Q24@0:8q16'
+  - Name: 'enumerateObjectsAtIndexes:options:usingBlock:'
+    JsName: 'enumerateObjectsAtIndexesOptionsUsingBlock'
+    Module: 'Photos.PHFetchResult'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'enumerateObjectsAtIndexes:options:usingBlock:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSIndexSet
+      Name: NSIndexSet
+    - Type: ULong
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols: []
+      - Type: ULong
+      - Type: Pointer
+        PointerType:
+          Type: Bool
+    TypeEncoding: 'v40@0:8@16Q24@?32'
+  - Name: 'enumerateObjectsUsingBlock:'
+    JsName: 'enumerateObjectsUsingBlock'
+    Module: 'Photos.PHFetchResult'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'enumerateObjectsUsingBlock:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols: []
+      - Type: ULong
+      - Type: Pointer
+        PointerType:
+          Type: Bool
+    TypeEncoding: 'v24@0:8@?16'
+  - Name: 'enumerateObjectsWithOptions:usingBlock:'
+    JsName: 'enumerateObjectsWithOptionsUsingBlock'
+    Module: 'Photos.PHFetchResult'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'enumerateObjectsWithOptions:usingBlock:'
+    Signature:
+    - Type: Void
+    - Type: ULong
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols: []
+      - Type: ULong
+      - Type: Pointer
+        PointerType:
+          Type: Bool
+    TypeEncoding: 'v32@0:8Q16@?24'
+  - Name: 'indexOfObject:'
+    JsName: 'indexOfObject'
+    Module: 'Photos.PHFetchResult'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'indexOfObject:'
+    Signature:
+    - Type: ULong
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: 'Q24@0:8@16'
+  - Name: 'indexOfObject:inRange:'
+    JsName: 'indexOfObjectInRange'
+    Module: 'Photos.PHFetchResult'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'indexOfObject:inRange:'
+    Signature:
+    - Type: ULong
+    - Type: Id
+      WithProtocols: []
+    - Type: Struct
+      Module: Foundation.NSRange
+      Name: NSRange
+    TypeEncoding: 'Q40@0:8@16{_NSRange=QQ}24'
+  - Name: 'objectAtIndex:'
+    JsName: 'objectAtIndex'
+    Module: 'Photos.PHFetchResult'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'objectAtIndex:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: ULong
+    TypeEncoding: '@24@0:8Q16'
+  - Name: 'objectAtIndexedSubscript:'
+    JsName: 'objectAtIndexedSubscript'
+    Module: 'Photos.PHFetchResult'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'objectAtIndexedSubscript:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: ULong
+    TypeEncoding: '@24@0:8Q16'
+  - Name: 'objectsAtIndexes:'
+    JsName: 'objectsAtIndexes'
+    Module: 'Photos.PHFetchResult'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'objectsAtIndexes:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSIndexSet
+      Name: NSIndexSet
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'count'
+    JsName: 'count'
+    Module: 'Photos.PHFetchResult'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'count'
+      JsName: 'count'
+      Module: 'Photos.PHFetchResult'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'count'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'firstObject'
+    JsName: 'firstObject'
+    Module: 'Photos.PHFetchResult'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'firstObject'
+      JsName: 'firstObject'
+      Module: 'Photos.PHFetchResult'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'firstObject'
+      Signature:
+      - Type: Id
+        WithProtocols: []
+      TypeEncoding: '@16@0:8'
+  - Name: 'lastObject'
+    JsName: 'lastObject'
+    Module: 'Photos.PHFetchResult'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'lastObject'
+      JsName: 'lastObject'
+      Module: 'Photos.PHFetchResult'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lastObject'
+      Signature:
+      - Type: Id
+        WithProtocols: []
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSEnumerator
+    Name: NSFastEnumeration
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PHChange'
+  JsName: 'PHChange'
+  Module: 'Photos.PHChange'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'changeDetailsForFetchResult:'
+    JsName: 'changeDetailsForFetchResult'
+    Module: 'Photos.PHChange'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'changeDetailsForFetchResult:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHChange
+      Name: PHFetchResultChangeDetails
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'changeDetailsForObject:'
+    JsName: 'changeDetailsForObject'
+    Module: 'Photos.PHChange'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'changeDetailsForObject:'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHChange
+      Name: PHObjectChangeDetails
+    - Type: Interface
+      Module: Photos.PHObject
+      Name: PHObject
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PHObjectChangeDetails'
+  JsName: 'PHObjectChangeDetails'
+  Module: 'Photos.PHChange'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'assetContentChanged'
+    JsName: 'assetContentChanged'
+    Module: 'Photos.PHChange'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'assetContentChanged'
+      JsName: 'assetContentChanged'
+      Module: 'Photos.PHChange'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'assetContentChanged'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'objectAfterChanges'
+    JsName: 'objectAfterChanges'
+    Module: 'Photos.PHChange'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'objectAfterChanges'
+      JsName: 'objectAfterChanges'
+      Module: 'Photos.PHChange'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'objectAfterChanges'
+      Signature:
+      - Type: Id
+        WithProtocols: []
+      TypeEncoding: '@16@0:8'
+  - Name: 'objectBeforeChanges'
+    JsName: 'objectBeforeChanges'
+    Module: 'Photos.PHChange'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'objectBeforeChanges'
+      JsName: 'objectBeforeChanges'
+      Module: 'Photos.PHChange'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'objectBeforeChanges'
+      Signature:
+      - Type: Id
+        WithProtocols: []
+      TypeEncoding: '@16@0:8'
+  - Name: 'objectWasDeleted'
+    JsName: 'objectWasDeleted'
+    Module: 'Photos.PHChange'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'objectWasDeleted'
+      JsName: 'objectWasDeleted'
+      Module: 'Photos.PHChange'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'objectWasDeleted'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PHFetchResultChangeDetails'
+  JsName: 'PHFetchResultChangeDetails'
+  Module: 'Photos.PHChange'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'enumerateMovesWithBlock:'
+    JsName: 'enumerateMovesWithBlock'
+    Module: 'Photos.PHChange'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'enumerateMovesWithBlock:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: ULong
+      - Type: ULong
+    TypeEncoding: 'v24@0:8@?16'
+  StaticMethods:
+  - Name: 'changeDetailsFromFetchResult:toFetchResult:changedObjects:'
+    JsName: 'changeDetailsFromFetchResultToFetchResultChangedObjects'
+    Module: 'Photos.PHChange'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'changeDetailsFromFetchResult:toFetchResult:changedObjects:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@40@0:8@16@24@32'
+  Properties:
+  - Name: 'changedIndexes'
+    JsName: 'changedIndexes'
+    Module: 'Photos.PHChange'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'changedIndexes'
+      JsName: 'changedIndexes'
+      Module: 'Photos.PHChange'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'changedIndexes'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSIndexSet
+        Name: NSIndexSet
+      TypeEncoding: '@16@0:8'
+  - Name: 'changedObjects'
+    JsName: 'changedObjects'
+    Module: 'Photos.PHChange'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'changedObjects'
+      JsName: 'changedObjects'
+      Module: 'Photos.PHChange'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'changedObjects'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  - Name: 'fetchResultAfterChanges'
+    JsName: 'fetchResultAfterChanges'
+    Module: 'Photos.PHChange'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'fetchResultAfterChanges'
+      JsName: 'fetchResultAfterChanges'
+      Module: 'Photos.PHChange'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'fetchResultAfterChanges'
+      Signature:
+      - Type: Interface
+        Module: Photos.PHFetchResult
+        Name: PHFetchResult
+      TypeEncoding: '@16@0:8'
+  - Name: 'fetchResultBeforeChanges'
+    JsName: 'fetchResultBeforeChanges'
+    Module: 'Photos.PHChange'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'fetchResultBeforeChanges'
+      JsName: 'fetchResultBeforeChanges'
+      Module: 'Photos.PHChange'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'fetchResultBeforeChanges'
+      Signature:
+      - Type: Interface
+        Module: Photos.PHFetchResult
+        Name: PHFetchResult
+      TypeEncoding: '@16@0:8'
+  - Name: 'hasIncrementalChanges'
+    JsName: 'hasIncrementalChanges'
+    Module: 'Photos.PHChange'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'hasIncrementalChanges'
+      JsName: 'hasIncrementalChanges'
+      Module: 'Photos.PHChange'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'hasIncrementalChanges'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'hasMoves'
+    JsName: 'hasMoves'
+    Module: 'Photos.PHChange'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'hasMoves'
+      JsName: 'hasMoves'
+      Module: 'Photos.PHChange'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'hasMoves'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'insertedIndexes'
+    JsName: 'insertedIndexes'
+    Module: 'Photos.PHChange'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'insertedIndexes'
+      JsName: 'insertedIndexes'
+      Module: 'Photos.PHChange'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'insertedIndexes'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSIndexSet
+        Name: NSIndexSet
+      TypeEncoding: '@16@0:8'
+  - Name: 'insertedObjects'
+    JsName: 'insertedObjects'
+    Module: 'Photos.PHChange'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'insertedObjects'
+      JsName: 'insertedObjects'
+      Module: 'Photos.PHChange'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'insertedObjects'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  - Name: 'removedIndexes'
+    JsName: 'removedIndexes'
+    Module: 'Photos.PHChange'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'removedIndexes'
+      JsName: 'removedIndexes'
+      Module: 'Photos.PHChange'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'removedIndexes'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSIndexSet
+        Name: NSIndexSet
+      TypeEncoding: '@16@0:8'
+  - Name: 'removedObjects'
+    JsName: 'removedObjects'
+    Module: 'Photos.PHChange'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'removedObjects'
+      JsName: 'removedObjects'
+      Module: 'Photos.PHChange'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'removedObjects'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PHContentEditingOutput'
+  JsName: 'PHContentEditingOutput'
+  Module: 'Photos.PHContentEditingOutput'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithContentEditingInput:'
+    JsName: 'initWithContentEditingInput'
+    Module: 'Photos.PHContentEditingOutput'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithContentEditingInput:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Photos.PHContentEditingInput
+      Name: PHContentEditingInput
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'initWithPlaceholderForCreatedAsset:'
+    JsName: 'initWithPlaceholderForCreatedAsset'
+    Module: 'Photos.PHAssetChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithPlaceholderForCreatedAsset:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Photos.PHObject
+      Name: PHObjectPlaceholder
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'adjustmentData'
+    JsName: 'adjustmentData'
+    Module: 'Photos.PHContentEditingOutput'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'adjustmentData'
+      JsName: 'adjustmentData'
+      Module: 'Photos.PHContentEditingOutput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'adjustmentData'
+      Signature:
+      - Type: Interface
+        Module: Photos.PHAdjustmentData
+        Name: PHAdjustmentData
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setAdjustmentData:'
+      JsName: 'setAdjustmentData'
+      Module: 'Photos.PHContentEditingOutput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAdjustmentData:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Photos.PHAdjustmentData
+        Name: PHAdjustmentData
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'renderedContentURL'
+    JsName: 'renderedContentURL'
+    Module: 'Photos.PHContentEditingOutput'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'renderedContentURL'
+      JsName: 'renderedContentURL'
+      Module: 'Photos.PHContentEditingOutput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'renderedContentURL'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PHAssetChangeRequest'
+  JsName: 'PHAssetChangeRequest'
+  Module: 'Photos.PHAssetChangeRequest'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'revertAssetContentToOriginal'
+    JsName: 'revertAssetContentToOriginal'
+    Module: 'Photos.PHAssetChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'revertAssetContentToOriginal'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods:
+  - Name: 'changeRequestForAsset:'
+    JsName: 'changeRequestForAsset'
+    Module: 'Photos.PHAssetChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'changeRequestForAsset:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Photos.PHAsset
+      Name: PHAsset
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'creationRequestForAssetFromImage:'
+    JsName: 'creationRequestForAssetFromImage'
+    Module: 'Photos.PHAssetChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'creationRequestForAssetFromImage:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'creationRequestForAssetFromImageAtFileURL:'
+    JsName: 'creationRequestForAssetFromImageAtFileURL'
+    Module: 'Photos.PHAssetChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'creationRequestForAssetFromImageAtFileURL:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'creationRequestForAssetFromVideoAtFileURL:'
+    JsName: 'creationRequestForAssetFromVideoAtFileURL'
+    Module: 'Photos.PHAssetChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'creationRequestForAssetFromVideoAtFileURL:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'deleteAssets:'
+    JsName: 'deleteAssets'
+    Module: 'Photos.PHAssetChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'deleteAssets:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Foundation.NSEnumerator
+        Name: NSFastEnumeration
+    TypeEncoding: 'v24@0:8@16'
+  Properties:
+  - Name: 'contentEditingOutput'
+    JsName: 'contentEditingOutput'
+    Module: 'Photos.PHAssetChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'contentEditingOutput'
+      JsName: 'contentEditingOutput'
+      Module: 'Photos.PHAssetChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'contentEditingOutput'
+      Signature:
+      - Type: Interface
+        Module: Photos.PHContentEditingOutput
+        Name: PHContentEditingOutput
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setContentEditingOutput:'
+      JsName: 'setContentEditingOutput'
+      Module: 'Photos.PHAssetChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setContentEditingOutput:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Photos.PHContentEditingOutput
+        Name: PHContentEditingOutput
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'creationDate'
+    JsName: 'creationDate'
+    Module: 'Photos.PHAssetChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'creationDate'
+      JsName: 'creationDate'
+      Module: 'Photos.PHAssetChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'creationDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setCreationDate:'
+      JsName: 'setCreationDate'
+      Module: 'Photos.PHAssetChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCreationDate:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'favorite'
+    JsName: 'favorite'
+    Module: 'Photos.PHAssetChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isFavorite'
+      JsName: 'isFavorite'
+      Module: 'Photos.PHAssetChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isFavorite'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setFavorite:'
+      JsName: 'setFavorite'
+      Module: 'Photos.PHAssetChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setFavorite:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'hidden'
+    JsName: 'hidden'
+    Module: 'Photos.PHAssetChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isHidden'
+      JsName: 'isHidden'
+      Module: 'Photos.PHAssetChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isHidden'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setHidden:'
+      JsName: 'setHidden'
+      Module: 'Photos.PHAssetChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setHidden:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'location'
+    JsName: 'location'
+    Module: 'Photos.PHAssetChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'location'
+      JsName: 'location'
+      Module: 'Photos.PHAssetChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'location'
+      Signature:
+      - Type: Interface
+        Module: CoreLocation.CLLocation
+        Name: CLLocation
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setLocation:'
+      JsName: 'setLocation'
+      Module: 'Photos.PHAssetChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLocation:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CoreLocation.CLLocation
+        Name: CLLocation
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'placeholderForCreatedAsset'
+    JsName: 'placeholderForCreatedAsset'
+    Module: 'Photos.PHAssetChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'placeholderForCreatedAsset'
+      JsName: 'placeholderForCreatedAsset'
+      Module: 'Photos.PHAssetChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'placeholderForCreatedAsset'
+      Signature:
+      - Type: Interface
+        Module: Photos.PHObject
+        Name: PHObjectPlaceholder
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PHContentEditingInputRequestOptions'
+  JsName: 'PHContentEditingInputRequestOptions'
+  Module: 'Photos.PHAssetChangeRequest'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'canHandleAdjustmentData'
+    JsName: 'canHandleAdjustmentData'
+    Module: 'Photos.PHAssetChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'canHandleAdjustmentData'
+      JsName: 'canHandleAdjustmentData'
+      Module: 'Photos.PHAssetChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'canHandleAdjustmentData'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Bool
+        - Type: Interface
+          Module: Photos.PHAdjustmentData
+          Name: PHAdjustmentData
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setCanHandleAdjustmentData:'
+      JsName: 'setCanHandleAdjustmentData'
+      Module: 'Photos.PHAssetChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCanHandleAdjustmentData:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Bool
+        - Type: Interface
+          Module: Photos.PHAdjustmentData
+          Name: PHAdjustmentData
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'networkAccessAllowed'
+    JsName: 'networkAccessAllowed'
+    Module: 'Photos.PHAssetChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isNetworkAccessAllowed'
+      JsName: 'isNetworkAccessAllowed'
+      Module: 'Photos.PHAssetChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isNetworkAccessAllowed'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setNetworkAccessAllowed:'
+      JsName: 'setNetworkAccessAllowed'
+      Module: 'Photos.PHAssetChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setNetworkAccessAllowed:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'progressHandler'
+    JsName: 'progressHandler'
+    Module: 'Photos.PHAssetChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'progressHandler'
+      JsName: 'progressHandler'
+      Module: 'Photos.PHAssetChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'progressHandler'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Double
+        - Type: Pointer
+          PointerType:
+            Type: Bool
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setProgressHandler:'
+      JsName: 'setProgressHandler'
+      Module: 'Photos.PHAssetChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setProgressHandler:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Double
+        - Type: Pointer
+          PointerType:
+            Type: Bool
+      TypeEncoding: 'v24@0:8@?16'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PHContentEditingInputResultIsInCloudKey'
+  JsName: 'PHContentEditingInputResultIsInCloudKey'
+  Module: 'Photos.PHAssetChangeRequest'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'PHContentEditingInputCancelledKey'
+  JsName: 'PHContentEditingInputCancelledKey'
+  Module: 'Photos.PHAssetChangeRequest'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'PHContentEditingInputErrorKey'
+  JsName: 'PHContentEditingInputErrorKey'
+  Module: 'Photos.PHAssetChangeRequest'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'PHAssetCollectionChangeRequest'
+  JsName: 'PHAssetCollectionChangeRequest'
+  Module: 'Photos.PHAssetCollectionChangeRequest'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addAssets:'
+    JsName: 'addAssets'
+    Module: 'Photos.PHAssetCollectionChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addAssets:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Foundation.NSEnumerator
+        Name: NSFastEnumeration
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'insertAssets:atIndexes:'
+    JsName: 'insertAssetsAtIndexes'
+    Module: 'Photos.PHAssetCollectionChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'insertAssets:atIndexes:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Foundation.NSEnumerator
+        Name: NSFastEnumeration
+    - Type: Interface
+      Module: Foundation.NSIndexSet
+      Name: NSIndexSet
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'moveAssetsAtIndexes:toIndex:'
+    JsName: 'moveAssetsAtIndexesToIndex'
+    Module: 'Photos.PHAssetCollectionChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'moveAssetsAtIndexes:toIndex:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSIndexSet
+      Name: NSIndexSet
+    - Type: ULong
+    TypeEncoding: 'v32@0:8@16Q24'
+  - Name: 'removeAssets:'
+    JsName: 'removeAssets'
+    Module: 'Photos.PHAssetCollectionChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeAssets:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Foundation.NSEnumerator
+        Name: NSFastEnumeration
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'removeAssetsAtIndexes:'
+    JsName: 'removeAssetsAtIndexes'
+    Module: 'Photos.PHAssetCollectionChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeAssetsAtIndexes:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSIndexSet
+      Name: NSIndexSet
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'replaceAssetsAtIndexes:withAssets:'
+    JsName: 'replaceAssetsAtIndexesWithAssets'
+    Module: 'Photos.PHAssetCollectionChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'replaceAssetsAtIndexes:withAssets:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSIndexSet
+      Name: NSIndexSet
+    - Type: Id
+      WithProtocols:
+      - Module: Foundation.NSEnumerator
+        Name: NSFastEnumeration
+    TypeEncoding: 'v32@0:8@16@24'
+  StaticMethods:
+  - Name: 'changeRequestForAssetCollection:'
+    JsName: 'changeRequestForAssetCollection'
+    Module: 'Photos.PHAssetCollectionChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'changeRequestForAssetCollection:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Photos.PHCollection
+      Name: PHAssetCollection
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'changeRequestForAssetCollection:assets:'
+    JsName: 'changeRequestForAssetCollectionAssets'
+    Module: 'Photos.PHAssetCollectionChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'changeRequestForAssetCollection:assets:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Photos.PHCollection
+      Name: PHAssetCollection
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'creationRequestForAssetCollectionWithTitle:'
+    JsName: 'creationRequestForAssetCollectionWithTitle'
+    Module: 'Photos.PHAssetCollectionChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'creationRequestForAssetCollectionWithTitle:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'deleteAssetCollections:'
+    JsName: 'deleteAssetCollections'
+    Module: 'Photos.PHAssetCollectionChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'deleteAssetCollections:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Foundation.NSEnumerator
+        Name: NSFastEnumeration
+    TypeEncoding: 'v24@0:8@16'
+  Properties:
+  - Name: 'placeholderForCreatedAssetCollection'
+    JsName: 'placeholderForCreatedAssetCollection'
+    Module: 'Photos.PHAssetCollectionChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'placeholderForCreatedAssetCollection'
+      JsName: 'placeholderForCreatedAssetCollection'
+      Module: 'Photos.PHAssetCollectionChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'placeholderForCreatedAssetCollection'
+      Signature:
+      - Type: Interface
+        Module: Photos.PHObject
+        Name: PHObjectPlaceholder
+      TypeEncoding: '@16@0:8'
+  - Name: 'title'
+    JsName: 'title'
+    Module: 'Photos.PHAssetCollectionChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'title'
+      JsName: 'title'
+      Module: 'Photos.PHAssetCollectionChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'title'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setTitle:'
+      JsName: 'setTitle'
+      Module: 'Photos.PHAssetCollectionChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setTitle:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PHCollectionListChangeRequest'
+  JsName: 'PHCollectionListChangeRequest'
+  Module: 'Photos.PHCollectionListChangeRequest'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addChildCollections:'
+    JsName: 'addChildCollections'
+    Module: 'Photos.PHCollectionListChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addChildCollections:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Foundation.NSEnumerator
+        Name: NSFastEnumeration
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'insertChildCollections:atIndexes:'
+    JsName: 'insertChildCollectionsAtIndexes'
+    Module: 'Photos.PHCollectionListChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'insertChildCollections:atIndexes:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Foundation.NSEnumerator
+        Name: NSFastEnumeration
+    - Type: Interface
+      Module: Foundation.NSIndexSet
+      Name: NSIndexSet
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'moveChildCollectionsAtIndexes:toIndex:'
+    JsName: 'moveChildCollectionsAtIndexesToIndex'
+    Module: 'Photos.PHCollectionListChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'moveChildCollectionsAtIndexes:toIndex:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSIndexSet
+      Name: NSIndexSet
+    - Type: ULong
+    TypeEncoding: 'v32@0:8@16Q24'
+  - Name: 'removeChildCollections:'
+    JsName: 'removeChildCollections'
+    Module: 'Photos.PHCollectionListChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeChildCollections:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Foundation.NSEnumerator
+        Name: NSFastEnumeration
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'removeChildCollectionsAtIndexes:'
+    JsName: 'removeChildCollectionsAtIndexes'
+    Module: 'Photos.PHCollectionListChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeChildCollectionsAtIndexes:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSIndexSet
+      Name: NSIndexSet
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'replaceChildCollectionsAtIndexes:withChildCollections:'
+    JsName: 'replaceChildCollectionsAtIndexesWithChildCollections'
+    Module: 'Photos.PHCollectionListChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'replaceChildCollectionsAtIndexes:withChildCollections:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSIndexSet
+      Name: NSIndexSet
+    - Type: Id
+      WithProtocols:
+      - Module: Foundation.NSEnumerator
+        Name: NSFastEnumeration
+    TypeEncoding: 'v32@0:8@16@24'
+  StaticMethods:
+  - Name: 'changeRequestForCollectionList:'
+    JsName: 'changeRequestForCollectionList'
+    Module: 'Photos.PHCollectionListChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'changeRequestForCollectionList:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Photos.PHCollection
+      Name: PHCollectionList
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'changeRequestForCollectionList:childCollections:'
+    JsName: 'changeRequestForCollectionListChildCollections'
+    Module: 'Photos.PHCollectionListChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'changeRequestForCollectionList:childCollections:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Photos.PHCollection
+      Name: PHCollectionList
+    - Type: Interface
+      Module: Photos.PHFetchResult
+      Name: PHFetchResult
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'creationRequestForCollectionListWithTitle:'
+    JsName: 'creationRequestForCollectionListWithTitle'
+    Module: 'Photos.PHCollectionListChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'creationRequestForCollectionListWithTitle:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'deleteCollectionLists:'
+    JsName: 'deleteCollectionLists'
+    Module: 'Photos.PHCollectionListChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'deleteCollectionLists:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Foundation.NSEnumerator
+        Name: NSFastEnumeration
+    TypeEncoding: 'v24@0:8@16'
+  Properties:
+  - Name: 'placeholderForCreatedCollectionList'
+    JsName: 'placeholderForCreatedCollectionList'
+    Module: 'Photos.PHCollectionListChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'placeholderForCreatedCollectionList'
+      JsName: 'placeholderForCreatedCollectionList'
+      Module: 'Photos.PHCollectionListChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'placeholderForCreatedCollectionList'
+      Signature:
+      - Type: Interface
+        Module: Photos.PHObject
+        Name: PHObjectPlaceholder
+      TypeEncoding: '@16@0:8'
+  - Name: 'title'
+    JsName: 'title'
+    Module: 'Photos.PHCollectionListChangeRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'title'
+      JsName: 'title'
+      Module: 'Photos.PHCollectionListChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'title'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setTitle:'
+      JsName: 'setTitle'
+      Module: 'Photos.PHCollectionListChangeRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setTitle:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PHImageContentMode'
+  JsName: 'PHImageContentMode'
+  Module: 'Photos.PHImageManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PHImageContentModeAspectFit":0,"PHImageContentModeAspectFill":1,"PHImageContentModeDefault":0})
+- Name: 'PHImageRequestOptionsVersion'
+  JsName: 'PHImageRequestOptionsVersion'
+  Module: 'Photos.PHImageManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PHImageRequestOptionsVersionCurrent":0,"PHImageRequestOptionsVersionUnadjusted":1,"PHImageRequestOptionsVersionOriginal":2})
+- Name: 'PHImageRequestOptionsDeliveryMode'
+  JsName: 'PHImageRequestOptionsDeliveryMode'
+  Module: 'Photos.PHImageManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PHImageRequestOptionsDeliveryModeOpportunistic":0,"PHImageRequestOptionsDeliveryModeHighQualityFormat":1,"PHImageRequestOptionsDeliveryModeFastFormat":2})
+- Name: 'PHImageRequestOptionsResizeMode'
+  JsName: 'PHImageRequestOptionsResizeMode'
+  Module: 'Photos.PHImageManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PHImageRequestOptionsResizeModeNone":0,"PHImageRequestOptionsResizeModeFast":1,"PHImageRequestOptionsResizeModeExact":2})
+- Name: 'PHImageRequestOptions'
+  JsName: 'PHImageRequestOptions'
+  Module: 'Photos.PHImageManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'deliveryMode'
+    JsName: 'deliveryMode'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'deliveryMode'
+      JsName: 'deliveryMode'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'deliveryMode'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+    Setter:
+      Name: 'setDeliveryMode:'
+      JsName: 'setDeliveryMode'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDeliveryMode:'
+      Signature:
+      - Type: Void
+      - Type: Long
+      TypeEncoding: 'v24@0:8q16'
+  - Name: 'networkAccessAllowed'
+    JsName: 'networkAccessAllowed'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isNetworkAccessAllowed'
+      JsName: 'isNetworkAccessAllowed'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isNetworkAccessAllowed'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setNetworkAccessAllowed:'
+      JsName: 'setNetworkAccessAllowed'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setNetworkAccessAllowed:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'normalizedCropRect'
+    JsName: 'normalizedCropRect'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'normalizedCropRect'
+      JsName: 'normalizedCropRect'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'normalizedCropRect'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGRect
+      TypeEncoding: '{CGRect={CGPoint=dd}{CGSize=dd}}16@0:8'
+    Setter:
+      Name: 'setNormalizedCropRect:'
+      JsName: 'setNormalizedCropRect'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setNormalizedCropRect:'
+      Signature:
+      - Type: Void
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGRect
+      TypeEncoding: 'v48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16'
+  - Name: 'progressHandler'
+    JsName: 'progressHandler'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'progressHandler'
+      JsName: 'progressHandler'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'progressHandler'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Double
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+        - Type: Pointer
+          PointerType:
+            Type: Bool
+        - Type: Interface
+          Module: Foundation.NSDictionary
+          Name: NSDictionary
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setProgressHandler:'
+      JsName: 'setProgressHandler'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setProgressHandler:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Double
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+        - Type: Pointer
+          PointerType:
+            Type: Bool
+        - Type: Interface
+          Module: Foundation.NSDictionary
+          Name: NSDictionary
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'resizeMode'
+    JsName: 'resizeMode'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'resizeMode'
+      JsName: 'resizeMode'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'resizeMode'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+    Setter:
+      Name: 'setResizeMode:'
+      JsName: 'setResizeMode'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setResizeMode:'
+      Signature:
+      - Type: Void
+      - Type: Long
+      TypeEncoding: 'v24@0:8q16'
+  - Name: 'synchronous'
+    JsName: 'synchronous'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isSynchronous'
+      JsName: 'isSynchronous'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isSynchronous'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setSynchronous:'
+      JsName: 'setSynchronous'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSynchronous:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'version'
+    JsName: 'version'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'version'
+      JsName: 'version'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'version'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+    Setter:
+      Name: 'setVersion:'
+      JsName: 'setVersion'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setVersion:'
+      Signature:
+      - Type: Void
+      - Type: Long
+      TypeEncoding: 'v24@0:8q16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PHVideoRequestOptionsVersion'
+  JsName: 'PHVideoRequestOptionsVersion'
+  Module: 'Photos.PHImageManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PHVideoRequestOptionsVersionCurrent":0,"PHVideoRequestOptionsVersionOriginal":1})
+- Name: 'PHVideoRequestOptionsDeliveryMode'
+  JsName: 'PHVideoRequestOptionsDeliveryMode'
+  Module: 'Photos.PHImageManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PHVideoRequestOptionsDeliveryModeAutomatic":0,"PHVideoRequestOptionsDeliveryModeHighQualityFormat":1,"PHVideoRequestOptionsDeliveryModeMediumQualityFormat":2,"PHVideoRequestOptionsDeliveryModeFastFormat":3})
+- Name: 'PHVideoRequestOptions'
+  JsName: 'PHVideoRequestOptions'
+  Module: 'Photos.PHImageManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'deliveryMode'
+    JsName: 'deliveryMode'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'deliveryMode'
+      JsName: 'deliveryMode'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'deliveryMode'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+    Setter:
+      Name: 'setDeliveryMode:'
+      JsName: 'setDeliveryMode'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDeliveryMode:'
+      Signature:
+      - Type: Void
+      - Type: Long
+      TypeEncoding: 'v24@0:8q16'
+  - Name: 'networkAccessAllowed'
+    JsName: 'networkAccessAllowed'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isNetworkAccessAllowed'
+      JsName: 'isNetworkAccessAllowed'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isNetworkAccessAllowed'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setNetworkAccessAllowed:'
+      JsName: 'setNetworkAccessAllowed'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setNetworkAccessAllowed:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'progressHandler'
+    JsName: 'progressHandler'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'progressHandler'
+      JsName: 'progressHandler'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'progressHandler'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Double
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+        - Type: Pointer
+          PointerType:
+            Type: Bool
+        - Type: Interface
+          Module: Foundation.NSDictionary
+          Name: NSDictionary
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setProgressHandler:'
+      JsName: 'setProgressHandler'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setProgressHandler:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Double
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+        - Type: Pointer
+          PointerType:
+            Type: Bool
+        - Type: Interface
+          Module: Foundation.NSDictionary
+          Name: NSDictionary
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'version'
+    JsName: 'version'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'version'
+      JsName: 'version'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'version'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+    Setter:
+      Name: 'setVersion:'
+      JsName: 'setVersion'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setVersion:'
+      Signature:
+      - Type: Void
+      - Type: Long
+      TypeEncoding: 'v24@0:8q16'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PHImageManagerMaximumSize'
+  JsName: 'PHImageManagerMaximumSize'
+  Module: 'Photos.PHImageManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGSize
+- Name: 'PHImageResultIsInCloudKey'
+  JsName: 'PHImageResultIsInCloudKey'
+  Module: 'Photos.PHImageManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'PHImageResultIsDegradedKey'
+  JsName: 'PHImageResultIsDegradedKey'
+  Module: 'Photos.PHImageManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'PHImageResultRequestIDKey'
+  JsName: 'PHImageResultRequestIDKey'
+  Module: 'Photos.PHImageManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'PHImageCancelledKey'
+  JsName: 'PHImageCancelledKey'
+  Module: 'Photos.PHImageManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'PHImageErrorKey'
+  JsName: 'PHImageErrorKey'
+  Module: 'Photos.PHImageManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'PHImageManager'
+  JsName: 'PHImageManager'
+  Module: 'Photos.PHImageManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'cancelImageRequest:'
+    JsName: 'cancelImageRequest'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancelImageRequest:'
+    Signature:
+    - Type: Void
+    - Type: Int
+    TypeEncoding: 'v20@0:8i16'
+  - Name: 'requestAVAssetForVideo:options:resultHandler:'
+    JsName: 'requestAVAssetForVideoOptionsResultHandler'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'requestAVAssetForVideo:options:resultHandler:'
+    Signature:
+    - Type: Int
+    - Type: Interface
+      Module: Photos.PHAsset
+      Name: PHAsset
+    - Type: Interface
+      Module: Photos.PHImageManager
+      Name: PHVideoRequestOptions
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: AVFoundation.AVAsset
+        Name: AVAsset
+      - Type: Interface
+        Module: AVFoundation.AVAudioMix
+        Name: AVAudioMix
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+    TypeEncoding: 'i40@0:8@16@24@?32'
+  - Name: 'requestExportSessionForVideo:options:exportPreset:resultHandler:'
+    JsName: 'requestExportSessionForVideoOptionsExportPresetResultHandler'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'requestExportSessionForVideo:options:exportPreset:resultHandler:'
+    Signature:
+    - Type: Int
+    - Type: Interface
+      Module: Photos.PHAsset
+      Name: PHAsset
+    - Type: Interface
+      Module: Photos.PHImageManager
+      Name: PHVideoRequestOptions
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: AVFoundation.AVAssetExportSession
+        Name: AVAssetExportSession
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+    TypeEncoding: 'i48@0:8@16@24@32@?40'
+  - Name: 'requestImageDataForAsset:options:resultHandler:'
+    JsName: 'requestImageDataForAssetOptionsResultHandler'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'requestImageDataForAsset:options:resultHandler:'
+    Signature:
+    - Type: Int
+    - Type: Interface
+      Module: Photos.PHAsset
+      Name: PHAsset
+    - Type: Interface
+      Module: Photos.PHImageManager
+      Name: PHImageRequestOptions
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      - Type: Long
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+    TypeEncoding: 'i40@0:8@16@24@?32'
+  - Name: 'requestImageForAsset:targetSize:contentMode:options:resultHandler:'
+    JsName: 'requestImageForAssetTargetSizeContentModeOptionsResultHandler'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'requestImageForAsset:targetSize:contentMode:options:resultHandler:'
+    Signature:
+    - Type: Int
+    - Type: Interface
+      Module: Photos.PHAsset
+      Name: PHAsset
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGSize
+    - Type: Long
+    - Type: Interface
+      Module: Photos.PHImageManager
+      Name: PHImageRequestOptions
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: UIKit.UIImage
+        Name: UIImage
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+    TypeEncoding: 'i64@0:8@16{CGSize=dd}24q40@48@?56'
+  - Name: 'requestPlayerItemForVideo:options:resultHandler:'
+    JsName: 'requestPlayerItemForVideoOptionsResultHandler'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'requestPlayerItemForVideo:options:resultHandler:'
+    Signature:
+    - Type: Int
+    - Type: Interface
+      Module: Photos.PHAsset
+      Name: PHAsset
+    - Type: Interface
+      Module: Photos.PHImageManager
+      Name: PHVideoRequestOptions
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: AVFoundation.AVPlayerItem
+        Name: AVPlayerItem
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+    TypeEncoding: 'i40@0:8@16@24@?32'
+  StaticMethods:
+  - Name: 'defaultManager'
+    JsName: 'defaultManager'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'defaultManager'
+    Signature:
+    - Type: Interface
+      Module: Photos.PHImageManager
+      Name: PHImageManager
+    TypeEncoding: '@16@0:8'
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PHCachingImageManager'
+  JsName: 'PHCachingImageManager'
+  Module: 'Photos.PHImageManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'startCachingImagesForAssets:targetSize:contentMode:options:'
+    JsName: 'startCachingImagesForAssetsTargetSizeContentModeOptions'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startCachingImagesForAssets:targetSize:contentMode:options:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGSize
+    - Type: Long
+    - Type: Interface
+      Module: Photos.PHImageManager
+      Name: PHImageRequestOptions
+    TypeEncoding: 'v56@0:8@16{CGSize=dd}24q40@48'
+  - Name: 'stopCachingImagesForAllAssets'
+    JsName: 'stopCachingImagesForAllAssets'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopCachingImagesForAllAssets'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'stopCachingImagesForAssets:targetSize:contentMode:options:'
+    JsName: 'stopCachingImagesForAssetsTargetSizeContentModeOptions'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopCachingImagesForAssets:targetSize:contentMode:options:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGSize
+    - Type: Long
+    - Type: Interface
+      Module: Photos.PHImageManager
+      Name: PHImageRequestOptions
+    TypeEncoding: 'v56@0:8@16{CGSize=dd}24q40@48'
+  StaticMethods: []
+  Properties:
+  - Name: 'allowsCachingHighQualityImages'
+    JsName: 'allowsCachingHighQualityImages'
+    Module: 'Photos.PHImageManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'allowsCachingHighQualityImages'
+      JsName: 'allowsCachingHighQualityImages'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'allowsCachingHighQualityImages'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setAllowsCachingHighQualityImages:'
+      JsName: 'setAllowsCachingHighQualityImages'
+      Module: 'Photos.PHImageManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAllowsCachingHighQualityImages:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  Protocols: []
+  Base:
+    Module: Photos.PHImageManager
+    Name: PHImageManager
+  Type: Interface
+- Name: 'PHAdjustmentData'
+  JsName: 'PHAdjustmentData'
+  Module: 'Photos.PHAdjustmentData'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithFormatIdentifier:formatVersion:data:'
+    JsName: 'initWithFormatIdentifierFormatVersionData'
+    Module: 'Photos.PHAdjustmentData'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithFormatIdentifier:formatVersion:data:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    TypeEncoding: '@40@0:8@16@24@32'
+  StaticMethods: []
+  Properties:
+  - Name: 'data'
+    JsName: 'data'
+    Module: 'Photos.PHAdjustmentData'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'data'
+      JsName: 'data'
+      Module: 'Photos.PHAdjustmentData'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'data'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@16@0:8'
+  - Name: 'formatIdentifier'
+    JsName: 'formatIdentifier'
+    Module: 'Photos.PHAdjustmentData'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'formatIdentifier'
+      JsName: 'formatIdentifier'
+      Module: 'Photos.PHAdjustmentData'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'formatIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'formatVersion'
+    JsName: 'formatVersion'
+    Module: 'Photos.PHAdjustmentData'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'formatVersion'
+      JsName: 'formatVersion'
+      Module: 'Photos.PHAdjustmentData'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'formatVersion'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PHContentEditingInput'
+  JsName: 'PHContentEditingInput'
+  Module: 'Photos.PHContentEditingInput'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'adjustmentData'
+    JsName: 'adjustmentData'
+    Module: 'Photos.PHContentEditingInput'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'adjustmentData'
+      JsName: 'adjustmentData'
+      Module: 'Photos.PHContentEditingInput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'adjustmentData'
+      Signature:
+      - Type: Interface
+        Module: Photos.PHAdjustmentData
+        Name: PHAdjustmentData
+      TypeEncoding: '@16@0:8'
+  - Name: 'avAsset'
+    JsName: 'avAsset'
+    Module: 'Photos.PHContentEditingInput'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'avAsset'
+      JsName: 'avAsset'
+      Module: 'Photos.PHContentEditingInput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'avAsset'
+      Signature:
+      - Type: Interface
+        Module: AVFoundation.AVAsset
+        Name: AVAsset
+      TypeEncoding: '@16@0:8'
+  - Name: 'creationDate'
+    JsName: 'creationDate'
+    Module: 'Photos.PHContentEditingInput'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'creationDate'
+      JsName: 'creationDate'
+      Module: 'Photos.PHContentEditingInput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'creationDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@16@0:8'
+  - Name: 'displaySizeImage'
+    JsName: 'displaySizeImage'
+    Module: 'Photos.PHContentEditingInput'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'displaySizeImage'
+      JsName: 'displaySizeImage'
+      Module: 'Photos.PHContentEditingInput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'displaySizeImage'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIImage
+        Name: UIImage
+      TypeEncoding: '@16@0:8'
+  - Name: 'fullSizeImageOrientation'
+    JsName: 'fullSizeImageOrientation'
+    Module: 'Photos.PHContentEditingInput'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'fullSizeImageOrientation'
+      JsName: 'fullSizeImageOrientation'
+      Module: 'Photos.PHContentEditingInput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'fullSizeImageOrientation'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i16@0:8'
+  - Name: 'fullSizeImageURL'
+    JsName: 'fullSizeImageURL'
+    Module: 'Photos.PHContentEditingInput'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'fullSizeImageURL'
+      JsName: 'fullSizeImageURL'
+      Module: 'Photos.PHContentEditingInput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'fullSizeImageURL'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@16@0:8'
+  - Name: 'location'
+    JsName: 'location'
+    Module: 'Photos.PHContentEditingInput'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'location'
+      JsName: 'location'
+      Module: 'Photos.PHContentEditingInput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'location'
+      Signature:
+      - Type: Interface
+        Module: CoreLocation.CLLocation
+        Name: CLLocation
+      TypeEncoding: '@16@0:8'
+  - Name: 'mediaSubtypes'
+    JsName: 'mediaSubtypes'
+    Module: 'Photos.PHContentEditingInput'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'mediaSubtypes'
+      JsName: 'mediaSubtypes'
+      Module: 'Photos.PHContentEditingInput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mediaSubtypes'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'mediaType'
+    JsName: 'mediaType'
+    Module: 'Photos.PHContentEditingInput'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'mediaType'
+      JsName: 'mediaType'
+      Module: 'Photos.PHContentEditingInput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mediaType'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+  - Name: 'uniformTypeIdentifier'
+    JsName: 'uniformTypeIdentifier'
+    Module: 'Photos.PHContentEditingInput'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'uniformTypeIdentifier'
+      JsName: 'uniformTypeIdentifier'
+      Module: 'Photos.PHContentEditingInput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'uniformTypeIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+...

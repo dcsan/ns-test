@@ -1,0 +1,2677 @@
+name: CoreBluetooth
+items:
+- Name: 'CBAdvertisementDataLocalNameKey'
+  JsName: 'CBAdvertisementDataLocalNameKey'
+  Module: 'CoreBluetooth.CBAdvertisementData'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBAdvertisementDataTxPowerLevelKey'
+  JsName: 'CBAdvertisementDataTxPowerLevelKey'
+  Module: 'CoreBluetooth.CBAdvertisementData'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBAdvertisementDataServiceUUIDsKey'
+  JsName: 'CBAdvertisementDataServiceUUIDsKey'
+  Module: 'CoreBluetooth.CBAdvertisementData'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBAdvertisementDataServiceDataKey'
+  JsName: 'CBAdvertisementDataServiceDataKey'
+  Module: 'CoreBluetooth.CBAdvertisementData'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBAdvertisementDataManufacturerDataKey'
+  JsName: 'CBAdvertisementDataManufacturerDataKey'
+  Module: 'CoreBluetooth.CBAdvertisementData'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBAdvertisementDataOverflowServiceUUIDsKey'
+  JsName: 'CBAdvertisementDataOverflowServiceUUIDsKey'
+  Module: 'CoreBluetooth.CBAdvertisementData'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBAdvertisementDataIsConnectable'
+  JsName: 'CBAdvertisementDataIsConnectable'
+  Module: 'CoreBluetooth.CBAdvertisementData'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBAdvertisementDataSolicitedServiceUUIDsKey'
+  JsName: 'CBAdvertisementDataSolicitedServiceUUIDsKey'
+  Module: 'CoreBluetooth.CBAdvertisementData'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBCentralManagerOptionShowPowerAlertKey'
+  JsName: 'CBCentralManagerOptionShowPowerAlertKey'
+  Module: 'CoreBluetooth.CBCentralManagerConstants'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBCentralManagerOptionRestoreIdentifierKey'
+  JsName: 'CBCentralManagerOptionRestoreIdentifierKey'
+  Module: 'CoreBluetooth.CBCentralManagerConstants'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBCentralManagerScanOptionAllowDuplicatesKey'
+  JsName: 'CBCentralManagerScanOptionAllowDuplicatesKey'
+  Module: 'CoreBluetooth.CBCentralManagerConstants'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBCentralManagerScanOptionSolicitedServiceUUIDsKey'
+  JsName: 'CBCentralManagerScanOptionSolicitedServiceUUIDsKey'
+  Module: 'CoreBluetooth.CBCentralManagerConstants'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBConnectPeripheralOptionNotifyOnConnectionKey'
+  JsName: 'CBConnectPeripheralOptionNotifyOnConnectionKey'
+  Module: 'CoreBluetooth.CBCentralManagerConstants'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBConnectPeripheralOptionNotifyOnDisconnectionKey'
+  JsName: 'CBConnectPeripheralOptionNotifyOnDisconnectionKey'
+  Module: 'CoreBluetooth.CBCentralManagerConstants'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBConnectPeripheralOptionNotifyOnNotificationKey'
+  JsName: 'CBConnectPeripheralOptionNotifyOnNotificationKey'
+  Module: 'CoreBluetooth.CBCentralManagerConstants'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBCentralManagerRestoredStatePeripheralsKey'
+  JsName: 'CBCentralManagerRestoredStatePeripheralsKey'
+  Module: 'CoreBluetooth.CBCentralManagerConstants'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBCentralManagerRestoredStateScanServicesKey'
+  JsName: 'CBCentralManagerRestoredStateScanServicesKey'
+  Module: 'CoreBluetooth.CBCentralManagerConstants'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBCentralManagerRestoredStateScanOptionsKey'
+  JsName: 'CBCentralManagerRestoredStateScanOptionsKey'
+  Module: 'CoreBluetooth.CBCentralManagerConstants'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBCentralManagerState'
+  JsName: 'CBCentralManagerState'
+  Module: 'CoreBluetooth.CBCentralManager'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CBCentralManagerStateUnknown":0,"CBCentralManagerStateResetting":1,"CBCentralManagerStateUnsupported":2,"CBCentralManagerStateUnauthorized":3,"CBCentralManagerStatePoweredOff":4,"CBCentralManagerStatePoweredOn":5})
+- Name: 'CBCentralManager'
+  JsName: 'CBCentralManager'
+  Module: 'CoreBluetooth.CBCentralManager'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'cancelPeripheralConnection:'
+    JsName: 'cancelPeripheralConnection'
+    Module: 'CoreBluetooth.CBCentralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancelPeripheralConnection:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'connectPeripheral:options:'
+    JsName: 'connectPeripheralOptions'
+    Module: 'CoreBluetooth.CBCentralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'connectPeripheral:options:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'initWithDelegate:queue:'
+    JsName: 'initWithDelegateQueue'
+    Module: 'CoreBluetooth.CBCentralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithDelegate:queue:'
+    Signature:
+    - Type: Instancetype
+    - Type: Id
+      WithProtocols:
+      - Module: CoreBluetooth.CBCentralManager
+        Name: CBCentralManagerDelegate
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    TypeEncoding: '@16@0:4@8@12'
+  - Name: 'initWithDelegate:queue:options:'
+    JsName: 'initWithDelegateQueueOptions'
+    Module: 'CoreBluetooth.CBCentralManager'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithDelegate:queue:options:'
+    Signature:
+    - Type: Instancetype
+    - Type: Id
+      WithProtocols:
+      - Module: CoreBluetooth.CBCentralManager
+        Name: CBCentralManagerDelegate
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@20@0:4@8@12@16'
+  - Name: 'retrieveConnectedPeripherals'
+    JsName: 'retrieveConnectedPeripherals'
+    Module: 'CoreBluetooth.CBCentralManager'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'retrieveConnectedPeripherals'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'retrieveConnectedPeripheralsWithServices:'
+    JsName: 'retrieveConnectedPeripheralsWithServices'
+    Module: 'CoreBluetooth.CBCentralManager'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'retrieveConnectedPeripheralsWithServices:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'retrievePeripherals:'
+    JsName: 'retrievePeripherals'
+    Module: 'CoreBluetooth.CBCentralManager'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'retrievePeripherals:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'retrievePeripheralsWithIdentifiers:'
+    JsName: 'retrievePeripheralsWithIdentifiers'
+    Module: 'CoreBluetooth.CBCentralManager'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'retrievePeripheralsWithIdentifiers:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'scanForPeripheralsWithServices:options:'
+    JsName: 'scanForPeripheralsWithServicesOptions'
+    Module: 'CoreBluetooth.CBCentralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'scanForPeripheralsWithServices:options:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'stopScan'
+    JsName: 'stopScan'
+    Module: 'CoreBluetooth.CBCentralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopScan'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  StaticMethods: []
+  Properties:
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'CoreBluetooth.CBCentralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'CoreBluetooth.CBCentralManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: CoreBluetooth.CBCentralManager
+          Name: CBCentralManagerDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'CoreBluetooth.CBCentralManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: CoreBluetooth.CBCentralManager
+          Name: CBCentralManagerDelegate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'state'
+    JsName: 'state'
+    Module: 'CoreBluetooth.CBCentralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'state'
+      JsName: 'state'
+      Module: 'CoreBluetooth.CBCentralManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'state'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CBCentralManagerDelegate'
+  JsName: 'CBCentralManagerDelegate'
+  Module: 'CoreBluetooth.CBCentralManager'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'centralManager:didConnectPeripheral:'
+    JsName: 'centralManagerDidConnectPeripheral'
+    Module: 'CoreBluetooth.CBCentralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'centralManager:didConnectPeripheral:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBCentralManager
+      Name: CBCentralManager
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'centralManager:didDisconnectPeripheral:error:'
+    JsName: 'centralManagerDidDisconnectPeripheralError'
+    Module: 'CoreBluetooth.CBCentralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'centralManager:didDisconnectPeripheral:error:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBCentralManager
+      Name: CBCentralManager
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'centralManager:didDiscoverPeripheral:advertisementData:RSSI:'
+    JsName: 'centralManagerDidDiscoverPeripheralAdvertisementDataRSSI'
+    Module: 'CoreBluetooth.CBCentralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'centralManager:didDiscoverPeripheral:advertisementData:RSSI:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBCentralManager
+      Name: CBCentralManager
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Interface
+      Module: Foundation.NSValue
+      Name: NSNumber
+    TypeEncoding: 'v24@0:4@8@12@16@20'
+  - Name: 'centralManager:didFailToConnectPeripheral:error:'
+    JsName: 'centralManagerDidFailToConnectPeripheralError'
+    Module: 'CoreBluetooth.CBCentralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'centralManager:didFailToConnectPeripheral:error:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBCentralManager
+      Name: CBCentralManager
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'centralManager:didRetrieveConnectedPeripherals:'
+    JsName: 'centralManagerDidRetrieveConnectedPeripherals'
+    Module: 'CoreBluetooth.CBCentralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'centralManager:didRetrieveConnectedPeripherals:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBCentralManager
+      Name: CBCentralManager
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'centralManager:didRetrievePeripherals:'
+    JsName: 'centralManagerDidRetrievePeripherals'
+    Module: 'CoreBluetooth.CBCentralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'centralManager:didRetrievePeripherals:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBCentralManager
+      Name: CBCentralManager
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'centralManagerDidUpdateState:'
+    JsName: 'centralManagerDidUpdateState'
+    Module: 'CoreBluetooth.CBCentralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'centralManagerDidUpdateState:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBCentralManager
+      Name: CBCentralManager
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'centralManager:willRestoreState:'
+    JsName: 'centralManagerWillRestoreState'
+    Module: 'CoreBluetooth.CBCentralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'centralManager:willRestoreState:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBCentralManager
+      Name: CBCentralManager
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: 'v16@0:4@8@12'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'CBErrorDomain'
+  JsName: 'CBErrorDomain'
+  Module: 'CoreBluetooth.CBError'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBError'
+  JsName: 'CBError'
+  Module: 'CoreBluetooth.CBError'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CBErrorUnknown":0,"CBErrorInvalidParameters":1,"CBErrorInvalidHandle":2,"CBErrorNotConnected":3,"CBErrorOutOfSpace":4,"CBErrorOperationCancelled":5,"CBErrorConnectionTimeout":6,"CBErrorPeripheralDisconnected":7,"CBErrorUUIDNotAllowed":8,"CBErrorAlreadyAdvertising":9,"CBErrorConnectionFailed":10})
+- Name: 'CBATTErrorDomain'
+  JsName: 'CBATTErrorDomain'
+  Module: 'CoreBluetooth.CBError'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBATTError'
+  JsName: 'CBATTError'
+  Module: 'CoreBluetooth.CBError'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CBATTErrorSuccess":0,"CBATTErrorInvalidHandle":1,"CBATTErrorReadNotPermitted":2,"CBATTErrorWriteNotPermitted":3,"CBATTErrorInvalidPdu":4,"CBATTErrorInsufficientAuthentication":5,"CBATTErrorRequestNotSupported":6,"CBATTErrorInvalidOffset":7,"CBATTErrorInsufficientAuthorization":8,"CBATTErrorPrepareQueueFull":9,"CBATTErrorAttributeNotFound":10,"CBATTErrorAttributeNotLong":11,"CBATTErrorInsufficientEncryptionKeySize":12,"CBATTErrorInvalidAttributeValueLength":13,"CBATTErrorUnlikelyError":14,"CBATTErrorInsufficientEncryption":15,"CBATTErrorUnsupportedGroupType":16,"CBATTErrorInsufficientResources":17})
+- Name: 'CBPeripheralManagerOptionShowPowerAlertKey'
+  JsName: 'CBPeripheralManagerOptionShowPowerAlertKey'
+  Module: 'CoreBluetooth.CBPeripheralManagerConstants'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBPeripheralManagerOptionRestoreIdentifierKey'
+  JsName: 'CBPeripheralManagerOptionRestoreIdentifierKey'
+  Module: 'CoreBluetooth.CBPeripheralManagerConstants'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBPeripheralManagerRestoredStateServicesKey'
+  JsName: 'CBPeripheralManagerRestoredStateServicesKey'
+  Module: 'CoreBluetooth.CBPeripheralManagerConstants'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBPeripheralManagerRestoredStateAdvertisementDataKey'
+  JsName: 'CBPeripheralManagerRestoredStateAdvertisementDataKey'
+  Module: 'CoreBluetooth.CBPeripheralManagerConstants'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBPeripheralManagerAuthorizationStatus'
+  JsName: 'CBPeripheralManagerAuthorizationStatus'
+  Module: 'CoreBluetooth.CBPeripheralManager'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CBPeripheralManagerAuthorizationStatusNotDetermined":0,"CBPeripheralManagerAuthorizationStatusRestricted":1,"CBPeripheralManagerAuthorizationStatusDenied":2,"CBPeripheralManagerAuthorizationStatusAuthorized":3})
+- Name: 'CBPeripheralManagerState'
+  JsName: 'CBPeripheralManagerState'
+  Module: 'CoreBluetooth.CBPeripheralManager'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CBPeripheralManagerStateUnknown":0,"CBPeripheralManagerStateResetting":1,"CBPeripheralManagerStateUnsupported":2,"CBPeripheralManagerStateUnauthorized":3,"CBPeripheralManagerStatePoweredOff":4,"CBPeripheralManagerStatePoweredOn":5})
+- Name: 'CBPeripheralManagerConnectionLatency'
+  JsName: 'CBPeripheralManagerConnectionLatency'
+  Module: 'CoreBluetooth.CBPeripheralManager'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CBPeripheralManagerConnectionLatencyLow":0,"CBPeripheralManagerConnectionLatencyMedium":1,"CBPeripheralManagerConnectionLatencyHigh":2})
+- Name: 'CBPeripheralManager'
+  JsName: 'CBPeripheralManager'
+  Module: 'CoreBluetooth.CBPeripheralManager'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addService:'
+    JsName: 'addService'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addService:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBService
+      Name: CBMutableService
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'initWithDelegate:queue:'
+    JsName: 'initWithDelegateQueue'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithDelegate:queue:'
+    Signature:
+    - Type: Instancetype
+    - Type: Id
+      WithProtocols:
+      - Module: CoreBluetooth.CBPeripheralManager
+        Name: CBPeripheralManagerDelegate
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    TypeEncoding: '@16@0:4@8@12'
+  - Name: 'initWithDelegate:queue:options:'
+    JsName: 'initWithDelegateQueueOptions'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithDelegate:queue:options:'
+    Signature:
+    - Type: Instancetype
+    - Type: Id
+      WithProtocols:
+      - Module: CoreBluetooth.CBPeripheralManager
+        Name: CBPeripheralManagerDelegate
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@20@0:4@8@12@16'
+  - Name: 'removeAllServices'
+    JsName: 'removeAllServices'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeAllServices'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'removeService:'
+    JsName: 'removeService'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeService:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBService
+      Name: CBMutableService
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'respondToRequest:withResult:'
+    JsName: 'respondToRequestWithResult'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'respondToRequest:withResult:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBATTRequest
+      Name: CBATTRequest
+    - Type: Int
+    TypeEncoding: 'v16@0:4@8i12'
+  - Name: 'setDesiredConnectionLatency:forCentral:'
+    JsName: 'setDesiredConnectionLatencyForCentral'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setDesiredConnectionLatency:forCentral:'
+    Signature:
+    - Type: Void
+    - Type: Int
+    - Type: Interface
+      Module: CoreBluetooth.CBCentral
+      Name: CBCentral
+    TypeEncoding: 'v16@0:4i8@12'
+  - Name: 'startAdvertising:'
+    JsName: 'startAdvertising'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startAdvertising:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'stopAdvertising'
+    JsName: 'stopAdvertising'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopAdvertising'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'updateValue:forCharacteristic:onSubscribedCentrals:'
+    JsName: 'updateValueForCharacteristicOnSubscribedCentrals'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'updateValue:forCharacteristic:onSubscribedCentrals:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Interface
+      Module: CoreBluetooth.CBCharacteristic
+      Name: CBMutableCharacteristic
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'c20@0:4@8@12@16'
+  StaticMethods:
+  - Name: 'authorizationStatus'
+    JsName: 'authorizationStatus'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'authorizationStatus'
+    Signature:
+    - Type: Int
+    TypeEncoding: 'i8@0:4'
+  Properties:
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'CoreBluetooth.CBPeripheralManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: CoreBluetooth.CBPeripheralManager
+          Name: CBPeripheralManagerDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'CoreBluetooth.CBPeripheralManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: CoreBluetooth.CBPeripheralManager
+          Name: CBPeripheralManagerDelegate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'isAdvertising'
+    JsName: 'isAdvertising'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isAdvertising'
+      JsName: 'isAdvertising'
+      Module: 'CoreBluetooth.CBPeripheralManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isAdvertising'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'state'
+    JsName: 'state'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'state'
+      JsName: 'state'
+      Module: 'CoreBluetooth.CBPeripheralManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'state'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CBPeripheralManagerDelegate'
+  JsName: 'CBPeripheralManagerDelegate'
+  Module: 'CoreBluetooth.CBPeripheralManager'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'peripheralManager:central:didSubscribeToCharacteristic:'
+    JsName: 'peripheralManagerCentralDidSubscribeToCharacteristic'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheralManager:central:didSubscribeToCharacteristic:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheralManager
+      Name: CBPeripheralManager
+    - Type: Interface
+      Module: CoreBluetooth.CBCentral
+      Name: CBCentral
+    - Type: Interface
+      Module: CoreBluetooth.CBCharacteristic
+      Name: CBCharacteristic
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'peripheralManager:central:didUnsubscribeFromCharacteristic:'
+    JsName: 'peripheralManagerCentralDidUnsubscribeFromCharacteristic'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheralManager:central:didUnsubscribeFromCharacteristic:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheralManager
+      Name: CBPeripheralManager
+    - Type: Interface
+      Module: CoreBluetooth.CBCentral
+      Name: CBCentral
+    - Type: Interface
+      Module: CoreBluetooth.CBCharacteristic
+      Name: CBCharacteristic
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'peripheralManager:didAddService:error:'
+    JsName: 'peripheralManagerDidAddServiceError'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheralManager:didAddService:error:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheralManager
+      Name: CBPeripheralManager
+    - Type: Interface
+      Module: CoreBluetooth.CBService
+      Name: CBService
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'peripheralManager:didReceiveReadRequest:'
+    JsName: 'peripheralManagerDidReceiveReadRequest'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheralManager:didReceiveReadRequest:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheralManager
+      Name: CBPeripheralManager
+    - Type: Interface
+      Module: CoreBluetooth.CBATTRequest
+      Name: CBATTRequest
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'peripheralManager:didReceiveWriteRequests:'
+    JsName: 'peripheralManagerDidReceiveWriteRequests'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheralManager:didReceiveWriteRequests:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheralManager
+      Name: CBPeripheralManager
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'peripheralManagerDidStartAdvertising:error:'
+    JsName: 'peripheralManagerDidStartAdvertisingError'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheralManagerDidStartAdvertising:error:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheralManager
+      Name: CBPeripheralManager
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'peripheralManagerDidUpdateState:'
+    JsName: 'peripheralManagerDidUpdateState'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheralManagerDidUpdateState:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheralManager
+      Name: CBPeripheralManager
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'peripheralManagerIsReadyToUpdateSubscribers:'
+    JsName: 'peripheralManagerIsReadyToUpdateSubscribers'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheralManagerIsReadyToUpdateSubscribers:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheralManager
+      Name: CBPeripheralManager
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'peripheralManager:willRestoreState:'
+    JsName: 'peripheralManagerWillRestoreState'
+    Module: 'CoreBluetooth.CBPeripheralManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheralManager:willRestoreState:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheralManager
+      Name: CBPeripheralManager
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: 'v16@0:4@8@12'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'CBPeer'
+  JsName: 'CBPeer'
+  Module: 'CoreBluetooth.CBPeer'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'identifier'
+    JsName: 'identifier'
+    Module: 'CoreBluetooth.CBPeer'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'identifier'
+      JsName: 'identifier'
+      Module: 'CoreBluetooth.CBPeer'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'identifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSUUID
+        Name: NSUUID
+      TypeEncoding: '@8@0:4'
+  - Name: 'UUID'
+    JsName: 'UUID'
+    Module: 'CoreBluetooth.CBPeer'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'UUID'
+      JsName: 'UUID'
+      Module: 'CoreBluetooth.CBPeer'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'UUID'
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: '^{__CFUUID=}8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CBPeripheralState'
+  JsName: 'CBPeripheralState'
+  Module: 'CoreBluetooth.CBPeripheral'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CBPeripheralStateDisconnected":0,"CBPeripheralStateConnecting":1,"CBPeripheralStateConnected":2})
+- Name: 'CBCharacteristicWriteType'
+  JsName: 'CBCharacteristicWriteType'
+  Module: 'CoreBluetooth.CBPeripheral'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CBCharacteristicWriteWithResponse":0,"CBCharacteristicWriteWithoutResponse":1})
+- Name: 'CBPeripheral'
+  JsName: 'CBPeripheral'
+  Module: 'CoreBluetooth.CBPeripheral'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'discoverCharacteristics:forService:'
+    JsName: 'discoverCharacteristicsForService'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'discoverCharacteristics:forService:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: CoreBluetooth.CBService
+      Name: CBService
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'discoverDescriptorsForCharacteristic:'
+    JsName: 'discoverDescriptorsForCharacteristic'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'discoverDescriptorsForCharacteristic:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBCharacteristic
+      Name: CBCharacteristic
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'discoverIncludedServices:forService:'
+    JsName: 'discoverIncludedServicesForService'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'discoverIncludedServices:forService:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: CoreBluetooth.CBService
+      Name: CBService
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'discoverServices:'
+    JsName: 'discoverServices'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'discoverServices:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'readRSSI'
+    JsName: 'readRSSI'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'readRSSI'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'readValueForCharacteristic:'
+    JsName: 'readValueForCharacteristic'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'readValueForCharacteristic:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBCharacteristic
+      Name: CBCharacteristic
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'readValueForDescriptor:'
+    JsName: 'readValueForDescriptor'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'readValueForDescriptor:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBDescriptor
+      Name: CBDescriptor
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'setNotifyValue:forCharacteristic:'
+    JsName: 'setNotifyValueForCharacteristic'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setNotifyValue:forCharacteristic:'
+    Signature:
+    - Type: Void
+    - Type: Bool
+    - Type: Interface
+      Module: CoreBluetooth.CBCharacteristic
+      Name: CBCharacteristic
+    TypeEncoding: 'v16@0:4c8@12'
+  - Name: 'writeValue:forCharacteristic:type:'
+    JsName: 'writeValueForCharacteristicType'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'writeValue:forCharacteristic:type:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Interface
+      Module: CoreBluetooth.CBCharacteristic
+      Name: CBCharacteristic
+    - Type: Int
+    TypeEncoding: 'v20@0:4@8@12i16'
+  - Name: 'writeValue:forDescriptor:'
+    JsName: 'writeValueForDescriptor'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'writeValue:forDescriptor:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Interface
+      Module: CoreBluetooth.CBDescriptor
+      Name: CBDescriptor
+    TypeEncoding: 'v16@0:4@8@12'
+  StaticMethods: []
+  Properties:
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'CoreBluetooth.CBPeripheral'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: CoreBluetooth.CBPeripheral
+          Name: CBPeripheralDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'CoreBluetooth.CBPeripheral'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: CoreBluetooth.CBPeripheral
+          Name: CBPeripheralDelegate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'isConnected'
+    JsName: 'isConnected'
+    Module: 'CoreBluetooth.CBPeripheral'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isConnected'
+      JsName: 'isConnected'
+      Module: 'CoreBluetooth.CBPeripheral'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isConnected'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'CoreBluetooth.CBPeripheral'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'RSSI'
+    JsName: 'RSSI'
+    Module: 'CoreBluetooth.CBPeripheral'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'RSSI'
+      JsName: 'RSSI'
+      Module: 'CoreBluetooth.CBPeripheral'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'RSSI'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@8@0:4'
+  - Name: 'services'
+    JsName: 'services'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'services'
+      JsName: 'services'
+      Module: 'CoreBluetooth.CBPeripheral'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'services'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'state'
+    JsName: 'state'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'state'
+      JsName: 'state'
+      Module: 'CoreBluetooth.CBPeripheral'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'state'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  Protocols: []
+  Base:
+    Module: CoreBluetooth.CBPeer
+    Name: CBPeer
+  Type: Interface
+- Name: 'CBPeripheralDelegate'
+  JsName: 'CBPeripheralDelegate'
+  Module: 'CoreBluetooth.CBPeripheral'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'peripheral:didDiscoverCharacteristicsForService:error:'
+    JsName: 'peripheralDidDiscoverCharacteristicsForServiceError'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheral:didDiscoverCharacteristicsForService:error:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    - Type: Interface
+      Module: CoreBluetooth.CBService
+      Name: CBService
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'peripheral:didDiscoverDescriptorsForCharacteristic:error:'
+    JsName: 'peripheralDidDiscoverDescriptorsForCharacteristicError'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheral:didDiscoverDescriptorsForCharacteristic:error:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    - Type: Interface
+      Module: CoreBluetooth.CBCharacteristic
+      Name: CBCharacteristic
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'peripheral:didDiscoverIncludedServicesForService:error:'
+    JsName: 'peripheralDidDiscoverIncludedServicesForServiceError'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheral:didDiscoverIncludedServicesForService:error:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    - Type: Interface
+      Module: CoreBluetooth.CBService
+      Name: CBService
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'peripheral:didDiscoverServices:'
+    JsName: 'peripheralDidDiscoverServices'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheral:didDiscoverServices:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'peripheralDidInvalidateServices:'
+    JsName: 'peripheralDidInvalidateServices'
+    Module: 'CoreBluetooth.CBPeripheral'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheralDidInvalidateServices:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'peripheral:didModifyServices:'
+    JsName: 'peripheralDidModifyServices'
+    Module: 'CoreBluetooth.CBPeripheral'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheral:didModifyServices:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'peripheral:didReadRSSI:error:'
+    JsName: 'peripheralDidReadRSSIError'
+    Module: 'CoreBluetooth.CBPeripheral'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheral:didReadRSSI:error:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    - Type: Interface
+      Module: Foundation.NSValue
+      Name: NSNumber
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'peripheralDidUpdateName:'
+    JsName: 'peripheralDidUpdateName'
+    Module: 'CoreBluetooth.CBPeripheral'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheralDidUpdateName:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'peripheral:didUpdateNotificationStateForCharacteristic:error:'
+    JsName: 'peripheralDidUpdateNotificationStateForCharacteristicError'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheral:didUpdateNotificationStateForCharacteristic:error:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    - Type: Interface
+      Module: CoreBluetooth.CBCharacteristic
+      Name: CBCharacteristic
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'peripheralDidUpdateRSSI:error:'
+    JsName: 'peripheralDidUpdateRSSIError'
+    Module: 'CoreBluetooth.CBPeripheral'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheralDidUpdateRSSI:error:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'peripheral:didUpdateValueForCharacteristic:error:'
+    JsName: 'peripheralDidUpdateValueForCharacteristicError'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheral:didUpdateValueForCharacteristic:error:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    - Type: Interface
+      Module: CoreBluetooth.CBCharacteristic
+      Name: CBCharacteristic
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'peripheral:didUpdateValueForDescriptor:error:'
+    JsName: 'peripheralDidUpdateValueForDescriptorError'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheral:didUpdateValueForDescriptor:error:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    - Type: Interface
+      Module: CoreBluetooth.CBDescriptor
+      Name: CBDescriptor
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'peripheral:didWriteValueForCharacteristic:error:'
+    JsName: 'peripheralDidWriteValueForCharacteristicError'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheral:didWriteValueForCharacteristic:error:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    - Type: Interface
+      Module: CoreBluetooth.CBCharacteristic
+      Name: CBCharacteristic
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'peripheral:didWriteValueForDescriptor:error:'
+    JsName: 'peripheralDidWriteValueForDescriptorError'
+    Module: 'CoreBluetooth.CBPeripheral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheral:didWriteValueForDescriptor:error:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreBluetooth.CBPeripheral
+      Name: CBPeripheral
+    - Type: Interface
+      Module: CoreBluetooth.CBDescriptor
+      Name: CBDescriptor
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@16'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'CBCentral'
+  JsName: 'CBCentral'
+  Module: 'CoreBluetooth.CBCentral'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'maximumUpdateValueLength'
+    JsName: 'maximumUpdateValueLength'
+    Module: 'CoreBluetooth.CBCentral'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'maximumUpdateValueLength'
+      JsName: 'maximumUpdateValueLength'
+      Module: 'CoreBluetooth.CBCentral'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'maximumUpdateValueLength'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  Protocols: []
+  Base:
+    Module: CoreBluetooth.CBPeer
+    Name: CBPeer
+  Type: Interface
+- Name: 'CBAttribute'
+  JsName: 'CBAttribute'
+  Module: 'CoreBluetooth.CBAttribute'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'UUID'
+    JsName: 'UUID'
+    Module: 'CoreBluetooth.CBAttribute'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'UUID'
+      JsName: 'UUID'
+      Module: 'CoreBluetooth.CBAttribute'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'UUID'
+      Signature:
+      - Type: Interface
+        Module: CoreBluetooth.CBUUID
+        Name: CBUUID
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CBService'
+  JsName: 'CBService'
+  Module: 'CoreBluetooth.CBService'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'characteristics'
+    JsName: 'characteristics'
+    Module: 'CoreBluetooth.CBService'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'characteristics'
+      JsName: 'characteristics'
+      Module: 'CoreBluetooth.CBService'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'characteristics'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'includedServices'
+    JsName: 'includedServices'
+    Module: 'CoreBluetooth.CBService'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'includedServices'
+      JsName: 'includedServices'
+      Module: 'CoreBluetooth.CBService'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'includedServices'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'isPrimary'
+    JsName: 'isPrimary'
+    Module: 'CoreBluetooth.CBService'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isPrimary'
+      JsName: 'isPrimary'
+      Module: 'CoreBluetooth.CBService'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isPrimary'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'peripheral'
+    JsName: 'peripheral'
+    Module: 'CoreBluetooth.CBService'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'peripheral'
+      JsName: 'peripheral'
+      Module: 'CoreBluetooth.CBService'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'peripheral'
+      Signature:
+      - Type: Interface
+        Module: CoreBluetooth.CBPeripheral
+        Name: CBPeripheral
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: CoreBluetooth.CBAttribute
+    Name: CBAttribute
+  Type: Interface
+- Name: 'CBMutableService'
+  JsName: 'CBMutableService'
+  Module: 'CoreBluetooth.CBService'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithType:primary:'
+    JsName: 'initWithTypePrimary'
+    Module: 'CoreBluetooth.CBService'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithType:primary:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: CoreBluetooth.CBUUID
+      Name: CBUUID
+    - Type: Bool
+    TypeEncoding: '@16@0:4@8c12'
+  StaticMethods: []
+  Properties:
+  - Name: 'characteristics'
+    JsName: 'characteristics'
+    Module: 'CoreBluetooth.CBService'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'characteristics'
+      JsName: 'characteristics'
+      Module: 'CoreBluetooth.CBService'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'characteristics'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setCharacteristics:'
+      JsName: 'setCharacteristics'
+      Module: 'CoreBluetooth.CBService'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCharacteristics:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'includedServices'
+    JsName: 'includedServices'
+    Module: 'CoreBluetooth.CBService'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'includedServices'
+      JsName: 'includedServices'
+      Module: 'CoreBluetooth.CBService'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'includedServices'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setIncludedServices:'
+      JsName: 'setIncludedServices'
+      Module: 'CoreBluetooth.CBService'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setIncludedServices:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'isPrimary'
+    JsName: 'isPrimary'
+    Module: 'CoreBluetooth.CBService'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isPrimary'
+      JsName: 'isPrimary'
+      Module: 'CoreBluetooth.CBService'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isPrimary'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setIsPrimary:'
+      JsName: 'setIsPrimary'
+      Module: 'CoreBluetooth.CBService'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setIsPrimary:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'UUID'
+    JsName: 'UUID'
+    Module: 'CoreBluetooth.CBService'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'UUID'
+      JsName: 'UUID'
+      Module: 'CoreBluetooth.CBService'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'UUID'
+      Signature:
+      - Type: Interface
+        Module: CoreBluetooth.CBUUID
+        Name: CBUUID
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setUUID:'
+      JsName: 'setUUID'
+      Module: 'CoreBluetooth.CBService'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setUUID:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CoreBluetooth.CBUUID
+        Name: CBUUID
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: CoreBluetooth.CBService
+    Name: CBService
+  Type: Interface
+- Name: 'CBCharacteristicProperties'
+  JsName: 'CBCharacteristicProperties'
+  Module: 'CoreBluetooth.CBCharacteristic'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CBCharacteristicPropertyBroadcast":1,"CBCharacteristicPropertyRead":2,"CBCharacteristicPropertyWriteWithoutResponse":4,"CBCharacteristicPropertyWrite":8,"CBCharacteristicPropertyNotify":16,"CBCharacteristicPropertyIndicate":32,"CBCharacteristicPropertyAuthenticatedSignedWrites":64,"CBCharacteristicPropertyExtendedProperties":128,"CBCharacteristicPropertyNotifyEncryptionRequired":256,"CBCharacteristicPropertyIndicateEncryptionRequired":512})
+- Name: 'CBCharacteristic'
+  JsName: 'CBCharacteristic'
+  Module: 'CoreBluetooth.CBCharacteristic'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'descriptors'
+    JsName: 'descriptors'
+    Module: 'CoreBluetooth.CBCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'descriptors'
+      JsName: 'descriptors'
+      Module: 'CoreBluetooth.CBCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'descriptors'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'isBroadcasted'
+    JsName: 'isBroadcasted'
+    Module: 'CoreBluetooth.CBCharacteristic'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isBroadcasted'
+      JsName: 'isBroadcasted'
+      Module: 'CoreBluetooth.CBCharacteristic'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isBroadcasted'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'isNotifying'
+    JsName: 'isNotifying'
+    Module: 'CoreBluetooth.CBCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isNotifying'
+      JsName: 'isNotifying'
+      Module: 'CoreBluetooth.CBCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isNotifying'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'properties'
+    JsName: 'properties'
+    Module: 'CoreBluetooth.CBCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'properties'
+      JsName: 'properties'
+      Module: 'CoreBluetooth.CBCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'properties'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'service'
+    JsName: 'service'
+    Module: 'CoreBluetooth.CBCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'service'
+      JsName: 'service'
+      Module: 'CoreBluetooth.CBCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'service'
+      Signature:
+      - Type: Interface
+        Module: CoreBluetooth.CBService
+        Name: CBService
+      TypeEncoding: '@8@0:4'
+  - Name: 'value'
+    JsName: 'value'
+    Module: 'CoreBluetooth.CBCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'value'
+      JsName: 'value'
+      Module: 'CoreBluetooth.CBCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'value'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: CoreBluetooth.CBAttribute
+    Name: CBAttribute
+  Type: Interface
+- Name: 'CBAttributePermissions'
+  JsName: 'CBAttributePermissions'
+  Module: 'CoreBluetooth.CBCharacteristic'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CBAttributePermissionsReadable":1,"CBAttributePermissionsWriteable":2,"CBAttributePermissionsReadEncryptionRequired":4,"CBAttributePermissionsWriteEncryptionRequired":8})
+- Name: 'CBMutableCharacteristic'
+  JsName: 'CBMutableCharacteristic'
+  Module: 'CoreBluetooth.CBCharacteristic'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithType:properties:value:permissions:'
+    JsName: 'initWithTypePropertiesValuePermissions'
+    Module: 'CoreBluetooth.CBCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithType:properties:value:permissions:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: CoreBluetooth.CBUUID
+      Name: CBUUID
+    - Type: UInt
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: UInt
+    TypeEncoding: '@24@0:4@8I12@16I20'
+  StaticMethods: []
+  Properties:
+  - Name: 'descriptors'
+    JsName: 'descriptors'
+    Module: 'CoreBluetooth.CBCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'descriptors'
+      JsName: 'descriptors'
+      Module: 'CoreBluetooth.CBCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'descriptors'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDescriptors:'
+      JsName: 'setDescriptors'
+      Module: 'CoreBluetooth.CBCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDescriptors:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'permissions'
+    JsName: 'permissions'
+    Module: 'CoreBluetooth.CBCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'permissions'
+      JsName: 'permissions'
+      Module: 'CoreBluetooth.CBCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'permissions'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+    Setter:
+      Name: 'setPermissions:'
+      JsName: 'setPermissions'
+      Module: 'CoreBluetooth.CBCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPermissions:'
+      Signature:
+      - Type: Void
+      - Type: UInt
+      TypeEncoding: 'v12@0:4I8'
+  - Name: 'properties'
+    JsName: 'properties'
+    Module: 'CoreBluetooth.CBCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'properties'
+      JsName: 'properties'
+      Module: 'CoreBluetooth.CBCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'properties'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+    Setter:
+      Name: 'setProperties:'
+      JsName: 'setProperties'
+      Module: 'CoreBluetooth.CBCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setProperties:'
+      Signature:
+      - Type: Void
+      - Type: UInt
+      TypeEncoding: 'v12@0:4I8'
+  - Name: 'subscribedCentrals'
+    JsName: 'subscribedCentrals'
+    Module: 'CoreBluetooth.CBCharacteristic'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'subscribedCentrals'
+      JsName: 'subscribedCentrals'
+      Module: 'CoreBluetooth.CBCharacteristic'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'subscribedCentrals'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'UUID'
+    JsName: 'UUID'
+    Module: 'CoreBluetooth.CBCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'UUID'
+      JsName: 'UUID'
+      Module: 'CoreBluetooth.CBCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'UUID'
+      Signature:
+      - Type: Interface
+        Module: CoreBluetooth.CBUUID
+        Name: CBUUID
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setUUID:'
+      JsName: 'setUUID'
+      Module: 'CoreBluetooth.CBCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setUUID:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CoreBluetooth.CBUUID
+        Name: CBUUID
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'value'
+    JsName: 'value'
+    Module: 'CoreBluetooth.CBCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'value'
+      JsName: 'value'
+      Module: 'CoreBluetooth.CBCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'value'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setValue:'
+      JsName: 'setValue'
+      Module: 'CoreBluetooth.CBCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setValue:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: CoreBluetooth.CBCharacteristic
+    Name: CBCharacteristic
+  Type: Interface
+- Name: 'CBDescriptor'
+  JsName: 'CBDescriptor'
+  Module: 'CoreBluetooth.CBDescriptor'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'characteristic'
+    JsName: 'characteristic'
+    Module: 'CoreBluetooth.CBDescriptor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'characteristic'
+      JsName: 'characteristic'
+      Module: 'CoreBluetooth.CBDescriptor'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'characteristic'
+      Signature:
+      - Type: Interface
+        Module: CoreBluetooth.CBCharacteristic
+        Name: CBCharacteristic
+      TypeEncoding: '@8@0:4'
+  - Name: 'value'
+    JsName: 'value'
+    Module: 'CoreBluetooth.CBDescriptor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'value'
+      JsName: 'value'
+      Module: 'CoreBluetooth.CBDescriptor'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'value'
+      Signature:
+      - Type: Id
+        WithProtocols: []
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: CoreBluetooth.CBAttribute
+    Name: CBAttribute
+  Type: Interface
+- Name: 'CBMutableDescriptor'
+  JsName: 'CBMutableDescriptor'
+  Module: 'CoreBluetooth.CBDescriptor'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithType:value:'
+    JsName: 'initWithTypeValue'
+    Module: 'CoreBluetooth.CBDescriptor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithType:value:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: CoreBluetooth.CBUUID
+      Name: CBUUID
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: '@16@0:4@8@12'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: CoreBluetooth.CBDescriptor
+    Name: CBDescriptor
+  Type: Interface
+- Name: 'CBUUIDCharacteristicExtendedPropertiesString'
+  JsName: 'CBUUIDCharacteristicExtendedPropertiesString'
+  Module: 'CoreBluetooth.CBUUID'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBUUIDCharacteristicUserDescriptionString'
+  JsName: 'CBUUIDCharacteristicUserDescriptionString'
+  Module: 'CoreBluetooth.CBUUID'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBUUIDClientCharacteristicConfigurationString'
+  JsName: 'CBUUIDClientCharacteristicConfigurationString'
+  Module: 'CoreBluetooth.CBUUID'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBUUIDServerCharacteristicConfigurationString'
+  JsName: 'CBUUIDServerCharacteristicConfigurationString'
+  Module: 'CoreBluetooth.CBUUID'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBUUIDCharacteristicFormatString'
+  JsName: 'CBUUIDCharacteristicFormatString'
+  Module: 'CoreBluetooth.CBUUID'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBUUIDCharacteristicAggregateFormatString'
+  JsName: 'CBUUIDCharacteristicAggregateFormatString'
+  Module: 'CoreBluetooth.CBUUID'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBUUIDGenericAccessProfileString'
+  JsName: 'CBUUIDGenericAccessProfileString'
+  Module: 'CoreBluetooth.CBUUID'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBUUIDGenericAttributeProfileString'
+  JsName: 'CBUUIDGenericAttributeProfileString'
+  Module: 'CoreBluetooth.CBUUID'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBUUIDDeviceNameString'
+  JsName: 'CBUUIDDeviceNameString'
+  Module: 'CoreBluetooth.CBUUID'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBUUIDAppearanceString'
+  JsName: 'CBUUIDAppearanceString'
+  Module: 'CoreBluetooth.CBUUID'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBUUIDPeripheralPrivacyFlagString'
+  JsName: 'CBUUIDPeripheralPrivacyFlagString'
+  Module: 'CoreBluetooth.CBUUID'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBUUIDReconnectionAddressString'
+  JsName: 'CBUUIDReconnectionAddressString'
+  Module: 'CoreBluetooth.CBUUID'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBUUIDPeripheralPreferredConnectionParametersString'
+  JsName: 'CBUUIDPeripheralPreferredConnectionParametersString'
+  Module: 'CoreBluetooth.CBUUID'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBUUIDServiceChangedString'
+  JsName: 'CBUUIDServiceChangedString'
+  Module: 'CoreBluetooth.CBUUID'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CBUUID'
+  JsName: 'CBUUID'
+  Module: 'CoreBluetooth.CBUUID'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'UUIDWithCFUUID:'
+    JsName: 'UUIDWithCFUUID'
+    Module: 'CoreBluetooth.CBUUID'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'UUIDWithCFUUID:'
+    Signature:
+    - Type: Interface
+      Module: CoreBluetooth.CBUUID
+      Name: CBUUID
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '@12@0:4^{__CFUUID=}8'
+  - Name: 'UUIDWithData:'
+    JsName: 'UUIDWithData'
+    Module: 'CoreBluetooth.CBUUID'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'UUIDWithData:'
+    Signature:
+    - Type: Interface
+      Module: CoreBluetooth.CBUUID
+      Name: CBUUID
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'UUIDWithNSUUID:'
+    JsName: 'UUIDWithNSUUID'
+    Module: 'CoreBluetooth.CBUUID'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'UUIDWithNSUUID:'
+    Signature:
+    - Type: Interface
+      Module: CoreBluetooth.CBUUID
+      Name: CBUUID
+    - Type: Interface
+      Module: Foundation.NSUUID
+      Name: NSUUID
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'UUIDWithString:'
+    JsName: 'UUIDWithString'
+    Module: 'CoreBluetooth.CBUUID'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'UUIDWithString:'
+    Signature:
+    - Type: Interface
+      Module: CoreBluetooth.CBUUID
+      Name: CBUUID
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@12@0:4@8'
+  Properties:
+  - Name: 'data'
+    JsName: 'data'
+    Module: 'CoreBluetooth.CBUUID'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'data'
+      JsName: 'data'
+      Module: 'CoreBluetooth.CBUUID'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'data'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@8@0:4'
+  - Name: 'UUIDString'
+    JsName: 'UUIDString'
+    Module: 'CoreBluetooth.CBUUID'
+    IntroducedIn: 7.1
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'UUIDString'
+      JsName: 'UUIDString'
+      Module: 'CoreBluetooth.CBUUID'
+      IntroducedIn: 7.1
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'UUIDString'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CBATTRequest'
+  JsName: 'CBATTRequest'
+  Module: 'CoreBluetooth.CBATTRequest'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'central'
+    JsName: 'central'
+    Module: 'CoreBluetooth.CBATTRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'central'
+      JsName: 'central'
+      Module: 'CoreBluetooth.CBATTRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'central'
+      Signature:
+      - Type: Interface
+        Module: CoreBluetooth.CBCentral
+        Name: CBCentral
+      TypeEncoding: '@8@0:4'
+  - Name: 'characteristic'
+    JsName: 'characteristic'
+    Module: 'CoreBluetooth.CBATTRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'characteristic'
+      JsName: 'characteristic'
+      Module: 'CoreBluetooth.CBATTRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'characteristic'
+      Signature:
+      - Type: Interface
+        Module: CoreBluetooth.CBCharacteristic
+        Name: CBCharacteristic
+      TypeEncoding: '@8@0:4'
+  - Name: 'offset'
+    JsName: 'offset'
+    Module: 'CoreBluetooth.CBATTRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'offset'
+      JsName: 'offset'
+      Module: 'CoreBluetooth.CBATTRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'offset'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'value'
+    JsName: 'value'
+    Module: 'CoreBluetooth.CBATTRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'value'
+      JsName: 'value'
+      Module: 'CoreBluetooth.CBATTRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'value'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setValue:'
+      JsName: 'setValue'
+      Module: 'CoreBluetooth.CBATTRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setValue:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+...

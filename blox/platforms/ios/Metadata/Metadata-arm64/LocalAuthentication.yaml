@@ -1,0 +1,111 @@
+name: LocalAuthentication
+items:
+- Name: 'LAPolicy'
+  JsName: 'LAPolicy'
+  Module: 'LocalAuthentication.LAContext'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"LAPolicyDeviceOwnerAuthenticationWithBiometrics":1})
+- Name: 'LAContext'
+  JsName: 'LAContext'
+  Module: 'LocalAuthentication.LAContext'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'canEvaluatePolicy:error:'
+    JsName: 'canEvaluatePolicyError'
+    Module: 'LocalAuthentication.LAContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'canEvaluatePolicy:error:'
+    Signature:
+    - Type: Bool
+    - Type: Long
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'B32@0:8q16^@24'
+  - Name: 'evaluatePolicy:localizedReason:reply:'
+    JsName: 'evaluatePolicyLocalizedReasonReply'
+    Module: 'LocalAuthentication.LAContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'evaluatePolicy:localizedReason:reply:'
+    Signature:
+    - Type: Void
+    - Type: Long
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v40@0:8q16@24@?32'
+  StaticMethods: []
+  Properties:
+  - Name: 'localizedFallbackTitle'
+    JsName: 'localizedFallbackTitle'
+    Module: 'LocalAuthentication.LAContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'localizedFallbackTitle'
+      JsName: 'localizedFallbackTitle'
+      Module: 'LocalAuthentication.LAContext'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'localizedFallbackTitle'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setLocalizedFallbackTitle:'
+      JsName: 'setLocalizedFallbackTitle'
+      Module: 'LocalAuthentication.LAContext'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLocalizedFallbackTitle:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'LAError'
+  JsName: 'LAError'
+  Module: 'LocalAuthentication.LAError'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"LAErrorAuthenticationFailed":-1,"LAErrorUserCancel":-2,"LAErrorUserFallback":-3,"LAErrorSystemCancel":-4,"LAErrorPasscodeNotSet":-5,"LAErrorTouchIDNotAvailable":-6,"LAErrorTouchIDNotEnrolled":-7})
+- Name: 'LAErrorDomain'
+  JsName: 'LAErrorDomain'
+  Module: 'LocalAuthentication.LAError'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+...

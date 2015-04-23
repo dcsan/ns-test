@@ -1,0 +1,3992 @@
+name: OpenGLES
+items:
+- Name: 'EAGLRenderingAPI'
+  JsName: 'EAGLRenderingAPI'
+  Module: 'OpenGLES.EAGL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kEAGLRenderingAPIOpenGLES1":1,"kEAGLRenderingAPIOpenGLES2":2,"kEAGLRenderingAPIOpenGLES3":3})
+- Name: 'EAGLGetVersion'
+  JsName: 'EAGLGetVersion'
+  Module: 'OpenGLES.EAGL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'EAGLSharegroup'
+  JsName: 'EAGLSharegroup'
+  Module: 'OpenGLES.EAGL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'debugLabel'
+    JsName: 'debugLabel'
+    Module: 'OpenGLES.EAGL'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'debugLabel'
+      JsName: 'debugLabel'
+      Module: 'OpenGLES.EAGL'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'debugLabel'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDebugLabel:'
+      JsName: 'setDebugLabel'
+      Module: 'OpenGLES.EAGL'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDebugLabel:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'EAGLContext'
+  JsName: 'EAGLContext'
+  Module: 'OpenGLES.EAGL'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithAPI:'
+    JsName: 'initWithAPI'
+    Module: 'OpenGLES.EAGL'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithAPI:'
+    Signature:
+    - Type: Instancetype
+    - Type: UInt
+    TypeEncoding: '@12@0:4I8'
+  - Name: 'initWithAPI:sharegroup:'
+    JsName: 'initWithAPISharegroup'
+    Module: 'OpenGLES.EAGL'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithAPI:sharegroup:'
+    Signature:
+    - Type: Instancetype
+    - Type: UInt
+    - Type: Interface
+      Module: OpenGLES.EAGL
+      Name: EAGLSharegroup
+    TypeEncoding: '@16@0:4I8@12'
+  - Name: 'presentRenderbuffer:'
+    JsName: 'presentRenderbuffer'
+    Module: 'OpenGLES.EAGLDrawable'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'presentRenderbuffer:'
+    Signature:
+    - Type: Bool
+    - Type: UInt
+    TypeEncoding: 'c12@0:4I8'
+  - Name: 'renderbufferStorage:fromDrawable:'
+    JsName: 'renderbufferStorageFromDrawable'
+    Module: 'OpenGLES.EAGLDrawable'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'renderbufferStorage:fromDrawable:'
+    Signature:
+    - Type: Bool
+    - Type: UInt
+    - Type: Id
+      WithProtocols:
+      - Module: OpenGLES.EAGLDrawable
+        Name: EAGLDrawable
+    TypeEncoding: 'c16@0:4I8@12'
+  StaticMethods:
+  - Name: 'currentContext'
+    JsName: 'currentContext'
+    Module: 'OpenGLES.EAGL'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'currentContext'
+    Signature:
+    - Type: Interface
+      Module: OpenGLES.EAGL
+      Name: EAGLContext
+    TypeEncoding: '@8@0:4'
+  - Name: 'setCurrentContext:'
+    JsName: 'setCurrentContext'
+    Module: 'OpenGLES.EAGL'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setCurrentContext:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: OpenGLES.EAGL
+      Name: EAGLContext
+    TypeEncoding: 'c12@0:4@8'
+  Properties:
+  - Name: 'API'
+    JsName: 'API'
+    Module: 'OpenGLES.EAGL'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'API'
+      JsName: 'API'
+      Module: 'OpenGLES.EAGL'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'API'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'debugLabel'
+    JsName: 'debugLabel'
+    Module: 'OpenGLES.EAGL'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'debugLabel'
+      JsName: 'debugLabel'
+      Module: 'OpenGLES.EAGL'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'debugLabel'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDebugLabel:'
+      JsName: 'setDebugLabel'
+      Module: 'OpenGLES.EAGL'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDebugLabel:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'multiThreaded'
+    JsName: 'multiThreaded'
+    Module: 'OpenGLES.EAGL'
+    IntroducedIn: 7.1
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isMultiThreaded'
+      JsName: 'isMultiThreaded'
+      Module: 'OpenGLES.EAGL'
+      IntroducedIn: 7.1
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isMultiThreaded'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setMultiThreaded:'
+      JsName: 'setMultiThreaded'
+      Module: 'OpenGLES.EAGL'
+      IntroducedIn: 7.1
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMultiThreaded:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'sharegroup'
+    JsName: 'sharegroup'
+    Module: 'OpenGLES.EAGL'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'sharegroup'
+      JsName: 'sharegroup'
+      Module: 'OpenGLES.EAGL'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'sharegroup'
+      Signature:
+      - Type: Interface
+        Module: OpenGLES.EAGL
+        Name: EAGLSharegroup
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'kEAGLDrawablePropertyRetainedBacking'
+  JsName: 'kEAGLDrawablePropertyRetainedBacking'
+  Module: 'OpenGLES.EAGLDrawable'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kEAGLDrawablePropertyColorFormat'
+  JsName: 'kEAGLDrawablePropertyColorFormat'
+  Module: 'OpenGLES.EAGLDrawable'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kEAGLColorFormatRGBA8'
+  JsName: 'kEAGLColorFormatRGBA8'
+  Module: 'OpenGLES.EAGLDrawable'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kEAGLColorFormatRGB565'
+  JsName: 'kEAGLColorFormatRGB565'
+  Module: 'OpenGLES.EAGLDrawable'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kEAGLColorFormatSRGBA8'
+  JsName: 'kEAGLColorFormatSRGBA8'
+  Module: 'OpenGLES.EAGLDrawable'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'EAGLDrawable'
+  JsName: 'EAGLDrawable'
+  Module: 'OpenGLES.EAGLDrawable'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'drawableProperties'
+    JsName: 'drawableProperties'
+    Module: 'OpenGLES.EAGLDrawable'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'drawableProperties'
+      JsName: 'drawableProperties'
+      Module: 'OpenGLES.EAGLDrawable'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'drawableProperties'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDrawableProperties:'
+      JsName: 'setDrawableProperties'
+      Module: 'OpenGLES.EAGLDrawable'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDrawableProperties:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Type: Protocol
+- Name: 'glActiveTexture'
+  JsName: 'glActiveTexture'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glAttachShader'
+  JsName: 'glAttachShader'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+- Name: 'glBindAttribLocation'
+  JsName: 'glBindAttribLocation'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: CString
+- Name: 'glBindBuffer'
+  JsName: 'glBindBuffer'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+- Name: 'glBindFramebuffer'
+  JsName: 'glBindFramebuffer'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+- Name: 'glBindRenderbuffer'
+  JsName: 'glBindRenderbuffer'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+- Name: 'glBindTexture'
+  JsName: 'glBindTexture'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+- Name: 'glBlendColor'
+  JsName: 'glBlendColor'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Float
+  - Type: Float
+  - Type: Float
+  - Type: Float
+- Name: 'glBlendEquation'
+  JsName: 'glBlendEquation'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glBlendEquationSeparate'
+  JsName: 'glBlendEquationSeparate'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+- Name: 'glBlendFunc'
+  JsName: 'glBlendFunc'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+- Name: 'glBlendFuncSeparate'
+  JsName: 'glBlendFuncSeparate'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+- Name: 'glBufferData'
+  JsName: 'glBufferData'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'glBufferSubData'
+  JsName: 'glBufferSubData'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Long
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'glCheckFramebufferStatus'
+  JsName: 'glCheckFramebufferStatus'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: UInt
+- Name: 'glClear'
+  JsName: 'glClear'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glClearColor'
+  JsName: 'glClearColor'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Float
+  - Type: Float
+  - Type: Float
+  - Type: Float
+- Name: 'glClearDepthf'
+  JsName: 'glClearDepthf'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Float
+- Name: 'glClearStencil'
+  JsName: 'glClearStencil'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+- Name: 'glColorMask'
+  JsName: 'glColorMask'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UChar
+  - Type: UChar
+  - Type: UChar
+  - Type: UChar
+- Name: 'glCompileShader'
+  JsName: 'glCompileShader'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glCompressedTexImage2D'
+  JsName: 'glCompressedTexImage2D'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'glCompressedTexSubImage2D'
+  JsName: 'glCompressedTexSubImage2D'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'glCopyTexImage2D'
+  JsName: 'glCopyTexImage2D'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+- Name: 'glCopyTexSubImage2D'
+  JsName: 'glCopyTexSubImage2D'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+- Name: 'glCreateProgram'
+  JsName: 'glCreateProgram'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+- Name: 'glCreateShader'
+  JsName: 'glCreateShader'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: UInt
+- Name: 'glCullFace'
+  JsName: 'glCullFace'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glDeleteBuffers'
+  JsName: 'glDeleteBuffers'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glDeleteFramebuffers'
+  JsName: 'glDeleteFramebuffers'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glDeleteProgram'
+  JsName: 'glDeleteProgram'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glDeleteRenderbuffers'
+  JsName: 'glDeleteRenderbuffers'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glDeleteShader'
+  JsName: 'glDeleteShader'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glDeleteTextures'
+  JsName: 'glDeleteTextures'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glDepthFunc'
+  JsName: 'glDepthFunc'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glDepthMask'
+  JsName: 'glDepthMask'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UChar
+- Name: 'glDepthRangef'
+  JsName: 'glDepthRangef'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Float
+  - Type: Float
+- Name: 'glDetachShader'
+  JsName: 'glDetachShader'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+- Name: 'glDisable'
+  JsName: 'glDisable'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glDisableVertexAttribArray'
+  JsName: 'glDisableVertexAttribArray'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glDrawArrays'
+  JsName: 'glDrawArrays'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+- Name: 'glDrawElements'
+  JsName: 'glDrawElements'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'glEnable'
+  JsName: 'glEnable'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glEnableVertexAttribArray'
+  JsName: 'glEnableVertexAttribArray'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glFinish'
+  JsName: 'glFinish'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+- Name: 'glFlush'
+  JsName: 'glFlush'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+- Name: 'glFramebufferRenderbuffer'
+  JsName: 'glFramebufferRenderbuffer'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+- Name: 'glFramebufferTexture2D'
+  JsName: 'glFramebufferTexture2D'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+  - Type: Int
+- Name: 'glFrontFace'
+  JsName: 'glFrontFace'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glGenBuffers'
+  JsName: 'glGenBuffers'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glGenerateMipmap'
+  JsName: 'glGenerateMipmap'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glGenFramebuffers'
+  JsName: 'glGenFramebuffers'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glGenRenderbuffers'
+  JsName: 'glGenRenderbuffers'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glGenTextures'
+  JsName: 'glGenTextures'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glGetActiveAttrib'
+  JsName: 'glGetActiveAttrib'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+  - Type: CString
+- Name: 'glGetActiveUniform'
+  JsName: 'glGetActiveUniform'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+  - Type: CString
+- Name: 'glGetAttachedShaders'
+  JsName: 'glGetAttachedShaders'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glGetAttribLocation'
+  JsName: 'glGetAttribLocation'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: CString
+- Name: 'glGetBooleanv'
+  JsName: 'glGetBooleanv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: CString
+- Name: 'glGetBufferParameteriv'
+  JsName: 'glGetBufferParameteriv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glGetError'
+  JsName: 'glGetError'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+- Name: 'glGetFloatv'
+  JsName: 'glGetFloatv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glGetFramebufferAttachmentParameteriv'
+  JsName: 'glGetFramebufferAttachmentParameteriv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glGetIntegerv'
+  JsName: 'glGetIntegerv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glGetProgramiv'
+  JsName: 'glGetProgramiv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glGetProgramInfoLog'
+  JsName: 'glGetProgramInfoLog'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: CString
+- Name: 'glGetRenderbufferParameteriv'
+  JsName: 'glGetRenderbufferParameteriv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glGetShaderiv'
+  JsName: 'glGetShaderiv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glGetShaderInfoLog'
+  JsName: 'glGetShaderInfoLog'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: CString
+- Name: 'glGetShaderPrecisionFormat'
+  JsName: 'glGetShaderPrecisionFormat'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glGetShaderSource'
+  JsName: 'glGetShaderSource'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: CString
+- Name: 'glGetString'
+  JsName: 'glGetString'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: UInt
+- Name: 'glGetTexParameterfv'
+  JsName: 'glGetTexParameterfv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glGetTexParameteriv'
+  JsName: 'glGetTexParameteriv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glGetUniformfv'
+  JsName: 'glGetUniformfv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glGetUniformiv'
+  JsName: 'glGetUniformiv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glGetUniformLocation'
+  JsName: 'glGetUniformLocation'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: CString
+- Name: 'glGetVertexAttribfv'
+  JsName: 'glGetVertexAttribfv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glGetVertexAttribiv'
+  JsName: 'glGetVertexAttribiv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glGetVertexAttribPointerv'
+  JsName: 'glGetVertexAttribPointerv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'glHint'
+  JsName: 'glHint'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+- Name: 'glIsBuffer'
+  JsName: 'glIsBuffer'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UChar
+  - Type: UInt
+- Name: 'glIsEnabled'
+  JsName: 'glIsEnabled'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UChar
+  - Type: UInt
+- Name: 'glIsFramebuffer'
+  JsName: 'glIsFramebuffer'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UChar
+  - Type: UInt
+- Name: 'glIsProgram'
+  JsName: 'glIsProgram'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UChar
+  - Type: UInt
+- Name: 'glIsRenderbuffer'
+  JsName: 'glIsRenderbuffer'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UChar
+  - Type: UInt
+- Name: 'glIsShader'
+  JsName: 'glIsShader'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UChar
+  - Type: UInt
+- Name: 'glIsTexture'
+  JsName: 'glIsTexture'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UChar
+  - Type: UInt
+- Name: 'glLineWidth'
+  JsName: 'glLineWidth'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Float
+- Name: 'glLinkProgram'
+  JsName: 'glLinkProgram'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glPixelStorei'
+  JsName: 'glPixelStorei'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+- Name: 'glPolygonOffset'
+  JsName: 'glPolygonOffset'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Float
+  - Type: Float
+- Name: 'glReadPixels'
+  JsName: 'glReadPixels'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'glReleaseShaderCompiler'
+  JsName: 'glReleaseShaderCompiler'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+- Name: 'glRenderbufferStorage'
+  JsName: 'glRenderbufferStorage'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+- Name: 'glSampleCoverage'
+  JsName: 'glSampleCoverage'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Float
+  - Type: UChar
+- Name: 'glScissor'
+  JsName: 'glScissor'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+- Name: 'glShaderBinary'
+  JsName: 'glShaderBinary'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'glShaderSource'
+  JsName: 'glShaderSource'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glStencilFunc'
+  JsName: 'glStencilFunc'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: UInt
+- Name: 'glStencilFuncSeparate'
+  JsName: 'glStencilFuncSeparate'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Int
+  - Type: UInt
+- Name: 'glStencilMask'
+  JsName: 'glStencilMask'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glStencilMaskSeparate'
+  JsName: 'glStencilMaskSeparate'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+- Name: 'glStencilOp'
+  JsName: 'glStencilOp'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+- Name: 'glStencilOpSeparate'
+  JsName: 'glStencilOpSeparate'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+- Name: 'glTexImage2D'
+  JsName: 'glTexImage2D'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'glTexParameterf'
+  JsName: 'glTexParameterf'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Float
+- Name: 'glTexParameterfv'
+  JsName: 'glTexParameterfv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glTexParameteri'
+  JsName: 'glTexParameteri'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Int
+- Name: 'glTexParameteriv'
+  JsName: 'glTexParameteriv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glTexSubImage2D'
+  JsName: 'glTexSubImage2D'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'glUniform1f'
+  JsName: 'glUniform1f'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Float
+- Name: 'glUniform1fv'
+  JsName: 'glUniform1fv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glUniform1i'
+  JsName: 'glUniform1i'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+- Name: 'glUniform1iv'
+  JsName: 'glUniform1iv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glUniform2f'
+  JsName: 'glUniform2f'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Float
+  - Type: Float
+- Name: 'glUniform2fv'
+  JsName: 'glUniform2fv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glUniform2i'
+  JsName: 'glUniform2i'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Int
+- Name: 'glUniform2iv'
+  JsName: 'glUniform2iv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glUniform3f'
+  JsName: 'glUniform3f'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Float
+  - Type: Float
+  - Type: Float
+- Name: 'glUniform3fv'
+  JsName: 'glUniform3fv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glUniform3i'
+  JsName: 'glUniform3i'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+- Name: 'glUniform3iv'
+  JsName: 'glUniform3iv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glUniform4f'
+  JsName: 'glUniform4f'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Float
+  - Type: Float
+  - Type: Float
+  - Type: Float
+- Name: 'glUniform4fv'
+  JsName: 'glUniform4fv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glUniform4i'
+  JsName: 'glUniform4i'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+- Name: 'glUniform4iv'
+  JsName: 'glUniform4iv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glUniformMatrix2fv'
+  JsName: 'glUniformMatrix2fv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: UChar
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glUniformMatrix3fv'
+  JsName: 'glUniformMatrix3fv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: UChar
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glUniformMatrix4fv'
+  JsName: 'glUniformMatrix4fv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: UChar
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glUseProgram'
+  JsName: 'glUseProgram'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glValidateProgram'
+  JsName: 'glValidateProgram'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glVertexAttrib1f'
+  JsName: 'glVertexAttrib1f'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Float
+- Name: 'glVertexAttrib1fv'
+  JsName: 'glVertexAttrib1fv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glVertexAttrib2f'
+  JsName: 'glVertexAttrib2f'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Float
+  - Type: Float
+- Name: 'glVertexAttrib2fv'
+  JsName: 'glVertexAttrib2fv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glVertexAttrib3f'
+  JsName: 'glVertexAttrib3f'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Float
+  - Type: Float
+  - Type: Float
+- Name: 'glVertexAttrib3fv'
+  JsName: 'glVertexAttrib3fv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glVertexAttrib4f'
+  JsName: 'glVertexAttrib4f'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Float
+  - Type: Float
+  - Type: Float
+  - Type: Float
+- Name: 'glVertexAttrib4fv'
+  JsName: 'glVertexAttrib4fv'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glVertexAttribPointer'
+  JsName: 'glVertexAttribPointer'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: UInt
+  - Type: UChar
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'glViewport'
+  JsName: 'glViewport'
+  Module: 'OpenGLES.ES2.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+- Name: 'glReadBuffer'
+  JsName: 'glReadBuffer'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glDrawRangeElements'
+  JsName: 'glDrawRangeElements'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+  - Type: Int
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'glTexImage3D'
+  JsName: 'glTexImage3D'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'glTexSubImage3D'
+  JsName: 'glTexSubImage3D'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'glCopyTexSubImage3D'
+  JsName: 'glCopyTexSubImage3D'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+- Name: 'glCompressedTexImage3D'
+  JsName: 'glCompressedTexImage3D'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'glCompressedTexSubImage3D'
+  JsName: 'glCompressedTexSubImage3D'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'glGenQueries'
+  JsName: 'glGenQueries'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glDeleteQueries'
+  JsName: 'glDeleteQueries'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glIsQuery'
+  JsName: 'glIsQuery'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UChar
+  - Type: UInt
+- Name: 'glBeginQuery'
+  JsName: 'glBeginQuery'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+- Name: 'glEndQuery'
+  JsName: 'glEndQuery'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glGetQueryiv'
+  JsName: 'glGetQueryiv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glGetQueryObjectuiv'
+  JsName: 'glGetQueryObjectuiv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glUnmapBuffer'
+  JsName: 'glUnmapBuffer'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UChar
+  - Type: UInt
+- Name: 'glGetBufferPointerv'
+  JsName: 'glGetBufferPointerv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'glDrawBuffers'
+  JsName: 'glDrawBuffers'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glUniformMatrix2x3fv'
+  JsName: 'glUniformMatrix2x3fv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: UChar
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glUniformMatrix3x2fv'
+  JsName: 'glUniformMatrix3x2fv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: UChar
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glUniformMatrix2x4fv'
+  JsName: 'glUniformMatrix2x4fv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: UChar
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glUniformMatrix4x2fv'
+  JsName: 'glUniformMatrix4x2fv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: UChar
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glUniformMatrix3x4fv'
+  JsName: 'glUniformMatrix3x4fv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: UChar
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glUniformMatrix4x3fv'
+  JsName: 'glUniformMatrix4x3fv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: UChar
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glBlitFramebuffer'
+  JsName: 'glBlitFramebuffer'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: UInt
+  - Type: UInt
+- Name: 'glRenderbufferStorageMultisample'
+  JsName: 'glRenderbufferStorageMultisample'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+- Name: 'glFramebufferTextureLayer'
+  JsName: 'glFramebufferTextureLayer'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+- Name: 'glMapBufferRange'
+  JsName: 'glMapBufferRange'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: Long
+  - Type: Long
+  - Type: UInt
+- Name: 'glFlushMappedBufferRange'
+  JsName: 'glFlushMappedBufferRange'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Long
+  - Type: Long
+- Name: 'glBindVertexArray'
+  JsName: 'glBindVertexArray'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glDeleteVertexArrays'
+  JsName: 'glDeleteVertexArrays'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glGenVertexArrays'
+  JsName: 'glGenVertexArrays'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glIsVertexArray'
+  JsName: 'glIsVertexArray'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UChar
+  - Type: UInt
+- Name: 'glGetIntegeri_v'
+  JsName: 'glGetIntegeri_v'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glBeginTransformFeedback'
+  JsName: 'glBeginTransformFeedback'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glEndTransformFeedback'
+  JsName: 'glEndTransformFeedback'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+- Name: 'glBindBufferRange'
+  JsName: 'glBindBufferRange'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+  - Type: Long
+  - Type: Long
+- Name: 'glBindBufferBase'
+  JsName: 'glBindBufferBase'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+- Name: 'glTransformFeedbackVaryings'
+  JsName: 'glTransformFeedbackVaryings'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: CString
+  - Type: UInt
+- Name: 'glGetTransformFeedbackVarying'
+  JsName: 'glGetTransformFeedbackVarying'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+  - Type: CString
+- Name: 'glVertexAttribIPointer'
+  JsName: 'glVertexAttribIPointer'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'glGetVertexAttribIiv'
+  JsName: 'glGetVertexAttribIiv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glGetVertexAttribIuiv'
+  JsName: 'glGetVertexAttribIuiv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glVertexAttribI4i'
+  JsName: 'glVertexAttribI4i'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+- Name: 'glVertexAttribI4ui'
+  JsName: 'glVertexAttribI4ui'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+- Name: 'glVertexAttribI4iv'
+  JsName: 'glVertexAttribI4iv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glVertexAttribI4uiv'
+  JsName: 'glVertexAttribI4uiv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glGetUniformuiv'
+  JsName: 'glGetUniformuiv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glGetFragDataLocation'
+  JsName: 'glGetFragDataLocation'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: CString
+- Name: 'glUniform1ui'
+  JsName: 'glUniform1ui'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: UInt
+- Name: 'glUniform2ui'
+  JsName: 'glUniform2ui'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: UInt
+  - Type: UInt
+- Name: 'glUniform3ui'
+  JsName: 'glUniform3ui'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+- Name: 'glUniform4ui'
+  JsName: 'glUniform4ui'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+- Name: 'glUniform1uiv'
+  JsName: 'glUniform1uiv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glUniform2uiv'
+  JsName: 'glUniform2uiv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glUniform3uiv'
+  JsName: 'glUniform3uiv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glUniform4uiv'
+  JsName: 'glUniform4uiv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glClearBufferiv'
+  JsName: 'glClearBufferiv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glClearBufferuiv'
+  JsName: 'glClearBufferuiv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glClearBufferfv'
+  JsName: 'glClearBufferfv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glClearBufferfi'
+  JsName: 'glClearBufferfi'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Float
+  - Type: Int
+- Name: 'glGetStringi'
+  JsName: 'glGetStringi'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: UInt
+  - Type: UInt
+- Name: 'glCopyBufferSubData'
+  JsName: 'glCopyBufferSubData'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Long
+  - Type: Long
+  - Type: Long
+- Name: 'glGetUniformIndices'
+  JsName: 'glGetUniformIndices'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glGetActiveUniformsiv'
+  JsName: 'glGetActiveUniformsiv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glGetUniformBlockIndex'
+  JsName: 'glGetUniformBlockIndex'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: UInt
+  - Type: CString
+- Name: 'glGetActiveUniformBlockiv'
+  JsName: 'glGetActiveUniformBlockiv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glGetActiveUniformBlockName'
+  JsName: 'glGetActiveUniformBlockName'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: CString
+- Name: 'glUniformBlockBinding'
+  JsName: 'glUniformBlockBinding'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+- Name: 'glDrawArraysInstanced'
+  JsName: 'glDrawArraysInstanced'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+- Name: 'glDrawElementsInstanced'
+  JsName: 'glDrawElementsInstanced'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'glFenceSync'
+  JsName: 'glFenceSync'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: UInt
+- Name: 'glIsSync'
+  JsName: 'glIsSync'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UChar
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'glDeleteSync'
+  JsName: 'glDeleteSync'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'glClientWaitSync'
+  JsName: 'glClientWaitSync'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: ULongLong
+- Name: 'glWaitSync'
+  JsName: 'glWaitSync'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: ULongLong
+- Name: 'glGetInteger64v'
+  JsName: 'glGetInteger64v'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: LongLong
+- Name: 'glGetSynciv'
+  JsName: 'glGetSynciv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glGetInteger64i_v'
+  JsName: 'glGetInteger64i_v'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: LongLong
+- Name: 'glGetBufferParameteri64v'
+  JsName: 'glGetBufferParameteri64v'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: LongLong
+- Name: 'glGenSamplers'
+  JsName: 'glGenSamplers'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glDeleteSamplers'
+  JsName: 'glDeleteSamplers'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glIsSampler'
+  JsName: 'glIsSampler'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UChar
+  - Type: UInt
+- Name: 'glBindSampler'
+  JsName: 'glBindSampler'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+- Name: 'glSamplerParameteri'
+  JsName: 'glSamplerParameteri'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Int
+- Name: 'glSamplerParameteriv'
+  JsName: 'glSamplerParameteriv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glSamplerParameterf'
+  JsName: 'glSamplerParameterf'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Float
+- Name: 'glSamplerParameterfv'
+  JsName: 'glSamplerParameterfv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glGetSamplerParameteriv'
+  JsName: 'glGetSamplerParameteriv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glGetSamplerParameterfv'
+  JsName: 'glGetSamplerParameterfv'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glVertexAttribDivisor'
+  JsName: 'glVertexAttribDivisor'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+- Name: 'glBindTransformFeedback'
+  JsName: 'glBindTransformFeedback'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+- Name: 'glDeleteTransformFeedbacks'
+  JsName: 'glDeleteTransformFeedbacks'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glGenTransformFeedbacks'
+  JsName: 'glGenTransformFeedbacks'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glIsTransformFeedback'
+  JsName: 'glIsTransformFeedback'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UChar
+  - Type: UInt
+- Name: 'glPauseTransformFeedback'
+  JsName: 'glPauseTransformFeedback'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+- Name: 'glResumeTransformFeedback'
+  JsName: 'glResumeTransformFeedback'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+- Name: 'glGetProgramBinary'
+  JsName: 'glGetProgramBinary'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'glProgramBinary'
+  JsName: 'glProgramBinary'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'glProgramParameteri'
+  JsName: 'glProgramParameteri'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Int
+- Name: 'glInvalidateFramebuffer'
+  JsName: 'glInvalidateFramebuffer'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glInvalidateSubFramebuffer'
+  JsName: 'glInvalidateSubFramebuffer'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+- Name: 'glTexStorage2D'
+  JsName: 'glTexStorage2D'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+- Name: 'glTexStorage3D'
+  JsName: 'glTexStorage3D'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+- Name: 'glGetInternalformativ'
+  JsName: 'glGetInternalformativ'
+  Module: 'OpenGLES.ES3.gl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glCopyTextureLevelsAPPLE'
+  JsName: 'glCopyTextureLevelsAPPLE'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+- Name: 'glLabelObjectEXT'
+  JsName: 'glLabelObjectEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Int
+  - Type: CString
+- Name: 'glGetObjectLabelEXT'
+  JsName: 'glGetObjectLabelEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: CString
+- Name: 'glInsertEventMarkerEXT'
+  JsName: 'glInsertEventMarkerEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: CString
+- Name: 'glPushGroupMarkerEXT'
+  JsName: 'glPushGroupMarkerEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: CString
+- Name: 'glPopGroupMarkerEXT'
+  JsName: 'glPopGroupMarkerEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+- Name: 'glUseProgramStagesEXT'
+  JsName: 'glUseProgramStagesEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+- Name: 'glActiveShaderProgramEXT'
+  JsName: 'glActiveShaderProgramEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+- Name: 'glCreateShaderProgramvEXT'
+  JsName: 'glCreateShaderProgramvEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: CString
+- Name: 'glBindProgramPipelineEXT'
+  JsName: 'glBindProgramPipelineEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glDeleteProgramPipelinesEXT'
+  JsName: 'glDeleteProgramPipelinesEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glGenProgramPipelinesEXT'
+  JsName: 'glGenProgramPipelinesEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glIsProgramPipelineEXT'
+  JsName: 'glIsProgramPipelineEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UChar
+  - Type: UInt
+- Name: 'glProgramParameteriEXT'
+  JsName: 'glProgramParameteriEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Int
+- Name: 'glGetProgramPipelineivEXT'
+  JsName: 'glGetProgramPipelineivEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glValidateProgramPipelineEXT'
+  JsName: 'glValidateProgramPipelineEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+- Name: 'glGetProgramPipelineInfoLogEXT'
+  JsName: 'glGetProgramPipelineInfoLogEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: CString
+- Name: 'glProgramUniform1iEXT'
+  JsName: 'glProgramUniform1iEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+- Name: 'glProgramUniform2iEXT'
+  JsName: 'glProgramUniform2iEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+- Name: 'glProgramUniform3iEXT'
+  JsName: 'glProgramUniform3iEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+- Name: 'glProgramUniform4iEXT'
+  JsName: 'glProgramUniform4iEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+  - Type: Int
+- Name: 'glProgramUniform1fEXT'
+  JsName: 'glProgramUniform1fEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Float
+- Name: 'glProgramUniform2fEXT'
+  JsName: 'glProgramUniform2fEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Float
+  - Type: Float
+- Name: 'glProgramUniform3fEXT'
+  JsName: 'glProgramUniform3fEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Float
+  - Type: Float
+  - Type: Float
+- Name: 'glProgramUniform4fEXT'
+  JsName: 'glProgramUniform4fEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Float
+  - Type: Float
+  - Type: Float
+  - Type: Float
+- Name: 'glProgramUniform1uiEXT'
+  JsName: 'glProgramUniform1uiEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: UInt
+- Name: 'glProgramUniform2uiEXT'
+  JsName: 'glProgramUniform2uiEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: UInt
+  - Type: UInt
+- Name: 'glProgramUniform3uiEXT'
+  JsName: 'glProgramUniform3uiEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+- Name: 'glProgramUniform4uiEXT'
+  JsName: 'glProgramUniform4uiEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+  - Type: UInt
+- Name: 'glProgramUniform1ivEXT'
+  JsName: 'glProgramUniform1ivEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glProgramUniform2ivEXT'
+  JsName: 'glProgramUniform2ivEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glProgramUniform3ivEXT'
+  JsName: 'glProgramUniform3ivEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glProgramUniform4ivEXT'
+  JsName: 'glProgramUniform4ivEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'glProgramUniform1fvEXT'
+  JsName: 'glProgramUniform1fvEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glProgramUniform2fvEXT'
+  JsName: 'glProgramUniform2fvEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glProgramUniform3fvEXT'
+  JsName: 'glProgramUniform3fvEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glProgramUniform4fvEXT'
+  JsName: 'glProgramUniform4fvEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glProgramUniform1uivEXT'
+  JsName: 'glProgramUniform1uivEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glProgramUniform2uivEXT'
+  JsName: 'glProgramUniform2uivEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glProgramUniform3uivEXT'
+  JsName: 'glProgramUniform3uivEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glProgramUniform4uivEXT'
+  JsName: 'glProgramUniform4uivEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'glProgramUniformMatrix2fvEXT'
+  JsName: 'glProgramUniformMatrix2fvEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: UChar
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glProgramUniformMatrix3fvEXT'
+  JsName: 'glProgramUniformMatrix3fvEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: UChar
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glProgramUniformMatrix4fvEXT'
+  JsName: 'glProgramUniformMatrix4fvEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: UChar
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glProgramUniformMatrix2x3fvEXT'
+  JsName: 'glProgramUniformMatrix2x3fvEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: UChar
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glProgramUniformMatrix3x2fvEXT'
+  JsName: 'glProgramUniformMatrix3x2fvEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: UChar
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glProgramUniformMatrix2x4fvEXT'
+  JsName: 'glProgramUniformMatrix2x4fvEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: UChar
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glProgramUniformMatrix4x2fvEXT'
+  JsName: 'glProgramUniformMatrix4x2fvEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: UChar
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glProgramUniformMatrix3x4fvEXT'
+  JsName: 'glProgramUniformMatrix3x4fvEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: UChar
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'glProgramUniformMatrix4x3fvEXT'
+  JsName: 'glProgramUniformMatrix4x3fvEXT'
+  Module: 'OpenGLES.ES3.glext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: UInt
+  - Type: Int
+  - Type: Int
+  - Type: UChar
+  - Type: Pointer
+    PointerType:
+      Type: Float
+...

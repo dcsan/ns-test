@@ -1,0 +1,3248 @@
+name: CoreImage
+items:
+- Name: 'CIColor'
+  JsName: 'CIColor'
+  Module: 'CoreImage.CIColor'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'alpha'
+    JsName: 'alpha'
+    Module: 'CoreImage.CIColor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'alpha'
+    Signature:
+    - Type: Double
+    TypeEncoding: 'd16@0:8'
+  - Name: 'blue'
+    JsName: 'blue'
+    Module: 'CoreImage.CIColor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'blue'
+    Signature:
+    - Type: Double
+    TypeEncoding: 'd16@0:8'
+  - Name: 'colorSpace'
+    JsName: 'colorSpace'
+    Module: 'CoreImage.CIColor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'colorSpace'
+    Signature:
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '^{CGColorSpace=}16@0:8'
+  - Name: 'components'
+    JsName: 'components'
+    Module: 'CoreImage.CIColor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'components'
+    Signature:
+    - Type: Pointer
+      PointerType:
+        Type: Double
+    TypeEncoding: 'r^d16@0:8'
+  - Name: 'green'
+    JsName: 'green'
+    Module: 'CoreImage.CIColor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'green'
+    Signature:
+    - Type: Double
+    TypeEncoding: 'd16@0:8'
+  - Name: 'initWithCGColor:'
+    JsName: 'initWithCGColor'
+    Module: 'CoreImage.CIColor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithCGColor:'
+    Signature:
+    - Type: Instancetype
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '@24@0:8^{CGColor=}16'
+  - Name: 'numberOfComponents'
+    JsName: 'numberOfComponents'
+    Module: 'CoreImage.CIColor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'numberOfComponents'
+    Signature:
+    - Type: ULong
+    TypeEncoding: 'Q16@0:8'
+  - Name: 'red'
+    JsName: 'red'
+    Module: 'CoreImage.CIColor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'red'
+    Signature:
+    - Type: Double
+    TypeEncoding: 'd16@0:8'
+  - Name: 'stringRepresentation'
+    JsName: 'stringRepresentation'
+    Module: 'CoreImage.CIColor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stringRepresentation'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@16@0:8'
+  StaticMethods:
+  - Name: 'colorWithCGColor:'
+    JsName: 'colorWithCGColor'
+    Module: 'CoreImage.CIColor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'colorWithCGColor:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIColor
+      Name: CIColor
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '@24@0:8^{CGColor=}16'
+  - Name: 'colorWithRed:green:blue:'
+    JsName: 'colorWithRedGreenBlue'
+    Module: 'CoreImage.CIColor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'colorWithRed:green:blue:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIColor
+      Name: CIColor
+    - Type: Double
+    - Type: Double
+    - Type: Double
+    TypeEncoding: '@40@0:8d16d24d32'
+  - Name: 'colorWithRed:green:blue:alpha:'
+    JsName: 'colorWithRedGreenBlueAlpha'
+    Module: 'CoreImage.CIColor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'colorWithRed:green:blue:alpha:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIColor
+      Name: CIColor
+    - Type: Double
+    - Type: Double
+    - Type: Double
+    - Type: Double
+    TypeEncoding: '@48@0:8d16d24d32d40'
+  - Name: 'colorWithString:'
+    JsName: 'colorWithString'
+    Module: 'CoreImage.CIColor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'colorWithString:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIColor
+      Name: CIColor
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  Properties: []
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCoding
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'kCIFormatARGB8'
+  JsName: 'kCIFormatARGB8'
+  Module: 'CoreImage.CIImage'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kCIFormatBGRA8'
+  JsName: 'kCIFormatBGRA8'
+  Module: 'CoreImage.CIImage'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kCIFormatRGBA8'
+  JsName: 'kCIFormatRGBA8'
+  Module: 'CoreImage.CIImage'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kCIFormatRGBAf'
+  JsName: 'kCIFormatRGBAf'
+  Module: 'CoreImage.CIImage'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kCIFormatRGBAh'
+  JsName: 'kCIFormatRGBAh'
+  Module: 'CoreImage.CIImage'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Int
+- Name: 'kCIImageColorSpace'
+  JsName: 'kCIImageColorSpace'
+  Module: 'CoreImage.CIImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIImageProperties'
+  JsName: 'kCIImageProperties'
+  Module: 'CoreImage.CIImage'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CIImage'
+  JsName: 'CIImage'
+  Module: 'CoreImage.CIImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'autoAdjustmentFilters'
+    JsName: 'autoAdjustmentFilters'
+    Module: 'CoreImage.CIImage'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'autoAdjustmentFilters'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@16@0:8'
+  - Name: 'autoAdjustmentFiltersWithOptions:'
+    JsName: 'autoAdjustmentFiltersWithOptions'
+    Module: 'CoreImage.CIImage'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'autoAdjustmentFiltersWithOptions:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'extent'
+    JsName: 'extent'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'extent'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    TypeEncoding: '{CGRect={CGPoint=dd}{CGSize=dd}}16@0:8'
+  - Name: 'imageByApplyingFilter:withInputParameters:'
+    JsName: 'imageByApplyingFilterWithInputParameters'
+    Module: 'CoreImage.CIImage'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'imageByApplyingFilter:withInputParameters:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'imageByApplyingOrientation:'
+    JsName: 'imageByApplyingOrientation'
+    Module: 'CoreImage.CIImage'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'imageByApplyingOrientation:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Int
+    TypeEncoding: '@20@0:8i16'
+  - Name: 'imageByApplyingTransform:'
+    JsName: 'imageByApplyingTransform'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'imageByApplyingTransform:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+    TypeEncoding: '@64@0:8{CGAffineTransform=dddddd}16'
+  - Name: 'imageByClampingToExtent'
+    JsName: 'imageByClampingToExtent'
+    Module: 'CoreImage.CIImage'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'imageByClampingToExtent'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    TypeEncoding: '@16@0:8'
+  - Name: 'imageByCompositingOverImage:'
+    JsName: 'imageByCompositingOverImage'
+    Module: 'CoreImage.CIImage'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'imageByCompositingOverImage:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'imageByCroppingToRect:'
+    JsName: 'imageByCroppingToRect'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'imageByCroppingToRect:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    TypeEncoding: '@48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16'
+  - Name: 'imageTransformForOrientation:'
+    JsName: 'imageTransformForOrientation'
+    Module: 'CoreImage.CIImage'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'imageTransformForOrientation:'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+    - Type: Int
+    TypeEncoding: '{CGAffineTransform=dddddd}20@0:8i16'
+  - Name: 'initWithBitmapData:bytesPerRow:size:format:colorSpace:'
+    JsName: 'initWithBitmapDataBytesPerRowSizeFormatColorSpace'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithBitmapData:bytesPerRow:size:format:colorSpace:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: ULong
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGSize
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '@60@0:8@16Q24{CGSize=dd}32i48^{CGColorSpace=}52'
+  - Name: 'initWithCGImage:'
+    JsName: 'initWithCGImage'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithCGImage:'
+    Signature:
+    - Type: Instancetype
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '@24@0:8^{CGImage=}16'
+  - Name: 'initWithCGImage:options:'
+    JsName: 'initWithCGImageOptions'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithCGImage:options:'
+    Signature:
+    - Type: Instancetype
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@32@0:8^{CGImage=}16@24'
+  - Name: 'initWithColor:'
+    JsName: 'initWithColor'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithColor:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: CoreImage.CIColor
+      Name: CIColor
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'initWithContentsOfURL:'
+    JsName: 'initWithContentsOfURL'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithContentsOfURL:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'initWithContentsOfURL:options:'
+    JsName: 'initWithContentsOfURLOptions'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithContentsOfURL:options:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'initWithCVPixelBuffer:'
+    JsName: 'initWithCVPixelBuffer'
+    Module: 'CoreImage.CIImage'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithCVPixelBuffer:'
+    Signature:
+    - Type: Instancetype
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '@24@0:8^{__CVBuffer=}16'
+  - Name: 'initWithCVPixelBuffer:options:'
+    JsName: 'initWithCVPixelBufferOptions'
+    Module: 'CoreImage.CIImage'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithCVPixelBuffer:options:'
+    Signature:
+    - Type: Instancetype
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@32@0:8^{__CVBuffer=}16@24'
+  - Name: 'initWithData:'
+    JsName: 'initWithData'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithData:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'initWithData:options:'
+    JsName: 'initWithDataOptions'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithData:options:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'initWithTexture:size:flipped:colorSpace:'
+    JsName: 'initWithTextureSizeFlippedColorSpace'
+    Module: 'CoreImage.CIImage'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithTexture:size:flipped:colorSpace:'
+    Signature:
+    - Type: Instancetype
+    - Type: UInt
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGSize
+    - Type: Bool
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '@48@0:8I16{CGSize=dd}20B36^{CGColorSpace=}40'
+  - Name: 'properties'
+    JsName: 'properties'
+    Module: 'CoreImage.CIImage'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'properties'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@16@0:8'
+  - Name: 'regionOfInterestForImage:inRect:'
+    JsName: 'regionOfInterestForImageInRect'
+    Module: 'CoreImage.CIImage'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'regionOfInterestForImage:inRect:'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    TypeEncoding: '{CGRect={CGPoint=dd}{CGSize=dd}}56@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24'
+  StaticMethods:
+  - Name: 'emptyImage'
+    JsName: 'emptyImage'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'emptyImage'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    TypeEncoding: '@16@0:8'
+  - Name: 'imageWithBitmapData:bytesPerRow:size:format:colorSpace:'
+    JsName: 'imageWithBitmapDataBytesPerRowSizeFormatColorSpace'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'imageWithBitmapData:bytesPerRow:size:format:colorSpace:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: ULong
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGSize
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '@60@0:8@16Q24{CGSize=dd}32i48^{CGColorSpace=}52'
+  - Name: 'imageWithCGImage:'
+    JsName: 'imageWithCGImage'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'imageWithCGImage:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '@24@0:8^{CGImage=}16'
+  - Name: 'imageWithCGImage:options:'
+    JsName: 'imageWithCGImageOptions'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'imageWithCGImage:options:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@32@0:8^{CGImage=}16@24'
+  - Name: 'imageWithColor:'
+    JsName: 'imageWithColor'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'imageWithColor:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Interface
+      Module: CoreImage.CIColor
+      Name: CIColor
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'imageWithContentsOfURL:'
+    JsName: 'imageWithContentsOfURL'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'imageWithContentsOfURL:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'imageWithContentsOfURL:options:'
+    JsName: 'imageWithContentsOfURLOptions'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'imageWithContentsOfURL:options:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'imageWithCVPixelBuffer:'
+    JsName: 'imageWithCVPixelBuffer'
+    Module: 'CoreImage.CIImage'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'imageWithCVPixelBuffer:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '@24@0:8^{__CVBuffer=}16'
+  - Name: 'imageWithCVPixelBuffer:options:'
+    JsName: 'imageWithCVPixelBufferOptions'
+    Module: 'CoreImage.CIImage'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'imageWithCVPixelBuffer:options:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@32@0:8^{__CVBuffer=}16@24'
+  - Name: 'imageWithData:'
+    JsName: 'imageWithData'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'imageWithData:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'imageWithData:options:'
+    JsName: 'imageWithDataOptions'
+    Module: 'CoreImage.CIImage'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'imageWithData:options:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'imageWithTexture:size:flipped:colorSpace:'
+    JsName: 'imageWithTextureSizeFlippedColorSpace'
+    Module: 'CoreImage.CIImage'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'imageWithTexture:size:flipped:colorSpace:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: UInt
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGSize
+    - Type: Bool
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '@48@0:8I16{CGSize=dd}20B36^{CGColorSpace=}40'
+  Properties: []
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCoding
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'kCIImageAutoAdjustEnhance'
+  JsName: 'kCIImageAutoAdjustEnhance'
+  Module: 'CoreImage.CIImage'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIImageAutoAdjustRedEye'
+  JsName: 'kCIImageAutoAdjustRedEye'
+  Module: 'CoreImage.CIImage'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIImageAutoAdjustFeatures'
+  JsName: 'kCIImageAutoAdjustFeatures'
+  Module: 'CoreImage.CIImage'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIImageAutoAdjustCrop'
+  JsName: 'kCIImageAutoAdjustCrop'
+  Module: 'CoreImage.CIImage'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIImageAutoAdjustLevel'
+  JsName: 'kCIImageAutoAdjustLevel'
+  Module: 'CoreImage.CIImage'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIContextOutputColorSpace'
+  JsName: 'kCIContextOutputColorSpace'
+  Module: 'CoreImage.CIContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIContextWorkingColorSpace'
+  JsName: 'kCIContextWorkingColorSpace'
+  Module: 'CoreImage.CIContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIContextWorkingFormat'
+  JsName: 'kCIContextWorkingFormat'
+  Module: 'CoreImage.CIContext'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIContextUseSoftwareRenderer'
+  JsName: 'kCIContextUseSoftwareRenderer'
+  Module: 'CoreImage.CIContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIContextPriorityRequestLow'
+  JsName: 'kCIContextPriorityRequestLow'
+  Module: 'CoreImage.CIContext'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CIContext'
+  JsName: 'CIContext'
+  Module: 'CoreImage.CIContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'createCGImage:fromRect:'
+    JsName: 'createCGImageFromRect'
+    Module: 'CoreImage.CIContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'createCGImage:fromRect:'
+    Signature:
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    TypeEncoding: '^{CGImage=}56@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24'
+  - Name: 'createCGImage:fromRect:format:colorSpace:'
+    JsName: 'createCGImageFromRectFormatColorSpace'
+    Module: 'CoreImage.CIContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'createCGImage:fromRect:format:colorSpace:'
+    Signature:
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '^{CGImage=}68@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24i56^{CGColorSpace=}60'
+  - Name: 'drawImage:atPoint:fromRect:'
+    JsName: 'drawImageAtPointFromRect'
+    Module: 'CoreImage.CIContext'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'drawImage:atPoint:fromRect:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    TypeEncoding: 'v72@0:8@16{CGPoint=dd}24{CGRect={CGPoint=dd}{CGSize=dd}}40'
+  - Name: 'drawImage:inRect:fromRect:'
+    JsName: 'drawImageInRectFromRect'
+    Module: 'CoreImage.CIContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'drawImage:inRect:fromRect:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    TypeEncoding: 'v88@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24{CGRect={CGPoint=dd}{CGSize=dd}}56'
+  - Name: 'inputImageMaximumSize'
+    JsName: 'inputImageMaximumSize'
+    Module: 'CoreImage.CIContext'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'inputImageMaximumSize'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGSize
+    TypeEncoding: '{CGSize=dd}16@0:8'
+  - Name: 'outputImageMaximumSize'
+    JsName: 'outputImageMaximumSize'
+    Module: 'CoreImage.CIContext'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'outputImageMaximumSize'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGSize
+    TypeEncoding: '{CGSize=dd}16@0:8'
+  - Name: 'render:toBitmap:rowBytes:bounds:format:colorSpace:'
+    JsName: 'renderToBitmapRowBytesBoundsFormatColorSpace'
+    Module: 'CoreImage.CIContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'render:toBitmap:rowBytes:bounds:format:colorSpace:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Long
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: 'v84@0:8@16^v24q32{CGRect={CGPoint=dd}{CGSize=dd}}40i72^{CGColorSpace=}76'
+  - Name: 'render:toCVPixelBuffer:'
+    JsName: 'renderToCVPixelBuffer'
+    Module: 'CoreImage.CIContext'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'render:toCVPixelBuffer:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: 'v32@0:8@16^{__CVBuffer=}24'
+  - Name: 'render:toCVPixelBuffer:bounds:colorSpace:'
+    JsName: 'renderToCVPixelBufferBoundsColorSpace'
+    Module: 'CoreImage.CIContext'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'render:toCVPixelBuffer:bounds:colorSpace:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: 'v72@0:8@16^{__CVBuffer=}24{CGRect={CGPoint=dd}{CGSize=dd}}32^{CGColorSpace=}64'
+  StaticMethods:
+  - Name: 'contextWithEAGLContext:'
+    JsName: 'contextWithEAGLContext'
+    Module: 'CoreImage.CIContext'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'contextWithEAGLContext:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIContext
+      Name: CIContext
+    - Type: Interface
+      Module: OpenGLES.EAGL
+      Name: EAGLContext
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'contextWithEAGLContext:options:'
+    JsName: 'contextWithEAGLContextOptions'
+    Module: 'CoreImage.CIContext'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'contextWithEAGLContext:options:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIContext
+      Name: CIContext
+    - Type: Interface
+      Module: OpenGLES.EAGL
+      Name: EAGLContext
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'contextWithOptions:'
+    JsName: 'contextWithOptions'
+    Module: 'CoreImage.CIContext'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'contextWithOptions:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIContext
+      Name: CIContext
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@24@0:8@16'
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'kCIAttributeFilterName'
+  JsName: 'kCIAttributeFilterName'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeFilterDisplayName'
+  JsName: 'kCIAttributeFilterDisplayName'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeFilterCategories'
+  JsName: 'kCIAttributeFilterCategories'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeClass'
+  JsName: 'kCIAttributeClass'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeType'
+  JsName: 'kCIAttributeType'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeMin'
+  JsName: 'kCIAttributeMin'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeMax'
+  JsName: 'kCIAttributeMax'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeSliderMin'
+  JsName: 'kCIAttributeSliderMin'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeSliderMax'
+  JsName: 'kCIAttributeSliderMax'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeDefault'
+  JsName: 'kCIAttributeDefault'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeIdentity'
+  JsName: 'kCIAttributeIdentity'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeName'
+  JsName: 'kCIAttributeName'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeDisplayName'
+  JsName: 'kCIAttributeDisplayName'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeTypeTime'
+  JsName: 'kCIAttributeTypeTime'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeTypeScalar'
+  JsName: 'kCIAttributeTypeScalar'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeTypeDistance'
+  JsName: 'kCIAttributeTypeDistance'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeTypeAngle'
+  JsName: 'kCIAttributeTypeAngle'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeTypeBoolean'
+  JsName: 'kCIAttributeTypeBoolean'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeTypeInteger'
+  JsName: 'kCIAttributeTypeInteger'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeTypeCount'
+  JsName: 'kCIAttributeTypeCount'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeTypePosition'
+  JsName: 'kCIAttributeTypePosition'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeTypeOffset'
+  JsName: 'kCIAttributeTypeOffset'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeTypePosition3'
+  JsName: 'kCIAttributeTypePosition3'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeTypeRectangle'
+  JsName: 'kCIAttributeTypeRectangle'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeTypeColor'
+  JsName: 'kCIAttributeTypeColor'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeTypeImage'
+  JsName: 'kCIAttributeTypeImage'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIAttributeTypeTransform'
+  JsName: 'kCIAttributeTypeTransform'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategoryDistortionEffect'
+  JsName: 'kCICategoryDistortionEffect'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategoryGeometryAdjustment'
+  JsName: 'kCICategoryGeometryAdjustment'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategoryCompositeOperation'
+  JsName: 'kCICategoryCompositeOperation'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategoryHalftoneEffect'
+  JsName: 'kCICategoryHalftoneEffect'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategoryColorAdjustment'
+  JsName: 'kCICategoryColorAdjustment'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategoryColorEffect'
+  JsName: 'kCICategoryColorEffect'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategoryTransition'
+  JsName: 'kCICategoryTransition'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategoryTileEffect'
+  JsName: 'kCICategoryTileEffect'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategoryGenerator'
+  JsName: 'kCICategoryGenerator'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategoryReduction'
+  JsName: 'kCICategoryReduction'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategoryGradient'
+  JsName: 'kCICategoryGradient'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategoryStylize'
+  JsName: 'kCICategoryStylize'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategorySharpen'
+  JsName: 'kCICategorySharpen'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategoryBlur'
+  JsName: 'kCICategoryBlur'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategoryVideo'
+  JsName: 'kCICategoryVideo'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategoryStillImage'
+  JsName: 'kCICategoryStillImage'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategoryInterlaced'
+  JsName: 'kCICategoryInterlaced'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategoryNonSquarePixels'
+  JsName: 'kCICategoryNonSquarePixels'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategoryHighDynamicRange'
+  JsName: 'kCICategoryHighDynamicRange'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCICategoryBuiltIn'
+  JsName: 'kCICategoryBuiltIn'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIOutputImageKey'
+  JsName: 'kCIOutputImageKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputBackgroundImageKey'
+  JsName: 'kCIInputBackgroundImageKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputImageKey'
+  JsName: 'kCIInputImageKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputTimeKey'
+  JsName: 'kCIInputTimeKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputTransformKey'
+  JsName: 'kCIInputTransformKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputScaleKey'
+  JsName: 'kCIInputScaleKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputAspectRatioKey'
+  JsName: 'kCIInputAspectRatioKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputCenterKey'
+  JsName: 'kCIInputCenterKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputRadiusKey'
+  JsName: 'kCIInputRadiusKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputAngleKey'
+  JsName: 'kCIInputAngleKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputWidthKey'
+  JsName: 'kCIInputWidthKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputSharpnessKey'
+  JsName: 'kCIInputSharpnessKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputIntensityKey'
+  JsName: 'kCIInputIntensityKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputEVKey'
+  JsName: 'kCIInputEVKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputSaturationKey'
+  JsName: 'kCIInputSaturationKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputColorKey'
+  JsName: 'kCIInputColorKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputBrightnessKey'
+  JsName: 'kCIInputBrightnessKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputContrastKey'
+  JsName: 'kCIInputContrastKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputMaskImageKey'
+  JsName: 'kCIInputMaskImageKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputTargetImageKey'
+  JsName: 'kCIInputTargetImageKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputExtentKey'
+  JsName: 'kCIInputExtentKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'kCIInputVersionKey'
+  JsName: 'kCIInputVersionKey'
+  Module: 'CoreImage.CIFilter'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CIFilter'
+  JsName: 'CIFilter'
+  Module: 'CoreImage.CIFilter'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'attributes'
+    JsName: 'attributes'
+    Module: 'CoreImage.CIFilter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'attributes'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@16@0:8'
+  - Name: 'inputKeys'
+    JsName: 'inputKeys'
+    Module: 'CoreImage.CIFilter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'inputKeys'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@16@0:8'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'CoreImage.CIFilter'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'name'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@16@0:8'
+  - Name: 'outputKeys'
+    JsName: 'outputKeys'
+    Module: 'CoreImage.CIFilter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'outputKeys'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@16@0:8'
+  - Name: 'setDefaults'
+    JsName: 'setDefaults'
+    Module: 'CoreImage.CIFilter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setDefaults'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods:
+  - Name: 'filterArrayFromSerializedXMP:inputImageExtent:error:'
+    JsName: 'filterArrayFromSerializedXMPInputImageExtentError'
+    Module: 'CoreImage.CIFilter'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'filterArrayFromSerializedXMP:inputImageExtent:error:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@64@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24^@56'
+  - Name: 'filterNamesInCategories:'
+    JsName: 'filterNamesInCategories'
+    Module: 'CoreImage.CIFilter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'filterNamesInCategories:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'filterNamesInCategory:'
+    JsName: 'filterNamesInCategory'
+    Module: 'CoreImage.CIFilter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'filterNamesInCategory:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'filterWithName:'
+    JsName: 'filterWithName'
+    Module: 'CoreImage.CIFilter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'filterWithName:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIFilter
+      Name: CIFilter
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'filterWithName:keysAndValues:'
+    JsName: 'filterWithNameKeysAndValues'
+    Module: 'CoreImage.CIFilter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodIsVariadic
+    - MethodIsNullTerminatedVariadic
+    Selector: 'filterWithName:keysAndValues:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIFilter
+      Name: CIFilter
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'filterWithName:withInputParameters:'
+    JsName: 'filterWithNameWithInputParameters'
+    Module: 'CoreImage.CIFilter'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'filterWithName:withInputParameters:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIFilter
+      Name: CIFilter
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'serializedXMPFromFilters:inputImageExtent:'
+    JsName: 'serializedXMPFromFiltersInputImageExtent'
+    Module: 'CoreImage.CIFilter'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'serializedXMPFromFilters:inputImageExtent:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    TypeEncoding: '@56@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24'
+  Properties:
+  - Name: 'outputImage'
+    JsName: 'outputImage'
+    Module: 'CoreImage.CIFilter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'outputImage'
+      JsName: 'outputImage'
+      Module: 'CoreImage.CIFilter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'outputImage'
+      Signature:
+      - Type: Interface
+        Module: CoreImage.CIImage
+        Name: CIImage
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCoding
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CIVector'
+  JsName: 'CIVector'
+  Module: 'CoreImage.CIVector'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'CGAffineTransformValue'
+    JsName: 'CGAffineTransformValue'
+    Module: 'CoreImage.CIVector'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'CGAffineTransformValue'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+    TypeEncoding: '{CGAffineTransform=dddddd}16@0:8'
+  - Name: 'CGPointValue'
+    JsName: 'CGPointValue'
+    Module: 'CoreImage.CIVector'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'CGPointValue'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+    TypeEncoding: '{CGPoint=dd}16@0:8'
+  - Name: 'CGRectValue'
+    JsName: 'CGRectValue'
+    Module: 'CoreImage.CIVector'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'CGRectValue'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    TypeEncoding: '{CGRect={CGPoint=dd}{CGSize=dd}}16@0:8'
+  - Name: 'count'
+    JsName: 'count'
+    Module: 'CoreImage.CIVector'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'count'
+    Signature:
+    - Type: ULong
+    TypeEncoding: 'Q16@0:8'
+  - Name: 'initWithCGAffineTransform:'
+    JsName: 'initWithCGAffineTransform'
+    Module: 'CoreImage.CIVector'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithCGAffineTransform:'
+    Signature:
+    - Type: Instancetype
+    - Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+    TypeEncoding: '@64@0:8{CGAffineTransform=dddddd}16'
+  - Name: 'initWithCGPoint:'
+    JsName: 'initWithCGPoint'
+    Module: 'CoreImage.CIVector'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithCGPoint:'
+    Signature:
+    - Type: Instancetype
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+    TypeEncoding: '@32@0:8{CGPoint=dd}16'
+  - Name: 'initWithCGRect:'
+    JsName: 'initWithCGRect'
+    Module: 'CoreImage.CIVector'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithCGRect:'
+    Signature:
+    - Type: Instancetype
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    TypeEncoding: '@48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16'
+  - Name: 'initWithString:'
+    JsName: 'initWithString'
+    Module: 'CoreImage.CIVector'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithString:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'initWithValues:count:'
+    JsName: 'initWithValuesCount'
+    Module: 'CoreImage.CIVector'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithValues:count:'
+    Signature:
+    - Type: Instancetype
+    - Type: Pointer
+      PointerType:
+        Type: Double
+    - Type: ULong
+    TypeEncoding: '@32@0:8r^d16Q24'
+  - Name: 'initWithX:'
+    JsName: 'initWithX'
+    Module: 'CoreImage.CIVector'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithX:'
+    Signature:
+    - Type: Instancetype
+    - Type: Double
+    TypeEncoding: '@24@0:8d16'
+  - Name: 'initWithX:Y:'
+    JsName: 'initWithXY'
+    Module: 'CoreImage.CIVector'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithX:Y:'
+    Signature:
+    - Type: Instancetype
+    - Type: Double
+    - Type: Double
+    TypeEncoding: '@32@0:8d16d24'
+  - Name: 'initWithX:Y:Z:'
+    JsName: 'initWithXYZ'
+    Module: 'CoreImage.CIVector'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithX:Y:Z:'
+    Signature:
+    - Type: Instancetype
+    - Type: Double
+    - Type: Double
+    - Type: Double
+    TypeEncoding: '@40@0:8d16d24d32'
+  - Name: 'initWithX:Y:Z:W:'
+    JsName: 'initWithXYZW'
+    Module: 'CoreImage.CIVector'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithX:Y:Z:W:'
+    Signature:
+    - Type: Instancetype
+    - Type: Double
+    - Type: Double
+    - Type: Double
+    - Type: Double
+    TypeEncoding: '@48@0:8d16d24d32d40'
+  - Name: 'stringRepresentation'
+    JsName: 'stringRepresentation'
+    Module: 'CoreImage.CIVector'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stringRepresentation'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@16@0:8'
+  - Name: 'valueAtIndex:'
+    JsName: 'valueAtIndex'
+    Module: 'CoreImage.CIVector'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueAtIndex:'
+    Signature:
+    - Type: Double
+    - Type: ULong
+    TypeEncoding: 'd24@0:8Q16'
+  - Name: 'W'
+    JsName: 'W'
+    Module: 'CoreImage.CIVector'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'W'
+    Signature:
+    - Type: Double
+    TypeEncoding: 'd16@0:8'
+  - Name: 'X'
+    JsName: 'X'
+    Module: 'CoreImage.CIVector'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'X'
+    Signature:
+    - Type: Double
+    TypeEncoding: 'd16@0:8'
+  - Name: 'Y'
+    JsName: 'Y'
+    Module: 'CoreImage.CIVector'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'Y'
+    Signature:
+    - Type: Double
+    TypeEncoding: 'd16@0:8'
+  - Name: 'Z'
+    JsName: 'Z'
+    Module: 'CoreImage.CIVector'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'Z'
+    Signature:
+    - Type: Double
+    TypeEncoding: 'd16@0:8'
+  StaticMethods:
+  - Name: 'vectorWithCGAffineTransform:'
+    JsName: 'vectorWithCGAffineTransform'
+    Module: 'CoreImage.CIVector'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'vectorWithCGAffineTransform:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIVector
+      Name: CIVector
+    - Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+    TypeEncoding: '@64@0:8{CGAffineTransform=dddddd}16'
+  - Name: 'vectorWithCGPoint:'
+    JsName: 'vectorWithCGPoint'
+    Module: 'CoreImage.CIVector'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'vectorWithCGPoint:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIVector
+      Name: CIVector
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+    TypeEncoding: '@32@0:8{CGPoint=dd}16'
+  - Name: 'vectorWithCGRect:'
+    JsName: 'vectorWithCGRect'
+    Module: 'CoreImage.CIVector'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'vectorWithCGRect:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIVector
+      Name: CIVector
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    TypeEncoding: '@48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16'
+  - Name: 'vectorWithString:'
+    JsName: 'vectorWithString'
+    Module: 'CoreImage.CIVector'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'vectorWithString:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIVector
+      Name: CIVector
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'vectorWithValues:count:'
+    JsName: 'vectorWithValuesCount'
+    Module: 'CoreImage.CIVector'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'vectorWithValues:count:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIVector
+      Name: CIVector
+    - Type: Pointer
+      PointerType:
+        Type: Double
+    - Type: ULong
+    TypeEncoding: '@32@0:8r^d16Q24'
+  - Name: 'vectorWithX:'
+    JsName: 'vectorWithX'
+    Module: 'CoreImage.CIVector'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'vectorWithX:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIVector
+      Name: CIVector
+    - Type: Double
+    TypeEncoding: '@24@0:8d16'
+  - Name: 'vectorWithX:Y:'
+    JsName: 'vectorWithXY'
+    Module: 'CoreImage.CIVector'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'vectorWithX:Y:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIVector
+      Name: CIVector
+    - Type: Double
+    - Type: Double
+    TypeEncoding: '@32@0:8d16d24'
+  - Name: 'vectorWithX:Y:Z:'
+    JsName: 'vectorWithXYZ'
+    Module: 'CoreImage.CIVector'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'vectorWithX:Y:Z:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIVector
+      Name: CIVector
+    - Type: Double
+    - Type: Double
+    - Type: Double
+    TypeEncoding: '@40@0:8d16d24d32'
+  - Name: 'vectorWithX:Y:Z:W:'
+    JsName: 'vectorWithXYZW'
+    Module: 'CoreImage.CIVector'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'vectorWithX:Y:Z:W:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIVector
+      Name: CIVector
+    - Type: Double
+    - Type: Double
+    - Type: Double
+    - Type: Double
+    TypeEncoding: '@48@0:8d16d24d32d40'
+  Properties: []
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCoding
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CIDetector'
+  JsName: 'CIDetector'
+  Module: 'CoreImage.CIDetector'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'featuresInImage:'
+    JsName: 'featuresInImage'
+    Module: 'CoreImage.CIDetector'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'featuresInImage:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'featuresInImage:options:'
+    JsName: 'featuresInImageOptions'
+    Module: 'CoreImage.CIDetector'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'featuresInImage:options:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@32@0:8@16@24'
+  StaticMethods:
+  - Name: 'detectorOfType:context:options:'
+    JsName: 'detectorOfTypeContextOptions'
+    Module: 'CoreImage.CIDetector'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'detectorOfType:context:options:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIDetector
+      Name: CIDetector
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: CoreImage.CIContext
+      Name: CIContext
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@40@0:8@16@24@32'
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CIDetectorTypeFace'
+  JsName: 'CIDetectorTypeFace'
+  Module: 'CoreImage.CIDetector'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CIDetectorTypeRectangle'
+  JsName: 'CIDetectorTypeRectangle'
+  Module: 'CoreImage.CIDetector'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CIDetectorTypeQRCode'
+  JsName: 'CIDetectorTypeQRCode'
+  Module: 'CoreImage.CIDetector'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CIDetectorAccuracy'
+  JsName: 'CIDetectorAccuracy'
+  Module: 'CoreImage.CIDetector'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CIDetectorAccuracyLow'
+  JsName: 'CIDetectorAccuracyLow'
+  Module: 'CoreImage.CIDetector'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CIDetectorAccuracyHigh'
+  JsName: 'CIDetectorAccuracyHigh'
+  Module: 'CoreImage.CIDetector'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CIDetectorTracking'
+  JsName: 'CIDetectorTracking'
+  Module: 'CoreImage.CIDetector'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CIDetectorMinFeatureSize'
+  JsName: 'CIDetectorMinFeatureSize'
+  Module: 'CoreImage.CIDetector'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CIDetectorImageOrientation'
+  JsName: 'CIDetectorImageOrientation'
+  Module: 'CoreImage.CIDetector'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CIDetectorEyeBlink'
+  JsName: 'CIDetectorEyeBlink'
+  Module: 'CoreImage.CIDetector'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CIDetectorSmile'
+  JsName: 'CIDetectorSmile'
+  Module: 'CoreImage.CIDetector'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CIDetectorFocalLength'
+  JsName: 'CIDetectorFocalLength'
+  Module: 'CoreImage.CIDetector'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CIDetectorAspectRatio'
+  JsName: 'CIDetectorAspectRatio'
+  Module: 'CoreImage.CIDetector'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CIFeature'
+  JsName: 'CIFeature'
+  Module: 'CoreImage.CIFeature'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'bounds'
+    JsName: 'bounds'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'bounds'
+      JsName: 'bounds'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'bounds'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGRect
+      TypeEncoding: '{CGRect={CGPoint=dd}{CGSize=dd}}16@0:8'
+  - Name: 'type'
+    JsName: 'type'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'type'
+      JsName: 'type'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'type'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CIFeatureTypeFace'
+  JsName: 'CIFeatureTypeFace'
+  Module: 'CoreImage.CIFeature'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CIFaceFeature'
+  JsName: 'CIFaceFeature'
+  Module: 'CoreImage.CIFeature'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'faceAngle'
+    JsName: 'faceAngle'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'faceAngle'
+      JsName: 'faceAngle'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'faceAngle'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f16@0:8'
+  - Name: 'hasFaceAngle'
+    JsName: 'hasFaceAngle'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'hasFaceAngle'
+      JsName: 'hasFaceAngle'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'hasFaceAngle'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'hasLeftEyePosition'
+    JsName: 'hasLeftEyePosition'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'hasLeftEyePosition'
+      JsName: 'hasLeftEyePosition'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'hasLeftEyePosition'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'hasMouthPosition'
+    JsName: 'hasMouthPosition'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'hasMouthPosition'
+      JsName: 'hasMouthPosition'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'hasMouthPosition'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'hasRightEyePosition'
+    JsName: 'hasRightEyePosition'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'hasRightEyePosition'
+      JsName: 'hasRightEyePosition'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'hasRightEyePosition'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'hasSmile'
+    JsName: 'hasSmile'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'hasSmile'
+      JsName: 'hasSmile'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'hasSmile'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'hasTrackingFrameCount'
+    JsName: 'hasTrackingFrameCount'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'hasTrackingFrameCount'
+      JsName: 'hasTrackingFrameCount'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'hasTrackingFrameCount'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'hasTrackingID'
+    JsName: 'hasTrackingID'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'hasTrackingID'
+      JsName: 'hasTrackingID'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'hasTrackingID'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'leftEyeClosed'
+    JsName: 'leftEyeClosed'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'leftEyeClosed'
+      JsName: 'leftEyeClosed'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'leftEyeClosed'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'leftEyePosition'
+    JsName: 'leftEyePosition'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'leftEyePosition'
+      JsName: 'leftEyePosition'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'leftEyePosition'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGPoint
+      TypeEncoding: '{CGPoint=dd}16@0:8'
+  - Name: 'mouthPosition'
+    JsName: 'mouthPosition'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'mouthPosition'
+      JsName: 'mouthPosition'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mouthPosition'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGPoint
+      TypeEncoding: '{CGPoint=dd}16@0:8'
+  - Name: 'rightEyeClosed'
+    JsName: 'rightEyeClosed'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'rightEyeClosed'
+      JsName: 'rightEyeClosed'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rightEyeClosed'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'rightEyePosition'
+    JsName: 'rightEyePosition'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'rightEyePosition'
+      JsName: 'rightEyePosition'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rightEyePosition'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGPoint
+      TypeEncoding: '{CGPoint=dd}16@0:8'
+  - Name: 'trackingFrameCount'
+    JsName: 'trackingFrameCount'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'trackingFrameCount'
+      JsName: 'trackingFrameCount'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'trackingFrameCount'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i16@0:8'
+  - Name: 'trackingID'
+    JsName: 'trackingID'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'trackingID'
+      JsName: 'trackingID'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'trackingID'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i16@0:8'
+  Protocols: []
+  Base:
+    Module: CoreImage.CIFeature
+    Name: CIFeature
+  Type: Interface
+- Name: 'CIRectangleFeature'
+  JsName: 'CIRectangleFeature'
+  Module: 'CoreImage.CIFeature'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'bottomLeft'
+    JsName: 'bottomLeft'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'bottomLeft'
+      JsName: 'bottomLeft'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'bottomLeft'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGPoint
+      TypeEncoding: '{CGPoint=dd}16@0:8'
+  - Name: 'bottomRight'
+    JsName: 'bottomRight'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'bottomRight'
+      JsName: 'bottomRight'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'bottomRight'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGPoint
+      TypeEncoding: '{CGPoint=dd}16@0:8'
+  - Name: 'topLeft'
+    JsName: 'topLeft'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'topLeft'
+      JsName: 'topLeft'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'topLeft'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGPoint
+      TypeEncoding: '{CGPoint=dd}16@0:8'
+  - Name: 'topRight'
+    JsName: 'topRight'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'topRight'
+      JsName: 'topRight'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'topRight'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGPoint
+      TypeEncoding: '{CGPoint=dd}16@0:8'
+  Protocols: []
+  Base:
+    Module: CoreImage.CIFeature
+    Name: CIFeature
+  Type: Interface
+- Name: 'CIQRCodeFeature'
+  JsName: 'CIQRCodeFeature'
+  Module: 'CoreImage.CIFeature'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'bottomLeft'
+    JsName: 'bottomLeft'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'bottomLeft'
+      JsName: 'bottomLeft'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'bottomLeft'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGPoint
+      TypeEncoding: '{CGPoint=dd}16@0:8'
+  - Name: 'bottomRight'
+    JsName: 'bottomRight'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'bottomRight'
+      JsName: 'bottomRight'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'bottomRight'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGPoint
+      TypeEncoding: '{CGPoint=dd}16@0:8'
+  - Name: 'messageString'
+    JsName: 'messageString'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'messageString'
+      JsName: 'messageString'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'messageString'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'topLeft'
+    JsName: 'topLeft'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'topLeft'
+      JsName: 'topLeft'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'topLeft'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGPoint
+      TypeEncoding: '{CGPoint=dd}16@0:8'
+  - Name: 'topRight'
+    JsName: 'topRight'
+    Module: 'CoreImage.CIFeature'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'topRight'
+      JsName: 'topRight'
+      Module: 'CoreImage.CIFeature'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'topRight'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGPoint
+      TypeEncoding: '{CGPoint=dd}16@0:8'
+  Protocols: []
+  Base:
+    Module: CoreImage.CIFeature
+    Name: CIFeature
+  Type: Interface
+- Name: 'CIKernel'
+  JsName: 'CIKernel'
+  Module: 'CoreImage.CIKernel'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'applyWithExtent:roiCallback:arguments:'
+    JsName: 'applyWithExtentRoiCallbackArguments'
+    Module: 'CoreImage.CIKernel'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'applyWithExtent:roiCallback:arguments:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Block
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGRect
+      - Type: Int
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGRect
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@64@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16@?48@56'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'CoreImage.CIKernel'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'name'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@16@0:8'
+  StaticMethods:
+  - Name: 'kernelsWithString:'
+    JsName: 'kernelsWithString'
+    Module: 'CoreImage.CIKernel'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'kernelsWithString:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'kernelWithString:'
+    JsName: 'kernelWithString'
+    Module: 'CoreImage.CIKernel'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'kernelWithString:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CIColorKernel'
+  JsName: 'CIColorKernel'
+  Module: 'CoreImage.CIKernel'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'applyWithExtent:arguments:'
+    JsName: 'applyWithExtentArguments'
+    Module: 'CoreImage.CIKernel'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'applyWithExtent:arguments:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@56@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16@48'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: CoreImage.CIKernel
+    Name: CIKernel
+  Type: Interface
+- Name: 'CIWarpKernel'
+  JsName: 'CIWarpKernel'
+  Module: 'CoreImage.CIKernel'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'applyWithExtent:roiCallback:inputImage:arguments:'
+    JsName: 'applyWithExtentRoiCallbackInputImageArguments'
+    Module: 'CoreImage.CIKernel'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'applyWithExtent:roiCallback:inputImage:arguments:'
+    Signature:
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Block
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGRect
+      - Type: Int
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGRect
+    - Type: Interface
+      Module: CoreImage.CIImage
+      Name: CIImage
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@72@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16@?48@56@64'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: CoreImage.CIKernel
+    Name: CIKernel
+  Type: Interface
+...

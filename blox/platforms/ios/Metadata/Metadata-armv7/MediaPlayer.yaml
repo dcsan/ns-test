@@ -1,0 +1,6178 @@
+name: MediaPlayer
+items:
+- Name: 'MPContentItem'
+  JsName: 'MPContentItem'
+  Module: 'MediaPlayer.MPContentItem'
+  IntroducedIn: 7.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithIdentifier:'
+    JsName: 'initWithIdentifier'
+    Module: 'MediaPlayer.MPContentItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithIdentifier:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@12@0:4@8'
+  StaticMethods: []
+  Properties:
+  - Name: 'artwork'
+    JsName: 'artwork'
+    Module: 'MediaPlayer.MPContentItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'artwork'
+      JsName: 'artwork'
+      Module: 'MediaPlayer.MPContentItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'artwork'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPMediaItem
+        Name: MPMediaItemArtwork
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setArtwork:'
+      JsName: 'setArtwork'
+      Module: 'MediaPlayer.MPContentItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setArtwork:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: MediaPlayer.MPMediaItem
+        Name: MPMediaItemArtwork
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'container'
+    JsName: 'container'
+    Module: 'MediaPlayer.MPContentItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isContainer'
+      JsName: 'isContainer'
+      Module: 'MediaPlayer.MPContentItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isContainer'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setContainer:'
+      JsName: 'setContainer'
+      Module: 'MediaPlayer.MPContentItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setContainer:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'identifier'
+    JsName: 'identifier'
+    Module: 'MediaPlayer.MPContentItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'identifier'
+      JsName: 'identifier'
+      Module: 'MediaPlayer.MPContentItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'identifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'playable'
+    JsName: 'playable'
+    Module: 'MediaPlayer.MPContentItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isPlayable'
+      JsName: 'isPlayable'
+      Module: 'MediaPlayer.MPContentItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isPlayable'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setPlayable:'
+      JsName: 'setPlayable'
+      Module: 'MediaPlayer.MPContentItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPlayable:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'playbackProgress'
+    JsName: 'playbackProgress'
+    Module: 'MediaPlayer.MPContentItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'playbackProgress'
+      JsName: 'playbackProgress'
+      Module: 'MediaPlayer.MPContentItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'playbackProgress'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f8@0:4'
+    Setter:
+      Name: 'setPlaybackProgress:'
+      JsName: 'setPlaybackProgress'
+      Module: 'MediaPlayer.MPContentItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPlaybackProgress:'
+      Signature:
+      - Type: Void
+      - Type: Float
+      TypeEncoding: 'v12@0:4f8'
+  - Name: 'subtitle'
+    JsName: 'subtitle'
+    Module: 'MediaPlayer.MPContentItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'subtitle'
+      JsName: 'subtitle'
+      Module: 'MediaPlayer.MPContentItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'subtitle'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setSubtitle:'
+      JsName: 'setSubtitle'
+      Module: 'MediaPlayer.MPContentItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSubtitle:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'title'
+    JsName: 'title'
+    Module: 'MediaPlayer.MPContentItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'title'
+      JsName: 'title'
+      Module: 'MediaPlayer.MPContentItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'title'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setTitle:'
+      JsName: 'setTitle'
+      Module: 'MediaPlayer.MPContentItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setTitle:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MPMediaEntityPropertyPersistentID'
+  JsName: 'MPMediaEntityPropertyPersistentID'
+  Module: 'MediaPlayer.MPMediaEntity'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaEntity'
+  JsName: 'MPMediaEntity'
+  Module: 'MediaPlayer.MPMediaEntity'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'enumerateValuesForProperties:usingBlock:'
+    JsName: 'enumerateValuesForPropertiesUsingBlock'
+    Module: 'MediaPlayer.MPMediaEntity'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'enumerateValuesForProperties:usingBlock:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSSet
+      Name: NSSet
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      - Type: Id
+        WithProtocols: []
+      - Type: Pointer
+        PointerType:
+          Type: Bool
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'objectForKeyedSubscript:'
+    JsName: 'objectForKeyedSubscript'
+    Module: 'MediaPlayer.MPMediaEntity'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'objectForKeyedSubscript:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'valueForProperty:'
+    JsName: 'valueForProperty'
+    Module: 'MediaPlayer.MPMediaEntity'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueForProperty:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@12@0:4@8'
+  StaticMethods:
+  - Name: 'canFilterByProperty:'
+    JsName: 'canFilterByProperty'
+    Module: 'MediaPlayer.MPMediaEntity'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'canFilterByProperty:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'c12@0:4@8'
+  Properties:
+  - Name: 'persistentID'
+    JsName: 'persistentID'
+    Module: 'MediaPlayer.MPMediaEntity'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'persistentID'
+      JsName: 'persistentID'
+      Module: 'MediaPlayer.MPMediaEntity'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'persistentID'
+      Signature:
+      - Type: ULongLong
+      TypeEncoding: 'Q8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MPMediaType'
+  JsName: 'MPMediaType'
+  Module: 'MediaPlayer.MPMediaItem'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MPMediaTypeMusic":1,"MPMediaTypePodcast":2,"MPMediaTypeAudioBook":4,"MPMediaTypeAudioITunesU":8,"MPMediaTypeAnyAudio":255,"MPMediaTypeMovie":256,"MPMediaTypeTVShow":512,"MPMediaTypeVideoPodcast":1024,"MPMediaTypeMusicVideo":2048,"MPMediaTypeVideoITunesU":4096,"MPMediaTypeHomeVideo":8192,"MPMediaTypeAnyVideo":65280,"MPMediaTypeAny":-1})
+- Name: 'MPMediaItemPropertyPersistentID'
+  JsName: 'MPMediaItemPropertyPersistentID'
+  Module: 'MediaPlayer.MPMediaItem'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyMediaType'
+  JsName: 'MPMediaItemPropertyMediaType'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyTitle'
+  JsName: 'MPMediaItemPropertyTitle'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyAlbumTitle'
+  JsName: 'MPMediaItemPropertyAlbumTitle'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyAlbumPersistentID'
+  JsName: 'MPMediaItemPropertyAlbumPersistentID'
+  Module: 'MediaPlayer.MPMediaItem'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyArtist'
+  JsName: 'MPMediaItemPropertyArtist'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyArtistPersistentID'
+  JsName: 'MPMediaItemPropertyArtistPersistentID'
+  Module: 'MediaPlayer.MPMediaItem'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyAlbumArtist'
+  JsName: 'MPMediaItemPropertyAlbumArtist'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyAlbumArtistPersistentID'
+  JsName: 'MPMediaItemPropertyAlbumArtistPersistentID'
+  Module: 'MediaPlayer.MPMediaItem'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyGenre'
+  JsName: 'MPMediaItemPropertyGenre'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyGenrePersistentID'
+  JsName: 'MPMediaItemPropertyGenrePersistentID'
+  Module: 'MediaPlayer.MPMediaItem'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyComposer'
+  JsName: 'MPMediaItemPropertyComposer'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyComposerPersistentID'
+  JsName: 'MPMediaItemPropertyComposerPersistentID'
+  Module: 'MediaPlayer.MPMediaItem'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyPlaybackDuration'
+  JsName: 'MPMediaItemPropertyPlaybackDuration'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyAlbumTrackNumber'
+  JsName: 'MPMediaItemPropertyAlbumTrackNumber'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyAlbumTrackCount'
+  JsName: 'MPMediaItemPropertyAlbumTrackCount'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyDiscNumber'
+  JsName: 'MPMediaItemPropertyDiscNumber'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyDiscCount'
+  JsName: 'MPMediaItemPropertyDiscCount'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyArtwork'
+  JsName: 'MPMediaItemPropertyArtwork'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyLyrics'
+  JsName: 'MPMediaItemPropertyLyrics'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyIsCompilation'
+  JsName: 'MPMediaItemPropertyIsCompilation'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyReleaseDate'
+  JsName: 'MPMediaItemPropertyReleaseDate'
+  Module: 'MediaPlayer.MPMediaItem'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyBeatsPerMinute'
+  JsName: 'MPMediaItemPropertyBeatsPerMinute'
+  Module: 'MediaPlayer.MPMediaItem'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyComments'
+  JsName: 'MPMediaItemPropertyComments'
+  Module: 'MediaPlayer.MPMediaItem'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyAssetURL'
+  JsName: 'MPMediaItemPropertyAssetURL'
+  Module: 'MediaPlayer.MPMediaItem'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyIsCloudItem'
+  JsName: 'MPMediaItemPropertyIsCloudItem'
+  Module: 'MediaPlayer.MPMediaItem'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyPodcastTitle'
+  JsName: 'MPMediaItemPropertyPodcastTitle'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyPodcastPersistentID'
+  JsName: 'MPMediaItemPropertyPodcastPersistentID'
+  Module: 'MediaPlayer.MPMediaItem'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyPlayCount'
+  JsName: 'MPMediaItemPropertyPlayCount'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertySkipCount'
+  JsName: 'MPMediaItemPropertySkipCount'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyRating'
+  JsName: 'MPMediaItemPropertyRating'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyLastPlayedDate'
+  JsName: 'MPMediaItemPropertyLastPlayedDate'
+  Module: 'MediaPlayer.MPMediaItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyUserGrouping'
+  JsName: 'MPMediaItemPropertyUserGrouping'
+  Module: 'MediaPlayer.MPMediaItem'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItemPropertyBookmarkTime'
+  JsName: 'MPMediaItemPropertyBookmarkTime'
+  Module: 'MediaPlayer.MPMediaItem'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaItem'
+  JsName: 'MPMediaItem'
+  Module: 'MediaPlayer.MPMediaItem'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'persistentIDPropertyForGroupingType:'
+    JsName: 'persistentIDPropertyForGroupingType'
+    Module: 'MediaPlayer.MPMediaQuery'
+    IntroducedIn: 4.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'persistentIDPropertyForGroupingType:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Int
+    TypeEncoding: '@12@0:4i8'
+  - Name: 'titlePropertyForGroupingType:'
+    JsName: 'titlePropertyForGroupingType'
+    Module: 'MediaPlayer.MPMediaQuery'
+    IntroducedIn: 4.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'titlePropertyForGroupingType:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Int
+    TypeEncoding: '@12@0:4i8'
+  Properties:
+  - Name: 'albumArtist'
+    JsName: 'albumArtist'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'albumArtist'
+      JsName: 'albumArtist'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'albumArtist'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'albumArtistPersistentID'
+    JsName: 'albumArtistPersistentID'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'albumArtistPersistentID'
+      JsName: 'albumArtistPersistentID'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'albumArtistPersistentID'
+      Signature:
+      - Type: ULongLong
+      TypeEncoding: 'Q8@0:4'
+  - Name: 'albumPersistentID'
+    JsName: 'albumPersistentID'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'albumPersistentID'
+      JsName: 'albumPersistentID'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'albumPersistentID'
+      Signature:
+      - Type: ULongLong
+      TypeEncoding: 'Q8@0:4'
+  - Name: 'albumTitle'
+    JsName: 'albumTitle'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'albumTitle'
+      JsName: 'albumTitle'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'albumTitle'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'albumTrackCount'
+    JsName: 'albumTrackCount'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'albumTrackCount'
+      JsName: 'albumTrackCount'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'albumTrackCount'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'albumTrackNumber'
+    JsName: 'albumTrackNumber'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'albumTrackNumber'
+      JsName: 'albumTrackNumber'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'albumTrackNumber'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'artist'
+    JsName: 'artist'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'artist'
+      JsName: 'artist'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'artist'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'artistPersistentID'
+    JsName: 'artistPersistentID'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'artistPersistentID'
+      JsName: 'artistPersistentID'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'artistPersistentID'
+      Signature:
+      - Type: ULongLong
+      TypeEncoding: 'Q8@0:4'
+  - Name: 'artwork'
+    JsName: 'artwork'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'artwork'
+      JsName: 'artwork'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'artwork'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPMediaItem
+        Name: MPMediaItemArtwork
+      TypeEncoding: '@8@0:4'
+  - Name: 'assetURL'
+    JsName: 'assetURL'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'assetURL'
+      JsName: 'assetURL'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'assetURL'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@8@0:4'
+  - Name: 'beatsPerMinute'
+    JsName: 'beatsPerMinute'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'beatsPerMinute'
+      JsName: 'beatsPerMinute'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'beatsPerMinute'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'bookmarkTime'
+    JsName: 'bookmarkTime'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'bookmarkTime'
+      JsName: 'bookmarkTime'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'bookmarkTime'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'cloudItem'
+    JsName: 'cloudItem'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isCloudItem'
+      JsName: 'isCloudItem'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isCloudItem'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'comments'
+    JsName: 'comments'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'comments'
+      JsName: 'comments'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'comments'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'compilation'
+    JsName: 'compilation'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isCompilation'
+      JsName: 'isCompilation'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isCompilation'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'composer'
+    JsName: 'composer'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'composer'
+      JsName: 'composer'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'composer'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'composerPersistentID'
+    JsName: 'composerPersistentID'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'composerPersistentID'
+      JsName: 'composerPersistentID'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'composerPersistentID'
+      Signature:
+      - Type: ULongLong
+      TypeEncoding: 'Q8@0:4'
+  - Name: 'discCount'
+    JsName: 'discCount'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'discCount'
+      JsName: 'discCount'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'discCount'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'discNumber'
+    JsName: 'discNumber'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'discNumber'
+      JsName: 'discNumber'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'discNumber'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'genre'
+    JsName: 'genre'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'genre'
+      JsName: 'genre'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'genre'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'genrePersistentID'
+    JsName: 'genrePersistentID'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'genrePersistentID'
+      JsName: 'genrePersistentID'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'genrePersistentID'
+      Signature:
+      - Type: ULongLong
+      TypeEncoding: 'Q8@0:4'
+  - Name: 'lastPlayedDate'
+    JsName: 'lastPlayedDate'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'lastPlayedDate'
+      JsName: 'lastPlayedDate'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lastPlayedDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'lyrics'
+    JsName: 'lyrics'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'lyrics'
+      JsName: 'lyrics'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lyrics'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'mediaType'
+    JsName: 'mediaType'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'mediaType'
+      JsName: 'mediaType'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mediaType'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'playbackDuration'
+    JsName: 'playbackDuration'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'playbackDuration'
+      JsName: 'playbackDuration'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'playbackDuration'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'playCount'
+    JsName: 'playCount'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'playCount'
+      JsName: 'playCount'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'playCount'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'podcastPersistentID'
+    JsName: 'podcastPersistentID'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'podcastPersistentID'
+      JsName: 'podcastPersistentID'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'podcastPersistentID'
+      Signature:
+      - Type: ULongLong
+      TypeEncoding: 'Q8@0:4'
+  - Name: 'podcastTitle'
+    JsName: 'podcastTitle'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'podcastTitle'
+      JsName: 'podcastTitle'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'podcastTitle'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'rating'
+    JsName: 'rating'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'rating'
+      JsName: 'rating'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rating'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'releaseDate'
+    JsName: 'releaseDate'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'releaseDate'
+      JsName: 'releaseDate'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'releaseDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'skipCount'
+    JsName: 'skipCount'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'skipCount'
+      JsName: 'skipCount'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'skipCount'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'title'
+    JsName: 'title'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'title'
+      JsName: 'title'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'title'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'userGrouping'
+    JsName: 'userGrouping'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'userGrouping'
+      JsName: 'userGrouping'
+      Module: 'MediaPlayer.MPMediaItem'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'userGrouping'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: MediaPlayer.MPMediaEntity
+    Name: MPMediaEntity
+  Type: Interface
+- Name: 'MPMediaItemArtwork'
+  JsName: 'MPMediaItemArtwork'
+  Module: 'MediaPlayer.MPMediaItem'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'imageWithSize:'
+    JsName: 'imageWithSize'
+    Module: 'MediaPlayer.MPMediaItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'imageWithSize:'
+    Signature:
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGSize
+    TypeEncoding: '@16@0:4{CGSize=ff}8'
+  - Name: 'initWithImage:'
+    JsName: 'initWithImage'
+    Module: 'MediaPlayer.MPMediaItem'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithImage:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    TypeEncoding: '@12@0:4@8'
+  StaticMethods: []
+  Properties:
+  - Name: 'bounds'
+    JsName: 'bounds'
+    Module: 'MediaPlayer.MPMediaItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'bounds'
+      JsName: 'bounds'
+      Module: 'MediaPlayer.MPMediaItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'bounds'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGRect
+      TypeEncoding: '{CGRect={CGPoint=ff}{CGSize=ff}}8@0:4'
+  - Name: 'imageCropRect'
+    JsName: 'imageCropRect'
+    Module: 'MediaPlayer.MPMediaItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'imageCropRect'
+      JsName: 'imageCropRect'
+      Module: 'MediaPlayer.MPMediaItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'imageCropRect'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGRect
+      TypeEncoding: '{CGRect={CGPoint=ff}{CGSize=ff}}8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MPMediaItemCollection'
+  JsName: 'MPMediaItemCollection'
+  Module: 'MediaPlayer.MPMediaItemCollection'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithItems:'
+    JsName: 'initWithItems'
+    Module: 'MediaPlayer.MPMediaItemCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithItems:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@12@0:4@8'
+  StaticMethods:
+  - Name: 'collectionWithItems:'
+    JsName: 'collectionWithItems'
+    Module: 'MediaPlayer.MPMediaItemCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'collectionWithItems:'
+    Signature:
+    - Type: Interface
+      Module: MediaPlayer.MPMediaItemCollection
+      Name: MPMediaItemCollection
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@12@0:4@8'
+  Properties:
+  - Name: 'count'
+    JsName: 'count'
+    Module: 'MediaPlayer.MPMediaItemCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'count'
+      JsName: 'count'
+      Module: 'MediaPlayer.MPMediaItemCollection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'count'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'items'
+    JsName: 'items'
+    Module: 'MediaPlayer.MPMediaItemCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'items'
+      JsName: 'items'
+      Module: 'MediaPlayer.MPMediaItemCollection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'items'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'mediaTypes'
+    JsName: 'mediaTypes'
+    Module: 'MediaPlayer.MPMediaItemCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'mediaTypes'
+      JsName: 'mediaTypes'
+      Module: 'MediaPlayer.MPMediaItemCollection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mediaTypes'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'representativeItem'
+    JsName: 'representativeItem'
+    Module: 'MediaPlayer.MPMediaItemCollection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'representativeItem'
+      JsName: 'representativeItem'
+      Module: 'MediaPlayer.MPMediaItemCollection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'representativeItem'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPMediaItem
+        Name: MPMediaItem
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: MediaPlayer.MPMediaEntity
+    Name: MPMediaEntity
+  Type: Interface
+- Name: 'MPMediaLibrary'
+  JsName: 'MPMediaLibrary'
+  Module: 'MediaPlayer.MPMediaLibrary'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'beginGeneratingLibraryChangeNotifications'
+    JsName: 'beginGeneratingLibraryChangeNotifications'
+    Module: 'MediaPlayer.MPMediaLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'beginGeneratingLibraryChangeNotifications'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'endGeneratingLibraryChangeNotifications'
+    JsName: 'endGeneratingLibraryChangeNotifications'
+    Module: 'MediaPlayer.MPMediaLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'endGeneratingLibraryChangeNotifications'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  StaticMethods:
+  - Name: 'defaultMediaLibrary'
+    JsName: 'defaultMediaLibrary'
+    Module: 'MediaPlayer.MPMediaLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'defaultMediaLibrary'
+    Signature:
+    - Type: Interface
+      Module: MediaPlayer.MPMediaLibrary
+      Name: MPMediaLibrary
+    TypeEncoding: '@8@0:4'
+  Properties:
+  - Name: 'lastModifiedDate'
+    JsName: 'lastModifiedDate'
+    Module: 'MediaPlayer.MPMediaLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'lastModifiedDate'
+      JsName: 'lastModifiedDate'
+      Module: 'MediaPlayer.MPMediaLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lastModifiedDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MPMediaLibraryDidChangeNotification'
+  JsName: 'MPMediaLibraryDidChangeNotification'
+  Module: 'MediaPlayer.MPMediaLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaPickerController'
+  JsName: 'MPMediaPickerController'
+  Module: 'MediaPlayer.MPMediaPickerController'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithMediaTypes:'
+    JsName: 'initWithMediaTypes'
+    Module: 'MediaPlayer.MPMediaPickerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithMediaTypes:'
+    Signature:
+    - Type: Instancetype
+    - Type: UInt
+    TypeEncoding: '@12@0:4I8'
+  StaticMethods: []
+  Properties:
+  - Name: 'allowsPickingMultipleItems'
+    JsName: 'allowsPickingMultipleItems'
+    Module: 'MediaPlayer.MPMediaPickerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'allowsPickingMultipleItems'
+      JsName: 'allowsPickingMultipleItems'
+      Module: 'MediaPlayer.MPMediaPickerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'allowsPickingMultipleItems'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setAllowsPickingMultipleItems:'
+      JsName: 'setAllowsPickingMultipleItems'
+      Module: 'MediaPlayer.MPMediaPickerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAllowsPickingMultipleItems:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'MediaPlayer.MPMediaPickerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'MediaPlayer.MPMediaPickerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: MediaPlayer.MPMediaPickerController
+          Name: MPMediaPickerControllerDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'MediaPlayer.MPMediaPickerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: MediaPlayer.MPMediaPickerController
+          Name: MPMediaPickerControllerDelegate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'mediaTypes'
+    JsName: 'mediaTypes'
+    Module: 'MediaPlayer.MPMediaPickerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'mediaTypes'
+      JsName: 'mediaTypes'
+      Module: 'MediaPlayer.MPMediaPickerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mediaTypes'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'prompt'
+    JsName: 'prompt'
+    Module: 'MediaPlayer.MPMediaPickerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'prompt'
+      JsName: 'prompt'
+      Module: 'MediaPlayer.MPMediaPickerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'prompt'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setPrompt:'
+      JsName: 'setPrompt'
+      Module: 'MediaPlayer.MPMediaPickerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPrompt:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'showsCloudItems'
+    JsName: 'showsCloudItems'
+    Module: 'MediaPlayer.MPMediaPickerController'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'showsCloudItems'
+      JsName: 'showsCloudItems'
+      Module: 'MediaPlayer.MPMediaPickerController'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'showsCloudItems'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setShowsCloudItems:'
+      JsName: 'setShowsCloudItems'
+      Module: 'MediaPlayer.MPMediaPickerController'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShowsCloudItems:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  Protocols: []
+  Base:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Interface
+- Name: 'MPMediaPickerControllerDelegate'
+  JsName: 'MPMediaPickerControllerDelegate'
+  Module: 'MediaPlayer.MPMediaPickerController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'mediaPickerDidCancel:'
+    JsName: 'mediaPickerDidCancel'
+    Module: 'MediaPlayer.MPMediaPickerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mediaPickerDidCancel:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MediaPlayer.MPMediaPickerController
+      Name: MPMediaPickerController
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'mediaPicker:didPickMediaItems:'
+    JsName: 'mediaPickerDidPickMediaItems'
+    Module: 'MediaPlayer.MPMediaPickerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mediaPicker:didPickMediaItems:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MediaPlayer.MPMediaPickerController
+      Name: MPMediaPickerController
+    - Type: Interface
+      Module: MediaPlayer.MPMediaItemCollection
+      Name: MPMediaItemCollection
+    TypeEncoding: 'v16@0:4@8@12'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MPMediaPlaylistAttribute'
+  JsName: 'MPMediaPlaylistAttribute'
+  Module: 'MediaPlayer.MPMediaPlaylist'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MPMediaPlaylistAttributeNone":0,"MPMediaPlaylistAttributeOnTheGo":1,"MPMediaPlaylistAttributeSmart":2,"MPMediaPlaylistAttributeGenius":4})
+- Name: 'MPMediaPlaylistPropertyPersistentID'
+  JsName: 'MPMediaPlaylistPropertyPersistentID'
+  Module: 'MediaPlayer.MPMediaPlaylist'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaPlaylistPropertyName'
+  JsName: 'MPMediaPlaylistPropertyName'
+  Module: 'MediaPlayer.MPMediaPlaylist'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaPlaylistPropertyPlaylistAttributes'
+  JsName: 'MPMediaPlaylistPropertyPlaylistAttributes'
+  Module: 'MediaPlayer.MPMediaPlaylist'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaPlaylistPropertySeedItems'
+  JsName: 'MPMediaPlaylistPropertySeedItems'
+  Module: 'MediaPlayer.MPMediaPlaylist'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMediaPlaylist'
+  JsName: 'MPMediaPlaylist'
+  Module: 'MediaPlayer.MPMediaPlaylist'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'MediaPlayer.MPMediaPlaylist'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'MediaPlayer.MPMediaPlaylist'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'playlistAttributes'
+    JsName: 'playlistAttributes'
+    Module: 'MediaPlayer.MPMediaPlaylist'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'playlistAttributes'
+      JsName: 'playlistAttributes'
+      Module: 'MediaPlayer.MPMediaPlaylist'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'playlistAttributes'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'seedItems'
+    JsName: 'seedItems'
+    Module: 'MediaPlayer.MPMediaPlaylist'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'seedItems'
+      JsName: 'seedItems'
+      Module: 'MediaPlayer.MPMediaPlaylist'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'seedItems'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: MediaPlayer.MPMediaItemCollection
+    Name: MPMediaItemCollection
+  Type: Interface
+- Name: 'MPMediaGrouping'
+  JsName: 'MPMediaGrouping'
+  Module: 'MediaPlayer.MPMediaQuery'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MPMediaGroupingTitle":0,"MPMediaGroupingAlbum":1,"MPMediaGroupingArtist":2,"MPMediaGroupingAlbumArtist":3,"MPMediaGroupingComposer":4,"MPMediaGroupingGenre":5,"MPMediaGroupingPlaylist":6,"MPMediaGroupingPodcastTitle":7})
+- Name: 'MPMediaQuery'
+  JsName: 'MPMediaQuery'
+  Module: 'MediaPlayer.MPMediaQuery'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addFilterPredicate:'
+    JsName: 'addFilterPredicate'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addFilterPredicate:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MediaPlayer.MPMediaQuery
+      Name: MPMediaPredicate
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'initWithFilterPredicates:'
+    JsName: 'initWithFilterPredicates'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithFilterPredicates:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSSet
+      Name: NSSet
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'removeFilterPredicate:'
+    JsName: 'removeFilterPredicate'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeFilterPredicate:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MediaPlayer.MPMediaQuery
+      Name: MPMediaPredicate
+    TypeEncoding: 'v12@0:4@8'
+  StaticMethods:
+  - Name: 'albumsQuery'
+    JsName: 'albumsQuery'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'albumsQuery'
+    Signature:
+    - Type: Interface
+      Module: MediaPlayer.MPMediaQuery
+      Name: MPMediaQuery
+    TypeEncoding: '@8@0:4'
+  - Name: 'artistsQuery'
+    JsName: 'artistsQuery'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'artistsQuery'
+    Signature:
+    - Type: Interface
+      Module: MediaPlayer.MPMediaQuery
+      Name: MPMediaQuery
+    TypeEncoding: '@8@0:4'
+  - Name: 'audiobooksQuery'
+    JsName: 'audiobooksQuery'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'audiobooksQuery'
+    Signature:
+    - Type: Interface
+      Module: MediaPlayer.MPMediaQuery
+      Name: MPMediaQuery
+    TypeEncoding: '@8@0:4'
+  - Name: 'compilationsQuery'
+    JsName: 'compilationsQuery'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'compilationsQuery'
+    Signature:
+    - Type: Interface
+      Module: MediaPlayer.MPMediaQuery
+      Name: MPMediaQuery
+    TypeEncoding: '@8@0:4'
+  - Name: 'composersQuery'
+    JsName: 'composersQuery'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'composersQuery'
+    Signature:
+    - Type: Interface
+      Module: MediaPlayer.MPMediaQuery
+      Name: MPMediaQuery
+    TypeEncoding: '@8@0:4'
+  - Name: 'genresQuery'
+    JsName: 'genresQuery'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'genresQuery'
+    Signature:
+    - Type: Interface
+      Module: MediaPlayer.MPMediaQuery
+      Name: MPMediaQuery
+    TypeEncoding: '@8@0:4'
+  - Name: 'playlistsQuery'
+    JsName: 'playlistsQuery'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'playlistsQuery'
+    Signature:
+    - Type: Interface
+      Module: MediaPlayer.MPMediaQuery
+      Name: MPMediaQuery
+    TypeEncoding: '@8@0:4'
+  - Name: 'podcastsQuery'
+    JsName: 'podcastsQuery'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'podcastsQuery'
+    Signature:
+    - Type: Interface
+      Module: MediaPlayer.MPMediaQuery
+      Name: MPMediaQuery
+    TypeEncoding: '@8@0:4'
+  - Name: 'songsQuery'
+    JsName: 'songsQuery'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'songsQuery'
+    Signature:
+    - Type: Interface
+      Module: MediaPlayer.MPMediaQuery
+      Name: MPMediaQuery
+    TypeEncoding: '@8@0:4'
+  Properties:
+  - Name: 'collections'
+    JsName: 'collections'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'collections'
+      JsName: 'collections'
+      Module: 'MediaPlayer.MPMediaQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'collections'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'collectionSections'
+    JsName: 'collectionSections'
+    Module: 'MediaPlayer.MPMediaQuery'
+    IntroducedIn: 4.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'collectionSections'
+      JsName: 'collectionSections'
+      Module: 'MediaPlayer.MPMediaQuery'
+      IntroducedIn: 4.2
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'collectionSections'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'filterPredicates'
+    JsName: 'filterPredicates'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'filterPredicates'
+      JsName: 'filterPredicates'
+      Module: 'MediaPlayer.MPMediaQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'filterPredicates'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSSet
+        Name: NSSet
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setFilterPredicates:'
+      JsName: 'setFilterPredicates'
+      Module: 'MediaPlayer.MPMediaQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setFilterPredicates:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSSet
+        Name: NSSet
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'groupingType'
+    JsName: 'groupingType'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'groupingType'
+      JsName: 'groupingType'
+      Module: 'MediaPlayer.MPMediaQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'groupingType'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setGroupingType:'
+      JsName: 'setGroupingType'
+      Module: 'MediaPlayer.MPMediaQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setGroupingType:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'items'
+    JsName: 'items'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'items'
+      JsName: 'items'
+      Module: 'MediaPlayer.MPMediaQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'items'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'itemSections'
+    JsName: 'itemSections'
+    Module: 'MediaPlayer.MPMediaQuery'
+    IntroducedIn: 4.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'itemSections'
+      JsName: 'itemSections'
+      Module: 'MediaPlayer.MPMediaQuery'
+      IntroducedIn: 4.2
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'itemSections'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MPMediaPredicate'
+  JsName: 'MPMediaPredicate'
+  Module: 'MediaPlayer.MPMediaQuery'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MPMediaPredicateComparison'
+  JsName: 'MPMediaPredicateComparison'
+  Module: 'MediaPlayer.MPMediaQuery'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MPMediaPredicateComparisonEqualTo":0,"MPMediaPredicateComparisonContains":1})
+- Name: 'MPMediaPropertyPredicate'
+  JsName: 'MPMediaPropertyPredicate'
+  Module: 'MediaPlayer.MPMediaQuery'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'predicateWithValue:forProperty:'
+    JsName: 'predicateWithValueForProperty'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateWithValue:forProperty:'
+    Signature:
+    - Type: Interface
+      Module: MediaPlayer.MPMediaQuery
+      Name: MPMediaPropertyPredicate
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@16@0:4@8@12'
+  - Name: 'predicateWithValue:forProperty:comparisonType:'
+    JsName: 'predicateWithValueForPropertyComparisonType'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateWithValue:forProperty:comparisonType:'
+    Signature:
+    - Type: Interface
+      Module: MediaPlayer.MPMediaQuery
+      Name: MPMediaPropertyPredicate
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Int
+    TypeEncoding: '@20@0:4@8@12i16'
+  Properties:
+  - Name: 'comparisonType'
+    JsName: 'comparisonType'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'comparisonType'
+      JsName: 'comparisonType'
+      Module: 'MediaPlayer.MPMediaQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'comparisonType'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  - Name: 'property'
+    JsName: 'property'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'property'
+      JsName: 'property'
+      Module: 'MediaPlayer.MPMediaQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'property'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'value'
+    JsName: 'value'
+    Module: 'MediaPlayer.MPMediaQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'value'
+      JsName: 'value'
+      Module: 'MediaPlayer.MPMediaQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'value'
+      Signature:
+      - Type: Id
+        WithProtocols: []
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: MediaPlayer.MPMediaQuery
+    Name: MPMediaPredicate
+  Type: Interface
+- Name: 'MPMediaQuerySection'
+  JsName: 'MPMediaQuerySection'
+  Module: 'MediaPlayer.MPMediaQuerySection'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'range'
+    JsName: 'range'
+    Module: 'MediaPlayer.MPMediaQuerySection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'range'
+      JsName: 'range'
+      Module: 'MediaPlayer.MPMediaQuerySection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'range'
+      Signature:
+      - Type: Struct
+        Module: Foundation.NSRange
+        Name: NSRange
+      TypeEncoding: '{_NSRange=II}8@0:4'
+  - Name: 'title'
+    JsName: 'title'
+    Module: 'MediaPlayer.MPMediaQuerySection'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'title'
+      JsName: 'title'
+      Module: 'MediaPlayer.MPMediaQuerySection'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'title'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MPMediaPlayback'
+  JsName: 'MPMediaPlayback'
+  Module: 'MediaPlayer.MPMediaPlayback'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'beginSeekingBackward'
+    JsName: 'beginSeekingBackward'
+    Module: 'MediaPlayer.MPMediaPlayback'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'beginSeekingBackward'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'beginSeekingForward'
+    JsName: 'beginSeekingForward'
+    Module: 'MediaPlayer.MPMediaPlayback'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'beginSeekingForward'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'endSeeking'
+    JsName: 'endSeeking'
+    Module: 'MediaPlayer.MPMediaPlayback'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'endSeeking'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'pause'
+    JsName: 'pause'
+    Module: 'MediaPlayer.MPMediaPlayback'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'pause'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'play'
+    JsName: 'play'
+    Module: 'MediaPlayer.MPMediaPlayback'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'play'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'prepareToPlay'
+    JsName: 'prepareToPlay'
+    Module: 'MediaPlayer.MPMediaPlayback'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'prepareToPlay'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'stop'
+    JsName: 'stop'
+    Module: 'MediaPlayer.MPMediaPlayback'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stop'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  StaticMethods: []
+  Properties:
+  - Name: 'currentPlaybackRate'
+    JsName: 'currentPlaybackRate'
+    Module: 'MediaPlayer.MPMediaPlayback'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'currentPlaybackRate'
+      JsName: 'currentPlaybackRate'
+      Module: 'MediaPlayer.MPMediaPlayback'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'currentPlaybackRate'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f8@0:4'
+    Setter:
+      Name: 'setCurrentPlaybackRate:'
+      JsName: 'setCurrentPlaybackRate'
+      Module: 'MediaPlayer.MPMediaPlayback'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCurrentPlaybackRate:'
+      Signature:
+      - Type: Void
+      - Type: Float
+      TypeEncoding: 'v12@0:4f8'
+  - Name: 'currentPlaybackTime'
+    JsName: 'currentPlaybackTime'
+    Module: 'MediaPlayer.MPMediaPlayback'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'currentPlaybackTime'
+      JsName: 'currentPlaybackTime'
+      Module: 'MediaPlayer.MPMediaPlayback'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'currentPlaybackTime'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+    Setter:
+      Name: 'setCurrentPlaybackTime:'
+      JsName: 'setCurrentPlaybackTime'
+      Module: 'MediaPlayer.MPMediaPlayback'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCurrentPlaybackTime:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v16@0:4d8'
+  - Name: 'isPreparedToPlay'
+    JsName: 'isPreparedToPlay'
+    Module: 'MediaPlayer.MPMediaPlayback'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isPreparedToPlay'
+      JsName: 'isPreparedToPlay'
+      Module: 'MediaPlayer.MPMediaPlayback'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isPreparedToPlay'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  Protocols: []
+  Type: Protocol
+- Name: 'MPMediaPlaybackIsPreparedToPlayDidChangeNotification'
+  JsName: 'MPMediaPlaybackIsPreparedToPlayDidChangeNotification'
+  Module: 'MediaPlayer.MPMediaPlayback'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMovieScalingMode'
+  JsName: 'MPMovieScalingMode'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MPMovieScalingModeNone":0,"MPMovieScalingModeAspectFit":1,"MPMovieScalingModeAspectFill":2,"MPMovieScalingModeFill":3})
+- Name: 'MPMoviePlaybackState'
+  JsName: 'MPMoviePlaybackState'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MPMoviePlaybackStateStopped":0,"MPMoviePlaybackStatePlaying":1,"MPMoviePlaybackStatePaused":2,"MPMoviePlaybackStateInterrupted":3,"MPMoviePlaybackStateSeekingForward":4,"MPMoviePlaybackStateSeekingBackward":5})
+- Name: 'MPMovieLoadState'
+  JsName: 'MPMovieLoadState'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MPMovieLoadStateUnknown":0,"MPMovieLoadStatePlayable":1,"MPMovieLoadStatePlaythroughOK":2,"MPMovieLoadStateStalled":4})
+- Name: 'MPMovieRepeatMode'
+  JsName: 'MPMovieRepeatMode'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MPMovieRepeatModeNone":0,"MPMovieRepeatModeOne":1})
+- Name: 'MPMovieControlStyle'
+  JsName: 'MPMovieControlStyle'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MPMovieControlStyleNone":0,"MPMovieControlStyleEmbedded":1,"MPMovieControlStyleFullscreen":2,"MPMovieControlStyleDefault":1})
+- Name: 'MPMovieFinishReason'
+  JsName: 'MPMovieFinishReason'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MPMovieFinishReasonPlaybackEnded":0,"MPMovieFinishReasonPlaybackError":1,"MPMovieFinishReasonUserExited":2})
+- Name: 'MPMovieMediaTypeMask'
+  JsName: 'MPMovieMediaTypeMask'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MPMovieMediaTypeMaskNone":0,"MPMovieMediaTypeMaskVideo":1,"MPMovieMediaTypeMaskAudio":2})
+- Name: 'MPMovieSourceType'
+  JsName: 'MPMovieSourceType'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MPMovieSourceTypeUnknown":0,"MPMovieSourceTypeFile":1,"MPMovieSourceTypeStreaming":2})
+- Name: 'MPMoviePlayerController'
+  JsName: 'MPMoviePlayerController'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'cancelAllThumbnailImageRequests'
+    JsName: 'cancelAllThumbnailImageRequests'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    IntroducedIn: 3.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancelAllThumbnailImageRequests'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'initWithContentURL:'
+    JsName: 'initWithContentURL'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithContentURL:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'requestThumbnailImagesAtTimes:timeOption:'
+    JsName: 'requestThumbnailImagesAtTimesTimeOption'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    IntroducedIn: 3.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'requestThumbnailImagesAtTimes:timeOption:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Int
+    TypeEncoding: 'v16@0:4@8i12'
+  - Name: 'setFullscreen:animated:'
+    JsName: 'setFullscreenAnimated'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setFullscreen:animated:'
+    Signature:
+    - Type: Void
+    - Type: Bool
+    - Type: Bool
+    TypeEncoding: 'v16@0:4c8c12'
+  - Name: 'thumbnailImageAtTime:timeOption:'
+    JsName: 'thumbnailImageAtTimeTimeOption'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    IntroducedIn: 3.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'thumbnailImageAtTime:timeOption:'
+    Signature:
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    - Type: Double
+    - Type: Int
+    TypeEncoding: '@20@0:4d8i16'
+  StaticMethods: []
+  Properties:
+  - Name: 'accessLog'
+    JsName: 'accessLog'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    IntroducedIn: 4.3
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'accessLog'
+      JsName: 'accessLog'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      IntroducedIn: 4.3
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'accessLog'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPMoviePlayerController
+        Name: MPMovieAccessLog
+      TypeEncoding: '@8@0:4'
+  - Name: 'airPlayVideoActive'
+    JsName: 'airPlayVideoActive'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isAirPlayVideoActive'
+      JsName: 'isAirPlayVideoActive'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isAirPlayVideoActive'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'allowsAirPlay'
+    JsName: 'allowsAirPlay'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    IntroducedIn: 4.3
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'allowsAirPlay'
+      JsName: 'allowsAirPlay'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      IntroducedIn: 4.3
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'allowsAirPlay'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setAllowsAirPlay:'
+      JsName: 'setAllowsAirPlay'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      IntroducedIn: 4.3
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAllowsAirPlay:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'backgroundView'
+    JsName: 'backgroundView'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'backgroundView'
+      JsName: 'backgroundView'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'backgroundView'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIView
+        Name: UIView
+      TypeEncoding: '@8@0:4'
+  - Name: 'contentURL'
+    JsName: 'contentURL'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'contentURL'
+      JsName: 'contentURL'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'contentURL'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setContentURL:'
+      JsName: 'setContentURL'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setContentURL:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'controlStyle'
+    JsName: 'controlStyle'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'controlStyle'
+      JsName: 'controlStyle'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'controlStyle'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setControlStyle:'
+      JsName: 'setControlStyle'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setControlStyle:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'duration'
+    JsName: 'duration'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'duration'
+      JsName: 'duration'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'duration'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'endPlaybackTime'
+    JsName: 'endPlaybackTime'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'endPlaybackTime'
+      JsName: 'endPlaybackTime'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'endPlaybackTime'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+    Setter:
+      Name: 'setEndPlaybackTime:'
+      JsName: 'setEndPlaybackTime'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setEndPlaybackTime:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v16@0:4d8'
+  - Name: 'errorLog'
+    JsName: 'errorLog'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    IntroducedIn: 4.3
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'errorLog'
+      JsName: 'errorLog'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      IntroducedIn: 4.3
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'errorLog'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPMoviePlayerController
+        Name: MPMovieErrorLog
+      TypeEncoding: '@8@0:4'
+  - Name: 'fullscreen'
+    JsName: 'fullscreen'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isFullscreen'
+      JsName: 'isFullscreen'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isFullscreen'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setFullscreen:'
+      JsName: 'setFullscreen'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setFullscreen:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'initialPlaybackTime'
+    JsName: 'initialPlaybackTime'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'initialPlaybackTime'
+      JsName: 'initialPlaybackTime'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'initialPlaybackTime'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+    Setter:
+      Name: 'setInitialPlaybackTime:'
+      JsName: 'setInitialPlaybackTime'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setInitialPlaybackTime:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v16@0:4d8'
+  - Name: 'loadState'
+    JsName: 'loadState'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'loadState'
+      JsName: 'loadState'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'loadState'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'movieMediaTypes'
+    JsName: 'movieMediaTypes'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'movieMediaTypes'
+      JsName: 'movieMediaTypes'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'movieMediaTypes'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'movieSourceType'
+    JsName: 'movieSourceType'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'movieSourceType'
+      JsName: 'movieSourceType'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'movieSourceType'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setMovieSourceType:'
+      JsName: 'setMovieSourceType'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMovieSourceType:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'naturalSize'
+    JsName: 'naturalSize'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'naturalSize'
+      JsName: 'naturalSize'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'naturalSize'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGSize
+      TypeEncoding: '{CGSize=ff}8@0:4'
+  - Name: 'playableDuration'
+    JsName: 'playableDuration'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'playableDuration'
+      JsName: 'playableDuration'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'playableDuration'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'playbackState'
+    JsName: 'playbackState'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'playbackState'
+      JsName: 'playbackState'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'playbackState'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  - Name: 'readyForDisplay'
+    JsName: 'readyForDisplay'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'readyForDisplay'
+      JsName: 'readyForDisplay'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'readyForDisplay'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'repeatMode'
+    JsName: 'repeatMode'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'repeatMode'
+      JsName: 'repeatMode'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'repeatMode'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setRepeatMode:'
+      JsName: 'setRepeatMode'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRepeatMode:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'scalingMode'
+    JsName: 'scalingMode'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'scalingMode'
+      JsName: 'scalingMode'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'scalingMode'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setScalingMode:'
+      JsName: 'setScalingMode'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setScalingMode:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'shouldAutoplay'
+    JsName: 'shouldAutoplay'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'shouldAutoplay'
+      JsName: 'shouldAutoplay'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'shouldAutoplay'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setShouldAutoplay:'
+      JsName: 'setShouldAutoplay'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShouldAutoplay:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'timedMetadata'
+    JsName: 'timedMetadata'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'timedMetadata'
+      JsName: 'timedMetadata'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'timedMetadata'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'useApplicationAudioSession'
+    JsName: 'useApplicationAudioSession'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    IntroducedIn: 3.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'useApplicationAudioSession'
+      JsName: 'useApplicationAudioSession'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      IntroducedIn: 3.2
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'useApplicationAudioSession'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setUseApplicationAudioSession:'
+      JsName: 'setUseApplicationAudioSession'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      IntroducedIn: 3.2
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setUseApplicationAudioSession:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'view'
+    JsName: 'view'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'view'
+      JsName: 'view'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'view'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIView
+        Name: UIView
+      TypeEncoding: '@8@0:4'
+  Protocols:
+  - Module: MediaPlayer.MPMediaPlayback
+    Name: MPMediaPlayback
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MPMoviePlayerScalingModeDidChangeNotification'
+  JsName: 'MPMoviePlayerScalingModeDidChangeNotification'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerPlaybackDidFinishNotification'
+  JsName: 'MPMoviePlayerPlaybackDidFinishNotification'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerPlaybackDidFinishReasonUserInfoKey'
+  JsName: 'MPMoviePlayerPlaybackDidFinishReasonUserInfoKey'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerPlaybackStateDidChangeNotification'
+  JsName: 'MPMoviePlayerPlaybackStateDidChangeNotification'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerLoadStateDidChangeNotification'
+  JsName: 'MPMoviePlayerLoadStateDidChangeNotification'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerNowPlayingMovieDidChangeNotification'
+  JsName: 'MPMoviePlayerNowPlayingMovieDidChangeNotification'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerWillEnterFullscreenNotification'
+  JsName: 'MPMoviePlayerWillEnterFullscreenNotification'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerDidEnterFullscreenNotification'
+  JsName: 'MPMoviePlayerDidEnterFullscreenNotification'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerWillExitFullscreenNotification'
+  JsName: 'MPMoviePlayerWillExitFullscreenNotification'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerDidExitFullscreenNotification'
+  JsName: 'MPMoviePlayerDidExitFullscreenNotification'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerFullscreenAnimationDurationUserInfoKey'
+  JsName: 'MPMoviePlayerFullscreenAnimationDurationUserInfoKey'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerFullscreenAnimationCurveUserInfoKey'
+  JsName: 'MPMoviePlayerFullscreenAnimationCurveUserInfoKey'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerIsAirPlayVideoActiveDidChangeNotification'
+  JsName: 'MPMoviePlayerIsAirPlayVideoActiveDidChangeNotification'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerReadyForDisplayDidChangeNotification'
+  JsName: 'MPMoviePlayerReadyForDisplayDidChangeNotification'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMovieMediaTypesAvailableNotification'
+  JsName: 'MPMovieMediaTypesAvailableNotification'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMovieSourceTypeAvailableNotification'
+  JsName: 'MPMovieSourceTypeAvailableNotification'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMovieDurationAvailableNotification'
+  JsName: 'MPMovieDurationAvailableNotification'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMovieNaturalSizeAvailableNotification'
+  JsName: 'MPMovieNaturalSizeAvailableNotification'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMovieTimeOption'
+  JsName: 'MPMovieTimeOption'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MPMovieTimeOptionNearestKeyFrame":0,"MPMovieTimeOptionExact":1})
+- Name: 'MPMoviePlayerThumbnailImageRequestDidFinishNotification'
+  JsName: 'MPMoviePlayerThumbnailImageRequestDidFinishNotification'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerThumbnailImageKey'
+  JsName: 'MPMoviePlayerThumbnailImageKey'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerThumbnailTimeKey'
+  JsName: 'MPMoviePlayerThumbnailTimeKey'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerThumbnailErrorKey'
+  JsName: 'MPMoviePlayerThumbnailErrorKey'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPTimedMetadata'
+  JsName: 'MPTimedMetadata'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'allMetadata'
+    JsName: 'allMetadata'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'allMetadata'
+      JsName: 'allMetadata'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'allMetadata'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: '@8@0:4'
+  - Name: 'key'
+    JsName: 'key'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'key'
+      JsName: 'key'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'key'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'keyspace'
+    JsName: 'keyspace'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'keyspace'
+      JsName: 'keyspace'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'keyspace'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'timestamp'
+    JsName: 'timestamp'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'timestamp'
+      JsName: 'timestamp'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'timestamp'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'value'
+    JsName: 'value'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'value'
+      JsName: 'value'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'value'
+      Signature:
+      - Type: Id
+        WithProtocols: []
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MPMoviePlayerTimedMetadataUpdatedNotification'
+  JsName: 'MPMoviePlayerTimedMetadataUpdatedNotification'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerTimedMetadataUserInfoKey'
+  JsName: 'MPMoviePlayerTimedMetadataUserInfoKey'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerTimedMetadataKeyName'
+  JsName: 'MPMoviePlayerTimedMetadataKeyName'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerTimedMetadataKeyInfo'
+  JsName: 'MPMoviePlayerTimedMetadataKeyInfo'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerTimedMetadataKeyMIMEType'
+  JsName: 'MPMoviePlayerTimedMetadataKeyMIMEType'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerTimedMetadataKeyDataType'
+  JsName: 'MPMoviePlayerTimedMetadataKeyDataType'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMoviePlayerTimedMetadataKeyLanguageCode'
+  JsName: 'MPMoviePlayerTimedMetadataKeyLanguageCode'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMovieAccessLog'
+  JsName: 'MPMovieAccessLog'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 4.3
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'events'
+    JsName: 'events'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'events'
+      JsName: 'events'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'events'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'extendedLogData'
+    JsName: 'extendedLogData'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'extendedLogData'
+      JsName: 'extendedLogData'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'extendedLogData'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@8@0:4'
+  - Name: 'extendedLogDataStringEncoding'
+    JsName: 'extendedLogDataStringEncoding'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'extendedLogDataStringEncoding'
+      JsName: 'extendedLogDataStringEncoding'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'extendedLogDataStringEncoding'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MPMovieErrorLog'
+  JsName: 'MPMovieErrorLog'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 4.3
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'events'
+    JsName: 'events'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'events'
+      JsName: 'events'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'events'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'extendedLogData'
+    JsName: 'extendedLogData'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'extendedLogData'
+      JsName: 'extendedLogData'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'extendedLogData'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@8@0:4'
+  - Name: 'extendedLogDataStringEncoding'
+    JsName: 'extendedLogDataStringEncoding'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'extendedLogDataStringEncoding'
+      JsName: 'extendedLogDataStringEncoding'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'extendedLogDataStringEncoding'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MPMovieAccessLogEvent'
+  JsName: 'MPMovieAccessLogEvent'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 4.3
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'durationWatched'
+    JsName: 'durationWatched'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'durationWatched'
+      JsName: 'durationWatched'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'durationWatched'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'indicatedBitrate'
+    JsName: 'indicatedBitrate'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'indicatedBitrate'
+      JsName: 'indicatedBitrate'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'indicatedBitrate'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'numberOfBytesTransferred'
+    JsName: 'numberOfBytesTransferred'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'numberOfBytesTransferred'
+      JsName: 'numberOfBytesTransferred'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'numberOfBytesTransferred'
+      Signature:
+      - Type: LongLong
+      TypeEncoding: 'q8@0:4'
+  - Name: 'numberOfDroppedVideoFrames'
+    JsName: 'numberOfDroppedVideoFrames'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'numberOfDroppedVideoFrames'
+      JsName: 'numberOfDroppedVideoFrames'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'numberOfDroppedVideoFrames'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  - Name: 'numberOfSegmentsDownloaded'
+    JsName: 'numberOfSegmentsDownloaded'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'numberOfSegmentsDownloaded'
+      JsName: 'numberOfSegmentsDownloaded'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'numberOfSegmentsDownloaded'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'numberOfServerAddressChanges'
+    JsName: 'numberOfServerAddressChanges'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'numberOfServerAddressChanges'
+      JsName: 'numberOfServerAddressChanges'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'numberOfServerAddressChanges'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'numberOfStalls'
+    JsName: 'numberOfStalls'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'numberOfStalls'
+      JsName: 'numberOfStalls'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'numberOfStalls'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  - Name: 'observedBitrate'
+    JsName: 'observedBitrate'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'observedBitrate'
+      JsName: 'observedBitrate'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'observedBitrate'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'playbackSessionID'
+    JsName: 'playbackSessionID'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'playbackSessionID'
+      JsName: 'playbackSessionID'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'playbackSessionID'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'playbackStartDate'
+    JsName: 'playbackStartDate'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'playbackStartDate'
+      JsName: 'playbackStartDate'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'playbackStartDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'playbackStartOffset'
+    JsName: 'playbackStartOffset'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'playbackStartOffset'
+      JsName: 'playbackStartOffset'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'playbackStartOffset'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'segmentsDownloadedDuration'
+    JsName: 'segmentsDownloadedDuration'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'segmentsDownloadedDuration'
+      JsName: 'segmentsDownloadedDuration'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'segmentsDownloadedDuration'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'serverAddress'
+    JsName: 'serverAddress'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'serverAddress'
+      JsName: 'serverAddress'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'serverAddress'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'URI'
+    JsName: 'URI'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'URI'
+      JsName: 'URI'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'URI'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MPMovieErrorLogEvent'
+  JsName: 'MPMovieErrorLogEvent'
+  Module: 'MediaPlayer.MPMoviePlayerController'
+  IntroducedIn: 4.3
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'date'
+    JsName: 'date'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'date'
+      JsName: 'date'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'date'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'errorComment'
+    JsName: 'errorComment'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'errorComment'
+      JsName: 'errorComment'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'errorComment'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'errorDomain'
+    JsName: 'errorDomain'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'errorDomain'
+      JsName: 'errorDomain'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'errorDomain'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'errorStatusCode'
+    JsName: 'errorStatusCode'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'errorStatusCode'
+      JsName: 'errorStatusCode'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'errorStatusCode'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  - Name: 'playbackSessionID'
+    JsName: 'playbackSessionID'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'playbackSessionID'
+      JsName: 'playbackSessionID'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'playbackSessionID'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'serverAddress'
+    JsName: 'serverAddress'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'serverAddress'
+      JsName: 'serverAddress'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'serverAddress'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'URI'
+    JsName: 'URI'
+    Module: 'MediaPlayer.MPMoviePlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'URI'
+      JsName: 'URI'
+      Module: 'MediaPlayer.MPMoviePlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'URI'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MPMoviePlayerViewController'
+  JsName: 'MPMoviePlayerViewController'
+  Module: 'MediaPlayer.MPMoviePlayerViewController'
+  IntroducedIn: 3.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithContentURL:'
+    JsName: 'initWithContentURL'
+    Module: 'MediaPlayer.MPMoviePlayerViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithContentURL:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    TypeEncoding: '@12@0:4@8'
+  StaticMethods: []
+  Properties:
+  - Name: 'moviePlayer'
+    JsName: 'moviePlayer'
+    Module: 'MediaPlayer.MPMoviePlayerViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'moviePlayer'
+      JsName: 'moviePlayer'
+      Module: 'MediaPlayer.MPMoviePlayerViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'moviePlayer'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPMoviePlayerController
+        Name: MPMoviePlayerController
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Interface
+- Name: 'MPMoviePlayerViewController'
+  JsName: 'MPMoviePlayerViewController'
+  Module: 'MediaPlayer.MPMoviePlayerViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'dismissMoviePlayerViewControllerAnimated'
+    JsName: 'dismissMoviePlayerViewControllerAnimated'
+    Module: 'MediaPlayer.MPMoviePlayerViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'dismissMoviePlayerViewControllerAnimated'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'presentMoviePlayerViewControllerAnimated:'
+    JsName: 'presentMoviePlayerViewControllerAnimated'
+    Module: 'MediaPlayer.MPMoviePlayerViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'presentMoviePlayerViewControllerAnimated:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MediaPlayer.MPMoviePlayerViewController
+      Name: MPMoviePlayerViewController
+    TypeEncoding: 'v12@0:4@8'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  ExtendedInterface:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Category
+- Name: 'MPMusicPlaybackState'
+  JsName: 'MPMusicPlaybackState'
+  Module: 'MediaPlayer.MPMusicPlayerController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MPMusicPlaybackStateStopped":0,"MPMusicPlaybackStatePlaying":1,"MPMusicPlaybackStatePaused":2,"MPMusicPlaybackStateInterrupted":3,"MPMusicPlaybackStateSeekingForward":4,"MPMusicPlaybackStateSeekingBackward":5})
+- Name: 'MPMusicRepeatMode'
+  JsName: 'MPMusicRepeatMode'
+  Module: 'MediaPlayer.MPMusicPlayerController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MPMusicRepeatModeDefault":0,"MPMusicRepeatModeNone":1,"MPMusicRepeatModeOne":2,"MPMusicRepeatModeAll":3})
+- Name: 'MPMusicShuffleMode'
+  JsName: 'MPMusicShuffleMode'
+  Module: 'MediaPlayer.MPMusicPlayerController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MPMusicShuffleModeDefault":0,"MPMusicShuffleModeOff":1,"MPMusicShuffleModeSongs":2,"MPMusicShuffleModeAlbums":3})
+- Name: 'MPMusicPlayerController'
+  JsName: 'MPMusicPlayerController'
+  Module: 'MediaPlayer.MPMusicPlayerController'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'beginGeneratingPlaybackNotifications'
+    JsName: 'beginGeneratingPlaybackNotifications'
+    Module: 'MediaPlayer.MPMusicPlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'beginGeneratingPlaybackNotifications'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'endGeneratingPlaybackNotifications'
+    JsName: 'endGeneratingPlaybackNotifications'
+    Module: 'MediaPlayer.MPMusicPlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'endGeneratingPlaybackNotifications'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'setQueueWithItemCollection:'
+    JsName: 'setQueueWithItemCollection'
+    Module: 'MediaPlayer.MPMusicPlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setQueueWithItemCollection:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MediaPlayer.MPMediaItemCollection
+      Name: MPMediaItemCollection
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'setQueueWithQuery:'
+    JsName: 'setQueueWithQuery'
+    Module: 'MediaPlayer.MPMusicPlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setQueueWithQuery:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MediaPlayer.MPMediaQuery
+      Name: MPMediaQuery
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'skipToBeginning'
+    JsName: 'skipToBeginning'
+    Module: 'MediaPlayer.MPMusicPlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'skipToBeginning'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'skipToNextItem'
+    JsName: 'skipToNextItem'
+    Module: 'MediaPlayer.MPMusicPlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'skipToNextItem'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'skipToPreviousItem'
+    JsName: 'skipToPreviousItem'
+    Module: 'MediaPlayer.MPMusicPlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'skipToPreviousItem'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  StaticMethods:
+  - Name: 'applicationMusicPlayer'
+    JsName: 'applicationMusicPlayer'
+    Module: 'MediaPlayer.MPMusicPlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'applicationMusicPlayer'
+    Signature:
+    - Type: Interface
+      Module: MediaPlayer.MPMusicPlayerController
+      Name: MPMusicPlayerController
+    TypeEncoding: '@8@0:4'
+  - Name: 'iPodMusicPlayer'
+    JsName: 'iPodMusicPlayer'
+    Module: 'MediaPlayer.MPMusicPlayerController'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'iPodMusicPlayer'
+    Signature:
+    - Type: Interface
+      Module: MediaPlayer.MPMusicPlayerController
+      Name: MPMusicPlayerController
+    TypeEncoding: '@8@0:4'
+  - Name: 'systemMusicPlayer'
+    JsName: 'systemMusicPlayer'
+    Module: 'MediaPlayer.MPMusicPlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'systemMusicPlayer'
+    Signature:
+    - Type: Interface
+      Module: MediaPlayer.MPMusicPlayerController
+      Name: MPMusicPlayerController
+    TypeEncoding: '@8@0:4'
+  Properties:
+  - Name: 'indexOfNowPlayingItem'
+    JsName: 'indexOfNowPlayingItem'
+    Module: 'MediaPlayer.MPMusicPlayerController'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'indexOfNowPlayingItem'
+      JsName: 'indexOfNowPlayingItem'
+      Module: 'MediaPlayer.MPMusicPlayerController'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'indexOfNowPlayingItem'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'nowPlayingItem'
+    JsName: 'nowPlayingItem'
+    Module: 'MediaPlayer.MPMusicPlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'nowPlayingItem'
+      JsName: 'nowPlayingItem'
+      Module: 'MediaPlayer.MPMusicPlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'nowPlayingItem'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPMediaItem
+        Name: MPMediaItem
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setNowPlayingItem:'
+      JsName: 'setNowPlayingItem'
+      Module: 'MediaPlayer.MPMusicPlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setNowPlayingItem:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: MediaPlayer.MPMediaItem
+        Name: MPMediaItem
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'playbackState'
+    JsName: 'playbackState'
+    Module: 'MediaPlayer.MPMusicPlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'playbackState'
+      JsName: 'playbackState'
+      Module: 'MediaPlayer.MPMusicPlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'playbackState'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  - Name: 'repeatMode'
+    JsName: 'repeatMode'
+    Module: 'MediaPlayer.MPMusicPlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'repeatMode'
+      JsName: 'repeatMode'
+      Module: 'MediaPlayer.MPMusicPlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'repeatMode'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setRepeatMode:'
+      JsName: 'setRepeatMode'
+      Module: 'MediaPlayer.MPMusicPlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRepeatMode:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'shuffleMode'
+    JsName: 'shuffleMode'
+    Module: 'MediaPlayer.MPMusicPlayerController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'shuffleMode'
+      JsName: 'shuffleMode'
+      Module: 'MediaPlayer.MPMusicPlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'shuffleMode'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setShuffleMode:'
+      JsName: 'setShuffleMode'
+      Module: 'MediaPlayer.MPMusicPlayerController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShuffleMode:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'volume'
+    JsName: 'volume'
+    Module: 'MediaPlayer.MPMusicPlayerController'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'volume'
+      JsName: 'volume'
+      Module: 'MediaPlayer.MPMusicPlayerController'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'volume'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f8@0:4'
+    Setter:
+      Name: 'setVolume:'
+      JsName: 'setVolume'
+      Module: 'MediaPlayer.MPMusicPlayerController'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setVolume:'
+      Signature:
+      - Type: Void
+      - Type: Float
+      TypeEncoding: 'v12@0:4f8'
+  Protocols:
+  - Module: MediaPlayer.MPMediaPlayback
+    Name: MPMediaPlayback
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MPMusicPlayerControllerPlaybackStateDidChangeNotification'
+  JsName: 'MPMusicPlayerControllerPlaybackStateDidChangeNotification'
+  Module: 'MediaPlayer.MPMusicPlayerController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMusicPlayerControllerNowPlayingItemDidChangeNotification'
+  JsName: 'MPMusicPlayerControllerNowPlayingItemDidChangeNotification'
+  Module: 'MediaPlayer.MPMusicPlayerController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPMusicPlayerControllerVolumeDidChangeNotification'
+  JsName: 'MPMusicPlayerControllerVolumeDidChangeNotification'
+  Module: 'MediaPlayer.MPMusicPlayerController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPNowPlayingInfoCenter'
+  JsName: 'MPNowPlayingInfoCenter'
+  Module: 'MediaPlayer.MPNowPlayingInfoCenter'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'defaultCenter'
+    JsName: 'defaultCenter'
+    Module: 'MediaPlayer.MPNowPlayingInfoCenter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'defaultCenter'
+    Signature:
+    - Type: Interface
+      Module: MediaPlayer.MPNowPlayingInfoCenter
+      Name: MPNowPlayingInfoCenter
+    TypeEncoding: '@8@0:4'
+  Properties:
+  - Name: 'nowPlayingInfo'
+    JsName: 'nowPlayingInfo'
+    Module: 'MediaPlayer.MPNowPlayingInfoCenter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'nowPlayingInfo'
+      JsName: 'nowPlayingInfo'
+      Module: 'MediaPlayer.MPNowPlayingInfoCenter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'nowPlayingInfo'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setNowPlayingInfo:'
+      JsName: 'setNowPlayingInfo'
+      Module: 'MediaPlayer.MPNowPlayingInfoCenter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setNowPlayingInfo:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MPNowPlayingInfoPropertyElapsedPlaybackTime'
+  JsName: 'MPNowPlayingInfoPropertyElapsedPlaybackTime'
+  Module: 'MediaPlayer.MPNowPlayingInfoCenter'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPNowPlayingInfoPropertyPlaybackRate'
+  JsName: 'MPNowPlayingInfoPropertyPlaybackRate'
+  Module: 'MediaPlayer.MPNowPlayingInfoCenter'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPNowPlayingInfoPropertyDefaultPlaybackRate'
+  JsName: 'MPNowPlayingInfoPropertyDefaultPlaybackRate'
+  Module: 'MediaPlayer.MPNowPlayingInfoCenter'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPNowPlayingInfoPropertyPlaybackQueueIndex'
+  JsName: 'MPNowPlayingInfoPropertyPlaybackQueueIndex'
+  Module: 'MediaPlayer.MPNowPlayingInfoCenter'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPNowPlayingInfoPropertyPlaybackQueueCount'
+  JsName: 'MPNowPlayingInfoPropertyPlaybackQueueCount'
+  Module: 'MediaPlayer.MPNowPlayingInfoCenter'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPNowPlayingInfoPropertyChapterNumber'
+  JsName: 'MPNowPlayingInfoPropertyChapterNumber'
+  Module: 'MediaPlayer.MPNowPlayingInfoCenter'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPNowPlayingInfoPropertyChapterCount'
+  JsName: 'MPNowPlayingInfoPropertyChapterCount'
+  Module: 'MediaPlayer.MPNowPlayingInfoCenter'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPPlayableContentDataSource'
+  JsName: 'MPPlayableContentDataSource'
+  Module: 'MediaPlayer.MPPlayableContentDataSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'beginLoadingChildItemsAtIndexPath:completionHandler:'
+    JsName: 'beginLoadingChildItemsAtIndexPathCompletionHandler'
+    Module: 'MediaPlayer.MPPlayableContentDataSource'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'beginLoadingChildItemsAtIndexPath:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSIndexPath
+      Name: NSIndexPath
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'childItemsDisplayPlaybackProgressAtIndexPath:'
+    JsName: 'childItemsDisplayPlaybackProgressAtIndexPath'
+    Module: 'MediaPlayer.MPPlayableContentDataSource'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'childItemsDisplayPlaybackProgressAtIndexPath:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSIndexPath
+      Name: NSIndexPath
+    TypeEncoding: 'c12@0:4@8'
+  - Name: 'contentItemAtIndexPath:'
+    JsName: 'contentItemAtIndexPath'
+    Module: 'MediaPlayer.MPPlayableContentDataSource'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'contentItemAtIndexPath:'
+    Signature:
+    - Type: Interface
+      Module: MediaPlayer.MPContentItem
+      Name: MPContentItem
+    - Type: Interface
+      Module: Foundation.NSIndexPath
+      Name: NSIndexPath
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'numberOfChildItemsAtIndexPath:'
+    JsName: 'numberOfChildItemsAtIndexPath'
+    Module: 'MediaPlayer.MPPlayableContentDataSource'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'numberOfChildItemsAtIndexPath:'
+    Signature:
+    - Type: Int
+    - Type: Interface
+      Module: Foundation.NSIndexPath
+      Name: NSIndexPath
+    TypeEncoding: 'i12@0:4@8'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MPPlayableContentDelegate'
+  JsName: 'MPPlayableContentDelegate'
+  Module: 'MediaPlayer.MPPlayableContentDelegate'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'playableContentManager:initiatePlaybackOfContentItemAtIndexPath:completionHandler:'
+    JsName: 'playableContentManagerInitiatePlaybackOfContentItemAtIndexPathCompletionHandler'
+    Module: 'MediaPlayer.MPPlayableContentDelegate'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'playableContentManager:initiatePlaybackOfContentItemAtIndexPath:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MediaPlayer.MPPlayableContentManager
+      Name: MPPlayableContentManager
+    - Type: Interface
+      Module: Foundation.NSIndexPath
+      Name: NSIndexPath
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@?16'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MPPlayableContentManager'
+  JsName: 'MPPlayableContentManager'
+  Module: 'MediaPlayer.MPPlayableContentManager'
+  IntroducedIn: 7.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'beginUpdates'
+    JsName: 'beginUpdates'
+    Module: 'MediaPlayer.MPPlayableContentManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'beginUpdates'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'endUpdates'
+    JsName: 'endUpdates'
+    Module: 'MediaPlayer.MPPlayableContentManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'endUpdates'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'reloadData'
+    JsName: 'reloadData'
+    Module: 'MediaPlayer.MPPlayableContentManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'reloadData'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  StaticMethods:
+  - Name: 'sharedContentManager'
+    JsName: 'sharedContentManager'
+    Module: 'MediaPlayer.MPPlayableContentManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'sharedContentManager'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  Properties:
+  - Name: 'dataSource'
+    JsName: 'dataSource'
+    Module: 'MediaPlayer.MPPlayableContentManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'dataSource'
+      JsName: 'dataSource'
+      Module: 'MediaPlayer.MPPlayableContentManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'dataSource'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: MediaPlayer.MPPlayableContentDataSource
+          Name: MPPlayableContentDataSource
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDataSource:'
+      JsName: 'setDataSource'
+      Module: 'MediaPlayer.MPPlayableContentManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDataSource:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: MediaPlayer.MPPlayableContentDataSource
+          Name: MPPlayableContentDataSource
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'MediaPlayer.MPPlayableContentManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'MediaPlayer.MPPlayableContentManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: MediaPlayer.MPPlayableContentDelegate
+          Name: MPPlayableContentDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'MediaPlayer.MPPlayableContentManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: MediaPlayer.MPPlayableContentDelegate
+          Name: MPPlayableContentDelegate
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MPRemoteCommandHandlerStatus'
+  JsName: 'MPRemoteCommandHandlerStatus'
+  Module: 'MediaPlayer.MPRemoteCommand'
+  IntroducedIn: 7.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MPRemoteCommandHandlerStatusSuccess":0,"MPRemoteCommandHandlerStatusNoSuchContent":100,"MPRemoteCommandHandlerStatusCommandFailed":200})
+- Name: 'MPRemoteCommand'
+  JsName: 'MPRemoteCommand'
+  Module: 'MediaPlayer.MPRemoteCommand'
+  IntroducedIn: 7.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addTarget:action:'
+    JsName: 'addTargetAction'
+    Module: 'MediaPlayer.MPRemoteCommand'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addTarget:action:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols: []
+    - Type: Selector
+    TypeEncoding: 'v16@0:4@8:12'
+  - Name: 'addTargetWithHandler:'
+    JsName: 'addTargetWithHandler'
+    Module: 'MediaPlayer.MPRemoteCommand'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addTargetWithHandler:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Block
+      Signature:
+      - Type: Int
+      - Type: Interface
+        Module: MediaPlayer.MPRemoteCommandEvent
+        Name: MPRemoteCommandEvent
+    TypeEncoding: '@12@0:4@?8'
+  - Name: 'removeTarget:'
+    JsName: 'removeTarget'
+    Module: 'MediaPlayer.MPRemoteCommand'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeTarget:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'removeTarget:action:'
+    JsName: 'removeTargetAction'
+    Module: 'MediaPlayer.MPRemoteCommand'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeTarget:action:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols: []
+    - Type: Selector
+    TypeEncoding: 'v16@0:4@8:12'
+  StaticMethods: []
+  Properties:
+  - Name: 'enabled'
+    JsName: 'enabled'
+    Module: 'MediaPlayer.MPRemoteCommand'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isEnabled'
+      JsName: 'isEnabled'
+      Module: 'MediaPlayer.MPRemoteCommand'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setEnabled:'
+      JsName: 'setEnabled'
+      Module: 'MediaPlayer.MPRemoteCommand'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setEnabled:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MPSkipIntervalCommand'
+  JsName: 'MPSkipIntervalCommand'
+  Module: 'MediaPlayer.MPRemoteCommand'
+  IntroducedIn: 7.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'preferredIntervals'
+    JsName: 'preferredIntervals'
+    Module: 'MediaPlayer.MPRemoteCommand'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'preferredIntervals'
+      JsName: 'preferredIntervals'
+      Module: 'MediaPlayer.MPRemoteCommand'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'preferredIntervals'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setPreferredIntervals:'
+      JsName: 'setPreferredIntervals'
+      Module: 'MediaPlayer.MPRemoteCommand'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPreferredIntervals:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: MediaPlayer.MPRemoteCommand
+    Name: MPRemoteCommand
+  Type: Interface
+- Name: 'MPFeedbackCommand'
+  JsName: 'MPFeedbackCommand'
+  Module: 'MediaPlayer.MPRemoteCommand'
+  IntroducedIn: 7.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'active'
+    JsName: 'active'
+    Module: 'MediaPlayer.MPRemoteCommand'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isActive'
+      JsName: 'isActive'
+      Module: 'MediaPlayer.MPRemoteCommand'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isActive'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setActive:'
+      JsName: 'setActive'
+      Module: 'MediaPlayer.MPRemoteCommand'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setActive:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'localizedShortTitle'
+    JsName: 'localizedShortTitle'
+    Module: 'MediaPlayer.MPRemoteCommand'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'localizedShortTitle'
+      JsName: 'localizedShortTitle'
+      Module: 'MediaPlayer.MPRemoteCommand'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'localizedShortTitle'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setLocalizedShortTitle:'
+      JsName: 'setLocalizedShortTitle'
+      Module: 'MediaPlayer.MPRemoteCommand'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLocalizedShortTitle:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'localizedTitle'
+    JsName: 'localizedTitle'
+    Module: 'MediaPlayer.MPRemoteCommand'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'localizedTitle'
+      JsName: 'localizedTitle'
+      Module: 'MediaPlayer.MPRemoteCommand'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'localizedTitle'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setLocalizedTitle:'
+      JsName: 'setLocalizedTitle'
+      Module: 'MediaPlayer.MPRemoteCommand'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLocalizedTitle:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: MediaPlayer.MPRemoteCommand
+    Name: MPRemoteCommand
+  Type: Interface
+- Name: 'MPRatingCommand'
+  JsName: 'MPRatingCommand'
+  Module: 'MediaPlayer.MPRemoteCommand'
+  IntroducedIn: 7.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'maximumRating'
+    JsName: 'maximumRating'
+    Module: 'MediaPlayer.MPRemoteCommand'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'maximumRating'
+      JsName: 'maximumRating'
+      Module: 'MediaPlayer.MPRemoteCommand'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'maximumRating'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f8@0:4'
+    Setter:
+      Name: 'setMaximumRating:'
+      JsName: 'setMaximumRating'
+      Module: 'MediaPlayer.MPRemoteCommand'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMaximumRating:'
+      Signature:
+      - Type: Void
+      - Type: Float
+      TypeEncoding: 'v12@0:4f8'
+  - Name: 'minimumRating'
+    JsName: 'minimumRating'
+    Module: 'MediaPlayer.MPRemoteCommand'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'minimumRating'
+      JsName: 'minimumRating'
+      Module: 'MediaPlayer.MPRemoteCommand'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'minimumRating'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f8@0:4'
+    Setter:
+      Name: 'setMinimumRating:'
+      JsName: 'setMinimumRating'
+      Module: 'MediaPlayer.MPRemoteCommand'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMinimumRating:'
+      Signature:
+      - Type: Void
+      - Type: Float
+      TypeEncoding: 'v12@0:4f8'
+  Protocols: []
+  Base:
+    Module: MediaPlayer.MPRemoteCommand
+    Name: MPRemoteCommand
+  Type: Interface
+- Name: 'MPChangePlaybackRateCommand'
+  JsName: 'MPChangePlaybackRateCommand'
+  Module: 'MediaPlayer.MPRemoteCommand'
+  IntroducedIn: 7.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'supportedPlaybackRates'
+    JsName: 'supportedPlaybackRates'
+    Module: 'MediaPlayer.MPRemoteCommand'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'supportedPlaybackRates'
+      JsName: 'supportedPlaybackRates'
+      Module: 'MediaPlayer.MPRemoteCommand'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'supportedPlaybackRates'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setSupportedPlaybackRates:'
+      JsName: 'setSupportedPlaybackRates'
+      Module: 'MediaPlayer.MPRemoteCommand'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSupportedPlaybackRates:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: MediaPlayer.MPRemoteCommand
+    Name: MPRemoteCommand
+  Type: Interface
+- Name: 'MPRemoteCommandCenter'
+  JsName: 'MPRemoteCommandCenter'
+  Module: 'MediaPlayer.MPRemoteCommandCenter'
+  IntroducedIn: 7.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'sharedCommandCenter'
+    JsName: 'sharedCommandCenter'
+    Module: 'MediaPlayer.MPRemoteCommandCenter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'sharedCommandCenter'
+    Signature:
+    - Type: Interface
+      Module: MediaPlayer.MPRemoteCommandCenter
+      Name: MPRemoteCommandCenter
+    TypeEncoding: '@8@0:4'
+  Properties:
+  - Name: 'bookmarkCommand'
+    JsName: 'bookmarkCommand'
+    Module: 'MediaPlayer.MPRemoteCommandCenter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'bookmarkCommand'
+      JsName: 'bookmarkCommand'
+      Module: 'MediaPlayer.MPRemoteCommandCenter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'bookmarkCommand'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPRemoteCommand
+        Name: MPFeedbackCommand
+      TypeEncoding: '@8@0:4'
+  - Name: 'changePlaybackRateCommand'
+    JsName: 'changePlaybackRateCommand'
+    Module: 'MediaPlayer.MPRemoteCommandCenter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'changePlaybackRateCommand'
+      JsName: 'changePlaybackRateCommand'
+      Module: 'MediaPlayer.MPRemoteCommandCenter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'changePlaybackRateCommand'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPRemoteCommand
+        Name: MPChangePlaybackRateCommand
+      TypeEncoding: '@8@0:4'
+  - Name: 'dislikeCommand'
+    JsName: 'dislikeCommand'
+    Module: 'MediaPlayer.MPRemoteCommandCenter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'dislikeCommand'
+      JsName: 'dislikeCommand'
+      Module: 'MediaPlayer.MPRemoteCommandCenter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'dislikeCommand'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPRemoteCommand
+        Name: MPFeedbackCommand
+      TypeEncoding: '@8@0:4'
+  - Name: 'likeCommand'
+    JsName: 'likeCommand'
+    Module: 'MediaPlayer.MPRemoteCommandCenter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'likeCommand'
+      JsName: 'likeCommand'
+      Module: 'MediaPlayer.MPRemoteCommandCenter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'likeCommand'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPRemoteCommand
+        Name: MPFeedbackCommand
+      TypeEncoding: '@8@0:4'
+  - Name: 'nextTrackCommand'
+    JsName: 'nextTrackCommand'
+    Module: 'MediaPlayer.MPRemoteCommandCenter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'nextTrackCommand'
+      JsName: 'nextTrackCommand'
+      Module: 'MediaPlayer.MPRemoteCommandCenter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'nextTrackCommand'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPRemoteCommand
+        Name: MPRemoteCommand
+      TypeEncoding: '@8@0:4'
+  - Name: 'pauseCommand'
+    JsName: 'pauseCommand'
+    Module: 'MediaPlayer.MPRemoteCommandCenter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'pauseCommand'
+      JsName: 'pauseCommand'
+      Module: 'MediaPlayer.MPRemoteCommandCenter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'pauseCommand'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPRemoteCommand
+        Name: MPRemoteCommand
+      TypeEncoding: '@8@0:4'
+  - Name: 'playCommand'
+    JsName: 'playCommand'
+    Module: 'MediaPlayer.MPRemoteCommandCenter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'playCommand'
+      JsName: 'playCommand'
+      Module: 'MediaPlayer.MPRemoteCommandCenter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'playCommand'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPRemoteCommand
+        Name: MPRemoteCommand
+      TypeEncoding: '@8@0:4'
+  - Name: 'previousTrackCommand'
+    JsName: 'previousTrackCommand'
+    Module: 'MediaPlayer.MPRemoteCommandCenter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'previousTrackCommand'
+      JsName: 'previousTrackCommand'
+      Module: 'MediaPlayer.MPRemoteCommandCenter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'previousTrackCommand'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPRemoteCommand
+        Name: MPRemoteCommand
+      TypeEncoding: '@8@0:4'
+  - Name: 'ratingCommand'
+    JsName: 'ratingCommand'
+    Module: 'MediaPlayer.MPRemoteCommandCenter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'ratingCommand'
+      JsName: 'ratingCommand'
+      Module: 'MediaPlayer.MPRemoteCommandCenter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'ratingCommand'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPRemoteCommand
+        Name: MPRatingCommand
+      TypeEncoding: '@8@0:4'
+  - Name: 'seekBackwardCommand'
+    JsName: 'seekBackwardCommand'
+    Module: 'MediaPlayer.MPRemoteCommandCenter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'seekBackwardCommand'
+      JsName: 'seekBackwardCommand'
+      Module: 'MediaPlayer.MPRemoteCommandCenter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'seekBackwardCommand'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPRemoteCommand
+        Name: MPRemoteCommand
+      TypeEncoding: '@8@0:4'
+  - Name: 'seekForwardCommand'
+    JsName: 'seekForwardCommand'
+    Module: 'MediaPlayer.MPRemoteCommandCenter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'seekForwardCommand'
+      JsName: 'seekForwardCommand'
+      Module: 'MediaPlayer.MPRemoteCommandCenter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'seekForwardCommand'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPRemoteCommand
+        Name: MPRemoteCommand
+      TypeEncoding: '@8@0:4'
+  - Name: 'skipBackwardCommand'
+    JsName: 'skipBackwardCommand'
+    Module: 'MediaPlayer.MPRemoteCommandCenter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'skipBackwardCommand'
+      JsName: 'skipBackwardCommand'
+      Module: 'MediaPlayer.MPRemoteCommandCenter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'skipBackwardCommand'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPRemoteCommand
+        Name: MPSkipIntervalCommand
+      TypeEncoding: '@8@0:4'
+  - Name: 'skipForwardCommand'
+    JsName: 'skipForwardCommand'
+    Module: 'MediaPlayer.MPRemoteCommandCenter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'skipForwardCommand'
+      JsName: 'skipForwardCommand'
+      Module: 'MediaPlayer.MPRemoteCommandCenter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'skipForwardCommand'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPRemoteCommand
+        Name: MPSkipIntervalCommand
+      TypeEncoding: '@8@0:4'
+  - Name: 'stopCommand'
+    JsName: 'stopCommand'
+    Module: 'MediaPlayer.MPRemoteCommandCenter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'stopCommand'
+      JsName: 'stopCommand'
+      Module: 'MediaPlayer.MPRemoteCommandCenter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'stopCommand'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPRemoteCommand
+        Name: MPRemoteCommand
+      TypeEncoding: '@8@0:4'
+  - Name: 'togglePlayPauseCommand'
+    JsName: 'togglePlayPauseCommand'
+    Module: 'MediaPlayer.MPRemoteCommandCenter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'togglePlayPauseCommand'
+      JsName: 'togglePlayPauseCommand'
+      Module: 'MediaPlayer.MPRemoteCommandCenter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'togglePlayPauseCommand'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPRemoteCommand
+        Name: MPRemoteCommand
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MPRemoteCommandEvent'
+  JsName: 'MPRemoteCommandEvent'
+  Module: 'MediaPlayer.MPRemoteCommandEvent'
+  IntroducedIn: 7.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'command'
+    JsName: 'command'
+    Module: 'MediaPlayer.MPRemoteCommandEvent'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'command'
+      JsName: 'command'
+      Module: 'MediaPlayer.MPRemoteCommandEvent'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'command'
+      Signature:
+      - Type: Interface
+        Module: MediaPlayer.MPRemoteCommand
+        Name: MPRemoteCommand
+      TypeEncoding: '@8@0:4'
+  - Name: 'timestamp'
+    JsName: 'timestamp'
+    Module: 'MediaPlayer.MPRemoteCommandEvent'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'timestamp'
+      JsName: 'timestamp'
+      Module: 'MediaPlayer.MPRemoteCommandEvent'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'timestamp'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MPSkipIntervalCommandEvent'
+  JsName: 'MPSkipIntervalCommandEvent'
+  Module: 'MediaPlayer.MPRemoteCommandEvent'
+  IntroducedIn: 7.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'interval'
+    JsName: 'interval'
+    Module: 'MediaPlayer.MPRemoteCommandEvent'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'interval'
+      JsName: 'interval'
+      Module: 'MediaPlayer.MPRemoteCommandEvent'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'interval'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  Protocols: []
+  Base:
+    Module: MediaPlayer.MPRemoteCommandEvent
+    Name: MPRemoteCommandEvent
+  Type: Interface
+- Name: 'MPSeekCommandEventType'
+  JsName: 'MPSeekCommandEventType'
+  Module: 'MediaPlayer.MPRemoteCommandEvent'
+  IntroducedIn: 7.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MPSeekCommandEventTypeBeginSeeking":0,"MPSeekCommandEventTypeEndSeeking":1})
+- Name: 'MPSeekCommandEvent'
+  JsName: 'MPSeekCommandEvent'
+  Module: 'MediaPlayer.MPRemoteCommandEvent'
+  IntroducedIn: 7.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'type'
+    JsName: 'type'
+    Module: 'MediaPlayer.MPRemoteCommandEvent'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'type'
+      JsName: 'type'
+      Module: 'MediaPlayer.MPRemoteCommandEvent'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'type'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  Protocols: []
+  Base:
+    Module: MediaPlayer.MPRemoteCommandEvent
+    Name: MPRemoteCommandEvent
+  Type: Interface
+- Name: 'MPRatingCommandEvent'
+  JsName: 'MPRatingCommandEvent'
+  Module: 'MediaPlayer.MPRemoteCommandEvent'
+  IntroducedIn: 7.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'rating'
+    JsName: 'rating'
+    Module: 'MediaPlayer.MPRemoteCommandEvent'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'rating'
+      JsName: 'rating'
+      Module: 'MediaPlayer.MPRemoteCommandEvent'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rating'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f8@0:4'
+  Protocols: []
+  Base:
+    Module: MediaPlayer.MPRemoteCommandEvent
+    Name: MPRemoteCommandEvent
+  Type: Interface
+- Name: 'MPChangePlaybackRateCommandEvent'
+  JsName: 'MPChangePlaybackRateCommandEvent'
+  Module: 'MediaPlayer.MPRemoteCommandEvent'
+  IntroducedIn: 7.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'playbackRate'
+    JsName: 'playbackRate'
+    Module: 'MediaPlayer.MPRemoteCommandEvent'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'playbackRate'
+      JsName: 'playbackRate'
+      Module: 'MediaPlayer.MPRemoteCommandEvent'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'playbackRate'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f8@0:4'
+  Protocols: []
+  Base:
+    Module: MediaPlayer.MPRemoteCommandEvent
+    Name: MPRemoteCommandEvent
+  Type: Interface
+- Name: 'MPFeedbackCommandEvent'
+  JsName: 'MPFeedbackCommandEvent'
+  Module: 'MediaPlayer.MPRemoteCommandEvent'
+  IntroducedIn: 7.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'negative'
+    JsName: 'negative'
+    Module: 'MediaPlayer.MPRemoteCommandEvent'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isNegative'
+      JsName: 'isNegative'
+      Module: 'MediaPlayer.MPRemoteCommandEvent'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isNegative'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  Protocols: []
+  Base:
+    Module: MediaPlayer.MPRemoteCommandEvent
+    Name: MPRemoteCommandEvent
+  Type: Interface
+- Name: 'MPVolumeSettingsAlertShow'
+  JsName: 'MPVolumeSettingsAlertShow'
+  Module: 'MediaPlayer.MPVolumeSettings'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+- Name: 'MPVolumeSettingsAlertHide'
+  JsName: 'MPVolumeSettingsAlertHide'
+  Module: 'MediaPlayer.MPVolumeSettings'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+- Name: 'MPVolumeSettingsAlertIsVisible'
+  JsName: 'MPVolumeSettingsAlertIsVisible'
+  Module: 'MediaPlayer.MPVolumeSettings'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+- Name: 'MPVolumeView'
+  JsName: 'MPVolumeView'
+  Module: 'MediaPlayer.MPVolumeView'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'maximumVolumeSliderImageForState:'
+    JsName: 'maximumVolumeSliderImageForState'
+    Module: 'MediaPlayer.MPVolumeView'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'maximumVolumeSliderImageForState:'
+    Signature:
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    - Type: UInt
+    TypeEncoding: '@12@0:4I8'
+  - Name: 'minimumVolumeSliderImageForState:'
+    JsName: 'minimumVolumeSliderImageForState'
+    Module: 'MediaPlayer.MPVolumeView'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'minimumVolumeSliderImageForState:'
+    Signature:
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    - Type: UInt
+    TypeEncoding: '@12@0:4I8'
+  - Name: 'routeButtonImageForState:'
+    JsName: 'routeButtonImageForState'
+    Module: 'MediaPlayer.MPVolumeView'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'routeButtonImageForState:'
+    Signature:
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    - Type: UInt
+    TypeEncoding: '@12@0:4I8'
+  - Name: 'routeButtonRectForBounds:'
+    JsName: 'routeButtonRectForBounds'
+    Module: 'MediaPlayer.MPVolumeView'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'routeButtonRectForBounds:'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    TypeEncoding: '{CGRect={CGPoint=ff}{CGSize=ff}}24@0:4{CGRect={CGPoint=ff}{CGSize=ff}}8'
+  - Name: 'setMaximumVolumeSliderImage:forState:'
+    JsName: 'setMaximumVolumeSliderImageForState'
+    Module: 'MediaPlayer.MPVolumeView'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setMaximumVolumeSliderImage:forState:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    - Type: UInt
+    TypeEncoding: 'v16@0:4@8I12'
+  - Name: 'setMinimumVolumeSliderImage:forState:'
+    JsName: 'setMinimumVolumeSliderImageForState'
+    Module: 'MediaPlayer.MPVolumeView'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setMinimumVolumeSliderImage:forState:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    - Type: UInt
+    TypeEncoding: 'v16@0:4@8I12'
+  - Name: 'setRouteButtonImage:forState:'
+    JsName: 'setRouteButtonImageForState'
+    Module: 'MediaPlayer.MPVolumeView'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setRouteButtonImage:forState:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    - Type: UInt
+    TypeEncoding: 'v16@0:4@8I12'
+  - Name: 'setVolumeThumbImage:forState:'
+    JsName: 'setVolumeThumbImageForState'
+    Module: 'MediaPlayer.MPVolumeView'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setVolumeThumbImage:forState:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    - Type: UInt
+    TypeEncoding: 'v16@0:4@8I12'
+  - Name: 'volumeSliderRectForBounds:'
+    JsName: 'volumeSliderRectForBounds'
+    Module: 'MediaPlayer.MPVolumeView'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'volumeSliderRectForBounds:'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    TypeEncoding: '{CGRect={CGPoint=ff}{CGSize=ff}}24@0:4{CGRect={CGPoint=ff}{CGSize=ff}}8'
+  - Name: 'volumeThumbImageForState:'
+    JsName: 'volumeThumbImageForState'
+    Module: 'MediaPlayer.MPVolumeView'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'volumeThumbImageForState:'
+    Signature:
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    - Type: UInt
+    TypeEncoding: '@12@0:4I8'
+  - Name: 'volumeThumbRectForBounds:volumeSliderRect:value:'
+    JsName: 'volumeThumbRectForBoundsVolumeSliderRectValue'
+    Module: 'MediaPlayer.MPVolumeView'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'volumeThumbRectForBounds:volumeSliderRect:value:'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Float
+    TypeEncoding: '{CGRect={CGPoint=ff}{CGSize=ff}}44@0:4{CGRect={CGPoint=ff}{CGSize=ff}}8{CGRect={CGPoint=ff}{CGSize=ff}}24f40'
+  StaticMethods: []
+  Properties:
+  - Name: 'showsRouteButton'
+    JsName: 'showsRouteButton'
+    Module: 'MediaPlayer.MPVolumeView'
+    IntroducedIn: 4.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'showsRouteButton'
+      JsName: 'showsRouteButton'
+      Module: 'MediaPlayer.MPVolumeView'
+      IntroducedIn: 4.2
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'showsRouteButton'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setShowsRouteButton:'
+      JsName: 'setShowsRouteButton'
+      Module: 'MediaPlayer.MPVolumeView'
+      IntroducedIn: 4.2
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShowsRouteButton:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'showsVolumeSlider'
+    JsName: 'showsVolumeSlider'
+    Module: 'MediaPlayer.MPVolumeView'
+    IntroducedIn: 4.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'showsVolumeSlider'
+      JsName: 'showsVolumeSlider'
+      Module: 'MediaPlayer.MPVolumeView'
+      IntroducedIn: 4.2
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'showsVolumeSlider'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setShowsVolumeSlider:'
+      JsName: 'setShowsVolumeSlider'
+      Module: 'MediaPlayer.MPVolumeView'
+      IntroducedIn: 4.2
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShowsVolumeSlider:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'volumeWarningSliderImage'
+    JsName: 'volumeWarningSliderImage'
+    Module: 'MediaPlayer.MPVolumeView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'volumeWarningSliderImage'
+      JsName: 'volumeWarningSliderImage'
+      Module: 'MediaPlayer.MPVolumeView'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'volumeWarningSliderImage'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIImage
+        Name: UIImage
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setVolumeWarningSliderImage:'
+      JsName: 'setVolumeWarningSliderImage'
+      Module: 'MediaPlayer.MPVolumeView'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setVolumeWarningSliderImage:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: UIKit.UIImage
+        Name: UIImage
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'wirelessRouteActive'
+    JsName: 'wirelessRouteActive'
+    Module: 'MediaPlayer.MPVolumeView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isWirelessRouteActive'
+      JsName: 'isWirelessRouteActive'
+      Module: 'MediaPlayer.MPVolumeView'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isWirelessRouteActive'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'wirelessRoutesAvailable'
+    JsName: 'wirelessRoutesAvailable'
+    Module: 'MediaPlayer.MPVolumeView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'areWirelessRoutesAvailable'
+      JsName: 'areWirelessRoutesAvailable'
+      Module: 'MediaPlayer.MPVolumeView'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'areWirelessRoutesAvailable'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCoding
+  Base:
+    Module: UIKit.UIView
+    Name: UIView
+  Type: Interface
+- Name: 'MPVolumeViewWirelessRoutesAvailableDidChangeNotification'
+  JsName: 'MPVolumeViewWirelessRoutesAvailableDidChangeNotification'
+  Module: 'MediaPlayer.MPVolumeView'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MPVolumeViewWirelessRouteActiveDidChangeNotification'
+  JsName: 'MPVolumeViewWirelessRouteActiveDidChangeNotification'
+  Module: 'MediaPlayer.MPVolumeView'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+...

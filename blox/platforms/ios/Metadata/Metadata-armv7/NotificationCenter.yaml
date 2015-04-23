@@ -1,0 +1,110 @@
+name: NotificationCenter
+items:
+- Name: 'NCUpdateResult'
+  JsName: 'NCUpdateResult'
+  Module: 'NotificationCenter.NCWidgetProviding'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"NCUpdateResultNewData":0,"NCUpdateResultNoData":1,"NCUpdateResultFailed":2})
+- Name: 'NCWidgetProviding'
+  JsName: 'NCWidgetProviding'
+  Module: 'NotificationCenter.NCWidgetProviding'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'widgetMarginInsetsForProposedMarginInsets:'
+    JsName: 'widgetMarginInsetsForProposedMarginInsets'
+    Module: 'NotificationCenter.NCWidgetProviding'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'widgetMarginInsetsForProposedMarginInsets:'
+    Signature:
+    - Type: Struct
+      Module: UIKit.UIGeometry
+      Name: UIEdgeInsets
+    - Type: Struct
+      Module: UIKit.UIGeometry
+      Name: UIEdgeInsets
+    TypeEncoding: '{UIEdgeInsets=ffff}24@0:4{UIEdgeInsets=ffff}8'
+  - Name: 'widgetPerformUpdateWithCompletionHandler:'
+    JsName: 'widgetPerformUpdateWithCompletionHandler'
+    Module: 'NotificationCenter.NCWidgetProviding'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'widgetPerformUpdateWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: UInt
+    TypeEncoding: 'v12@0:4@?8'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'NotificationCenter'
+  JsName: 'NotificationCenter'
+  Module: 'NotificationCenter.NCWidgetProviding'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'notificationCenterVibrancyEffect'
+    JsName: 'notificationCenterVibrancyEffect'
+    Module: 'NotificationCenter.NCWidgetProviding'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'notificationCenterVibrancyEffect'
+    Signature:
+    - Type: Interface
+      Module: UIKit.UIVisualEffectView
+      Name: UIVibrancyEffect
+    TypeEncoding: '@8@0:4'
+  Properties: []
+  Protocols: []
+  ExtendedInterface:
+    Module: UIKit.UIVisualEffectView
+    Name: UIVibrancyEffect
+  Type: Category
+- Name: 'NCWidgetController'
+  JsName: 'NCWidgetController'
+  Module: 'NotificationCenter.NCWidgetController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'setHasContent:forWidgetWithBundleIdentifier:'
+    JsName: 'setHasContentForWidgetWithBundleIdentifier'
+    Module: 'NotificationCenter.NCWidgetController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setHasContent:forWidgetWithBundleIdentifier:'
+    Signature:
+    - Type: Void
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v16@0:4c8@12'
+  StaticMethods:
+  - Name: 'widgetController'
+    JsName: 'widgetController'
+    Module: 'NotificationCenter.NCWidgetController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'widgetController'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+...

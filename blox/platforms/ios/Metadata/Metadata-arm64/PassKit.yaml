@@ -1,0 +1,1741 @@
+name: PassKit
+items:
+- Name: 'PKPassKitErrorDomain'
+  JsName: 'PKPassKitErrorDomain'
+  Module: 'PassKit.PKError'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'PKPassKitErrorCode'
+  JsName: 'PKPassKitErrorCode'
+  Module: 'PassKit.PKError'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PKUnknownError":-1,"PKInvalidDataError":1,"PKUnsupportedVersionError":2,"PKInvalidSignature":3,"PKNotEntitledError":4})
+- Name: 'PKObject'
+  JsName: 'PKObject'
+  Module: 'PassKit.PKObject'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PKPassType'
+  JsName: 'PKPassType'
+  Module: 'PassKit.PKPass'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PKPassTypeBarcode":0,"PKPassTypePayment":1,"PKPassTypeAny":-1})
+- Name: 'PKPass'
+  JsName: 'PKPass'
+  Module: 'PassKit.PKPass'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithData:error:'
+    JsName: 'initWithDataError'
+    Module: 'PassKit.PKPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithData:error:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@32@0:8@16^@24'
+  - Name: 'localizedValueForFieldKey:'
+    JsName: 'localizedValueForFieldKey'
+    Module: 'PassKit.PKPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'localizedValueForFieldKey:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'authenticationToken'
+    JsName: 'authenticationToken'
+    Module: 'PassKit.PKPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'authenticationToken'
+      JsName: 'authenticationToken'
+      Module: 'PassKit.PKPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'authenticationToken'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'icon'
+    JsName: 'icon'
+    Module: 'PassKit.PKPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'icon'
+      JsName: 'icon'
+      Module: 'PassKit.PKPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'icon'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIImage
+        Name: UIImage
+      TypeEncoding: '@16@0:8'
+  - Name: 'localizedDescription'
+    JsName: 'localizedDescription'
+    Module: 'PassKit.PKPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'localizedDescription'
+      JsName: 'localizedDescription'
+      Module: 'PassKit.PKPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'localizedDescription'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'localizedName'
+    JsName: 'localizedName'
+    Module: 'PassKit.PKPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'localizedName'
+      JsName: 'localizedName'
+      Module: 'PassKit.PKPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'localizedName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'organizationName'
+    JsName: 'organizationName'
+    Module: 'PassKit.PKPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'organizationName'
+      JsName: 'organizationName'
+      Module: 'PassKit.PKPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'organizationName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'passType'
+    JsName: 'passType'
+    Module: 'PassKit.PKPass'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'passType'
+      JsName: 'passType'
+      Module: 'PassKit.PKPass'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'passType'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'passTypeIdentifier'
+    JsName: 'passTypeIdentifier'
+    Module: 'PassKit.PKPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'passTypeIdentifier'
+      JsName: 'passTypeIdentifier'
+      Module: 'PassKit.PKPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'passTypeIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'passURL'
+    JsName: 'passURL'
+    Module: 'PassKit.PKPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'passURL'
+      JsName: 'passURL'
+      Module: 'PassKit.PKPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'passURL'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@16@0:8'
+  - Name: 'paymentPass'
+    JsName: 'paymentPass'
+    Module: 'PassKit.PKPass'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'paymentPass'
+      JsName: 'paymentPass'
+      Module: 'PassKit.PKPass'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'paymentPass'
+      Signature:
+      - Type: Interface
+        Module: PassKit.PKPaymentPass
+        Name: PKPaymentPass
+      TypeEncoding: '@16@0:8'
+  - Name: 'relevantDate'
+    JsName: 'relevantDate'
+    Module: 'PassKit.PKPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'relevantDate'
+      JsName: 'relevantDate'
+      Module: 'PassKit.PKPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'relevantDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@16@0:8'
+  - Name: 'serialNumber'
+    JsName: 'serialNumber'
+    Module: 'PassKit.PKPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'serialNumber'
+      JsName: 'serialNumber'
+      Module: 'PassKit.PKPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'serialNumber'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'userInfo'
+    JsName: 'userInfo'
+    Module: 'PassKit.PKPass'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'userInfo'
+      JsName: 'userInfo'
+      Module: 'PassKit.PKPass'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'userInfo'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: '@16@0:8'
+  - Name: 'webServiceURL'
+    JsName: 'webServiceURL'
+    Module: 'PassKit.PKPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'webServiceURL'
+      JsName: 'webServiceURL'
+      Module: 'PassKit.PKPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'webServiceURL'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: PassKit.PKObject
+    Name: PKObject
+  Type: Interface
+- Name: 'PKPaymentPassActivationState'
+  JsName: 'PKPaymentPassActivationState'
+  Module: 'PassKit.PKPaymentPass'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PKPaymentPassActivationStateActivated":0,"PKPaymentPassActivationStateRequiresActivation":1,"PKPaymentPassActivationStateActivating":2,"PKPaymentPassActivationStateSuspended":3,"PKPaymentPassActivationStateDeactivated":4})
+- Name: 'PKPaymentPass'
+  JsName: 'PKPaymentPass'
+  Module: 'PassKit.PKPaymentPass'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'activationState'
+    JsName: 'activationState'
+    Module: 'PassKit.PKPaymentPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'activationState'
+      JsName: 'activationState'
+      Module: 'PassKit.PKPaymentPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'activationState'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'deviceAccountIdentifier'
+    JsName: 'deviceAccountIdentifier'
+    Module: 'PassKit.PKPaymentPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'deviceAccountIdentifier'
+      JsName: 'deviceAccountIdentifier'
+      Module: 'PassKit.PKPaymentPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'deviceAccountIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'deviceAccountNumberSuffix'
+    JsName: 'deviceAccountNumberSuffix'
+    Module: 'PassKit.PKPaymentPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'deviceAccountNumberSuffix'
+      JsName: 'deviceAccountNumberSuffix'
+      Module: 'PassKit.PKPaymentPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'deviceAccountNumberSuffix'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'primaryAccountIdentifier'
+    JsName: 'primaryAccountIdentifier'
+    Module: 'PassKit.PKPaymentPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'primaryAccountIdentifier'
+      JsName: 'primaryAccountIdentifier'
+      Module: 'PassKit.PKPaymentPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'primaryAccountIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'primaryAccountNumberSuffix'
+    JsName: 'primaryAccountNumberSuffix'
+    Module: 'PassKit.PKPaymentPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'primaryAccountNumberSuffix'
+      JsName: 'primaryAccountNumberSuffix'
+      Module: 'PassKit.PKPaymentPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'primaryAccountNumberSuffix'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: PassKit.PKPass
+    Name: PKPass
+  Type: Interface
+- Name: 'PKPassLibraryAddPassesStatus'
+  JsName: 'PKPassLibraryAddPassesStatus'
+  Module: 'PassKit.PKPassLibrary'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PKPassLibraryDidAddPasses":0,"PKPassLibraryShouldReviewPasses":1,"PKPassLibraryDidCancelAddPasses":2})
+- Name: 'PKPassLibrary'
+  JsName: 'PKPassLibrary'
+  Module: 'PassKit.PKPassLibrary'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'activatePaymentPass:withActivationCode:completion:'
+    JsName: 'activatePaymentPassWithActivationCodeCompletion'
+    Module: 'PassKit.PKPassLibrary'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'activatePaymentPass:withActivationCode:completion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: PassKit.PKPaymentPass
+      Name: PKPaymentPass
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v40@0:8@16@24@?32'
+  - Name: 'activatePaymentPass:withActivationData:completion:'
+    JsName: 'activatePaymentPassWithActivationDataCompletion'
+    Module: 'PassKit.PKPassLibrary'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'activatePaymentPass:withActivationData:completion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: PassKit.PKPaymentPass
+      Name: PKPaymentPass
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v40@0:8@16@24@?32'
+  - Name: 'addPasses:withCompletionHandler:'
+    JsName: 'addPassesWithCompletionHandler'
+    Module: 'PassKit.PKPassLibrary'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addPasses:withCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Long
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'containsPass:'
+    JsName: 'containsPass'
+    Module: 'PassKit.PKPassLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'containsPass:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: PassKit.PKPass
+      Name: PKPass
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'passes'
+    JsName: 'passes'
+    Module: 'PassKit.PKPassLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'passes'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@16@0:8'
+  - Name: 'passesOfType:'
+    JsName: 'passesOfType'
+    Module: 'PassKit.PKPassLibrary'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'passesOfType:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: ULong
+    TypeEncoding: '@24@0:8Q16'
+  - Name: 'passWithPassTypeIdentifier:serialNumber:'
+    JsName: 'passWithPassTypeIdentifierSerialNumber'
+    Module: 'PassKit.PKPassLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'passWithPassTypeIdentifier:serialNumber:'
+    Signature:
+    - Type: Interface
+      Module: PassKit.PKPass
+      Name: PKPass
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'removePass:'
+    JsName: 'removePass'
+    Module: 'PassKit.PKPassLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removePass:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: PassKit.PKPass
+      Name: PKPass
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'replacePassWithPass:'
+    JsName: 'replacePassWithPass'
+    Module: 'PassKit.PKPassLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'replacePassWithPass:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: PassKit.PKPass
+      Name: PKPass
+    TypeEncoding: 'B24@0:8@16'
+  StaticMethods:
+  - Name: 'isPassLibraryAvailable'
+    JsName: 'isPassLibraryAvailable'
+    Module: 'PassKit.PKPassLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isPassLibraryAvailable'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  - Name: 'isPaymentPassActivationAvailable'
+    JsName: 'isPaymentPassActivationAvailable'
+    Module: 'PassKit.PKPassLibrary'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isPaymentPassActivationAvailable'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PKPassLibraryDidChangeNotification'
+  JsName: 'PKPassLibraryDidChangeNotification'
+  Module: 'PassKit.PKPassLibrary'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'PKPassLibraryAddedPassesUserInfoKey'
+  JsName: 'PKPassLibraryAddedPassesUserInfoKey'
+  Module: 'PassKit.PKPassLibrary'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'PKPassLibraryReplacementPassesUserInfoKey'
+  JsName: 'PKPassLibraryReplacementPassesUserInfoKey'
+  Module: 'PassKit.PKPassLibrary'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'PKPassLibraryRemovedPassInfosUserInfoKey'
+  JsName: 'PKPassLibraryRemovedPassInfosUserInfoKey'
+  Module: 'PassKit.PKPassLibrary'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'PKPassLibraryPassTypeIdentifierUserInfoKey'
+  JsName: 'PKPassLibraryPassTypeIdentifierUserInfoKey'
+  Module: 'PassKit.PKPassLibrary'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'PKPassLibrarySerialNumberUserInfoKey'
+  JsName: 'PKPassLibrarySerialNumberUserInfoKey'
+  Module: 'PassKit.PKPassLibrary'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'PKAddPassesViewControllerDelegate'
+  JsName: 'PKAddPassesViewControllerDelegate'
+  Module: 'PassKit.PKAddPassesViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addPassesViewControllerDidFinish:'
+    JsName: 'addPassesViewControllerDidFinish'
+    Module: 'PassKit.PKAddPassesViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addPassesViewControllerDidFinish:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: PassKit.PKAddPassesViewController
+      Name: PKAddPassesViewController
+    TypeEncoding: 'v24@0:8@16'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'PKAddPassesViewController'
+  JsName: 'PKAddPassesViewController'
+  Module: 'PassKit.PKAddPassesViewController'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithPass:'
+    JsName: 'initWithPass'
+    Module: 'PassKit.PKAddPassesViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithPass:'
+    Signature:
+    - Type: Instancetype
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'initWithPasses:'
+    JsName: 'initWithPasses'
+    Module: 'PassKit.PKAddPassesViewController'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithPasses:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods:
+  - Name: 'canAddPasses'
+    JsName: 'canAddPasses'
+    Module: 'PassKit.PKAddPassesViewController'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'canAddPasses'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  Properties:
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'PassKit.PKAddPassesViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'PassKit.PKAddPassesViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: PassKit.PKAddPassesViewController
+          Name: PKAddPassesViewControllerDelegate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'PassKit.PKAddPassesViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: PassKit.PKAddPassesViewController
+          Name: PKAddPassesViewControllerDelegate
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Interface
+- Name: 'PKPaymentNetworkAmex'
+  JsName: 'PKPaymentNetworkAmex'
+  Module: 'PassKit.PKPaymentRequest'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'PKPaymentNetworkMasterCard'
+  JsName: 'PKPaymentNetworkMasterCard'
+  Module: 'PassKit.PKPaymentRequest'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'PKPaymentNetworkVisa'
+  JsName: 'PKPaymentNetworkVisa'
+  Module: 'PassKit.PKPaymentRequest'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'PKMerchantCapability'
+  JsName: 'PKMerchantCapability'
+  Module: 'PassKit.PKPaymentRequest'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PKMerchantCapability3DS":1,"PKMerchantCapabilityEMV":2})
+- Name: 'PKAddressField'
+  JsName: 'PKAddressField'
+  Module: 'PassKit.PKPaymentRequest'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PKAddressFieldNone":0,"PKAddressFieldPostalAddress":1,"PKAddressFieldPhone":2,"PKAddressFieldEmail":4,"PKAddressFieldAll":7})
+- Name: 'PKPaymentSummaryItem'
+  JsName: 'PKPaymentSummaryItem'
+  Module: 'PassKit.PKPaymentRequest'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'summaryItemWithLabel:amount:'
+    JsName: 'summaryItemWithLabelAmount'
+    Module: 'PassKit.PKPaymentRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'summaryItemWithLabel:amount:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSDecimalNumber
+      Name: NSDecimalNumber
+    TypeEncoding: '@32@0:8@16@24'
+  Properties:
+  - Name: 'amount'
+    JsName: 'amount'
+    Module: 'PassKit.PKPaymentRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'amount'
+      JsName: 'amount'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'amount'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDecimalNumber
+        Name: NSDecimalNumber
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setAmount:'
+      JsName: 'setAmount'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAmount:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSDecimalNumber
+        Name: NSDecimalNumber
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'label'
+    JsName: 'label'
+    Module: 'PassKit.PKPaymentRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'label'
+      JsName: 'label'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'label'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setLabel:'
+      JsName: 'setLabel'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLabel:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PKShippingMethod'
+  JsName: 'PKShippingMethod'
+  Module: 'PassKit.PKPaymentRequest'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'detail'
+    JsName: 'detail'
+    Module: 'PassKit.PKPaymentRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'detail'
+      JsName: 'detail'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'detail'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDetail:'
+      JsName: 'setDetail'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDetail:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'identifier'
+    JsName: 'identifier'
+    Module: 'PassKit.PKPaymentRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'identifier'
+      JsName: 'identifier'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'identifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setIdentifier:'
+      JsName: 'setIdentifier'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setIdentifier:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: PassKit.PKPaymentRequest
+    Name: PKPaymentSummaryItem
+  Type: Interface
+- Name: 'PKPaymentRequest'
+  JsName: 'PKPaymentRequest'
+  Module: 'PassKit.PKPaymentRequest'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'applicationData'
+    JsName: 'applicationData'
+    Module: 'PassKit.PKPaymentRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'applicationData'
+      JsName: 'applicationData'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'applicationData'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setApplicationData:'
+      JsName: 'setApplicationData'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setApplicationData:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'billingAddress'
+    JsName: 'billingAddress'
+    Module: 'PassKit.PKPaymentRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'billingAddress'
+      JsName: 'billingAddress'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'billingAddress'
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: '^v16@0:8'
+    Setter:
+      Name: 'setBillingAddress:'
+      JsName: 'setBillingAddress'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setBillingAddress:'
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: 'v24@0:8^v16'
+  - Name: 'countryCode'
+    JsName: 'countryCode'
+    Module: 'PassKit.PKPaymentRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'countryCode'
+      JsName: 'countryCode'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'countryCode'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setCountryCode:'
+      JsName: 'setCountryCode'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCountryCode:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'currencyCode'
+    JsName: 'currencyCode'
+    Module: 'PassKit.PKPaymentRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'currencyCode'
+      JsName: 'currencyCode'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'currencyCode'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setCurrencyCode:'
+      JsName: 'setCurrencyCode'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCurrencyCode:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'merchantCapabilities'
+    JsName: 'merchantCapabilities'
+    Module: 'PassKit.PKPaymentRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'merchantCapabilities'
+      JsName: 'merchantCapabilities'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'merchantCapabilities'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setMerchantCapabilities:'
+      JsName: 'setMerchantCapabilities'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMerchantCapabilities:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'merchantIdentifier'
+    JsName: 'merchantIdentifier'
+    Module: 'PassKit.PKPaymentRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'merchantIdentifier'
+      JsName: 'merchantIdentifier'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'merchantIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setMerchantIdentifier:'
+      JsName: 'setMerchantIdentifier'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMerchantIdentifier:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'paymentSummaryItems'
+    JsName: 'paymentSummaryItems'
+    Module: 'PassKit.PKPaymentRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'paymentSummaryItems'
+      JsName: 'paymentSummaryItems'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'paymentSummaryItems'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setPaymentSummaryItems:'
+      JsName: 'setPaymentSummaryItems'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPaymentSummaryItems:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'requiredBillingAddressFields'
+    JsName: 'requiredBillingAddressFields'
+    Module: 'PassKit.PKPaymentRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'requiredBillingAddressFields'
+      JsName: 'requiredBillingAddressFields'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'requiredBillingAddressFields'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setRequiredBillingAddressFields:'
+      JsName: 'setRequiredBillingAddressFields'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRequiredBillingAddressFields:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'requiredShippingAddressFields'
+    JsName: 'requiredShippingAddressFields'
+    Module: 'PassKit.PKPaymentRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'requiredShippingAddressFields'
+      JsName: 'requiredShippingAddressFields'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'requiredShippingAddressFields'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setRequiredShippingAddressFields:'
+      JsName: 'setRequiredShippingAddressFields'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRequiredShippingAddressFields:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'shippingAddress'
+    JsName: 'shippingAddress'
+    Module: 'PassKit.PKPaymentRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'shippingAddress'
+      JsName: 'shippingAddress'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'shippingAddress'
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: '^v16@0:8'
+    Setter:
+      Name: 'setShippingAddress:'
+      JsName: 'setShippingAddress'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShippingAddress:'
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: 'v24@0:8^v16'
+  - Name: 'shippingMethods'
+    JsName: 'shippingMethods'
+    Module: 'PassKit.PKPaymentRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'shippingMethods'
+      JsName: 'shippingMethods'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'shippingMethods'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setShippingMethods:'
+      JsName: 'setShippingMethods'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShippingMethods:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'supportedNetworks'
+    JsName: 'supportedNetworks'
+    Module: 'PassKit.PKPaymentRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'supportedNetworks'
+      JsName: 'supportedNetworks'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'supportedNetworks'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setSupportedNetworks:'
+      JsName: 'setSupportedNetworks'
+      Module: 'PassKit.PKPaymentRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSupportedNetworks:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PKPaymentToken'
+  JsName: 'PKPaymentToken'
+  Module: 'PassKit.PKPaymentToken'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'paymentData'
+    JsName: 'paymentData'
+    Module: 'PassKit.PKPaymentToken'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'paymentData'
+      JsName: 'paymentData'
+      Module: 'PassKit.PKPaymentToken'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'paymentData'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@16@0:8'
+  - Name: 'paymentInstrumentName'
+    JsName: 'paymentInstrumentName'
+    Module: 'PassKit.PKPaymentToken'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'paymentInstrumentName'
+      JsName: 'paymentInstrumentName'
+      Module: 'PassKit.PKPaymentToken'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'paymentInstrumentName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'paymentNetwork'
+    JsName: 'paymentNetwork'
+    Module: 'PassKit.PKPaymentToken'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'paymentNetwork'
+      JsName: 'paymentNetwork'
+      Module: 'PassKit.PKPaymentToken'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'paymentNetwork'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'transactionIdentifier'
+    JsName: 'transactionIdentifier'
+    Module: 'PassKit.PKPaymentToken'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'transactionIdentifier'
+      JsName: 'transactionIdentifier'
+      Module: 'PassKit.PKPaymentToken'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'transactionIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PKPayment'
+  JsName: 'PKPayment'
+  Module: 'PassKit.PKPayment'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'billingAddress'
+    JsName: 'billingAddress'
+    Module: 'PassKit.PKPayment'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'billingAddress'
+      JsName: 'billingAddress'
+      Module: 'PassKit.PKPayment'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'billingAddress'
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: '^v16@0:8'
+  - Name: 'shippingAddress'
+    JsName: 'shippingAddress'
+    Module: 'PassKit.PKPayment'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'shippingAddress'
+      JsName: 'shippingAddress'
+      Module: 'PassKit.PKPayment'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'shippingAddress'
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: '^v16@0:8'
+  - Name: 'shippingMethod'
+    JsName: 'shippingMethod'
+    Module: 'PassKit.PKPayment'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'shippingMethod'
+      JsName: 'shippingMethod'
+      Module: 'PassKit.PKPayment'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'shippingMethod'
+      Signature:
+      - Type: Interface
+        Module: PassKit.PKPaymentRequest
+        Name: PKShippingMethod
+      TypeEncoding: '@16@0:8'
+  - Name: 'token'
+    JsName: 'token'
+    Module: 'PassKit.PKPayment'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'token'
+      JsName: 'token'
+      Module: 'PassKit.PKPayment'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'token'
+      Signature:
+      - Type: Interface
+        Module: PassKit.PKPaymentToken
+        Name: PKPaymentToken
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PKPaymentAuthorizationStatus'
+  JsName: 'PKPaymentAuthorizationStatus'
+  Module: 'PassKit.PKPaymentAuthorizationViewController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"PKPaymentAuthorizationStatusSuccess":0,"PKPaymentAuthorizationStatusFailure":1,"PKPaymentAuthorizationStatusInvalidBillingPostalAddress":2,"PKPaymentAuthorizationStatusInvalidShippingPostalAddress":3,"PKPaymentAuthorizationStatusInvalidShippingContact":4})
+- Name: 'PKPaymentAuthorizationViewControllerDelegate'
+  JsName: 'PKPaymentAuthorizationViewControllerDelegate'
+  Module: 'PassKit.PKPaymentAuthorizationViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'paymentAuthorizationViewController:didAuthorizePayment:completion:'
+    JsName: 'paymentAuthorizationViewControllerDidAuthorizePaymentCompletion'
+    Module: 'PassKit.PKPaymentAuthorizationViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'paymentAuthorizationViewController:didAuthorizePayment:completion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: PassKit.PKPaymentAuthorizationViewController
+      Name: PKPaymentAuthorizationViewController
+    - Type: Interface
+      Module: PassKit.PKPayment
+      Name: PKPayment
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Long
+    TypeEncoding: 'v40@0:8@16@24@?32'
+  - Name: 'paymentAuthorizationViewControllerDidFinish:'
+    JsName: 'paymentAuthorizationViewControllerDidFinish'
+    Module: 'PassKit.PKPaymentAuthorizationViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'paymentAuthorizationViewControllerDidFinish:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: PassKit.PKPaymentAuthorizationViewController
+      Name: PKPaymentAuthorizationViewController
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'paymentAuthorizationViewController:didSelectShippingAddress:completion:'
+    JsName: 'paymentAuthorizationViewControllerDidSelectShippingAddressCompletion'
+    Module: 'PassKit.PKPaymentAuthorizationViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'paymentAuthorizationViewController:didSelectShippingAddress:completion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: PassKit.PKPaymentAuthorizationViewController
+      Name: PKPaymentAuthorizationViewController
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Long
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+    TypeEncoding: 'v40@0:8@16^v24@?32'
+  - Name: 'paymentAuthorizationViewController:didSelectShippingMethod:completion:'
+    JsName: 'paymentAuthorizationViewControllerDidSelectShippingMethodCompletion'
+    Module: 'PassKit.PKPaymentAuthorizationViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'paymentAuthorizationViewController:didSelectShippingMethod:completion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: PassKit.PKPaymentAuthorizationViewController
+      Name: PKPaymentAuthorizationViewController
+    - Type: Interface
+      Module: PassKit.PKPaymentRequest
+      Name: PKShippingMethod
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Long
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+    TypeEncoding: 'v40@0:8@16@24@?32'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'PKPaymentAuthorizationViewController'
+  JsName: 'PKPaymentAuthorizationViewController'
+  Module: 'PassKit.PKPaymentAuthorizationViewController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithPaymentRequest:'
+    JsName: 'initWithPaymentRequest'
+    Module: 'PassKit.PKPaymentAuthorizationViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithPaymentRequest:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: PassKit.PKPaymentRequest
+      Name: PKPaymentRequest
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods:
+  - Name: 'canMakePayments'
+    JsName: 'canMakePayments'
+    Module: 'PassKit.PKPaymentAuthorizationViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'canMakePayments'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  - Name: 'canMakePaymentsUsingNetworks:'
+    JsName: 'canMakePaymentsUsingNetworks'
+    Module: 'PassKit.PKPaymentAuthorizationViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'canMakePaymentsUsingNetworks:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'B24@0:8@16'
+  Properties:
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'PassKit.PKPaymentAuthorizationViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'PassKit.PKPaymentAuthorizationViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: PassKit.PKPaymentAuthorizationViewController
+          Name: PKPaymentAuthorizationViewControllerDelegate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'PassKit.PKPaymentAuthorizationViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: PassKit.PKPaymentAuthorizationViewController
+          Name: PKPaymentAuthorizationViewControllerDelegate
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Interface
+...

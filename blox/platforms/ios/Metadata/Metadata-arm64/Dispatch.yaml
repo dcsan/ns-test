@@ -1,0 +1,1528 @@
+name: Dispatch
+items:
+- Name: 'dispatch_time'
+  JsName: 'dispatch_time'
+  Module: 'Dispatch.time'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULongLong
+  - Type: ULongLong
+  - Type: LongLong
+- Name: 'dispatch_walltime'
+  JsName: 'dispatch_walltime'
+  Module: 'Dispatch.time'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULongLong
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: Darwin.POSIX.sys.types._timespec
+      Name: timespec
+  - Type: LongLong
+- Name: 'OS_dispatch_object'
+  JsName: 'OS_dispatch_object'
+  Module: 'Dispatch.object'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Type: Protocol
+- Name: 'dispatch_get_context'
+  JsName: 'dispatch_get_context'
+  Module: 'Dispatch.object'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: 'dispatch_set_context'
+  JsName: 'dispatch_set_context'
+  Module: 'Dispatch.object'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'dispatch_set_finalizer_f'
+  JsName: 'dispatch_set_finalizer_f'
+  Module: 'Dispatch.object'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'dispatch_suspend'
+  JsName: 'dispatch_suspend'
+  Module: 'Dispatch.object'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: 'dispatch_resume'
+  JsName: 'dispatch_resume'
+  Module: 'Dispatch.object'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: 'OS_dispatch_queue'
+  JsName: 'OS_dispatch_queue'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: Dispatch.object
+    Name: OS_dispatch_object
+  Type: Protocol
+- Name: 'dispatch_async'
+  JsName: 'dispatch_async'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+- Name: 'dispatch_async_f'
+  JsName: 'dispatch_async_f'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'dispatch_sync'
+  JsName: 'dispatch_sync'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+- Name: 'dispatch_sync_f'
+  JsName: 'dispatch_sync_f'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'dispatch_apply'
+  JsName: 'dispatch_apply'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: ULong
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+    - Type: ULong
+- Name: 'dispatch_apply_f'
+  JsName: 'dispatch_apply_f'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: ULong
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: ULong
+- Name: 'dispatch_get_current_queue'
+  JsName: 'dispatch_get_current_queue'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: '_dispatch_main_q'
+  JsName: '_dispatch_main_q'
+  Module: 'Dispatch.queue'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Void
+- Name: 'dispatch_get_global_queue'
+  JsName: 'dispatch_get_global_queue'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Long
+  - Type: ULong
+- Name: 'OS_dispatch_queue_attr'
+  JsName: 'OS_dispatch_queue_attr'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: Dispatch.object
+    Name: OS_dispatch_object
+  Type: Protocol
+- Name: '_dispatch_queue_attr_concurrent'
+  JsName: '_dispatch_queue_attr_concurrent'
+  Module: 'Dispatch.queue'
+  IntroducedIn: 4.3
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Void
+- Name: 'dispatch_queue_attr_make_with_qos_class'
+  JsName: 'dispatch_queue_attr_make_with_qos_class'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: UInt
+  - Type: Int
+- Name: 'dispatch_queue_create'
+  JsName: 'dispatch_queue_create'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: CString
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: 'dispatch_queue_get_label'
+  JsName: 'dispatch_queue_get_label'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: 'dispatch_queue_get_qos_class'
+  JsName: 'dispatch_queue_get_qos_class'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'dispatch_set_target_queue'
+  JsName: 'dispatch_set_target_queue'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: 'dispatch_main'
+  JsName: 'dispatch_main'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+- Name: 'dispatch_after'
+  JsName: 'dispatch_after'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: ULongLong
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+- Name: 'dispatch_after_f'
+  JsName: 'dispatch_after_f'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: ULongLong
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'dispatch_barrier_async'
+  JsName: 'dispatch_barrier_async'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+- Name: 'dispatch_barrier_async_f'
+  JsName: 'dispatch_barrier_async_f'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'dispatch_barrier_sync'
+  JsName: 'dispatch_barrier_sync'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+- Name: 'dispatch_barrier_sync_f'
+  JsName: 'dispatch_barrier_sync_f'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'dispatch_queue_set_specific'
+  JsName: 'dispatch_queue_set_specific'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'dispatch_queue_get_specific'
+  JsName: 'dispatch_queue_get_specific'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'dispatch_get_specific'
+  JsName: 'dispatch_get_specific'
+  Module: 'Dispatch.queue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: '216'
+  JsName: 'dispatch_block_flags_t'
+  Module: 'Dispatch.block'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"DISPATCH_BLOCK_BARRIER":1,"DISPATCH_BLOCK_DETACHED":2,"DISPATCH_BLOCK_ASSIGN_CURRENT":4,"DISPATCH_BLOCK_NO_QOS_CLASS":8,"DISPATCH_BLOCK_INHERIT_QOS_CLASS":16,"DISPATCH_BLOCK_ENFORCE_QOS_CLASS":32})
+- Name: 'dispatch_block_create'
+  JsName: 'dispatch_block_create'
+  Module: 'Dispatch.block'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Block
+    Signature:
+    - Type: Void
+  - Type: ULong
+  - Type: Block
+    Signature:
+    - Type: Void
+- Name: 'dispatch_block_create_with_qos_class'
+  JsName: 'dispatch_block_create_with_qos_class'
+  Module: 'Dispatch.block'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Block
+    Signature:
+    - Type: Void
+  - Type: ULong
+  - Type: UInt
+  - Type: Int
+  - Type: Block
+    Signature:
+    - Type: Void
+- Name: 'dispatch_block_perform'
+  JsName: 'dispatch_block_perform'
+  Module: 'Dispatch.block'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: ULong
+  - Type: Block
+    Signature:
+    - Type: Void
+- Name: 'dispatch_block_wait'
+  JsName: 'dispatch_block_wait'
+  Module: 'Dispatch.block'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Block
+    Signature:
+    - Type: Void
+  - Type: ULongLong
+- Name: 'dispatch_block_notify'
+  JsName: 'dispatch_block_notify'
+  Module: 'Dispatch.block'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Block
+    Signature:
+    - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+- Name: 'dispatch_block_cancel'
+  JsName: 'dispatch_block_cancel'
+  Module: 'Dispatch.block'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Block
+    Signature:
+    - Type: Void
+- Name: 'dispatch_block_testcancel'
+  JsName: 'dispatch_block_testcancel'
+  Module: 'Dispatch.block'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Block
+    Signature:
+    - Type: Void
+- Name: 'OS_dispatch_source'
+  JsName: 'OS_dispatch_source'
+  Module: 'Dispatch.source'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: Dispatch.object
+    Name: OS_dispatch_object
+  Type: Protocol
+- Name: '_dispatch_source_type_data_add'
+  JsName: '_dispatch_source_type_data_add'
+  Module: 'Dispatch.source'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Void
+- Name: '_dispatch_source_type_data_or'
+  JsName: '_dispatch_source_type_data_or'
+  Module: 'Dispatch.source'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Void
+- Name: '_dispatch_source_type_mach_send'
+  JsName: '_dispatch_source_type_mach_send'
+  Module: 'Dispatch.source'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Void
+- Name: '_dispatch_source_type_mach_recv'
+  JsName: '_dispatch_source_type_mach_recv'
+  Module: 'Dispatch.source'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Void
+- Name: '_dispatch_source_type_memorypressure'
+  JsName: '_dispatch_source_type_memorypressure'
+  Module: 'Dispatch.source'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Void
+- Name: '_dispatch_source_type_proc'
+  JsName: '_dispatch_source_type_proc'
+  Module: 'Dispatch.source'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Void
+- Name: '_dispatch_source_type_read'
+  JsName: '_dispatch_source_type_read'
+  Module: 'Dispatch.source'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Void
+- Name: '_dispatch_source_type_signal'
+  JsName: '_dispatch_source_type_signal'
+  Module: 'Dispatch.source'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Void
+- Name: '_dispatch_source_type_timer'
+  JsName: '_dispatch_source_type_timer'
+  Module: 'Dispatch.source'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Void
+- Name: '_dispatch_source_type_vnode'
+  JsName: '_dispatch_source_type_vnode'
+  Module: 'Dispatch.source'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Void
+- Name: '_dispatch_source_type_write'
+  JsName: '_dispatch_source_type_write'
+  Module: 'Dispatch.source'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Void
+- Name: 'dispatch_source_create'
+  JsName: 'dispatch_source_create'
+  Module: 'Dispatch.source'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: ULong
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: 'dispatch_source_set_event_handler'
+  JsName: 'dispatch_source_set_event_handler'
+  Module: 'Dispatch.source'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+- Name: 'dispatch_source_set_event_handler_f'
+  JsName: 'dispatch_source_set_event_handler_f'
+  Module: 'Dispatch.source'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'dispatch_source_set_cancel_handler'
+  JsName: 'dispatch_source_set_cancel_handler'
+  Module: 'Dispatch.source'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+- Name: 'dispatch_source_set_cancel_handler_f'
+  JsName: 'dispatch_source_set_cancel_handler_f'
+  Module: 'Dispatch.source'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'dispatch_source_cancel'
+  JsName: 'dispatch_source_cancel'
+  Module: 'Dispatch.source'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: 'dispatch_source_testcancel'
+  JsName: 'dispatch_source_testcancel'
+  Module: 'Dispatch.source'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: 'dispatch_source_get_handle'
+  JsName: 'dispatch_source_get_handle'
+  Module: 'Dispatch.source'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: 'dispatch_source_get_mask'
+  JsName: 'dispatch_source_get_mask'
+  Module: 'Dispatch.source'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: 'dispatch_source_get_data'
+  JsName: 'dispatch_source_get_data'
+  Module: 'Dispatch.source'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: 'dispatch_source_merge_data'
+  JsName: 'dispatch_source_merge_data'
+  Module: 'Dispatch.source'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: ULong
+- Name: 'dispatch_source_set_timer'
+  JsName: 'dispatch_source_set_timer'
+  Module: 'Dispatch.source'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: ULongLong
+  - Type: ULongLong
+  - Type: ULongLong
+- Name: 'dispatch_source_set_registration_handler'
+  JsName: 'dispatch_source_set_registration_handler'
+  Module: 'Dispatch.source'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+- Name: 'dispatch_source_set_registration_handler_f'
+  JsName: 'dispatch_source_set_registration_handler_f'
+  Module: 'Dispatch.source'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'OS_dispatch_group'
+  JsName: 'OS_dispatch_group'
+  Module: 'Dispatch.group'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: Dispatch.object
+    Name: OS_dispatch_object
+  Type: Protocol
+- Name: 'dispatch_group_create'
+  JsName: 'dispatch_group_create'
+  Module: 'Dispatch.group'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: 'dispatch_group_async'
+  JsName: 'dispatch_group_async'
+  Module: 'Dispatch.group'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+- Name: 'dispatch_group_async_f'
+  JsName: 'dispatch_group_async_f'
+  Module: 'Dispatch.group'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'dispatch_group_wait'
+  JsName: 'dispatch_group_wait'
+  Module: 'Dispatch.group'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: ULongLong
+- Name: 'dispatch_group_notify'
+  JsName: 'dispatch_group_notify'
+  Module: 'Dispatch.group'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+- Name: 'dispatch_group_notify_f'
+  JsName: 'dispatch_group_notify_f'
+  Module: 'Dispatch.group'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'dispatch_group_enter'
+  JsName: 'dispatch_group_enter'
+  Module: 'Dispatch.group'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: 'dispatch_group_leave'
+  JsName: 'dispatch_group_leave'
+  Module: 'Dispatch.group'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: 'OS_dispatch_semaphore'
+  JsName: 'OS_dispatch_semaphore'
+  Module: 'Dispatch.semaphore'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: Dispatch.object
+    Name: OS_dispatch_object
+  Type: Protocol
+- Name: 'dispatch_semaphore_create'
+  JsName: 'dispatch_semaphore_create'
+  Module: 'Dispatch.semaphore'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Long
+- Name: 'dispatch_semaphore_wait'
+  JsName: 'dispatch_semaphore_wait'
+  Module: 'Dispatch.semaphore'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: ULongLong
+- Name: 'dispatch_semaphore_signal'
+  JsName: 'dispatch_semaphore_signal'
+  Module: 'Dispatch.semaphore'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: 'dispatch_once'
+  JsName: 'dispatch_once'
+  Module: 'Dispatch.once'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Long
+  - Type: Block
+    Signature:
+    - Type: Void
+- Name: 'dispatch_once_f'
+  JsName: 'dispatch_once_f'
+  Module: 'Dispatch.once'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'OS_dispatch_data'
+  JsName: 'OS_dispatch_dataProtocol'
+  Module: 'Dispatch.data'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: Dispatch.object
+    Name: OS_dispatch_object
+  Type: Protocol
+- Name: '_dispatch_data_empty'
+  JsName: '_dispatch_data_empty'
+  Module: 'Dispatch.data'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Void
+- Name: '_dispatch_data_destructor_free'
+  JsName: '_dispatch_data_destructor_free'
+  Module: 'Dispatch.data'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Block
+    Signature:
+    - Type: Void
+- Name: '_dispatch_data_destructor_munmap'
+  JsName: '_dispatch_data_destructor_munmap'
+  Module: 'Dispatch.data'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Block
+    Signature:
+    - Type: Void
+- Name: 'dispatch_data_create'
+  JsName: 'dispatch_data_create'
+  Module: 'Dispatch.data'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+- Name: 'dispatch_data_get_size'
+  JsName: 'dispatch_data_get_size'
+  Module: 'Dispatch.data'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: 'dispatch_data_create_map'
+  JsName: 'dispatch_data_create_map'
+  Module: 'Dispatch.data'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'dispatch_data_create_concat'
+  JsName: 'dispatch_data_create_concat'
+  Module: 'Dispatch.data'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: 'dispatch_data_create_subrange'
+  JsName: 'dispatch_data_create_subrange'
+  Module: 'Dispatch.data'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: ULong
+  - Type: ULong
+- Name: 'dispatch_data_apply'
+  JsName: 'dispatch_data_apply'
+  Module: 'Dispatch.data'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    - Type: ULong
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: ULong
+- Name: 'dispatch_data_copy_region'
+  JsName: 'dispatch_data_copy_region'
+  Module: 'Dispatch.data'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'dispatch_read'
+  JsName: 'dispatch_read'
+  Module: 'Dispatch.io'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: ULong
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    - Type: Int
+- Name: 'dispatch_write'
+  JsName: 'dispatch_write'
+  Module: 'Dispatch.io'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    - Type: Int
+- Name: 'OS_dispatch_io'
+  JsName: 'OS_dispatch_io'
+  Module: 'Dispatch.io'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: Dispatch.object
+    Name: OS_dispatch_object
+  Type: Protocol
+- Name: 'dispatch_io_create'
+  JsName: 'dispatch_io_create'
+  Module: 'Dispatch.io'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: ULong
+  - Type: Int
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+    - Type: Int
+- Name: 'dispatch_io_create_with_path'
+  JsName: 'dispatch_io_create_with_path'
+  Module: 'Dispatch.io'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: ULong
+  - Type: CString
+  - Type: Int
+  - Type: Ushort
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+    - Type: Int
+- Name: 'dispatch_io_create_with_io'
+  JsName: 'dispatch_io_create_with_io'
+  Module: 'Dispatch.io'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: ULong
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+    - Type: Int
+- Name: 'dispatch_io_read'
+  JsName: 'dispatch_io_read'
+  Module: 'Dispatch.io'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: LongLong
+  - Type: ULong
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+    - Type: Bool
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    - Type: Int
+- Name: 'dispatch_io_write'
+  JsName: 'dispatch_io_write'
+  Module: 'Dispatch.io'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: LongLong
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+    - Type: Bool
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    - Type: Int
+- Name: 'dispatch_io_close'
+  JsName: 'dispatch_io_close'
+  Module: 'Dispatch.io'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: ULong
+- Name: 'dispatch_io_barrier'
+  JsName: 'dispatch_io_barrier'
+  Module: 'Dispatch.io'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+- Name: 'dispatch_io_get_descriptor'
+  JsName: 'dispatch_io_get_descriptor'
+  Module: 'Dispatch.io'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: 'dispatch_io_set_high_water'
+  JsName: 'dispatch_io_set_high_water'
+  Module: 'Dispatch.io'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: ULong
+- Name: 'dispatch_io_set_low_water'
+  JsName: 'dispatch_io_set_low_water'
+  Module: 'Dispatch.io'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: ULong
+- Name: 'dispatch_io_set_interval'
+  JsName: 'dispatch_io_set_interval'
+  Module: 'Dispatch.io'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: ULongLong
+  - Type: ULong
+...

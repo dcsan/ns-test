@@ -1,0 +1,2474 @@
+name: CoreAudio
+items:
+- Name: 'kAudio_UnimplementedError'
+  JsName: 'kAudio_UnimplementedError'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -4
+- Name: 'kAudio_FileNotFoundError'
+  JsName: 'kAudio_FileNotFoundError'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -43
+- Name: 'kAudio_FilePermissionError'
+  JsName: 'kAudio_FilePermissionError'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -54
+- Name: 'kAudio_TooManyFilesOpenError'
+  JsName: 'kAudio_TooManyFilesOpenError'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -42
+- Name: 'kAudio_BadFilePathError'
+  JsName: 'kAudio_BadFilePathError'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 561017960
+- Name: 'kAudio_ParamError'
+  JsName: 'kAudio_ParamError'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -50
+- Name: 'kAudio_MemFullError'
+  JsName: 'kAudio_MemFullError'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -108
+- Name: 'AudioValueRange'
+  JsName: 'AudioValueRange'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mMinimum
+    Signature:
+      Type: Double
+  - Name: mMaximum
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: 'AudioValueTranslation'
+  JsName: 'AudioValueTranslation'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mInputData
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: mInputDataSize
+    Signature:
+      Type: UInt
+  - Name: mOutputData
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: mOutputDataSize
+    Signature:
+      Type: UInt
+  Type: Struct
+- Name: 'AudioBuffer'
+  JsName: 'AudioBuffer'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mNumberChannels
+    Signature:
+      Type: UInt
+  - Name: mDataByteSize
+    Signature:
+      Type: UInt
+  - Name: mData
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  Type: Struct
+- Name: 'AudioBufferList'
+  JsName: 'AudioBufferList'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mNumberBuffers
+    Signature:
+      Type: UInt
+  - Name: mBuffers
+    Signature:
+      Type: ConstantArray
+      ArrayType:
+        Type: Struct
+        Module: CoreAudio
+        Name: AudioBuffer
+      Size: 1
+  Type: Struct
+- Name: 'AudioStreamBasicDescription'
+  JsName: 'AudioStreamBasicDescription'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mSampleRate
+    Signature:
+      Type: Double
+  - Name: mFormatID
+    Signature:
+      Type: UInt
+  - Name: mFormatFlags
+    Signature:
+      Type: UInt
+  - Name: mBytesPerPacket
+    Signature:
+      Type: UInt
+  - Name: mFramesPerPacket
+    Signature:
+      Type: UInt
+  - Name: mBytesPerFrame
+    Signature:
+      Type: UInt
+  - Name: mChannelsPerFrame
+    Signature:
+      Type: UInt
+  - Name: mBitsPerChannel
+    Signature:
+      Type: UInt
+  - Name: mReserved
+    Signature:
+      Type: UInt
+  Type: Struct
+- Name: 'kAudioStreamAnyRate'
+  JsName: 'kAudioStreamAnyRate'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kAudioFormatLinearPCM'
+  JsName: 'kAudioFormatLinearPCM'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1819304813
+- Name: 'kAudioFormatAC3'
+  JsName: 'kAudioFormatAC3'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1633889587
+- Name: 'kAudioFormat60958AC3'
+  JsName: 'kAudioFormat60958AC3'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1667326771
+- Name: 'kAudioFormatAppleIMA4'
+  JsName: 'kAudioFormatAppleIMA4'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1768775988
+- Name: 'kAudioFormatMPEG4AAC'
+  JsName: 'kAudioFormatMPEG4AAC'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1633772320
+- Name: 'kAudioFormatMPEG4CELP'
+  JsName: 'kAudioFormatMPEG4CELP'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1667591280
+- Name: 'kAudioFormatMPEG4HVXC'
+  JsName: 'kAudioFormatMPEG4HVXC'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1752594531
+- Name: 'kAudioFormatMPEG4TwinVQ'
+  JsName: 'kAudioFormatMPEG4TwinVQ'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1953986161
+- Name: 'kAudioFormatMACE3'
+  JsName: 'kAudioFormatMACE3'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1296122675
+- Name: 'kAudioFormatMACE6'
+  JsName: 'kAudioFormatMACE6'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1296122678
+- Name: 'kAudioFormatULaw'
+  JsName: 'kAudioFormatULaw'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1970037111
+- Name: 'kAudioFormatALaw'
+  JsName: 'kAudioFormatALaw'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1634492791
+- Name: 'kAudioFormatQDesign'
+  JsName: 'kAudioFormatQDesign'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1363430723
+- Name: 'kAudioFormatQDesign2'
+  JsName: 'kAudioFormatQDesign2'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1363430706
+- Name: 'kAudioFormatQUALCOMM'
+  JsName: 'kAudioFormatQUALCOMM'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1365470320
+- Name: 'kAudioFormatMPEGLayer1'
+  JsName: 'kAudioFormatMPEGLayer1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 778924081
+- Name: 'kAudioFormatMPEGLayer2'
+  JsName: 'kAudioFormatMPEGLayer2'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 778924082
+- Name: 'kAudioFormatMPEGLayer3'
+  JsName: 'kAudioFormatMPEGLayer3'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 778924083
+- Name: 'kAudioFormatTimeCode'
+  JsName: 'kAudioFormatTimeCode'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1953066341
+- Name: 'kAudioFormatMIDIStream'
+  JsName: 'kAudioFormatMIDIStream'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1835623529
+- Name: 'kAudioFormatParameterValueStream'
+  JsName: 'kAudioFormatParameterValueStream'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1634760307
+- Name: 'kAudioFormatAppleLossless'
+  JsName: 'kAudioFormatAppleLossless'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1634492771
+- Name: 'kAudioFormatMPEG4AAC_HE'
+  JsName: 'kAudioFormatMPEG4AAC_HE'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1633772392
+- Name: 'kAudioFormatMPEG4AAC_LD'
+  JsName: 'kAudioFormatMPEG4AAC_LD'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1633772396
+- Name: 'kAudioFormatMPEG4AAC_ELD'
+  JsName: 'kAudioFormatMPEG4AAC_ELD'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1633772389
+- Name: 'kAudioFormatMPEG4AAC_ELD_SBR'
+  JsName: 'kAudioFormatMPEG4AAC_ELD_SBR'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1633772390
+- Name: 'kAudioFormatMPEG4AAC_ELD_V2'
+  JsName: 'kAudioFormatMPEG4AAC_ELD_V2'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1633772391
+- Name: 'kAudioFormatMPEG4AAC_HE_V2'
+  JsName: 'kAudioFormatMPEG4AAC_HE_V2'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1633772400
+- Name: 'kAudioFormatMPEG4AAC_Spatial'
+  JsName: 'kAudioFormatMPEG4AAC_Spatial'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1633772403
+- Name: 'kAudioFormatAMR'
+  JsName: 'kAudioFormatAMR'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1935764850
+- Name: 'kAudioFormatAMR_WB'
+  JsName: 'kAudioFormatAMR_WB'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1935767394
+- Name: 'kAudioFormatAudible'
+  JsName: 'kAudioFormatAudible'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1096107074
+- Name: 'kAudioFormatiLBC'
+  JsName: 'kAudioFormatiLBC'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1768710755
+- Name: 'kAudioFormatDVIIntelIMA'
+  JsName: 'kAudioFormatDVIIntelIMA'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1836253201
+- Name: 'kAudioFormatMicrosoftGSM'
+  JsName: 'kAudioFormatMicrosoftGSM'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1836253233
+- Name: 'kAudioFormatAES3'
+  JsName: 'kAudioFormatAES3'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1634038579
+- Name: 'kAudioFormatFlagIsFloat'
+  JsName: 'kAudioFormatFlagIsFloat'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kAudioFormatFlagIsBigEndian'
+  JsName: 'kAudioFormatFlagIsBigEndian'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kAudioFormatFlagIsSignedInteger'
+  JsName: 'kAudioFormatFlagIsSignedInteger'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kAudioFormatFlagIsPacked'
+  JsName: 'kAudioFormatFlagIsPacked'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kAudioFormatFlagIsAlignedHigh'
+  JsName: 'kAudioFormatFlagIsAlignedHigh'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'kAudioFormatFlagIsNonInterleaved'
+  JsName: 'kAudioFormatFlagIsNonInterleaved'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 32
+- Name: 'kAudioFormatFlagIsNonMixable'
+  JsName: 'kAudioFormatFlagIsNonMixable'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 64
+- Name: 'kAudioFormatFlagsAreAllClear'
+  JsName: 'kAudioFormatFlagsAreAllClear'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -2147483648
+- Name: 'kLinearPCMFormatFlagIsFloat'
+  JsName: 'kLinearPCMFormatFlagIsFloat'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kLinearPCMFormatFlagIsBigEndian'
+  JsName: 'kLinearPCMFormatFlagIsBigEndian'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kLinearPCMFormatFlagIsSignedInteger'
+  JsName: 'kLinearPCMFormatFlagIsSignedInteger'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kLinearPCMFormatFlagIsPacked'
+  JsName: 'kLinearPCMFormatFlagIsPacked'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kLinearPCMFormatFlagIsAlignedHigh'
+  JsName: 'kLinearPCMFormatFlagIsAlignedHigh'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'kLinearPCMFormatFlagIsNonInterleaved'
+  JsName: 'kLinearPCMFormatFlagIsNonInterleaved'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 32
+- Name: 'kLinearPCMFormatFlagIsNonMixable'
+  JsName: 'kLinearPCMFormatFlagIsNonMixable'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 64
+- Name: 'kLinearPCMFormatFlagsSampleFractionShift'
+  JsName: 'kLinearPCMFormatFlagsSampleFractionShift'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7
+- Name: 'kLinearPCMFormatFlagsSampleFractionMask'
+  JsName: 'kLinearPCMFormatFlagsSampleFractionMask'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8064
+- Name: 'kLinearPCMFormatFlagsAreAllClear'
+  JsName: 'kLinearPCMFormatFlagsAreAllClear'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -2147483648
+- Name: 'kAppleLosslessFormatFlag_16BitSourceData'
+  JsName: 'kAppleLosslessFormatFlag_16BitSourceData'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kAppleLosslessFormatFlag_20BitSourceData'
+  JsName: 'kAppleLosslessFormatFlag_20BitSourceData'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kAppleLosslessFormatFlag_24BitSourceData'
+  JsName: 'kAppleLosslessFormatFlag_24BitSourceData'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kAppleLosslessFormatFlag_32BitSourceData'
+  JsName: 'kAppleLosslessFormatFlag_32BitSourceData'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kAudioFormatFlagsNativeEndian'
+  JsName: 'kAudioFormatFlagsNativeEndian'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kAudioFormatFlagsCanonical'
+  JsName: 'kAudioFormatFlagsCanonical'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 12
+- Name: 'kAudioFormatFlagsAudioUnitCanonical'
+  JsName: 'kAudioFormatFlagsAudioUnitCanonical'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3116
+- Name: 'kAudioFormatFlagsNativeFloatPacked'
+  JsName: 'kAudioFormatFlagsNativeFloatPacked'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9
+- Name: 'AudioStreamPacketDescription'
+  JsName: 'AudioStreamPacketDescription'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mStartOffset
+    Signature:
+      Type: LongLong
+  - Name: mVariableFramesInPacket
+    Signature:
+      Type: UInt
+  - Name: mDataByteSize
+    Signature:
+      Type: UInt
+  Type: Struct
+- Name: 'SMPTETime'
+  JsName: 'SMPTETime'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mSubframes
+    Signature:
+      Type: Short
+  - Name: mSubframeDivisor
+    Signature:
+      Type: Short
+  - Name: mCounter
+    Signature:
+      Type: UInt
+  - Name: mType
+    Signature:
+      Type: UInt
+  - Name: mFlags
+    Signature:
+      Type: UInt
+  - Name: mHours
+    Signature:
+      Type: Short
+  - Name: mMinutes
+    Signature:
+      Type: Short
+  - Name: mSeconds
+    Signature:
+      Type: Short
+  - Name: mFrames
+    Signature:
+      Type: Short
+  Type: Struct
+- Name: 'kSMPTETimeType24'
+  JsName: 'kSMPTETimeType24'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kSMPTETimeType25'
+  JsName: 'kSMPTETimeType25'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kSMPTETimeType30Drop'
+  JsName: 'kSMPTETimeType30Drop'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kSMPTETimeType30'
+  JsName: 'kSMPTETimeType30'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kSMPTETimeType2997'
+  JsName: 'kSMPTETimeType2997'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kSMPTETimeType2997Drop'
+  JsName: 'kSMPTETimeType2997Drop'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'kSMPTETimeType60'
+  JsName: 'kSMPTETimeType60'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'kSMPTETimeType5994'
+  JsName: 'kSMPTETimeType5994'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7
+- Name: 'kSMPTETimeType60Drop'
+  JsName: 'kSMPTETimeType60Drop'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kSMPTETimeType5994Drop'
+  JsName: 'kSMPTETimeType5994Drop'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9
+- Name: 'kSMPTETimeType50'
+  JsName: 'kSMPTETimeType50'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10
+- Name: 'kSMPTETimeType2398'
+  JsName: 'kSMPTETimeType2398'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11
+- Name: 'kSMPTETimeValid'
+  JsName: 'kSMPTETimeValid'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kSMPTETimeRunning'
+  JsName: 'kSMPTETimeRunning'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'AudioTimeStamp'
+  JsName: 'AudioTimeStamp'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mSampleTime
+    Signature:
+      Type: Double
+  - Name: mHostTime
+    Signature:
+      Type: ULongLong
+  - Name: mRateScalar
+    Signature:
+      Type: Double
+  - Name: mWordClockTime
+    Signature:
+      Type: ULongLong
+  - Name: mSMPTETime
+    Signature:
+      Type: Struct
+      Module: CoreAudio
+      Name: SMPTETime
+  - Name: mFlags
+    Signature:
+      Type: UInt
+  - Name: mReserved
+    Signature:
+      Type: UInt
+  Type: Struct
+- Name: 'kAudioTimeStampSampleTimeValid'
+  JsName: 'kAudioTimeStampSampleTimeValid'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kAudioTimeStampHostTimeValid'
+  JsName: 'kAudioTimeStampHostTimeValid'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kAudioTimeStampRateScalarValid'
+  JsName: 'kAudioTimeStampRateScalarValid'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kAudioTimeStampWordClockTimeValid'
+  JsName: 'kAudioTimeStampWordClockTimeValid'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kAudioTimeStampSMPTETimeValid'
+  JsName: 'kAudioTimeStampSMPTETimeValid'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'kAudioTimeStampSampleHostTimeValid'
+  JsName: 'kAudioTimeStampSampleHostTimeValid'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'AudioClassDescription'
+  JsName: 'AudioClassDescription'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mType
+    Signature:
+      Type: UInt
+  - Name: mSubType
+    Signature:
+      Type: UInt
+  - Name: mManufacturer
+    Signature:
+      Type: UInt
+  Type: Struct
+- Name: 'AudioChannelDescription'
+  JsName: 'AudioChannelDescription'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mChannelLabel
+    Signature:
+      Type: UInt
+  - Name: mChannelFlags
+    Signature:
+      Type: UInt
+  - Name: mCoordinates
+    Signature:
+      Type: ConstantArray
+      ArrayType:
+        Type: Float
+      Size: 3
+  Type: Struct
+- Name: 'AudioChannelLayout'
+  JsName: 'AudioChannelLayout'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mChannelLayoutTag
+    Signature:
+      Type: UInt
+  - Name: mChannelBitmap
+    Signature:
+      Type: UInt
+  - Name: mNumberChannelDescriptions
+    Signature:
+      Type: UInt
+  - Name: mChannelDescriptions
+    Signature:
+      Type: ConstantArray
+      ArrayType:
+        Type: Struct
+        Module: CoreAudio
+        Name: AudioChannelDescription
+      Size: 1
+  Type: Struct
+- Name: 'kAudioChannelLabel_Unknown'
+  JsName: 'kAudioChannelLabel_Unknown'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -1
+- Name: 'kAudioChannelLabel_Unused'
+  JsName: 'kAudioChannelLabel_Unused'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kAudioChannelLabel_UseCoordinates'
+  JsName: 'kAudioChannelLabel_UseCoordinates'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 100
+- Name: 'kAudioChannelLabel_Left'
+  JsName: 'kAudioChannelLabel_Left'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kAudioChannelLabel_Right'
+  JsName: 'kAudioChannelLabel_Right'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kAudioChannelLabel_Center'
+  JsName: 'kAudioChannelLabel_Center'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kAudioChannelLabel_LFEScreen'
+  JsName: 'kAudioChannelLabel_LFEScreen'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kAudioChannelLabel_LeftSurround'
+  JsName: 'kAudioChannelLabel_LeftSurround'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'kAudioChannelLabel_RightSurround'
+  JsName: 'kAudioChannelLabel_RightSurround'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'kAudioChannelLabel_LeftCenter'
+  JsName: 'kAudioChannelLabel_LeftCenter'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7
+- Name: 'kAudioChannelLabel_RightCenter'
+  JsName: 'kAudioChannelLabel_RightCenter'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kAudioChannelLabel_CenterSurround'
+  JsName: 'kAudioChannelLabel_CenterSurround'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9
+- Name: 'kAudioChannelLabel_LeftSurroundDirect'
+  JsName: 'kAudioChannelLabel_LeftSurroundDirect'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10
+- Name: 'kAudioChannelLabel_RightSurroundDirect'
+  JsName: 'kAudioChannelLabel_RightSurroundDirect'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11
+- Name: 'kAudioChannelLabel_TopCenterSurround'
+  JsName: 'kAudioChannelLabel_TopCenterSurround'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 12
+- Name: 'kAudioChannelLabel_VerticalHeightLeft'
+  JsName: 'kAudioChannelLabel_VerticalHeightLeft'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 13
+- Name: 'kAudioChannelLabel_VerticalHeightCenter'
+  JsName: 'kAudioChannelLabel_VerticalHeightCenter'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 14
+- Name: 'kAudioChannelLabel_VerticalHeightRight'
+  JsName: 'kAudioChannelLabel_VerticalHeightRight'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 15
+- Name: 'kAudioChannelLabel_TopBackLeft'
+  JsName: 'kAudioChannelLabel_TopBackLeft'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'kAudioChannelLabel_TopBackCenter'
+  JsName: 'kAudioChannelLabel_TopBackCenter'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 17
+- Name: 'kAudioChannelLabel_TopBackRight'
+  JsName: 'kAudioChannelLabel_TopBackRight'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 18
+- Name: 'kAudioChannelLabel_RearSurroundLeft'
+  JsName: 'kAudioChannelLabel_RearSurroundLeft'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 33
+- Name: 'kAudioChannelLabel_RearSurroundRight'
+  JsName: 'kAudioChannelLabel_RearSurroundRight'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 34
+- Name: 'kAudioChannelLabel_LeftWide'
+  JsName: 'kAudioChannelLabel_LeftWide'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 35
+- Name: 'kAudioChannelLabel_RightWide'
+  JsName: 'kAudioChannelLabel_RightWide'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 36
+- Name: 'kAudioChannelLabel_LFE2'
+  JsName: 'kAudioChannelLabel_LFE2'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 37
+- Name: 'kAudioChannelLabel_LeftTotal'
+  JsName: 'kAudioChannelLabel_LeftTotal'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 38
+- Name: 'kAudioChannelLabel_RightTotal'
+  JsName: 'kAudioChannelLabel_RightTotal'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 39
+- Name: 'kAudioChannelLabel_HearingImpaired'
+  JsName: 'kAudioChannelLabel_HearingImpaired'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 40
+- Name: 'kAudioChannelLabel_Narration'
+  JsName: 'kAudioChannelLabel_Narration'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 41
+- Name: 'kAudioChannelLabel_Mono'
+  JsName: 'kAudioChannelLabel_Mono'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 42
+- Name: 'kAudioChannelLabel_DialogCentricMix'
+  JsName: 'kAudioChannelLabel_DialogCentricMix'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 43
+- Name: 'kAudioChannelLabel_CenterSurroundDirect'
+  JsName: 'kAudioChannelLabel_CenterSurroundDirect'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 44
+- Name: 'kAudioChannelLabel_Haptic'
+  JsName: 'kAudioChannelLabel_Haptic'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 45
+- Name: 'kAudioChannelLabel_Ambisonic_W'
+  JsName: 'kAudioChannelLabel_Ambisonic_W'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 200
+- Name: 'kAudioChannelLabel_Ambisonic_X'
+  JsName: 'kAudioChannelLabel_Ambisonic_X'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 201
+- Name: 'kAudioChannelLabel_Ambisonic_Y'
+  JsName: 'kAudioChannelLabel_Ambisonic_Y'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 202
+- Name: 'kAudioChannelLabel_Ambisonic_Z'
+  JsName: 'kAudioChannelLabel_Ambisonic_Z'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 203
+- Name: 'kAudioChannelLabel_MS_Mid'
+  JsName: 'kAudioChannelLabel_MS_Mid'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 204
+- Name: 'kAudioChannelLabel_MS_Side'
+  JsName: 'kAudioChannelLabel_MS_Side'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 205
+- Name: 'kAudioChannelLabel_XY_X'
+  JsName: 'kAudioChannelLabel_XY_X'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 206
+- Name: 'kAudioChannelLabel_XY_Y'
+  JsName: 'kAudioChannelLabel_XY_Y'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 207
+- Name: 'kAudioChannelLabel_HeadphonesLeft'
+  JsName: 'kAudioChannelLabel_HeadphonesLeft'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 301
+- Name: 'kAudioChannelLabel_HeadphonesRight'
+  JsName: 'kAudioChannelLabel_HeadphonesRight'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 302
+- Name: 'kAudioChannelLabel_ClickTrack'
+  JsName: 'kAudioChannelLabel_ClickTrack'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 304
+- Name: 'kAudioChannelLabel_ForeignLanguage'
+  JsName: 'kAudioChannelLabel_ForeignLanguage'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 305
+- Name: 'kAudioChannelLabel_Discrete'
+  JsName: 'kAudioChannelLabel_Discrete'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 400
+- Name: 'kAudioChannelLabel_Discrete_0'
+  JsName: 'kAudioChannelLabel_Discrete_0'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65536
+- Name: 'kAudioChannelLabel_Discrete_1'
+  JsName: 'kAudioChannelLabel_Discrete_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65537
+- Name: 'kAudioChannelLabel_Discrete_2'
+  JsName: 'kAudioChannelLabel_Discrete_2'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65538
+- Name: 'kAudioChannelLabel_Discrete_3'
+  JsName: 'kAudioChannelLabel_Discrete_3'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65539
+- Name: 'kAudioChannelLabel_Discrete_4'
+  JsName: 'kAudioChannelLabel_Discrete_4'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65540
+- Name: 'kAudioChannelLabel_Discrete_5'
+  JsName: 'kAudioChannelLabel_Discrete_5'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65541
+- Name: 'kAudioChannelLabel_Discrete_6'
+  JsName: 'kAudioChannelLabel_Discrete_6'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65542
+- Name: 'kAudioChannelLabel_Discrete_7'
+  JsName: 'kAudioChannelLabel_Discrete_7'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65543
+- Name: 'kAudioChannelLabel_Discrete_8'
+  JsName: 'kAudioChannelLabel_Discrete_8'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65544
+- Name: 'kAudioChannelLabel_Discrete_9'
+  JsName: 'kAudioChannelLabel_Discrete_9'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65545
+- Name: 'kAudioChannelLabel_Discrete_10'
+  JsName: 'kAudioChannelLabel_Discrete_10'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65546
+- Name: 'kAudioChannelLabel_Discrete_11'
+  JsName: 'kAudioChannelLabel_Discrete_11'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65547
+- Name: 'kAudioChannelLabel_Discrete_12'
+  JsName: 'kAudioChannelLabel_Discrete_12'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65548
+- Name: 'kAudioChannelLabel_Discrete_13'
+  JsName: 'kAudioChannelLabel_Discrete_13'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65549
+- Name: 'kAudioChannelLabel_Discrete_14'
+  JsName: 'kAudioChannelLabel_Discrete_14'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65550
+- Name: 'kAudioChannelLabel_Discrete_15'
+  JsName: 'kAudioChannelLabel_Discrete_15'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65551
+- Name: 'kAudioChannelLabel_Discrete_65535'
+  JsName: 'kAudioChannelLabel_Discrete_65535'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 131071
+- Name: 'kAudioChannelBit_Left'
+  JsName: 'kAudioChannelBit_Left'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kAudioChannelBit_Right'
+  JsName: 'kAudioChannelBit_Right'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kAudioChannelBit_Center'
+  JsName: 'kAudioChannelBit_Center'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kAudioChannelBit_LFEScreen'
+  JsName: 'kAudioChannelBit_LFEScreen'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kAudioChannelBit_LeftSurround'
+  JsName: 'kAudioChannelBit_LeftSurround'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'kAudioChannelBit_RightSurround'
+  JsName: 'kAudioChannelBit_RightSurround'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 32
+- Name: 'kAudioChannelBit_LeftCenter'
+  JsName: 'kAudioChannelBit_LeftCenter'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 64
+- Name: 'kAudioChannelBit_RightCenter'
+  JsName: 'kAudioChannelBit_RightCenter'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 128
+- Name: 'kAudioChannelBit_CenterSurround'
+  JsName: 'kAudioChannelBit_CenterSurround'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 256
+- Name: 'kAudioChannelBit_LeftSurroundDirect'
+  JsName: 'kAudioChannelBit_LeftSurroundDirect'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 512
+- Name: 'kAudioChannelBit_RightSurroundDirect'
+  JsName: 'kAudioChannelBit_RightSurroundDirect'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1024
+- Name: 'kAudioChannelBit_TopCenterSurround'
+  JsName: 'kAudioChannelBit_TopCenterSurround'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2048
+- Name: 'kAudioChannelBit_VerticalHeightLeft'
+  JsName: 'kAudioChannelBit_VerticalHeightLeft'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4096
+- Name: 'kAudioChannelBit_VerticalHeightCenter'
+  JsName: 'kAudioChannelBit_VerticalHeightCenter'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8192
+- Name: 'kAudioChannelBit_VerticalHeightRight'
+  JsName: 'kAudioChannelBit_VerticalHeightRight'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16384
+- Name: 'kAudioChannelBit_TopBackLeft'
+  JsName: 'kAudioChannelBit_TopBackLeft'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 32768
+- Name: 'kAudioChannelBit_TopBackCenter'
+  JsName: 'kAudioChannelBit_TopBackCenter'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65536
+- Name: 'kAudioChannelBit_TopBackRight'
+  JsName: 'kAudioChannelBit_TopBackRight'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 131072
+- Name: 'kAudioChannelFlags_AllOff'
+  JsName: 'kAudioChannelFlags_AllOff'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kAudioChannelFlags_RectangularCoordinates'
+  JsName: 'kAudioChannelFlags_RectangularCoordinates'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kAudioChannelFlags_SphericalCoordinates'
+  JsName: 'kAudioChannelFlags_SphericalCoordinates'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kAudioChannelFlags_Meters'
+  JsName: 'kAudioChannelFlags_Meters'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kAudioChannelCoordinates_LeftRight'
+  JsName: 'kAudioChannelCoordinates_LeftRight'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kAudioChannelCoordinates_BackFront'
+  JsName: 'kAudioChannelCoordinates_BackFront'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kAudioChannelCoordinates_DownUp'
+  JsName: 'kAudioChannelCoordinates_DownUp'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kAudioChannelCoordinates_Azimuth'
+  JsName: 'kAudioChannelCoordinates_Azimuth'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kAudioChannelCoordinates_Elevation'
+  JsName: 'kAudioChannelCoordinates_Elevation'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kAudioChannelCoordinates_Distance'
+  JsName: 'kAudioChannelCoordinates_Distance'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kAudioChannelLayoutTag_UseChannelDescriptions'
+  JsName: 'kAudioChannelLayoutTag_UseChannelDescriptions'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kAudioChannelLayoutTag_UseChannelBitmap'
+  JsName: 'kAudioChannelLayoutTag_UseChannelBitmap'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65536
+- Name: 'kAudioChannelLayoutTag_Mono'
+  JsName: 'kAudioChannelLayoutTag_Mono'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6553601
+- Name: 'kAudioChannelLayoutTag_Stereo'
+  JsName: 'kAudioChannelLayoutTag_Stereo'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6619138
+- Name: 'kAudioChannelLayoutTag_StereoHeadphones'
+  JsName: 'kAudioChannelLayoutTag_StereoHeadphones'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6684674
+- Name: 'kAudioChannelLayoutTag_MatrixStereo'
+  JsName: 'kAudioChannelLayoutTag_MatrixStereo'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6750210
+- Name: 'kAudioChannelLayoutTag_MidSide'
+  JsName: 'kAudioChannelLayoutTag_MidSide'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6815746
+- Name: 'kAudioChannelLayoutTag_XY'
+  JsName: 'kAudioChannelLayoutTag_XY'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6881282
+- Name: 'kAudioChannelLayoutTag_Binaural'
+  JsName: 'kAudioChannelLayoutTag_Binaural'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6946818
+- Name: 'kAudioChannelLayoutTag_Ambisonic_B_Format'
+  JsName: 'kAudioChannelLayoutTag_Ambisonic_B_Format'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7012356
+- Name: 'kAudioChannelLayoutTag_Quadraphonic'
+  JsName: 'kAudioChannelLayoutTag_Quadraphonic'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7077892
+- Name: 'kAudioChannelLayoutTag_Pentagonal'
+  JsName: 'kAudioChannelLayoutTag_Pentagonal'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7143429
+- Name: 'kAudioChannelLayoutTag_Hexagonal'
+  JsName: 'kAudioChannelLayoutTag_Hexagonal'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7208966
+- Name: 'kAudioChannelLayoutTag_Octagonal'
+  JsName: 'kAudioChannelLayoutTag_Octagonal'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7274504
+- Name: 'kAudioChannelLayoutTag_Cube'
+  JsName: 'kAudioChannelLayoutTag_Cube'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7340040
+- Name: 'kAudioChannelLayoutTag_MPEG_1_0'
+  JsName: 'kAudioChannelLayoutTag_MPEG_1_0'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6553601
+- Name: 'kAudioChannelLayoutTag_MPEG_2_0'
+  JsName: 'kAudioChannelLayoutTag_MPEG_2_0'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6619138
+- Name: 'kAudioChannelLayoutTag_MPEG_3_0_A'
+  JsName: 'kAudioChannelLayoutTag_MPEG_3_0_A'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7405571
+- Name: 'kAudioChannelLayoutTag_MPEG_3_0_B'
+  JsName: 'kAudioChannelLayoutTag_MPEG_3_0_B'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7471107
+- Name: 'kAudioChannelLayoutTag_MPEG_4_0_A'
+  JsName: 'kAudioChannelLayoutTag_MPEG_4_0_A'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7536644
+- Name: 'kAudioChannelLayoutTag_MPEG_4_0_B'
+  JsName: 'kAudioChannelLayoutTag_MPEG_4_0_B'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7602180
+- Name: 'kAudioChannelLayoutTag_MPEG_5_0_A'
+  JsName: 'kAudioChannelLayoutTag_MPEG_5_0_A'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7667717
+- Name: 'kAudioChannelLayoutTag_MPEG_5_0_B'
+  JsName: 'kAudioChannelLayoutTag_MPEG_5_0_B'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7733253
+- Name: 'kAudioChannelLayoutTag_MPEG_5_0_C'
+  JsName: 'kAudioChannelLayoutTag_MPEG_5_0_C'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7798789
+- Name: 'kAudioChannelLayoutTag_MPEG_5_0_D'
+  JsName: 'kAudioChannelLayoutTag_MPEG_5_0_D'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7864325
+- Name: 'kAudioChannelLayoutTag_MPEG_5_1_A'
+  JsName: 'kAudioChannelLayoutTag_MPEG_5_1_A'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7929862
+- Name: 'kAudioChannelLayoutTag_MPEG_5_1_B'
+  JsName: 'kAudioChannelLayoutTag_MPEG_5_1_B'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7995398
+- Name: 'kAudioChannelLayoutTag_MPEG_5_1_C'
+  JsName: 'kAudioChannelLayoutTag_MPEG_5_1_C'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8060934
+- Name: 'kAudioChannelLayoutTag_MPEG_5_1_D'
+  JsName: 'kAudioChannelLayoutTag_MPEG_5_1_D'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8126470
+- Name: 'kAudioChannelLayoutTag_MPEG_6_1_A'
+  JsName: 'kAudioChannelLayoutTag_MPEG_6_1_A'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8192007
+- Name: 'kAudioChannelLayoutTag_MPEG_7_1_A'
+  JsName: 'kAudioChannelLayoutTag_MPEG_7_1_A'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8257544
+- Name: 'kAudioChannelLayoutTag_MPEG_7_1_B'
+  JsName: 'kAudioChannelLayoutTag_MPEG_7_1_B'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8323080
+- Name: 'kAudioChannelLayoutTag_MPEG_7_1_C'
+  JsName: 'kAudioChannelLayoutTag_MPEG_7_1_C'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8388616
+- Name: 'kAudioChannelLayoutTag_Emagic_Default_7_1'
+  JsName: 'kAudioChannelLayoutTag_Emagic_Default_7_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8454152
+- Name: 'kAudioChannelLayoutTag_SMPTE_DTV'
+  JsName: 'kAudioChannelLayoutTag_SMPTE_DTV'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8519688
+- Name: 'kAudioChannelLayoutTag_ITU_1_0'
+  JsName: 'kAudioChannelLayoutTag_ITU_1_0'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6553601
+- Name: 'kAudioChannelLayoutTag_ITU_2_0'
+  JsName: 'kAudioChannelLayoutTag_ITU_2_0'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6619138
+- Name: 'kAudioChannelLayoutTag_ITU_2_1'
+  JsName: 'kAudioChannelLayoutTag_ITU_2_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8585219
+- Name: 'kAudioChannelLayoutTag_ITU_2_2'
+  JsName: 'kAudioChannelLayoutTag_ITU_2_2'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8650756
+- Name: 'kAudioChannelLayoutTag_ITU_3_0'
+  JsName: 'kAudioChannelLayoutTag_ITU_3_0'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7405571
+- Name: 'kAudioChannelLayoutTag_ITU_3_1'
+  JsName: 'kAudioChannelLayoutTag_ITU_3_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7536644
+- Name: 'kAudioChannelLayoutTag_ITU_3_2'
+  JsName: 'kAudioChannelLayoutTag_ITU_3_2'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7667717
+- Name: 'kAudioChannelLayoutTag_ITU_3_2_1'
+  JsName: 'kAudioChannelLayoutTag_ITU_3_2_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7929862
+- Name: 'kAudioChannelLayoutTag_ITU_3_4_1'
+  JsName: 'kAudioChannelLayoutTag_ITU_3_4_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8388616
+- Name: 'kAudioChannelLayoutTag_DVD_0'
+  JsName: 'kAudioChannelLayoutTag_DVD_0'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6553601
+- Name: 'kAudioChannelLayoutTag_DVD_1'
+  JsName: 'kAudioChannelLayoutTag_DVD_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6619138
+- Name: 'kAudioChannelLayoutTag_DVD_2'
+  JsName: 'kAudioChannelLayoutTag_DVD_2'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8585219
+- Name: 'kAudioChannelLayoutTag_DVD_3'
+  JsName: 'kAudioChannelLayoutTag_DVD_3'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8650756
+- Name: 'kAudioChannelLayoutTag_DVD_4'
+  JsName: 'kAudioChannelLayoutTag_DVD_4'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8716291
+- Name: 'kAudioChannelLayoutTag_DVD_5'
+  JsName: 'kAudioChannelLayoutTag_DVD_5'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8781828
+- Name: 'kAudioChannelLayoutTag_DVD_6'
+  JsName: 'kAudioChannelLayoutTag_DVD_6'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8847365
+- Name: 'kAudioChannelLayoutTag_DVD_7'
+  JsName: 'kAudioChannelLayoutTag_DVD_7'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7405571
+- Name: 'kAudioChannelLayoutTag_DVD_8'
+  JsName: 'kAudioChannelLayoutTag_DVD_8'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7536644
+- Name: 'kAudioChannelLayoutTag_DVD_9'
+  JsName: 'kAudioChannelLayoutTag_DVD_9'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7667717
+- Name: 'kAudioChannelLayoutTag_DVD_10'
+  JsName: 'kAudioChannelLayoutTag_DVD_10'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8912900
+- Name: 'kAudioChannelLayoutTag_DVD_11'
+  JsName: 'kAudioChannelLayoutTag_DVD_11'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8978437
+- Name: 'kAudioChannelLayoutTag_DVD_12'
+  JsName: 'kAudioChannelLayoutTag_DVD_12'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7929862
+- Name: 'kAudioChannelLayoutTag_DVD_13'
+  JsName: 'kAudioChannelLayoutTag_DVD_13'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7536644
+- Name: 'kAudioChannelLayoutTag_DVD_14'
+  JsName: 'kAudioChannelLayoutTag_DVD_14'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7667717
+- Name: 'kAudioChannelLayoutTag_DVD_15'
+  JsName: 'kAudioChannelLayoutTag_DVD_15'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8912900
+- Name: 'kAudioChannelLayoutTag_DVD_16'
+  JsName: 'kAudioChannelLayoutTag_DVD_16'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8978437
+- Name: 'kAudioChannelLayoutTag_DVD_17'
+  JsName: 'kAudioChannelLayoutTag_DVD_17'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7929862
+- Name: 'kAudioChannelLayoutTag_DVD_18'
+  JsName: 'kAudioChannelLayoutTag_DVD_18'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9043973
+- Name: 'kAudioChannelLayoutTag_DVD_19'
+  JsName: 'kAudioChannelLayoutTag_DVD_19'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7733253
+- Name: 'kAudioChannelLayoutTag_DVD_20'
+  JsName: 'kAudioChannelLayoutTag_DVD_20'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7995398
+- Name: 'kAudioChannelLayoutTag_AudioUnit_4'
+  JsName: 'kAudioChannelLayoutTag_AudioUnit_4'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7077892
+- Name: 'kAudioChannelLayoutTag_AudioUnit_5'
+  JsName: 'kAudioChannelLayoutTag_AudioUnit_5'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7143429
+- Name: 'kAudioChannelLayoutTag_AudioUnit_6'
+  JsName: 'kAudioChannelLayoutTag_AudioUnit_6'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7208966
+- Name: 'kAudioChannelLayoutTag_AudioUnit_8'
+  JsName: 'kAudioChannelLayoutTag_AudioUnit_8'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7274504
+- Name: 'kAudioChannelLayoutTag_AudioUnit_5_0'
+  JsName: 'kAudioChannelLayoutTag_AudioUnit_5_0'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7733253
+- Name: 'kAudioChannelLayoutTag_AudioUnit_6_0'
+  JsName: 'kAudioChannelLayoutTag_AudioUnit_6_0'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9109510
+- Name: 'kAudioChannelLayoutTag_AudioUnit_7_0'
+  JsName: 'kAudioChannelLayoutTag_AudioUnit_7_0'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9175047
+- Name: 'kAudioChannelLayoutTag_AudioUnit_7_0_Front'
+  JsName: 'kAudioChannelLayoutTag_AudioUnit_7_0_Front'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9699335
+- Name: 'kAudioChannelLayoutTag_AudioUnit_5_1'
+  JsName: 'kAudioChannelLayoutTag_AudioUnit_5_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7929862
+- Name: 'kAudioChannelLayoutTag_AudioUnit_6_1'
+  JsName: 'kAudioChannelLayoutTag_AudioUnit_6_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8192007
+- Name: 'kAudioChannelLayoutTag_AudioUnit_7_1'
+  JsName: 'kAudioChannelLayoutTag_AudioUnit_7_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8388616
+- Name: 'kAudioChannelLayoutTag_AudioUnit_7_1_Front'
+  JsName: 'kAudioChannelLayoutTag_AudioUnit_7_1_Front'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8257544
+- Name: 'kAudioChannelLayoutTag_AAC_3_0'
+  JsName: 'kAudioChannelLayoutTag_AAC_3_0'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7471107
+- Name: 'kAudioChannelLayoutTag_AAC_Quadraphonic'
+  JsName: 'kAudioChannelLayoutTag_AAC_Quadraphonic'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7077892
+- Name: 'kAudioChannelLayoutTag_AAC_4_0'
+  JsName: 'kAudioChannelLayoutTag_AAC_4_0'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7602180
+- Name: 'kAudioChannelLayoutTag_AAC_5_0'
+  JsName: 'kAudioChannelLayoutTag_AAC_5_0'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7864325
+- Name: 'kAudioChannelLayoutTag_AAC_5_1'
+  JsName: 'kAudioChannelLayoutTag_AAC_5_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8126470
+- Name: 'kAudioChannelLayoutTag_AAC_6_0'
+  JsName: 'kAudioChannelLayoutTag_AAC_6_0'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9240582
+- Name: 'kAudioChannelLayoutTag_AAC_6_1'
+  JsName: 'kAudioChannelLayoutTag_AAC_6_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9306119
+- Name: 'kAudioChannelLayoutTag_AAC_7_0'
+  JsName: 'kAudioChannelLayoutTag_AAC_7_0'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9371655
+- Name: 'kAudioChannelLayoutTag_AAC_7_1'
+  JsName: 'kAudioChannelLayoutTag_AAC_7_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8323080
+- Name: 'kAudioChannelLayoutTag_AAC_7_1_B'
+  JsName: 'kAudioChannelLayoutTag_AAC_7_1_B'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11993096
+- Name: 'kAudioChannelLayoutTag_AAC_7_1_C'
+  JsName: 'kAudioChannelLayoutTag_AAC_7_1_C'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 12058632
+- Name: 'kAudioChannelLayoutTag_AAC_Octagonal'
+  JsName: 'kAudioChannelLayoutTag_AAC_Octagonal'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9437192
+- Name: 'kAudioChannelLayoutTag_TMH_10_2_std'
+  JsName: 'kAudioChannelLayoutTag_TMH_10_2_std'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9502736
+- Name: 'kAudioChannelLayoutTag_TMH_10_2_full'
+  JsName: 'kAudioChannelLayoutTag_TMH_10_2_full'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9568277
+- Name: 'kAudioChannelLayoutTag_AC3_1_0_1'
+  JsName: 'kAudioChannelLayoutTag_AC3_1_0_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9764866
+- Name: 'kAudioChannelLayoutTag_AC3_3_0'
+  JsName: 'kAudioChannelLayoutTag_AC3_3_0'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9830403
+- Name: 'kAudioChannelLayoutTag_AC3_3_1'
+  JsName: 'kAudioChannelLayoutTag_AC3_3_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9895940
+- Name: 'kAudioChannelLayoutTag_AC3_3_0_1'
+  JsName: 'kAudioChannelLayoutTag_AC3_3_0_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9961476
+- Name: 'kAudioChannelLayoutTag_AC3_2_1_1'
+  JsName: 'kAudioChannelLayoutTag_AC3_2_1_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10027012
+- Name: 'kAudioChannelLayoutTag_AC3_3_1_1'
+  JsName: 'kAudioChannelLayoutTag_AC3_3_1_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10092549
+- Name: 'kAudioChannelLayoutTag_EAC_6_0_A'
+  JsName: 'kAudioChannelLayoutTag_EAC_6_0_A'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10158086
+- Name: 'kAudioChannelLayoutTag_EAC_7_0_A'
+  JsName: 'kAudioChannelLayoutTag_EAC_7_0_A'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10223623
+- Name: 'kAudioChannelLayoutTag_EAC3_6_1_A'
+  JsName: 'kAudioChannelLayoutTag_EAC3_6_1_A'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10289159
+- Name: 'kAudioChannelLayoutTag_EAC3_6_1_B'
+  JsName: 'kAudioChannelLayoutTag_EAC3_6_1_B'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10354695
+- Name: 'kAudioChannelLayoutTag_EAC3_6_1_C'
+  JsName: 'kAudioChannelLayoutTag_EAC3_6_1_C'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10420231
+- Name: 'kAudioChannelLayoutTag_EAC3_7_1_A'
+  JsName: 'kAudioChannelLayoutTag_EAC3_7_1_A'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10485768
+- Name: 'kAudioChannelLayoutTag_EAC3_7_1_B'
+  JsName: 'kAudioChannelLayoutTag_EAC3_7_1_B'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10551304
+- Name: 'kAudioChannelLayoutTag_EAC3_7_1_C'
+  JsName: 'kAudioChannelLayoutTag_EAC3_7_1_C'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10616840
+- Name: 'kAudioChannelLayoutTag_EAC3_7_1_D'
+  JsName: 'kAudioChannelLayoutTag_EAC3_7_1_D'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10682376
+- Name: 'kAudioChannelLayoutTag_EAC3_7_1_E'
+  JsName: 'kAudioChannelLayoutTag_EAC3_7_1_E'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10747912
+- Name: 'kAudioChannelLayoutTag_EAC3_7_1_F'
+  JsName: 'kAudioChannelLayoutTag_EAC3_7_1_F'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10813448
+- Name: 'kAudioChannelLayoutTag_EAC3_7_1_G'
+  JsName: 'kAudioChannelLayoutTag_EAC3_7_1_G'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10878984
+- Name: 'kAudioChannelLayoutTag_EAC3_7_1_H'
+  JsName: 'kAudioChannelLayoutTag_EAC3_7_1_H'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10944520
+- Name: 'kAudioChannelLayoutTag_DTS_3_1'
+  JsName: 'kAudioChannelLayoutTag_DTS_3_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11010052
+- Name: 'kAudioChannelLayoutTag_DTS_4_1'
+  JsName: 'kAudioChannelLayoutTag_DTS_4_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11075589
+- Name: 'kAudioChannelLayoutTag_DTS_6_0_A'
+  JsName: 'kAudioChannelLayoutTag_DTS_6_0_A'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11141126
+- Name: 'kAudioChannelLayoutTag_DTS_6_0_B'
+  JsName: 'kAudioChannelLayoutTag_DTS_6_0_B'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11206662
+- Name: 'kAudioChannelLayoutTag_DTS_6_0_C'
+  JsName: 'kAudioChannelLayoutTag_DTS_6_0_C'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11272198
+- Name: 'kAudioChannelLayoutTag_DTS_6_1_A'
+  JsName: 'kAudioChannelLayoutTag_DTS_6_1_A'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11337735
+- Name: 'kAudioChannelLayoutTag_DTS_6_1_B'
+  JsName: 'kAudioChannelLayoutTag_DTS_6_1_B'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11403271
+- Name: 'kAudioChannelLayoutTag_DTS_6_1_C'
+  JsName: 'kAudioChannelLayoutTag_DTS_6_1_C'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11468807
+- Name: 'kAudioChannelLayoutTag_DTS_7_0'
+  JsName: 'kAudioChannelLayoutTag_DTS_7_0'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11534343
+- Name: 'kAudioChannelLayoutTag_DTS_7_1'
+  JsName: 'kAudioChannelLayoutTag_DTS_7_1'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11599880
+- Name: 'kAudioChannelLayoutTag_DTS_8_0_A'
+  JsName: 'kAudioChannelLayoutTag_DTS_8_0_A'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11665416
+- Name: 'kAudioChannelLayoutTag_DTS_8_0_B'
+  JsName: 'kAudioChannelLayoutTag_DTS_8_0_B'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11730952
+- Name: 'kAudioChannelLayoutTag_DTS_8_1_A'
+  JsName: 'kAudioChannelLayoutTag_DTS_8_1_A'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11796489
+- Name: 'kAudioChannelLayoutTag_DTS_8_1_B'
+  JsName: 'kAudioChannelLayoutTag_DTS_8_1_B'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11862025
+- Name: 'kAudioChannelLayoutTag_DTS_6_1_D'
+  JsName: 'kAudioChannelLayoutTag_DTS_6_1_D'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11927559
+- Name: 'kAudioChannelLayoutTag_DiscreteInOrder'
+  JsName: 'kAudioChannelLayoutTag_DiscreteInOrder'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9633792
+- Name: 'kAudioChannelLayoutTag_Unknown'
+  JsName: 'kAudioChannelLayoutTag_Unknown'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -65536
+- Name: 'kMPEG4Object_AAC_Main'
+  JsName: 'kMPEG4Object_AAC_Main'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kMPEG4Object_AAC_LC'
+  JsName: 'kMPEG4Object_AAC_LC'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kMPEG4Object_AAC_SSR'
+  JsName: 'kMPEG4Object_AAC_SSR'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kMPEG4Object_AAC_LTP'
+  JsName: 'kMPEG4Object_AAC_LTP'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kMPEG4Object_AAC_SBR'
+  JsName: 'kMPEG4Object_AAC_SBR'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'kMPEG4Object_AAC_Scalable'
+  JsName: 'kMPEG4Object_AAC_Scalable'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'kMPEG4Object_TwinVQ'
+  JsName: 'kMPEG4Object_TwinVQ'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7
+- Name: 'kMPEG4Object_CELP'
+  JsName: 'kMPEG4Object_CELP'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kMPEG4Object_HVXC'
+  JsName: 'kMPEG4Object_HVXC'
+  Module: 'CoreAudio'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9
+...

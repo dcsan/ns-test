@@ -1,0 +1,805 @@
+name: SystemConfiguration
+items:
+- Name: 'kSCStatusOK'
+  JsName: 'kSCStatusOK'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kSCStatusFailed'
+  JsName: 'kSCStatusFailed'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1001
+- Name: 'kSCStatusInvalidArgument'
+  JsName: 'kSCStatusInvalidArgument'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1002
+- Name: 'kSCStatusAccessError'
+  JsName: 'kSCStatusAccessError'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1003
+- Name: 'kSCStatusNoKey'
+  JsName: 'kSCStatusNoKey'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1004
+- Name: 'kSCStatusKeyExists'
+  JsName: 'kSCStatusKeyExists'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1005
+- Name: 'kSCStatusLocked'
+  JsName: 'kSCStatusLocked'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1006
+- Name: 'kSCStatusNeedLock'
+  JsName: 'kSCStatusNeedLock'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1007
+- Name: 'kSCStatusNoStoreSession'
+  JsName: 'kSCStatusNoStoreSession'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2001
+- Name: 'kSCStatusNoStoreServer'
+  JsName: 'kSCStatusNoStoreServer'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2002
+- Name: 'kSCStatusNotifierActive'
+  JsName: 'kSCStatusNotifierActive'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2003
+- Name: 'kSCStatusNoPrefsSession'
+  JsName: 'kSCStatusNoPrefsSession'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3001
+- Name: 'kSCStatusPrefsBusy'
+  JsName: 'kSCStatusPrefsBusy'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3002
+- Name: 'kSCStatusNoConfigFile'
+  JsName: 'kSCStatusNoConfigFile'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3003
+- Name: 'kSCStatusNoLink'
+  JsName: 'kSCStatusNoLink'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3004
+- Name: 'kSCStatusStale'
+  JsName: 'kSCStatusStale'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3005
+- Name: 'kSCStatusMaxLink'
+  JsName: 'kSCStatusMaxLink'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3006
+- Name: 'kSCStatusReachabilityUnknown'
+  JsName: 'kSCStatusReachabilityUnknown'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4001
+- Name: 'kSCStatusConnectionNoService'
+  JsName: 'kSCStatusConnectionNoService'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5001
+- Name: 'kSCStatusConnectionIgnore'
+  JsName: 'kSCStatusConnectionIgnore'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5002
+- Name: 'kCFErrorDomainSystemConfiguration'
+  JsName: 'kCFErrorDomainSystemConfiguration'
+  Module: 'SystemConfiguration'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'SCCopyLastError'
+  JsName: 'SCCopyLastError'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFError
+    Name: NSError
+- Name: 'SCError'
+  JsName: 'SCError'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+- Name: 'SCErrorString'
+  JsName: 'SCErrorString'
+  Module: 'SystemConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: Int
+- Name: '1663'
+  JsName: 'SCDynamicStoreContext'
+  Module: 'SystemConfiguration.SCDynamicStore'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: version
+    Signature:
+      Type: Long
+  - Name: info
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: retain
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: release
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: copyDescription
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Interface
+        Module: CoreFoundation.CFBase
+        Name: NSString
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  Type: Struct
+- Name: 'kSCPreferencesNotificationCommit'
+  JsName: 'kSCPreferencesNotificationCommit'
+  Module: 'SystemConfiguration.SCPreferences'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kSCPreferencesNotificationApply'
+  JsName: 'kSCPreferencesNotificationApply'
+  Module: 'SystemConfiguration.SCPreferences'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: '1669'
+  JsName: 'SCPreferencesContext'
+  Module: 'SystemConfiguration.SCPreferences'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: version
+    Signature:
+      Type: Long
+  - Name: info
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: retain
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: release
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: copyDescription
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Interface
+        Module: CoreFoundation.CFBase
+        Name: NSString
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  Type: Struct
+- Name: 'kSCBondStatusOK'
+  JsName: 'kSCBondStatusOK'
+  Module: 'SystemConfiguration.SCNetworkConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kSCBondStatusLinkInvalid'
+  JsName: 'kSCBondStatusLinkInvalid'
+  Module: 'SystemConfiguration.SCNetworkConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kSCBondStatusNoPartner'
+  JsName: 'kSCBondStatusNoPartner'
+  Module: 'SystemConfiguration.SCNetworkConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kSCBondStatusNotInActiveGroup'
+  JsName: 'kSCBondStatusNotInActiveGroup'
+  Module: 'SystemConfiguration.SCNetworkConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kSCBondStatusUnknown'
+  JsName: 'kSCBondStatusUnknown'
+  Module: 'SystemConfiguration.SCNetworkConfiguration'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 999
+- Name: 'kSCNetworkFlagsTransientConnection'
+  JsName: 'kSCNetworkFlagsTransientConnection'
+  Module: 'SystemConfiguration.SCNetwork'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kSCNetworkFlagsReachable'
+  JsName: 'kSCNetworkFlagsReachable'
+  Module: 'SystemConfiguration.SCNetwork'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kSCNetworkFlagsConnectionRequired'
+  JsName: 'kSCNetworkFlagsConnectionRequired'
+  Module: 'SystemConfiguration.SCNetwork'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kSCNetworkFlagsConnectionAutomatic'
+  JsName: 'kSCNetworkFlagsConnectionAutomatic'
+  Module: 'SystemConfiguration.SCNetwork'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kSCNetworkFlagsInterventionRequired'
+  JsName: 'kSCNetworkFlagsInterventionRequired'
+  Module: 'SystemConfiguration.SCNetwork'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'kSCNetworkFlagsIsLocalAddress'
+  JsName: 'kSCNetworkFlagsIsLocalAddress'
+  Module: 'SystemConfiguration.SCNetwork'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65536
+- Name: 'kSCNetworkFlagsIsDirect'
+  JsName: 'kSCNetworkFlagsIsDirect'
+  Module: 'SystemConfiguration.SCNetwork'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 131072
+- Name: '1676'
+  JsName: 'SCNetworkReachabilityContext'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: version
+    Signature:
+      Type: Long
+  - Name: info
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: retain
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: release
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: copyDescription
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Interface
+        Module: CoreFoundation.CFBase
+        Name: NSString
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  Type: Struct
+- Name: 'kSCNetworkReachabilityFlagsTransientConnection'
+  JsName: 'kSCNetworkReachabilityFlagsTransientConnection'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kSCNetworkReachabilityFlagsReachable'
+  JsName: 'kSCNetworkReachabilityFlagsReachable'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kSCNetworkReachabilityFlagsConnectionRequired'
+  JsName: 'kSCNetworkReachabilityFlagsConnectionRequired'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kSCNetworkReachabilityFlagsConnectionOnTraffic'
+  JsName: 'kSCNetworkReachabilityFlagsConnectionOnTraffic'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kSCNetworkReachabilityFlagsInterventionRequired'
+  JsName: 'kSCNetworkReachabilityFlagsInterventionRequired'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'kSCNetworkReachabilityFlagsConnectionOnDemand'
+  JsName: 'kSCNetworkReachabilityFlagsConnectionOnDemand'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 32
+- Name: 'kSCNetworkReachabilityFlagsIsLocalAddress'
+  JsName: 'kSCNetworkReachabilityFlagsIsLocalAddress'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65536
+- Name: 'kSCNetworkReachabilityFlagsIsDirect'
+  JsName: 'kSCNetworkReachabilityFlagsIsDirect'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 131072
+- Name: 'kSCNetworkReachabilityFlagsIsWWAN'
+  JsName: 'kSCNetworkReachabilityFlagsIsWWAN'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 262144
+- Name: 'kSCNetworkReachabilityFlagsConnectionAutomatic'
+  JsName: 'kSCNetworkReachabilityFlagsConnectionAutomatic'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'SCNetworkReachabilityCreateWithAddress'
+  JsName: 'SCNetworkReachabilityCreateWithAddress'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: Darwin.POSIX.sys.socket
+      Name: sockaddr
+- Name: 'SCNetworkReachabilityCreateWithAddressPair'
+  JsName: 'SCNetworkReachabilityCreateWithAddressPair'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: Darwin.POSIX.sys.socket
+      Name: sockaddr
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: Darwin.POSIX.sys.socket
+      Name: sockaddr
+- Name: 'SCNetworkReachabilityCreateWithName'
+  JsName: 'SCNetworkReachabilityCreateWithName'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'SCNetworkReachabilityGetTypeID'
+  JsName: 'SCNetworkReachabilityGetTypeID'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'SCNetworkReachabilityGetFlags'
+  JsName: 'SCNetworkReachabilityGetFlags'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'SCNetworkReachabilitySetCallback'
+  JsName: 'SCNetworkReachabilitySetCallback'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: UInt
+    - Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: SystemConfiguration.SCNetworkReachability
+      Name: SCNetworkReachabilityContext
+- Name: 'SCNetworkReachabilityScheduleWithRunLoop'
+  JsName: 'SCNetworkReachabilityScheduleWithRunLoop'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'SCNetworkReachabilityUnscheduleFromRunLoop'
+  JsName: 'SCNetworkReachabilityUnscheduleFromRunLoop'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'SCNetworkReachabilitySetDispatchQueue'
+  JsName: 'SCNetworkReachabilitySetDispatchQueue'
+  Module: 'SystemConfiguration.SCNetworkReachability'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+- Name: '1682'
+  JsName: 'SCNetworkConnectionContext'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: version
+    Signature:
+      Type: Long
+  - Name: info
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: retain
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: release
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: copyDescription
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Interface
+        Module: CoreFoundation.CFBase
+        Name: NSString
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  Type: Struct
+- Name: 'kSCNetworkConnectionInvalid'
+  JsName: 'kSCNetworkConnectionInvalid'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -1
+- Name: 'kSCNetworkConnectionDisconnected'
+  JsName: 'kSCNetworkConnectionDisconnected'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kSCNetworkConnectionConnecting'
+  JsName: 'kSCNetworkConnectionConnecting'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kSCNetworkConnectionConnected'
+  JsName: 'kSCNetworkConnectionConnected'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kSCNetworkConnectionDisconnecting'
+  JsName: 'kSCNetworkConnectionDisconnecting'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kSCNetworkConnectionPPPDisconnected'
+  JsName: 'kSCNetworkConnectionPPPDisconnected'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kSCNetworkConnectionPPPInitializing'
+  JsName: 'kSCNetworkConnectionPPPInitializing'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kSCNetworkConnectionPPPConnectingLink'
+  JsName: 'kSCNetworkConnectionPPPConnectingLink'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kSCNetworkConnectionPPPDialOnTraffic'
+  JsName: 'kSCNetworkConnectionPPPDialOnTraffic'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kSCNetworkConnectionPPPNegotiatingLink'
+  JsName: 'kSCNetworkConnectionPPPNegotiatingLink'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kSCNetworkConnectionPPPAuthenticating'
+  JsName: 'kSCNetworkConnectionPPPAuthenticating'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'kSCNetworkConnectionPPPWaitingForCallBack'
+  JsName: 'kSCNetworkConnectionPPPWaitingForCallBack'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'kSCNetworkConnectionPPPNegotiatingNetwork'
+  JsName: 'kSCNetworkConnectionPPPNegotiatingNetwork'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7
+- Name: 'kSCNetworkConnectionPPPConnected'
+  JsName: 'kSCNetworkConnectionPPPConnected'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kSCNetworkConnectionPPPTerminating'
+  JsName: 'kSCNetworkConnectionPPPTerminating'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9
+- Name: 'kSCNetworkConnectionPPPDisconnectingLink'
+  JsName: 'kSCNetworkConnectionPPPDisconnectingLink'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10
+- Name: 'kSCNetworkConnectionPPPHoldingLinkOff'
+  JsName: 'kSCNetworkConnectionPPPHoldingLinkOff'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11
+- Name: 'kSCNetworkConnectionPPPSuspended'
+  JsName: 'kSCNetworkConnectionPPPSuspended'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 12
+- Name: 'kSCNetworkConnectionPPPWaitingForRedial'
+  JsName: 'kSCNetworkConnectionPPPWaitingForRedial'
+  Module: 'SystemConfiguration.SCNetworkConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 13
+...

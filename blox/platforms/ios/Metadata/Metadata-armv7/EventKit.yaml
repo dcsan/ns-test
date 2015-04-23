@@ -1,0 +1,2983 @@
+name: EventKit
+items:
+- Name: 'EKAuthorizationStatus'
+  JsName: 'EKAuthorizationStatus'
+  Module: 'EventKit.EKTypes'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"EKAuthorizationStatusNotDetermined":0,"EKAuthorizationStatusRestricted":1,"EKAuthorizationStatusDenied":2,"EKAuthorizationStatusAuthorized":3})
+- Name: 'EKSunday'
+  JsName: 'EKSunday'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'EKMonday'
+  JsName: 'EKMonday'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'EKTuesday'
+  JsName: 'EKTuesday'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'EKWednesday'
+  JsName: 'EKWednesday'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'EKThursday'
+  JsName: 'EKThursday'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'EKFriday'
+  JsName: 'EKFriday'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'EKSaturday'
+  JsName: 'EKSaturday'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7
+- Name: '1201'
+  JsName: 'EKRecurrenceFrequency'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"EKRecurrenceFrequencyDaily":0,"EKRecurrenceFrequencyWeekly":1,"EKRecurrenceFrequencyMonthly":2,"EKRecurrenceFrequencyYearly":3})
+- Name: '1202'
+  JsName: 'EKParticipantType'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"EKParticipantTypeUnknown":0,"EKParticipantTypePerson":1,"EKParticipantTypeRoom":2,"EKParticipantTypeResource":3,"EKParticipantTypeGroup":4})
+- Name: '1203'
+  JsName: 'EKParticipantRole'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"EKParticipantRoleUnknown":0,"EKParticipantRoleRequired":1,"EKParticipantRoleOptional":2,"EKParticipantRoleChair":3,"EKParticipantRoleNonParticipant":4})
+- Name: '1204'
+  JsName: 'EKParticipantStatus'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"EKParticipantStatusUnknown":0,"EKParticipantStatusPending":1,"EKParticipantStatusAccepted":2,"EKParticipantStatusDeclined":3,"EKParticipantStatusTentative":4,"EKParticipantStatusDelegated":5,"EKParticipantStatusCompleted":6,"EKParticipantStatusInProcess":7})
+- Name: '1205'
+  JsName: 'EKCalendarType'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"EKCalendarTypeLocal":0,"EKCalendarTypeCalDAV":1,"EKCalendarTypeExchange":2,"EKCalendarTypeSubscription":3,"EKCalendarTypeBirthday":4})
+- Name: 'EKCalendarEventAvailabilityNone'
+  JsName: 'EKCalendarEventAvailabilityNone'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'EKCalendarEventAvailabilityBusy'
+  JsName: 'EKCalendarEventAvailabilityBusy'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'EKCalendarEventAvailabilityFree'
+  JsName: 'EKCalendarEventAvailabilityFree'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'EKCalendarEventAvailabilityTentative'
+  JsName: 'EKCalendarEventAvailabilityTentative'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'EKCalendarEventAvailabilityUnavailable'
+  JsName: 'EKCalendarEventAvailabilityUnavailable'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: '1207'
+  JsName: 'EKSourceType'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"EKSourceTypeLocal":0,"EKSourceTypeExchange":1,"EKSourceTypeCalDAV":2,"EKSourceTypeMobileMe":3,"EKSourceTypeSubscribed":4,"EKSourceTypeBirthdays":5})
+- Name: 'EKEntityTypeEvent'
+  JsName: 'EKEntityTypeEvent'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'EKEntityTypeReminder'
+  JsName: 'EKEntityTypeReminder'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'EKEntityMaskEvent'
+  JsName: 'EKEntityMaskEvent'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'EKEntityMaskReminder'
+  JsName: 'EKEntityMaskReminder'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'EKAlarmProximityNone'
+  JsName: 'EKAlarmProximityNone'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'EKAlarmProximityEnter'
+  JsName: 'EKAlarmProximityEnter'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'EKAlarmProximityLeave'
+  JsName: 'EKAlarmProximityLeave'
+  Module: 'EventKit.EKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'EKObject'
+  JsName: 'EKObject'
+  Module: 'EventKit.EKObject'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'hasChanges'
+    JsName: 'hasChanges'
+    Module: 'EventKit.EKObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'hasChanges'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  - Name: 'isNew'
+    JsName: 'isNew'
+    Module: 'EventKit.EKObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isNew'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  - Name: 'refresh'
+    JsName: 'refresh'
+    Module: 'EventKit.EKObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'refresh'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  - Name: 'reset'
+    JsName: 'reset'
+    Module: 'EventKit.EKObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'reset'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'rollback'
+    JsName: 'rollback'
+    Module: 'EventKit.EKObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'rollback'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'EKAlarm'
+  JsName: 'EKAlarm'
+  Module: 'EventKit.EKAlarm'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'alarmWithAbsoluteDate:'
+    JsName: 'alarmWithAbsoluteDate'
+    Module: 'EventKit.EKAlarm'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'alarmWithAbsoluteDate:'
+    Signature:
+    - Type: Interface
+      Module: EventKit.EKAlarm
+      Name: EKAlarm
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'alarmWithRelativeOffset:'
+    JsName: 'alarmWithRelativeOffset'
+    Module: 'EventKit.EKAlarm'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'alarmWithRelativeOffset:'
+    Signature:
+    - Type: Interface
+      Module: EventKit.EKAlarm
+      Name: EKAlarm
+    - Type: Double
+    TypeEncoding: '@16@0:4d8'
+  Properties:
+  - Name: 'absoluteDate'
+    JsName: 'absoluteDate'
+    Module: 'EventKit.EKAlarm'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'absoluteDate'
+      JsName: 'absoluteDate'
+      Module: 'EventKit.EKAlarm'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'absoluteDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setAbsoluteDate:'
+      JsName: 'setAbsoluteDate'
+      Module: 'EventKit.EKAlarm'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAbsoluteDate:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'proximity'
+    JsName: 'proximity'
+    Module: 'EventKit.EKAlarm'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'proximity'
+      JsName: 'proximity'
+      Module: 'EventKit.EKAlarm'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'proximity'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setProximity:'
+      JsName: 'setProximity'
+      Module: 'EventKit.EKAlarm'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setProximity:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'relativeOffset'
+    JsName: 'relativeOffset'
+    Module: 'EventKit.EKAlarm'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'relativeOffset'
+      JsName: 'relativeOffset'
+      Module: 'EventKit.EKAlarm'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'relativeOffset'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+    Setter:
+      Name: 'setRelativeOffset:'
+      JsName: 'setRelativeOffset'
+      Module: 'EventKit.EKAlarm'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRelativeOffset:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v16@0:4d8'
+  - Name: 'structuredLocation'
+    JsName: 'structuredLocation'
+    Module: 'EventKit.EKAlarm'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'structuredLocation'
+      JsName: 'structuredLocation'
+      Module: 'EventKit.EKAlarm'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'structuredLocation'
+      Signature:
+      - Type: Interface
+        Module: EventKit.EKStructuredLocation
+        Name: EKStructuredLocation
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setStructuredLocation:'
+      JsName: 'setStructuredLocation'
+      Module: 'EventKit.EKAlarm'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setStructuredLocation:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: EventKit.EKStructuredLocation
+        Name: EKStructuredLocation
+      TypeEncoding: 'v12@0:4@8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: EventKit.EKObject
+    Name: EKObject
+  Type: Interface
+- Name: '1211'
+  JsName: 'EKSpan'
+  Module: 'EventKit.EKEventStore'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"EKSpanThisEvent":0,"EKSpanFutureEvents":1})
+- Name: 'EKEventStore'
+  JsName: 'EKEventStore'
+  Module: 'EventKit.EKEventStore'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'calendarItemsWithExternalIdentifier:'
+    JsName: 'calendarItemsWithExternalIdentifier'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'calendarItemsWithExternalIdentifier:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'calendarItemWithIdentifier:'
+    JsName: 'calendarItemWithIdentifier'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'calendarItemWithIdentifier:'
+    Signature:
+    - Type: Interface
+      Module: EventKit.EKCalendarItem
+      Name: EKCalendarItem
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'calendarsForEntityType:'
+    JsName: 'calendarsForEntityType'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'calendarsForEntityType:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: UInt
+    TypeEncoding: '@12@0:4I8'
+  - Name: 'calendarWithIdentifier:'
+    JsName: 'calendarWithIdentifier'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'calendarWithIdentifier:'
+    Signature:
+    - Type: Interface
+      Module: EventKit.EKCalendar
+      Name: EKCalendar
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'cancelFetchRequest:'
+    JsName: 'cancelFetchRequest'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancelFetchRequest:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'commit:'
+    JsName: 'commit'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'commit:'
+    Signature:
+    - Type: Bool
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'c12@0:4^@8'
+  - Name: 'defaultCalendarForNewReminders'
+    JsName: 'defaultCalendarForNewReminders'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'defaultCalendarForNewReminders'
+    Signature:
+    - Type: Interface
+      Module: EventKit.EKCalendar
+      Name: EKCalendar
+    TypeEncoding: '@8@0:4'
+  - Name: 'enumerateEventsMatchingPredicate:usingBlock:'
+    JsName: 'enumerateEventsMatchingPredicateUsingBlock'
+    Module: 'EventKit.EKEventStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'enumerateEventsMatchingPredicate:usingBlock:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: EventKit.EKEvent
+        Name: EKEvent
+      - Type: Pointer
+        PointerType:
+          Type: Bool
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'eventsMatchingPredicate:'
+    JsName: 'eventsMatchingPredicate'
+    Module: 'EventKit.EKEventStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'eventsMatchingPredicate:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'eventWithIdentifier:'
+    JsName: 'eventWithIdentifier'
+    Module: 'EventKit.EKEventStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'eventWithIdentifier:'
+    Signature:
+    - Type: Interface
+      Module: EventKit.EKEvent
+      Name: EKEvent
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'fetchRemindersMatchingPredicate:completion:'
+    JsName: 'fetchRemindersMatchingPredicateCompletion'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchRemindersMatchingPredicate:completion:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+    TypeEncoding: '@16@0:4@8@?12'
+  - Name: 'predicateForCompletedRemindersWithCompletionDateStarting:ending:calendars:'
+    JsName: 'predicateForCompletedRemindersWithCompletionDateStartingEndingCalendars'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForCompletedRemindersWithCompletionDateStarting:ending:calendars:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@20@0:4@8@12@16'
+  - Name: 'predicateForEventsWithStartDate:endDate:calendars:'
+    JsName: 'predicateForEventsWithStartDateEndDateCalendars'
+    Module: 'EventKit.EKEventStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForEventsWithStartDate:endDate:calendars:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@20@0:4@8@12@16'
+  - Name: 'predicateForIncompleteRemindersWithDueDateStarting:ending:calendars:'
+    JsName: 'predicateForIncompleteRemindersWithDueDateStartingEndingCalendars'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForIncompleteRemindersWithDueDateStarting:ending:calendars:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@20@0:4@8@12@16'
+  - Name: 'predicateForRemindersInCalendars:'
+    JsName: 'predicateForRemindersInCalendars'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForRemindersInCalendars:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'refreshSourcesIfNecessary'
+    JsName: 'refreshSourcesIfNecessary'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'refreshSourcesIfNecessary'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'removeCalendar:commit:error:'
+    JsName: 'removeCalendarCommitError'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeCalendar:commit:error:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: EventKit.EKCalendar
+      Name: EKCalendar
+    - Type: Bool
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'c20@0:4@8c12^@16'
+  - Name: 'removeEvent:span:commit:error:'
+    JsName: 'removeEventSpanCommitError'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeEvent:span:commit:error:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: EventKit.EKEvent
+      Name: EKEvent
+    - Type: UInt
+    - Type: Bool
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'c24@0:4@8i12c16^@20'
+  - Name: 'removeEvent:span:error:'
+    JsName: 'removeEventSpanError'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeEvent:span:error:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: EventKit.EKEvent
+      Name: EKEvent
+    - Type: UInt
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'c20@0:4@8i12^@16'
+  - Name: 'removeReminder:commit:error:'
+    JsName: 'removeReminderCommitError'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeReminder:commit:error:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: EventKit.EKReminder
+      Name: EKReminder
+    - Type: Bool
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'c20@0:4@8c12^@16'
+  - Name: 'requestAccessToEntityType:completion:'
+    JsName: 'requestAccessToEntityTypeCompletion'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'requestAccessToEntityType:completion:'
+    Signature:
+    - Type: Void
+    - Type: UInt
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4I8@?12'
+  - Name: 'reset'
+    JsName: 'reset'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'reset'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'saveCalendar:commit:error:'
+    JsName: 'saveCalendarCommitError'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'saveCalendar:commit:error:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: EventKit.EKCalendar
+      Name: EKCalendar
+    - Type: Bool
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'c20@0:4@8c12^@16'
+  - Name: 'saveEvent:span:commit:error:'
+    JsName: 'saveEventSpanCommitError'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'saveEvent:span:commit:error:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: EventKit.EKEvent
+      Name: EKEvent
+    - Type: UInt
+    - Type: Bool
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'c24@0:4@8i12c16^@20'
+  - Name: 'saveEvent:span:error:'
+    JsName: 'saveEventSpanError'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'saveEvent:span:error:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: EventKit.EKEvent
+      Name: EKEvent
+    - Type: UInt
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'c20@0:4@8i12^@16'
+  - Name: 'saveReminder:commit:error:'
+    JsName: 'saveReminderCommitError'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'saveReminder:commit:error:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: EventKit.EKReminder
+      Name: EKReminder
+    - Type: Bool
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'c20@0:4@8c12^@16'
+  - Name: 'sources'
+    JsName: 'sources'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'sources'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@8@0:4'
+  - Name: 'sourceWithIdentifier:'
+    JsName: 'sourceWithIdentifier'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'sourceWithIdentifier:'
+    Signature:
+    - Type: Interface
+      Module: EventKit.EKSource
+      Name: EKSource
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@12@0:4@8'
+  StaticMethods:
+  - Name: 'authorizationStatusForEntityType:'
+    JsName: 'authorizationStatusForEntityType'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'authorizationStatusForEntityType:'
+    Signature:
+    - Type: Int
+    - Type: UInt
+    TypeEncoding: 'i12@0:4I8'
+  Properties:
+  - Name: 'calendars'
+    JsName: 'calendars'
+    Module: 'EventKit.EKEventStore'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'calendars'
+      JsName: 'calendars'
+      Module: 'EventKit.EKEventStore'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'calendars'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'defaultCalendarForNewEvents'
+    JsName: 'defaultCalendarForNewEvents'
+    Module: 'EventKit.EKEventStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'defaultCalendarForNewEvents'
+      JsName: 'defaultCalendarForNewEvents'
+      Module: 'EventKit.EKEventStore'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'defaultCalendarForNewEvents'
+      Signature:
+      - Type: Interface
+        Module: EventKit.EKCalendar
+        Name: EKCalendar
+      TypeEncoding: '@8@0:4'
+  - Name: 'eventStoreIdentifier'
+    JsName: 'eventStoreIdentifier'
+    Module: 'EventKit.EKEventStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'eventStoreIdentifier'
+      JsName: 'eventStoreIdentifier'
+      Module: 'EventKit.EKEventStore'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'eventStoreIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'EKEventStoreChangedNotification'
+  JsName: 'EKEventStoreChangedNotification'
+  Module: 'EventKit.EKEventStore'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'EKCalendar'
+  JsName: 'EKCalendar'
+  Module: 'EventKit.EKCalendar'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'calendarForEntityType:eventStore:'
+    JsName: 'calendarForEntityTypeEventStore'
+    Module: 'EventKit.EKCalendar'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'calendarForEntityType:eventStore:'
+    Signature:
+    - Type: Interface
+      Module: EventKit.EKCalendar
+      Name: EKCalendar
+    - Type: UInt
+    - Type: Interface
+      Module: EventKit.EKEventStore
+      Name: EKEventStore
+    TypeEncoding: '@16@0:4I8@12'
+  - Name: 'calendarWithEventStore:'
+    JsName: 'calendarWithEventStore'
+    Module: 'EventKit.EKCalendar'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'calendarWithEventStore:'
+    Signature:
+    - Type: Interface
+      Module: EventKit.EKCalendar
+      Name: EKCalendar
+    - Type: Interface
+      Module: EventKit.EKEventStore
+      Name: EKEventStore
+    TypeEncoding: '@12@0:4@8'
+  Properties:
+  - Name: 'allowedEntityTypes'
+    JsName: 'allowedEntityTypes'
+    Module: 'EventKit.EKCalendar'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'allowedEntityTypes'
+      JsName: 'allowedEntityTypes'
+      Module: 'EventKit.EKCalendar'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'allowedEntityTypes'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'allowsContentModifications'
+    JsName: 'allowsContentModifications'
+    Module: 'EventKit.EKCalendar'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'allowsContentModifications'
+      JsName: 'allowsContentModifications'
+      Module: 'EventKit.EKCalendar'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'allowsContentModifications'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'calendarIdentifier'
+    JsName: 'calendarIdentifier'
+    Module: 'EventKit.EKCalendar'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'calendarIdentifier'
+      JsName: 'calendarIdentifier'
+      Module: 'EventKit.EKCalendar'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'calendarIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'CGColor'
+    JsName: 'CGColor'
+    Module: 'EventKit.EKCalendar'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'CGColor'
+      JsName: 'CGColor'
+      Module: 'EventKit.EKCalendar'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'CGColor'
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: '^{CGColor=}8@0:4'
+    Setter:
+      Name: 'setCGColor:'
+      JsName: 'setCGColor'
+      Module: 'EventKit.EKCalendar'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCGColor:'
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: 'v12@0:4^{CGColor=}8'
+  - Name: 'immutable'
+    JsName: 'immutable'
+    Module: 'EventKit.EKCalendar'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isImmutable'
+      JsName: 'isImmutable'
+      Module: 'EventKit.EKCalendar'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isImmutable'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'source'
+    JsName: 'source'
+    Module: 'EventKit.EKCalendar'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'source'
+      JsName: 'source'
+      Module: 'EventKit.EKCalendar'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'source'
+      Signature:
+      - Type: Interface
+        Module: EventKit.EKSource
+        Name: EKSource
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setSource:'
+      JsName: 'setSource'
+      Module: 'EventKit.EKCalendar'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSource:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: EventKit.EKSource
+        Name: EKSource
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'subscribed'
+    JsName: 'subscribed'
+    Module: 'EventKit.EKCalendar'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isSubscribed'
+      JsName: 'isSubscribed'
+      Module: 'EventKit.EKCalendar'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isSubscribed'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'supportedEventAvailabilities'
+    JsName: 'supportedEventAvailabilities'
+    Module: 'EventKit.EKCalendar'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'supportedEventAvailabilities'
+      JsName: 'supportedEventAvailabilities'
+      Module: 'EventKit.EKCalendar'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'supportedEventAvailabilities'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'title'
+    JsName: 'title'
+    Module: 'EventKit.EKCalendar'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'title'
+      JsName: 'title'
+      Module: 'EventKit.EKCalendar'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'title'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setTitle:'
+      JsName: 'setTitle'
+      Module: 'EventKit.EKCalendar'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setTitle:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'type'
+    JsName: 'type'
+    Module: 'EventKit.EKCalendar'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'type'
+      JsName: 'type'
+      Module: 'EventKit.EKCalendar'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'type'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'i8@0:4'
+  Protocols: []
+  Base:
+    Module: EventKit.EKObject
+    Name: EKObject
+  Type: Interface
+- Name: 'EKErrorDomain'
+  JsName: 'EKErrorDomain'
+  Module: 'EventKit.EKError'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'EKErrorCode'
+  JsName: 'EKErrorCode'
+  Module: 'EventKit.EKError'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"EKErrorEventNotMutable":0,"EKErrorNoCalendar":1,"EKErrorNoStartDate":2,"EKErrorNoEndDate":3,"EKErrorDatesInverted":4,"EKErrorInternalFailure":5,"EKErrorCalendarReadOnly":6,"EKErrorDurationGreaterThanRecurrence":7,"EKErrorAlarmGreaterThanRecurrence":8,"EKErrorStartDateTooFarInFuture":9,"EKErrorStartDateCollidesWithOtherOccurrence":10,"EKErrorObjectBelongsToDifferentStore":11,"EKErrorInvitesCannotBeMoved":12,"EKErrorInvalidSpan":13,"EKErrorCalendarHasNoSource":14,"EKErrorCalendarSourceCannotBeModified":15,"EKErrorCalendarIsImmutable":16,"EKErrorSourceDoesNotAllowCalendarAddDelete":17,"EKErrorRecurringReminderRequiresDueDate":18,"EKErrorStructuredLocationsNotSupported":19,"EKErrorReminderLocationsNotSupported":20,"EKErrorAlarmProximityNotSupported":21,"EKErrorCalendarDoesNotAllowEvents":22,"EKErrorCalendarDoesNotAllowReminders":23,"EKErrorSourceDoesNotAllowReminders":24,"EKErrorPriorityIsInvalid":25,"EKErrorInvalidEntityType":26,"EKErrorLast":27})
+- Name: 'EKParticipant'
+  JsName: 'EKParticipant'
+  Module: 'EventKit.EKParticipant'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'ABRecordWithAddressBook:'
+    JsName: 'ABRecordWithAddressBook'
+    Module: 'EventKit.EKParticipant'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'ABRecordWithAddressBook:'
+    Signature:
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '^v12@0:4^v8'
+  StaticMethods: []
+  Properties:
+  - Name: 'isCurrentUser'
+    JsName: 'isCurrentUser'
+    Module: 'EventKit.EKParticipant'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isCurrentUser'
+      JsName: 'isCurrentUser'
+      Module: 'EventKit.EKParticipant'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isCurrentUser'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'EventKit.EKParticipant'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'EventKit.EKParticipant'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'participantRole'
+    JsName: 'participantRole'
+    Module: 'EventKit.EKParticipant'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'participantRole'
+      JsName: 'participantRole'
+      Module: 'EventKit.EKParticipant'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'participantRole'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'i8@0:4'
+  - Name: 'participantStatus'
+    JsName: 'participantStatus'
+    Module: 'EventKit.EKParticipant'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'participantStatus'
+      JsName: 'participantStatus'
+      Module: 'EventKit.EKParticipant'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'participantStatus'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'i8@0:4'
+  - Name: 'participantType'
+    JsName: 'participantType'
+    Module: 'EventKit.EKParticipant'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'participantType'
+      JsName: 'participantType'
+      Module: 'EventKit.EKParticipant'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'participantType'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'i8@0:4'
+  - Name: 'URL'
+    JsName: 'URL'
+    Module: 'EventKit.EKParticipant'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'URL'
+      JsName: 'URL'
+      Module: 'EventKit.EKParticipant'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'URL'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: EventKit.EKObject
+    Name: EKObject
+  Type: Interface
+- Name: 'EKCalendarItem'
+  JsName: 'EKCalendarItem'
+  Module: 'EventKit.EKCalendarItem'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addAlarm:'
+    JsName: 'addAlarm'
+    Module: 'EventKit.EKCalendarItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addAlarm:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: EventKit.EKAlarm
+      Name: EKAlarm
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'addRecurrenceRule:'
+    JsName: 'addRecurrenceRule'
+    Module: 'EventKit.EKCalendarItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addRecurrenceRule:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: EventKit.EKRecurrenceRule
+      Name: EKRecurrenceRule
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'removeAlarm:'
+    JsName: 'removeAlarm'
+    Module: 'EventKit.EKCalendarItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeAlarm:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: EventKit.EKAlarm
+      Name: EKAlarm
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'removeRecurrenceRule:'
+    JsName: 'removeRecurrenceRule'
+    Module: 'EventKit.EKCalendarItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeRecurrenceRule:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: EventKit.EKRecurrenceRule
+      Name: EKRecurrenceRule
+    TypeEncoding: 'v12@0:4@8'
+  StaticMethods: []
+  Properties:
+  - Name: 'alarms'
+    JsName: 'alarms'
+    Module: 'EventKit.EKCalendarItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'alarms'
+      JsName: 'alarms'
+      Module: 'EventKit.EKCalendarItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'alarms'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setAlarms:'
+      JsName: 'setAlarms'
+      Module: 'EventKit.EKCalendarItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAlarms:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'attendees'
+    JsName: 'attendees'
+    Module: 'EventKit.EKCalendarItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'attendees'
+      JsName: 'attendees'
+      Module: 'EventKit.EKCalendarItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'attendees'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'calendar'
+    JsName: 'calendar'
+    Module: 'EventKit.EKCalendarItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'calendar'
+      JsName: 'calendar'
+      Module: 'EventKit.EKCalendarItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'calendar'
+      Signature:
+      - Type: Interface
+        Module: EventKit.EKCalendar
+        Name: EKCalendar
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setCalendar:'
+      JsName: 'setCalendar'
+      Module: 'EventKit.EKCalendarItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCalendar:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: EventKit.EKCalendar
+        Name: EKCalendar
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'calendarItemExternalIdentifier'
+    JsName: 'calendarItemExternalIdentifier'
+    Module: 'EventKit.EKCalendarItem'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'calendarItemExternalIdentifier'
+      JsName: 'calendarItemExternalIdentifier'
+      Module: 'EventKit.EKCalendarItem'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'calendarItemExternalIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'calendarItemIdentifier'
+    JsName: 'calendarItemIdentifier'
+    Module: 'EventKit.EKCalendarItem'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'calendarItemIdentifier'
+      JsName: 'calendarItemIdentifier'
+      Module: 'EventKit.EKCalendarItem'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'calendarItemIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'creationDate'
+    JsName: 'creationDate'
+    Module: 'EventKit.EKCalendarItem'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'creationDate'
+      JsName: 'creationDate'
+      Module: 'EventKit.EKCalendarItem'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'creationDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'hasAlarms'
+    JsName: 'hasAlarms'
+    Module: 'EventKit.EKCalendarItem'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'hasAlarms'
+      JsName: 'hasAlarms'
+      Module: 'EventKit.EKCalendarItem'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'hasAlarms'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'hasAttendees'
+    JsName: 'hasAttendees'
+    Module: 'EventKit.EKCalendarItem'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'hasAttendees'
+      JsName: 'hasAttendees'
+      Module: 'EventKit.EKCalendarItem'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'hasAttendees'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'hasNotes'
+    JsName: 'hasNotes'
+    Module: 'EventKit.EKCalendarItem'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'hasNotes'
+      JsName: 'hasNotes'
+      Module: 'EventKit.EKCalendarItem'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'hasNotes'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'hasRecurrenceRules'
+    JsName: 'hasRecurrenceRules'
+    Module: 'EventKit.EKCalendarItem'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'hasRecurrenceRules'
+      JsName: 'hasRecurrenceRules'
+      Module: 'EventKit.EKCalendarItem'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'hasRecurrenceRules'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'lastModifiedDate'
+    JsName: 'lastModifiedDate'
+    Module: 'EventKit.EKCalendarItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'lastModifiedDate'
+      JsName: 'lastModifiedDate'
+      Module: 'EventKit.EKCalendarItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lastModifiedDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'location'
+    JsName: 'location'
+    Module: 'EventKit.EKCalendarItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'location'
+      JsName: 'location'
+      Module: 'EventKit.EKCalendarItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'location'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setLocation:'
+      JsName: 'setLocation'
+      Module: 'EventKit.EKCalendarItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLocation:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'notes'
+    JsName: 'notes'
+    Module: 'EventKit.EKCalendarItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'notes'
+      JsName: 'notes'
+      Module: 'EventKit.EKCalendarItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'notes'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setNotes:'
+      JsName: 'setNotes'
+      Module: 'EventKit.EKCalendarItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setNotes:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'recurrenceRules'
+    JsName: 'recurrenceRules'
+    Module: 'EventKit.EKCalendarItem'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'recurrenceRules'
+      JsName: 'recurrenceRules'
+      Module: 'EventKit.EKCalendarItem'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recurrenceRules'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setRecurrenceRules:'
+      JsName: 'setRecurrenceRules'
+      Module: 'EventKit.EKCalendarItem'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRecurrenceRules:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'timeZone'
+    JsName: 'timeZone'
+    Module: 'EventKit.EKCalendarItem'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'timeZone'
+      JsName: 'timeZone'
+      Module: 'EventKit.EKCalendarItem'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'timeZone'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSTimeZone
+        Name: NSTimeZone
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setTimeZone:'
+      JsName: 'setTimeZone'
+      Module: 'EventKit.EKCalendarItem'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setTimeZone:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSTimeZone
+        Name: NSTimeZone
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'title'
+    JsName: 'title'
+    Module: 'EventKit.EKCalendarItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'title'
+      JsName: 'title'
+      Module: 'EventKit.EKCalendarItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'title'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setTitle:'
+      JsName: 'setTitle'
+      Module: 'EventKit.EKCalendarItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setTitle:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'URL'
+    JsName: 'URL'
+    Module: 'EventKit.EKCalendarItem'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'URL'
+      JsName: 'URL'
+      Module: 'EventKit.EKCalendarItem'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'URL'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setURL:'
+      JsName: 'setURL'
+      Module: 'EventKit.EKCalendarItem'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setURL:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'UUID'
+    JsName: 'UUID'
+    Module: 'EventKit.EKCalendarItem'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'UUID'
+      JsName: 'UUID'
+      Module: 'EventKit.EKCalendarItem'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'UUID'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: EventKit.EKObject
+    Name: EKObject
+  Type: Interface
+- Name: '1215'
+  JsName: 'EKEventAvailability'
+  Module: 'EventKit.EKEvent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"EKEventAvailabilityNotSupported":-1,"EKEventAvailabilityBusy":0,"EKEventAvailabilityFree":1,"EKEventAvailabilityTentative":2,"EKEventAvailabilityUnavailable":3})
+- Name: '1216'
+  JsName: 'EKEventStatus'
+  Module: 'EventKit.EKEvent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"EKEventStatusNone":0,"EKEventStatusConfirmed":1,"EKEventStatusTentative":2,"EKEventStatusCanceled":3})
+- Name: 'EKEvent'
+  JsName: 'EKEvent'
+  Module: 'EventKit.EKEvent'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'compareStartDateWithEvent:'
+    JsName: 'compareStartDateWithEvent'
+    Module: 'EventKit.EKEvent'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'compareStartDateWithEvent:'
+    Signature:
+    - Type: Int
+    - Type: Interface
+      Module: EventKit.EKEvent
+      Name: EKEvent
+    TypeEncoding: 'i12@0:4@8'
+  StaticMethods:
+  - Name: 'eventWithEventStore:'
+    JsName: 'eventWithEventStore'
+    Module: 'EventKit.EKEvent'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'eventWithEventStore:'
+    Signature:
+    - Type: Interface
+      Module: EventKit.EKEvent
+      Name: EKEvent
+    - Type: Interface
+      Module: EventKit.EKEventStore
+      Name: EKEventStore
+    TypeEncoding: '@12@0:4@8'
+  Properties:
+  - Name: 'allDay'
+    JsName: 'allDay'
+    Module: 'EventKit.EKEvent'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isAllDay'
+      JsName: 'isAllDay'
+      Module: 'EventKit.EKEvent'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isAllDay'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setAllDay:'
+      JsName: 'setAllDay'
+      Module: 'EventKit.EKEvent'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAllDay:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'availability'
+    JsName: 'availability'
+    Module: 'EventKit.EKEvent'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'availability'
+      JsName: 'availability'
+      Module: 'EventKit.EKEvent'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'availability'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setAvailability:'
+      JsName: 'setAvailability'
+      Module: 'EventKit.EKEvent'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAvailability:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'birthdayPersonID'
+    JsName: 'birthdayPersonID'
+    Module: 'EventKit.EKEvent'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'birthdayPersonID'
+      JsName: 'birthdayPersonID'
+      Module: 'EventKit.EKEvent'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'birthdayPersonID'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  - Name: 'endDate'
+    JsName: 'endDate'
+    Module: 'EventKit.EKEvent'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'endDate'
+      JsName: 'endDate'
+      Module: 'EventKit.EKEvent'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'endDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setEndDate:'
+      JsName: 'setEndDate'
+      Module: 'EventKit.EKEvent'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setEndDate:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'eventIdentifier'
+    JsName: 'eventIdentifier'
+    Module: 'EventKit.EKEvent'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'eventIdentifier'
+      JsName: 'eventIdentifier'
+      Module: 'EventKit.EKEvent'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'eventIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'isDetached'
+    JsName: 'isDetached'
+    Module: 'EventKit.EKEvent'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isDetached'
+      JsName: 'isDetached'
+      Module: 'EventKit.EKEvent'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isDetached'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'organizer'
+    JsName: 'organizer'
+    Module: 'EventKit.EKEvent'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'organizer'
+      JsName: 'organizer'
+      Module: 'EventKit.EKEvent'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'organizer'
+      Signature:
+      - Type: Interface
+        Module: EventKit.EKParticipant
+        Name: EKParticipant
+      TypeEncoding: '@8@0:4'
+  - Name: 'startDate'
+    JsName: 'startDate'
+    Module: 'EventKit.EKEvent'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'startDate'
+      JsName: 'startDate'
+      Module: 'EventKit.EKEvent'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'startDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setStartDate:'
+      JsName: 'setStartDate'
+      Module: 'EventKit.EKEvent'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setStartDate:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'status'
+    JsName: 'status'
+    Module: 'EventKit.EKEvent'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'status'
+      JsName: 'status'
+      Module: 'EventKit.EKEvent'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'status'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'i8@0:4'
+  Protocols: []
+  Base:
+    Module: EventKit.EKCalendarItem
+    Name: EKCalendarItem
+  Type: Interface
+- Name: 'EKRecurrenceEnd'
+  JsName: 'EKRecurrenceEnd'
+  Module: 'EventKit.EKRecurrenceEnd'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'recurrenceEndWithEndDate:'
+    JsName: 'recurrenceEndWithEndDate'
+    Module: 'EventKit.EKRecurrenceEnd'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'recurrenceEndWithEndDate:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'recurrenceEndWithOccurrenceCount:'
+    JsName: 'recurrenceEndWithOccurrenceCount'
+    Module: 'EventKit.EKRecurrenceEnd'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'recurrenceEndWithOccurrenceCount:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: UInt
+    TypeEncoding: '@12@0:4I8'
+  Properties:
+  - Name: 'endDate'
+    JsName: 'endDate'
+    Module: 'EventKit.EKRecurrenceEnd'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'endDate'
+      JsName: 'endDate'
+      Module: 'EventKit.EKRecurrenceEnd'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'endDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'occurrenceCount'
+    JsName: 'occurrenceCount'
+    Module: 'EventKit.EKRecurrenceEnd'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'occurrenceCount'
+      JsName: 'occurrenceCount'
+      Module: 'EventKit.EKRecurrenceEnd'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'occurrenceCount'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'EKRecurrenceDayOfWeek'
+  JsName: 'EKRecurrenceDayOfWeek'
+  Module: 'EventKit.EKRecurrenceDayOfWeek'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithDayOfTheWeek:weekNumber:'
+    JsName: 'initWithDayOfTheWeekWeekNumber'
+    Module: 'EventKit.EKRecurrenceDayOfWeek'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithDayOfTheWeek:weekNumber:'
+    Signature:
+    - Type: Instancetype
+    - Type: Int
+    - Type: Int
+    TypeEncoding: '@16@0:4i8i12'
+  StaticMethods:
+  - Name: 'dayOfWeek:'
+    JsName: 'dayOfWeek'
+    Module: 'EventKit.EKRecurrenceDayOfWeek'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'dayOfWeek:'
+    Signature:
+    - Type: Interface
+      Module: EventKit.EKRecurrenceDayOfWeek
+      Name: EKRecurrenceDayOfWeek
+    - Type: Int
+    TypeEncoding: '@12@0:4i8'
+  - Name: 'dayOfWeek:weekNumber:'
+    JsName: 'dayOfWeekWeekNumber'
+    Module: 'EventKit.EKRecurrenceDayOfWeek'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'dayOfWeek:weekNumber:'
+    Signature:
+    - Type: Interface
+      Module: EventKit.EKRecurrenceDayOfWeek
+      Name: EKRecurrenceDayOfWeek
+    - Type: Int
+    - Type: Int
+    TypeEncoding: '@16@0:4i8i12'
+  Properties:
+  - Name: 'dayOfTheWeek'
+    JsName: 'dayOfTheWeek'
+    Module: 'EventKit.EKRecurrenceDayOfWeek'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'dayOfTheWeek'
+      JsName: 'dayOfTheWeek'
+      Module: 'EventKit.EKRecurrenceDayOfWeek'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'dayOfTheWeek'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  - Name: 'weekNumber'
+    JsName: 'weekNumber'
+    Module: 'EventKit.EKRecurrenceDayOfWeek'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'weekNumber'
+      JsName: 'weekNumber'
+      Module: 'EventKit.EKRecurrenceDayOfWeek'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'weekNumber'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'EKRecurrenceRule'
+  JsName: 'EKRecurrenceRule'
+  Module: 'EventKit.EKRecurrenceRule'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initRecurrenceWithFrequency:interval:daysOfTheWeek:daysOfTheMonth:monthsOfTheYear:weeksOfTheYear:daysOfTheYear:setPositions:end:'
+    JsName: 'initRecurrenceWithFrequencyIntervalDaysOfTheWeekDaysOfTheMonthMonthsOfTheYearWeeksOfTheYearDaysOfTheYearSetPositionsEnd'
+    Module: 'EventKit.EKRecurrenceRule'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initRecurrenceWithFrequency:interval:daysOfTheWeek:daysOfTheMonth:monthsOfTheYear:weeksOfTheYear:daysOfTheYear:setPositions:end:'
+    Signature:
+    - Type: Instancetype
+    - Type: UInt
+    - Type: Int
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: EventKit.EKRecurrenceEnd
+      Name: EKRecurrenceEnd
+    TypeEncoding: '@44@0:4i8i12@16@20@24@28@32@36@40'
+  - Name: 'initRecurrenceWithFrequency:interval:end:'
+    JsName: 'initRecurrenceWithFrequencyIntervalEnd'
+    Module: 'EventKit.EKRecurrenceRule'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initRecurrenceWithFrequency:interval:end:'
+    Signature:
+    - Type: Instancetype
+    - Type: UInt
+    - Type: Int
+    - Type: Interface
+      Module: EventKit.EKRecurrenceEnd
+      Name: EKRecurrenceEnd
+    TypeEncoding: '@20@0:4i8i12@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'calendarIdentifier'
+    JsName: 'calendarIdentifier'
+    Module: 'EventKit.EKRecurrenceRule'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'calendarIdentifier'
+      JsName: 'calendarIdentifier'
+      Module: 'EventKit.EKRecurrenceRule'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'calendarIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'daysOfTheMonth'
+    JsName: 'daysOfTheMonth'
+    Module: 'EventKit.EKRecurrenceRule'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'daysOfTheMonth'
+      JsName: 'daysOfTheMonth'
+      Module: 'EventKit.EKRecurrenceRule'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'daysOfTheMonth'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'daysOfTheWeek'
+    JsName: 'daysOfTheWeek'
+    Module: 'EventKit.EKRecurrenceRule'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'daysOfTheWeek'
+      JsName: 'daysOfTheWeek'
+      Module: 'EventKit.EKRecurrenceRule'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'daysOfTheWeek'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'daysOfTheYear'
+    JsName: 'daysOfTheYear'
+    Module: 'EventKit.EKRecurrenceRule'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'daysOfTheYear'
+      JsName: 'daysOfTheYear'
+      Module: 'EventKit.EKRecurrenceRule'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'daysOfTheYear'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'firstDayOfTheWeek'
+    JsName: 'firstDayOfTheWeek'
+    Module: 'EventKit.EKRecurrenceRule'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'firstDayOfTheWeek'
+      JsName: 'firstDayOfTheWeek'
+      Module: 'EventKit.EKRecurrenceRule'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'firstDayOfTheWeek'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  - Name: 'frequency'
+    JsName: 'frequency'
+    Module: 'EventKit.EKRecurrenceRule'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'frequency'
+      JsName: 'frequency'
+      Module: 'EventKit.EKRecurrenceRule'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'frequency'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'i8@0:4'
+  - Name: 'interval'
+    JsName: 'interval'
+    Module: 'EventKit.EKRecurrenceRule'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'interval'
+      JsName: 'interval'
+      Module: 'EventKit.EKRecurrenceRule'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'interval'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  - Name: 'monthsOfTheYear'
+    JsName: 'monthsOfTheYear'
+    Module: 'EventKit.EKRecurrenceRule'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'monthsOfTheYear'
+      JsName: 'monthsOfTheYear'
+      Module: 'EventKit.EKRecurrenceRule'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'monthsOfTheYear'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'recurrenceEnd'
+    JsName: 'recurrenceEnd'
+    Module: 'EventKit.EKRecurrenceRule'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'recurrenceEnd'
+      JsName: 'recurrenceEnd'
+      Module: 'EventKit.EKRecurrenceRule'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recurrenceEnd'
+      Signature:
+      - Type: Interface
+        Module: EventKit.EKRecurrenceEnd
+        Name: EKRecurrenceEnd
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setRecurrenceEnd:'
+      JsName: 'setRecurrenceEnd'
+      Module: 'EventKit.EKRecurrenceRule'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRecurrenceEnd:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: EventKit.EKRecurrenceEnd
+        Name: EKRecurrenceEnd
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'setPositions'
+    JsName: 'setPositions'
+    Module: 'EventKit.EKRecurrenceRule'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'setPositions'
+      JsName: 'setPositions'
+      Module: 'EventKit.EKRecurrenceRule'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPositions'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'weeksOfTheYear'
+    JsName: 'weeksOfTheYear'
+    Module: 'EventKit.EKRecurrenceRule'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'weeksOfTheYear'
+      JsName: 'weeksOfTheYear'
+      Module: 'EventKit.EKRecurrenceRule'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'weeksOfTheYear'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: EventKit.EKObject
+    Name: EKObject
+  Type: Interface
+- Name: 'EKReminder'
+  JsName: 'EKReminder'
+  Module: 'EventKit.EKReminder'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'reminderWithEventStore:'
+    JsName: 'reminderWithEventStore'
+    Module: 'EventKit.EKReminder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'reminderWithEventStore:'
+    Signature:
+    - Type: Interface
+      Module: EventKit.EKReminder
+      Name: EKReminder
+    - Type: Interface
+      Module: EventKit.EKEventStore
+      Name: EKEventStore
+    TypeEncoding: '@12@0:4@8'
+  Properties:
+  - Name: 'completed'
+    JsName: 'completed'
+    Module: 'EventKit.EKReminder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isCompleted'
+      JsName: 'isCompleted'
+      Module: 'EventKit.EKReminder'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isCompleted'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setCompleted:'
+      JsName: 'setCompleted'
+      Module: 'EventKit.EKReminder'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCompleted:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'completionDate'
+    JsName: 'completionDate'
+    Module: 'EventKit.EKReminder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'completionDate'
+      JsName: 'completionDate'
+      Module: 'EventKit.EKReminder'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'completionDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setCompletionDate:'
+      JsName: 'setCompletionDate'
+      Module: 'EventKit.EKReminder'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCompletionDate:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'dueDateComponents'
+    JsName: 'dueDateComponents'
+    Module: 'EventKit.EKReminder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'dueDateComponents'
+      JsName: 'dueDateComponents'
+      Module: 'EventKit.EKReminder'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'dueDateComponents'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSCalendar
+        Name: NSDateComponents
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDueDateComponents:'
+      JsName: 'setDueDateComponents'
+      Module: 'EventKit.EKReminder'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDueDateComponents:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSCalendar
+        Name: NSDateComponents
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'priority'
+    JsName: 'priority'
+    Module: 'EventKit.EKReminder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'priority'
+      JsName: 'priority'
+      Module: 'EventKit.EKReminder'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'priority'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setPriority:'
+      JsName: 'setPriority'
+      Module: 'EventKit.EKReminder'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPriority:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'startDateComponents'
+    JsName: 'startDateComponents'
+    Module: 'EventKit.EKReminder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'startDateComponents'
+      JsName: 'startDateComponents'
+      Module: 'EventKit.EKReminder'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'startDateComponents'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSCalendar
+        Name: NSDateComponents
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setStartDateComponents:'
+      JsName: 'setStartDateComponents'
+      Module: 'EventKit.EKReminder'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setStartDateComponents:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSCalendar
+        Name: NSDateComponents
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: EventKit.EKCalendarItem
+    Name: EKCalendarItem
+  Type: Interface
+- Name: 'EKSource'
+  JsName: 'EKSource'
+  Module: 'EventKit.EKSource'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'calendarsForEntityType:'
+    JsName: 'calendarsForEntityType'
+    Module: 'EventKit.EKSource'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'calendarsForEntityType:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSSet
+      Name: NSSet
+    - Type: UInt
+    TypeEncoding: '@12@0:4I8'
+  StaticMethods: []
+  Properties:
+  - Name: 'calendars'
+    JsName: 'calendars'
+    Module: 'EventKit.EKSource'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'calendars'
+      JsName: 'calendars'
+      Module: 'EventKit.EKSource'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'calendars'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSSet
+        Name: NSSet
+      TypeEncoding: '@8@0:4'
+  - Name: 'sourceIdentifier'
+    JsName: 'sourceIdentifier'
+    Module: 'EventKit.EKSource'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'sourceIdentifier'
+      JsName: 'sourceIdentifier'
+      Module: 'EventKit.EKSource'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'sourceIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'sourceType'
+    JsName: 'sourceType'
+    Module: 'EventKit.EKSource'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'sourceType'
+      JsName: 'sourceType'
+      Module: 'EventKit.EKSource'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'sourceType'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'i8@0:4'
+  - Name: 'title'
+    JsName: 'title'
+    Module: 'EventKit.EKSource'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'title'
+      JsName: 'title'
+      Module: 'EventKit.EKSource'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'title'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: EventKit.EKObject
+    Name: EKObject
+  Type: Interface
+- Name: 'EKStructuredLocation'
+  JsName: 'EKStructuredLocation'
+  Module: 'EventKit.EKStructuredLocation'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'locationWithTitle:'
+    JsName: 'locationWithTitle'
+    Module: 'EventKit.EKStructuredLocation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'locationWithTitle:'
+    Signature:
+    - Type: Interface
+      Module: EventKit.EKStructuredLocation
+      Name: EKStructuredLocation
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@12@0:4@8'
+  Properties:
+  - Name: 'geoLocation'
+    JsName: 'geoLocation'
+    Module: 'EventKit.EKStructuredLocation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'geoLocation'
+      JsName: 'geoLocation'
+      Module: 'EventKit.EKStructuredLocation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'geoLocation'
+      Signature:
+      - Type: Interface
+        Module: CoreLocation.CLLocation
+        Name: CLLocation
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setGeoLocation:'
+      JsName: 'setGeoLocation'
+      Module: 'EventKit.EKStructuredLocation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setGeoLocation:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CoreLocation.CLLocation
+        Name: CLLocation
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'radius'
+    JsName: 'radius'
+    Module: 'EventKit.EKStructuredLocation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'radius'
+      JsName: 'radius'
+      Module: 'EventKit.EKStructuredLocation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'radius'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+    Setter:
+      Name: 'setRadius:'
+      JsName: 'setRadius'
+      Module: 'EventKit.EKStructuredLocation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRadius:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v16@0:4d8'
+  - Name: 'title'
+    JsName: 'title'
+    Module: 'EventKit.EKStructuredLocation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'title'
+      JsName: 'title'
+      Module: 'EventKit.EKStructuredLocation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'title'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setTitle:'
+      JsName: 'setTitle'
+      Module: 'EventKit.EKStructuredLocation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setTitle:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: EventKit.EKObject
+    Name: EKObject
+  Type: Interface
+...

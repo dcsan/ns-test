@@ -1,0 +1,1638 @@
+name: GameController
+items:
+- Name: 'GCControllerElement'
+  JsName: 'GCControllerElement'
+  Module: 'GameController.GCControllerElement'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'analog'
+    JsName: 'analog'
+    Module: 'GameController.GCControllerElement'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isAnalog'
+      JsName: 'isAnalog'
+      Module: 'GameController.GCControllerElement'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isAnalog'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'collection'
+    JsName: 'collection'
+    Module: 'GameController.GCControllerElement'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'collection'
+      JsName: 'collection'
+      Module: 'GameController.GCControllerElement'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'collection'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerElement
+        Name: GCControllerElement
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'GCControllerAxisInput'
+  JsName: 'GCControllerAxisInput'
+  Module: 'GameController.GCControllerAxisInput'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'value'
+    JsName: 'value'
+    Module: 'GameController.GCControllerAxisInput'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'value'
+      JsName: 'value'
+      Module: 'GameController.GCControllerAxisInput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'value'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f16@0:8'
+  - Name: 'valueChangedHandler'
+    JsName: 'valueChangedHandler'
+    Module: 'GameController.GCControllerAxisInput'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'valueChangedHandler'
+      JsName: 'valueChangedHandler'
+      Module: 'GameController.GCControllerAxisInput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'valueChangedHandler'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: GameController.GCControllerAxisInput
+          Name: GCControllerAxisInput
+        - Type: Float
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setValueChangedHandler:'
+      JsName: 'setValueChangedHandler'
+      Module: 'GameController.GCControllerAxisInput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setValueChangedHandler:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: GameController.GCControllerAxisInput
+          Name: GCControllerAxisInput
+        - Type: Float
+      TypeEncoding: 'v24@0:8@?16'
+  Protocols: []
+  Base:
+    Module: GameController.GCControllerElement
+    Name: GCControllerElement
+  Type: Interface
+- Name: 'GCControllerButtonInput'
+  JsName: 'GCControllerButtonInput'
+  Module: 'GameController.GCControllerButtonInput'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'pressed'
+    JsName: 'pressed'
+    Module: 'GameController.GCControllerButtonInput'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isPressed'
+      JsName: 'isPressed'
+      Module: 'GameController.GCControllerButtonInput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isPressed'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'pressedChangedHandler'
+    JsName: 'pressedChangedHandler'
+    Module: 'GameController.GCControllerButtonInput'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'pressedChangedHandler'
+      JsName: 'pressedChangedHandler'
+      Module: 'GameController.GCControllerButtonInput'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'pressedChangedHandler'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: GameController.GCControllerButtonInput
+          Name: GCControllerButtonInput
+        - Type: Float
+        - Type: Bool
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setPressedChangedHandler:'
+      JsName: 'setPressedChangedHandler'
+      Module: 'GameController.GCControllerButtonInput'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPressedChangedHandler:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: GameController.GCControllerButtonInput
+          Name: GCControllerButtonInput
+        - Type: Float
+        - Type: Bool
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'value'
+    JsName: 'value'
+    Module: 'GameController.GCControllerButtonInput'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'value'
+      JsName: 'value'
+      Module: 'GameController.GCControllerButtonInput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'value'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f16@0:8'
+  - Name: 'valueChangedHandler'
+    JsName: 'valueChangedHandler'
+    Module: 'GameController.GCControllerButtonInput'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'valueChangedHandler'
+      JsName: 'valueChangedHandler'
+      Module: 'GameController.GCControllerButtonInput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'valueChangedHandler'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: GameController.GCControllerButtonInput
+          Name: GCControllerButtonInput
+        - Type: Float
+        - Type: Bool
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setValueChangedHandler:'
+      JsName: 'setValueChangedHandler'
+      Module: 'GameController.GCControllerButtonInput'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setValueChangedHandler:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: GameController.GCControllerButtonInput
+          Name: GCControllerButtonInput
+        - Type: Float
+        - Type: Bool
+      TypeEncoding: 'v24@0:8@?16'
+  Protocols: []
+  Base:
+    Module: GameController.GCControllerElement
+    Name: GCControllerElement
+  Type: Interface
+- Name: 'GCControllerDirectionPad'
+  JsName: 'GCControllerDirectionPad'
+  Module: 'GameController.GCControllerDirectionPad'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'down'
+    JsName: 'down'
+    Module: 'GameController.GCControllerDirectionPad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'down'
+      JsName: 'down'
+      Module: 'GameController.GCControllerDirectionPad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'down'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerButtonInput
+        Name: GCControllerButtonInput
+      TypeEncoding: '@16@0:8'
+  - Name: 'left'
+    JsName: 'left'
+    Module: 'GameController.GCControllerDirectionPad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'left'
+      JsName: 'left'
+      Module: 'GameController.GCControllerDirectionPad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'left'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerButtonInput
+        Name: GCControllerButtonInput
+      TypeEncoding: '@16@0:8'
+  - Name: 'right'
+    JsName: 'right'
+    Module: 'GameController.GCControllerDirectionPad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'right'
+      JsName: 'right'
+      Module: 'GameController.GCControllerDirectionPad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'right'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerButtonInput
+        Name: GCControllerButtonInput
+      TypeEncoding: '@16@0:8'
+  - Name: 'up'
+    JsName: 'up'
+    Module: 'GameController.GCControllerDirectionPad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'up'
+      JsName: 'up'
+      Module: 'GameController.GCControllerDirectionPad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'up'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerButtonInput
+        Name: GCControllerButtonInput
+      TypeEncoding: '@16@0:8'
+  - Name: 'valueChangedHandler'
+    JsName: 'valueChangedHandler'
+    Module: 'GameController.GCControllerDirectionPad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'valueChangedHandler'
+      JsName: 'valueChangedHandler'
+      Module: 'GameController.GCControllerDirectionPad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'valueChangedHandler'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: GameController.GCControllerDirectionPad
+          Name: GCControllerDirectionPad
+        - Type: Float
+        - Type: Float
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setValueChangedHandler:'
+      JsName: 'setValueChangedHandler'
+      Module: 'GameController.GCControllerDirectionPad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setValueChangedHandler:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: GameController.GCControllerDirectionPad
+          Name: GCControllerDirectionPad
+        - Type: Float
+        - Type: Float
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'xAxis'
+    JsName: 'xAxis'
+    Module: 'GameController.GCControllerDirectionPad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'xAxis'
+      JsName: 'xAxis'
+      Module: 'GameController.GCControllerDirectionPad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'xAxis'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerAxisInput
+        Name: GCControllerAxisInput
+      TypeEncoding: '@16@0:8'
+  - Name: 'yAxis'
+    JsName: 'yAxis'
+    Module: 'GameController.GCControllerDirectionPad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'yAxis'
+      JsName: 'yAxis'
+      Module: 'GameController.GCControllerDirectionPad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'yAxis'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerAxisInput
+        Name: GCControllerAxisInput
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: GameController.GCControllerElement
+    Name: GCControllerElement
+  Type: Interface
+- Name: '1226'
+  JsName: 'GCAcceleration'
+  Module: 'GameController.GCMotion'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: x
+    Signature:
+      Type: Double
+  - Name: y
+    Signature:
+      Type: Double
+  - Name: z
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: '1227'
+  JsName: 'GCRotationRate'
+  Module: 'GameController.GCMotion'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: x
+    Signature:
+      Type: Double
+  - Name: y
+    Signature:
+      Type: Double
+  - Name: z
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: 'GCQuaternion'
+  JsName: 'GCQuaternion'
+  Module: 'GameController.GCMotion'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: x
+    Signature:
+      Type: Double
+  - Name: y
+    Signature:
+      Type: Double
+  - Name: z
+    Signature:
+      Type: Double
+  - Name: w
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: 'GCMotion'
+  JsName: 'GCMotion'
+  Module: 'GameController.GCMotion'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'attitude'
+    JsName: 'attitude'
+    Module: 'GameController.GCMotion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'attitude'
+      JsName: 'attitude'
+      Module: 'GameController.GCMotion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'attitude'
+      Signature:
+      - Type: Struct
+        Module: GameController.GCMotion
+        Name: GCQuaternion
+      TypeEncoding: '{GCQuaternion=dddd}16@0:8'
+  - Name: 'controller'
+    JsName: 'controller'
+    Module: 'GameController.GCMotion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'controller'
+      JsName: 'controller'
+      Module: 'GameController.GCMotion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'controller'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCController
+        Name: GCController
+      TypeEncoding: '@16@0:8'
+  - Name: 'gravity'
+    JsName: 'gravity'
+    Module: 'GameController.GCMotion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'gravity'
+      JsName: 'gravity'
+      Module: 'GameController.GCMotion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'gravity'
+      Signature:
+      - Type: Struct
+        Module: GameController.GCMotion
+        Name: GCAcceleration
+      TypeEncoding: '{?=ddd}16@0:8'
+  - Name: 'rotationRate'
+    JsName: 'rotationRate'
+    Module: 'GameController.GCMotion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'rotationRate'
+      JsName: 'rotationRate'
+      Module: 'GameController.GCMotion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rotationRate'
+      Signature:
+      - Type: Struct
+        Module: GameController.GCMotion
+        Name: GCRotationRate
+      TypeEncoding: '{?=ddd}16@0:8'
+  - Name: 'userAcceleration'
+    JsName: 'userAcceleration'
+    Module: 'GameController.GCMotion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'userAcceleration'
+      JsName: 'userAcceleration'
+      Module: 'GameController.GCMotion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'userAcceleration'
+      Signature:
+      - Type: Struct
+        Module: GameController.GCMotion
+        Name: GCAcceleration
+      TypeEncoding: '{?=ddd}16@0:8'
+  - Name: 'valueChangedHandler'
+    JsName: 'valueChangedHandler'
+    Module: 'GameController.GCMotion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'valueChangedHandler'
+      JsName: 'valueChangedHandler'
+      Module: 'GameController.GCMotion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'valueChangedHandler'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: GameController.GCMotion
+          Name: GCMotion
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setValueChangedHandler:'
+      JsName: 'setValueChangedHandler'
+      Module: 'GameController.GCMotion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setValueChangedHandler:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: GameController.GCMotion
+          Name: GCMotion
+      TypeEncoding: 'v24@0:8@?16'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'GCGamepad'
+  JsName: 'GCGamepad'
+  Module: 'GameController.GCGamepad'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'saveSnapshot'
+    JsName: 'saveSnapshot'
+    Module: 'GameController.GCGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'saveSnapshot'
+    Signature:
+    - Type: Interface
+      Module: GameController.GCGamepadSnapshot
+      Name: GCGamepadSnapshot
+    TypeEncoding: '@16@0:8'
+  StaticMethods: []
+  Properties:
+  - Name: 'buttonA'
+    JsName: 'buttonA'
+    Module: 'GameController.GCGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'buttonA'
+      JsName: 'buttonA'
+      Module: 'GameController.GCGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'buttonA'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerButtonInput
+        Name: GCControllerButtonInput
+      TypeEncoding: '@16@0:8'
+  - Name: 'buttonB'
+    JsName: 'buttonB'
+    Module: 'GameController.GCGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'buttonB'
+      JsName: 'buttonB'
+      Module: 'GameController.GCGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'buttonB'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerButtonInput
+        Name: GCControllerButtonInput
+      TypeEncoding: '@16@0:8'
+  - Name: 'buttonX'
+    JsName: 'buttonX'
+    Module: 'GameController.GCGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'buttonX'
+      JsName: 'buttonX'
+      Module: 'GameController.GCGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'buttonX'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerButtonInput
+        Name: GCControllerButtonInput
+      TypeEncoding: '@16@0:8'
+  - Name: 'buttonY'
+    JsName: 'buttonY'
+    Module: 'GameController.GCGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'buttonY'
+      JsName: 'buttonY'
+      Module: 'GameController.GCGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'buttonY'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerButtonInput
+        Name: GCControllerButtonInput
+      TypeEncoding: '@16@0:8'
+  - Name: 'controller'
+    JsName: 'controller'
+    Module: 'GameController.GCGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'controller'
+      JsName: 'controller'
+      Module: 'GameController.GCGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'controller'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCController
+        Name: GCController
+      TypeEncoding: '@16@0:8'
+  - Name: 'dpad'
+    JsName: 'dpad'
+    Module: 'GameController.GCGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'dpad'
+      JsName: 'dpad'
+      Module: 'GameController.GCGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'dpad'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerDirectionPad
+        Name: GCControllerDirectionPad
+      TypeEncoding: '@16@0:8'
+  - Name: 'leftShoulder'
+    JsName: 'leftShoulder'
+    Module: 'GameController.GCGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'leftShoulder'
+      JsName: 'leftShoulder'
+      Module: 'GameController.GCGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'leftShoulder'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerButtonInput
+        Name: GCControllerButtonInput
+      TypeEncoding: '@16@0:8'
+  - Name: 'rightShoulder'
+    JsName: 'rightShoulder'
+    Module: 'GameController.GCGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'rightShoulder'
+      JsName: 'rightShoulder'
+      Module: 'GameController.GCGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rightShoulder'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerButtonInput
+        Name: GCControllerButtonInput
+      TypeEncoding: '@16@0:8'
+  - Name: 'valueChangedHandler'
+    JsName: 'valueChangedHandler'
+    Module: 'GameController.GCGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'valueChangedHandler'
+      JsName: 'valueChangedHandler'
+      Module: 'GameController.GCGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'valueChangedHandler'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: GameController.GCGamepad
+          Name: GCGamepad
+        - Type: Interface
+          Module: GameController.GCControllerElement
+          Name: GCControllerElement
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setValueChangedHandler:'
+      JsName: 'setValueChangedHandler'
+      Module: 'GameController.GCGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setValueChangedHandler:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: GameController.GCGamepad
+          Name: GCGamepad
+        - Type: Interface
+          Module: GameController.GCControllerElement
+          Name: GCControllerElement
+      TypeEncoding: 'v24@0:8@?16'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'GCGamepadSnapshot'
+  JsName: 'GCGamepadSnapshot'
+  Module: 'GameController.GCGamepadSnapshot'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithController:snapshotData:'
+    JsName: 'initWithControllerSnapshotData'
+    Module: 'GameController.GCGamepadSnapshot'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithController:snapshotData:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: GameController.GCController
+      Name: GCController
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'initWithSnapshotData:'
+    JsName: 'initWithSnapshotData'
+    Module: 'GameController.GCGamepadSnapshot'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithSnapshotData:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'snapshotData'
+    JsName: 'snapshotData'
+    Module: 'GameController.GCGamepadSnapshot'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'snapshotData'
+      JsName: 'snapshotData'
+      Module: 'GameController.GCGamepadSnapshot'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'snapshotData'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setSnapshotData:'
+      JsName: 'setSnapshotData'
+      Module: 'GameController.GCGamepadSnapshot'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSnapshotData:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: GameController.GCGamepad
+    Name: GCGamepad
+  Type: Interface
+- Name: '1230'
+  JsName: 'GCGamepadSnapShotDataV100'
+  Module: 'GameController.GCGamepadSnapshot'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: version
+    Signature:
+      Type: Ushort
+  - Name: size
+    Signature:
+      Type: Ushort
+  - Name: dpadX
+    Signature:
+      Type: Float
+  - Name: dpadY
+    Signature:
+      Type: Float
+  - Name: buttonA
+    Signature:
+      Type: Float
+  - Name: buttonB
+    Signature:
+      Type: Float
+  - Name: buttonX
+    Signature:
+      Type: Float
+  - Name: buttonY
+    Signature:
+      Type: Float
+  - Name: leftShoulder
+    Signature:
+      Type: Float
+  - Name: rightShoulder
+    Signature:
+      Type: Float
+  Type: Struct
+- Name: 'GCGamepadSnapShotDataV100FromNSData'
+  JsName: 'GCGamepadSnapShotDataV100FromNSData'
+  Module: 'GameController.GCGamepadSnapshot'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: GameController.GCGamepadSnapshot
+      Name: GCGamepadSnapShotDataV100
+  - Type: Interface
+    Module: Foundation.NSData
+    Name: NSData
+- Name: 'NSDataFromGCGamepadSnapShotDataV100'
+  JsName: 'NSDataFromGCGamepadSnapShotDataV100'
+  Module: 'GameController.GCGamepadSnapshot'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: Foundation.NSData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: GameController.GCGamepadSnapshot
+      Name: GCGamepadSnapShotDataV100
+- Name: 'GCExtendedGamepad'
+  JsName: 'GCExtendedGamepad'
+  Module: 'GameController.GCExtendedGamepad'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'saveSnapshot'
+    JsName: 'saveSnapshot'
+    Module: 'GameController.GCExtendedGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'saveSnapshot'
+    Signature:
+    - Type: Interface
+      Module: GameController.GCExtendedGamepadSnapshot
+      Name: GCExtendedGamepadSnapshot
+    TypeEncoding: '@16@0:8'
+  StaticMethods: []
+  Properties:
+  - Name: 'buttonA'
+    JsName: 'buttonA'
+    Module: 'GameController.GCExtendedGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'buttonA'
+      JsName: 'buttonA'
+      Module: 'GameController.GCExtendedGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'buttonA'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerButtonInput
+        Name: GCControllerButtonInput
+      TypeEncoding: '@16@0:8'
+  - Name: 'buttonB'
+    JsName: 'buttonB'
+    Module: 'GameController.GCExtendedGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'buttonB'
+      JsName: 'buttonB'
+      Module: 'GameController.GCExtendedGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'buttonB'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerButtonInput
+        Name: GCControllerButtonInput
+      TypeEncoding: '@16@0:8'
+  - Name: 'buttonX'
+    JsName: 'buttonX'
+    Module: 'GameController.GCExtendedGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'buttonX'
+      JsName: 'buttonX'
+      Module: 'GameController.GCExtendedGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'buttonX'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerButtonInput
+        Name: GCControllerButtonInput
+      TypeEncoding: '@16@0:8'
+  - Name: 'buttonY'
+    JsName: 'buttonY'
+    Module: 'GameController.GCExtendedGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'buttonY'
+      JsName: 'buttonY'
+      Module: 'GameController.GCExtendedGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'buttonY'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerButtonInput
+        Name: GCControllerButtonInput
+      TypeEncoding: '@16@0:8'
+  - Name: 'controller'
+    JsName: 'controller'
+    Module: 'GameController.GCExtendedGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'controller'
+      JsName: 'controller'
+      Module: 'GameController.GCExtendedGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'controller'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCController
+        Name: GCController
+      TypeEncoding: '@16@0:8'
+  - Name: 'dpad'
+    JsName: 'dpad'
+    Module: 'GameController.GCExtendedGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'dpad'
+      JsName: 'dpad'
+      Module: 'GameController.GCExtendedGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'dpad'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerDirectionPad
+        Name: GCControllerDirectionPad
+      TypeEncoding: '@16@0:8'
+  - Name: 'leftShoulder'
+    JsName: 'leftShoulder'
+    Module: 'GameController.GCExtendedGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'leftShoulder'
+      JsName: 'leftShoulder'
+      Module: 'GameController.GCExtendedGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'leftShoulder'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerButtonInput
+        Name: GCControllerButtonInput
+      TypeEncoding: '@16@0:8'
+  - Name: 'leftThumbstick'
+    JsName: 'leftThumbstick'
+    Module: 'GameController.GCExtendedGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'leftThumbstick'
+      JsName: 'leftThumbstick'
+      Module: 'GameController.GCExtendedGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'leftThumbstick'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerDirectionPad
+        Name: GCControllerDirectionPad
+      TypeEncoding: '@16@0:8'
+  - Name: 'leftTrigger'
+    JsName: 'leftTrigger'
+    Module: 'GameController.GCExtendedGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'leftTrigger'
+      JsName: 'leftTrigger'
+      Module: 'GameController.GCExtendedGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'leftTrigger'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerButtonInput
+        Name: GCControllerButtonInput
+      TypeEncoding: '@16@0:8'
+  - Name: 'rightShoulder'
+    JsName: 'rightShoulder'
+    Module: 'GameController.GCExtendedGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'rightShoulder'
+      JsName: 'rightShoulder'
+      Module: 'GameController.GCExtendedGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rightShoulder'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerButtonInput
+        Name: GCControllerButtonInput
+      TypeEncoding: '@16@0:8'
+  - Name: 'rightThumbstick'
+    JsName: 'rightThumbstick'
+    Module: 'GameController.GCExtendedGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'rightThumbstick'
+      JsName: 'rightThumbstick'
+      Module: 'GameController.GCExtendedGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rightThumbstick'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerDirectionPad
+        Name: GCControllerDirectionPad
+      TypeEncoding: '@16@0:8'
+  - Name: 'rightTrigger'
+    JsName: 'rightTrigger'
+    Module: 'GameController.GCExtendedGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'rightTrigger'
+      JsName: 'rightTrigger'
+      Module: 'GameController.GCExtendedGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rightTrigger'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCControllerButtonInput
+        Name: GCControllerButtonInput
+      TypeEncoding: '@16@0:8'
+  - Name: 'valueChangedHandler'
+    JsName: 'valueChangedHandler'
+    Module: 'GameController.GCExtendedGamepad'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'valueChangedHandler'
+      JsName: 'valueChangedHandler'
+      Module: 'GameController.GCExtendedGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'valueChangedHandler'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: GameController.GCExtendedGamepad
+          Name: GCExtendedGamepad
+        - Type: Interface
+          Module: GameController.GCControllerElement
+          Name: GCControllerElement
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setValueChangedHandler:'
+      JsName: 'setValueChangedHandler'
+      Module: 'GameController.GCExtendedGamepad'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setValueChangedHandler:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: GameController.GCExtendedGamepad
+          Name: GCExtendedGamepad
+        - Type: Interface
+          Module: GameController.GCControllerElement
+          Name: GCControllerElement
+      TypeEncoding: 'v24@0:8@?16'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'GCExtendedGamepadSnapshot'
+  JsName: 'GCExtendedGamepadSnapshot'
+  Module: 'GameController.GCExtendedGamepadSnapshot'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithController:snapshotData:'
+    JsName: 'initWithControllerSnapshotData'
+    Module: 'GameController.GCExtendedGamepadSnapshot'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithController:snapshotData:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: GameController.GCController
+      Name: GCController
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'initWithSnapshotData:'
+    JsName: 'initWithSnapshotData'
+    Module: 'GameController.GCExtendedGamepadSnapshot'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithSnapshotData:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'snapshotData'
+    JsName: 'snapshotData'
+    Module: 'GameController.GCExtendedGamepadSnapshot'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'snapshotData'
+      JsName: 'snapshotData'
+      Module: 'GameController.GCExtendedGamepadSnapshot'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'snapshotData'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setSnapshotData:'
+      JsName: 'setSnapshotData'
+      Module: 'GameController.GCExtendedGamepadSnapshot'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSnapshotData:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: GameController.GCExtendedGamepad
+    Name: GCExtendedGamepad
+  Type: Interface
+- Name: '1232'
+  JsName: 'GCExtendedGamepadSnapShotDataV100'
+  Module: 'GameController.GCExtendedGamepadSnapshot'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: version
+    Signature:
+      Type: Ushort
+  - Name: size
+    Signature:
+      Type: Ushort
+  - Name: dpadX
+    Signature:
+      Type: Float
+  - Name: dpadY
+    Signature:
+      Type: Float
+  - Name: buttonA
+    Signature:
+      Type: Float
+  - Name: buttonB
+    Signature:
+      Type: Float
+  - Name: buttonX
+    Signature:
+      Type: Float
+  - Name: buttonY
+    Signature:
+      Type: Float
+  - Name: leftShoulder
+    Signature:
+      Type: Float
+  - Name: rightShoulder
+    Signature:
+      Type: Float
+  - Name: leftThumbstickX
+    Signature:
+      Type: Float
+  - Name: leftThumbstickY
+    Signature:
+      Type: Float
+  - Name: rightThumbstickX
+    Signature:
+      Type: Float
+  - Name: rightThumbstickY
+    Signature:
+      Type: Float
+  - Name: leftTrigger
+    Signature:
+      Type: Float
+  - Name: rightTrigger
+    Signature:
+      Type: Float
+  Type: Struct
+- Name: 'GCExtendedGamepadSnapShotDataV100FromNSData'
+  JsName: 'GCExtendedGamepadSnapShotDataV100FromNSData'
+  Module: 'GameController.GCExtendedGamepadSnapshot'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: GameController.GCExtendedGamepadSnapshot
+      Name: GCExtendedGamepadSnapShotDataV100
+  - Type: Interface
+    Module: Foundation.NSData
+    Name: NSData
+- Name: 'NSDataFromGCExtendedGamepadSnapShotDataV100'
+  JsName: 'NSDataFromGCExtendedGamepadSnapShotDataV100'
+  Module: 'GameController.GCExtendedGamepadSnapshot'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: Foundation.NSData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: GameController.GCExtendedGamepadSnapshot
+      Name: GCExtendedGamepadSnapShotDataV100
+- Name: 'GCControllerDidConnectNotification'
+  JsName: 'GCControllerDidConnectNotification'
+  Module: 'GameController.GCController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'GCControllerDidDisconnectNotification'
+  JsName: 'GCControllerDidDisconnectNotification'
+  Module: 'GameController.GCController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'GCControllerPlayerIndexUnset'
+  JsName: 'GCControllerPlayerIndexUnset'
+  Module: 'GameController.GCController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -1
+- Name: 'GCController'
+  JsName: 'GCController'
+  Module: 'GameController.GCController'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'controllers'
+    JsName: 'controllers'
+    Module: 'GameController.GCController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'controllers'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@16@0:8'
+  - Name: 'startWirelessControllerDiscoveryWithCompletionHandler:'
+    JsName: 'startWirelessControllerDiscoveryWithCompletionHandler'
+    Module: 'GameController.GCController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startWirelessControllerDiscoveryWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+    TypeEncoding: 'v24@0:8@?16'
+  - Name: 'stopWirelessControllerDiscovery'
+    JsName: 'stopWirelessControllerDiscovery'
+    Module: 'GameController.GCController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopWirelessControllerDiscovery'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  Properties:
+  - Name: 'attachedToDevice'
+    JsName: 'attachedToDevice'
+    Module: 'GameController.GCController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isAttachedToDevice'
+      JsName: 'isAttachedToDevice'
+      Module: 'GameController.GCController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isAttachedToDevice'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'controllerPausedHandler'
+    JsName: 'controllerPausedHandler'
+    Module: 'GameController.GCController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'controllerPausedHandler'
+      JsName: 'controllerPausedHandler'
+      Module: 'GameController.GCController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'controllerPausedHandler'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: GameController.GCController
+          Name: GCController
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setControllerPausedHandler:'
+      JsName: 'setControllerPausedHandler'
+      Module: 'GameController.GCController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setControllerPausedHandler:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: GameController.GCController
+          Name: GCController
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'extendedGamepad'
+    JsName: 'extendedGamepad'
+    Module: 'GameController.GCController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'extendedGamepad'
+      JsName: 'extendedGamepad'
+      Module: 'GameController.GCController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'extendedGamepad'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCExtendedGamepad
+        Name: GCExtendedGamepad
+      TypeEncoding: '@16@0:8'
+  - Name: 'gamepad'
+    JsName: 'gamepad'
+    Module: 'GameController.GCController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'gamepad'
+      JsName: 'gamepad'
+      Module: 'GameController.GCController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'gamepad'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCGamepad
+        Name: GCGamepad
+      TypeEncoding: '@16@0:8'
+  - Name: 'motion'
+    JsName: 'motion'
+    Module: 'GameController.GCController'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'motion'
+      JsName: 'motion'
+      Module: 'GameController.GCController'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'motion'
+      Signature:
+      - Type: Interface
+        Module: GameController.GCMotion
+        Name: GCMotion
+      TypeEncoding: '@16@0:8'
+  - Name: 'playerIndex'
+    JsName: 'playerIndex'
+    Module: 'GameController.GCController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'playerIndex'
+      JsName: 'playerIndex'
+      Module: 'GameController.GCController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'playerIndex'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+    Setter:
+      Name: 'setPlayerIndex:'
+      JsName: 'setPlayerIndex'
+      Module: 'GameController.GCController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPlayerIndex:'
+      Signature:
+      - Type: Void
+      - Type: Long
+      TypeEncoding: 'v24@0:8q16'
+  - Name: 'vendorName'
+    JsName: 'vendorName'
+    Module: 'GameController.GCController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'vendorName'
+      JsName: 'vendorName'
+      Module: 'GameController.GCController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'vendorName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+...

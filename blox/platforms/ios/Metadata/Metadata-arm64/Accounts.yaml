@@ -1,0 +1,670 @@
+name: Accounts
+items:
+- Name: 'ACAccount'
+  JsName: 'ACAccount'
+  Module: 'Accounts.ACAccount'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithAccountType:'
+    JsName: 'initWithAccountType'
+    Module: 'Accounts.ACAccount'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithAccountType:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Accounts.ACAccountType
+      Name: ACAccountType
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'accountDescription'
+    JsName: 'accountDescription'
+    Module: 'Accounts.ACAccount'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'accountDescription'
+      JsName: 'accountDescription'
+      Module: 'Accounts.ACAccount'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'accountDescription'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setAccountDescription:'
+      JsName: 'setAccountDescription'
+      Module: 'Accounts.ACAccount'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAccountDescription:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'accountType'
+    JsName: 'accountType'
+    Module: 'Accounts.ACAccount'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'accountType'
+      JsName: 'accountType'
+      Module: 'Accounts.ACAccount'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'accountType'
+      Signature:
+      - Type: Interface
+        Module: Accounts.ACAccountType
+        Name: ACAccountType
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setAccountType:'
+      JsName: 'setAccountType'
+      Module: 'Accounts.ACAccount'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAccountType:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Accounts.ACAccountType
+        Name: ACAccountType
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'credential'
+    JsName: 'credential'
+    Module: 'Accounts.ACAccount'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'credential'
+      JsName: 'credential'
+      Module: 'Accounts.ACAccount'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'credential'
+      Signature:
+      - Type: Interface
+        Module: Accounts.ACAccountCredential
+        Name: ACAccountCredential
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setCredential:'
+      JsName: 'setCredential'
+      Module: 'Accounts.ACAccount'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCredential:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Accounts.ACAccountCredential
+        Name: ACAccountCredential
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'identifier'
+    JsName: 'identifier'
+    Module: 'Accounts.ACAccount'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'identifier'
+      JsName: 'identifier'
+      Module: 'Accounts.ACAccount'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'identifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'userFullName'
+    JsName: 'userFullName'
+    Module: 'Accounts.ACAccount'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'userFullName'
+      JsName: 'userFullName'
+      Module: 'Accounts.ACAccount'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'userFullName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'username'
+    JsName: 'username'
+    Module: 'Accounts.ACAccount'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'username'
+      JsName: 'username'
+      Module: 'Accounts.ACAccount'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'username'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setUsername:'
+      JsName: 'setUsername'
+      Module: 'Accounts.ACAccount'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setUsername:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'ACAccountTypeIdentifierTwitter'
+  JsName: 'ACAccountTypeIdentifierTwitter'
+  Module: 'Accounts.ACAccountType'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ACAccountTypeIdentifierFacebook'
+  JsName: 'ACAccountTypeIdentifierFacebook'
+  Module: 'Accounts.ACAccountType'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ACAccountTypeIdentifierSinaWeibo'
+  JsName: 'ACAccountTypeIdentifierSinaWeibo'
+  Module: 'Accounts.ACAccountType'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ACAccountTypeIdentifierTencentWeibo'
+  JsName: 'ACAccountTypeIdentifierTencentWeibo'
+  Module: 'Accounts.ACAccountType'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ACFacebookAppIdKey'
+  JsName: 'ACFacebookAppIdKey'
+  Module: 'Accounts.ACAccountType'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ACFacebookPermissionsKey'
+  JsName: 'ACFacebookPermissionsKey'
+  Module: 'Accounts.ACAccountType'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ACFacebookAudienceKey'
+  JsName: 'ACFacebookAudienceKey'
+  Module: 'Accounts.ACAccountType'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ACFacebookAudienceEveryone'
+  JsName: 'ACFacebookAudienceEveryone'
+  Module: 'Accounts.ACAccountType'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ACFacebookAudienceFriends'
+  JsName: 'ACFacebookAudienceFriends'
+  Module: 'Accounts.ACAccountType'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ACFacebookAudienceOnlyMe'
+  JsName: 'ACFacebookAudienceOnlyMe'
+  Module: 'Accounts.ACAccountType'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ACTencentWeiboAppIdKey'
+  JsName: 'ACTencentWeiboAppIdKey'
+  Module: 'Accounts.ACAccountType'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ACAccountType'
+  JsName: 'ACAccountType'
+  Module: 'Accounts.ACAccountType'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'accessGranted'
+    JsName: 'accessGranted'
+    Module: 'Accounts.ACAccountType'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'accessGranted'
+      JsName: 'accessGranted'
+      Module: 'Accounts.ACAccountType'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'accessGranted'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'accountTypeDescription'
+    JsName: 'accountTypeDescription'
+    Module: 'Accounts.ACAccountType'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'accountTypeDescription'
+      JsName: 'accountTypeDescription'
+      Module: 'Accounts.ACAccountType'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'accountTypeDescription'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'identifier'
+    JsName: 'identifier'
+    Module: 'Accounts.ACAccountType'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'identifier'
+      JsName: 'identifier'
+      Module: 'Accounts.ACAccountType'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'identifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'ACAccountCredential'
+  JsName: 'ACAccountCredential'
+  Module: 'Accounts.ACAccountCredential'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithOAuth2Token:refreshToken:expiryDate:'
+    JsName: 'initWithOAuth2TokenRefreshTokenExpiryDate'
+    Module: 'Accounts.ACAccountCredential'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithOAuth2Token:refreshToken:expiryDate:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    TypeEncoding: '@40@0:8@16@24@32'
+  - Name: 'initWithOAuthToken:tokenSecret:'
+    JsName: 'initWithOAuthTokenTokenSecret'
+    Module: 'Accounts.ACAccountCredential'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithOAuthToken:tokenSecret:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@32@0:8@16@24'
+  StaticMethods: []
+  Properties:
+  - Name: 'oauthToken'
+    JsName: 'oauthToken'
+    Module: 'Accounts.ACAccountCredential'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'oauthToken'
+      JsName: 'oauthToken'
+      Module: 'Accounts.ACAccountCredential'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'oauthToken'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setOauthToken:'
+      JsName: 'setOauthToken'
+      Module: 'Accounts.ACAccountCredential'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setOauthToken:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'ACAccountCredentialRenewResult'
+  JsName: 'ACAccountCredentialRenewResult'
+  Module: 'Accounts.ACAccountStore'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"ACAccountCredentialRenewResultRenewed":0,"ACAccountCredentialRenewResultRejected":1,"ACAccountCredentialRenewResultFailed":2})
+- Name: 'ACAccountStore'
+  JsName: 'ACAccountStore'
+  Module: 'Accounts.ACAccountStore'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'accountsWithAccountType:'
+    JsName: 'accountsWithAccountType'
+    Module: 'Accounts.ACAccountStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'accountsWithAccountType:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Accounts.ACAccountType
+      Name: ACAccountType
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'accountTypeWithAccountTypeIdentifier:'
+    JsName: 'accountTypeWithAccountTypeIdentifier'
+    Module: 'Accounts.ACAccountStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'accountTypeWithAccountTypeIdentifier:'
+    Signature:
+    - Type: Interface
+      Module: Accounts.ACAccountType
+      Name: ACAccountType
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'accountWithIdentifier:'
+    JsName: 'accountWithIdentifier'
+    Module: 'Accounts.ACAccountStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'accountWithIdentifier:'
+    Signature:
+    - Type: Interface
+      Module: Accounts.ACAccount
+      Name: ACAccount
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'removeAccount:withCompletionHandler:'
+    JsName: 'removeAccountWithCompletionHandler'
+    Module: 'Accounts.ACAccountStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeAccount:withCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Accounts.ACAccount
+      Name: ACAccount
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'renewCredentialsForAccount:completion:'
+    JsName: 'renewCredentialsForAccountCompletion'
+    Module: 'Accounts.ACAccountStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'renewCredentialsForAccount:completion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Accounts.ACAccount
+      Name: ACAccount
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Long
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'requestAccessToAccountsWithType:options:completion:'
+    JsName: 'requestAccessToAccountsWithTypeOptionsCompletion'
+    Module: 'Accounts.ACAccountStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'requestAccessToAccountsWithType:options:completion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Accounts.ACAccountType
+      Name: ACAccountType
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v40@0:8@16@24@?32'
+  - Name: 'requestAccessToAccountsWithType:withCompletionHandler:'
+    JsName: 'requestAccessToAccountsWithTypeWithCompletionHandler'
+    Module: 'Accounts.ACAccountStore'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'requestAccessToAccountsWithType:withCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Accounts.ACAccountType
+      Name: ACAccountType
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'saveAccount:withCompletionHandler:'
+    JsName: 'saveAccountWithCompletionHandler'
+    Module: 'Accounts.ACAccountStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'saveAccount:withCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Accounts.ACAccount
+      Name: ACAccount
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  StaticMethods: []
+  Properties:
+  - Name: 'accounts'
+    JsName: 'accounts'
+    Module: 'Accounts.ACAccountStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'accounts'
+      JsName: 'accounts'
+      Module: 'Accounts.ACAccountStore'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'accounts'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'ACAccountStoreDidChangeNotification'
+  JsName: 'ACAccountStoreDidChangeNotification'
+  Module: 'Accounts.ACAccountStore'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ACErrorDomain'
+  JsName: 'ACErrorDomain'
+  Module: 'Accounts.ACError'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ACErrorCode'
+  JsName: 'ACErrorCode'
+  Module: 'Accounts.ACError'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"ACErrorUnknown":1,"ACErrorAccountMissingRequiredProperty":2,"ACErrorAccountAuthenticationFailed":3,"ACErrorAccountTypeInvalid":4,"ACErrorAccountAlreadyExists":5,"ACErrorAccountNotFound":6,"ACErrorPermissionDenied":7,"ACErrorAccessInfoInvalid":8,"ACErrorClientPermissionDenied":9,"ACErrorAccessDeniedByProtectionPolicy":10,"ACErrorCredentialNotFound":11,"ACErrorFetchCredentialFailed":12,"ACErrorStoreCredentialFailed":13,"ACErrorRemoveCredentialFailed":14,"ACErrorUpdatingNonexistentAccount":15,"ACErrorInvalidClientBundleID":16,"ACErrorDeniedByPlugin":17,"ACErrorCoreDataSaveFailed":18,"ACErrorFailedSerializingAccountInfo":19,"ACErrorInvalidCommand":20,"ACErrorMissingTransportMessageID":21})
+...

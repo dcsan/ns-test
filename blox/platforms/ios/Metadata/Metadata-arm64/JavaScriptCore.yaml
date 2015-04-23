@@ -1,0 +1,2997 @@
+name: JavaScriptCore
+items:
+- Name: 'JSEvaluateScript'
+  JsName: 'JSEvaluateScript'
+  Module: 'JavaScriptCore.JSBase'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSCheckScriptSyntax'
+  JsName: 'JSCheckScriptSyntax'
+  Module: 'JavaScriptCore.JSBase'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSGarbageCollect'
+  JsName: 'JSGarbageCollect'
+  Module: 'JavaScriptCore.JSBase'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: '1430'
+  JsName: 'JSType'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kJSTypeUndefined":0,"kJSTypeNull":1,"kJSTypeBoolean":2,"kJSTypeNumber":3,"kJSTypeString":4,"kJSTypeObject":5})
+- Name: 'JSValueGetType'
+  JsName: 'JSValueGetType'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSValueIsUndefined'
+  JsName: 'JSValueIsUndefined'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSValueIsNull'
+  JsName: 'JSValueIsNull'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSValueIsBoolean'
+  JsName: 'JSValueIsBoolean'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSValueIsNumber'
+  JsName: 'JSValueIsNumber'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSValueIsString'
+  JsName: 'JSValueIsString'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSValueIsObject'
+  JsName: 'JSValueIsObject'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSValueIsObjectOfClass'
+  JsName: 'JSValueIsObjectOfClass'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSValueIsEqual'
+  JsName: 'JSValueIsEqual'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSValueIsStrictEqual'
+  JsName: 'JSValueIsStrictEqual'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSValueIsInstanceOfConstructor'
+  JsName: 'JSValueIsInstanceOfConstructor'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSValueMakeUndefined'
+  JsName: 'JSValueMakeUndefined'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSValueMakeNull'
+  JsName: 'JSValueMakeNull'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSValueMakeBoolean'
+  JsName: 'JSValueMakeBoolean'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Bool
+- Name: 'JSValueMakeNumber'
+  JsName: 'JSValueMakeNumber'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+- Name: 'JSValueMakeString'
+  JsName: 'JSValueMakeString'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSValueMakeFromJSONString'
+  JsName: 'JSValueMakeFromJSONString'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSValueCreateJSONString'
+  JsName: 'JSValueCreateJSONString'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSValueToBoolean'
+  JsName: 'JSValueToBoolean'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSValueToNumber'
+  JsName: 'JSValueToNumber'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSValueToStringCopy'
+  JsName: 'JSValueToStringCopy'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSValueToObject'
+  JsName: 'JSValueToObject'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSValueProtect'
+  JsName: 'JSValueProtect'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSValueUnprotect'
+  JsName: 'JSValueUnprotect'
+  Module: 'JavaScriptCore.JSValueRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kJSPropertyAttributeNone'
+  JsName: 'kJSPropertyAttributeNone'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kJSPropertyAttributeReadOnly'
+  JsName: 'kJSPropertyAttributeReadOnly'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kJSPropertyAttributeDontEnum'
+  JsName: 'kJSPropertyAttributeDontEnum'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kJSPropertyAttributeDontDelete'
+  JsName: 'kJSPropertyAttributeDontDelete'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kJSClassAttributeNone'
+  JsName: 'kJSClassAttributeNone'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kJSClassAttributeNoAutomaticPrototype'
+  JsName: 'kJSClassAttributeNoAutomaticPrototype'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: '1444'
+  JsName: 'JSStaticValue'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: name
+    Signature:
+      Type: CString
+  - Name: getProperty
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+  - Name: setProperty
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Bool
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+  - Name: attributes
+    Signature:
+      Type: UInt
+  Type: Struct
+- Name: '1445'
+  JsName: 'JSStaticFunction'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: name
+    Signature:
+      Type: CString
+  - Name: callAsFunction
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: ULong
+      - Type: IncompleteArray
+        ArrayType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+  - Name: attributes
+    Signature:
+      Type: UInt
+  Type: Struct
+- Name: '1446'
+  JsName: 'JSClassDefinition'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: version
+    Signature:
+      Type: Int
+  - Name: attributes
+    Signature:
+      Type: UInt
+  - Name: className
+    Signature:
+      Type: CString
+  - Name: parentClass
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: staticValues
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: JavaScriptCore.JSObjectRef
+        Name: JSStaticValue
+  - Name: staticFunctions
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: JavaScriptCore.JSObjectRef
+        Name: JSStaticFunction
+  - Name: initialize
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: finalize
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: hasProperty
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Bool
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: getProperty
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+  - Name: setProperty
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Bool
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+  - Name: deleteProperty
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Bool
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+  - Name: getPropertyNames
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: callAsFunction
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: ULong
+      - Type: IncompleteArray
+        ArrayType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+  - Name: callAsConstructor
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: ULong
+      - Type: IncompleteArray
+        ArrayType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+  - Name: hasInstance
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Bool
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+  - Name: convertToType
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: UInt
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+  Type: Struct
+- Name: 'kJSClassDefinitionEmpty'
+  JsName: 'kJSClassDefinitionEmpty'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Struct
+    Module: JavaScriptCore.JSObjectRef
+    Name: JSClassDefinition
+- Name: 'JSClassCreate'
+  JsName: 'JSClassCreate'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: JavaScriptCore.JSObjectRef
+      Name: JSClassDefinition
+- Name: 'JSClassRetain'
+  JsName: 'JSClassRetain'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSClassRelease'
+  JsName: 'JSClassRelease'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSObjectMake'
+  JsName: 'JSObjectMake'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSObjectMakeFunctionWithCallback'
+  JsName: 'JSObjectMakeFunctionWithCallback'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: ULong
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Pointer
+        PointerType:
+          Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Pointer
+        PointerType:
+          Type: Void
+- Name: 'JSObjectMakeConstructor'
+  JsName: 'JSObjectMakeConstructor'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: ULong
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Pointer
+        PointerType:
+          Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Pointer
+        PointerType:
+          Type: Void
+- Name: 'JSObjectMakeArray'
+  JsName: 'JSObjectMakeArray'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSObjectMakeDate'
+  JsName: 'JSObjectMakeDate'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSObjectMakeError'
+  JsName: 'JSObjectMakeError'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSObjectMakeRegExp'
+  JsName: 'JSObjectMakeRegExp'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSObjectMakeFunction'
+  JsName: 'JSObjectMakeFunction'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSObjectGetPrototype'
+  JsName: 'JSObjectGetPrototype'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSObjectSetPrototype'
+  JsName: 'JSObjectSetPrototype'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSObjectHasProperty'
+  JsName: 'JSObjectHasProperty'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSObjectGetProperty'
+  JsName: 'JSObjectGetProperty'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSObjectSetProperty'
+  JsName: 'JSObjectSetProperty'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSObjectDeleteProperty'
+  JsName: 'JSObjectDeleteProperty'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSObjectGetPropertyAtIndex'
+  JsName: 'JSObjectGetPropertyAtIndex'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSObjectSetPropertyAtIndex'
+  JsName: 'JSObjectSetPropertyAtIndex'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSObjectGetPrivate'
+  JsName: 'JSObjectGetPrivate'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSObjectSetPrivate'
+  JsName: 'JSObjectSetPrivate'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSObjectIsFunction'
+  JsName: 'JSObjectIsFunction'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSObjectCallAsFunction'
+  JsName: 'JSObjectCallAsFunction'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSObjectIsConstructor'
+  JsName: 'JSObjectIsConstructor'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSObjectCallAsConstructor'
+  JsName: 'JSObjectCallAsConstructor'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'JSObjectCopyPropertyNames'
+  JsName: 'JSObjectCopyPropertyNames'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSPropertyNameArrayRetain'
+  JsName: 'JSPropertyNameArrayRetain'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSPropertyNameArrayRelease'
+  JsName: 'JSPropertyNameArrayRelease'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSPropertyNameArrayGetCount'
+  JsName: 'JSPropertyNameArrayGetCount'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSPropertyNameArrayGetNameAtIndex'
+  JsName: 'JSPropertyNameArrayGetNameAtIndex'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+- Name: 'JSPropertyNameAccumulatorAddName'
+  JsName: 'JSPropertyNameAccumulatorAddName'
+  Module: 'JavaScriptCore.JSObjectRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSContextGroupCreate'
+  JsName: 'JSContextGroupCreate'
+  Module: 'JavaScriptCore.JSContextRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSContextGroupRetain'
+  JsName: 'JSContextGroupRetain'
+  Module: 'JavaScriptCore.JSContextRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSContextGroupRelease'
+  JsName: 'JSContextGroupRelease'
+  Module: 'JavaScriptCore.JSContextRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSGlobalContextCreate'
+  JsName: 'JSGlobalContextCreate'
+  Module: 'JavaScriptCore.JSContextRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSGlobalContextCreateInGroup'
+  JsName: 'JSGlobalContextCreateInGroup'
+  Module: 'JavaScriptCore.JSContextRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSGlobalContextRetain'
+  JsName: 'JSGlobalContextRetain'
+  Module: 'JavaScriptCore.JSContextRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSGlobalContextRelease'
+  JsName: 'JSGlobalContextRelease'
+  Module: 'JavaScriptCore.JSContextRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSContextGetGlobalObject'
+  JsName: 'JSContextGetGlobalObject'
+  Module: 'JavaScriptCore.JSContextRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSContextGetGroup'
+  JsName: 'JSContextGetGroup'
+  Module: 'JavaScriptCore.JSContextRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSContextGetGlobalContext'
+  JsName: 'JSContextGetGlobalContext'
+  Module: 'JavaScriptCore.JSContextRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSGlobalContextCopyName'
+  JsName: 'JSGlobalContextCopyName'
+  Module: 'JavaScriptCore.JSContextRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSGlobalContextSetName'
+  JsName: 'JSGlobalContextSetName'
+  Module: 'JavaScriptCore.JSContextRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSStringCreateWithCharacters'
+  JsName: 'JSStringCreateWithCharacters'
+  Module: 'JavaScriptCore.JSStringRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Ushort
+  - Type: ULong
+- Name: 'JSStringCreateWithUTF8CString'
+  JsName: 'JSStringCreateWithUTF8CString'
+  Module: 'JavaScriptCore.JSStringRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'JSStringRetain'
+  JsName: 'JSStringRetain'
+  Module: 'JavaScriptCore.JSStringRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSStringRelease'
+  JsName: 'JSStringRelease'
+  Module: 'JavaScriptCore.JSStringRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSStringGetLength'
+  JsName: 'JSStringGetLength'
+  Module: 'JavaScriptCore.JSStringRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSStringGetCharactersPtr'
+  JsName: 'JSStringGetCharactersPtr'
+  Module: 'JavaScriptCore.JSStringRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Ushort
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSStringGetMaximumUTF8CStringSize'
+  JsName: 'JSStringGetMaximumUTF8CStringSize'
+  Module: 'JavaScriptCore.JSStringRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSStringGetUTF8CString'
+  JsName: 'JSStringGetUTF8CString'
+  Module: 'JavaScriptCore.JSStringRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: ULong
+- Name: 'JSStringIsEqual'
+  JsName: 'JSStringIsEqual'
+  Module: 'JavaScriptCore.JSStringRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSStringIsEqualToUTF8CString'
+  JsName: 'JSStringIsEqualToUTF8CString'
+  Module: 'JavaScriptCore.JSStringRef'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'JSStringCreateWithCFString'
+  JsName: 'JSStringCreateWithCFString'
+  Module: 'JavaScriptCore.JSStringRefCF'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'JSStringCopyCFString'
+  JsName: 'JSStringCopyCFString'
+  Module: 'JavaScriptCore.JSStringRefCF'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'JSContext'
+  JsName: 'JSContext'
+  Module: 'JavaScriptCore.JSContext'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'evaluateScript:'
+    JsName: 'evaluateScript'
+    Module: 'JavaScriptCore.JSContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'evaluateScript:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'evaluateScript:withSourceURL:'
+    JsName: 'evaluateScriptWithSourceURL'
+    Module: 'JavaScriptCore.JSContext'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'evaluateScript:withSourceURL:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'initWithVirtualMachine:'
+    JsName: 'initWithVirtualMachine'
+    Module: 'JavaScriptCore.JSContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithVirtualMachine:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: JavaScriptCore.JSVirtualMachine
+      Name: JSVirtualMachine
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'objectForKeyedSubscript:'
+    JsName: 'objectForKeyedSubscript'
+    Module: 'JavaScriptCore.JSContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'objectForKeyedSubscript:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'setObject:forKeyedSubscript:'
+    JsName: 'setObjectForKeyedSubscript'
+    Module: 'JavaScriptCore.JSContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setObject:forKeyedSubscript:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    TypeEncoding: 'v32@0:8@16@24'
+  StaticMethods:
+  - Name: 'contextWithJSGlobalContextRef:'
+    JsName: 'contextWithJSGlobalContextRef'
+    Module: 'JavaScriptCore.JSContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'contextWithJSGlobalContextRef:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSContext
+      Name: JSContext
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '@24@0:8^{OpaqueJSContext=}16'
+  - Name: 'currentArguments'
+    JsName: 'currentArguments'
+    Module: 'JavaScriptCore.JSContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'currentArguments'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@16@0:8'
+  - Name: 'currentCallee'
+    JsName: 'currentCallee'
+    Module: 'JavaScriptCore.JSContext'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'currentCallee'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    TypeEncoding: '@16@0:8'
+  - Name: 'currentContext'
+    JsName: 'currentContext'
+    Module: 'JavaScriptCore.JSContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'currentContext'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSContext
+      Name: JSContext
+    TypeEncoding: '@16@0:8'
+  - Name: 'currentThis'
+    JsName: 'currentThis'
+    Module: 'JavaScriptCore.JSContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'currentThis'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    TypeEncoding: '@16@0:8'
+  Properties:
+  - Name: 'exception'
+    JsName: 'exception'
+    Module: 'JavaScriptCore.JSContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'exception'
+      JsName: 'exception'
+      Module: 'JavaScriptCore.JSContext'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'exception'
+      Signature:
+      - Type: Interface
+        Module: JavaScriptCore.JSValue
+        Name: JSValue
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setException:'
+      JsName: 'setException'
+      Module: 'JavaScriptCore.JSContext'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setException:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: JavaScriptCore.JSValue
+        Name: JSValue
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'exceptionHandler'
+    JsName: 'exceptionHandler'
+    Module: 'JavaScriptCore.JSContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'exceptionHandler'
+      JsName: 'exceptionHandler'
+      Module: 'JavaScriptCore.JSContext'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'exceptionHandler'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: JavaScriptCore.JSContext
+          Name: JSContext
+        - Type: Interface
+          Module: JavaScriptCore.JSValue
+          Name: JSValue
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setExceptionHandler:'
+      JsName: 'setExceptionHandler'
+      Module: 'JavaScriptCore.JSContext'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setExceptionHandler:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: JavaScriptCore.JSContext
+          Name: JSContext
+        - Type: Interface
+          Module: JavaScriptCore.JSValue
+          Name: JSValue
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'globalObject'
+    JsName: 'globalObject'
+    Module: 'JavaScriptCore.JSContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'globalObject'
+      JsName: 'globalObject'
+      Module: 'JavaScriptCore.JSContext'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'globalObject'
+      Signature:
+      - Type: Interface
+        Module: JavaScriptCore.JSValue
+        Name: JSValue
+      TypeEncoding: '@16@0:8'
+  - Name: 'JSGlobalContextRef'
+    JsName: 'JSGlobalContextRef'
+    Module: 'JavaScriptCore.JSContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'JSGlobalContextRef'
+      JsName: 'JSGlobalContextRef'
+      Module: 'JavaScriptCore.JSContext'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'JSGlobalContextRef'
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: '^{OpaqueJSContext=}16@0:8'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'JavaScriptCore.JSContext'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'JavaScriptCore.JSContext'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setName:'
+      JsName: 'setName'
+      Module: 'JavaScriptCore.JSContext'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setName:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'virtualMachine'
+    JsName: 'virtualMachine'
+    Module: 'JavaScriptCore.JSContext'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'virtualMachine'
+      JsName: 'virtualMachine'
+      Module: 'JavaScriptCore.JSContext'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'virtualMachine'
+      Signature:
+      - Type: Interface
+        Module: JavaScriptCore.JSVirtualMachine
+        Name: JSVirtualMachine
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'JSValue'
+  JsName: 'JSValue'
+  Module: 'JavaScriptCore.JSValue'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'callWithArguments:'
+    JsName: 'callWithArguments'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'callWithArguments:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'constructWithArguments:'
+    JsName: 'constructWithArguments'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'constructWithArguments:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'defineProperty:descriptor:'
+    JsName: 'definePropertyDescriptor'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'defineProperty:descriptor:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'deleteProperty:'
+    JsName: 'deleteProperty'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'deleteProperty:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'hasProperty:'
+    JsName: 'hasProperty'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'hasProperty:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'invokeMethod:withArguments:'
+    JsName: 'invokeMethodWithArguments'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'invokeMethod:withArguments:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'isBoolean'
+    JsName: 'isBoolean'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isBoolean'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  - Name: 'isEqualToObject:'
+    JsName: 'isEqualToObject'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isEqualToObject:'
+    Signature:
+    - Type: Bool
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'isEqualWithTypeCoercionToObject:'
+    JsName: 'isEqualWithTypeCoercionToObject'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isEqualWithTypeCoercionToObject:'
+    Signature:
+    - Type: Bool
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'isInstanceOf:'
+    JsName: 'isInstanceOf'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isInstanceOf:'
+    Signature:
+    - Type: Bool
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'isNull'
+    JsName: 'isNull'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isNull'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  - Name: 'isNumber'
+    JsName: 'isNumber'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isNumber'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  - Name: 'isObject'
+    JsName: 'isObject'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isObject'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  - Name: 'isString'
+    JsName: 'isString'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isString'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  - Name: 'isUndefined'
+    JsName: 'isUndefined'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isUndefined'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  - Name: 'objectAtIndexedSubscript:'
+    JsName: 'objectAtIndexedSubscript'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'objectAtIndexedSubscript:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: ULong
+    TypeEncoding: '@24@0:8Q16'
+  - Name: 'objectForKeyedSubscript:'
+    JsName: 'objectForKeyedSubscript'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'objectForKeyedSubscript:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'setObject:atIndexedSubscript:'
+    JsName: 'setObjectAtIndexedSubscript'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setObject:atIndexedSubscript:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols: []
+    - Type: ULong
+    TypeEncoding: 'v32@0:8@16Q24'
+  - Name: 'setObject:forKeyedSubscript:'
+    JsName: 'setObjectForKeyedSubscript'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setObject:forKeyedSubscript:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'setValue:atIndex:'
+    JsName: 'setValueAtIndex'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setValue:atIndex:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols: []
+    - Type: ULong
+    TypeEncoding: 'v32@0:8@16Q24'
+  - Name: 'setValue:forProperty:'
+    JsName: 'setValueForProperty'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setValue:forProperty:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'toArray'
+    JsName: 'toArray'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'toArray'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@16@0:8'
+  - Name: 'toBool'
+    JsName: 'toBool'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'toBool'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  - Name: 'toDate'
+    JsName: 'toDate'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'toDate'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    TypeEncoding: '@16@0:8'
+  - Name: 'toDictionary'
+    JsName: 'toDictionary'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'toDictionary'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@16@0:8'
+  - Name: 'toDouble'
+    JsName: 'toDouble'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'toDouble'
+    Signature:
+    - Type: Double
+    TypeEncoding: 'd16@0:8'
+  - Name: 'toInt32'
+    JsName: 'toInt32'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'toInt32'
+    Signature:
+    - Type: Int
+    TypeEncoding: 'i16@0:8'
+  - Name: 'toNumber'
+    JsName: 'toNumber'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'toNumber'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSValue
+      Name: NSNumber
+    TypeEncoding: '@16@0:8'
+  - Name: 'toObject'
+    JsName: 'toObject'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'toObject'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: '@16@0:8'
+  - Name: 'toObjectOfClass:'
+    JsName: 'toObjectOfClass'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'toObjectOfClass:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Class
+    TypeEncoding: '@24@0:8#16'
+  - Name: 'toPoint'
+    JsName: 'toPoint'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'toPoint'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+    TypeEncoding: '{CGPoint=dd}16@0:8'
+  - Name: 'toRange'
+    JsName: 'toRange'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'toRange'
+    Signature:
+    - Type: Struct
+      Module: Foundation.NSRange
+      Name: NSRange
+    TypeEncoding: '{_NSRange=QQ}16@0:8'
+  - Name: 'toRect'
+    JsName: 'toRect'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'toRect'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    TypeEncoding: '{CGRect={CGPoint=dd}{CGSize=dd}}16@0:8'
+  - Name: 'toSize'
+    JsName: 'toSize'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'toSize'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGSize
+    TypeEncoding: '{CGSize=dd}16@0:8'
+  - Name: 'toString'
+    JsName: 'toString'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'toString'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@16@0:8'
+  - Name: 'toUInt32'
+    JsName: 'toUInt32'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'toUInt32'
+    Signature:
+    - Type: UInt
+    TypeEncoding: 'I16@0:8'
+  - Name: 'valueAtIndex:'
+    JsName: 'valueAtIndex'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueAtIndex:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: ULong
+    TypeEncoding: '@24@0:8Q16'
+  - Name: 'valueForProperty:'
+    JsName: 'valueForProperty'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueForProperty:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods:
+  - Name: 'valueWithBool:inContext:'
+    JsName: 'valueWithBoolInContext'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueWithBool:inContext:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Bool
+    - Type: Interface
+      Module: JavaScriptCore.JSContext
+      Name: JSContext
+    TypeEncoding: '@28@0:8B16@20'
+  - Name: 'valueWithDouble:inContext:'
+    JsName: 'valueWithDoubleInContext'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueWithDouble:inContext:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Double
+    - Type: Interface
+      Module: JavaScriptCore.JSContext
+      Name: JSContext
+    TypeEncoding: '@32@0:8d16@24'
+  - Name: 'valueWithInt32:inContext:'
+    JsName: 'valueWithInt32InContext'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueWithInt32:inContext:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Int
+    - Type: Interface
+      Module: JavaScriptCore.JSContext
+      Name: JSContext
+    TypeEncoding: '@28@0:8i16@20'
+  - Name: 'valueWithJSValueRef:inContext:'
+    JsName: 'valueWithJSValueRefInContext'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueWithJSValueRef:inContext:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Interface
+      Module: JavaScriptCore.JSContext
+      Name: JSContext
+    TypeEncoding: '@32@0:8^{OpaqueJSValue=}16@24'
+  - Name: 'valueWithNewArrayInContext:'
+    JsName: 'valueWithNewArrayInContext'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueWithNewArrayInContext:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Interface
+      Module: JavaScriptCore.JSContext
+      Name: JSContext
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'valueWithNewErrorFromMessage:inContext:'
+    JsName: 'valueWithNewErrorFromMessageInContext'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueWithNewErrorFromMessage:inContext:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: JavaScriptCore.JSContext
+      Name: JSContext
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'valueWithNewObjectInContext:'
+    JsName: 'valueWithNewObjectInContext'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueWithNewObjectInContext:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Interface
+      Module: JavaScriptCore.JSContext
+      Name: JSContext
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'valueWithNewRegularExpressionFromPattern:flags:inContext:'
+    JsName: 'valueWithNewRegularExpressionFromPatternFlagsInContext'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueWithNewRegularExpressionFromPattern:flags:inContext:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: JavaScriptCore.JSContext
+      Name: JSContext
+    TypeEncoding: '@40@0:8@16@24@32'
+  - Name: 'valueWithNullInContext:'
+    JsName: 'valueWithNullInContext'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueWithNullInContext:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Interface
+      Module: JavaScriptCore.JSContext
+      Name: JSContext
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'valueWithObject:inContext:'
+    JsName: 'valueWithObjectInContext'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueWithObject:inContext:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: JavaScriptCore.JSContext
+      Name: JSContext
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'valueWithPoint:inContext:'
+    JsName: 'valueWithPointInContext'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueWithPoint:inContext:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+    - Type: Interface
+      Module: JavaScriptCore.JSContext
+      Name: JSContext
+    TypeEncoding: '@40@0:8{CGPoint=dd}16@32'
+  - Name: 'valueWithRange:inContext:'
+    JsName: 'valueWithRangeInContext'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueWithRange:inContext:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Struct
+      Module: Foundation.NSRange
+      Name: NSRange
+    - Type: Interface
+      Module: JavaScriptCore.JSContext
+      Name: JSContext
+    TypeEncoding: '@40@0:8{_NSRange=QQ}16@32'
+  - Name: 'valueWithRect:inContext:'
+    JsName: 'valueWithRectInContext'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueWithRect:inContext:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Interface
+      Module: JavaScriptCore.JSContext
+      Name: JSContext
+    TypeEncoding: '@56@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16@48'
+  - Name: 'valueWithSize:inContext:'
+    JsName: 'valueWithSizeInContext'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueWithSize:inContext:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGSize
+    - Type: Interface
+      Module: JavaScriptCore.JSContext
+      Name: JSContext
+    TypeEncoding: '@40@0:8{CGSize=dd}16@32'
+  - Name: 'valueWithUInt32:inContext:'
+    JsName: 'valueWithUInt32InContext'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueWithUInt32:inContext:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: UInt
+    - Type: Interface
+      Module: JavaScriptCore.JSContext
+      Name: JSContext
+    TypeEncoding: '@28@0:8I16@20'
+  - Name: 'valueWithUndefinedInContext:'
+    JsName: 'valueWithUndefinedInContext'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueWithUndefinedInContext:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Interface
+      Module: JavaScriptCore.JSContext
+      Name: JSContext
+    TypeEncoding: '@24@0:8@16'
+  Properties:
+  - Name: 'context'
+    JsName: 'context'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'context'
+      JsName: 'context'
+      Module: 'JavaScriptCore.JSValue'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'context'
+      Signature:
+      - Type: Interface
+        Module: JavaScriptCore.JSContext
+        Name: JSContext
+      TypeEncoding: '@16@0:8'
+  - Name: 'JSValueRef'
+    JsName: 'JSValueRef'
+    Module: 'JavaScriptCore.JSValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'JSValueRef'
+      JsName: 'JSValueRef'
+      Module: 'JavaScriptCore.JSValue'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'JSValueRef'
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: '^{OpaqueJSValue=}16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'JSPropertyDescriptorWritableKey'
+  JsName: 'JSPropertyDescriptorWritableKey'
+  Module: 'JavaScriptCore.JSValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'JSPropertyDescriptorEnumerableKey'
+  JsName: 'JSPropertyDescriptorEnumerableKey'
+  Module: 'JavaScriptCore.JSValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'JSPropertyDescriptorConfigurableKey'
+  JsName: 'JSPropertyDescriptorConfigurableKey'
+  Module: 'JavaScriptCore.JSValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'JSPropertyDescriptorValueKey'
+  JsName: 'JSPropertyDescriptorValueKey'
+  Module: 'JavaScriptCore.JSValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'JSPropertyDescriptorGetKey'
+  JsName: 'JSPropertyDescriptorGetKey'
+  Module: 'JavaScriptCore.JSValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'JSPropertyDescriptorSetKey'
+  JsName: 'JSPropertyDescriptorSetKey'
+  Module: 'JavaScriptCore.JSValue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'JSManagedValue'
+  JsName: 'JSManagedValue'
+  Module: 'JavaScriptCore.JSManagedValue'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithValue:'
+    JsName: 'initWithValue'
+    Module: 'JavaScriptCore.JSManagedValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithValue:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods:
+  - Name: 'managedValueWithValue:'
+    JsName: 'managedValueWithValue'
+    Module: 'JavaScriptCore.JSManagedValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'managedValueWithValue:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSManagedValue
+      Name: JSManagedValue
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'managedValueWithValue:andOwner:'
+    JsName: 'managedValueWithValueAndOwner'
+    Module: 'JavaScriptCore.JSManagedValue'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'managedValueWithValue:andOwner:'
+    Signature:
+    - Type: Interface
+      Module: JavaScriptCore.JSManagedValue
+      Name: JSManagedValue
+    - Type: Interface
+      Module: JavaScriptCore.JSValue
+      Name: JSValue
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: '@32@0:8@16@24'
+  Properties:
+  - Name: 'value'
+    JsName: 'value'
+    Module: 'JavaScriptCore.JSManagedValue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'value'
+      JsName: 'value'
+      Module: 'JavaScriptCore.JSManagedValue'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'value'
+      Signature:
+      - Type: Interface
+        Module: JavaScriptCore.JSValue
+        Name: JSValue
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'JSVirtualMachine'
+  JsName: 'JSVirtualMachine'
+  Module: 'JavaScriptCore.JSVirtualMachine'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addManagedReference:withOwner:'
+    JsName: 'addManagedReferenceWithOwner'
+    Module: 'JavaScriptCore.JSVirtualMachine'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addManagedReference:withOwner:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols: []
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'removeManagedReference:withOwner:'
+    JsName: 'removeManagedReferenceWithOwner'
+    Module: 'JavaScriptCore.JSVirtualMachine'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeManagedReference:withOwner:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols: []
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: 'v32@0:8@16@24'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'JSExport'
+  JsName: 'JSExport'
+  Module: 'JavaScriptCore.JSExport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Type: Protocol
+...

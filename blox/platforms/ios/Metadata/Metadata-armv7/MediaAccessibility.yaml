@@ -1,0 +1,288 @@
+name: MediaAccessibility
+items:
+- Name: 'kMACaptionAppearanceSettingsChangedNotification'
+  JsName: 'kMACaptionAppearanceSettingsChangedNotification'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'MACaptionAppearanceDomain'
+  JsName: 'MACaptionAppearanceDomain'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kMACaptionAppearanceDomainDefault":0,"kMACaptionAppearanceDomainUser":1})
+- Name: 'MACaptionAppearanceDisplayType'
+  JsName: 'MACaptionAppearanceDisplayType'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kMACaptionAppearanceDisplayTypeForcedOnly":0,"kMACaptionAppearanceDisplayTypeAutomatic":1,"kMACaptionAppearanceDisplayTypeAlwaysOn":2})
+- Name: 'MACaptionAppearanceBehavior'
+  JsName: 'MACaptionAppearanceBehavior'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kMACaptionAppearanceBehaviorUseValue":0,"kMACaptionAppearanceBehaviorUseContentIfAvailable":1})
+- Name: 'MACaptionAppearanceFontStyle'
+  JsName: 'MACaptionAppearanceFontStyle'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kMACaptionAppearanceFontStyleDefault":0,"kMACaptionAppearanceFontStyleMonospacedWithSerif":1,"kMACaptionAppearanceFontStyleProportionalWithSerif":2,"kMACaptionAppearanceFontStyleMonospacedWithoutSerif":3,"kMACaptionAppearanceFontStyleProportionalWithoutSerif":4,"kMACaptionAppearanceFontStyleCasual":5,"kMACaptionAppearanceFontStyleCursive":6,"kMACaptionAppearanceFontStyleSmallCapital":7})
+- Name: 'MACaptionAppearanceTextEdgeStyle'
+  JsName: 'MACaptionAppearanceTextEdgeStyle'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kMACaptionAppearanceTextEdgeStyleUndefined":0,"kMACaptionAppearanceTextEdgeStyleNone":1,"kMACaptionAppearanceTextEdgeStyleRaised":2,"kMACaptionAppearanceTextEdgeStyleDepressed":3,"kMACaptionAppearanceTextEdgeStyleUniform":4,"kMACaptionAppearanceTextEdgeStyleDropShadow":5})
+- Name: 'MAMediaCharacteristicDescribesMusicAndSoundForAccessibility'
+  JsName: 'MAMediaCharacteristicDescribesMusicAndSoundForAccessibility'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'MAMediaCharacteristicTranscribesSpokenDialogForAccessibility'
+  JsName: 'MAMediaCharacteristicTranscribesSpokenDialogForAccessibility'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'MACaptionAppearanceAddSelectedLanguage'
+  JsName: 'MACaptionAppearanceAddSelectedLanguage'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Long
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'MACaptionAppearanceCopySelectedLanguages'
+  JsName: 'MACaptionAppearanceCopySelectedLanguages'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Long
+- Name: 'MACaptionAppearanceGetDisplayType'
+  JsName: 'MACaptionAppearanceGetDisplayType'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Long
+- Name: 'MACaptionAppearanceSetDisplayType'
+  JsName: 'MACaptionAppearanceSetDisplayType'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Long
+  - Type: Long
+- Name: 'MACaptionAppearanceCopyPreferredCaptioningMediaCharacteristics'
+  JsName: 'MACaptionAppearanceCopyPreferredCaptioningMediaCharacteristics'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Long
+- Name: 'MACaptionAppearanceCopyForegroundColor'
+  JsName: 'MACaptionAppearanceCopyForegroundColor'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Long
+- Name: 'MACaptionAppearanceCopyBackgroundColor'
+  JsName: 'MACaptionAppearanceCopyBackgroundColor'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Long
+- Name: 'MACaptionAppearanceCopyWindowColor'
+  JsName: 'MACaptionAppearanceCopyWindowColor'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Long
+- Name: 'MACaptionAppearanceGetForegroundOpacity'
+  JsName: 'MACaptionAppearanceGetForegroundOpacity'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Float
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Long
+- Name: 'MACaptionAppearanceGetBackgroundOpacity'
+  JsName: 'MACaptionAppearanceGetBackgroundOpacity'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Float
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Long
+- Name: 'MACaptionAppearanceGetWindowOpacity'
+  JsName: 'MACaptionAppearanceGetWindowOpacity'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Float
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Long
+- Name: 'MACaptionAppearanceGetWindowRoundedCornerRadius'
+  JsName: 'MACaptionAppearanceGetWindowRoundedCornerRadius'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Float
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Long
+- Name: 'MACaptionAppearanceCopyFontDescriptorForStyle'
+  JsName: 'MACaptionAppearanceCopyFontDescriptorForStyle'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Long
+  - Type: Long
+- Name: 'MACaptionAppearanceGetRelativeCharacterSize'
+  JsName: 'MACaptionAppearanceGetRelativeCharacterSize'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Float
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Long
+- Name: 'MACaptionAppearanceGetTextEdgeStyle'
+  JsName: 'MACaptionAppearanceGetTextEdgeStyle'
+  Module: 'MediaAccessibility.MACaptionAppearance'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Long
+- Name: 'kMAAudibleMediaSettingsChangedNotification'
+  JsName: 'kMAAudibleMediaSettingsChangedNotification'
+  Module: 'MediaAccessibility.MAAudibleMedia'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'MAMediaCharacteristicDescribesVideoForAccessibility'
+  JsName: 'MAMediaCharacteristicDescribesVideoForAccessibility'
+  Module: 'MediaAccessibility.MAAudibleMedia'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'MAAudibleMediaCopyPreferredCharacteristics'
+  JsName: 'MAAudibleMediaCopyPreferredCharacteristics'
+  Module: 'MediaAccessibility.MAAudibleMedia'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+...

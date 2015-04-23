@@ -1,0 +1,4828 @@
+name: Security
+items:
+- Name: 'errSecSuccess'
+  JsName: 'errSecSuccess'
+  Module: 'Security.SecBase'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'errSecUnimplemented'
+  JsName: 'errSecUnimplemented'
+  Module: 'Security.SecBase'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -4
+- Name: 'errSecIO'
+  JsName: 'errSecIO'
+  Module: 'Security.SecBase'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -36
+- Name: 'errSecOpWr'
+  JsName: 'errSecOpWr'
+  Module: 'Security.SecBase'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -49
+- Name: 'errSecParam'
+  JsName: 'errSecParam'
+  Module: 'Security.SecBase'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -50
+- Name: 'errSecAllocate'
+  JsName: 'errSecAllocate'
+  Module: 'Security.SecBase'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -108
+- Name: 'errSecUserCanceled'
+  JsName: 'errSecUserCanceled'
+  Module: 'Security.SecBase'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -128
+- Name: 'errSecBadReq'
+  JsName: 'errSecBadReq'
+  Module: 'Security.SecBase'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -909
+- Name: 'errSecInternalComponent'
+  JsName: 'errSecInternalComponent'
+  Module: 'Security.SecBase'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -2070
+- Name: 'errSecNotAvailable'
+  JsName: 'errSecNotAvailable'
+  Module: 'Security.SecBase'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -25291
+- Name: 'errSecDuplicateItem'
+  JsName: 'errSecDuplicateItem'
+  Module: 'Security.SecBase'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -25299
+- Name: 'errSecItemNotFound'
+  JsName: 'errSecItemNotFound'
+  Module: 'Security.SecBase'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -25300
+- Name: 'errSecInteractionNotAllowed'
+  JsName: 'errSecInteractionNotAllowed'
+  Module: 'Security.SecBase'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -25308
+- Name: 'errSecDecode'
+  JsName: 'errSecDecode'
+  Module: 'Security.SecBase'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -26275
+- Name: 'errSecAuthFailed'
+  JsName: 'errSecAuthFailed'
+  Module: 'Security.SecBase'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -25293
+- Name: 'SecCertificateGetTypeID'
+  JsName: 'SecCertificateGetTypeID'
+  Module: 'Security.SecCertificate'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'SecCertificateCreateWithData'
+  JsName: 'SecCertificateCreateWithData'
+  Module: 'Security.SecCertificate'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+- Name: 'SecCertificateCopyData'
+  JsName: 'SecCertificateCopyData'
+  Module: 'Security.SecCertificate'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SecCertificateCopySubjectSummary'
+  JsName: 'SecCertificateCopySubjectSummary'
+  Module: 'Security.SecCertificate'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SecIdentityGetTypeID'
+  JsName: 'SecIdentityGetTypeID'
+  Module: 'Security.SecIdentity'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'SecIdentityCopyCertificate'
+  JsName: 'SecIdentityCopyCertificate'
+  Module: 'Security.SecIdentity'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'SecIdentityCopyPrivateKey'
+  JsName: 'SecIdentityCopyPrivateKey'
+  Module: 'Security.SecIdentity'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'kSecImportExportPassphrase'
+  JsName: 'kSecImportExportPassphrase'
+  Module: 'Security.SecImportExport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kSecImportItemLabel'
+  JsName: 'kSecImportItemLabel'
+  Module: 'Security.SecImportExport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kSecImportItemKeyID'
+  JsName: 'kSecImportItemKeyID'
+  Module: 'Security.SecImportExport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kSecImportItemTrust'
+  JsName: 'kSecImportItemTrust'
+  Module: 'Security.SecImportExport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kSecImportItemCertChain'
+  JsName: 'kSecImportItemCertChain'
+  Module: 'Security.SecImportExport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kSecImportItemIdentity'
+  JsName: 'kSecImportItemIdentity'
+  Module: 'Security.SecImportExport'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'SecPKCS12Import'
+  JsName: 'SecPKCS12Import'
+  Module: 'Security.SecImportExport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFArray
+      Name: NSArray
+- Name: 'SecAccessControlGetTypeID'
+  JsName: 'SecAccessControlGetTypeID'
+  Module: 'Security.SecAccessControl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'SecAccessControlCreateFlags'
+  JsName: 'SecAccessControlCreateFlags'
+  Module: 'Security.SecAccessControl'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kSecAccessControlUserPresence":1})
+- Name: 'SecAccessControlCreateWithFlags'
+  JsName: 'SecAccessControlCreateWithFlags'
+  Module: 'Security.SecAccessControl'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFError
+      Name: NSError
+- Name: 'kSecClass'
+  JsName: 'kSecClass'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecClassGenericPassword'
+  JsName: 'kSecClassGenericPassword'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecClassInternetPassword'
+  JsName: 'kSecClassInternetPassword'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecClassCertificate'
+  JsName: 'kSecClassCertificate'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecClassKey'
+  JsName: 'kSecClassKey'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecClassIdentity'
+  JsName: 'kSecClassIdentity'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAccessible'
+  JsName: 'kSecAttrAccessible'
+  Module: 'Security.SecItem'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAccessControl'
+  JsName: 'kSecAttrAccessControl'
+  Module: 'Security.SecItem'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAccessGroup'
+  JsName: 'kSecAttrAccessGroup'
+  Module: 'Security.SecItem'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrSynchronizable'
+  JsName: 'kSecAttrSynchronizable'
+  Module: 'Security.SecItem'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrSynchronizableAny'
+  JsName: 'kSecAttrSynchronizableAny'
+  Module: 'Security.SecItem'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrCreationDate'
+  JsName: 'kSecAttrCreationDate'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrModificationDate'
+  JsName: 'kSecAttrModificationDate'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrDescription'
+  JsName: 'kSecAttrDescription'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrComment'
+  JsName: 'kSecAttrComment'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrCreator'
+  JsName: 'kSecAttrCreator'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrType'
+  JsName: 'kSecAttrType'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrLabel'
+  JsName: 'kSecAttrLabel'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrIsInvisible'
+  JsName: 'kSecAttrIsInvisible'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrIsNegative'
+  JsName: 'kSecAttrIsNegative'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAccount'
+  JsName: 'kSecAttrAccount'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrService'
+  JsName: 'kSecAttrService'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrGeneric'
+  JsName: 'kSecAttrGeneric'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrSecurityDomain'
+  JsName: 'kSecAttrSecurityDomain'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrServer'
+  JsName: 'kSecAttrServer'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocol'
+  JsName: 'kSecAttrProtocol'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAuthenticationType'
+  JsName: 'kSecAttrAuthenticationType'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrPort'
+  JsName: 'kSecAttrPort'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrPath'
+  JsName: 'kSecAttrPath'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrSubject'
+  JsName: 'kSecAttrSubject'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrIssuer'
+  JsName: 'kSecAttrIssuer'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrSerialNumber'
+  JsName: 'kSecAttrSerialNumber'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrSubjectKeyID'
+  JsName: 'kSecAttrSubjectKeyID'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrPublicKeyHash'
+  JsName: 'kSecAttrPublicKeyHash'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrCertificateType'
+  JsName: 'kSecAttrCertificateType'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrCertificateEncoding'
+  JsName: 'kSecAttrCertificateEncoding'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrKeyClass'
+  JsName: 'kSecAttrKeyClass'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrApplicationLabel'
+  JsName: 'kSecAttrApplicationLabel'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrIsPermanent'
+  JsName: 'kSecAttrIsPermanent'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrApplicationTag'
+  JsName: 'kSecAttrApplicationTag'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrKeyType'
+  JsName: 'kSecAttrKeyType'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrKeySizeInBits'
+  JsName: 'kSecAttrKeySizeInBits'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrEffectiveKeySize'
+  JsName: 'kSecAttrEffectiveKeySize'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrCanEncrypt'
+  JsName: 'kSecAttrCanEncrypt'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrCanDecrypt'
+  JsName: 'kSecAttrCanDecrypt'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrCanDerive'
+  JsName: 'kSecAttrCanDerive'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrCanSign'
+  JsName: 'kSecAttrCanSign'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrCanVerify'
+  JsName: 'kSecAttrCanVerify'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrCanWrap'
+  JsName: 'kSecAttrCanWrap'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrCanUnwrap'
+  JsName: 'kSecAttrCanUnwrap'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAccessibleWhenUnlocked'
+  JsName: 'kSecAttrAccessibleWhenUnlocked'
+  Module: 'Security.SecItem'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAccessibleAfterFirstUnlock'
+  JsName: 'kSecAttrAccessibleAfterFirstUnlock'
+  Module: 'Security.SecItem'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAccessibleAlways'
+  JsName: 'kSecAttrAccessibleAlways'
+  Module: 'Security.SecItem'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly'
+  JsName: 'kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly'
+  Module: 'Security.SecItem'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAccessibleWhenUnlockedThisDeviceOnly'
+  JsName: 'kSecAttrAccessibleWhenUnlockedThisDeviceOnly'
+  Module: 'Security.SecItem'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly'
+  JsName: 'kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly'
+  Module: 'Security.SecItem'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAccessibleAlwaysThisDeviceOnly'
+  JsName: 'kSecAttrAccessibleAlwaysThisDeviceOnly'
+  Module: 'Security.SecItem'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolFTP'
+  JsName: 'kSecAttrProtocolFTP'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolFTPAccount'
+  JsName: 'kSecAttrProtocolFTPAccount'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolHTTP'
+  JsName: 'kSecAttrProtocolHTTP'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolIRC'
+  JsName: 'kSecAttrProtocolIRC'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolNNTP'
+  JsName: 'kSecAttrProtocolNNTP'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolPOP3'
+  JsName: 'kSecAttrProtocolPOP3'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolSMTP'
+  JsName: 'kSecAttrProtocolSMTP'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolSOCKS'
+  JsName: 'kSecAttrProtocolSOCKS'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolIMAP'
+  JsName: 'kSecAttrProtocolIMAP'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolLDAP'
+  JsName: 'kSecAttrProtocolLDAP'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolAppleTalk'
+  JsName: 'kSecAttrProtocolAppleTalk'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolAFP'
+  JsName: 'kSecAttrProtocolAFP'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolTelnet'
+  JsName: 'kSecAttrProtocolTelnet'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolSSH'
+  JsName: 'kSecAttrProtocolSSH'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolFTPS'
+  JsName: 'kSecAttrProtocolFTPS'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolHTTPS'
+  JsName: 'kSecAttrProtocolHTTPS'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolHTTPProxy'
+  JsName: 'kSecAttrProtocolHTTPProxy'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolHTTPSProxy'
+  JsName: 'kSecAttrProtocolHTTPSProxy'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolFTPProxy'
+  JsName: 'kSecAttrProtocolFTPProxy'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolSMB'
+  JsName: 'kSecAttrProtocolSMB'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolRTSP'
+  JsName: 'kSecAttrProtocolRTSP'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolRTSPProxy'
+  JsName: 'kSecAttrProtocolRTSPProxy'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolDAAP'
+  JsName: 'kSecAttrProtocolDAAP'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolEPPC'
+  JsName: 'kSecAttrProtocolEPPC'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolIPP'
+  JsName: 'kSecAttrProtocolIPP'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolNNTPS'
+  JsName: 'kSecAttrProtocolNNTPS'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolLDAPS'
+  JsName: 'kSecAttrProtocolLDAPS'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolTelnetS'
+  JsName: 'kSecAttrProtocolTelnetS'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolIMAPS'
+  JsName: 'kSecAttrProtocolIMAPS'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolIRCS'
+  JsName: 'kSecAttrProtocolIRCS'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrProtocolPOP3S'
+  JsName: 'kSecAttrProtocolPOP3S'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAuthenticationTypeNTLM'
+  JsName: 'kSecAttrAuthenticationTypeNTLM'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAuthenticationTypeMSN'
+  JsName: 'kSecAttrAuthenticationTypeMSN'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAuthenticationTypeDPA'
+  JsName: 'kSecAttrAuthenticationTypeDPA'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAuthenticationTypeRPA'
+  JsName: 'kSecAttrAuthenticationTypeRPA'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAuthenticationTypeHTTPBasic'
+  JsName: 'kSecAttrAuthenticationTypeHTTPBasic'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAuthenticationTypeHTTPDigest'
+  JsName: 'kSecAttrAuthenticationTypeHTTPDigest'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAuthenticationTypeHTMLForm'
+  JsName: 'kSecAttrAuthenticationTypeHTMLForm'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrAuthenticationTypeDefault'
+  JsName: 'kSecAttrAuthenticationTypeDefault'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrKeyClassPublic'
+  JsName: 'kSecAttrKeyClassPublic'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrKeyClassPrivate'
+  JsName: 'kSecAttrKeyClassPrivate'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrKeyClassSymmetric'
+  JsName: 'kSecAttrKeyClassSymmetric'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrKeyTypeRSA'
+  JsName: 'kSecAttrKeyTypeRSA'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecAttrKeyTypeEC'
+  JsName: 'kSecAttrKeyTypeEC'
+  Module: 'Security.SecItem'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecMatchPolicy'
+  JsName: 'kSecMatchPolicy'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecMatchItemList'
+  JsName: 'kSecMatchItemList'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecMatchSearchList'
+  JsName: 'kSecMatchSearchList'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecMatchIssuers'
+  JsName: 'kSecMatchIssuers'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecMatchEmailAddressIfPresent'
+  JsName: 'kSecMatchEmailAddressIfPresent'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecMatchSubjectContains'
+  JsName: 'kSecMatchSubjectContains'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecMatchCaseInsensitive'
+  JsName: 'kSecMatchCaseInsensitive'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecMatchTrustedOnly'
+  JsName: 'kSecMatchTrustedOnly'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecMatchValidOnDate'
+  JsName: 'kSecMatchValidOnDate'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecMatchLimit'
+  JsName: 'kSecMatchLimit'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecMatchLimitOne'
+  JsName: 'kSecMatchLimitOne'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecMatchLimitAll'
+  JsName: 'kSecMatchLimitAll'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecReturnData'
+  JsName: 'kSecReturnData'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecReturnAttributes'
+  JsName: 'kSecReturnAttributes'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecReturnRef'
+  JsName: 'kSecReturnRef'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecReturnPersistentRef'
+  JsName: 'kSecReturnPersistentRef'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecValueData'
+  JsName: 'kSecValueData'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecValueRef'
+  JsName: 'kSecValueRef'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecValuePersistentRef'
+  JsName: 'kSecValuePersistentRef'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecUseItemList'
+  JsName: 'kSecUseItemList'
+  Module: 'Security.SecItem'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecUseOperationPrompt'
+  JsName: 'kSecUseOperationPrompt'
+  Module: 'Security.SecItem'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecUseNoAuthenticationUI'
+  JsName: 'kSecUseNoAuthenticationUI'
+  Module: 'Security.SecItem'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SecItemCopyMatching'
+  JsName: 'SecItemCopyMatching'
+  Module: 'Security.SecItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'SecItemAdd'
+  JsName: 'SecItemAdd'
+  Module: 'Security.SecItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'SecItemUpdate'
+  JsName: 'SecItemUpdate'
+  Module: 'Security.SecItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'SecItemDelete'
+  JsName: 'SecItemDelete'
+  Module: 'Security.SecItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'kSecPaddingNone'
+  JsName: 'kSecPaddingNone'
+  Module: 'Security.SecKey'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kSecPaddingPKCS1'
+  JsName: 'kSecPaddingPKCS1'
+  Module: 'Security.SecKey'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kSecPaddingOAEP'
+  JsName: 'kSecPaddingOAEP'
+  Module: 'Security.SecKey'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kSecPaddingPKCS1MD2'
+  JsName: 'kSecPaddingPKCS1MD2'
+  Module: 'Security.SecKey'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 32768
+- Name: 'kSecPaddingPKCS1MD5'
+  JsName: 'kSecPaddingPKCS1MD5'
+  Module: 'Security.SecKey'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 32769
+- Name: 'kSecPaddingPKCS1SHA1'
+  JsName: 'kSecPaddingPKCS1SHA1'
+  Module: 'Security.SecKey'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 32770
+- Name: 'kSecPaddingPKCS1SHA224'
+  JsName: 'kSecPaddingPKCS1SHA224'
+  Module: 'Security.SecKey'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 32771
+- Name: 'kSecPaddingPKCS1SHA256'
+  JsName: 'kSecPaddingPKCS1SHA256'
+  Module: 'Security.SecKey'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 32772
+- Name: 'kSecPaddingPKCS1SHA384'
+  JsName: 'kSecPaddingPKCS1SHA384'
+  Module: 'Security.SecKey'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 32773
+- Name: 'kSecPaddingPKCS1SHA512'
+  JsName: 'kSecPaddingPKCS1SHA512'
+  Module: 'Security.SecKey'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 32774
+- Name: 'SecKeyGetTypeID'
+  JsName: 'SecKeyGetTypeID'
+  Module: 'Security.SecKey'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'kSecPrivateKeyAttrs'
+  JsName: 'kSecPrivateKeyAttrs'
+  Module: 'Security.SecKey'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecPublicKeyAttrs'
+  JsName: 'kSecPublicKeyAttrs'
+  Module: 'Security.SecKey'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SecKeyGeneratePair'
+  JsName: 'SecKeyGeneratePair'
+  Module: 'Security.SecKey'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'SecKeyRawSign'
+  JsName: 'SecKeyRawSign'
+  Module: 'Security.SecKey'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: CString
+  - Type: ULong
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'SecKeyRawVerify'
+  JsName: 'SecKeyRawVerify'
+  Module: 'Security.SecKey'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: CString
+  - Type: ULong
+  - Type: CString
+  - Type: ULong
+- Name: 'SecKeyEncrypt'
+  JsName: 'SecKeyEncrypt'
+  Module: 'Security.SecKey'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: CString
+  - Type: ULong
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'SecKeyDecrypt'
+  JsName: 'SecKeyDecrypt'
+  Module: 'Security.SecKey'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: CString
+  - Type: ULong
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'SecKeyGetBlockSize'
+  JsName: 'SecKeyGetBlockSize'
+  Module: 'Security.SecKey'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecPolicyAppleX509Basic'
+  JsName: 'kSecPolicyAppleX509Basic'
+  Module: 'Security.SecPolicy'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecPolicyAppleSSL'
+  JsName: 'kSecPolicyAppleSSL'
+  Module: 'Security.SecPolicy'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecPolicyAppleSMIME'
+  JsName: 'kSecPolicyAppleSMIME'
+  Module: 'Security.SecPolicy'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecPolicyAppleEAP'
+  JsName: 'kSecPolicyAppleEAP'
+  Module: 'Security.SecPolicy'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecPolicyAppleIPsec'
+  JsName: 'kSecPolicyAppleIPsec'
+  Module: 'Security.SecPolicy'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecPolicyAppleCodeSigning'
+  JsName: 'kSecPolicyAppleCodeSigning'
+  Module: 'Security.SecPolicy'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecPolicyAppleIDValidation'
+  JsName: 'kSecPolicyAppleIDValidation'
+  Module: 'Security.SecPolicy'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecPolicyAppleTimeStamping'
+  JsName: 'kSecPolicyAppleTimeStamping'
+  Module: 'Security.SecPolicy'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecPolicyAppleRevocation'
+  JsName: 'kSecPolicyAppleRevocation'
+  Module: 'Security.SecPolicy'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecPolicyOid'
+  JsName: 'kSecPolicyOid'
+  Module: 'Security.SecPolicy'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecPolicyName'
+  JsName: 'kSecPolicyName'
+  Module: 'Security.SecPolicy'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecPolicyClient'
+  JsName: 'kSecPolicyClient'
+  Module: 'Security.SecPolicy'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecPolicyRevocationFlags'
+  JsName: 'kSecPolicyRevocationFlags'
+  Module: 'Security.SecPolicy'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SecPolicyGetTypeID'
+  JsName: 'SecPolicyGetTypeID'
+  Module: 'Security.SecPolicy'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'SecPolicyCopyProperties'
+  JsName: 'SecPolicyCopyProperties'
+  Module: 'Security.SecPolicy'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SecPolicyCreateBasicX509'
+  JsName: 'SecPolicyCreateBasicX509'
+  Module: 'Security.SecPolicy'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SecPolicyCreateSSL'
+  JsName: 'SecPolicyCreateSSL'
+  Module: 'Security.SecPolicy'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Bool
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kSecRevocationOCSPMethod'
+  JsName: 'kSecRevocationOCSPMethod'
+  Module: 'Security.SecPolicy'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kSecRevocationCRLMethod'
+  JsName: 'kSecRevocationCRLMethod'
+  Module: 'Security.SecPolicy'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kSecRevocationPreferCRL'
+  JsName: 'kSecRevocationPreferCRL'
+  Module: 'Security.SecPolicy'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kSecRevocationRequirePositiveResponse'
+  JsName: 'kSecRevocationRequirePositiveResponse'
+  Module: 'Security.SecPolicy'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kSecRevocationNetworkAccessDisabled'
+  JsName: 'kSecRevocationNetworkAccessDisabled'
+  Module: 'Security.SecPolicy'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'kSecRevocationUseAnyAvailableMethod'
+  JsName: 'kSecRevocationUseAnyAvailableMethod'
+  Module: 'Security.SecPolicy'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'SecPolicyCreateRevocation'
+  JsName: 'SecPolicyCreateRevocation'
+  Module: 'Security.SecPolicy'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+- Name: 'SecPolicyCreateWithProperties'
+  JsName: 'SecPolicyCreateWithProperties'
+  Module: 'Security.SecPolicy'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'kSecRandomDefault'
+  JsName: 'kSecRandomDefault'
+  Module: 'Security.SecRandom'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SecRandomCopyBytes'
+  JsName: 'SecRandomCopyBytes'
+  Module: 'Security.SecRandom'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: CString
+- Name: 'kSecSharedPassword'
+  JsName: 'kSecSharedPassword'
+  Module: 'Security.SecSharedCredential'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SecAddSharedWebCredential'
+  JsName: 'SecAddSharedWebCredential'
+  Module: 'Security.SecSharedCredential'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Block
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreFoundation.CFError
+      Name: NSError
+- Name: 'SecRequestSharedWebCredential'
+  JsName: 'SecRequestSharedWebCredential'
+  Module: 'Security.SecSharedCredential'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Block
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreFoundation.CFArray
+      Name: NSArray
+    - Type: Interface
+      Module: CoreFoundation.CFError
+      Name: NSError
+- Name: 'SecCreateSharedWebCredentialPassword'
+  JsName: 'SecCreateSharedWebCredentialPassword'
+  Module: 'Security.SecSharedCredential'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kSecTrustResultInvalid'
+  JsName: 'kSecTrustResultInvalid'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kSecTrustResultProceed'
+  JsName: 'kSecTrustResultProceed'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kSecTrustResultConfirm'
+  JsName: 'kSecTrustResultConfirm'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kSecTrustResultDeny'
+  JsName: 'kSecTrustResultDeny'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kSecTrustResultUnspecified'
+  JsName: 'kSecTrustResultUnspecified'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kSecTrustResultRecoverableTrustFailure'
+  JsName: 'kSecTrustResultRecoverableTrustFailure'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'kSecTrustResultFatalTrustFailure'
+  JsName: 'kSecTrustResultFatalTrustFailure'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'kSecTrustResultOtherError'
+  JsName: 'kSecTrustResultOtherError'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7
+- Name: 'kSecPropertyTypeTitle'
+  JsName: 'kSecPropertyTypeTitle'
+  Module: 'Security.SecTrust'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecPropertyTypeError'
+  JsName: 'kSecPropertyTypeError'
+  Module: 'Security.SecTrust'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecTrustEvaluationDate'
+  JsName: 'kSecTrustEvaluationDate'
+  Module: 'Security.SecTrust'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecTrustExtendedValidation'
+  JsName: 'kSecTrustExtendedValidation'
+  Module: 'Security.SecTrust'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecTrustOrganizationName'
+  JsName: 'kSecTrustOrganizationName'
+  Module: 'Security.SecTrust'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecTrustResultValue'
+  JsName: 'kSecTrustResultValue'
+  Module: 'Security.SecTrust'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecTrustRevocationChecked'
+  JsName: 'kSecTrustRevocationChecked'
+  Module: 'Security.SecTrust'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kSecTrustRevocationValidUntilDate'
+  JsName: 'kSecTrustRevocationValidUntilDate'
+  Module: 'Security.SecTrust'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SecTrustGetTypeID'
+  JsName: 'SecTrustGetTypeID'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'SecTrustCreateWithCertificates'
+  JsName: 'SecTrustCreateWithCertificates'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'SecTrustSetPolicies'
+  JsName: 'SecTrustSetPolicies'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SecTrustCopyPolicies'
+  JsName: 'SecTrustCopyPolicies'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFArray
+      Name: NSArray
+- Name: 'SecTrustSetNetworkFetchAllowed'
+  JsName: 'SecTrustSetNetworkFetchAllowed'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Bool
+- Name: 'SecTrustGetNetworkFetchAllowed'
+  JsName: 'SecTrustGetNetworkFetchAllowed'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'SecTrustSetAnchorCertificates'
+  JsName: 'SecTrustSetAnchorCertificates'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+- Name: 'SecTrustSetAnchorCertificatesOnly'
+  JsName: 'SecTrustSetAnchorCertificatesOnly'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Bool
+- Name: 'SecTrustCopyCustomAnchorCertificates'
+  JsName: 'SecTrustCopyCustomAnchorCertificates'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFArray
+      Name: NSArray
+- Name: 'SecTrustSetVerifyDate'
+  JsName: 'SecTrustSetVerifyDate'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFDate
+    Name: NSDate
+- Name: 'SecTrustGetVerifyTime'
+  JsName: 'SecTrustGetVerifyTime'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SecTrustEvaluate'
+  JsName: 'SecTrustEvaluate'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'SecTrustEvaluateAsync'
+  JsName: 'SecTrustEvaluateAsync'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  - Type: Block
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: UInt
+- Name: 'SecTrustGetTrustResult'
+  JsName: 'SecTrustGetTrustResult'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'SecTrustCopyPublicKey'
+  JsName: 'SecTrustCopyPublicKey'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SecTrustGetCertificateCount'
+  JsName: 'SecTrustGetCertificateCount'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SecTrustGetCertificateAtIndex'
+  JsName: 'SecTrustGetCertificateAtIndex'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Long
+- Name: 'SecTrustCopyExceptions'
+  JsName: 'SecTrustCopyExceptions'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SecTrustSetExceptions'
+  JsName: 'SecTrustSetExceptions'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+- Name: 'SecTrustCopyProperties'
+  JsName: 'SecTrustCopyProperties'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SecTrustCopyResult'
+  JsName: 'SecTrustCopyResult'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SecTrustSetOCSPResponse'
+  JsName: 'SecTrustSetOCSPResponse'
+  Module: 'Security.SecTrust'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SSL_NULL_WITH_NULL_NULL'
+  JsName: 'SSL_NULL_WITH_NULL_NULL'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'SSL_RSA_WITH_NULL_MD5'
+  JsName: 'SSL_RSA_WITH_NULL_MD5'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'SSL_RSA_WITH_NULL_SHA'
+  JsName: 'SSL_RSA_WITH_NULL_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'SSL_RSA_EXPORT_WITH_RC4_40_MD5'
+  JsName: 'SSL_RSA_EXPORT_WITH_RC4_40_MD5'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'SSL_RSA_WITH_RC4_128_MD5'
+  JsName: 'SSL_RSA_WITH_RC4_128_MD5'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'SSL_RSA_WITH_RC4_128_SHA'
+  JsName: 'SSL_RSA_WITH_RC4_128_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'SSL_RSA_EXPORT_WITH_RC2_CBC_40_MD5'
+  JsName: 'SSL_RSA_EXPORT_WITH_RC2_CBC_40_MD5'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'SSL_RSA_WITH_IDEA_CBC_SHA'
+  JsName: 'SSL_RSA_WITH_IDEA_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7
+- Name: 'SSL_RSA_EXPORT_WITH_DES40_CBC_SHA'
+  JsName: 'SSL_RSA_EXPORT_WITH_DES40_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'SSL_RSA_WITH_DES_CBC_SHA'
+  JsName: 'SSL_RSA_WITH_DES_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9
+- Name: 'SSL_RSA_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'SSL_RSA_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10
+- Name: 'SSL_DH_DSS_EXPORT_WITH_DES40_CBC_SHA'
+  JsName: 'SSL_DH_DSS_EXPORT_WITH_DES40_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11
+- Name: 'SSL_DH_DSS_WITH_DES_CBC_SHA'
+  JsName: 'SSL_DH_DSS_WITH_DES_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 12
+- Name: 'SSL_DH_DSS_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'SSL_DH_DSS_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 13
+- Name: 'SSL_DH_RSA_EXPORT_WITH_DES40_CBC_SHA'
+  JsName: 'SSL_DH_RSA_EXPORT_WITH_DES40_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 14
+- Name: 'SSL_DH_RSA_WITH_DES_CBC_SHA'
+  JsName: 'SSL_DH_RSA_WITH_DES_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 15
+- Name: 'SSL_DH_RSA_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'SSL_DH_RSA_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA'
+  JsName: 'SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 17
+- Name: 'SSL_DHE_DSS_WITH_DES_CBC_SHA'
+  JsName: 'SSL_DHE_DSS_WITH_DES_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 18
+- Name: 'SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 19
+- Name: 'SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA'
+  JsName: 'SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 20
+- Name: 'SSL_DHE_RSA_WITH_DES_CBC_SHA'
+  JsName: 'SSL_DHE_RSA_WITH_DES_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 21
+- Name: 'SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 22
+- Name: 'SSL_DH_anon_EXPORT_WITH_RC4_40_MD5'
+  JsName: 'SSL_DH_anon_EXPORT_WITH_RC4_40_MD5'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 23
+- Name: 'SSL_DH_anon_WITH_RC4_128_MD5'
+  JsName: 'SSL_DH_anon_WITH_RC4_128_MD5'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 24
+- Name: 'SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA'
+  JsName: 'SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 25
+- Name: 'SSL_DH_anon_WITH_DES_CBC_SHA'
+  JsName: 'SSL_DH_anon_WITH_DES_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 26
+- Name: 'SSL_DH_anon_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'SSL_DH_anon_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 27
+- Name: 'SSL_FORTEZZA_DMS_WITH_NULL_SHA'
+  JsName: 'SSL_FORTEZZA_DMS_WITH_NULL_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 28
+- Name: 'SSL_FORTEZZA_DMS_WITH_FORTEZZA_CBC_SHA'
+  JsName: 'SSL_FORTEZZA_DMS_WITH_FORTEZZA_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 29
+- Name: 'TLS_RSA_WITH_AES_128_CBC_SHA'
+  JsName: 'TLS_RSA_WITH_AES_128_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 47
+- Name: 'TLS_DH_DSS_WITH_AES_128_CBC_SHA'
+  JsName: 'TLS_DH_DSS_WITH_AES_128_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 48
+- Name: 'TLS_DH_RSA_WITH_AES_128_CBC_SHA'
+  JsName: 'TLS_DH_RSA_WITH_AES_128_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49
+- Name: 'TLS_DHE_DSS_WITH_AES_128_CBC_SHA'
+  JsName: 'TLS_DHE_DSS_WITH_AES_128_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 50
+- Name: 'TLS_DHE_RSA_WITH_AES_128_CBC_SHA'
+  JsName: 'TLS_DHE_RSA_WITH_AES_128_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 51
+- Name: 'TLS_DH_anon_WITH_AES_128_CBC_SHA'
+  JsName: 'TLS_DH_anon_WITH_AES_128_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 52
+- Name: 'TLS_RSA_WITH_AES_256_CBC_SHA'
+  JsName: 'TLS_RSA_WITH_AES_256_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 53
+- Name: 'TLS_DH_DSS_WITH_AES_256_CBC_SHA'
+  JsName: 'TLS_DH_DSS_WITH_AES_256_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 54
+- Name: 'TLS_DH_RSA_WITH_AES_256_CBC_SHA'
+  JsName: 'TLS_DH_RSA_WITH_AES_256_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 55
+- Name: 'TLS_DHE_DSS_WITH_AES_256_CBC_SHA'
+  JsName: 'TLS_DHE_DSS_WITH_AES_256_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 56
+- Name: 'TLS_DHE_RSA_WITH_AES_256_CBC_SHA'
+  JsName: 'TLS_DHE_RSA_WITH_AES_256_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 57
+- Name: 'TLS_DH_anon_WITH_AES_256_CBC_SHA'
+  JsName: 'TLS_DH_anon_WITH_AES_256_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 58
+- Name: 'TLS_ECDH_ECDSA_WITH_NULL_SHA'
+  JsName: 'TLS_ECDH_ECDSA_WITH_NULL_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49153
+- Name: 'TLS_ECDH_ECDSA_WITH_RC4_128_SHA'
+  JsName: 'TLS_ECDH_ECDSA_WITH_RC4_128_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49154
+- Name: 'TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49155
+- Name: 'TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA'
+  JsName: 'TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49156
+- Name: 'TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA'
+  JsName: 'TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49157
+- Name: 'TLS_ECDHE_ECDSA_WITH_NULL_SHA'
+  JsName: 'TLS_ECDHE_ECDSA_WITH_NULL_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49158
+- Name: 'TLS_ECDHE_ECDSA_WITH_RC4_128_SHA'
+  JsName: 'TLS_ECDHE_ECDSA_WITH_RC4_128_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49159
+- Name: 'TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49160
+- Name: 'TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA'
+  JsName: 'TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49161
+- Name: 'TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA'
+  JsName: 'TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49162
+- Name: 'TLS_ECDH_RSA_WITH_NULL_SHA'
+  JsName: 'TLS_ECDH_RSA_WITH_NULL_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49163
+- Name: 'TLS_ECDH_RSA_WITH_RC4_128_SHA'
+  JsName: 'TLS_ECDH_RSA_WITH_RC4_128_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49164
+- Name: 'TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49165
+- Name: 'TLS_ECDH_RSA_WITH_AES_128_CBC_SHA'
+  JsName: 'TLS_ECDH_RSA_WITH_AES_128_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49166
+- Name: 'TLS_ECDH_RSA_WITH_AES_256_CBC_SHA'
+  JsName: 'TLS_ECDH_RSA_WITH_AES_256_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49167
+- Name: 'TLS_ECDHE_RSA_WITH_NULL_SHA'
+  JsName: 'TLS_ECDHE_RSA_WITH_NULL_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49168
+- Name: 'TLS_ECDHE_RSA_WITH_RC4_128_SHA'
+  JsName: 'TLS_ECDHE_RSA_WITH_RC4_128_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49169
+- Name: 'TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49170
+- Name: 'TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA'
+  JsName: 'TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49171
+- Name: 'TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA'
+  JsName: 'TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49172
+- Name: 'TLS_ECDH_anon_WITH_NULL_SHA'
+  JsName: 'TLS_ECDH_anon_WITH_NULL_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49173
+- Name: 'TLS_ECDH_anon_WITH_RC4_128_SHA'
+  JsName: 'TLS_ECDH_anon_WITH_RC4_128_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49174
+- Name: 'TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49175
+- Name: 'TLS_ECDH_anon_WITH_AES_128_CBC_SHA'
+  JsName: 'TLS_ECDH_anon_WITH_AES_128_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49176
+- Name: 'TLS_ECDH_anon_WITH_AES_256_CBC_SHA'
+  JsName: 'TLS_ECDH_anon_WITH_AES_256_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49177
+- Name: 'TLS_NULL_WITH_NULL_NULL'
+  JsName: 'TLS_NULL_WITH_NULL_NULL'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'TLS_RSA_WITH_NULL_MD5'
+  JsName: 'TLS_RSA_WITH_NULL_MD5'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'TLS_RSA_WITH_NULL_SHA'
+  JsName: 'TLS_RSA_WITH_NULL_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'TLS_RSA_WITH_RC4_128_MD5'
+  JsName: 'TLS_RSA_WITH_RC4_128_MD5'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'TLS_RSA_WITH_RC4_128_SHA'
+  JsName: 'TLS_RSA_WITH_RC4_128_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'TLS_RSA_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'TLS_RSA_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10
+- Name: 'TLS_RSA_WITH_NULL_SHA256'
+  JsName: 'TLS_RSA_WITH_NULL_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 59
+- Name: 'TLS_RSA_WITH_AES_128_CBC_SHA256'
+  JsName: 'TLS_RSA_WITH_AES_128_CBC_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 60
+- Name: 'TLS_RSA_WITH_AES_256_CBC_SHA256'
+  JsName: 'TLS_RSA_WITH_AES_256_CBC_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 61
+- Name: 'TLS_DH_DSS_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'TLS_DH_DSS_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 13
+- Name: 'TLS_DH_RSA_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'TLS_DH_RSA_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 19
+- Name: 'TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 22
+- Name: 'TLS_DH_DSS_WITH_AES_128_CBC_SHA256'
+  JsName: 'TLS_DH_DSS_WITH_AES_128_CBC_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 62
+- Name: 'TLS_DH_RSA_WITH_AES_128_CBC_SHA256'
+  JsName: 'TLS_DH_RSA_WITH_AES_128_CBC_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 63
+- Name: 'TLS_DHE_DSS_WITH_AES_128_CBC_SHA256'
+  JsName: 'TLS_DHE_DSS_WITH_AES_128_CBC_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 64
+- Name: 'TLS_DHE_RSA_WITH_AES_128_CBC_SHA256'
+  JsName: 'TLS_DHE_RSA_WITH_AES_128_CBC_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 103
+- Name: 'TLS_DH_DSS_WITH_AES_256_CBC_SHA256'
+  JsName: 'TLS_DH_DSS_WITH_AES_256_CBC_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 104
+- Name: 'TLS_DH_RSA_WITH_AES_256_CBC_SHA256'
+  JsName: 'TLS_DH_RSA_WITH_AES_256_CBC_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 105
+- Name: 'TLS_DHE_DSS_WITH_AES_256_CBC_SHA256'
+  JsName: 'TLS_DHE_DSS_WITH_AES_256_CBC_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 106
+- Name: 'TLS_DHE_RSA_WITH_AES_256_CBC_SHA256'
+  JsName: 'TLS_DHE_RSA_WITH_AES_256_CBC_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 107
+- Name: 'TLS_DH_anon_WITH_RC4_128_MD5'
+  JsName: 'TLS_DH_anon_WITH_RC4_128_MD5'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 24
+- Name: 'TLS_DH_anon_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'TLS_DH_anon_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 27
+- Name: 'TLS_DH_anon_WITH_AES_128_CBC_SHA256'
+  JsName: 'TLS_DH_anon_WITH_AES_128_CBC_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 108
+- Name: 'TLS_DH_anon_WITH_AES_256_CBC_SHA256'
+  JsName: 'TLS_DH_anon_WITH_AES_256_CBC_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 109
+- Name: 'TLS_PSK_WITH_RC4_128_SHA'
+  JsName: 'TLS_PSK_WITH_RC4_128_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 138
+- Name: 'TLS_PSK_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'TLS_PSK_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 139
+- Name: 'TLS_PSK_WITH_AES_128_CBC_SHA'
+  JsName: 'TLS_PSK_WITH_AES_128_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 140
+- Name: 'TLS_PSK_WITH_AES_256_CBC_SHA'
+  JsName: 'TLS_PSK_WITH_AES_256_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 141
+- Name: 'TLS_DHE_PSK_WITH_RC4_128_SHA'
+  JsName: 'TLS_DHE_PSK_WITH_RC4_128_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 142
+- Name: 'TLS_DHE_PSK_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'TLS_DHE_PSK_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 143
+- Name: 'TLS_DHE_PSK_WITH_AES_128_CBC_SHA'
+  JsName: 'TLS_DHE_PSK_WITH_AES_128_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 144
+- Name: 'TLS_DHE_PSK_WITH_AES_256_CBC_SHA'
+  JsName: 'TLS_DHE_PSK_WITH_AES_256_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 145
+- Name: 'TLS_RSA_PSK_WITH_RC4_128_SHA'
+  JsName: 'TLS_RSA_PSK_WITH_RC4_128_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 146
+- Name: 'TLS_RSA_PSK_WITH_3DES_EDE_CBC_SHA'
+  JsName: 'TLS_RSA_PSK_WITH_3DES_EDE_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 147
+- Name: 'TLS_RSA_PSK_WITH_AES_128_CBC_SHA'
+  JsName: 'TLS_RSA_PSK_WITH_AES_128_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 148
+- Name: 'TLS_RSA_PSK_WITH_AES_256_CBC_SHA'
+  JsName: 'TLS_RSA_PSK_WITH_AES_256_CBC_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 149
+- Name: 'TLS_PSK_WITH_NULL_SHA'
+  JsName: 'TLS_PSK_WITH_NULL_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 44
+- Name: 'TLS_DHE_PSK_WITH_NULL_SHA'
+  JsName: 'TLS_DHE_PSK_WITH_NULL_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 45
+- Name: 'TLS_RSA_PSK_WITH_NULL_SHA'
+  JsName: 'TLS_RSA_PSK_WITH_NULL_SHA'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 46
+- Name: 'TLS_RSA_WITH_AES_128_GCM_SHA256'
+  JsName: 'TLS_RSA_WITH_AES_128_GCM_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 156
+- Name: 'TLS_RSA_WITH_AES_256_GCM_SHA384'
+  JsName: 'TLS_RSA_WITH_AES_256_GCM_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 157
+- Name: 'TLS_DHE_RSA_WITH_AES_128_GCM_SHA256'
+  JsName: 'TLS_DHE_RSA_WITH_AES_128_GCM_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 158
+- Name: 'TLS_DHE_RSA_WITH_AES_256_GCM_SHA384'
+  JsName: 'TLS_DHE_RSA_WITH_AES_256_GCM_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 159
+- Name: 'TLS_DH_RSA_WITH_AES_128_GCM_SHA256'
+  JsName: 'TLS_DH_RSA_WITH_AES_128_GCM_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 160
+- Name: 'TLS_DH_RSA_WITH_AES_256_GCM_SHA384'
+  JsName: 'TLS_DH_RSA_WITH_AES_256_GCM_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 161
+- Name: 'TLS_DHE_DSS_WITH_AES_128_GCM_SHA256'
+  JsName: 'TLS_DHE_DSS_WITH_AES_128_GCM_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 162
+- Name: 'TLS_DHE_DSS_WITH_AES_256_GCM_SHA384'
+  JsName: 'TLS_DHE_DSS_WITH_AES_256_GCM_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 163
+- Name: 'TLS_DH_DSS_WITH_AES_128_GCM_SHA256'
+  JsName: 'TLS_DH_DSS_WITH_AES_128_GCM_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 164
+- Name: 'TLS_DH_DSS_WITH_AES_256_GCM_SHA384'
+  JsName: 'TLS_DH_DSS_WITH_AES_256_GCM_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 165
+- Name: 'TLS_DH_anon_WITH_AES_128_GCM_SHA256'
+  JsName: 'TLS_DH_anon_WITH_AES_128_GCM_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 166
+- Name: 'TLS_DH_anon_WITH_AES_256_GCM_SHA384'
+  JsName: 'TLS_DH_anon_WITH_AES_256_GCM_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 167
+- Name: 'TLS_PSK_WITH_AES_128_GCM_SHA256'
+  JsName: 'TLS_PSK_WITH_AES_128_GCM_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 168
+- Name: 'TLS_PSK_WITH_AES_256_GCM_SHA384'
+  JsName: 'TLS_PSK_WITH_AES_256_GCM_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 169
+- Name: 'TLS_DHE_PSK_WITH_AES_128_GCM_SHA256'
+  JsName: 'TLS_DHE_PSK_WITH_AES_128_GCM_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 170
+- Name: 'TLS_DHE_PSK_WITH_AES_256_GCM_SHA384'
+  JsName: 'TLS_DHE_PSK_WITH_AES_256_GCM_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 171
+- Name: 'TLS_RSA_PSK_WITH_AES_128_GCM_SHA256'
+  JsName: 'TLS_RSA_PSK_WITH_AES_128_GCM_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 172
+- Name: 'TLS_RSA_PSK_WITH_AES_256_GCM_SHA384'
+  JsName: 'TLS_RSA_PSK_WITH_AES_256_GCM_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 173
+- Name: 'TLS_PSK_WITH_AES_128_CBC_SHA256'
+  JsName: 'TLS_PSK_WITH_AES_128_CBC_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 174
+- Name: 'TLS_PSK_WITH_AES_256_CBC_SHA384'
+  JsName: 'TLS_PSK_WITH_AES_256_CBC_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 175
+- Name: 'TLS_PSK_WITH_NULL_SHA256'
+  JsName: 'TLS_PSK_WITH_NULL_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 176
+- Name: 'TLS_PSK_WITH_NULL_SHA384'
+  JsName: 'TLS_PSK_WITH_NULL_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 177
+- Name: 'TLS_DHE_PSK_WITH_AES_128_CBC_SHA256'
+  JsName: 'TLS_DHE_PSK_WITH_AES_128_CBC_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 178
+- Name: 'TLS_DHE_PSK_WITH_AES_256_CBC_SHA384'
+  JsName: 'TLS_DHE_PSK_WITH_AES_256_CBC_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 179
+- Name: 'TLS_DHE_PSK_WITH_NULL_SHA256'
+  JsName: 'TLS_DHE_PSK_WITH_NULL_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 180
+- Name: 'TLS_DHE_PSK_WITH_NULL_SHA384'
+  JsName: 'TLS_DHE_PSK_WITH_NULL_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 181
+- Name: 'TLS_RSA_PSK_WITH_AES_128_CBC_SHA256'
+  JsName: 'TLS_RSA_PSK_WITH_AES_128_CBC_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 182
+- Name: 'TLS_RSA_PSK_WITH_AES_256_CBC_SHA384'
+  JsName: 'TLS_RSA_PSK_WITH_AES_256_CBC_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 183
+- Name: 'TLS_RSA_PSK_WITH_NULL_SHA256'
+  JsName: 'TLS_RSA_PSK_WITH_NULL_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 184
+- Name: 'TLS_RSA_PSK_WITH_NULL_SHA384'
+  JsName: 'TLS_RSA_PSK_WITH_NULL_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 185
+- Name: 'TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256'
+  JsName: 'TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49187
+- Name: 'TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384'
+  JsName: 'TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49188
+- Name: 'TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256'
+  JsName: 'TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49189
+- Name: 'TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384'
+  JsName: 'TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49190
+- Name: 'TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256'
+  JsName: 'TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49191
+- Name: 'TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384'
+  JsName: 'TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49192
+- Name: 'TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256'
+  JsName: 'TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49193
+- Name: 'TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384'
+  JsName: 'TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49194
+- Name: 'TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256'
+  JsName: 'TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49195
+- Name: 'TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384'
+  JsName: 'TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49196
+- Name: 'TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256'
+  JsName: 'TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49197
+- Name: 'TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384'
+  JsName: 'TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49198
+- Name: 'TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256'
+  JsName: 'TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49199
+- Name: 'TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384'
+  JsName: 'TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49200
+- Name: 'TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256'
+  JsName: 'TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49201
+- Name: 'TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384'
+  JsName: 'TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49202
+- Name: 'TLS_EMPTY_RENEGOTIATION_INFO_SCSV'
+  JsName: 'TLS_EMPTY_RENEGOTIATION_INFO_SCSV'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 255
+- Name: 'SSL_RSA_WITH_RC2_CBC_MD5'
+  JsName: 'SSL_RSA_WITH_RC2_CBC_MD5'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65408
+- Name: 'SSL_RSA_WITH_IDEA_CBC_MD5'
+  JsName: 'SSL_RSA_WITH_IDEA_CBC_MD5'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65409
+- Name: 'SSL_RSA_WITH_DES_CBC_MD5'
+  JsName: 'SSL_RSA_WITH_DES_CBC_MD5'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65410
+- Name: 'SSL_RSA_WITH_3DES_EDE_CBC_MD5'
+  JsName: 'SSL_RSA_WITH_3DES_EDE_CBC_MD5'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65411
+- Name: 'SSL_NO_SUCH_CIPHERSUITE'
+  JsName: 'SSL_NO_SUCH_CIPHERSUITE'
+  Module: 'Security.CipherSuite'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65535
+- Name: '487'
+  JsName: 'SSLProtocol'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kSSLProtocolUnknown":0,"kSSLProtocol3":2,"kTLSProtocol1":4,"kTLSProtocol11":7,"kTLSProtocol12":8,"kDTLSProtocol1":9,"kSSLProtocol2":1,"kSSLProtocol3Only":3,"kTLSProtocol1Only":5,"kSSLProtocolAll":6})
+- Name: '488'
+  JsName: 'SSLSessionOption'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kSSLSessionOptionBreakOnServerAuth":0,"kSSLSessionOptionBreakOnCertRequested":1,"kSSLSessionOptionBreakOnClientAuth":2,"kSSLSessionOptionFalseStart":3,"kSSLSessionOptionSendOneByteRecord":4,"kSSLSessionOptionFallback":6})
+- Name: '489'
+  JsName: 'SSLSessionState'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kSSLIdle":0,"kSSLHandshake":1,"kSSLConnected":2,"kSSLClosed":3,"kSSLAborted":4})
+- Name: '490'
+  JsName: 'SSLClientCertificateState'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kSSLClientCertNone":0,"kSSLClientCertRequested":1,"kSSLClientCertSent":2,"kSSLClientCertRejected":3})
+- Name: 'errSSLProtocol'
+  JsName: 'errSSLProtocol'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9800
+- Name: 'errSSLNegotiation'
+  JsName: 'errSSLNegotiation'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9801
+- Name: 'errSSLFatalAlert'
+  JsName: 'errSSLFatalAlert'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9802
+- Name: 'errSSLWouldBlock'
+  JsName: 'errSSLWouldBlock'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9803
+- Name: 'errSSLSessionNotFound'
+  JsName: 'errSSLSessionNotFound'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9804
+- Name: 'errSSLClosedGraceful'
+  JsName: 'errSSLClosedGraceful'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9805
+- Name: 'errSSLClosedAbort'
+  JsName: 'errSSLClosedAbort'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9806
+- Name: 'errSSLXCertChainInvalid'
+  JsName: 'errSSLXCertChainInvalid'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9807
+- Name: 'errSSLBadCert'
+  JsName: 'errSSLBadCert'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9808
+- Name: 'errSSLCrypto'
+  JsName: 'errSSLCrypto'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9809
+- Name: 'errSSLInternal'
+  JsName: 'errSSLInternal'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9810
+- Name: 'errSSLModuleAttach'
+  JsName: 'errSSLModuleAttach'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9811
+- Name: 'errSSLUnknownRootCert'
+  JsName: 'errSSLUnknownRootCert'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9812
+- Name: 'errSSLNoRootCert'
+  JsName: 'errSSLNoRootCert'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9813
+- Name: 'errSSLCertExpired'
+  JsName: 'errSSLCertExpired'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9814
+- Name: 'errSSLCertNotYetValid'
+  JsName: 'errSSLCertNotYetValid'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9815
+- Name: 'errSSLClosedNoNotify'
+  JsName: 'errSSLClosedNoNotify'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9816
+- Name: 'errSSLBufferOverflow'
+  JsName: 'errSSLBufferOverflow'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9817
+- Name: 'errSSLBadCipherSuite'
+  JsName: 'errSSLBadCipherSuite'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9818
+- Name: 'errSSLPeerUnexpectedMsg'
+  JsName: 'errSSLPeerUnexpectedMsg'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9819
+- Name: 'errSSLPeerBadRecordMac'
+  JsName: 'errSSLPeerBadRecordMac'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9820
+- Name: 'errSSLPeerDecryptionFail'
+  JsName: 'errSSLPeerDecryptionFail'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9821
+- Name: 'errSSLPeerRecordOverflow'
+  JsName: 'errSSLPeerRecordOverflow'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9822
+- Name: 'errSSLPeerDecompressFail'
+  JsName: 'errSSLPeerDecompressFail'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9823
+- Name: 'errSSLPeerHandshakeFail'
+  JsName: 'errSSLPeerHandshakeFail'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9824
+- Name: 'errSSLPeerBadCert'
+  JsName: 'errSSLPeerBadCert'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9825
+- Name: 'errSSLPeerUnsupportedCert'
+  JsName: 'errSSLPeerUnsupportedCert'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9826
+- Name: 'errSSLPeerCertRevoked'
+  JsName: 'errSSLPeerCertRevoked'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9827
+- Name: 'errSSLPeerCertExpired'
+  JsName: 'errSSLPeerCertExpired'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9828
+- Name: 'errSSLPeerCertUnknown'
+  JsName: 'errSSLPeerCertUnknown'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9829
+- Name: 'errSSLIllegalParam'
+  JsName: 'errSSLIllegalParam'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9830
+- Name: 'errSSLPeerUnknownCA'
+  JsName: 'errSSLPeerUnknownCA'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9831
+- Name: 'errSSLPeerAccessDenied'
+  JsName: 'errSSLPeerAccessDenied'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9832
+- Name: 'errSSLPeerDecodeError'
+  JsName: 'errSSLPeerDecodeError'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9833
+- Name: 'errSSLPeerDecryptError'
+  JsName: 'errSSLPeerDecryptError'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9834
+- Name: 'errSSLPeerExportRestriction'
+  JsName: 'errSSLPeerExportRestriction'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9835
+- Name: 'errSSLPeerProtocolVersion'
+  JsName: 'errSSLPeerProtocolVersion'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9836
+- Name: 'errSSLPeerInsufficientSecurity'
+  JsName: 'errSSLPeerInsufficientSecurity'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9837
+- Name: 'errSSLPeerInternalError'
+  JsName: 'errSSLPeerInternalError'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9838
+- Name: 'errSSLPeerUserCancelled'
+  JsName: 'errSSLPeerUserCancelled'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9839
+- Name: 'errSSLPeerNoRenegotiation'
+  JsName: 'errSSLPeerNoRenegotiation'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9840
+- Name: 'errSSLPeerAuthCompleted'
+  JsName: 'errSSLPeerAuthCompleted'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9841
+- Name: 'errSSLClientCertRequested'
+  JsName: 'errSSLClientCertRequested'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9842
+- Name: 'errSSLHostNameMismatch'
+  JsName: 'errSSLHostNameMismatch'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9843
+- Name: 'errSSLConnectionRefused'
+  JsName: 'errSSLConnectionRefused'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9844
+- Name: 'errSSLDecryptionFail'
+  JsName: 'errSSLDecryptionFail'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9845
+- Name: 'errSSLBadRecordMac'
+  JsName: 'errSSLBadRecordMac'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9846
+- Name: 'errSSLRecordOverflow'
+  JsName: 'errSSLRecordOverflow'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9847
+- Name: 'errSSLBadConfiguration'
+  JsName: 'errSSLBadConfiguration'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9848
+- Name: 'errSSLUnexpectedRecord'
+  JsName: 'errSSLUnexpectedRecord'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -9849
+- Name: '494'
+  JsName: 'SSLProtocolSide'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kSSLServerSide":0,"kSSLClientSide":1})
+- Name: '495'
+  JsName: 'SSLConnectionType'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kSSLStreamType":0,"kSSLDatagramType":1})
+- Name: 'SSLContextGetTypeID'
+  JsName: 'SSLContextGetTypeID'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'SSLCreateContext'
+  JsName: 'SSLCreateContext'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: UInt
+- Name: 'SSLGetSessionState'
+  JsName: 'SSLGetSessionState'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'SSLSetSessionOption'
+  JsName: 'SSLSetSessionOption'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: Bool
+- Name: 'SSLGetSessionOption'
+  JsName: 'SSLGetSessionOption'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: CString
+- Name: 'SSLSetIOFuncs'
+  JsName: 'SSLSetIOFuncs'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Long
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: ULong
+  - Type: FunctionPointer
+    Signature:
+    - Type: Long
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: ULong
+- Name: 'SSLSetProtocolVersionMin'
+  JsName: 'SSLSetProtocolVersionMin'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'SSLGetProtocolVersionMin'
+  JsName: 'SSLGetProtocolVersionMin'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'SSLSetProtocolVersionMax'
+  JsName: 'SSLSetProtocolVersionMax'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'SSLGetProtocolVersionMax'
+  JsName: 'SSLGetProtocolVersionMax'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'SSLSetCertificate'
+  JsName: 'SSLSetCertificate'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+- Name: 'SSLSetConnection'
+  JsName: 'SSLSetConnection'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SSLGetConnection'
+  JsName: 'SSLGetConnection'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'SSLSetPeerDomainName'
+  JsName: 'SSLSetPeerDomainName'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: ULong
+- Name: 'SSLGetPeerDomainNameLength'
+  JsName: 'SSLGetPeerDomainNameLength'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'SSLGetPeerDomainName'
+  JsName: 'SSLGetPeerDomainName'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'SSLSetDatagramHelloCookie'
+  JsName: 'SSLSetDatagramHelloCookie'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+- Name: 'SSLSetMaxDatagramRecordSize'
+  JsName: 'SSLSetMaxDatagramRecordSize'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+- Name: 'SSLGetMaxDatagramRecordSize'
+  JsName: 'SSLGetMaxDatagramRecordSize'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'SSLGetNegotiatedProtocolVersion'
+  JsName: 'SSLGetNegotiatedProtocolVersion'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'SSLGetNumberSupportedCiphers'
+  JsName: 'SSLGetNumberSupportedCiphers'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'SSLGetSupportedCiphers'
+  JsName: 'SSLGetSupportedCiphers'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Ushort
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'SSLSetEnabledCiphers'
+  JsName: 'SSLSetEnabledCiphers'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Ushort
+  - Type: ULong
+- Name: 'SSLGetNumberEnabledCiphers'
+  JsName: 'SSLGetNumberEnabledCiphers'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'SSLGetEnabledCiphers'
+  JsName: 'SSLGetEnabledCiphers'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Ushort
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'SSLCopyPeerTrust'
+  JsName: 'SSLCopyPeerTrust'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'SSLSetPeerID'
+  JsName: 'SSLSetPeerID'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+- Name: 'SSLGetPeerID'
+  JsName: 'SSLGetPeerID'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'SSLGetNegotiatedCipher'
+  JsName: 'SSLGetNegotiatedCipher'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Ushort
+- Name: 'SSLSetEncryptionCertificate'
+  JsName: 'SSLSetEncryptionCertificate'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+- Name: '496'
+  JsName: 'SSLAuthenticate'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kNeverAuthenticate":0,"kAlwaysAuthenticate":1,"kTryAuthenticate":2})
+- Name: 'SSLSetClientSideAuthenticate'
+  JsName: 'SSLSetClientSideAuthenticate'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'SSLAddDistinguishedName'
+  JsName: 'SSLAddDistinguishedName'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+- Name: 'SSLCopyDistinguishedNames'
+  JsName: 'SSLCopyDistinguishedNames'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFArray
+      Name: NSArray
+- Name: 'SSLGetClientCertificateState'
+  JsName: 'SSLGetClientCertificateState'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'SSLHandshake'
+  JsName: 'SSLHandshake'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'SSLWrite'
+  JsName: 'SSLWrite'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'SSLRead'
+  JsName: 'SSLRead'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'SSLGetBufferedReadSize'
+  JsName: 'SSLGetBufferedReadSize'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'SSLGetDatagramWriteSize'
+  JsName: 'SSLGetDatagramWriteSize'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'SSLClose'
+  JsName: 'SSLClose'
+  Module: 'Security.SecureTransport'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+...

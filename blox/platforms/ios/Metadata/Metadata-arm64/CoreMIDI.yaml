@@ -1,0 +1,2708 @@
+name: CoreMIDI
+items:
+- Name: 'kMIDIInvalidClient'
+  JsName: 'kMIDIInvalidClient'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10830
+- Name: 'kMIDIInvalidPort'
+  JsName: 'kMIDIInvalidPort'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10831
+- Name: 'kMIDIWrongEndpointType'
+  JsName: 'kMIDIWrongEndpointType'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10832
+- Name: 'kMIDINoConnection'
+  JsName: 'kMIDINoConnection'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10833
+- Name: 'kMIDIUnknownEndpoint'
+  JsName: 'kMIDIUnknownEndpoint'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10834
+- Name: 'kMIDIUnknownProperty'
+  JsName: 'kMIDIUnknownProperty'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10835
+- Name: 'kMIDIWrongPropertyType'
+  JsName: 'kMIDIWrongPropertyType'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10836
+- Name: 'kMIDINoCurrentSetup'
+  JsName: 'kMIDINoCurrentSetup'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10837
+- Name: 'kMIDIMessageSendErr'
+  JsName: 'kMIDIMessageSendErr'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10838
+- Name: 'kMIDIServerStartErr'
+  JsName: 'kMIDIServerStartErr'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10839
+- Name: 'kMIDISetupFormatErr'
+  JsName: 'kMIDISetupFormatErr'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10840
+- Name: 'kMIDIWrongThread'
+  JsName: 'kMIDIWrongThread'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10841
+- Name: 'kMIDIObjectNotFound'
+  JsName: 'kMIDIObjectNotFound'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10842
+- Name: 'kMIDIIDNotUnique'
+  JsName: 'kMIDIIDNotUnique'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10843
+- Name: 'kMIDINotPermitted'
+  JsName: 'kMIDINotPermitted'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10844
+- Name: 'kMIDIObjectType_Other'
+  JsName: 'kMIDIObjectType_Other'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -1
+- Name: 'kMIDIObjectType_Device'
+  JsName: 'kMIDIObjectType_Device'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kMIDIObjectType_Entity'
+  JsName: 'kMIDIObjectType_Entity'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kMIDIObjectType_Source'
+  JsName: 'kMIDIObjectType_Source'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kMIDIObjectType_Destination'
+  JsName: 'kMIDIObjectType_Destination'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kMIDIObjectType_ExternalMask'
+  JsName: 'kMIDIObjectType_ExternalMask'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'kMIDIObjectType_ExternalDevice'
+  JsName: 'kMIDIObjectType_ExternalDevice'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'kMIDIObjectType_ExternalEntity'
+  JsName: 'kMIDIObjectType_ExternalEntity'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 17
+- Name: 'kMIDIObjectType_ExternalSource'
+  JsName: 'kMIDIObjectType_ExternalSource'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 18
+- Name: 'kMIDIObjectType_ExternalDestination'
+  JsName: 'kMIDIObjectType_ExternalDestination'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 19
+- Name: 'kMIDIInvalidUniqueID'
+  JsName: 'kMIDIInvalidUniqueID'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'MIDIPacket'
+  JsName: 'MIDIPacket'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: timeStamp
+    Signature:
+      Type: ULongLong
+  - Name: length
+    Signature:
+      Type: Ushort
+  - Name: data
+    Signature:
+      Type: ConstantArray
+      ArrayType:
+        Type: UChar
+      Size: 256
+  Type: Struct
+- Name: 'MIDIPacketList'
+  JsName: 'MIDIPacketList'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: numPackets
+    Signature:
+      Type: UInt
+  - Name: packet
+    Signature:
+      Type: ConstantArray
+      ArrayType:
+        Type: Struct
+        Module: CoreMIDI.MIDIServices
+        Name: MIDIPacket
+      Size: 1
+  Type: Struct
+- Name: 'MIDISysexSendRequest'
+  JsName: 'MIDISysexSendRequest'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: destination
+    Signature:
+      Type: UInt
+  - Name: data
+    Signature:
+      Type: CString
+  - Name: bytesToSend
+    Signature:
+      Type: UInt
+  - Name: complete
+    Signature:
+      Type: Bool
+  - Name: reserved
+    Signature:
+      Type: ConstantArray
+      ArrayType:
+        Type: UChar
+      Size: 3
+  - Name: completionProc
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: CoreMIDI.MIDIServices
+          Name: MIDISysexSendRequest
+  - Name: completionRefCon
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  Type: Struct
+- Name: 'kMIDIMsgSetupChanged'
+  JsName: 'kMIDIMsgSetupChanged'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kMIDIMsgObjectAdded'
+  JsName: 'kMIDIMsgObjectAdded'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kMIDIMsgObjectRemoved'
+  JsName: 'kMIDIMsgObjectRemoved'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kMIDIMsgPropertyChanged'
+  JsName: 'kMIDIMsgPropertyChanged'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kMIDIMsgThruConnectionsChanged'
+  JsName: 'kMIDIMsgThruConnectionsChanged'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'kMIDIMsgSerialPortOwnerChanged'
+  JsName: 'kMIDIMsgSerialPortOwnerChanged'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'kMIDIMsgIOError'
+  JsName: 'kMIDIMsgIOError'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7
+- Name: 'MIDINotification'
+  JsName: 'MIDINotification'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: messageID
+    Signature:
+      Type: Int
+  - Name: messageSize
+    Signature:
+      Type: UInt
+  Type: Struct
+- Name: 'MIDIObjectAddRemoveNotification'
+  JsName: 'MIDIObjectAddRemoveNotification'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: messageID
+    Signature:
+      Type: Int
+  - Name: messageSize
+    Signature:
+      Type: UInt
+  - Name: parent
+    Signature:
+      Type: UInt
+  - Name: parentType
+    Signature:
+      Type: Int
+  - Name: child
+    Signature:
+      Type: UInt
+  - Name: childType
+    Signature:
+      Type: Int
+  Type: Struct
+- Name: 'MIDIObjectPropertyChangeNotification'
+  JsName: 'MIDIObjectPropertyChangeNotification'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: messageID
+    Signature:
+      Type: Int
+  - Name: messageSize
+    Signature:
+      Type: UInt
+  - Name: object
+    Signature:
+      Type: UInt
+  - Name: objectType
+    Signature:
+      Type: Int
+  - Name: propertyName
+    Signature:
+      Type: Interface
+      Module: CoreFoundation.CFBase
+      Name: NSString
+  Type: Struct
+- Name: 'MIDIIOErrorNotification'
+  JsName: 'MIDIIOErrorNotification'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: messageID
+    Signature:
+      Type: Int
+  - Name: messageSize
+    Signature:
+      Type: UInt
+  - Name: driverDevice
+    Signature:
+      Type: UInt
+  - Name: errorCode
+    Signature:
+      Type: Int
+  Type: Struct
+- Name: 'kMIDIPropertyName'
+  JsName: 'kMIDIPropertyName'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyManufacturer'
+  JsName: 'kMIDIPropertyManufacturer'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyModel'
+  JsName: 'kMIDIPropertyModel'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyUniqueID'
+  JsName: 'kMIDIPropertyUniqueID'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyDeviceID'
+  JsName: 'kMIDIPropertyDeviceID'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyReceiveChannels'
+  JsName: 'kMIDIPropertyReceiveChannels'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyTransmitChannels'
+  JsName: 'kMIDIPropertyTransmitChannels'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyMaxSysExSpeed'
+  JsName: 'kMIDIPropertyMaxSysExSpeed'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyAdvanceScheduleTimeMuSec'
+  JsName: 'kMIDIPropertyAdvanceScheduleTimeMuSec'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyIsEmbeddedEntity'
+  JsName: 'kMIDIPropertyIsEmbeddedEntity'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyIsBroadcast'
+  JsName: 'kMIDIPropertyIsBroadcast'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertySingleRealtimeEntity'
+  JsName: 'kMIDIPropertySingleRealtimeEntity'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyConnectionUniqueID'
+  JsName: 'kMIDIPropertyConnectionUniqueID'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyOffline'
+  JsName: 'kMIDIPropertyOffline'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyPrivate'
+  JsName: 'kMIDIPropertyPrivate'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyDriverOwner'
+  JsName: 'kMIDIPropertyDriverOwner'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyNameConfiguration'
+  JsName: 'kMIDIPropertyNameConfiguration'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyImage'
+  JsName: 'kMIDIPropertyImage'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyDriverVersion'
+  JsName: 'kMIDIPropertyDriverVersion'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertySupportsGeneralMIDI'
+  JsName: 'kMIDIPropertySupportsGeneralMIDI'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertySupportsMMC'
+  JsName: 'kMIDIPropertySupportsMMC'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyCanRoute'
+  JsName: 'kMIDIPropertyCanRoute'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyReceivesClock'
+  JsName: 'kMIDIPropertyReceivesClock'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyReceivesMTC'
+  JsName: 'kMIDIPropertyReceivesMTC'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyReceivesNotes'
+  JsName: 'kMIDIPropertyReceivesNotes'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyReceivesProgramChanges'
+  JsName: 'kMIDIPropertyReceivesProgramChanges'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyReceivesBankSelectMSB'
+  JsName: 'kMIDIPropertyReceivesBankSelectMSB'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyReceivesBankSelectLSB'
+  JsName: 'kMIDIPropertyReceivesBankSelectLSB'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyTransmitsClock'
+  JsName: 'kMIDIPropertyTransmitsClock'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyTransmitsMTC'
+  JsName: 'kMIDIPropertyTransmitsMTC'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyTransmitsNotes'
+  JsName: 'kMIDIPropertyTransmitsNotes'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyTransmitsProgramChanges'
+  JsName: 'kMIDIPropertyTransmitsProgramChanges'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyTransmitsBankSelectMSB'
+  JsName: 'kMIDIPropertyTransmitsBankSelectMSB'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyTransmitsBankSelectLSB'
+  JsName: 'kMIDIPropertyTransmitsBankSelectLSB'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyPanDisruptsStereo'
+  JsName: 'kMIDIPropertyPanDisruptsStereo'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyIsSampler'
+  JsName: 'kMIDIPropertyIsSampler'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyIsDrumMachine'
+  JsName: 'kMIDIPropertyIsDrumMachine'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyIsMixer'
+  JsName: 'kMIDIPropertyIsMixer'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyIsEffectUnit'
+  JsName: 'kMIDIPropertyIsEffectUnit'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyMaxReceiveChannels'
+  JsName: 'kMIDIPropertyMaxReceiveChannels'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyMaxTransmitChannels'
+  JsName: 'kMIDIPropertyMaxTransmitChannels'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyDriverDeviceEditorApp'
+  JsName: 'kMIDIPropertyDriverDeviceEditorApp'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertySupportsShowControl'
+  JsName: 'kMIDIPropertySupportsShowControl'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kMIDIPropertyDisplayName'
+  JsName: 'kMIDIPropertyDisplayName'
+  Module: 'CoreMIDI.MIDIServices'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'MIDIClientCreate'
+  JsName: 'MIDIClientCreate'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreMIDI.MIDIServices
+        Name: MIDINotification
+    - Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'MIDIClientDispose'
+  JsName: 'MIDIClientDispose'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+- Name: 'MIDIInputPortCreate'
+  JsName: 'MIDIInputPortCreate'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreMIDI.MIDIServices
+        Name: MIDIPacketList
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'MIDIOutputPortCreate'
+  JsName: 'MIDIOutputPortCreate'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'MIDIPortDispose'
+  JsName: 'MIDIPortDispose'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+- Name: 'MIDIPortConnectSource'
+  JsName: 'MIDIPortConnectSource'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'MIDIPortDisconnectSource'
+  JsName: 'MIDIPortDisconnectSource'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: UInt
+- Name: 'MIDIGetNumberOfDevices'
+  JsName: 'MIDIGetNumberOfDevices'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'MIDIGetDevice'
+  JsName: 'MIDIGetDevice'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: ULong
+- Name: 'MIDIDeviceGetNumberOfEntities'
+  JsName: 'MIDIDeviceGetNumberOfEntities'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: UInt
+- Name: 'MIDIDeviceGetEntity'
+  JsName: 'MIDIDeviceGetEntity'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: UInt
+  - Type: ULong
+- Name: 'MIDIEntityGetNumberOfSources'
+  JsName: 'MIDIEntityGetNumberOfSources'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: UInt
+- Name: 'MIDIEntityGetSource'
+  JsName: 'MIDIEntityGetSource'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: UInt
+  - Type: ULong
+- Name: 'MIDIEntityGetNumberOfDestinations'
+  JsName: 'MIDIEntityGetNumberOfDestinations'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: UInt
+- Name: 'MIDIEntityGetDestination'
+  JsName: 'MIDIEntityGetDestination'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: UInt
+  - Type: ULong
+- Name: 'MIDIEntityGetDevice'
+  JsName: 'MIDIEntityGetDevice'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'MIDIGetNumberOfSources'
+  JsName: 'MIDIGetNumberOfSources'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'MIDIGetSource'
+  JsName: 'MIDIGetSource'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: ULong
+- Name: 'MIDIGetNumberOfDestinations'
+  JsName: 'MIDIGetNumberOfDestinations'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'MIDIGetDestination'
+  JsName: 'MIDIGetDestination'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: ULong
+- Name: 'MIDIEndpointGetEntity'
+  JsName: 'MIDIEndpointGetEntity'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'MIDIDestinationCreate'
+  JsName: 'MIDIDestinationCreate'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreMIDI.MIDIServices
+        Name: MIDIPacketList
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'MIDISourceCreate'
+  JsName: 'MIDISourceCreate'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'MIDIEndpointDispose'
+  JsName: 'MIDIEndpointDispose'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+- Name: 'MIDIGetNumberOfExternalDevices'
+  JsName: 'MIDIGetNumberOfExternalDevices'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'MIDIGetExternalDevice'
+  JsName: 'MIDIGetExternalDevice'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: ULong
+- Name: 'MIDIObjectGetIntegerProperty'
+  JsName: 'MIDIObjectGetIntegerProperty'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'MIDIObjectSetIntegerProperty'
+  JsName: 'MIDIObjectSetIntegerProperty'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Int
+- Name: 'MIDIObjectGetStringProperty'
+  JsName: 'MIDIObjectGetStringProperty'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFBase
+      Name: NSString
+- Name: 'MIDIObjectSetStringProperty'
+  JsName: 'MIDIObjectSetStringProperty'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'MIDIObjectGetDataProperty'
+  JsName: 'MIDIObjectGetDataProperty'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFData
+      Name: NSData
+- Name: 'MIDIObjectSetDataProperty'
+  JsName: 'MIDIObjectSetDataProperty'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+- Name: 'MIDIObjectGetDictionaryProperty'
+  JsName: 'MIDIObjectGetDictionaryProperty'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFDictionary
+      Name: NSDictionary
+- Name: 'MIDIObjectSetDictionaryProperty'
+  JsName: 'MIDIObjectSetDictionaryProperty'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'MIDIObjectGetProperties'
+  JsName: 'MIDIObjectGetProperties'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Bool
+- Name: 'MIDIObjectRemoveProperty'
+  JsName: 'MIDIObjectRemoveProperty'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'MIDIObjectFindByUniqueID'
+  JsName: 'MIDIObjectFindByUniqueID'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'MIDISend'
+  JsName: 'MIDISend'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreMIDI.MIDIServices
+      Name: MIDIPacketList
+- Name: 'MIDISendSysex'
+  JsName: 'MIDISendSysex'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreMIDI.MIDIServices
+      Name: MIDISysexSendRequest
+- Name: 'MIDIReceived'
+  JsName: 'MIDIReceived'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreMIDI.MIDIServices
+      Name: MIDIPacketList
+- Name: 'MIDIFlushOutput'
+  JsName: 'MIDIFlushOutput'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+- Name: 'MIDIRestart'
+  JsName: 'MIDIRestart'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+- Name: 'MIDIPacketListInit'
+  JsName: 'MIDIPacketListInit'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreMIDI.MIDIServices
+      Name: MIDIPacket
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreMIDI.MIDIServices
+      Name: MIDIPacketList
+- Name: 'MIDIPacketListAdd'
+  JsName: 'MIDIPacketListAdd'
+  Module: 'CoreMIDI.MIDIServices'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreMIDI.MIDIServices
+      Name: MIDIPacket
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreMIDI.MIDIServices
+      Name: MIDIPacketList
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreMIDI.MIDIServices
+      Name: MIDIPacket
+  - Type: ULongLong
+  - Type: ULong
+  - Type: CString
+- Name: 'MIDIDeviceAddEntity'
+  JsName: 'MIDIDeviceAddEntity'
+  Module: 'CoreMIDI.MIDISetup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Bool
+  - Type: ULong
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'MIDIDeviceRemoveEntity'
+  JsName: 'MIDIDeviceRemoveEntity'
+  Module: 'CoreMIDI.MIDISetup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: UInt
+- Name: 'MIDIEntityAddOrRemoveEndpoints'
+  JsName: 'MIDIEntityAddOrRemoveEndpoints'
+  Module: 'CoreMIDI.MIDISetup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: ULong
+  - Type: ULong
+- Name: 'MIDISetupAddDevice'
+  JsName: 'MIDISetupAddDevice'
+  Module: 'CoreMIDI.MIDISetup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+- Name: 'MIDISetupRemoveDevice'
+  JsName: 'MIDISetupRemoveDevice'
+  Module: 'CoreMIDI.MIDISetup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+- Name: 'MIDISetupAddExternalDevice'
+  JsName: 'MIDISetupAddExternalDevice'
+  Module: 'CoreMIDI.MIDISetup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+- Name: 'MIDISetupRemoveExternalDevice'
+  JsName: 'MIDISetupRemoveExternalDevice'
+  Module: 'CoreMIDI.MIDISetup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+- Name: 'MIDIExternalDeviceCreate'
+  JsName: 'MIDIExternalDeviceCreate'
+  Module: 'CoreMIDI.MIDISetup'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'MIDIValueMap'
+  JsName: 'MIDIValueMap'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: value
+    Signature:
+      Type: ConstantArray
+      ArrayType:
+        Type: UChar
+      Size: 128
+  Type: Struct
+- Name: 'kMIDITransform_None'
+  JsName: 'kMIDITransform_None'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kMIDITransform_FilterOut'
+  JsName: 'kMIDITransform_FilterOut'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kMIDITransform_MapControl'
+  JsName: 'kMIDITransform_MapControl'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kMIDITransform_Add'
+  JsName: 'kMIDITransform_Add'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kMIDITransform_Scale'
+  JsName: 'kMIDITransform_Scale'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9
+- Name: 'kMIDITransform_MinValue'
+  JsName: 'kMIDITransform_MinValue'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10
+- Name: 'kMIDITransform_MaxValue'
+  JsName: 'kMIDITransform_MaxValue'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11
+- Name: 'kMIDITransform_MapValue'
+  JsName: 'kMIDITransform_MapValue'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 12
+- Name: 'kMIDIThruConnection_MaxEndpoints'
+  JsName: 'kMIDIThruConnection_MaxEndpoints'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kMIDIControlType_7Bit'
+  JsName: 'kMIDIControlType_7Bit'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kMIDIControlType_14Bit'
+  JsName: 'kMIDIControlType_14Bit'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kMIDIControlType_7BitRPN'
+  JsName: 'kMIDIControlType_7BitRPN'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kMIDIControlType_14BitRPN'
+  JsName: 'kMIDIControlType_14BitRPN'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kMIDIControlType_7BitNRPN'
+  JsName: 'kMIDIControlType_7BitNRPN'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kMIDIControlType_14BitNRPN'
+  JsName: 'kMIDIControlType_14BitNRPN'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'MIDITransform'
+  JsName: 'MIDITransform'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: transform
+    Signature:
+      Type: Ushort
+  - Name: param
+    Signature:
+      Type: Short
+  Type: Struct
+- Name: 'MIDIControlTransform'
+  JsName: 'MIDIControlTransform'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: controlType
+    Signature:
+      Type: UChar
+  - Name: remappedControlType
+    Signature:
+      Type: UChar
+  - Name: controlNumber
+    Signature:
+      Type: Ushort
+  - Name: transform
+    Signature:
+      Type: Ushort
+  - Name: param
+    Signature:
+      Type: Short
+  Type: Struct
+- Name: 'MIDIThruConnectionEndpoint'
+  JsName: 'MIDIThruConnectionEndpoint'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: endpointRef
+    Signature:
+      Type: UInt
+  - Name: uniqueID
+    Signature:
+      Type: Int
+  Type: Struct
+- Name: 'MIDIThruConnectionParams'
+  JsName: 'MIDIThruConnectionParams'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: version
+    Signature:
+      Type: UInt
+  - Name: numSources
+    Signature:
+      Type: UInt
+  - Name: sources
+    Signature:
+      Type: ConstantArray
+      ArrayType:
+        Type: Struct
+        Module: CoreMIDI.MIDIThruConnection
+        Name: MIDIThruConnectionEndpoint
+      Size: 8
+  - Name: numDestinations
+    Signature:
+      Type: UInt
+  - Name: destinations
+    Signature:
+      Type: ConstantArray
+      ArrayType:
+        Type: Struct
+        Module: CoreMIDI.MIDIThruConnection
+        Name: MIDIThruConnectionEndpoint
+      Size: 8
+  - Name: channelMap
+    Signature:
+      Type: ConstantArray
+      ArrayType:
+        Type: UChar
+      Size: 16
+  - Name: lowVelocity
+    Signature:
+      Type: UChar
+  - Name: highVelocity
+    Signature:
+      Type: UChar
+  - Name: lowNote
+    Signature:
+      Type: UChar
+  - Name: highNote
+    Signature:
+      Type: UChar
+  - Name: noteNumber
+    Signature:
+      Type: Struct
+      Module: CoreMIDI.MIDIThruConnection
+      Name: MIDITransform
+  - Name: velocity
+    Signature:
+      Type: Struct
+      Module: CoreMIDI.MIDIThruConnection
+      Name: MIDITransform
+  - Name: keyPressure
+    Signature:
+      Type: Struct
+      Module: CoreMIDI.MIDIThruConnection
+      Name: MIDITransform
+  - Name: channelPressure
+    Signature:
+      Type: Struct
+      Module: CoreMIDI.MIDIThruConnection
+      Name: MIDITransform
+  - Name: programChange
+    Signature:
+      Type: Struct
+      Module: CoreMIDI.MIDIThruConnection
+      Name: MIDITransform
+  - Name: pitchBend
+    Signature:
+      Type: Struct
+      Module: CoreMIDI.MIDIThruConnection
+      Name: MIDITransform
+  - Name: filterOutSysEx
+    Signature:
+      Type: UChar
+  - Name: filterOutMTC
+    Signature:
+      Type: UChar
+  - Name: filterOutBeatClock
+    Signature:
+      Type: UChar
+  - Name: filterOutTuneRequest
+    Signature:
+      Type: UChar
+  - Name: reserved2
+    Signature:
+      Type: ConstantArray
+      ArrayType:
+        Type: UChar
+      Size: 3
+  - Name: filterOutAllControls
+    Signature:
+      Type: UChar
+  - Name: numControlTransforms
+    Signature:
+      Type: Ushort
+  - Name: numMaps
+    Signature:
+      Type: Ushort
+  - Name: reserved3
+    Signature:
+      Type: ConstantArray
+      ArrayType:
+        Type: Ushort
+      Size: 4
+  Type: Struct
+- Name: 'MIDIThruConnectionParamsInitialize'
+  JsName: 'MIDIThruConnectionParamsInitialize'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreMIDI.MIDIThruConnection
+      Name: MIDIThruConnectionParams
+- Name: 'MIDIThruConnectionCreate'
+  JsName: 'MIDIThruConnectionCreate'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'MIDIThruConnectionDispose'
+  JsName: 'MIDIThruConnectionDispose'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+- Name: 'MIDIThruConnectionGetParams'
+  JsName: 'MIDIThruConnectionGetParams'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFData
+      Name: NSData
+- Name: 'MIDIThruConnectionSetParams'
+  JsName: 'MIDIThruConnectionSetParams'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+- Name: 'MIDIThruConnectionFind'
+  JsName: 'MIDIThruConnectionFind'
+  Module: 'CoreMIDI.MIDIThruConnection'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFData
+      Name: NSData
+- Name: 'MIDIDriverInterface'
+  JsName: 'MIDIDriverInterface'
+  Module: 'CoreMIDI.MIDIDriver'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: _reserved
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: QueryInterface
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Struct
+        Module: CoreFoundation.CFUUID
+        Name: CFUUIDBytes
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+  - Name: AddRef
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: UInt
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: Release
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: UInt
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: FindDevices
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Struct
+            Module: CoreMIDI.MIDIDriver
+            Name: MIDIDriverInterface
+      - Type: UInt
+  - Name: Start
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Struct
+            Module: CoreMIDI.MIDIDriver
+            Name: MIDIDriverInterface
+      - Type: UInt
+  - Name: Stop
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Struct
+            Module: CoreMIDI.MIDIDriver
+            Name: MIDIDriverInterface
+  - Name: Configure
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Struct
+            Module: CoreMIDI.MIDIDriver
+            Name: MIDIDriverInterface
+      - Type: UInt
+  - Name: Send
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Struct
+            Module: CoreMIDI.MIDIDriver
+            Name: MIDIDriverInterface
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: CoreMIDI.MIDIServices
+          Name: MIDIPacketList
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: EnableSource
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Struct
+            Module: CoreMIDI.MIDIDriver
+            Name: MIDIDriverInterface
+      - Type: UInt
+      - Type: Bool
+  - Name: Flush
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Struct
+            Module: CoreMIDI.MIDIDriver
+            Name: MIDIDriverInterface
+      - Type: UInt
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: Monitor
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Struct
+            Module: CoreMIDI.MIDIDriver
+            Name: MIDIDriverInterface
+      - Type: UInt
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: CoreMIDI.MIDIServices
+          Name: MIDIPacketList
+  Type: Struct
+- Name: 'MIDIDeviceCreate'
+  JsName: 'MIDIDeviceCreate'
+  Module: 'CoreMIDI.MIDIDriver'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreMIDI.MIDIDriver
+        Name: MIDIDriverInterface
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'MIDIDeviceDispose'
+  JsName: 'MIDIDeviceDispose'
+  Module: 'CoreMIDI.MIDIDriver'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+- Name: 'MIDIDeviceListGetNumberOfDevices'
+  JsName: 'MIDIDeviceListGetNumberOfDevices'
+  Module: 'CoreMIDI.MIDIDriver'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: UInt
+- Name: 'MIDIDeviceListGetDevice'
+  JsName: 'MIDIDeviceListGetDevice'
+  Module: 'CoreMIDI.MIDIDriver'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: UInt
+  - Type: ULong
+- Name: 'MIDIDeviceListAddDevice'
+  JsName: 'MIDIDeviceListAddDevice'
+  Module: 'CoreMIDI.MIDIDriver'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: UInt
+- Name: 'MIDIDeviceListDispose'
+  JsName: 'MIDIDeviceListDispose'
+  Module: 'CoreMIDI.MIDIDriver'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+- Name: 'MIDIEndpointSetRefCons'
+  JsName: 'MIDIEndpointSetRefCons'
+  Module: 'CoreMIDI.MIDIDriver'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'MIDIEndpointGetRefCons'
+  JsName: 'MIDIEndpointGetRefCons'
+  Module: 'CoreMIDI.MIDIDriver'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'MIDIGetDriverIORunLoop'
+  JsName: 'MIDIGetDriverIORunLoop'
+  Module: 'CoreMIDI.MIDIDriver'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'MIDIGetDriverDeviceList'
+  JsName: 'MIDIGetDriverDeviceList'
+  Module: 'CoreMIDI.MIDIDriver'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreMIDI.MIDIDriver
+        Name: MIDIDriverInterface
+- Name: 'MIDINetworkBonjourServiceType'
+  JsName: 'MIDINetworkBonjourServiceType'
+  Module: 'CoreMIDI.MIDINetworkSession'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MIDINetworkNotificationContactsDidChange'
+  JsName: 'MIDINetworkNotificationContactsDidChange'
+  Module: 'CoreMIDI.MIDINetworkSession'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MIDINetworkNotificationSessionDidChange'
+  JsName: 'MIDINetworkNotificationSessionDidChange'
+  Module: 'CoreMIDI.MIDINetworkSession'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MIDINetworkConnectionPolicy_NoOne'
+  JsName: 'MIDINetworkConnectionPolicy_NoOne'
+  Module: 'CoreMIDI.MIDINetworkSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'MIDINetworkConnectionPolicy_HostsInContactList'
+  JsName: 'MIDINetworkConnectionPolicy_HostsInContactList'
+  Module: 'CoreMIDI.MIDINetworkSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'MIDINetworkConnectionPolicy_Anyone'
+  JsName: 'MIDINetworkConnectionPolicy_Anyone'
+  Module: 'CoreMIDI.MIDINetworkSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'MIDINetworkHost'
+  JsName: 'MIDINetworkHost'
+  Module: 'CoreMIDI.MIDINetworkSession'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'hasSameAddressAs:'
+    JsName: 'hasSameAddressAs'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'hasSameAddressAs:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: CoreMIDI.MIDINetworkSession
+      Name: MIDINetworkHost
+    TypeEncoding: 'B24@0:8@16'
+  StaticMethods:
+  - Name: 'hostWithName:address:port:'
+    JsName: 'hostWithNameAddressPort'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'hostWithName:address:port:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: ULong
+    TypeEncoding: '@40@0:8@16@24Q32'
+  - Name: 'hostWithName:netService:'
+    JsName: 'hostWithNameNetService'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'hostWithName:netService:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSNetServices
+      Name: NSNetService
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'hostWithName:netServiceName:netServiceDomain:'
+    JsName: 'hostWithNameNetServiceNameNetServiceDomain'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'hostWithName:netServiceName:netServiceDomain:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@40@0:8@16@24@32'
+  Properties:
+  - Name: 'address'
+    JsName: 'address'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'address'
+      JsName: 'address'
+      Module: 'CoreMIDI.MIDINetworkSession'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'address'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'CoreMIDI.MIDINetworkSession'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'netServiceDomain'
+    JsName: 'netServiceDomain'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'netServiceDomain'
+      JsName: 'netServiceDomain'
+      Module: 'CoreMIDI.MIDINetworkSession'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'netServiceDomain'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'netServiceName'
+    JsName: 'netServiceName'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'netServiceName'
+      JsName: 'netServiceName'
+      Module: 'CoreMIDI.MIDINetworkSession'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'netServiceName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'port'
+    JsName: 'port'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'port'
+      JsName: 'port'
+      Module: 'CoreMIDI.MIDINetworkSession'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'port'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MIDINetworkConnection'
+  JsName: 'MIDINetworkConnection'
+  Module: 'CoreMIDI.MIDINetworkSession'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'connectionWithHost:'
+    JsName: 'connectionWithHost'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'connectionWithHost:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: CoreMIDI.MIDINetworkSession
+      Name: MIDINetworkHost
+    TypeEncoding: '@24@0:8@16'
+  Properties:
+  - Name: 'host'
+    JsName: 'host'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'host'
+      JsName: 'host'
+      Module: 'CoreMIDI.MIDINetworkSession'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'host'
+      Signature:
+      - Type: Interface
+        Module: CoreMIDI.MIDINetworkSession
+        Name: MIDINetworkHost
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MIDINetworkSession'
+  JsName: 'MIDINetworkSession'
+  Module: 'CoreMIDI.MIDINetworkSession'
+  IntroducedIn: 4.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addConnection:'
+    JsName: 'addConnection'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addConnection:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: CoreMIDI.MIDINetworkSession
+      Name: MIDINetworkConnection
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'addContact:'
+    JsName: 'addContact'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addContact:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: CoreMIDI.MIDINetworkSession
+      Name: MIDINetworkHost
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'connections'
+    JsName: 'connections'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'connections'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSSet
+      Name: NSSet
+    TypeEncoding: '@16@0:8'
+  - Name: 'contacts'
+    JsName: 'contacts'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'contacts'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSSet
+      Name: NSSet
+    TypeEncoding: '@16@0:8'
+  - Name: 'destinationEndpoint'
+    JsName: 'destinationEndpoint'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'destinationEndpoint'
+    Signature:
+    - Type: UInt
+    TypeEncoding: 'I16@0:8'
+  - Name: 'removeConnection:'
+    JsName: 'removeConnection'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeConnection:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: CoreMIDI.MIDINetworkSession
+      Name: MIDINetworkConnection
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'removeContact:'
+    JsName: 'removeContact'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeContact:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: CoreMIDI.MIDINetworkSession
+      Name: MIDINetworkHost
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'sourceEndpoint'
+    JsName: 'sourceEndpoint'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'sourceEndpoint'
+    Signature:
+    - Type: UInt
+    TypeEncoding: 'I16@0:8'
+  StaticMethods:
+  - Name: 'defaultSession'
+    JsName: 'defaultSession'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'defaultSession'
+    Signature:
+    - Type: Interface
+      Module: CoreMIDI.MIDINetworkSession
+      Name: MIDINetworkSession
+    TypeEncoding: '@16@0:8'
+  Properties:
+  - Name: 'connectionPolicy'
+    JsName: 'connectionPolicy'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'connectionPolicy'
+      JsName: 'connectionPolicy'
+      Module: 'CoreMIDI.MIDINetworkSession'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'connectionPolicy'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setConnectionPolicy:'
+      JsName: 'setConnectionPolicy'
+      Module: 'CoreMIDI.MIDINetworkSession'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setConnectionPolicy:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'enabled'
+    JsName: 'enabled'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isEnabled'
+      JsName: 'isEnabled'
+      Module: 'CoreMIDI.MIDINetworkSession'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setEnabled:'
+      JsName: 'setEnabled'
+      Module: 'CoreMIDI.MIDINetworkSession'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setEnabled:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'localName'
+    JsName: 'localName'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'localName'
+      JsName: 'localName'
+      Module: 'CoreMIDI.MIDINetworkSession'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'localName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'networkName'
+    JsName: 'networkName'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'networkName'
+      JsName: 'networkName'
+      Module: 'CoreMIDI.MIDINetworkSession'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'networkName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'networkPort'
+    JsName: 'networkPort'
+    Module: 'CoreMIDI.MIDINetworkSession'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'networkPort'
+      JsName: 'networkPort'
+      Module: 'CoreMIDI.MIDINetworkSession'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'networkPort'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+...

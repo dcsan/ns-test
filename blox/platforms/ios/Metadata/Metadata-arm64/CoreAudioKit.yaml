@@ -1,0 +1,388 @@
+name: CoreAudioKit
+items:
+- Name: 'CAInterAppAudioSwitcherView'
+  JsName: 'CAInterAppAudioSwitcherView'
+  Module: 'CoreAudioKit.CAInterAppAudioSwitcherView'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'contentWidth'
+    JsName: 'contentWidth'
+    Module: 'CoreAudioKit.CAInterAppAudioSwitcherView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'contentWidth'
+    Signature:
+    - Type: Double
+    TypeEncoding: 'd16@0:8'
+  - Name: 'setOutputAudioUnit:'
+    JsName: 'setOutputAudioUnit'
+    Module: 'CoreAudioKit.CAInterAppAudioSwitcherView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setOutputAudioUnit:'
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: 'v24@0:8^{OpaqueAudioComponentInstance=}16'
+  StaticMethods: []
+  Properties:
+  - Name: 'showingAppNames'
+    JsName: 'showingAppNames'
+    Module: 'CoreAudioKit.CAInterAppAudioSwitcherView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isShowingAppNames'
+      JsName: 'isShowingAppNames'
+      Module: 'CoreAudioKit.CAInterAppAudioSwitcherView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isShowingAppNames'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setShowingAppNames:'
+      JsName: 'setShowingAppNames'
+      Module: 'CoreAudioKit.CAInterAppAudioSwitcherView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShowingAppNames:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  Protocols: []
+  Base:
+    Module: UIKit.UIView
+    Name: UIView
+  Type: Interface
+- Name: 'CAInterAppAudioTransportView'
+  JsName: 'CAInterAppAudioTransportView'
+  Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'setOutputAudioUnit:'
+    JsName: 'setOutputAudioUnit'
+    Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setOutputAudioUnit:'
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: 'v24@0:8^{OpaqueAudioComponentInstance=}16'
+  StaticMethods: []
+  Properties:
+  - Name: 'connected'
+    JsName: 'connected'
+    Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isConnected'
+      JsName: 'isConnected'
+      Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isConnected'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'currentTimeLabelFont'
+    JsName: 'currentTimeLabelFont'
+    Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'currentTimeLabelFont'
+      JsName: 'currentTimeLabelFont'
+      Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'currentTimeLabelFont'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIFont
+        Name: UIFont
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setCurrentTimeLabelFont:'
+      JsName: 'setCurrentTimeLabelFont'
+      Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCurrentTimeLabelFont:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: UIKit.UIFont
+        Name: UIFont
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'enabled'
+    JsName: 'enabled'
+    Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isEnabled'
+      JsName: 'isEnabled'
+      Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setEnabled:'
+      JsName: 'setEnabled'
+      Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setEnabled:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'labelColor'
+    JsName: 'labelColor'
+    Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'labelColor'
+      JsName: 'labelColor'
+      Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'labelColor'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIColor
+        Name: UIColor
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setLabelColor:'
+      JsName: 'setLabelColor'
+      Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLabelColor:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: UIKit.UIColor
+        Name: UIColor
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'pauseButtonColor'
+    JsName: 'pauseButtonColor'
+    Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'pauseButtonColor'
+      JsName: 'pauseButtonColor'
+      Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'pauseButtonColor'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIColor
+        Name: UIColor
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setPauseButtonColor:'
+      JsName: 'setPauseButtonColor'
+      Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPauseButtonColor:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: UIKit.UIColor
+        Name: UIColor
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'playButtonColor'
+    JsName: 'playButtonColor'
+    Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'playButtonColor'
+      JsName: 'playButtonColor'
+      Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'playButtonColor'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIColor
+        Name: UIColor
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setPlayButtonColor:'
+      JsName: 'setPlayButtonColor'
+      Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPlayButtonColor:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: UIKit.UIColor
+        Name: UIColor
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'playing'
+    JsName: 'playing'
+    Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isPlaying'
+      JsName: 'isPlaying'
+      Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isPlaying'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'recordButtonColor'
+    JsName: 'recordButtonColor'
+    Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'recordButtonColor'
+      JsName: 'recordButtonColor'
+      Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordButtonColor'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIColor
+        Name: UIColor
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setRecordButtonColor:'
+      JsName: 'setRecordButtonColor'
+      Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRecordButtonColor:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: UIKit.UIColor
+        Name: UIColor
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'recording'
+    JsName: 'recording'
+    Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isRecording'
+      JsName: 'isRecording'
+      Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isRecording'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'rewindButtonColor'
+    JsName: 'rewindButtonColor'
+    Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'rewindButtonColor'
+      JsName: 'rewindButtonColor'
+      Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rewindButtonColor'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIColor
+        Name: UIColor
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setRewindButtonColor:'
+      JsName: 'setRewindButtonColor'
+      Module: 'CoreAudioKit.CAInterAppAudioTransportView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRewindButtonColor:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: UIKit.UIColor
+        Name: UIColor
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: UIKit.UIView
+    Name: UIView
+  Type: Interface
+- Name: 'CABTMIDILocalPeripheralViewController'
+  JsName: 'CABTMIDILocalPeripheralViewController'
+  Module: 'CoreAudioKit.CABTMIDILocalPeripheralViewController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Interface
+- Name: 'CABTMIDICentralViewController'
+  JsName: 'CABTMIDICentralViewController'
+  Module: 'CoreAudioKit.CABTMIDICentralViewController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Interface
+...

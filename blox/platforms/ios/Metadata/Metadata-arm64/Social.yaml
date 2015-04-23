@@ -1,0 +1,771 @@
+name: Social
+items:
+- Name: 'SLServiceTypeTwitter'
+  JsName: 'SLServiceTypeTwitter'
+  Module: 'Social.SLServiceTypes'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'SLServiceTypeFacebook'
+  JsName: 'SLServiceTypeFacebook'
+  Module: 'Social.SLServiceTypes'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'SLServiceTypeSinaWeibo'
+  JsName: 'SLServiceTypeSinaWeibo'
+  Module: 'Social.SLServiceTypes'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'SLServiceTypeTencentWeibo'
+  JsName: 'SLServiceTypeTencentWeibo'
+  Module: 'Social.SLServiceTypes'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'SLRequestMethod'
+  JsName: 'SLRequestMethod'
+  Module: 'Social.SLRequest'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"SLRequestMethodGET":0,"SLRequestMethodPOST":1,"SLRequestMethodDELETE":2,"SLRequestMethodPUT":3})
+- Name: 'SLRequest'
+  JsName: 'SLRequest'
+  Module: 'Social.SLRequest'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addMultipartData:withName:type:filename:'
+    JsName: 'addMultipartDataWithNameTypeFilename'
+    Module: 'Social.SLRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addMultipartData:withName:type:filename:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v48@0:8@16@24@32@40'
+  - Name: 'performRequestWithHandler:'
+    JsName: 'performRequestWithHandler'
+    Module: 'Social.SLRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'performRequestWithHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      - Type: Interface
+        Module: Foundation.NSURLResponse
+        Name: NSHTTPURLResponse
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v24@0:8@?16'
+  - Name: 'preparedURLRequest'
+    JsName: 'preparedURLRequest'
+    Module: 'Social.SLRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'preparedURLRequest'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSURLRequest
+      Name: NSURLRequest
+    TypeEncoding: '@16@0:8'
+  StaticMethods:
+  - Name: 'requestForServiceType:requestMethod:URL:parameters:'
+    JsName: 'requestForServiceTypeRequestMethodURLParameters'
+    Module: 'Social.SLRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'requestForServiceType:requestMethod:URL:parameters:'
+    Signature:
+    - Type: Interface
+      Module: Social.SLRequest
+      Name: SLRequest
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Long
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@48@0:8@16q24@32@40'
+  Properties:
+  - Name: 'account'
+    JsName: 'account'
+    Module: 'Social.SLRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'account'
+      JsName: 'account'
+      Module: 'Social.SLRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'account'
+      Signature:
+      - Type: Interface
+        Module: Accounts.ACAccount
+        Name: ACAccount
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setAccount:'
+      JsName: 'setAccount'
+      Module: 'Social.SLRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAccount:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Accounts.ACAccount
+        Name: ACAccount
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'parameters'
+    JsName: 'parameters'
+    Module: 'Social.SLRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'parameters'
+      JsName: 'parameters'
+      Module: 'Social.SLRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'parameters'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: '@16@0:8'
+  - Name: 'requestMethod'
+    JsName: 'requestMethod'
+    Module: 'Social.SLRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'requestMethod'
+      JsName: 'requestMethod'
+      Module: 'Social.SLRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'requestMethod'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+  - Name: 'URL'
+    JsName: 'URL'
+    Module: 'Social.SLRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'URL'
+      JsName: 'URL'
+      Module: 'Social.SLRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'URL'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'SLComposeServiceViewController'
+  JsName: 'SLComposeServiceViewController'
+  Module: 'Social.SLComposeServiceViewController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'cancel'
+    JsName: 'cancel'
+    Module: 'Social.SLComposeServiceViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancel'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'configurationItems'
+    JsName: 'configurationItems'
+    Module: 'Social.SLComposeServiceViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'configurationItems'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@16@0:8'
+  - Name: 'didSelectCancel'
+    JsName: 'didSelectCancel'
+    Module: 'Social.SLComposeServiceViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'didSelectCancel'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'didSelectPost'
+    JsName: 'didSelectPost'
+    Module: 'Social.SLComposeServiceViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'didSelectPost'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'isContentValid'
+    JsName: 'isContentValid'
+    Module: 'Social.SLComposeServiceViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isContentValid'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  - Name: 'loadPreviewView'
+    JsName: 'loadPreviewView'
+    Module: 'Social.SLComposeServiceViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'loadPreviewView'
+    Signature:
+    - Type: Interface
+      Module: UIKit.UIView
+      Name: UIView
+    TypeEncoding: '@16@0:8'
+  - Name: 'popConfigurationViewController'
+    JsName: 'popConfigurationViewController'
+    Module: 'Social.SLComposeServiceViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'popConfigurationViewController'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'presentationAnimationDidFinish'
+    JsName: 'presentationAnimationDidFinish'
+    Module: 'Social.SLComposeServiceViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'presentationAnimationDidFinish'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'pushConfigurationViewController:'
+    JsName: 'pushConfigurationViewController'
+    Module: 'Social.SLComposeServiceViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'pushConfigurationViewController:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: UIKit.UIViewController
+      Name: UIViewController
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'reloadConfigurationItems'
+    JsName: 'reloadConfigurationItems'
+    Module: 'Social.SLComposeServiceViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'reloadConfigurationItems'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'validateContent'
+    JsName: 'validateContent'
+    Module: 'Social.SLComposeServiceViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'validateContent'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods: []
+  Properties:
+  - Name: 'autoCompletionViewController'
+    JsName: 'autoCompletionViewController'
+    Module: 'Social.SLComposeServiceViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'autoCompletionViewController'
+      JsName: 'autoCompletionViewController'
+      Module: 'Social.SLComposeServiceViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'autoCompletionViewController'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIViewController
+        Name: UIViewController
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setAutoCompletionViewController:'
+      JsName: 'setAutoCompletionViewController'
+      Module: 'Social.SLComposeServiceViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAutoCompletionViewController:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: UIKit.UIViewController
+        Name: UIViewController
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'charactersRemaining'
+    JsName: 'charactersRemaining'
+    Module: 'Social.SLComposeServiceViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'charactersRemaining'
+      JsName: 'charactersRemaining'
+      Module: 'Social.SLComposeServiceViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'charactersRemaining'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setCharactersRemaining:'
+      JsName: 'setCharactersRemaining'
+      Module: 'Social.SLComposeServiceViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCharactersRemaining:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'contentText'
+    JsName: 'contentText'
+    Module: 'Social.SLComposeServiceViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'contentText'
+      JsName: 'contentText'
+      Module: 'Social.SLComposeServiceViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'contentText'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'placeholder'
+    JsName: 'placeholder'
+    Module: 'Social.SLComposeServiceViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'placeholder'
+      JsName: 'placeholder'
+      Module: 'Social.SLComposeServiceViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'placeholder'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setPlaceholder:'
+      JsName: 'setPlaceholder'
+      Module: 'Social.SLComposeServiceViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPlaceholder:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'textView'
+    JsName: 'textView'
+    Module: 'Social.SLComposeServiceViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'textView'
+      JsName: 'textView'
+      Module: 'Social.SLComposeServiceViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'textView'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UITextView
+        Name: UITextView
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: UIKit.UITextView
+    Name: UITextViewDelegate
+  Base:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Interface
+- Name: 'SLComposeViewControllerResult'
+  JsName: 'SLComposeViewControllerResult'
+  Module: 'Social.SLComposeViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"SLComposeViewControllerResultCancelled":0,"SLComposeViewControllerResultDone":1})
+- Name: 'SLComposeViewController'
+  JsName: 'SLComposeViewController'
+  Module: 'Social.SLComposeViewController'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addImage:'
+    JsName: 'addImage'
+    Module: 'Social.SLComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addImage:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'addURL:'
+    JsName: 'addURL'
+    Module: 'Social.SLComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addURL:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'removeAllImages'
+    JsName: 'removeAllImages'
+    Module: 'Social.SLComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeAllImages'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  - Name: 'removeAllURLs'
+    JsName: 'removeAllURLs'
+    Module: 'Social.SLComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeAllURLs'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  - Name: 'setInitialText:'
+    JsName: 'setInitialText'
+    Module: 'Social.SLComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setInitialText:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'B24@0:8@16'
+  StaticMethods:
+  - Name: 'composeViewControllerForServiceType:'
+    JsName: 'composeViewControllerForServiceType'
+    Module: 'Social.SLComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'composeViewControllerForServiceType:'
+    Signature:
+    - Type: Interface
+      Module: Social.SLComposeViewController
+      Name: SLComposeViewController
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'isAvailableForServiceType:'
+    JsName: 'isAvailableForServiceType'
+    Module: 'Social.SLComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isAvailableForServiceType:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'B24@0:8@16'
+  Properties:
+  - Name: 'completionHandler'
+    JsName: 'completionHandler'
+    Module: 'Social.SLComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'completionHandler'
+      JsName: 'completionHandler'
+      Module: 'Social.SLComposeViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'completionHandler'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Long
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setCompletionHandler:'
+      JsName: 'setCompletionHandler'
+      Module: 'Social.SLComposeViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCompletionHandler:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Long
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'serviceType'
+    JsName: 'serviceType'
+    Module: 'Social.SLComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'serviceType'
+      JsName: 'serviceType'
+      Module: 'Social.SLComposeViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'serviceType'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Interface
+- Name: 'SLComposeSheetConfigurationItem'
+  JsName: 'SLComposeSheetConfigurationItem'
+  Module: 'Social.SLComposeSheetConfigurationItem'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'tapHandler'
+    JsName: 'tapHandler'
+    Module: 'Social.SLComposeSheetConfigurationItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'tapHandler'
+      JsName: 'tapHandler'
+      Module: 'Social.SLComposeSheetConfigurationItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'tapHandler'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setTapHandler:'
+      JsName: 'setTapHandler'
+      Module: 'Social.SLComposeSheetConfigurationItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setTapHandler:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'title'
+    JsName: 'title'
+    Module: 'Social.SLComposeSheetConfigurationItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'title'
+      JsName: 'title'
+      Module: 'Social.SLComposeSheetConfigurationItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'title'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setTitle:'
+      JsName: 'setTitle'
+      Module: 'Social.SLComposeSheetConfigurationItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setTitle:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'value'
+    JsName: 'value'
+    Module: 'Social.SLComposeSheetConfigurationItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'value'
+      JsName: 'value'
+      Module: 'Social.SLComposeSheetConfigurationItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'value'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setValue:'
+      JsName: 'setValue'
+      Module: 'Social.SLComposeSheetConfigurationItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setValue:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'valuePending'
+    JsName: 'valuePending'
+    Module: 'Social.SLComposeSheetConfigurationItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'valuePending'
+      JsName: 'valuePending'
+      Module: 'Social.SLComposeSheetConfigurationItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'valuePending'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setValuePending:'
+      JsName: 'setValuePending'
+      Module: 'Social.SLComposeSheetConfigurationItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setValuePending:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+...

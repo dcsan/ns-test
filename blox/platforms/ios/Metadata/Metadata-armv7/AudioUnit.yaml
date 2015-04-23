@@ -1,0 +1,4840 @@
+name: AudioUnit
+items:
+- Name: 'kAudioComponentFlag_Unsearchable'
+  JsName: 'kAudioComponentFlag_Unsearchable'
+  Module: 'AudioUnit.AudioComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kAudioComponentFlag_SandboxSafe'
+  JsName: 'kAudioComponentFlag_SandboxSafe'
+  Module: 'AudioUnit.AudioComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'AudioComponentDescription'
+  JsName: 'AudioComponentDescription'
+  Module: 'AudioUnit.AudioComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: componentType
+    Signature:
+      Type: ULong
+  - Name: componentSubType
+    Signature:
+      Type: ULong
+  - Name: componentManufacturer
+    Signature:
+      Type: ULong
+  - Name: componentFlags
+    Signature:
+      Type: ULong
+  - Name: componentFlagsMask
+    Signature:
+      Type: ULong
+  Type: Struct
+- Name: 'AudioComponentPlugInInterface'
+  JsName: 'AudioComponentPlugInInterface'
+  Module: 'AudioUnit.AudioComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: Open
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Long
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: Close
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Long
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: Lookup
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: FunctionPointer
+        Signature:
+        - Type: Long
+        - Type: Pointer
+          PointerType:
+            Type: Void
+      - Type: Short
+  - Name: reserved
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  Type: Struct
+- Name: 'AudioComponentFindNext'
+  JsName: 'AudioComponentFindNext'
+  Module: 'AudioUnit.AudioComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: AudioUnit.AudioComponent
+      Name: AudioComponentDescription
+- Name: 'AudioComponentCount'
+  JsName: 'AudioComponentCount'
+  Module: 'AudioUnit.AudioComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: AudioUnit.AudioComponent
+      Name: AudioComponentDescription
+- Name: 'AudioComponentCopyName'
+  JsName: 'AudioComponentCopyName'
+  Module: 'AudioUnit.AudioComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFBase
+      Name: NSString
+- Name: 'AudioComponentGetDescription'
+  JsName: 'AudioComponentGetDescription'
+  Module: 'AudioUnit.AudioComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: AudioUnit.AudioComponent
+      Name: AudioComponentDescription
+- Name: 'AudioComponentGetVersion'
+  JsName: 'AudioComponentGetVersion'
+  Module: 'AudioUnit.AudioComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'AudioComponentInstanceNew'
+  JsName: 'AudioComponentInstanceNew'
+  Module: 'AudioUnit.AudioComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'AudioComponentInstanceDispose'
+  JsName: 'AudioComponentInstanceDispose'
+  Module: 'AudioUnit.AudioComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'AudioComponentInstanceGetComponent'
+  JsName: 'AudioComponentInstanceGetComponent'
+  Module: 'AudioUnit.AudioComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'AudioComponentInstanceCanDo'
+  JsName: 'AudioComponentInstanceCanDo'
+  Module: 'AudioUnit.AudioComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Short
+- Name: 'AudioComponentRegister'
+  JsName: 'AudioComponentRegister'
+  Module: 'AudioUnit.AudioComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: AudioUnit.AudioComponent
+      Name: AudioComponentDescription
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: ULong
+  - Type: FunctionPointer
+    Signature:
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: AudioUnit.AudioComponent
+        Name: AudioComponentPlugInInterface
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: AudioUnit.AudioComponent
+        Name: AudioComponentDescription
+- Name: 'kAudioUnitType_Output'
+  JsName: 'kAudioUnitType_Output'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1635086197
+- Name: 'kAudioUnitType_MusicDevice'
+  JsName: 'kAudioUnitType_MusicDevice'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1635085685
+- Name: 'kAudioUnitType_MusicEffect'
+  JsName: 'kAudioUnitType_MusicEffect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1635085670
+- Name: 'kAudioUnitType_FormatConverter'
+  JsName: 'kAudioUnitType_FormatConverter'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1635083875
+- Name: 'kAudioUnitType_Effect'
+  JsName: 'kAudioUnitType_Effect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1635083896
+- Name: 'kAudioUnitType_Mixer'
+  JsName: 'kAudioUnitType_Mixer'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1635085688
+- Name: 'kAudioUnitType_Panner'
+  JsName: 'kAudioUnitType_Panner'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1635086446
+- Name: 'kAudioUnitType_Generator'
+  JsName: 'kAudioUnitType_Generator'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1635084142
+- Name: 'kAudioUnitType_OfflineEffect'
+  JsName: 'kAudioUnitType_OfflineEffect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1635086188
+- Name: 'kAudioUnitType_MIDIProcessor'
+  JsName: 'kAudioUnitType_MIDIProcessor'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1635085673
+- Name: 'kAudioUnitType_RemoteEffect'
+  JsName: 'kAudioUnitType_RemoteEffect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1635086968
+- Name: 'kAudioUnitType_RemoteGenerator'
+  JsName: 'kAudioUnitType_RemoteGenerator'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1635086951
+- Name: 'kAudioUnitType_RemoteInstrument'
+  JsName: 'kAudioUnitType_RemoteInstrument'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1635086953
+- Name: 'kAudioUnitType_RemoteMusicEffect'
+  JsName: 'kAudioUnitType_RemoteMusicEffect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1635086957
+- Name: 'kAudioUnitManufacturer_Apple'
+  JsName: 'kAudioUnitManufacturer_Apple'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1634758764
+- Name: 'kAudioUnitSubType_GenericOutput'
+  JsName: 'kAudioUnitSubType_GenericOutput'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1734700658
+- Name: 'kAudioUnitSubType_RemoteIO'
+  JsName: 'kAudioUnitSubType_RemoteIO'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1919512419
+- Name: 'kAudioUnitSubType_VoiceProcessingIO'
+  JsName: 'kAudioUnitSubType_VoiceProcessingIO'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1987078511
+- Name: 'kAudioUnitSubType_Sampler'
+  JsName: 'kAudioUnitSubType_Sampler'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1935764848
+- Name: 'kAudioUnitSubType_MIDISynth'
+  JsName: 'kAudioUnitSubType_MIDISynth'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1836284270
+- Name: 'kAudioUnitSubType_AUConverter'
+  JsName: 'kAudioUnitSubType_AUConverter'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1668247158
+- Name: 'kAudioUnitSubType_Varispeed'
+  JsName: 'kAudioUnitSubType_Varispeed'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1986097769
+- Name: 'kAudioUnitSubType_DeferredRenderer'
+  JsName: 'kAudioUnitSubType_DeferredRenderer'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1684366962
+- Name: 'kAudioUnitSubType_Splitter'
+  JsName: 'kAudioUnitSubType_Splitter'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1936747636
+- Name: 'kAudioUnitSubType_Merger'
+  JsName: 'kAudioUnitSubType_Merger'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1835364967
+- Name: 'kAudioUnitSubType_NewTimePitch'
+  JsName: 'kAudioUnitSubType_NewTimePitch'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1853191280
+- Name: 'kAudioUnitSubType_AUiPodTimeOther'
+  JsName: 'kAudioUnitSubType_AUiPodTimeOther'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1768977519
+- Name: 'kAudioUnitSubType_RoundTripAAC'
+  JsName: 'kAudioUnitSubType_RoundTripAAC'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1918984547
+- Name: 'kAudioUnitSubType_AUiPodTime'
+  JsName: 'kAudioUnitSubType_AUiPodTime'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1768977517
+- Name: 'kAudioUnitSubType_PeakLimiter'
+  JsName: 'kAudioUnitSubType_PeakLimiter'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1819112562
+- Name: 'kAudioUnitSubType_DynamicsProcessor'
+  JsName: 'kAudioUnitSubType_DynamicsProcessor'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1684237680
+- Name: 'kAudioUnitSubType_LowPassFilter'
+  JsName: 'kAudioUnitSubType_LowPassFilter'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1819304307
+- Name: 'kAudioUnitSubType_HighPassFilter'
+  JsName: 'kAudioUnitSubType_HighPassFilter'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1752195443
+- Name: 'kAudioUnitSubType_BandPassFilter'
+  JsName: 'kAudioUnitSubType_BandPassFilter'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1651532147
+- Name: 'kAudioUnitSubType_HighShelfFilter'
+  JsName: 'kAudioUnitSubType_HighShelfFilter'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1752393830
+- Name: 'kAudioUnitSubType_LowShelfFilter'
+  JsName: 'kAudioUnitSubType_LowShelfFilter'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1819502694
+- Name: 'kAudioUnitSubType_ParametricEQ'
+  JsName: 'kAudioUnitSubType_ParametricEQ'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1886217585
+- Name: 'kAudioUnitSubType_Distortion'
+  JsName: 'kAudioUnitSubType_Distortion'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1684632436
+- Name: 'kAudioUnitSubType_Delay'
+  JsName: 'kAudioUnitSubType_Delay'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1684368505
+- Name: 'kAudioUnitSubType_SampleDelay'
+  JsName: 'kAudioUnitSubType_SampleDelay'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1935961209
+- Name: 'kAudioUnitSubType_Reverb2'
+  JsName: 'kAudioUnitSubType_Reverb2'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1920361010
+- Name: 'kAudioUnitSubType_AUiPodEQ'
+  JsName: 'kAudioUnitSubType_AUiPodEQ'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1768973681
+- Name: 'kAudioUnitSubType_NBandEQ'
+  JsName: 'kAudioUnitSubType_NBandEQ'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1851942257
+- Name: 'kAudioUnitSubType_MultiChannelMixer'
+  JsName: 'kAudioUnitSubType_MultiChannelMixer'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1835232632
+- Name: 'kAudioUnitSubType_MatrixMixer'
+  JsName: 'kAudioUnitSubType_MatrixMixer'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1836608888
+- Name: 'kAudioUnitSubType_SpatialMixer'
+  JsName: 'kAudioUnitSubType_SpatialMixer'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 862217581
+- Name: 'kAudioUnitSubType_AU3DMixerEmbedded'
+  JsName: 'kAudioUnitSubType_AU3DMixerEmbedded'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 862217581
+- Name: 'kAudioUnitSubType_ScheduledSoundPlayer'
+  JsName: 'kAudioUnitSubType_ScheduledSoundPlayer'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1936945260
+- Name: 'kAudioUnitSubType_AudioFilePlayer'
+  JsName: 'kAudioUnitSubType_AudioFilePlayer'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1634103404
+- Name: 'kAudioUnitRenderAction_PreRender'
+  JsName: 'kAudioUnitRenderAction_PreRender'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kAudioUnitRenderAction_PostRender'
+  JsName: 'kAudioUnitRenderAction_PostRender'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kAudioUnitRenderAction_OutputIsSilence'
+  JsName: 'kAudioUnitRenderAction_OutputIsSilence'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'kAudioOfflineUnitRenderAction_Preflight'
+  JsName: 'kAudioOfflineUnitRenderAction_Preflight'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 32
+- Name: 'kAudioOfflineUnitRenderAction_Render'
+  JsName: 'kAudioOfflineUnitRenderAction_Render'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 64
+- Name: 'kAudioOfflineUnitRenderAction_Complete'
+  JsName: 'kAudioOfflineUnitRenderAction_Complete'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 128
+- Name: 'kAudioUnitRenderAction_PostRenderError'
+  JsName: 'kAudioUnitRenderAction_PostRenderError'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 256
+- Name: 'kAudioUnitRenderAction_DoNotCheckRenderArgs'
+  JsName: 'kAudioUnitRenderAction_DoNotCheckRenderArgs'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 512
+- Name: 'kAudioUnitErr_InvalidProperty'
+  JsName: 'kAudioUnitErr_InvalidProperty'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10879
+- Name: 'kAudioUnitErr_InvalidParameter'
+  JsName: 'kAudioUnitErr_InvalidParameter'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10878
+- Name: 'kAudioUnitErr_InvalidElement'
+  JsName: 'kAudioUnitErr_InvalidElement'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10877
+- Name: 'kAudioUnitErr_NoConnection'
+  JsName: 'kAudioUnitErr_NoConnection'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10876
+- Name: 'kAudioUnitErr_FailedInitialization'
+  JsName: 'kAudioUnitErr_FailedInitialization'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10875
+- Name: 'kAudioUnitErr_TooManyFramesToProcess'
+  JsName: 'kAudioUnitErr_TooManyFramesToProcess'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10874
+- Name: 'kAudioUnitErr_InvalidFile'
+  JsName: 'kAudioUnitErr_InvalidFile'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10871
+- Name: 'kAudioUnitErr_FormatNotSupported'
+  JsName: 'kAudioUnitErr_FormatNotSupported'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10868
+- Name: 'kAudioUnitErr_Uninitialized'
+  JsName: 'kAudioUnitErr_Uninitialized'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10867
+- Name: 'kAudioUnitErr_InvalidScope'
+  JsName: 'kAudioUnitErr_InvalidScope'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10866
+- Name: 'kAudioUnitErr_PropertyNotWritable'
+  JsName: 'kAudioUnitErr_PropertyNotWritable'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10865
+- Name: 'kAudioUnitErr_CannotDoInCurrentContext'
+  JsName: 'kAudioUnitErr_CannotDoInCurrentContext'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10863
+- Name: 'kAudioUnitErr_InvalidPropertyValue'
+  JsName: 'kAudioUnitErr_InvalidPropertyValue'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10851
+- Name: 'kAudioUnitErr_PropertyNotInUse'
+  JsName: 'kAudioUnitErr_PropertyNotInUse'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10850
+- Name: 'kAudioUnitErr_Initialized'
+  JsName: 'kAudioUnitErr_Initialized'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10849
+- Name: 'kAudioUnitErr_InvalidOfflineRender'
+  JsName: 'kAudioUnitErr_InvalidOfflineRender'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10848
+- Name: 'kAudioUnitErr_Unauthorized'
+  JsName: 'kAudioUnitErr_Unauthorized'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10847
+- Name: 'kAudioComponentErr_DuplicateDescription'
+  JsName: 'kAudioComponentErr_DuplicateDescription'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -66752
+- Name: 'kAudioComponentErr_UnsupportedType'
+  JsName: 'kAudioComponentErr_UnsupportedType'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -66751
+- Name: 'kAudioComponentErr_TooManyInstances'
+  JsName: 'kAudioComponentErr_TooManyInstances'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -66750
+- Name: 'kAudioComponentErr_InstanceInvalidated'
+  JsName: 'kAudioComponentErr_InstanceInvalidated'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -66749
+- Name: 'kAudioComponentErr_NotPermitted'
+  JsName: 'kAudioComponentErr_NotPermitted'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -66748
+- Name: 'kAudioComponentErr_InitializationTimedOut'
+  JsName: 'kAudioComponentErr_InitializationTimedOut'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -66747
+- Name: 'kAudioComponentErr_InvalidFormat'
+  JsName: 'kAudioComponentErr_InvalidFormat'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -66746
+- Name: 'kParameterEvent_Immediate'
+  JsName: 'kParameterEvent_Immediate'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kParameterEvent_Ramped'
+  JsName: 'kParameterEvent_Ramped'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'AudioUnitParameter'
+  JsName: 'AudioUnitParameter'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mAudioUnit
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: mParameterID
+    Signature:
+      Type: ULong
+  - Name: mScope
+    Signature:
+      Type: ULong
+  - Name: mElement
+    Signature:
+      Type: ULong
+  Type: Struct
+- Name: 'AudioUnitProperty'
+  JsName: 'AudioUnitProperty'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mAudioUnit
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: mPropertyID
+    Signature:
+      Type: ULong
+  - Name: mScope
+    Signature:
+      Type: ULong
+  - Name: mElement
+    Signature:
+      Type: ULong
+  Type: Struct
+- Name: 'kAudioComponentRegistrationsChangedNotification'
+  JsName: 'kAudioComponentRegistrationsChangedNotification'
+  Module: 'AudioUnit.AUComponent'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'AudioUnitInitialize'
+  JsName: 'AudioUnitInitialize'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'AudioUnitUninitialize'
+  JsName: 'AudioUnitUninitialize'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'AudioUnitGetPropertyInfo'
+  JsName: 'AudioUnitGetPropertyInfo'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: ULong
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+  - Type: CString
+- Name: 'AudioUnitGetProperty'
+  JsName: 'AudioUnitGetProperty'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: ULong
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'AudioUnitSetProperty'
+  JsName: 'AudioUnitSetProperty'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: ULong
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+- Name: 'AudioUnitAddPropertyListener'
+  JsName: 'AudioUnitAddPropertyListener'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: ULong
+    - Type: ULong
+    - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'AudioUnitRemovePropertyListenerWithUserData'
+  JsName: 'AudioUnitRemovePropertyListenerWithUserData'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: ULong
+    - Type: ULong
+    - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'AudioUnitAddRenderNotify'
+  JsName: 'AudioUnitAddRenderNotify'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Long
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: ULong
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreAudio
+        Name: AudioTimeStamp
+    - Type: ULong
+    - Type: ULong
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreAudio
+        Name: AudioBufferList
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'AudioUnitRemoveRenderNotify'
+  JsName: 'AudioUnitRemoveRenderNotify'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Long
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: ULong
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreAudio
+        Name: AudioTimeStamp
+    - Type: ULong
+    - Type: ULong
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreAudio
+        Name: AudioBufferList
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'AudioUnitGetParameter'
+  JsName: 'AudioUnitGetParameter'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: ULong
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'AudioUnitSetParameter'
+  JsName: 'AudioUnitSetParameter'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: ULong
+  - Type: ULong
+  - Type: Float
+  - Type: ULong
+- Name: 'AudioUnitRender'
+  JsName: 'AudioUnitRender'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreAudio
+      Name: AudioTimeStamp
+  - Type: ULong
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreAudio
+      Name: AudioBufferList
+- Name: 'AudioUnitProcess'
+  JsName: 'AudioUnitProcess'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreAudio
+      Name: AudioTimeStamp
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreAudio
+      Name: AudioBufferList
+- Name: 'AudioUnitProcessMultiple'
+  JsName: 'AudioUnitProcessMultiple'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreAudio
+      Name: AudioTimeStamp
+  - Type: ULong
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreAudio
+        Name: AudioBufferList
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreAudio
+        Name: AudioBufferList
+- Name: 'AudioUnitReset'
+  JsName: 'AudioUnitReset'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: ULong
+- Name: 'AudioOutputUnitPublish'
+  JsName: 'AudioOutputUnitPublish'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: AudioUnit.AudioComponent
+      Name: AudioComponentDescription
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'AudioOutputUnitGetHostIcon'
+  JsName: 'AudioOutputUnitGetHostIcon'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: UIKit.UIImage
+    Name: UIImage
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Float
+- Name: 'AudioComponentGetIcon'
+  JsName: 'AudioComponentGetIcon'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: UIKit.UIImage
+    Name: UIImage
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Float
+- Name: 'AudioComponentGetLastActiveTime'
+  JsName: 'AudioComponentGetLastActiveTime'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kAudioUnitRange'
+  JsName: 'kAudioUnitRange'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kAudioUnitInitializeSelect'
+  JsName: 'kAudioUnitInitializeSelect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kAudioUnitUninitializeSelect'
+  JsName: 'kAudioUnitUninitializeSelect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kAudioUnitGetPropertyInfoSelect'
+  JsName: 'kAudioUnitGetPropertyInfoSelect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kAudioUnitGetPropertySelect'
+  JsName: 'kAudioUnitGetPropertySelect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kAudioUnitSetPropertySelect'
+  JsName: 'kAudioUnitSetPropertySelect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'kAudioUnitAddPropertyListenerSelect'
+  JsName: 'kAudioUnitAddPropertyListenerSelect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10
+- Name: 'kAudioUnitRemovePropertyListenerSelect'
+  JsName: 'kAudioUnitRemovePropertyListenerSelect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11
+- Name: 'kAudioUnitRemovePropertyListenerWithUserDataSelect'
+  JsName: 'kAudioUnitRemovePropertyListenerWithUserDataSelect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 18
+- Name: 'kAudioUnitAddRenderNotifySelect'
+  JsName: 'kAudioUnitAddRenderNotifySelect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 15
+- Name: 'kAudioUnitRemoveRenderNotifySelect'
+  JsName: 'kAudioUnitRemoveRenderNotifySelect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'kAudioUnitGetParameterSelect'
+  JsName: 'kAudioUnitGetParameterSelect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'kAudioUnitSetParameterSelect'
+  JsName: 'kAudioUnitSetParameterSelect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7
+- Name: 'kAudioUnitScheduleParametersSelect'
+  JsName: 'kAudioUnitScheduleParametersSelect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 17
+- Name: 'kAudioUnitRenderSelect'
+  JsName: 'kAudioUnitRenderSelect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 14
+- Name: 'kAudioUnitResetSelect'
+  JsName: 'kAudioUnitResetSelect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9
+- Name: 'kAudioUnitComplexRenderSelect'
+  JsName: 'kAudioUnitComplexRenderSelect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 19
+- Name: 'kAudioUnitProcessSelect'
+  JsName: 'kAudioUnitProcessSelect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 20
+- Name: 'kAudioUnitProcessMultipleSelect'
+  JsName: 'kAudioUnitProcessMultipleSelect'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 21
+- Name: 'kAudioUnitErr_IllegalInstrument'
+  JsName: 'kAudioUnitErr_IllegalInstrument'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10873
+- Name: 'kAudioUnitErr_InstrumentTypeNotFound'
+  JsName: 'kAudioUnitErr_InstrumentTypeNotFound'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10872
+- Name: 'kAudioUnitErr_UnknownFileType'
+  JsName: 'kAudioUnitErr_UnknownFileType'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10870
+- Name: 'kAudioUnitErr_FileNotSpecified'
+  JsName: 'kAudioUnitErr_FileNotSpecified'
+  Module: 'AudioUnit.AUComponent'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -10869
+- Name: 'AudioOutputUnitStart'
+  JsName: 'AudioOutputUnitStart'
+  Module: 'AudioUnit.AudioOutputUnit'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'AudioOutputUnitStop'
+  JsName: 'AudioOutputUnitStop'
+  Module: 'AudioUnit.AudioOutputUnit'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'kAudioOutputUnitRange'
+  JsName: 'kAudioOutputUnitRange'
+  Module: 'AudioUnit.AudioOutputUnit'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 512
+- Name: 'kAudioOutputUnitStartSelect'
+  JsName: 'kAudioOutputUnitStartSelect'
+  Module: 'AudioUnit.AudioOutputUnit'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 513
+- Name: 'kAudioOutputUnitStopSelect'
+  JsName: 'kAudioOutputUnitStopSelect'
+  Module: 'AudioUnit.AudioOutputUnit'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 514
+- Name: 'kAudioUnitScope_Global'
+  JsName: 'kAudioUnitScope_Global'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kAudioUnitScope_Input'
+  JsName: 'kAudioUnitScope_Input'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kAudioUnitScope_Output'
+  JsName: 'kAudioUnitScope_Output'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kAudioUnitScope_Group'
+  JsName: 'kAudioUnitScope_Group'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kAudioUnitScope_Part'
+  JsName: 'kAudioUnitScope_Part'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kAudioUnitScope_Note'
+  JsName: 'kAudioUnitScope_Note'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'kAudioUnitScope_Layer'
+  JsName: 'kAudioUnitScope_Layer'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'kAudioUnitScope_LayerItem'
+  JsName: 'kAudioUnitScope_LayerItem'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7
+- Name: 'kAudioUnitProperty_ClassInfo'
+  JsName: 'kAudioUnitProperty_ClassInfo'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kAudioUnitProperty_MakeConnection'
+  JsName: 'kAudioUnitProperty_MakeConnection'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kAudioUnitProperty_SampleRate'
+  JsName: 'kAudioUnitProperty_SampleRate'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kAudioUnitProperty_ParameterList'
+  JsName: 'kAudioUnitProperty_ParameterList'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kAudioUnitProperty_ParameterInfo'
+  JsName: 'kAudioUnitProperty_ParameterInfo'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kAudioUnitProperty_CPULoad'
+  JsName: 'kAudioUnitProperty_CPULoad'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'kAudioUnitProperty_StreamFormat'
+  JsName: 'kAudioUnitProperty_StreamFormat'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kAudioUnitProperty_ElementCount'
+  JsName: 'kAudioUnitProperty_ElementCount'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11
+- Name: 'kAudioUnitProperty_Latency'
+  JsName: 'kAudioUnitProperty_Latency'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 12
+- Name: 'kAudioUnitProperty_SupportedNumChannels'
+  JsName: 'kAudioUnitProperty_SupportedNumChannels'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 13
+- Name: 'kAudioUnitProperty_MaximumFramesPerSlice'
+  JsName: 'kAudioUnitProperty_MaximumFramesPerSlice'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 14
+- Name: 'kAudioUnitProperty_ParameterValueStrings'
+  JsName: 'kAudioUnitProperty_ParameterValueStrings'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'kAudioUnitProperty_AudioChannelLayout'
+  JsName: 'kAudioUnitProperty_AudioChannelLayout'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 19
+- Name: 'kAudioUnitProperty_TailTime'
+  JsName: 'kAudioUnitProperty_TailTime'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 20
+- Name: 'kAudioUnitProperty_BypassEffect'
+  JsName: 'kAudioUnitProperty_BypassEffect'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 21
+- Name: 'kAudioUnitProperty_LastRenderError'
+  JsName: 'kAudioUnitProperty_LastRenderError'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 22
+- Name: 'kAudioUnitProperty_SetRenderCallback'
+  JsName: 'kAudioUnitProperty_SetRenderCallback'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 23
+- Name: 'kAudioUnitProperty_FactoryPresets'
+  JsName: 'kAudioUnitProperty_FactoryPresets'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 24
+- Name: 'kAudioUnitProperty_RenderQuality'
+  JsName: 'kAudioUnitProperty_RenderQuality'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 26
+- Name: 'kAudioUnitProperty_HostCallbacks'
+  JsName: 'kAudioUnitProperty_HostCallbacks'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 27
+- Name: 'kAudioUnitProperty_InPlaceProcessing'
+  JsName: 'kAudioUnitProperty_InPlaceProcessing'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 29
+- Name: 'kAudioUnitProperty_ElementName'
+  JsName: 'kAudioUnitProperty_ElementName'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 30
+- Name: 'kAudioUnitProperty_SupportedChannelLayoutTags'
+  JsName: 'kAudioUnitProperty_SupportedChannelLayoutTags'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 32
+- Name: 'kAudioUnitProperty_PresentPreset'
+  JsName: 'kAudioUnitProperty_PresentPreset'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 36
+- Name: 'kAudioUnitProperty_DependentParameters'
+  JsName: 'kAudioUnitProperty_DependentParameters'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 45
+- Name: 'kAudioUnitProperty_InputSamplesInOutput'
+  JsName: 'kAudioUnitProperty_InputSamplesInOutput'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 49
+- Name: 'kAudioUnitProperty_ShouldAllocateBuffer'
+  JsName: 'kAudioUnitProperty_ShouldAllocateBuffer'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 51
+- Name: 'kAudioUnitProperty_FrequencyResponse'
+  JsName: 'kAudioUnitProperty_FrequencyResponse'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 52
+- Name: 'kAudioUnitProperty_ParameterHistoryInfo'
+  JsName: 'kAudioUnitProperty_ParameterHistoryInfo'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 53
+- Name: 'kAudioUnitProperty_NickName'
+  JsName: 'kAudioUnitProperty_NickName'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 54
+- Name: 'kAudioUnitProperty_OfflineRender'
+  JsName: 'kAudioUnitProperty_OfflineRender'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 37
+- Name: 'kAudioUnitProperty_ParameterIDName'
+  JsName: 'kAudioUnitProperty_ParameterIDName'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 34
+- Name: 'kAudioUnitProperty_ParameterStringFromValue'
+  JsName: 'kAudioUnitProperty_ParameterStringFromValue'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 33
+- Name: 'kAudioUnitProperty_ParameterValueFromString'
+  JsName: 'kAudioUnitProperty_ParameterValueFromString'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 38
+- Name: 'kAudioUnitProperty_RemoteControlEventListener'
+  JsName: 'kAudioUnitProperty_RemoteControlEventListener'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 100
+- Name: 'kAudioUnitProperty_IsInterAppConnected'
+  JsName: 'kAudioUnitProperty_IsInterAppConnected'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 101
+- Name: 'kAudioUnitProperty_PeerURL'
+  JsName: 'kAudioUnitProperty_PeerURL'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 102
+- Name: 'AudioUnitConnection'
+  JsName: 'AudioUnitConnection'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: sourceAudioUnit
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: sourceOutputNumber
+    Signature:
+      Type: ULong
+  - Name: destInputNumber
+    Signature:
+      Type: ULong
+  Type: Struct
+- Name: 'AUChannelInfo'
+  JsName: 'AUChannelInfo'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: inChannels
+    Signature:
+      Type: Short
+  - Name: outChannels
+    Signature:
+      Type: Short
+  Type: Struct
+- Name: 'AudioUnitExternalBuffer'
+  JsName: 'AudioUnitExternalBuffer'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: buffer
+    Signature:
+      Type: CString
+  - Name: size
+    Signature:
+      Type: ULong
+  Type: Struct
+- Name: 'AURenderCallbackStruct'
+  JsName: 'AURenderCallbackStruct'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: inputProc
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Long
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: ULong
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: CoreAudio
+          Name: AudioTimeStamp
+      - Type: ULong
+      - Type: ULong
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: CoreAudio
+          Name: AudioBufferList
+  - Name: inputProcRefCon
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  Type: Struct
+- Name: 'AUPreset'
+  JsName: 'AUPreset'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: presetNumber
+    Signature:
+      Type: Long
+  - Name: presetName
+    Signature:
+      Type: Interface
+      Module: CoreFoundation.CFBase
+      Name: NSString
+  Type: Struct
+- Name: 'kRenderQuality_Max'
+  JsName: 'kRenderQuality_Max'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 127
+- Name: 'kRenderQuality_High'
+  JsName: 'kRenderQuality_High'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 96
+- Name: 'kRenderQuality_Medium'
+  JsName: 'kRenderQuality_Medium'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 64
+- Name: 'kRenderQuality_Low'
+  JsName: 'kRenderQuality_Low'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 32
+- Name: 'kRenderQuality_Min'
+  JsName: 'kRenderQuality_Min'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kNumberOfResponseFrequencies'
+  JsName: 'kNumberOfResponseFrequencies'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1024
+- Name: 'AudioUnitFrequencyResponseBin'
+  JsName: 'AudioUnitFrequencyResponseBin'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mFrequency
+    Signature:
+      Type: Double
+  - Name: mMagnitude
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: 'HostCallbackInfo'
+  JsName: 'HostCallbackInfo'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: hostUserData
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: beatAndTempoProc
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Long
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Double
+      - Type: Pointer
+        PointerType:
+          Type: Double
+  - Name: musicalTimeLocationProc
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Long
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: ULong
+      - Type: Pointer
+        PointerType:
+          Type: Float
+      - Type: Pointer
+        PointerType:
+          Type: ULong
+      - Type: Pointer
+        PointerType:
+          Type: Double
+  - Name: transportStateProc
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Long
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: CString
+      - Type: CString
+      - Type: Pointer
+        PointerType:
+          Type: Double
+      - Type: CString
+      - Type: Pointer
+        PointerType:
+          Type: Double
+      - Type: Pointer
+        PointerType:
+          Type: Double
+  - Name: transportStateProc2
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Long
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: CString
+      - Type: CString
+      - Type: CString
+      - Type: Pointer
+        PointerType:
+          Type: Double
+      - Type: CString
+      - Type: Pointer
+        PointerType:
+          Type: Double
+      - Type: Pointer
+        PointerType:
+          Type: Double
+  Type: Struct
+- Name: 'AUDependentParameter'
+  JsName: 'AUDependentParameter'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mScope
+    Signature:
+      Type: ULong
+  - Name: mParameterID
+    Signature:
+      Type: ULong
+  Type: Struct
+- Name: 'AUInputSamplesInOutputCallbackStruct'
+  JsName: 'AUInputSamplesInOutputCallbackStruct'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: inputToOutputCallback
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: CoreAudio
+          Name: AudioTimeStamp
+      - Type: Double
+      - Type: Double
+  - Name: userData
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  Type: Struct
+- Name: 'AudioUnitParameterHistoryInfo'
+  JsName: 'AudioUnitParameterHistoryInfo'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: updatesPerSecond
+    Signature:
+      Type: Float
+  - Name: historyDurationInSeconds
+    Signature:
+      Type: Float
+  Type: Struct
+- Name: 'kAudioUnitParameterUnit_Generic'
+  JsName: 'kAudioUnitParameterUnit_Generic'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kAudioUnitParameterUnit_Indexed'
+  JsName: 'kAudioUnitParameterUnit_Indexed'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kAudioUnitParameterUnit_Boolean'
+  JsName: 'kAudioUnitParameterUnit_Boolean'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kAudioUnitParameterUnit_Percent'
+  JsName: 'kAudioUnitParameterUnit_Percent'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kAudioUnitParameterUnit_Seconds'
+  JsName: 'kAudioUnitParameterUnit_Seconds'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kAudioUnitParameterUnit_SampleFrames'
+  JsName: 'kAudioUnitParameterUnit_SampleFrames'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'kAudioUnitParameterUnit_Phase'
+  JsName: 'kAudioUnitParameterUnit_Phase'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'kAudioUnitParameterUnit_Rate'
+  JsName: 'kAudioUnitParameterUnit_Rate'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7
+- Name: 'kAudioUnitParameterUnit_Hertz'
+  JsName: 'kAudioUnitParameterUnit_Hertz'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kAudioUnitParameterUnit_Cents'
+  JsName: 'kAudioUnitParameterUnit_Cents'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9
+- Name: 'kAudioUnitParameterUnit_RelativeSemiTones'
+  JsName: 'kAudioUnitParameterUnit_RelativeSemiTones'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10
+- Name: 'kAudioUnitParameterUnit_MIDINoteNumber'
+  JsName: 'kAudioUnitParameterUnit_MIDINoteNumber'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11
+- Name: 'kAudioUnitParameterUnit_MIDIController'
+  JsName: 'kAudioUnitParameterUnit_MIDIController'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 12
+- Name: 'kAudioUnitParameterUnit_Decibels'
+  JsName: 'kAudioUnitParameterUnit_Decibels'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 13
+- Name: 'kAudioUnitParameterUnit_LinearGain'
+  JsName: 'kAudioUnitParameterUnit_LinearGain'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 14
+- Name: 'kAudioUnitParameterUnit_Degrees'
+  JsName: 'kAudioUnitParameterUnit_Degrees'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 15
+- Name: 'kAudioUnitParameterUnit_EqualPowerCrossfade'
+  JsName: 'kAudioUnitParameterUnit_EqualPowerCrossfade'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'kAudioUnitParameterUnit_MixerFaderCurve1'
+  JsName: 'kAudioUnitParameterUnit_MixerFaderCurve1'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 17
+- Name: 'kAudioUnitParameterUnit_Pan'
+  JsName: 'kAudioUnitParameterUnit_Pan'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 18
+- Name: 'kAudioUnitParameterUnit_Meters'
+  JsName: 'kAudioUnitParameterUnit_Meters'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 19
+- Name: 'kAudioUnitParameterUnit_AbsoluteCents'
+  JsName: 'kAudioUnitParameterUnit_AbsoluteCents'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 20
+- Name: 'kAudioUnitParameterUnit_Octaves'
+  JsName: 'kAudioUnitParameterUnit_Octaves'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 21
+- Name: 'kAudioUnitParameterUnit_BPM'
+  JsName: 'kAudioUnitParameterUnit_BPM'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 22
+- Name: 'kAudioUnitParameterUnit_Beats'
+  JsName: 'kAudioUnitParameterUnit_Beats'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 23
+- Name: 'kAudioUnitParameterUnit_Milliseconds'
+  JsName: 'kAudioUnitParameterUnit_Milliseconds'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 24
+- Name: 'kAudioUnitParameterUnit_Ratio'
+  JsName: 'kAudioUnitParameterUnit_Ratio'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 25
+- Name: 'kAudioUnitParameterUnit_CustomUnit'
+  JsName: 'kAudioUnitParameterUnit_CustomUnit'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 26
+- Name: 'AudioUnitParameterInfo'
+  JsName: 'AudioUnitParameterInfo'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: name
+    Signature:
+      Type: ConstantArray
+      ArrayType:
+        Type: Char
+      Size: 52
+  - Name: unitName
+    Signature:
+      Type: Interface
+      Module: CoreFoundation.CFBase
+      Name: NSString
+  - Name: clumpID
+    Signature:
+      Type: ULong
+  - Name: cfNameString
+    Signature:
+      Type: Interface
+      Module: CoreFoundation.CFBase
+      Name: NSString
+  - Name: unit
+    Signature:
+      Type: ULong
+  - Name: minValue
+    Signature:
+      Type: Float
+  - Name: maxValue
+    Signature:
+      Type: Float
+  - Name: defaultValue
+    Signature:
+      Type: Float
+  - Name: flags
+    Signature:
+      Type: ULong
+  Type: Struct
+- Name: 'kAudioUnitParameterFlag_CFNameRelease'
+  JsName: 'kAudioUnitParameterFlag_CFNameRelease'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'kAudioUnitParameterFlag_OmitFromPresets'
+  JsName: 'kAudioUnitParameterFlag_OmitFromPresets'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8192
+- Name: 'kAudioUnitParameterFlag_PlotHistory'
+  JsName: 'kAudioUnitParameterFlag_PlotHistory'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16384
+- Name: 'kAudioUnitParameterFlag_MeterReadOnly'
+  JsName: 'kAudioUnitParameterFlag_MeterReadOnly'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 32768
+- Name: 'kAudioUnitParameterFlag_DisplayMask'
+  JsName: 'kAudioUnitParameterFlag_DisplayMask'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4653056
+- Name: 'kAudioUnitParameterFlag_DisplaySquareRoot'
+  JsName: 'kAudioUnitParameterFlag_DisplaySquareRoot'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65536
+- Name: 'kAudioUnitParameterFlag_DisplaySquared'
+  JsName: 'kAudioUnitParameterFlag_DisplaySquared'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 131072
+- Name: 'kAudioUnitParameterFlag_DisplayCubed'
+  JsName: 'kAudioUnitParameterFlag_DisplayCubed'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 196608
+- Name: 'kAudioUnitParameterFlag_DisplayCubeRoot'
+  JsName: 'kAudioUnitParameterFlag_DisplayCubeRoot'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 262144
+- Name: 'kAudioUnitParameterFlag_DisplayExponential'
+  JsName: 'kAudioUnitParameterFlag_DisplayExponential'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 327680
+- Name: 'kAudioUnitParameterFlag_HasClump'
+  JsName: 'kAudioUnitParameterFlag_HasClump'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1048576
+- Name: 'kAudioUnitParameterFlag_ValuesHaveStrings'
+  JsName: 'kAudioUnitParameterFlag_ValuesHaveStrings'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2097152
+- Name: 'kAudioUnitParameterFlag_DisplayLogarithmic'
+  JsName: 'kAudioUnitParameterFlag_DisplayLogarithmic'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4194304
+- Name: 'kAudioUnitParameterFlag_IsHighResolution'
+  JsName: 'kAudioUnitParameterFlag_IsHighResolution'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8388608
+- Name: 'kAudioUnitParameterFlag_NonRealTime'
+  JsName: 'kAudioUnitParameterFlag_NonRealTime'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16777216
+- Name: 'kAudioUnitParameterFlag_CanRamp'
+  JsName: 'kAudioUnitParameterFlag_CanRamp'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 33554432
+- Name: 'kAudioUnitParameterFlag_ExpertMode'
+  JsName: 'kAudioUnitParameterFlag_ExpertMode'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 67108864
+- Name: 'kAudioUnitParameterFlag_HasCFNameString'
+  JsName: 'kAudioUnitParameterFlag_HasCFNameString'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 134217728
+- Name: 'kAudioUnitParameterFlag_IsGlobalMeta'
+  JsName: 'kAudioUnitParameterFlag_IsGlobalMeta'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 268435456
+- Name: 'kAudioUnitParameterFlag_IsElementMeta'
+  JsName: 'kAudioUnitParameterFlag_IsElementMeta'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 536870912
+- Name: 'kAudioUnitParameterFlag_IsReadable'
+  JsName: 'kAudioUnitParameterFlag_IsReadable'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1073741824
+- Name: 'kAudioUnitParameterFlag_IsWritable'
+  JsName: 'kAudioUnitParameterFlag_IsWritable'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -2147483648
+- Name: 'kAudioUnitClumpID_System'
+  JsName: 'kAudioUnitClumpID_System'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kAudioUnitParameterName_Full'
+  JsName: 'kAudioUnitParameterName_Full'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -1
+- Name: 'AudioUnitParameterNameInfo'
+  JsName: 'AudioUnitParameterIDName'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: inID
+    Signature:
+      Type: ULong
+  - Name: inDesiredLength
+    Signature:
+      Type: Long
+  - Name: outName
+    Signature:
+      Type: Interface
+      Module: CoreFoundation.CFBase
+      Name: NSString
+  Type: Struct
+- Name: 'AudioUnitParameterStringFromValue'
+  JsName: 'AudioUnitParameterStringFromValue'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: inParamID
+    Signature:
+      Type: ULong
+  - Name: inValue
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Float
+  - Name: outString
+    Signature:
+      Type: Interface
+      Module: CoreFoundation.CFBase
+      Name: NSString
+  Type: Struct
+- Name: 'AudioUnitParameterValueFromString'
+  JsName: 'AudioUnitParameterValueFromString'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: inParamID
+    Signature:
+      Type: ULong
+  - Name: inString
+    Signature:
+      Type: Interface
+      Module: CoreFoundation.CFBase
+      Name: NSString
+  - Name: outValue
+    Signature:
+      Type: Float
+  Type: Struct
+- Name: 'kAudioUnitRemoteControlEvent_TogglePlayPause'
+  JsName: 'kAudioUnitRemoteControlEvent_TogglePlayPause'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kAudioUnitRemoteControlEvent_ToggleRecord'
+  JsName: 'kAudioUnitRemoteControlEvent_ToggleRecord'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kAudioUnitRemoteControlEvent_Rewind'
+  JsName: 'kAudioUnitRemoteControlEvent_Rewind'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kAudioOutputUnitProperty_IsRunning'
+  JsName: 'kAudioOutputUnitProperty_IsRunning'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2001
+- Name: 'kAudioUnitProperty_SampleRateConverterComplexity'
+  JsName: 'kAudioUnitProperty_SampleRateConverterComplexity'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3014
+- Name: 'kAudioUnitSampleRateConverterComplexity_Linear'
+  JsName: 'kAudioUnitSampleRateConverterComplexity_Linear'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1818848869
+- Name: 'kAudioUnitSampleRateConverterComplexity_Normal'
+  JsName: 'kAudioUnitSampleRateConverterComplexity_Normal'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1852797549
+- Name: 'kAudioUnitSampleRateConverterComplexity_Mastering'
+  JsName: 'kAudioUnitSampleRateConverterComplexity_Mastering'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1650553971
+- Name: 'kAudioOutputUnitProperty_CurrentDevice'
+  JsName: 'kAudioOutputUnitProperty_CurrentDevice'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2000
+- Name: 'kAudioOutputUnitProperty_ChannelMap'
+  JsName: 'kAudioOutputUnitProperty_ChannelMap'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2002
+- Name: 'kAudioOutputUnitProperty_EnableIO'
+  JsName: 'kAudioOutputUnitProperty_EnableIO'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2003
+- Name: 'kAudioOutputUnitProperty_StartTime'
+  JsName: 'kAudioOutputUnitProperty_StartTime'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2004
+- Name: 'kAudioOutputUnitProperty_SetInputCallback'
+  JsName: 'kAudioOutputUnitProperty_SetInputCallback'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2005
+- Name: 'kAudioOutputUnitProperty_HasIO'
+  JsName: 'kAudioOutputUnitProperty_HasIO'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2006
+- Name: 'kAudioOutputUnitProperty_StartTimestampsAtZero'
+  JsName: 'kAudioOutputUnitProperty_StartTimestampsAtZero'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2007
+- Name: 'kAudioOutputUnitProperty_MIDICallbacks'
+  JsName: 'kAudioOutputUnitProperty_MIDICallbacks'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2010
+- Name: 'kAudioOutputUnitProperty_HostReceivesRemoteControlEvents'
+  JsName: 'kAudioOutputUnitProperty_HostReceivesRemoteControlEvents'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2011
+- Name: 'kAudioOutputUnitProperty_RemoteControlToHost'
+  JsName: 'kAudioOutputUnitProperty_RemoteControlToHost'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2012
+- Name: 'kAudioOutputUnitProperty_HostTransportState'
+  JsName: 'kAudioOutputUnitProperty_HostTransportState'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2013
+- Name: 'kAudioOutputUnitProperty_NodeComponentDescription'
+  JsName: 'kAudioOutputUnitProperty_NodeComponentDescription'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2014
+- Name: '766'
+  JsName: 'AudioOutputUnitMIDICallbacks'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: userData
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: MIDIEventProc
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: ULong
+      - Type: ULong
+      - Type: ULong
+      - Type: ULong
+  - Name: MIDISysExProc
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: CString
+      - Type: ULong
+  Type: Struct
+- Name: 'AudioOutputUnitStartAtTimeParams'
+  JsName: 'AudioOutputUnitStartAtTimeParams'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mTimestamp
+    Signature:
+      Type: Struct
+      Module: CoreAudio
+      Name: AudioTimeStamp
+  - Name: mFlags
+    Signature:
+      Type: ULong
+  Type: Struct
+- Name: 'kAUVoiceIOProperty_BypassVoiceProcessing'
+  JsName: 'kAUVoiceIOProperty_BypassVoiceProcessing'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2100
+- Name: 'kAUVoiceIOProperty_VoiceProcessingEnableAGC'
+  JsName: 'kAUVoiceIOProperty_VoiceProcessingEnableAGC'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2101
+- Name: 'kAUVoiceIOProperty_MuteOutput'
+  JsName: 'kAUVoiceIOProperty_MuteOutput'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2104
+- Name: 'kAUVoiceIOProperty_DuckNonVoiceAudio'
+  JsName: 'kAUVoiceIOProperty_DuckNonVoiceAudio'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2102
+- Name: 'kAUVoiceIOProperty_VoiceProcessingQuality'
+  JsName: 'kAUVoiceIOProperty_VoiceProcessingQuality'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2103
+- Name: 'kAUNBandEQProperty_NumberOfBands'
+  JsName: 'kAUNBandEQProperty_NumberOfBands'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2200
+- Name: 'kAUNBandEQProperty_MaxNumberOfBands'
+  JsName: 'kAUNBandEQProperty_MaxNumberOfBands'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2201
+- Name: 'kAUNBandEQProperty_BiquadCoefficients'
+  JsName: 'kAUNBandEQProperty_BiquadCoefficients'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2203
+- Name: 'kAudioUnitProperty_MeteringMode'
+  JsName: 'kAudioUnitProperty_MeteringMode'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3007
+- Name: 'kAudioUnitProperty_MatrixLevels'
+  JsName: 'kAudioUnitProperty_MatrixLevels'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3006
+- Name: 'kAudioUnitProperty_MatrixDimensions'
+  JsName: 'kAudioUnitProperty_MatrixDimensions'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3009
+- Name: 'kAudioUnitProperty_MeterClipping'
+  JsName: 'kAudioUnitProperty_MeterClipping'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3011
+- Name: 'AudioUnitMeterClipping'
+  JsName: 'AudioUnitMeterClipping'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: peakValueSinceLastCall
+    Signature:
+      Type: Float
+  - Name: sawInfinity
+    Signature:
+      Type: Bool
+  - Name: sawNotANumber
+    Signature:
+      Type: Bool
+  Type: Struct
+- Name: 'kAudioUnitProperty_ReverbRoomType'
+  JsName: 'kAudioUnitProperty_ReverbRoomType'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10
+- Name: 'kAudioUnitProperty_UsesInternalReverb'
+  JsName: 'kAudioUnitProperty_UsesInternalReverb'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1005
+- Name: 'kAudioUnitProperty_SpatializationAlgorithm'
+  JsName: 'kAudioUnitProperty_SpatializationAlgorithm'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3000
+- Name: 'kAudioUnitProperty_SpatialMixerDistanceParams'
+  JsName: 'kAudioUnitProperty_SpatialMixerDistanceParams'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3010
+- Name: 'kAudioUnitProperty_SpatialMixerAttenuationCurve'
+  JsName: 'kAudioUnitProperty_SpatialMixerAttenuationCurve'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3013
+- Name: 'kAudioUnitProperty_SpatialMixerRenderingFlags'
+  JsName: 'kAudioUnitProperty_SpatialMixerRenderingFlags'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3003
+- Name: 'kSpatializationAlgorithm_EqualPowerPanning'
+  JsName: 'kSpatializationAlgorithm_EqualPowerPanning'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kSpatializationAlgorithm_SphericalHead'
+  JsName: 'kSpatializationAlgorithm_SphericalHead'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kSpatializationAlgorithm_HRTF'
+  JsName: 'kSpatializationAlgorithm_HRTF'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kSpatializationAlgorithm_SoundField'
+  JsName: 'kSpatializationAlgorithm_SoundField'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kSpatializationAlgorithm_VectorBasedPanning'
+  JsName: 'kSpatializationAlgorithm_VectorBasedPanning'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kSpatializationAlgorithm_StereoPassThrough'
+  JsName: 'kSpatializationAlgorithm_StereoPassThrough'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'kReverbRoomType_SmallRoom'
+  JsName: 'kReverbRoomType_SmallRoom'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kReverbRoomType_MediumRoom'
+  JsName: 'kReverbRoomType_MediumRoom'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kReverbRoomType_LargeRoom'
+  JsName: 'kReverbRoomType_LargeRoom'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kReverbRoomType_MediumHall'
+  JsName: 'kReverbRoomType_MediumHall'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kReverbRoomType_LargeHall'
+  JsName: 'kReverbRoomType_LargeHall'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kReverbRoomType_Plate'
+  JsName: 'kReverbRoomType_Plate'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'kReverbRoomType_MediumChamber'
+  JsName: 'kReverbRoomType_MediumChamber'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'kReverbRoomType_LargeChamber'
+  JsName: 'kReverbRoomType_LargeChamber'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7
+- Name: 'kReverbRoomType_Cathedral'
+  JsName: 'kReverbRoomType_Cathedral'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kReverbRoomType_LargeRoom2'
+  JsName: 'kReverbRoomType_LargeRoom2'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9
+- Name: 'kReverbRoomType_MediumHall2'
+  JsName: 'kReverbRoomType_MediumHall2'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10
+- Name: 'kReverbRoomType_MediumHall3'
+  JsName: 'kReverbRoomType_MediumHall3'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11
+- Name: 'kReverbRoomType_LargeHall2'
+  JsName: 'kReverbRoomType_LargeHall2'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 12
+- Name: 'kSpatialMixerAttenuationCurve_Power'
+  JsName: 'kSpatialMixerAttenuationCurve_Power'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kSpatialMixerAttenuationCurve_Exponential'
+  JsName: 'kSpatialMixerAttenuationCurve_Exponential'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kSpatialMixerAttenuationCurve_Inverse'
+  JsName: 'kSpatialMixerAttenuationCurve_Inverse'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kSpatialMixerAttenuationCurve_Linear'
+  JsName: 'kSpatialMixerAttenuationCurve_Linear'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'MixerDistanceParams'
+  JsName: 'MixerDistanceParams'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mReferenceDistance
+    Signature:
+      Type: Float
+  - Name: mMaxDistance
+    Signature:
+      Type: Float
+  - Name: mMaxAttenuation
+    Signature:
+      Type: Float
+  Type: Struct
+- Name: 'kSpatialMixerRenderingFlags_InterAuralDelay'
+  JsName: 'kSpatialMixerRenderingFlags_InterAuralDelay'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kSpatialMixerRenderingFlags_DistanceAttenuation'
+  JsName: 'kSpatialMixerRenderingFlags_DistanceAttenuation'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kAudioUnitProperty_3DMixerDistanceParams'
+  JsName: 'kAudioUnitProperty_3DMixerDistanceParams'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3010
+- Name: 'kAudioUnitProperty_3DMixerAttenuationCurve'
+  JsName: 'kAudioUnitProperty_3DMixerAttenuationCurve'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3013
+- Name: 'kAudioUnitProperty_DopplerShift'
+  JsName: 'kAudioUnitProperty_DopplerShift'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3002
+- Name: 'kAudioUnitProperty_3DMixerRenderingFlags'
+  JsName: 'kAudioUnitProperty_3DMixerRenderingFlags'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3003
+- Name: 'kAudioUnitProperty_3DMixerDistanceAtten'
+  JsName: 'kAudioUnitProperty_3DMixerDistanceAtten'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3004
+- Name: 'kAudioUnitProperty_ReverbPreset'
+  JsName: 'kAudioUnitProperty_ReverbPreset'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3012
+- Name: 'k3DMixerRenderingFlags_InterAuralDelay'
+  JsName: 'k3DMixerRenderingFlags_InterAuralDelay'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'k3DMixerRenderingFlags_DopplerShift'
+  JsName: 'k3DMixerRenderingFlags_DopplerShift'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'k3DMixerRenderingFlags_DistanceAttenuation'
+  JsName: 'k3DMixerRenderingFlags_DistanceAttenuation'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'k3DMixerRenderingFlags_DistanceFilter'
+  JsName: 'k3DMixerRenderingFlags_DistanceFilter'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'k3DMixerRenderingFlags_DistanceDiffusion'
+  JsName: 'k3DMixerRenderingFlags_DistanceDiffusion'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'k3DMixerRenderingFlags_LinearDistanceAttenuation'
+  JsName: 'k3DMixerRenderingFlags_LinearDistanceAttenuation'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 32
+- Name: 'k3DMixerRenderingFlags_ConstantReverbBlend'
+  JsName: 'k3DMixerRenderingFlags_ConstantReverbBlend'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 64
+- Name: 'k3DMixerAttenuationCurve_Power'
+  JsName: 'k3DMixerAttenuationCurve_Power'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'k3DMixerAttenuationCurve_Exponential'
+  JsName: 'k3DMixerAttenuationCurve_Exponential'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'k3DMixerAttenuationCurve_Inverse'
+  JsName: 'k3DMixerAttenuationCurve_Inverse'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'k3DMixerAttenuationCurve_Linear'
+  JsName: 'k3DMixerAttenuationCurve_Linear'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kAudioUnitProperty_ScheduleAudioSlice'
+  JsName: 'kAudioUnitProperty_ScheduleAudioSlice'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3300
+- Name: 'kAudioUnitProperty_ScheduleStartTimeStamp'
+  JsName: 'kAudioUnitProperty_ScheduleStartTimeStamp'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3301
+- Name: 'kAudioUnitProperty_CurrentPlayTime'
+  JsName: 'kAudioUnitProperty_CurrentPlayTime'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3302
+- Name: 'kScheduledAudioSliceFlag_Complete'
+  JsName: 'kScheduledAudioSliceFlag_Complete'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kScheduledAudioSliceFlag_BeganToRender'
+  JsName: 'kScheduledAudioSliceFlag_BeganToRender'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kScheduledAudioSliceFlag_BeganToRenderLate'
+  JsName: 'kScheduledAudioSliceFlag_BeganToRenderLate'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kScheduledAudioSliceFlag_Loop'
+  JsName: 'kScheduledAudioSliceFlag_Loop'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kScheduledAudioSliceFlag_Interrupt'
+  JsName: 'kScheduledAudioSliceFlag_Interrupt'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'kScheduledAudioSliceFlag_InterruptAtLoop'
+  JsName: 'kScheduledAudioSliceFlag_InterruptAtLoop'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 32
+- Name: 'ScheduledAudioSlice'
+  JsName: 'ScheduledAudioSlice'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mTimeStamp
+    Signature:
+      Type: Struct
+      Module: CoreAudio
+      Name: AudioTimeStamp
+  - Name: mCompletionProc
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: AudioUnit.AudioUnitProperties
+          Name: ScheduledAudioSlice
+  - Name: mCompletionProcUserData
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: mFlags
+    Signature:
+      Type: ULong
+  - Name: mReserved
+    Signature:
+      Type: ULong
+  - Name: mReserved2
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: mNumberFrames
+    Signature:
+      Type: ULong
+  - Name: mBufferList
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreAudio
+        Name: AudioBufferList
+  Type: Struct
+- Name: 'kAudioUnitProperty_ScheduledFileIDs'
+  JsName: 'kAudioUnitProperty_ScheduledFileIDs'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3310
+- Name: 'kAudioUnitProperty_ScheduledFileRegion'
+  JsName: 'kAudioUnitProperty_ScheduledFileRegion'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3311
+- Name: 'kAudioUnitProperty_ScheduledFilePrime'
+  JsName: 'kAudioUnitProperty_ScheduledFilePrime'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3312
+- Name: 'kAudioUnitProperty_ScheduledFileBufferSizeFrames'
+  JsName: 'kAudioUnitProperty_ScheduledFileBufferSizeFrames'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3313
+- Name: 'kAudioUnitProperty_ScheduledFileNumberBuffers'
+  JsName: 'kAudioUnitProperty_ScheduledFileNumberBuffers'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3314
+- Name: 'ScheduledAudioFileRegion'
+  JsName: 'ScheduledAudioFileRegion'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mTimeStamp
+    Signature:
+      Type: Struct
+      Module: CoreAudio
+      Name: AudioTimeStamp
+  - Name: mCompletionProc
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: AudioUnit.AudioUnitProperties
+          Name: ScheduledAudioFileRegion
+      - Type: Long
+  - Name: mCompletionProcUserData
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: mAudioFile
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: mLoopCount
+    Signature:
+      Type: ULong
+  - Name: mStartFrame
+    Signature:
+      Type: LongLong
+  - Name: mFramesToPlay
+    Signature:
+      Type: ULong
+  Type: Struct
+- Name: 'kMusicDeviceProperty_InstrumentName'
+  JsName: 'kMusicDeviceProperty_InstrumentName'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1001
+- Name: 'kMusicDeviceProperty_InstrumentNumber'
+  JsName: 'kMusicDeviceProperty_InstrumentNumber'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1004
+- Name: 'kMusicDeviceProperty_InstrumentCount'
+  JsName: 'kMusicDeviceProperty_InstrumentCount'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1000
+- Name: 'kMusicDeviceProperty_BankName'
+  JsName: 'kMusicDeviceProperty_BankName'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1007
+- Name: 'kMusicDeviceProperty_SoundBankURL'
+  JsName: 'kMusicDeviceProperty_SoundBankURL'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1100
+- Name: 'kAUMIDISynthProperty_EnablePreload'
+  JsName: 'kAUMIDISynthProperty_EnablePreload'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4119
+- Name: 'kAUSamplerProperty_LoadInstrument'
+  JsName: 'kAUSamplerProperty_LoadInstrument'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4102
+- Name: 'kAUSamplerProperty_LoadAudioFiles'
+  JsName: 'kAUSamplerProperty_LoadAudioFiles'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4101
+- Name: 'AUSamplerInstrumentData'
+  JsName: 'AUSamplerInstrumentData'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: fileURL
+    Signature:
+      Type: Interface
+      Module: CoreFoundation.CFURL
+      Name: NSURL
+  - Name: instrumentType
+    Signature:
+      Type: UChar
+  - Name: bankMSB
+    Signature:
+      Type: UChar
+  - Name: bankLSB
+    Signature:
+      Type: UChar
+  - Name: presetID
+    Signature:
+      Type: UChar
+  Type: Struct
+- Name: 'kInstrumentType_DLSPreset'
+  JsName: 'kInstrumentType_DLSPreset'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kInstrumentType_SF2Preset'
+  JsName: 'kInstrumentType_SF2Preset'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kInstrumentType_AUPreset'
+  JsName: 'kInstrumentType_AUPreset'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kInstrumentType_Audiofile'
+  JsName: 'kInstrumentType_Audiofile'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kInstrumentType_EXS24'
+  JsName: 'kInstrumentType_EXS24'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kAUSampler_DefaultPercussionBankMSB'
+  JsName: 'kAUSampler_DefaultPercussionBankMSB'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 120
+- Name: 'kAUSampler_DefaultMelodicBankMSB'
+  JsName: 'kAUSampler_DefaultMelodicBankMSB'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 121
+- Name: 'kAUSampler_DefaultBankLSB'
+  JsName: 'kAUSampler_DefaultBankLSB'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kAudioUnitProperty_DeferredRendererPullSize'
+  JsName: 'kAudioUnitProperty_DeferredRendererPullSize'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3320
+- Name: 'kAudioUnitProperty_DeferredRendererExtraLatency'
+  JsName: 'kAudioUnitProperty_DeferredRendererExtraLatency'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3321
+- Name: 'kAudioUnitProperty_DeferredRendererWaitFrames'
+  JsName: 'kAudioUnitProperty_DeferredRendererWaitFrames'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3322
+- Name: 'AUSamplerBankPresetData'
+  JsName: 'AUSamplerBankPresetData'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: bankURL
+    Signature:
+      Type: Interface
+      Module: CoreFoundation.CFURL
+      Name: NSURL
+  - Name: bankMSB
+    Signature:
+      Type: UChar
+  - Name: bankLSB
+    Signature:
+      Type: UChar
+  - Name: presetID
+    Signature:
+      Type: UChar
+  - Name: reserved
+    Signature:
+      Type: UChar
+  Type: Struct
+- Name: 'kAUSamplerProperty_LoadPresetFromBank'
+  JsName: 'kAUSamplerProperty_LoadPresetFromBank'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4100
+- Name: 'kAUSamplerProperty_BankAndPreset'
+  JsName: 'kAUSamplerProperty_BankAndPreset'
+  Module: 'AudioUnit.AudioUnitProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4100
+- Name: 'kAUGroupParameterID_Volume'
+  JsName: 'kAUGroupParameterID_Volume'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7
+- Name: 'kAUGroupParameterID_Sustain'
+  JsName: 'kAUGroupParameterID_Sustain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 64
+- Name: 'kAUGroupParameterID_Sostenuto'
+  JsName: 'kAUGroupParameterID_Sostenuto'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 66
+- Name: 'kAUGroupParameterID_AllNotesOff'
+  JsName: 'kAUGroupParameterID_AllNotesOff'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 123
+- Name: 'kAUGroupParameterID_ModWheel'
+  JsName: 'kAUGroupParameterID_ModWheel'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kAUGroupParameterID_PitchBend'
+  JsName: 'kAUGroupParameterID_PitchBend'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 224
+- Name: 'kAUGroupParameterID_AllSoundOff'
+  JsName: 'kAUGroupParameterID_AllSoundOff'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 120
+- Name: 'kAUGroupParameterID_ResetAllControllers'
+  JsName: 'kAUGroupParameterID_ResetAllControllers'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 121
+- Name: 'kAUGroupParameterID_Pan'
+  JsName: 'kAUGroupParameterID_Pan'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10
+- Name: 'kAUGroupParameterID_Foot'
+  JsName: 'kAUGroupParameterID_Foot'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kAUGroupParameterID_ChannelPressure'
+  JsName: 'kAUGroupParameterID_ChannelPressure'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 208
+- Name: 'kAUGroupParameterID_KeyPressure'
+  JsName: 'kAUGroupParameterID_KeyPressure'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 160
+- Name: 'kAUGroupParameterID_Expression'
+  JsName: 'kAUGroupParameterID_Expression'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11
+- Name: 'kAUGroupParameterID_DataEntry'
+  JsName: 'kAUGroupParameterID_DataEntry'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'kAUGroupParameterID_Volume_LSB'
+  JsName: 'kAUGroupParameterID_Volume_LSB'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 39
+- Name: 'kAUGroupParameterID_ModWheel_LSB'
+  JsName: 'kAUGroupParameterID_ModWheel_LSB'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 33
+- Name: 'kAUGroupParameterID_Pan_LSB'
+  JsName: 'kAUGroupParameterID_Pan_LSB'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 42
+- Name: 'kAUGroupParameterID_Foot_LSB'
+  JsName: 'kAUGroupParameterID_Foot_LSB'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 36
+- Name: 'kAUGroupParameterID_Expression_LSB'
+  JsName: 'kAUGroupParameterID_Expression_LSB'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 43
+- Name: 'kAUGroupParameterID_DataEntry_LSB'
+  JsName: 'kAUGroupParameterID_DataEntry_LSB'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 38
+- Name: 'kAUGroupParameterID_KeyPressure_FirstKey'
+  JsName: 'kAUGroupParameterID_KeyPressure_FirstKey'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 256
+- Name: 'kAUGroupParameterID_KeyPressure_LastKey'
+  JsName: 'kAUGroupParameterID_KeyPressure_LastKey'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 383
+- Name: 'kSpatialMixerParam_Azimuth'
+  JsName: 'kSpatialMixerParam_Azimuth'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kSpatialMixerParam_Elevation'
+  JsName: 'kSpatialMixerParam_Elevation'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kSpatialMixerParam_Distance'
+  JsName: 'kSpatialMixerParam_Distance'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kSpatialMixerParam_Gain'
+  JsName: 'kSpatialMixerParam_Gain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kSpatialMixerParam_PlaybackRate'
+  JsName: 'kSpatialMixerParam_PlaybackRate'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kSpatialMixerParam_Enable'
+  JsName: 'kSpatialMixerParam_Enable'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'kSpatialMixerParam_MinGain'
+  JsName: 'kSpatialMixerParam_MinGain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'kSpatialMixerParam_MaxGain'
+  JsName: 'kSpatialMixerParam_MaxGain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7
+- Name: 'kSpatialMixerParam_ReverbBlend'
+  JsName: 'kSpatialMixerParam_ReverbBlend'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kSpatialMixerParam_GlobalReverbGain'
+  JsName: 'kSpatialMixerParam_GlobalReverbGain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9
+- Name: 'kSpatialMixerParam_OcclusionAttenuation'
+  JsName: 'kSpatialMixerParam_OcclusionAttenuation'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10
+- Name: 'kSpatialMixerParam_ObstructionAttenuation'
+  JsName: 'kSpatialMixerParam_ObstructionAttenuation'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11
+- Name: 'kReverbParam_FilterFrequency'
+  JsName: 'kReverbParam_FilterFrequency'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 14
+- Name: 'kReverbParam_FilterBandwidth'
+  JsName: 'kReverbParam_FilterBandwidth'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 15
+- Name: 'kReverbParam_FilterGain'
+  JsName: 'kReverbParam_FilterGain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'kReverbParam_FilterType'
+  JsName: 'kReverbParam_FilterType'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 17
+- Name: 'kReverbParam_FilterEnable'
+  JsName: 'kReverbParam_FilterEnable'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 18
+- Name: 'k3DMixerParam_Azimuth'
+  JsName: 'k3DMixerParam_Azimuth'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'k3DMixerParam_Elevation'
+  JsName: 'k3DMixerParam_Elevation'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'k3DMixerParam_Distance'
+  JsName: 'k3DMixerParam_Distance'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'k3DMixerParam_Gain'
+  JsName: 'k3DMixerParam_Gain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'k3DMixerParam_PlaybackRate'
+  JsName: 'k3DMixerParam_PlaybackRate'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'k3DMixerParam_Enable'
+  JsName: 'k3DMixerParam_Enable'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'k3DMixerParam_MinGain'
+  JsName: 'k3DMixerParam_MinGain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'k3DMixerParam_MaxGain'
+  JsName: 'k3DMixerParam_MaxGain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7
+- Name: 'k3DMixerParam_ReverbBlend'
+  JsName: 'k3DMixerParam_ReverbBlend'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'k3DMixerParam_GlobalReverbGain'
+  JsName: 'k3DMixerParam_GlobalReverbGain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9
+- Name: 'k3DMixerParam_OcclusionAttenuation'
+  JsName: 'k3DMixerParam_OcclusionAttenuation'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10
+- Name: 'k3DMixerParam_ObstructionAttenuation'
+  JsName: 'k3DMixerParam_ObstructionAttenuation'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11
+- Name: 'kMultiChannelMixerParam_Volume'
+  JsName: 'kMultiChannelMixerParam_Volume'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kMultiChannelMixerParam_Enable'
+  JsName: 'kMultiChannelMixerParam_Enable'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kMultiChannelMixerParam_Pan'
+  JsName: 'kMultiChannelMixerParam_Pan'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kMultiChannelMixerParam_PreAveragePower'
+  JsName: 'kMultiChannelMixerParam_PreAveragePower'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1000
+- Name: 'kMultiChannelMixerParam_PrePeakHoldLevel'
+  JsName: 'kMultiChannelMixerParam_PrePeakHoldLevel'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2000
+- Name: 'kMultiChannelMixerParam_PostAveragePower'
+  JsName: 'kMultiChannelMixerParam_PostAveragePower'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3000
+- Name: 'kMultiChannelMixerParam_PostPeakHoldLevel'
+  JsName: 'kMultiChannelMixerParam_PostPeakHoldLevel'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4000
+- Name: 'kMatrixMixerParam_Volume'
+  JsName: 'kMatrixMixerParam_Volume'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kMatrixMixerParam_Enable'
+  JsName: 'kMatrixMixerParam_Enable'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kMatrixMixerParam_PreAveragePower'
+  JsName: 'kMatrixMixerParam_PreAveragePower'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1000
+- Name: 'kMatrixMixerParam_PrePeakHoldLevel'
+  JsName: 'kMatrixMixerParam_PrePeakHoldLevel'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2000
+- Name: 'kMatrixMixerParam_PostAveragePower'
+  JsName: 'kMatrixMixerParam_PostAveragePower'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3000
+- Name: 'kMatrixMixerParam_PostPeakHoldLevel'
+  JsName: 'kMatrixMixerParam_PostPeakHoldLevel'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4000
+- Name: 'kMatrixMixerParam_PreAveragePowerLinear'
+  JsName: 'kMatrixMixerParam_PreAveragePowerLinear'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5000
+- Name: 'kMatrixMixerParam_PrePeakHoldLevelLinear'
+  JsName: 'kMatrixMixerParam_PrePeakHoldLevelLinear'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6000
+- Name: 'kMatrixMixerParam_PostAveragePowerLinear'
+  JsName: 'kMatrixMixerParam_PostAveragePowerLinear'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7000
+- Name: 'kMatrixMixerParam_PostPeakHoldLevelLinear'
+  JsName: 'kMatrixMixerParam_PostPeakHoldLevelLinear'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8000
+- Name: 'kHALOutputParam_Volume'
+  JsName: 'kHALOutputParam_Volume'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 14
+- Name: 'kTimePitchParam_Rate'
+  JsName: 'kTimePitchParam_Rate'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kNewTimePitchParam_Rate'
+  JsName: 'kNewTimePitchParam_Rate'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kNewTimePitchParam_Pitch'
+  JsName: 'kNewTimePitchParam_Pitch'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kNewTimePitchParam_Overlap'
+  JsName: 'kNewTimePitchParam_Overlap'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kNewTimePitchParam_EnablePeakLocking'
+  JsName: 'kNewTimePitchParam_EnablePeakLocking'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'kAUSamplerParam_Gain'
+  JsName: 'kAUSamplerParam_Gain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 900
+- Name: 'kAUSamplerParam_CoarseTuning'
+  JsName: 'kAUSamplerParam_CoarseTuning'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 901
+- Name: 'kAUSamplerParam_FineTuning'
+  JsName: 'kAUSamplerParam_FineTuning'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 902
+- Name: 'kAUSamplerParam_Pan'
+  JsName: 'kAUSamplerParam_Pan'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 903
+- Name: 'kBandpassParam_CenterFrequency'
+  JsName: 'kBandpassParam_CenterFrequency'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kBandpassParam_Bandwidth'
+  JsName: 'kBandpassParam_Bandwidth'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kHipassParam_CutoffFrequency'
+  JsName: 'kHipassParam_CutoffFrequency'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kHipassParam_Resonance'
+  JsName: 'kHipassParam_Resonance'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kLowPassParam_CutoffFrequency'
+  JsName: 'kLowPassParam_CutoffFrequency'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kLowPassParam_Resonance'
+  JsName: 'kLowPassParam_Resonance'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kHighShelfParam_CutOffFrequency'
+  JsName: 'kHighShelfParam_CutOffFrequency'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kHighShelfParam_Gain'
+  JsName: 'kHighShelfParam_Gain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kAULowShelfParam_CutoffFrequency'
+  JsName: 'kAULowShelfParam_CutoffFrequency'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kAULowShelfParam_Gain'
+  JsName: 'kAULowShelfParam_Gain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kParametricEQParam_CenterFreq'
+  JsName: 'kParametricEQParam_CenterFreq'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kParametricEQParam_Q'
+  JsName: 'kParametricEQParam_Q'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kParametricEQParam_Gain'
+  JsName: 'kParametricEQParam_Gain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kLimiterParam_AttackTime'
+  JsName: 'kLimiterParam_AttackTime'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kLimiterParam_DecayTime'
+  JsName: 'kLimiterParam_DecayTime'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kLimiterParam_PreGain'
+  JsName: 'kLimiterParam_PreGain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kDynamicsProcessorParam_Threshold'
+  JsName: 'kDynamicsProcessorParam_Threshold'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kDynamicsProcessorParam_HeadRoom'
+  JsName: 'kDynamicsProcessorParam_HeadRoom'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kDynamicsProcessorParam_ExpansionRatio'
+  JsName: 'kDynamicsProcessorParam_ExpansionRatio'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kDynamicsProcessorParam_ExpansionThreshold'
+  JsName: 'kDynamicsProcessorParam_ExpansionThreshold'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kDynamicsProcessorParam_AttackTime'
+  JsName: 'kDynamicsProcessorParam_AttackTime'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kDynamicsProcessorParam_ReleaseTime'
+  JsName: 'kDynamicsProcessorParam_ReleaseTime'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'kDynamicsProcessorParam_MasterGain'
+  JsName: 'kDynamicsProcessorParam_MasterGain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'kDynamicsProcessorParam_CompressionAmount'
+  JsName: 'kDynamicsProcessorParam_CompressionAmount'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1000
+- Name: 'kDynamicsProcessorParam_InputAmplitude'
+  JsName: 'kDynamicsProcessorParam_InputAmplitude'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2000
+- Name: 'kDynamicsProcessorParam_OutputAmplitude'
+  JsName: 'kDynamicsProcessorParam_OutputAmplitude'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3000
+- Name: 'kVarispeedParam_PlaybackRate'
+  JsName: 'kVarispeedParam_PlaybackRate'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kVarispeedParam_PlaybackCents'
+  JsName: 'kVarispeedParam_PlaybackCents'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kDistortionParam_Delay'
+  JsName: 'kDistortionParam_Delay'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kDistortionParam_Decay'
+  JsName: 'kDistortionParam_Decay'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kDistortionParam_DelayMix'
+  JsName: 'kDistortionParam_DelayMix'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kDistortionParam_Decimation'
+  JsName: 'kDistortionParam_Decimation'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kDistortionParam_Rounding'
+  JsName: 'kDistortionParam_Rounding'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kDistortionParam_DecimationMix'
+  JsName: 'kDistortionParam_DecimationMix'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'kDistortionParam_LinearTerm'
+  JsName: 'kDistortionParam_LinearTerm'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'kDistortionParam_SquaredTerm'
+  JsName: 'kDistortionParam_SquaredTerm'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7
+- Name: 'kDistortionParam_CubicTerm'
+  JsName: 'kDistortionParam_CubicTerm'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kDistortionParam_PolynomialMix'
+  JsName: 'kDistortionParam_PolynomialMix'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9
+- Name: 'kDistortionParam_RingModFreq1'
+  JsName: 'kDistortionParam_RingModFreq1'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10
+- Name: 'kDistortionParam_RingModFreq2'
+  JsName: 'kDistortionParam_RingModFreq2'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11
+- Name: 'kDistortionParam_RingModBalance'
+  JsName: 'kDistortionParam_RingModBalance'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 12
+- Name: 'kDistortionParam_RingModMix'
+  JsName: 'kDistortionParam_RingModMix'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 13
+- Name: 'kDistortionParam_SoftClipGain'
+  JsName: 'kDistortionParam_SoftClipGain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 14
+- Name: 'kDistortionParam_FinalMix'
+  JsName: 'kDistortionParam_FinalMix'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 15
+- Name: 'kDelayParam_WetDryMix'
+  JsName: 'kDelayParam_WetDryMix'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kDelayParam_DelayTime'
+  JsName: 'kDelayParam_DelayTime'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kDelayParam_Feedback'
+  JsName: 'kDelayParam_Feedback'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kDelayParam_LopassCutoff'
+  JsName: 'kDelayParam_LopassCutoff'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kAUNBandEQParam_GlobalGain'
+  JsName: 'kAUNBandEQParam_GlobalGain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kAUNBandEQParam_BypassBand'
+  JsName: 'kAUNBandEQParam_BypassBand'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1000
+- Name: 'kAUNBandEQParam_FilterType'
+  JsName: 'kAUNBandEQParam_FilterType'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2000
+- Name: 'kAUNBandEQParam_Frequency'
+  JsName: 'kAUNBandEQParam_Frequency'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3000
+- Name: 'kAUNBandEQParam_Gain'
+  JsName: 'kAUNBandEQParam_Gain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4000
+- Name: 'kAUNBandEQParam_Bandwidth'
+  JsName: 'kAUNBandEQParam_Bandwidth'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5000
+- Name: 'kAUNBandEQFilterType_Parametric'
+  JsName: 'kAUNBandEQFilterType_Parametric'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kAUNBandEQFilterType_2ndOrderButterworthLowPass'
+  JsName: 'kAUNBandEQFilterType_2ndOrderButterworthLowPass'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kAUNBandEQFilterType_2ndOrderButterworthHighPass'
+  JsName: 'kAUNBandEQFilterType_2ndOrderButterworthHighPass'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kAUNBandEQFilterType_ResonantLowPass'
+  JsName: 'kAUNBandEQFilterType_ResonantLowPass'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kAUNBandEQFilterType_ResonantHighPass'
+  JsName: 'kAUNBandEQFilterType_ResonantHighPass'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kAUNBandEQFilterType_BandPass'
+  JsName: 'kAUNBandEQFilterType_BandPass'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'kAUNBandEQFilterType_BandStop'
+  JsName: 'kAUNBandEQFilterType_BandStop'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'kAUNBandEQFilterType_LowShelf'
+  JsName: 'kAUNBandEQFilterType_LowShelf'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 7
+- Name: 'kAUNBandEQFilterType_HighShelf'
+  JsName: 'kAUNBandEQFilterType_HighShelf'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kAUNBandEQFilterType_ResonantLowShelf'
+  JsName: 'kAUNBandEQFilterType_ResonantLowShelf'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 9
+- Name: 'kAUNBandEQFilterType_ResonantHighShelf'
+  JsName: 'kAUNBandEQFilterType_ResonantHighShelf'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 10
+- Name: 'kNumAUNBandEQFilterTypes'
+  JsName: 'kNumAUNBandEQFilterTypes'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 11
+- Name: 'kRoundTripAACParam_Format'
+  JsName: 'kRoundTripAACParam_Format'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kRoundTripAACParam_EncodingStrategy'
+  JsName: 'kRoundTripAACParam_EncodingStrategy'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kRoundTripAACParam_RateOrQuality'
+  JsName: 'kRoundTripAACParam_RateOrQuality'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kRandomParam_BoundA'
+  JsName: 'kRandomParam_BoundA'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kRandomParam_BoundB'
+  JsName: 'kRandomParam_BoundB'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kRandomParam_Curve'
+  JsName: 'kRandomParam_Curve'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kReverb2Param_DryWetMix'
+  JsName: 'kReverb2Param_DryWetMix'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kReverb2Param_Gain'
+  JsName: 'kReverb2Param_Gain'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kReverb2Param_MinDelayTime'
+  JsName: 'kReverb2Param_MinDelayTime'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kReverb2Param_MaxDelayTime'
+  JsName: 'kReverb2Param_MaxDelayTime'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'kReverb2Param_DecayTimeAt0Hz'
+  JsName: 'kReverb2Param_DecayTimeAt0Hz'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kReverb2Param_DecayTimeAtNyquist'
+  JsName: 'kReverb2Param_DecayTimeAtNyquist'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'kReverb2Param_RandomizeReflections'
+  JsName: 'kReverb2Param_RandomizeReflections'
+  Module: 'AudioUnit.AudioUnitParameters'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 6
+- Name: 'MusicDeviceStdNoteParams'
+  JsName: 'MusicDeviceStdNoteParams'
+  Module: 'AudioUnit.MusicDevice'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: argCount
+    Signature:
+      Type: ULong
+  - Name: mPitch
+    Signature:
+      Type: Float
+  - Name: mVelocity
+    Signature:
+      Type: Float
+  Type: Struct
+- Name: 'NoteParamsControlValue'
+  JsName: 'NoteParamsControlValue'
+  Module: 'AudioUnit.MusicDevice'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: mID
+    Signature:
+      Type: ULong
+  - Name: mValue
+    Signature:
+      Type: Float
+  Type: Struct
+- Name: 'MusicDeviceNoteParams'
+  JsName: 'MusicDeviceNoteParams'
+  Module: 'AudioUnit.MusicDevice'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: argCount
+    Signature:
+      Type: ULong
+  - Name: mPitch
+    Signature:
+      Type: Float
+  - Name: mVelocity
+    Signature:
+      Type: Float
+  - Name: mControls
+    Signature:
+      Type: ConstantArray
+      ArrayType:
+        Type: Struct
+        Module: AudioUnit.MusicDevice
+        Name: NoteParamsControlValue
+      Size: 1
+  Type: Struct
+- Name: 'kMusicNoteEvent_UseGroupInstrument'
+  JsName: 'kMusicNoteEvent_UseGroupInstrument'
+  Module: 'AudioUnit.MusicDevice'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -1
+- Name: 'kMusicNoteEvent_Unused'
+  JsName: 'kMusicNoteEvent_Unused'
+  Module: 'AudioUnit.MusicDevice'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -1
+- Name: 'MusicDeviceMIDIEvent'
+  JsName: 'MusicDeviceMIDIEvent'
+  Module: 'AudioUnit.MusicDevice'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: ULong
+  - Type: ULong
+  - Type: ULong
+- Name: 'MusicDeviceSysEx'
+  JsName: 'MusicDeviceSysEx'
+  Module: 'AudioUnit.MusicDevice'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: ULong
+- Name: 'MusicDeviceStartNote'
+  JsName: 'MusicDeviceStartNote'
+  Module: 'AudioUnit.MusicDevice'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: AudioUnit.MusicDevice
+      Name: MusicDeviceNoteParams
+- Name: 'MusicDeviceStopNote'
+  JsName: 'MusicDeviceStopNote'
+  Module: 'AudioUnit.MusicDevice'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: ULong
+  - Type: ULong
+- Name: 'kMusicDeviceRange'
+  JsName: 'kMusicDeviceRange'
+  Module: 'AudioUnit.MusicDevice'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 256
+- Name: 'kMusicDeviceMIDIEventSelect'
+  JsName: 'kMusicDeviceMIDIEventSelect'
+  Module: 'AudioUnit.MusicDevice'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 257
+- Name: 'kMusicDeviceSysExSelect'
+  JsName: 'kMusicDeviceSysExSelect'
+  Module: 'AudioUnit.MusicDevice'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 258
+- Name: 'kMusicDevicePrepareInstrumentSelect'
+  JsName: 'kMusicDevicePrepareInstrumentSelect'
+  Module: 'AudioUnit.MusicDevice'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 259
+- Name: 'kMusicDeviceReleaseInstrumentSelect'
+  JsName: 'kMusicDeviceReleaseInstrumentSelect'
+  Module: 'AudioUnit.MusicDevice'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 260
+- Name: 'kMusicDeviceStartNoteSelect'
+  JsName: 'kMusicDeviceStartNoteSelect'
+  Module: 'AudioUnit.MusicDevice'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 261
+- Name: 'kMusicDeviceStopNoteSelect'
+  JsName: 'kMusicDeviceStopNoteSelect'
+  Module: 'AudioUnit.MusicDevice'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 262
+...

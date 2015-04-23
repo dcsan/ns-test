@@ -1,0 +1,365 @@
+name: QuickLook
+items:
+- Name: 'QLPreviewController'
+  JsName: 'QLPreviewController'
+  Module: 'QuickLook.QLPreviewController'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'refreshCurrentPreviewItem'
+    JsName: 'refreshCurrentPreviewItem'
+    Module: 'QuickLook.QLPreviewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'refreshCurrentPreviewItem'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'reloadData'
+    JsName: 'reloadData'
+    Module: 'QuickLook.QLPreviewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'reloadData'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods:
+  - Name: 'canPreviewItem:'
+    JsName: 'canPreviewItem'
+    Module: 'QuickLook.QLPreviewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'canPreviewItem:'
+    Signature:
+    - Type: Bool
+    - Type: Id
+      WithProtocols:
+      - Module: QuickLook.QLPreviewItem
+        Name: QLPreviewItem
+    TypeEncoding: 'B24@0:8@16'
+  Properties:
+  - Name: 'currentPreviewItem'
+    JsName: 'currentPreviewItem'
+    Module: 'QuickLook.QLPreviewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'currentPreviewItem'
+      JsName: 'currentPreviewItem'
+      Module: 'QuickLook.QLPreviewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'currentPreviewItem'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: QuickLook.QLPreviewItem
+          Name: QLPreviewItem
+      TypeEncoding: '@16@0:8'
+  - Name: 'currentPreviewItemIndex'
+    JsName: 'currentPreviewItemIndex'
+    Module: 'QuickLook.QLPreviewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'currentPreviewItemIndex'
+      JsName: 'currentPreviewItemIndex'
+      Module: 'QuickLook.QLPreviewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'currentPreviewItemIndex'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+    Setter:
+      Name: 'setCurrentPreviewItemIndex:'
+      JsName: 'setCurrentPreviewItemIndex'
+      Module: 'QuickLook.QLPreviewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCurrentPreviewItemIndex:'
+      Signature:
+      - Type: Void
+      - Type: Long
+      TypeEncoding: 'v24@0:8q16'
+  - Name: 'dataSource'
+    JsName: 'dataSource'
+    Module: 'QuickLook.QLPreviewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'dataSource'
+      JsName: 'dataSource'
+      Module: 'QuickLook.QLPreviewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'dataSource'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: QuickLook.QLPreviewController
+          Name: QLPreviewControllerDataSource
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDataSource:'
+      JsName: 'setDataSource'
+      Module: 'QuickLook.QLPreviewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDataSource:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: QuickLook.QLPreviewController
+          Name: QLPreviewControllerDataSource
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'QuickLook.QLPreviewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'QuickLook.QLPreviewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: QuickLook.QLPreviewController
+          Name: QLPreviewControllerDelegate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'QuickLook.QLPreviewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: QuickLook.QLPreviewController
+          Name: QLPreviewControllerDelegate
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Interface
+- Name: 'QLPreviewControllerDataSource'
+  JsName: 'QLPreviewControllerDataSource'
+  Module: 'QuickLook.QLPreviewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'numberOfPreviewItemsInPreviewController:'
+    JsName: 'numberOfPreviewItemsInPreviewController'
+    Module: 'QuickLook.QLPreviewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'numberOfPreviewItemsInPreviewController:'
+    Signature:
+    - Type: Long
+    - Type: Interface
+      Module: QuickLook.QLPreviewController
+      Name: QLPreviewController
+    TypeEncoding: 'q24@0:8@16'
+  - Name: 'previewController:previewItemAtIndex:'
+    JsName: 'previewControllerPreviewItemAtIndex'
+    Module: 'QuickLook.QLPreviewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'previewController:previewItemAtIndex:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: QuickLook.QLPreviewItem
+        Name: QLPreviewItem
+    - Type: Interface
+      Module: QuickLook.QLPreviewController
+      Name: QLPreviewController
+    - Type: Long
+    TypeEncoding: '@32@0:8@16q24'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Type: Protocol
+- Name: 'QLPreviewControllerDelegate'
+  JsName: 'QLPreviewControllerDelegate'
+  Module: 'QuickLook.QLPreviewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'previewControllerDidDismiss:'
+    JsName: 'previewControllerDidDismiss'
+    Module: 'QuickLook.QLPreviewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'previewControllerDidDismiss:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: QuickLook.QLPreviewController
+      Name: QLPreviewController
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'previewController:frameForPreviewItem:inSourceView:'
+    JsName: 'previewControllerFrameForPreviewItemInSourceView'
+    Module: 'QuickLook.QLPreviewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'previewController:frameForPreviewItem:inSourceView:'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Interface
+      Module: QuickLook.QLPreviewController
+      Name: QLPreviewController
+    - Type: Id
+      WithProtocols:
+      - Module: QuickLook.QLPreviewItem
+        Name: QLPreviewItem
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: UIKit.UIView
+        Name: UIView
+    TypeEncoding: '{CGRect={CGPoint=dd}{CGSize=dd}}40@0:8@16@24^@32'
+  - Name: 'previewController:shouldOpenURL:forPreviewItem:'
+    JsName: 'previewControllerShouldOpenURLForPreviewItem'
+    Module: 'QuickLook.QLPreviewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'previewController:shouldOpenURL:forPreviewItem:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: QuickLook.QLPreviewController
+      Name: QLPreviewController
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    - Type: Id
+      WithProtocols:
+      - Module: QuickLook.QLPreviewItem
+        Name: QLPreviewItem
+    TypeEncoding: 'B40@0:8@16@24@32'
+  - Name: 'previewController:transitionImageForPreviewItem:contentRect:'
+    JsName: 'previewControllerTransitionImageForPreviewItemContentRect'
+    Module: 'QuickLook.QLPreviewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'previewController:transitionImageForPreviewItem:contentRect:'
+    Signature:
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    - Type: Interface
+      Module: QuickLook.QLPreviewController
+      Name: QLPreviewController
+    - Type: Id
+      WithProtocols:
+      - Module: QuickLook.QLPreviewItem
+        Name: QLPreviewItem
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGRect
+    TypeEncoding: '@40@0:8@16@24^{CGRect={CGPoint=dd}{CGSize=dd}}32'
+  - Name: 'previewControllerWillDismiss:'
+    JsName: 'previewControllerWillDismiss'
+    Module: 'QuickLook.QLPreviewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'previewControllerWillDismiss:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: QuickLook.QLPreviewController
+      Name: QLPreviewController
+    TypeEncoding: 'v24@0:8@16'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'QLPreviewItem'
+  JsName: 'QLPreviewItem'
+  Module: 'QuickLook.QLPreviewItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'previewItemTitle'
+    JsName: 'previewItemTitle'
+    Module: 'QuickLook.QLPreviewItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'previewItemTitle'
+      JsName: 'previewItemTitle'
+      Module: 'QuickLook.QLPreviewItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'previewItemTitle'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'previewItemURL'
+    JsName: 'previewItemURL'
+    Module: 'QuickLook.QLPreviewItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'previewItemURL'
+      JsName: 'previewItemURL'
+      Module: 'QuickLook.QLPreviewItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'previewItemURL'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'QLPreviewConvenienceAdditions'
+  JsName: 'QLPreviewConvenienceAdditions'
+  Module: 'QuickLook.QLPreviewItem'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: QuickLook.QLPreviewItem
+    Name: QLPreviewItem
+  ExtendedInterface:
+    Module: Foundation.NSURL
+    Name: NSURL
+  Type: Category
+...

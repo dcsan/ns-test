@@ -1,0 +1,27 @@
+name: os
+items:
+- Name: 'os_retain'
+  JsName: 'os_retain'
+  Module: 'os.object'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'os_release'
+  JsName: 'os_release'
+  Module: 'os.object'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+...

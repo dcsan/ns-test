@@ -1,0 +1,619 @@
+name: CoreTelephony
+items:
+- Name: 'kCTErrorDomainNoError'
+  JsName: 'kCTErrorDomainNoError'
+  Module: 'CoreTelephony.CoreTelephonyDefines'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'kCTErrorDomainPOSIX'
+  JsName: 'kCTErrorDomainPOSIX'
+  Module: 'CoreTelephony.CoreTelephonyDefines'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kCTErrorDomainMach'
+  JsName: 'kCTErrorDomainMach'
+  Module: 'CoreTelephony.CoreTelephonyDefines'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: '1089'
+  JsName: 'CTError'
+  Module: 'CoreTelephony.CoreTelephonyDefines'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: domain
+    Signature:
+      Type: Long
+  - Name: error
+    Signature:
+      Type: Long
+  Type: Struct
+- Name: 'CTCallStateDialing'
+  JsName: 'CTCallStateDialing'
+  Module: 'CoreTelephony.CTCall'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CTCallStateIncoming'
+  JsName: 'CTCallStateIncoming'
+  Module: 'CoreTelephony.CTCall'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CTCallStateConnected'
+  JsName: 'CTCallStateConnected'
+  Module: 'CoreTelephony.CTCall'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CTCallStateDisconnected'
+  JsName: 'CTCallStateDisconnected'
+  Module: 'CoreTelephony.CTCall'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CTCall'
+  JsName: 'CTCall'
+  Module: 'CoreTelephony.CTCall'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'callID'
+    JsName: 'callID'
+    Module: 'CoreTelephony.CTCall'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'callID'
+      JsName: 'callID'
+      Module: 'CoreTelephony.CTCall'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'callID'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'callState'
+    JsName: 'callState'
+    Module: 'CoreTelephony.CTCall'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'callState'
+      JsName: 'callState'
+      Module: 'CoreTelephony.CTCall'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'callState'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CTCallCenter'
+  JsName: 'CTCallCenter'
+  Module: 'CoreTelephony.CTCallCenter'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'callEventHandler'
+    JsName: 'callEventHandler'
+    Module: 'CoreTelephony.CTCallCenter'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'callEventHandler'
+      JsName: 'callEventHandler'
+      Module: 'CoreTelephony.CTCallCenter'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'callEventHandler'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CoreTelephony.CTCall
+          Name: CTCall
+      TypeEncoding: '@?8@0:4'
+    Setter:
+      Name: 'setCallEventHandler:'
+      JsName: 'setCallEventHandler'
+      Module: 'CoreTelephony.CTCallCenter'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCallEventHandler:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CoreTelephony.CTCall
+          Name: CTCall
+      TypeEncoding: 'v12@0:4@?8'
+  - Name: 'currentCalls'
+    JsName: 'currentCalls'
+    Module: 'CoreTelephony.CTCallCenter'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'currentCalls'
+      JsName: 'currentCalls'
+      Module: 'CoreTelephony.CTCallCenter'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'currentCalls'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSSet
+        Name: NSSet
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CTCarrier'
+  JsName: 'CTCarrier'
+  Module: 'CoreTelephony.CTCarrier'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'allowsVOIP'
+    JsName: 'allowsVOIP'
+    Module: 'CoreTelephony.CTCarrier'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'allowsVOIP'
+      JsName: 'allowsVOIP'
+      Module: 'CoreTelephony.CTCarrier'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'allowsVOIP'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'carrierName'
+    JsName: 'carrierName'
+    Module: 'CoreTelephony.CTCarrier'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'carrierName'
+      JsName: 'carrierName'
+      Module: 'CoreTelephony.CTCarrier'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'carrierName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'isoCountryCode'
+    JsName: 'isoCountryCode'
+    Module: 'CoreTelephony.CTCarrier'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isoCountryCode'
+      JsName: 'isoCountryCode'
+      Module: 'CoreTelephony.CTCarrier'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isoCountryCode'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'mobileCountryCode'
+    JsName: 'mobileCountryCode'
+    Module: 'CoreTelephony.CTCarrier'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'mobileCountryCode'
+      JsName: 'mobileCountryCode'
+      Module: 'CoreTelephony.CTCarrier'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mobileCountryCode'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'mobileNetworkCode'
+    JsName: 'mobileNetworkCode'
+    Module: 'CoreTelephony.CTCarrier'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'mobileNetworkCode'
+      JsName: 'mobileNetworkCode'
+      Module: 'CoreTelephony.CTCarrier'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mobileNetworkCode'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CTSubscriberTokenRefreshed'
+  JsName: 'CTSubscriberTokenRefreshed'
+  Module: 'CoreTelephony.CTSubscriber'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CTSubscriber'
+  JsName: 'CTSubscriber'
+  Module: 'CoreTelephony.CTSubscriber'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'carrierToken'
+    JsName: 'carrierToken'
+    Module: 'CoreTelephony.CTSubscriber'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'carrierToken'
+      JsName: 'carrierToken'
+      Module: 'CoreTelephony.CTSubscriber'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'carrierToken'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CTSubscriberInfo'
+  JsName: 'CTSubscriberInfo'
+  Module: 'CoreTelephony.CTSubscriberInfo'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'subscriber'
+    JsName: 'subscriber'
+    Module: 'CoreTelephony.CTSubscriberInfo'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'subscriber'
+    Signature:
+    - Type: Interface
+      Module: CoreTelephony.CTSubscriber
+      Name: CTSubscriber
+    TypeEncoding: '@8@0:4'
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CTRadioAccessTechnologyDidChangeNotification'
+  JsName: 'CTRadioAccessTechnologyDidChangeNotification'
+  Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CTRadioAccessTechnologyGPRS'
+  JsName: 'CTRadioAccessTechnologyGPRS'
+  Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CTRadioAccessTechnologyEdge'
+  JsName: 'CTRadioAccessTechnologyEdge'
+  Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CTRadioAccessTechnologyWCDMA'
+  JsName: 'CTRadioAccessTechnologyWCDMA'
+  Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CTRadioAccessTechnologyHSDPA'
+  JsName: 'CTRadioAccessTechnologyHSDPA'
+  Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CTRadioAccessTechnologyHSUPA'
+  JsName: 'CTRadioAccessTechnologyHSUPA'
+  Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CTRadioAccessTechnologyCDMA1x'
+  JsName: 'CTRadioAccessTechnologyCDMA1x'
+  Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CTRadioAccessTechnologyCDMAEVDORev0'
+  JsName: 'CTRadioAccessTechnologyCDMAEVDORev0'
+  Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CTRadioAccessTechnologyCDMAEVDORevA'
+  JsName: 'CTRadioAccessTechnologyCDMAEVDORevA'
+  Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CTRadioAccessTechnologyCDMAEVDORevB'
+  JsName: 'CTRadioAccessTechnologyCDMAEVDORevB'
+  Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CTRadioAccessTechnologyeHRPD'
+  JsName: 'CTRadioAccessTechnologyeHRPD'
+  Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CTRadioAccessTechnologyLTE'
+  JsName: 'CTRadioAccessTechnologyLTE'
+  Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CTTelephonyNetworkInfo'
+  JsName: 'CTTelephonyNetworkInfo'
+  Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'currentRadioAccessTechnology'
+    JsName: 'currentRadioAccessTechnology'
+    Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'currentRadioAccessTechnology'
+      JsName: 'currentRadioAccessTechnology'
+      Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'currentRadioAccessTechnology'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'subscriberCellularProvider'
+    JsName: 'subscriberCellularProvider'
+    Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'subscriberCellularProvider'
+      JsName: 'subscriberCellularProvider'
+      Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'subscriberCellularProvider'
+      Signature:
+      - Type: Interface
+        Module: CoreTelephony.CTCarrier
+        Name: CTCarrier
+      TypeEncoding: '@8@0:4'
+  - Name: 'subscriberCellularProviderDidUpdateNotifier'
+    JsName: 'subscriberCellularProviderDidUpdateNotifier'
+    Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'subscriberCellularProviderDidUpdateNotifier'
+      JsName: 'subscriberCellularProviderDidUpdateNotifier'
+      Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'subscriberCellularProviderDidUpdateNotifier'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CoreTelephony.CTCarrier
+          Name: CTCarrier
+      TypeEncoding: '@?8@0:4'
+    Setter:
+      Name: 'setSubscriberCellularProviderDidUpdateNotifier:'
+      JsName: 'setSubscriberCellularProviderDidUpdateNotifier'
+      Module: 'CoreTelephony.CTTelephonyNetworkInfo'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSubscriberCellularProviderDidUpdateNotifier:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CoreTelephony.CTCarrier
+          Name: CTCarrier
+      TypeEncoding: 'v12@0:4@?8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+...

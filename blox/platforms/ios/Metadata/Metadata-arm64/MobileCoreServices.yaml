@@ -1,0 +1,1669 @@
+name: MobileCoreServices
+items:
+- Name: 'kUTTypeItem'
+  JsName: 'kUTTypeItem'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeContent'
+  JsName: 'kUTTypeContent'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeCompositeContent'
+  JsName: 'kUTTypeCompositeContent'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeMessage'
+  JsName: 'kUTTypeMessage'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeContact'
+  JsName: 'kUTTypeContact'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeArchive'
+  JsName: 'kUTTypeArchive'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeDiskImage'
+  JsName: 'kUTTypeDiskImage'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeData'
+  JsName: 'kUTTypeData'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeDirectory'
+  JsName: 'kUTTypeDirectory'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeResolvable'
+  JsName: 'kUTTypeResolvable'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeSymLink'
+  JsName: 'kUTTypeSymLink'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeExecutable'
+  JsName: 'kUTTypeExecutable'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeMountPoint'
+  JsName: 'kUTTypeMountPoint'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeAliasFile'
+  JsName: 'kUTTypeAliasFile'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeAliasRecord'
+  JsName: 'kUTTypeAliasRecord'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeURLBookmarkData'
+  JsName: 'kUTTypeURLBookmarkData'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeURL'
+  JsName: 'kUTTypeURL'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeFileURL'
+  JsName: 'kUTTypeFileURL'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeText'
+  JsName: 'kUTTypeText'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypePlainText'
+  JsName: 'kUTTypePlainText'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeUTF8PlainText'
+  JsName: 'kUTTypeUTF8PlainText'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeUTF16ExternalPlainText'
+  JsName: 'kUTTypeUTF16ExternalPlainText'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeUTF16PlainText'
+  JsName: 'kUTTypeUTF16PlainText'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeDelimitedText'
+  JsName: 'kUTTypeDelimitedText'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeCommaSeparatedText'
+  JsName: 'kUTTypeCommaSeparatedText'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeTabSeparatedText'
+  JsName: 'kUTTypeTabSeparatedText'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeUTF8TabSeparatedText'
+  JsName: 'kUTTypeUTF8TabSeparatedText'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeRTF'
+  JsName: 'kUTTypeRTF'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeHTML'
+  JsName: 'kUTTypeHTML'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeXML'
+  JsName: 'kUTTypeXML'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeSourceCode'
+  JsName: 'kUTTypeSourceCode'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeAssemblyLanguageSource'
+  JsName: 'kUTTypeAssemblyLanguageSource'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeCSource'
+  JsName: 'kUTTypeCSource'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeObjectiveCSource'
+  JsName: 'kUTTypeObjectiveCSource'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeCPlusPlusSource'
+  JsName: 'kUTTypeCPlusPlusSource'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeObjectiveCPlusPlusSource'
+  JsName: 'kUTTypeObjectiveCPlusPlusSource'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeCHeader'
+  JsName: 'kUTTypeCHeader'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeCPlusPlusHeader'
+  JsName: 'kUTTypeCPlusPlusHeader'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeJavaSource'
+  JsName: 'kUTTypeJavaSource'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeScript'
+  JsName: 'kUTTypeScript'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeAppleScript'
+  JsName: 'kUTTypeAppleScript'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeOSAScript'
+  JsName: 'kUTTypeOSAScript'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeOSAScriptBundle'
+  JsName: 'kUTTypeOSAScriptBundle'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeJavaScript'
+  JsName: 'kUTTypeJavaScript'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeShellScript'
+  JsName: 'kUTTypeShellScript'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypePerlScript'
+  JsName: 'kUTTypePerlScript'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypePythonScript'
+  JsName: 'kUTTypePythonScript'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeRubyScript'
+  JsName: 'kUTTypeRubyScript'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypePHPScript'
+  JsName: 'kUTTypePHPScript'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeJSON'
+  JsName: 'kUTTypeJSON'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypePropertyList'
+  JsName: 'kUTTypePropertyList'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeXMLPropertyList'
+  JsName: 'kUTTypeXMLPropertyList'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeBinaryPropertyList'
+  JsName: 'kUTTypeBinaryPropertyList'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypePDF'
+  JsName: 'kUTTypePDF'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeRTFD'
+  JsName: 'kUTTypeRTFD'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeFlatRTFD'
+  JsName: 'kUTTypeFlatRTFD'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeTXNTextAndMultimediaData'
+  JsName: 'kUTTypeTXNTextAndMultimediaData'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeWebArchive'
+  JsName: 'kUTTypeWebArchive'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeImage'
+  JsName: 'kUTTypeImage'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeJPEG'
+  JsName: 'kUTTypeJPEG'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeJPEG2000'
+  JsName: 'kUTTypeJPEG2000'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeTIFF'
+  JsName: 'kUTTypeTIFF'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypePICT'
+  JsName: 'kUTTypePICT'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeGIF'
+  JsName: 'kUTTypeGIF'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypePNG'
+  JsName: 'kUTTypePNG'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeQuickTimeImage'
+  JsName: 'kUTTypeQuickTimeImage'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeAppleICNS'
+  JsName: 'kUTTypeAppleICNS'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeBMP'
+  JsName: 'kUTTypeBMP'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeICO'
+  JsName: 'kUTTypeICO'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeRawImage'
+  JsName: 'kUTTypeRawImage'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeScalableVectorGraphics'
+  JsName: 'kUTTypeScalableVectorGraphics'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeAudiovisualContent'
+  JsName: 'kUTTypeAudiovisualContent'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeMovie'
+  JsName: 'kUTTypeMovie'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeVideo'
+  JsName: 'kUTTypeVideo'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeAudio'
+  JsName: 'kUTTypeAudio'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeQuickTimeMovie'
+  JsName: 'kUTTypeQuickTimeMovie'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeMPEG'
+  JsName: 'kUTTypeMPEG'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeMPEG2Video'
+  JsName: 'kUTTypeMPEG2Video'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeMPEG2TransportStream'
+  JsName: 'kUTTypeMPEG2TransportStream'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeMP3'
+  JsName: 'kUTTypeMP3'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeMPEG4'
+  JsName: 'kUTTypeMPEG4'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeMPEG4Audio'
+  JsName: 'kUTTypeMPEG4Audio'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeAppleProtectedMPEG4Audio'
+  JsName: 'kUTTypeAppleProtectedMPEG4Audio'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeAppleProtectedMPEG4Video'
+  JsName: 'kUTTypeAppleProtectedMPEG4Video'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeAVIMovie'
+  JsName: 'kUTTypeAVIMovie'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeAudioInterchangeFileFormat'
+  JsName: 'kUTTypeAudioInterchangeFileFormat'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeWaveformAudio'
+  JsName: 'kUTTypeWaveformAudio'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeMIDIAudio'
+  JsName: 'kUTTypeMIDIAudio'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypePlaylist'
+  JsName: 'kUTTypePlaylist'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeM3UPlaylist'
+  JsName: 'kUTTypeM3UPlaylist'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeFolder'
+  JsName: 'kUTTypeFolder'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeVolume'
+  JsName: 'kUTTypeVolume'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypePackage'
+  JsName: 'kUTTypePackage'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeBundle'
+  JsName: 'kUTTypeBundle'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypePluginBundle'
+  JsName: 'kUTTypePluginBundle'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeSpotlightImporter'
+  JsName: 'kUTTypeSpotlightImporter'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeQuickLookGenerator'
+  JsName: 'kUTTypeQuickLookGenerator'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeXPCService'
+  JsName: 'kUTTypeXPCService'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeFramework'
+  JsName: 'kUTTypeFramework'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeApplication'
+  JsName: 'kUTTypeApplication'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeApplicationBundle'
+  JsName: 'kUTTypeApplicationBundle'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeApplicationFile'
+  JsName: 'kUTTypeApplicationFile'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeUnixExecutable'
+  JsName: 'kUTTypeUnixExecutable'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeWindowsExecutable'
+  JsName: 'kUTTypeWindowsExecutable'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeJavaClass'
+  JsName: 'kUTTypeJavaClass'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeJavaArchive'
+  JsName: 'kUTTypeJavaArchive'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeSystemPreferencesPane'
+  JsName: 'kUTTypeSystemPreferencesPane'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeGNUZipArchive'
+  JsName: 'kUTTypeGNUZipArchive'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeBzip2Archive'
+  JsName: 'kUTTypeBzip2Archive'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeZipArchive'
+  JsName: 'kUTTypeZipArchive'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeSpreadsheet'
+  JsName: 'kUTTypeSpreadsheet'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypePresentation'
+  JsName: 'kUTTypePresentation'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeDatabase'
+  JsName: 'kUTTypeDatabase'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeVCard'
+  JsName: 'kUTTypeVCard'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeToDoItem'
+  JsName: 'kUTTypeToDoItem'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeCalendarEvent'
+  JsName: 'kUTTypeCalendarEvent'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeEmailMessage'
+  JsName: 'kUTTypeEmailMessage'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeInternetLocation'
+  JsName: 'kUTTypeInternetLocation'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeInkText'
+  JsName: 'kUTTypeInkText'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeFont'
+  JsName: 'kUTTypeFont'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeBookmark'
+  JsName: 'kUTTypeBookmark'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTType3DContent'
+  JsName: 'kUTType3DContent'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypePKCS12'
+  JsName: 'kUTTypePKCS12'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeX509Certificate'
+  JsName: 'kUTTypeX509Certificate'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeElectronicPublication'
+  JsName: 'kUTTypeElectronicPublication'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeLog'
+  JsName: 'kUTTypeLog'
+  Module: 'MobileCoreServices.UTCoreTypes'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTExportedTypeDeclarationsKey'
+  JsName: 'kUTExportedTypeDeclarationsKey'
+  Module: 'MobileCoreServices.UTType'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTImportedTypeDeclarationsKey'
+  JsName: 'kUTImportedTypeDeclarationsKey'
+  Module: 'MobileCoreServices.UTType'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeIdentifierKey'
+  JsName: 'kUTTypeIdentifierKey'
+  Module: 'MobileCoreServices.UTType'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeTagSpecificationKey'
+  JsName: 'kUTTypeTagSpecificationKey'
+  Module: 'MobileCoreServices.UTType'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeConformsToKey'
+  JsName: 'kUTTypeConformsToKey'
+  Module: 'MobileCoreServices.UTType'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeDescriptionKey'
+  JsName: 'kUTTypeDescriptionKey'
+  Module: 'MobileCoreServices.UTType'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeIconFileKey'
+  JsName: 'kUTTypeIconFileKey'
+  Module: 'MobileCoreServices.UTType'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeReferenceURLKey'
+  JsName: 'kUTTypeReferenceURLKey'
+  Module: 'MobileCoreServices.UTType'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTypeVersionKey'
+  JsName: 'kUTTypeVersionKey'
+  Module: 'MobileCoreServices.UTType'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTagClassFilenameExtension'
+  JsName: 'kUTTagClassFilenameExtension'
+  Module: 'MobileCoreServices.UTType'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kUTTagClassMIMEType'
+  JsName: 'kUTTagClassMIMEType'
+  Module: 'MobileCoreServices.UTType'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'UTTypeCreatePreferredIdentifierForTag'
+  JsName: 'UTTypeCreatePreferredIdentifierForTag'
+  Module: 'MobileCoreServices.UTType'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'UTTypeCreateAllIdentifiersForTag'
+  JsName: 'UTTypeCreateAllIdentifiersForTag'
+  Module: 'MobileCoreServices.UTType'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'UTTypeCopyPreferredTagWithClass'
+  JsName: 'UTTypeCopyPreferredTagWithClass'
+  Module: 'MobileCoreServices.UTType'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'UTTypeCopyAllTagsWithClass'
+  JsName: 'UTTypeCopyAllTagsWithClass'
+  Module: 'MobileCoreServices.UTType'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'UTTypeEqual'
+  JsName: 'UTTypeEqual'
+  Module: 'MobileCoreServices.UTType'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'UTTypeConformsTo'
+  JsName: 'UTTypeConformsTo'
+  Module: 'MobileCoreServices.UTType'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'UTTypeCopyDescription'
+  JsName: 'UTTypeCopyDescription'
+  Module: 'MobileCoreServices.UTType'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'UTTypeIsDeclared'
+  JsName: 'UTTypeIsDeclared'
+  Module: 'MobileCoreServices.UTType'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'UTTypeIsDynamic'
+  JsName: 'UTTypeIsDynamic'
+  Module: 'MobileCoreServices.UTType'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'UTTypeCopyDeclaration'
+  JsName: 'UTTypeCopyDeclaration'
+  Module: 'MobileCoreServices.UTType'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'UTTypeCopyDeclaringBundleURL'
+  JsName: 'UTTypeCopyDeclaringBundleURL'
+  Module: 'MobileCoreServices.UTType'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+...

@@ -1,0 +1,6334 @@
+name: Metal
+items:
+- Name: 'MTLPixelFormat'
+  JsName: 'MTLPixelFormat'
+  Module: 'Metal.MTLPixelFormat'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLPixelFormatInvalid":0,"MTLPixelFormatA8Unorm":1,"MTLPixelFormatR8Unorm":10,"MTLPixelFormatR8Unorm_sRGB":11,"MTLPixelFormatR8Snorm":12,"MTLPixelFormatR8Uint":13,"MTLPixelFormatR8Sint":14,"MTLPixelFormatR16Unorm":20,"MTLPixelFormatR16Snorm":22,"MTLPixelFormatR16Uint":23,"MTLPixelFormatR16Sint":24,"MTLPixelFormatR16Float":25,"MTLPixelFormatRG8Unorm":30,"MTLPixelFormatRG8Unorm_sRGB":31,"MTLPixelFormatRG8Snorm":32,"MTLPixelFormatRG8Uint":33,"MTLPixelFormatRG8Sint":34,"MTLPixelFormatB5G6R5Unorm":40,"MTLPixelFormatA1BGR5Unorm":41,"MTLPixelFormatABGR4Unorm":42,"MTLPixelFormatR32Uint":53,"MTLPixelFormatR32Sint":54,"MTLPixelFormatR32Float":55,"MTLPixelFormatRG16Unorm":60,"MTLPixelFormatRG16Snorm":62,"MTLPixelFormatRG16Uint":63,"MTLPixelFormatRG16Sint":64,"MTLPixelFormatRG16Float":65,"MTLPixelFormatRGBA8Unorm":70,"MTLPixelFormatRGBA8Unorm_sRGB":71,"MTLPixelFormatRGBA8Snorm":72,"MTLPixelFormatRGBA8Uint":73,"MTLPixelFormatRGBA8Sint":74,"MTLPixelFormatBGRA8Unorm":80,"MTLPixelFormatBGRA8Unorm_sRGB":81,"MTLPixelFormatRGB10A2Unorm":90,"MTLPixelFormatRGB10A2Uint":91,"MTLPixelFormatRG11B10Float":92,"MTLPixelFormatRGB9E5Float":93,"MTLPixelFormatRG32Uint":103,"MTLPixelFormatRG32Sint":104,"MTLPixelFormatRG32Float":105,"MTLPixelFormatRGBA16Unorm":110,"MTLPixelFormatRGBA16Snorm":112,"MTLPixelFormatRGBA16Uint":113,"MTLPixelFormatRGBA16Sint":114,"MTLPixelFormatRGBA16Float":115,"MTLPixelFormatRGBA32Uint":123,"MTLPixelFormatRGBA32Sint":124,"MTLPixelFormatRGBA32Float":125,"MTLPixelFormatPVRTC_RGB_2BPP":160,"MTLPixelFormatPVRTC_RGB_2BPP_sRGB":161,"MTLPixelFormatPVRTC_RGB_4BPP":162,"MTLPixelFormatPVRTC_RGB_4BPP_sRGB":163,"MTLPixelFormatPVRTC_RGBA_2BPP":164,"MTLPixelFormatPVRTC_RGBA_2BPP_sRGB":165,"MTLPixelFormatPVRTC_RGBA_4BPP":166,"MTLPixelFormatPVRTC_RGBA_4BPP_sRGB":167,"MTLPixelFormatEAC_R11Unorm":170,"MTLPixelFormatEAC_R11Snorm":172,"MTLPixelFormatEAC_RG11Unorm":174,"MTLPixelFormatEAC_RG11Snorm":176,"MTLPixelFormatEAC_RGBA8":178,"MTLPixelFormatEAC_RGBA8_sRGB":179,"MTLPixelFormatETC2_RGB8":180,"MTLPixelFormatETC2_RGB8_sRGB":181,"MTLPixelFormatETC2_RGB8A1":182,"MTLPixelFormatETC2_RGB8A1_sRGB":183,"MTLPixelFormatASTC_4x4_sRGB":186,"MTLPixelFormatASTC_5x4_sRGB":187,"MTLPixelFormatASTC_5x5_sRGB":188,"MTLPixelFormatASTC_6x5_sRGB":189,"MTLPixelFormatASTC_6x6_sRGB":190,"MTLPixelFormatASTC_8x5_sRGB":192,"MTLPixelFormatASTC_8x6_sRGB":193,"MTLPixelFormatASTC_8x8_sRGB":194,"MTLPixelFormatASTC_10x5_sRGB":195,"MTLPixelFormatASTC_10x6_sRGB":196,"MTLPixelFormatASTC_10x8_sRGB":197,"MTLPixelFormatASTC_10x10_sRGB":198,"MTLPixelFormatASTC_12x10_sRGB":199,"MTLPixelFormatASTC_12x12_sRGB":200,"MTLPixelFormatASTC_4x4_LDR":204,"MTLPixelFormatASTC_5x4_LDR":205,"MTLPixelFormatASTC_5x5_LDR":206,"MTLPixelFormatASTC_6x5_LDR":207,"MTLPixelFormatASTC_6x6_LDR":208,"MTLPixelFormatASTC_8x5_LDR":210,"MTLPixelFormatASTC_8x6_LDR":211,"MTLPixelFormatASTC_8x8_LDR":212,"MTLPixelFormatASTC_10x5_LDR":213,"MTLPixelFormatASTC_10x6_LDR":214,"MTLPixelFormatASTC_10x8_LDR":215,"MTLPixelFormatASTC_10x10_LDR":216,"MTLPixelFormatASTC_12x10_LDR":217,"MTLPixelFormatASTC_12x12_LDR":218,"MTLPixelFormatGBGR422":240,"MTLPixelFormatBGRG422":241,"MTLPixelFormatDepth32Float":252,"MTLPixelFormatStencil8":253})
+- Name: 'MTLCommandEncoder'
+  JsName: 'MTLCommandEncoder'
+  Module: 'Metal.MTLCommandEncoder'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'endEncoding'
+    JsName: 'endEncoding'
+    Module: 'Metal.MTLCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'endEncoding'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'insertDebugSignpost:'
+    JsName: 'insertDebugSignpost'
+    Module: 'Metal.MTLCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'insertDebugSignpost:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'popDebugGroup'
+    JsName: 'popDebugGroup'
+    Module: 'Metal.MTLCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'popDebugGroup'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'pushDebugGroup:'
+    JsName: 'pushDebugGroup'
+    Module: 'Metal.MTLCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'pushDebugGroup:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'device'
+    JsName: 'device'
+    Module: 'Metal.MTLCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'device'
+      JsName: 'device'
+      Module: 'Metal.MTLCommandEncoder'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'device'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLDevice
+          Name: MTLDevice
+      TypeEncoding: '@16@0:8'
+  - Name: 'label'
+    JsName: 'label'
+    Module: 'Metal.MTLCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'label'
+      JsName: 'label'
+      Module: 'Metal.MTLCommandEncoder'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'label'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setLabel:'
+      JsName: 'setLabel'
+      Module: 'Metal.MTLCommandEncoder'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLabel:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MTLPurgeableState'
+  JsName: 'MTLPurgeableState'
+  Module: 'Metal.MTLResource'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLPurgeableStateKeepCurrent":1,"MTLPurgeableStateNonVolatile":2,"MTLPurgeableStateVolatile":3,"MTLPurgeableStateEmpty":4})
+- Name: 'MTLCPUCacheMode'
+  JsName: 'MTLCPUCacheMode'
+  Module: 'Metal.MTLResource'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLCPUCacheModeDefaultCache":0,"MTLCPUCacheModeWriteCombined":1})
+- Name: 'MTLResourceOptions'
+  JsName: 'MTLResourceOptions'
+  Module: 'Metal.MTLResource'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLResourceOptionCPUCacheModeDefault":0,"MTLResourceOptionCPUCacheModeWriteCombined":1})
+- Name: 'MTLResource'
+  JsName: 'MTLResource'
+  Module: 'Metal.MTLResource'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'setPurgeableState:'
+    JsName: 'setPurgeableState'
+    Module: 'Metal.MTLResource'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setPurgeableState:'
+    Signature:
+    - Type: ULong
+    - Type: ULong
+    TypeEncoding: 'Q24@0:8Q16'
+  StaticMethods: []
+  Properties:
+  - Name: 'cpuCacheMode'
+    JsName: 'cpuCacheMode'
+    Module: 'Metal.MTLResource'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'cpuCacheMode'
+      JsName: 'cpuCacheMode'
+      Module: 'Metal.MTLResource'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'cpuCacheMode'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'device'
+    JsName: 'device'
+    Module: 'Metal.MTLResource'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'device'
+      JsName: 'device'
+      Module: 'Metal.MTLResource'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'device'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLDevice
+          Name: MTLDevice
+      TypeEncoding: '@16@0:8'
+  - Name: 'label'
+    JsName: 'label'
+    Module: 'Metal.MTLResource'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'label'
+      JsName: 'label'
+      Module: 'Metal.MTLResource'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'label'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setLabel:'
+      JsName: 'setLabel'
+      Module: 'Metal.MTLResource'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLabel:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MTLBuffer'
+  JsName: 'MTLBuffer'
+  Module: 'Metal.MTLBuffer'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'contents'
+    JsName: 'contents'
+    Module: 'Metal.MTLBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'contents'
+    Signature:
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '^v16@0:8'
+  - Name: 'newTextureWithDescriptor:offset:bytesPerRow:'
+    JsName: 'newTextureWithDescriptorOffsetBytesPerRow'
+    Module: 'Metal.MTLBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newTextureWithDescriptor:offset:bytesPerRow:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLTexture
+        Name: MTLTexture
+    - Type: Interface
+      Module: Metal.MTLTexture
+      Name: MTLTextureDescriptor
+    - Type: ULong
+    - Type: ULong
+    TypeEncoding: '@40@0:8@16Q24Q32'
+  StaticMethods: []
+  Properties:
+  - Name: 'length'
+    JsName: 'length'
+    Module: 'Metal.MTLBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'length'
+      JsName: 'length'
+      Module: 'Metal.MTLBuffer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'length'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  Protocols:
+  - Module: Metal.MTLResource
+    Name: MTLResource
+  Type: Protocol
+- Name: '1462'
+  JsName: 'MTLOrigin'
+  Module: 'Metal.MTLTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: x
+    Signature:
+      Type: ULong
+  - Name: y
+    Signature:
+      Type: ULong
+  - Name: z
+    Signature:
+      Type: ULong
+  Type: Struct
+- Name: '1463'
+  JsName: 'MTLSize'
+  Module: 'Metal.MTLTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: width
+    Signature:
+      Type: ULong
+  - Name: height
+    Signature:
+      Type: ULong
+  - Name: depth
+    Signature:
+      Type: ULong
+  Type: Struct
+- Name: '1464'
+  JsName: 'MTLRegion'
+  Module: 'Metal.MTLTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: origin
+    Signature:
+      Type: Struct
+      Module: Metal.MTLTypes
+      Name: MTLOrigin
+  - Name: size
+    Signature:
+      Type: Struct
+      Module: Metal.MTLTypes
+      Name: MTLSize
+  Type: Struct
+- Name: 'MTLVertexAttribute'
+  JsName: 'MTLVertexAttribute'
+  Module: 'Metal.MTLLibrary'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'active'
+    JsName: 'active'
+    Module: 'Metal.MTLLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isActive'
+      JsName: 'isActive'
+      Module: 'Metal.MTLLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isActive'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'attributeIndex'
+    JsName: 'attributeIndex'
+    Module: 'Metal.MTLLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'attributeIndex'
+      JsName: 'attributeIndex'
+      Module: 'Metal.MTLLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'attributeIndex'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'Metal.MTLLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'Metal.MTLLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLFunctionType'
+  JsName: 'MTLFunctionType'
+  Module: 'Metal.MTLLibrary'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLFunctionTypeVertex":1,"MTLFunctionTypeFragment":2,"MTLFunctionTypeKernel":3})
+- Name: 'MTLFunction'
+  JsName: 'MTLFunction'
+  Module: 'Metal.MTLLibrary'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'device'
+    JsName: 'device'
+    Module: 'Metal.MTLLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'device'
+      JsName: 'device'
+      Module: 'Metal.MTLLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'device'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLDevice
+          Name: MTLDevice
+      TypeEncoding: '@16@0:8'
+  - Name: 'functionType'
+    JsName: 'functionType'
+    Module: 'Metal.MTLLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'functionType'
+      JsName: 'functionType'
+      Module: 'Metal.MTLLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'functionType'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'Metal.MTLLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'Metal.MTLLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'vertexAttributes'
+    JsName: 'vertexAttributes'
+    Module: 'Metal.MTLLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'vertexAttributes'
+      JsName: 'vertexAttributes'
+      Module: 'Metal.MTLLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'vertexAttributes'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MTLCompileOptions'
+  JsName: 'MTLCompileOptions'
+  Module: 'Metal.MTLLibrary'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'fastMathEnabled'
+    JsName: 'fastMathEnabled'
+    Module: 'Metal.MTLLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'fastMathEnabled'
+      JsName: 'fastMathEnabled'
+      Module: 'Metal.MTLLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'fastMathEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setFastMathEnabled:'
+      JsName: 'setFastMathEnabled'
+      Module: 'Metal.MTLLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setFastMathEnabled:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'preprocessorMacros'
+    JsName: 'preprocessorMacros'
+    Module: 'Metal.MTLLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'preprocessorMacros'
+      JsName: 'preprocessorMacros'
+      Module: 'Metal.MTLLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'preprocessorMacros'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setPreprocessorMacros:'
+      JsName: 'setPreprocessorMacros'
+      Module: 'Metal.MTLLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPreprocessorMacros:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: 'v24@0:8@16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLLibraryErrorDomain'
+  JsName: 'MTLLibraryErrorDomain'
+  Module: 'Metal.MTLLibrary'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MTLLibraryError'
+  JsName: 'MTLLibraryError'
+  Module: 'Metal.MTLLibrary'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLLibraryErrorUnsupported":1,"MTLLibraryErrorInternal":2,"MTLLibraryErrorCompileFailure":3,"MTLLibraryErrorCompileWarning":4})
+- Name: 'MTLRenderPipelineErrorDomain'
+  JsName: 'MTLRenderPipelineErrorDomain'
+  Module: 'Metal.MTLLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MTLRenderPipelineError'
+  JsName: 'MTLRenderPipelineError'
+  Module: 'Metal.MTLLibrary'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLRenderPipelineErrorInternal":1,"MTLRenderPipelineErrorUnsupported":2,"MTLRenderPipelineErrorInvalidInput":3})
+- Name: 'MTLLibrary'
+  JsName: 'MTLLibrary'
+  Module: 'Metal.MTLLibrary'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'newFunctionWithName:'
+    JsName: 'newFunctionWithName'
+    Module: 'Metal.MTLLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newFunctionWithName:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLLibrary
+        Name: MTLFunction
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'device'
+    JsName: 'device'
+    Module: 'Metal.MTLLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'device'
+      JsName: 'device'
+      Module: 'Metal.MTLLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'device'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLDevice
+          Name: MTLDevice
+      TypeEncoding: '@16@0:8'
+  - Name: 'functionNames'
+    JsName: 'functionNames'
+    Module: 'Metal.MTLLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'functionNames'
+      JsName: 'functionNames'
+      Module: 'Metal.MTLLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'functionNames'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  - Name: 'label'
+    JsName: 'label'
+    Module: 'Metal.MTLLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'label'
+      JsName: 'label'
+      Module: 'Metal.MTLLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'label'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setLabel:'
+      JsName: 'setLabel'
+      Module: 'Metal.MTLLibrary'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLabel:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MTLCreateSystemDefaultDevice'
+  JsName: 'MTLCreateSystemDefaultDevice'
+  Module: 'Metal.MTLDevice'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Id
+    WithProtocols:
+    - Module: Metal.MTLDevice
+      Name: MTLDevice
+- Name: 'MTLFeatureSet'
+  JsName: 'MTLFeatureSet'
+  Module: 'Metal.MTLDevice'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLFeatureSet_iOS_GPUFamily1_v1":0,"MTLFeatureSet_iOS_GPUFamily2_v1":1})
+- Name: 'MTLPipelineOption'
+  JsName: 'MTLPipelineOption'
+  Module: 'Metal.MTLDevice'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLPipelineOptionNone":0,"MTLPipelineOptionArgumentInfo":1,"MTLPipelineOptionBufferTypeInfo":2})
+- Name: 'MTLDevice'
+  JsName: 'MTLDevice'
+  Module: 'Metal.MTLDevice'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'newBufferWithBytes:length:options:'
+    JsName: 'newBufferWithBytesLengthOptions'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newBufferWithBytes:length:options:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLBuffer
+        Name: MTLBuffer
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: ULong
+    - Type: ULong
+    TypeEncoding: '@40@0:8r^v16Q24Q32'
+  - Name: 'newBufferWithBytesNoCopy:length:options:deallocator:'
+    JsName: 'newBufferWithBytesNoCopyLengthOptionsDeallocator'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newBufferWithBytesNoCopy:length:options:deallocator:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLBuffer
+        Name: MTLBuffer
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: ULong
+    - Type: ULong
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: ULong
+    TypeEncoding: '@48@0:8^v16Q24Q32@?40'
+  - Name: 'newBufferWithLength:options:'
+    JsName: 'newBufferWithLengthOptions'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newBufferWithLength:options:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLBuffer
+        Name: MTLBuffer
+    - Type: ULong
+    - Type: ULong
+    TypeEncoding: '@32@0:8Q16Q24'
+  - Name: 'newCommandQueue'
+    JsName: 'newCommandQueue'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newCommandQueue'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLCommandQueue
+        Name: MTLCommandQueue
+    TypeEncoding: '@16@0:8'
+  - Name: 'newCommandQueueWithMaxCommandBufferCount:'
+    JsName: 'newCommandQueueWithMaxCommandBufferCount'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newCommandQueueWithMaxCommandBufferCount:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLCommandQueue
+        Name: MTLCommandQueue
+    - Type: ULong
+    TypeEncoding: '@24@0:8Q16'
+  - Name: 'newComputePipelineStateWithFunction:completionHandler:'
+    JsName: 'newComputePipelineStateWithFunctionCompletionHandler'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newComputePipelineStateWithFunction:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLLibrary
+        Name: MTLFunction
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLComputePipeline
+          Name: MTLComputePipelineState
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'newComputePipelineStateWithFunction:error:'
+    JsName: 'newComputePipelineStateWithFunctionError'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newComputePipelineStateWithFunction:error:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLComputePipeline
+        Name: MTLComputePipelineState
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLLibrary
+        Name: MTLFunction
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@32@0:8@16^@24'
+  - Name: 'newComputePipelineStateWithFunction:options:completionHandler:'
+    JsName: 'newComputePipelineStateWithFunctionOptionsCompletionHandler'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newComputePipelineStateWithFunction:options:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLLibrary
+        Name: MTLFunction
+    - Type: ULong
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLComputePipeline
+          Name: MTLComputePipelineState
+      - Type: Interface
+        Module: Metal.MTLComputePipeline
+        Name: MTLComputePipelineReflection
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v40@0:8@16Q24@?32'
+  - Name: 'newComputePipelineStateWithFunction:options:reflection:error:'
+    JsName: 'newComputePipelineStateWithFunctionOptionsReflectionError'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newComputePipelineStateWithFunction:options:reflection:error:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLComputePipeline
+        Name: MTLComputePipelineState
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLLibrary
+        Name: MTLFunction
+    - Type: ULong
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Metal.MTLComputePipeline
+        Name: MTLComputePipelineReflection
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@48@0:8@16Q24^@32^@40'
+  - Name: 'newDefaultLibrary'
+    JsName: 'newDefaultLibrary'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newDefaultLibrary'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLLibrary
+        Name: MTLLibrary
+    TypeEncoding: '@16@0:8'
+  - Name: 'newDepthStencilStateWithDescriptor:'
+    JsName: 'newDepthStencilStateWithDescriptor'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newDepthStencilStateWithDescriptor:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLDepthStencil
+        Name: MTLDepthStencilState
+    - Type: Interface
+      Module: Metal.MTLDepthStencil
+      Name: MTLDepthStencilDescriptor
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'newLibraryWithData:error:'
+    JsName: 'newLibraryWithDataError'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newLibraryWithData:error:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLLibrary
+        Name: MTLLibrary
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@32@0:8@16^@24'
+  - Name: 'newLibraryWithFile:error:'
+    JsName: 'newLibraryWithFileError'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newLibraryWithFile:error:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLLibrary
+        Name: MTLLibrary
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@32@0:8@16^@24'
+  - Name: 'newLibraryWithSource:options:completionHandler:'
+    JsName: 'newLibraryWithSourceOptionsCompletionHandler'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newLibraryWithSource:options:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Metal.MTLLibrary
+      Name: MTLCompileOptions
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLLibrary
+          Name: MTLLibrary
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v40@0:8@16@24@?32'
+  - Name: 'newLibraryWithSource:options:error:'
+    JsName: 'newLibraryWithSourceOptionsError'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newLibraryWithSource:options:error:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLLibrary
+        Name: MTLLibrary
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Metal.MTLLibrary
+      Name: MTLCompileOptions
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@40@0:8@16@24^@32'
+  - Name: 'newRenderPipelineStateWithDescriptor:completionHandler:'
+    JsName: 'newRenderPipelineStateWithDescriptorCompletionHandler'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newRenderPipelineStateWithDescriptor:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Metal.MTLRenderPipeline
+      Name: MTLRenderPipelineDescriptor
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLRenderPipeline
+          Name: MTLRenderPipelineState
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'newRenderPipelineStateWithDescriptor:error:'
+    JsName: 'newRenderPipelineStateWithDescriptorError'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newRenderPipelineStateWithDescriptor:error:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLRenderPipeline
+        Name: MTLRenderPipelineState
+    - Type: Interface
+      Module: Metal.MTLRenderPipeline
+      Name: MTLRenderPipelineDescriptor
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@32@0:8@16^@24'
+  - Name: 'newRenderPipelineStateWithDescriptor:options:completionHandler:'
+    JsName: 'newRenderPipelineStateWithDescriptorOptionsCompletionHandler'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newRenderPipelineStateWithDescriptor:options:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Metal.MTLRenderPipeline
+      Name: MTLRenderPipelineDescriptor
+    - Type: ULong
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLRenderPipeline
+          Name: MTLRenderPipelineState
+      - Type: Interface
+        Module: Metal.MTLRenderPipeline
+        Name: MTLRenderPipelineReflection
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v40@0:8@16Q24@?32'
+  - Name: 'newRenderPipelineStateWithDescriptor:options:reflection:error:'
+    JsName: 'newRenderPipelineStateWithDescriptorOptionsReflectionError'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newRenderPipelineStateWithDescriptor:options:reflection:error:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLRenderPipeline
+        Name: MTLRenderPipelineState
+    - Type: Interface
+      Module: Metal.MTLRenderPipeline
+      Name: MTLRenderPipelineDescriptor
+    - Type: ULong
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Metal.MTLRenderPipeline
+        Name: MTLRenderPipelineReflection
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@48@0:8@16Q24^@32^@40'
+  - Name: 'newSamplerStateWithDescriptor:'
+    JsName: 'newSamplerStateWithDescriptor'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newSamplerStateWithDescriptor:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLSampler
+        Name: MTLSamplerState
+    - Type: Interface
+      Module: Metal.MTLSampler
+      Name: MTLSamplerDescriptor
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'newTextureWithDescriptor:'
+    JsName: 'newTextureWithDescriptor'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newTextureWithDescriptor:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLTexture
+        Name: MTLTexture
+    - Type: Interface
+      Module: Metal.MTLTexture
+      Name: MTLTextureDescriptor
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'supportsFeatureSet:'
+    JsName: 'supportsFeatureSet'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'supportsFeatureSet:'
+    Signature:
+    - Type: Bool
+    - Type: ULong
+    TypeEncoding: 'B24@0:8Q16'
+  StaticMethods: []
+  Properties:
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'Metal.MTLDevice'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'Metal.MTLDevice'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MTLTextureType'
+  JsName: 'MTLTextureType'
+  Module: 'Metal.MTLTexture'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLTextureType1D":0,"MTLTextureType1DArray":1,"MTLTextureType2D":2,"MTLTextureType2DArray":3,"MTLTextureType2DMultisample":4,"MTLTextureTypeCube":5,"MTLTextureType3D":7})
+- Name: 'MTLTextureDescriptor'
+  JsName: 'MTLTextureDescriptor'
+  Module: 'Metal.MTLTexture'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'texture2DDescriptorWithPixelFormat:width:height:mipmapped:'
+    JsName: 'texture2DDescriptorWithPixelFormatWidthHeightMipmapped'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'texture2DDescriptorWithPixelFormat:width:height:mipmapped:'
+    Signature:
+    - Type: Interface
+      Module: Metal.MTLTexture
+      Name: MTLTextureDescriptor
+    - Type: ULong
+    - Type: ULong
+    - Type: ULong
+    - Type: Bool
+    TypeEncoding: '@44@0:8Q16Q24Q32B40'
+  - Name: 'textureCubeDescriptorWithPixelFormat:size:mipmapped:'
+    JsName: 'textureCubeDescriptorWithPixelFormatSizeMipmapped'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'textureCubeDescriptorWithPixelFormat:size:mipmapped:'
+    Signature:
+    - Type: Interface
+      Module: Metal.MTLTexture
+      Name: MTLTextureDescriptor
+    - Type: ULong
+    - Type: ULong
+    - Type: Bool
+    TypeEncoding: '@36@0:8Q16Q24B32'
+  Properties:
+  - Name: 'arrayLength'
+    JsName: 'arrayLength'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'arrayLength'
+      JsName: 'arrayLength'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'arrayLength'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setArrayLength:'
+      JsName: 'setArrayLength'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setArrayLength:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'depth'
+    JsName: 'depth'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'depth'
+      JsName: 'depth'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'depth'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setDepth:'
+      JsName: 'setDepth'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDepth:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'height'
+    JsName: 'height'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'height'
+      JsName: 'height'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'height'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setHeight:'
+      JsName: 'setHeight'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setHeight:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'mipmapLevelCount'
+    JsName: 'mipmapLevelCount'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'mipmapLevelCount'
+      JsName: 'mipmapLevelCount'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mipmapLevelCount'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setMipmapLevelCount:'
+      JsName: 'setMipmapLevelCount'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMipmapLevelCount:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'pixelFormat'
+    JsName: 'pixelFormat'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'pixelFormat'
+      JsName: 'pixelFormat'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'pixelFormat'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setPixelFormat:'
+      JsName: 'setPixelFormat'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPixelFormat:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'resourceOptions'
+    JsName: 'resourceOptions'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'resourceOptions'
+      JsName: 'resourceOptions'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'resourceOptions'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setResourceOptions:'
+      JsName: 'setResourceOptions'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setResourceOptions:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'sampleCount'
+    JsName: 'sampleCount'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'sampleCount'
+      JsName: 'sampleCount'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'sampleCount'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setSampleCount:'
+      JsName: 'setSampleCount'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSampleCount:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'textureType'
+    JsName: 'textureType'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'textureType'
+      JsName: 'textureType'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'textureType'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setTextureType:'
+      JsName: 'setTextureType'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setTextureType:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'width'
+    JsName: 'width'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'width'
+      JsName: 'width'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'width'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setWidth:'
+      JsName: 'setWidth'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setWidth:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLTexture'
+  JsName: 'MTLTexture'
+  Module: 'Metal.MTLTexture'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'getBytes:bytesPerRow:bytesPerImage:fromRegion:mipmapLevel:slice:'
+    JsName: 'getBytesBytesPerRowBytesPerImageFromRegionMipmapLevelSlice'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'getBytes:bytesPerRow:bytesPerImage:fromRegion:mipmapLevel:slice:'
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: ULong
+    - Type: ULong
+    - Type: Struct
+      Module: Metal.MTLTypes
+      Name: MTLRegion
+    - Type: ULong
+    - Type: ULong
+    TypeEncoding: 'v104@0:8^v16Q24Q32{?={?=QQQ}{?=QQQ}}40Q88Q96'
+  - Name: 'getBytes:bytesPerRow:fromRegion:mipmapLevel:'
+    JsName: 'getBytesBytesPerRowFromRegionMipmapLevel'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'getBytes:bytesPerRow:fromRegion:mipmapLevel:'
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: ULong
+    - Type: Struct
+      Module: Metal.MTLTypes
+      Name: MTLRegion
+    - Type: ULong
+    TypeEncoding: 'v88@0:8^v16Q24{?={?=QQQ}{?=QQQ}}32Q80'
+  - Name: 'newTextureViewWithPixelFormat:'
+    JsName: 'newTextureViewWithPixelFormat'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newTextureViewWithPixelFormat:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLTexture
+        Name: MTLTexture
+    - Type: ULong
+    TypeEncoding: '@24@0:8Q16'
+  - Name: 'replaceRegion:mipmapLevel:slice:withBytes:bytesPerRow:bytesPerImage:'
+    JsName: 'replaceRegionMipmapLevelSliceWithBytesBytesPerRowBytesPerImage'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'replaceRegion:mipmapLevel:slice:withBytes:bytesPerRow:bytesPerImage:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: Metal.MTLTypes
+      Name: MTLRegion
+    - Type: ULong
+    - Type: ULong
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: ULong
+    - Type: ULong
+    TypeEncoding: 'v104@0:8{?={?=QQQ}{?=QQQ}}16Q64Q72r^v80Q88Q96'
+  - Name: 'replaceRegion:mipmapLevel:withBytes:bytesPerRow:'
+    JsName: 'replaceRegionMipmapLevelWithBytesBytesPerRow'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'replaceRegion:mipmapLevel:withBytes:bytesPerRow:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: Metal.MTLTypes
+      Name: MTLRegion
+    - Type: ULong
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: ULong
+    TypeEncoding: 'v88@0:8{?={?=QQQ}{?=QQQ}}16Q64r^v72Q80'
+  StaticMethods: []
+  Properties:
+  - Name: 'arrayLength'
+    JsName: 'arrayLength'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'arrayLength'
+      JsName: 'arrayLength'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'arrayLength'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'depth'
+    JsName: 'depth'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'depth'
+      JsName: 'depth'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'depth'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'framebufferOnly'
+    JsName: 'framebufferOnly'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isFramebufferOnly'
+      JsName: 'isFramebufferOnly'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isFramebufferOnly'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'height'
+    JsName: 'height'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'height'
+      JsName: 'height'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'height'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'mipmapLevelCount'
+    JsName: 'mipmapLevelCount'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'mipmapLevelCount'
+      JsName: 'mipmapLevelCount'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mipmapLevelCount'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'pixelFormat'
+    JsName: 'pixelFormat'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'pixelFormat'
+      JsName: 'pixelFormat'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'pixelFormat'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'rootResource'
+    JsName: 'rootResource'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'rootResource'
+      JsName: 'rootResource'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rootResource'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLResource
+          Name: MTLResource
+      TypeEncoding: '@16@0:8'
+  - Name: 'sampleCount'
+    JsName: 'sampleCount'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'sampleCount'
+      JsName: 'sampleCount'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'sampleCount'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'textureType'
+    JsName: 'textureType'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'textureType'
+      JsName: 'textureType'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'textureType'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'width'
+    JsName: 'width'
+    Module: 'Metal.MTLTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'width'
+      JsName: 'width'
+      Module: 'Metal.MTLTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'width'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  Protocols:
+  - Module: Metal.MTLResource
+    Name: MTLResource
+  Type: Protocol
+- Name: 'MTLBlitCommandEncoder'
+  JsName: 'MTLBlitCommandEncoder'
+  Module: 'Metal.MTLBlitCommandEncoder'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'copyFromBuffer:sourceOffset:sourceBytesPerRow:sourceBytesPerImage:sourceSize:toTexture:destinationSlice:destinationLevel:destinationOrigin:'
+    JsName: 'copyFromBufferSourceOffsetSourceBytesPerRowSourceBytesPerImageSourceSizeToTextureDestinationSliceDestinationLevelDestinationOrigin'
+    Module: 'Metal.MTLBlitCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'copyFromBuffer:sourceOffset:sourceBytesPerRow:sourceBytesPerImage:sourceSize:toTexture:destinationSlice:destinationLevel:destinationOrigin:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLBuffer
+        Name: MTLBuffer
+    - Type: ULong
+    - Type: ULong
+    - Type: ULong
+    - Type: Struct
+      Module: Metal.MTLTypes
+      Name: MTLSize
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLTexture
+        Name: MTLTexture
+    - Type: ULong
+    - Type: ULong
+    - Type: Struct
+      Module: Metal.MTLTypes
+      Name: MTLOrigin
+    TypeEncoding: 'v120@0:8@16Q24Q32Q40{?=QQQ}48@72Q80Q88{?=QQQ}96'
+  - Name: 'copyFromBuffer:sourceOffset:toBuffer:destinationOffset:size:'
+    JsName: 'copyFromBufferSourceOffsetToBufferDestinationOffsetSize'
+    Module: 'Metal.MTLBlitCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'copyFromBuffer:sourceOffset:toBuffer:destinationOffset:size:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLBuffer
+        Name: MTLBuffer
+    - Type: ULong
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLBuffer
+        Name: MTLBuffer
+    - Type: ULong
+    - Type: ULong
+    TypeEncoding: 'v56@0:8@16Q24@32Q40Q48'
+  - Name: 'copyFromTexture:sourceSlice:sourceLevel:sourceOrigin:sourceSize:toBuffer:destinationOffset:destinationBytesPerRow:destinationBytesPerImage:'
+    JsName: 'copyFromTextureSourceSliceSourceLevelSourceOriginSourceSizeToBufferDestinationOffsetDestinationBytesPerRowDestinationBytesPerImage'
+    Module: 'Metal.MTLBlitCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'copyFromTexture:sourceSlice:sourceLevel:sourceOrigin:sourceSize:toBuffer:destinationOffset:destinationBytesPerRow:destinationBytesPerImage:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLTexture
+        Name: MTLTexture
+    - Type: ULong
+    - Type: ULong
+    - Type: Struct
+      Module: Metal.MTLTypes
+      Name: MTLOrigin
+    - Type: Struct
+      Module: Metal.MTLTypes
+      Name: MTLSize
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLBuffer
+        Name: MTLBuffer
+    - Type: ULong
+    - Type: ULong
+    - Type: ULong
+    TypeEncoding: 'v120@0:8@16Q24Q32{?=QQQ}40{?=QQQ}64@88Q96Q104Q112'
+  - Name: 'copyFromTexture:sourceSlice:sourceLevel:sourceOrigin:sourceSize:toTexture:destinationSlice:destinationLevel:destinationOrigin:'
+    JsName: 'copyFromTextureSourceSliceSourceLevelSourceOriginSourceSizeToTextureDestinationSliceDestinationLevelDestinationOrigin'
+    Module: 'Metal.MTLBlitCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'copyFromTexture:sourceSlice:sourceLevel:sourceOrigin:sourceSize:toTexture:destinationSlice:destinationLevel:destinationOrigin:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLTexture
+        Name: MTLTexture
+    - Type: ULong
+    - Type: ULong
+    - Type: Struct
+      Module: Metal.MTLTypes
+      Name: MTLOrigin
+    - Type: Struct
+      Module: Metal.MTLTypes
+      Name: MTLSize
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLTexture
+        Name: MTLTexture
+    - Type: ULong
+    - Type: ULong
+    - Type: Struct
+      Module: Metal.MTLTypes
+      Name: MTLOrigin
+    TypeEncoding: 'v136@0:8@16Q24Q32{?=QQQ}40{?=QQQ}64@88Q96Q104{?=QQQ}112'
+  - Name: 'fillBuffer:range:value:'
+    JsName: 'fillBufferRangeValue'
+    Module: 'Metal.MTLBlitCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fillBuffer:range:value:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLBuffer
+        Name: MTLBuffer
+    - Type: Struct
+      Module: Foundation.NSRange
+      Name: NSRange
+    - Type: UChar
+    TypeEncoding: 'v44@0:8@16{_NSRange=QQ}24C40'
+  - Name: 'generateMipmapsForTexture:'
+    JsName: 'generateMipmapsForTexture'
+    Module: 'Metal.MTLBlitCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'generateMipmapsForTexture:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLTexture
+        Name: MTLTexture
+    TypeEncoding: 'v24@0:8@16'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: Metal.MTLCommandEncoder
+    Name: MTLCommandEncoder
+  Type: Protocol
+- Name: 'MTLCommandBufferStatus'
+  JsName: 'MTLCommandBufferStatus'
+  Module: 'Metal.MTLCommandBuffer'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLCommandBufferStatusNotEnqueued":0,"MTLCommandBufferStatusEnqueued":1,"MTLCommandBufferStatusCommitted":2,"MTLCommandBufferStatusScheduled":3,"MTLCommandBufferStatusCompleted":4,"MTLCommandBufferStatusError":5})
+- Name: 'MTLCommandBufferErrorDomain'
+  JsName: 'MTLCommandBufferErrorDomain'
+  Module: 'Metal.MTLCommandBuffer'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MTLCommandBufferError'
+  JsName: 'MTLCommandBufferError'
+  Module: 'Metal.MTLCommandBuffer'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLCommandBufferErrorNone":0,"MTLCommandBufferErrorInternal":1,"MTLCommandBufferErrorTimeout":2,"MTLCommandBufferErrorPageFault":3,"MTLCommandBufferErrorBlacklisted":4,"MTLCommandBufferErrorNotPermitted":7,"MTLCommandBufferErrorOutOfMemory":8,"MTLCommandBufferErrorInvalidResource":9})
+- Name: 'MTLCommandBuffer'
+  JsName: 'MTLCommandBuffer'
+  Module: 'Metal.MTLCommandBuffer'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addCompletedHandler:'
+    JsName: 'addCompletedHandler'
+    Module: 'Metal.MTLCommandBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addCompletedHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLCommandBuffer
+          Name: MTLCommandBuffer
+    TypeEncoding: 'v24@0:8@?16'
+  - Name: 'addScheduledHandler:'
+    JsName: 'addScheduledHandler'
+    Module: 'Metal.MTLCommandBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addScheduledHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLCommandBuffer
+          Name: MTLCommandBuffer
+    TypeEncoding: 'v24@0:8@?16'
+  - Name: 'blitCommandEncoder'
+    JsName: 'blitCommandEncoder'
+    Module: 'Metal.MTLCommandBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'blitCommandEncoder'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLBlitCommandEncoder
+        Name: MTLBlitCommandEncoder
+    TypeEncoding: '@16@0:8'
+  - Name: 'commit'
+    JsName: 'commit'
+    Module: 'Metal.MTLCommandBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'commit'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'computeCommandEncoder'
+    JsName: 'computeCommandEncoder'
+    Module: 'Metal.MTLCommandBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'computeCommandEncoder'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLComputeCommandEncoder
+        Name: MTLComputeCommandEncoder
+    TypeEncoding: '@16@0:8'
+  - Name: 'enqueue'
+    JsName: 'enqueue'
+    Module: 'Metal.MTLCommandBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'enqueue'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'parallelRenderCommandEncoderWithDescriptor:'
+    JsName: 'parallelRenderCommandEncoderWithDescriptor'
+    Module: 'Metal.MTLCommandBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'parallelRenderCommandEncoderWithDescriptor:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLParallelRenderCommandEncoder
+        Name: MTLParallelRenderCommandEncoder
+    - Type: Interface
+      Module: Metal.MTLRenderPass
+      Name: MTLRenderPassDescriptor
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'presentDrawable:'
+    JsName: 'presentDrawable'
+    Module: 'Metal.MTLCommandBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'presentDrawable:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLDrawable
+        Name: MTLDrawable
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'presentDrawable:atTime:'
+    JsName: 'presentDrawableAtTime'
+    Module: 'Metal.MTLCommandBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'presentDrawable:atTime:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLDrawable
+        Name: MTLDrawable
+    - Type: Double
+    TypeEncoding: 'v32@0:8@16d24'
+  - Name: 'renderCommandEncoderWithDescriptor:'
+    JsName: 'renderCommandEncoderWithDescriptor'
+    Module: 'Metal.MTLCommandBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'renderCommandEncoderWithDescriptor:'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLRenderCommandEncoder
+        Name: MTLRenderCommandEncoder
+    - Type: Interface
+      Module: Metal.MTLRenderPass
+      Name: MTLRenderPassDescriptor
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'waitUntilCompleted'
+    JsName: 'waitUntilCompleted'
+    Module: 'Metal.MTLCommandBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'waitUntilCompleted'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'waitUntilScheduled'
+    JsName: 'waitUntilScheduled'
+    Module: 'Metal.MTLCommandBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'waitUntilScheduled'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods: []
+  Properties:
+  - Name: 'commandQueue'
+    JsName: 'commandQueue'
+    Module: 'Metal.MTLCommandBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'commandQueue'
+      JsName: 'commandQueue'
+      Module: 'Metal.MTLCommandBuffer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'commandQueue'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLCommandQueue
+          Name: MTLCommandQueue
+      TypeEncoding: '@16@0:8'
+  - Name: 'device'
+    JsName: 'device'
+    Module: 'Metal.MTLCommandBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'device'
+      JsName: 'device'
+      Module: 'Metal.MTLCommandBuffer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'device'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLDevice
+          Name: MTLDevice
+      TypeEncoding: '@16@0:8'
+  - Name: 'error'
+    JsName: 'error'
+    Module: 'Metal.MTLCommandBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'error'
+      JsName: 'error'
+      Module: 'Metal.MTLCommandBuffer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'error'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+      TypeEncoding: '@16@0:8'
+  - Name: 'label'
+    JsName: 'label'
+    Module: 'Metal.MTLCommandBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'label'
+      JsName: 'label'
+      Module: 'Metal.MTLCommandBuffer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'label'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setLabel:'
+      JsName: 'setLabel'
+      Module: 'Metal.MTLCommandBuffer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLabel:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'retainedReferences'
+    JsName: 'retainedReferences'
+    Module: 'Metal.MTLCommandBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'retainedReferences'
+      JsName: 'retainedReferences'
+      Module: 'Metal.MTLCommandBuffer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'retainedReferences'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'status'
+    JsName: 'status'
+    Module: 'Metal.MTLCommandBuffer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'status'
+      JsName: 'status'
+      Module: 'Metal.MTLCommandBuffer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'status'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MTLComputeCommandEncoder'
+  JsName: 'MTLComputeCommandEncoder'
+  Module: 'Metal.MTLComputeCommandEncoder'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'dispatchThreadgroups:threadsPerThreadgroup:'
+    JsName: 'dispatchThreadgroupsThreadsPerThreadgroup'
+    Module: 'Metal.MTLComputeCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'dispatchThreadgroups:threadsPerThreadgroup:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: Metal.MTLTypes
+      Name: MTLSize
+    - Type: Struct
+      Module: Metal.MTLTypes
+      Name: MTLSize
+    TypeEncoding: 'v64@0:8{?=QQQ}16{?=QQQ}40'
+  - Name: 'setBuffer:offset:atIndex:'
+    JsName: 'setBufferOffsetAtIndex'
+    Module: 'Metal.MTLComputeCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setBuffer:offset:atIndex:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLBuffer
+        Name: MTLBuffer
+    - Type: ULong
+    - Type: ULong
+    TypeEncoding: 'v40@0:8@16Q24Q32'
+  - Name: 'setBuffers:offsets:withRange:'
+    JsName: 'setBuffersOffsetsWithRange'
+    Module: 'Metal.MTLComputeCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setBuffers:offsets:withRange:'
+    Signature:
+    - Type: Void
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Id
+        WithProtocols:
+        - Module: Metal.MTLBuffer
+          Name: MTLBuffer
+    - Type: IncompleteArray
+      ArrayType:
+        Type: ULong
+    - Type: Struct
+      Module: Foundation.NSRange
+      Name: NSRange
+    TypeEncoding: 'v48@0:8r^@16r^Q24{_NSRange=QQ}32'
+  - Name: 'setComputePipelineState:'
+    JsName: 'setComputePipelineState'
+    Module: 'Metal.MTLComputeCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setComputePipelineState:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLComputePipeline
+        Name: MTLComputePipelineState
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setSamplerState:atIndex:'
+    JsName: 'setSamplerStateAtIndex'
+    Module: 'Metal.MTLComputeCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setSamplerState:atIndex:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLSampler
+        Name: MTLSamplerState
+    - Type: ULong
+    TypeEncoding: 'v32@0:8@16Q24'
+  - Name: 'setSamplerState:lodMinClamp:lodMaxClamp:atIndex:'
+    JsName: 'setSamplerStateLodMinClampLodMaxClampAtIndex'
+    Module: 'Metal.MTLComputeCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setSamplerState:lodMinClamp:lodMaxClamp:atIndex:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLSampler
+        Name: MTLSamplerState
+    - Type: Float
+    - Type: Float
+    - Type: ULong
+    TypeEncoding: 'v40@0:8@16f24f28Q32'
+  - Name: 'setSamplerStates:lodMinClamps:lodMaxClamps:withRange:'
+    JsName: 'setSamplerStatesLodMinClampsLodMaxClampsWithRange'
+    Module: 'Metal.MTLComputeCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setSamplerStates:lodMinClamps:lodMaxClamps:withRange:'
+    Signature:
+    - Type: Void
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Id
+        WithProtocols:
+        - Module: Metal.MTLSampler
+          Name: MTLSamplerState
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Float
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Float
+    - Type: Struct
+      Module: Foundation.NSRange
+      Name: NSRange
+    TypeEncoding: 'v56@0:8r^@16r^f24r^f32{_NSRange=QQ}40'
+  - Name: 'setSamplerStates:withRange:'
+    JsName: 'setSamplerStatesWithRange'
+    Module: 'Metal.MTLComputeCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setSamplerStates:withRange:'
+    Signature:
+    - Type: Void
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Id
+        WithProtocols:
+        - Module: Metal.MTLSampler
+          Name: MTLSamplerState
+    - Type: Struct
+      Module: Foundation.NSRange
+      Name: NSRange
+    TypeEncoding: 'v40@0:8r^@16{_NSRange=QQ}24'
+  - Name: 'setTexture:atIndex:'
+    JsName: 'setTextureAtIndex'
+    Module: 'Metal.MTLComputeCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setTexture:atIndex:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLTexture
+        Name: MTLTexture
+    - Type: ULong
+    TypeEncoding: 'v32@0:8@16Q24'
+  - Name: 'setTextures:withRange:'
+    JsName: 'setTexturesWithRange'
+    Module: 'Metal.MTLComputeCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setTextures:withRange:'
+    Signature:
+    - Type: Void
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Id
+        WithProtocols:
+        - Module: Metal.MTLTexture
+          Name: MTLTexture
+    - Type: Struct
+      Module: Foundation.NSRange
+      Name: NSRange
+    TypeEncoding: 'v40@0:8r^@16{_NSRange=QQ}24'
+  - Name: 'setThreadgroupMemoryLength:atIndex:'
+    JsName: 'setThreadgroupMemoryLengthAtIndex'
+    Module: 'Metal.MTLComputeCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setThreadgroupMemoryLength:atIndex:'
+    Signature:
+    - Type: Void
+    - Type: ULong
+    - Type: ULong
+    TypeEncoding: 'v32@0:8Q16Q24'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: Metal.MTLCommandEncoder
+    Name: MTLCommandEncoder
+  Type: Protocol
+- Name: 'MTLCommandQueue'
+  JsName: 'MTLCommandQueue'
+  Module: 'Metal.MTLCommandQueue'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'commandBuffer'
+    JsName: 'commandBuffer'
+    Module: 'Metal.MTLCommandQueue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'commandBuffer'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLCommandBuffer
+        Name: MTLCommandBuffer
+    TypeEncoding: '@16@0:8'
+  - Name: 'commandBufferWithUnretainedReferences'
+    JsName: 'commandBufferWithUnretainedReferences'
+    Module: 'Metal.MTLCommandQueue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'commandBufferWithUnretainedReferences'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLCommandBuffer
+        Name: MTLCommandBuffer
+    TypeEncoding: '@16@0:8'
+  - Name: 'insertDebugCaptureBoundary'
+    JsName: 'insertDebugCaptureBoundary'
+    Module: 'Metal.MTLCommandQueue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'insertDebugCaptureBoundary'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods: []
+  Properties:
+  - Name: 'device'
+    JsName: 'device'
+    Module: 'Metal.MTLCommandQueue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'device'
+      JsName: 'device'
+      Module: 'Metal.MTLCommandQueue'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'device'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLDevice
+          Name: MTLDevice
+      TypeEncoding: '@16@0:8'
+  - Name: 'label'
+    JsName: 'label'
+    Module: 'Metal.MTLCommandQueue'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'label'
+      JsName: 'label'
+      Module: 'Metal.MTLCommandQueue'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'label'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setLabel:'
+      JsName: 'setLabel'
+      Module: 'Metal.MTLCommandQueue'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLabel:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MTLCompareFunction'
+  JsName: 'MTLCompareFunction'
+  Module: 'Metal.MTLDepthStencil'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLCompareFunctionNever":0,"MTLCompareFunctionLess":1,"MTLCompareFunctionEqual":2,"MTLCompareFunctionLessEqual":3,"MTLCompareFunctionGreater":4,"MTLCompareFunctionNotEqual":5,"MTLCompareFunctionGreaterEqual":6,"MTLCompareFunctionAlways":7})
+- Name: 'MTLStencilOperation'
+  JsName: 'MTLStencilOperation'
+  Module: 'Metal.MTLDepthStencil'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLStencilOperationKeep":0,"MTLStencilOperationZero":1,"MTLStencilOperationReplace":2,"MTLStencilOperationIncrementClamp":3,"MTLStencilOperationDecrementClamp":4,"MTLStencilOperationInvert":5,"MTLStencilOperationIncrementWrap":6,"MTLStencilOperationDecrementWrap":7})
+- Name: 'MTLStencilDescriptor'
+  JsName: 'MTLStencilDescriptor'
+  Module: 'Metal.MTLDepthStencil'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'depthFailureOperation'
+    JsName: 'depthFailureOperation'
+    Module: 'Metal.MTLDepthStencil'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'depthFailureOperation'
+      JsName: 'depthFailureOperation'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'depthFailureOperation'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setDepthFailureOperation:'
+      JsName: 'setDepthFailureOperation'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDepthFailureOperation:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'depthStencilPassOperation'
+    JsName: 'depthStencilPassOperation'
+    Module: 'Metal.MTLDepthStencil'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'depthStencilPassOperation'
+      JsName: 'depthStencilPassOperation'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'depthStencilPassOperation'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setDepthStencilPassOperation:'
+      JsName: 'setDepthStencilPassOperation'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDepthStencilPassOperation:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'readMask'
+    JsName: 'readMask'
+    Module: 'Metal.MTLDepthStencil'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'readMask'
+      JsName: 'readMask'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'readMask'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I16@0:8'
+    Setter:
+      Name: 'setReadMask:'
+      JsName: 'setReadMask'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setReadMask:'
+      Signature:
+      - Type: Void
+      - Type: UInt
+      TypeEncoding: 'v20@0:8I16'
+  - Name: 'stencilCompareFunction'
+    JsName: 'stencilCompareFunction'
+    Module: 'Metal.MTLDepthStencil'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'stencilCompareFunction'
+      JsName: 'stencilCompareFunction'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'stencilCompareFunction'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setStencilCompareFunction:'
+      JsName: 'setStencilCompareFunction'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setStencilCompareFunction:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'stencilFailureOperation'
+    JsName: 'stencilFailureOperation'
+    Module: 'Metal.MTLDepthStencil'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'stencilFailureOperation'
+      JsName: 'stencilFailureOperation'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'stencilFailureOperation'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setStencilFailureOperation:'
+      JsName: 'setStencilFailureOperation'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setStencilFailureOperation:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'writeMask'
+    JsName: 'writeMask'
+    Module: 'Metal.MTLDepthStencil'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'writeMask'
+      JsName: 'writeMask'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'writeMask'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I16@0:8'
+    Setter:
+      Name: 'setWriteMask:'
+      JsName: 'setWriteMask'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setWriteMask:'
+      Signature:
+      - Type: Void
+      - Type: UInt
+      TypeEncoding: 'v20@0:8I16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLDepthStencilDescriptor'
+  JsName: 'MTLDepthStencilDescriptor'
+  Module: 'Metal.MTLDepthStencil'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'backFaceStencil'
+    JsName: 'backFaceStencil'
+    Module: 'Metal.MTLDepthStencil'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'backFaceStencil'
+      JsName: 'backFaceStencil'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'backFaceStencil'
+      Signature:
+      - Type: Interface
+        Module: Metal.MTLDepthStencil
+        Name: MTLStencilDescriptor
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setBackFaceStencil:'
+      JsName: 'setBackFaceStencil'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setBackFaceStencil:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Metal.MTLDepthStencil
+        Name: MTLStencilDescriptor
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'depthCompareFunction'
+    JsName: 'depthCompareFunction'
+    Module: 'Metal.MTLDepthStencil'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'depthCompareFunction'
+      JsName: 'depthCompareFunction'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'depthCompareFunction'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setDepthCompareFunction:'
+      JsName: 'setDepthCompareFunction'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDepthCompareFunction:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'depthWriteEnabled'
+    JsName: 'depthWriteEnabled'
+    Module: 'Metal.MTLDepthStencil'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isDepthWriteEnabled'
+      JsName: 'isDepthWriteEnabled'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isDepthWriteEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setDepthWriteEnabled:'
+      JsName: 'setDepthWriteEnabled'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDepthWriteEnabled:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'frontFaceStencil'
+    JsName: 'frontFaceStencil'
+    Module: 'Metal.MTLDepthStencil'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'frontFaceStencil'
+      JsName: 'frontFaceStencil'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'frontFaceStencil'
+      Signature:
+      - Type: Interface
+        Module: Metal.MTLDepthStencil
+        Name: MTLStencilDescriptor
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setFrontFaceStencil:'
+      JsName: 'setFrontFaceStencil'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setFrontFaceStencil:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Metal.MTLDepthStencil
+        Name: MTLStencilDescriptor
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'label'
+    JsName: 'label'
+    Module: 'Metal.MTLDepthStencil'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'label'
+      JsName: 'label'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'label'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setLabel:'
+      JsName: 'setLabel'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLabel:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLDepthStencilState'
+  JsName: 'MTLDepthStencilState'
+  Module: 'Metal.MTLDepthStencil'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'device'
+    JsName: 'device'
+    Module: 'Metal.MTLDepthStencil'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'device'
+      JsName: 'device'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'device'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLDevice
+          Name: MTLDevice
+      TypeEncoding: '@16@0:8'
+  - Name: 'label'
+    JsName: 'label'
+    Module: 'Metal.MTLDepthStencil'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'label'
+      JsName: 'label'
+      Module: 'Metal.MTLDepthStencil'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'label'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MTLDrawable'
+  JsName: 'MTLDrawable'
+  Module: 'Metal.MTLDrawable'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'present'
+    JsName: 'present'
+    Module: 'Metal.MTLDrawable'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'present'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'presentAtTime:'
+    JsName: 'presentAtTime'
+    Module: 'Metal.MTLDrawable'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'presentAtTime:'
+    Signature:
+    - Type: Void
+    - Type: Double
+    TypeEncoding: 'v24@0:8d16'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MTLLoadAction'
+  JsName: 'MTLLoadAction'
+  Module: 'Metal.MTLRenderPass'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLLoadActionDontCare":0,"MTLLoadActionLoad":1,"MTLLoadActionClear":2})
+- Name: 'MTLStoreAction'
+  JsName: 'MTLStoreAction'
+  Module: 'Metal.MTLRenderPass'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLStoreActionDontCare":0,"MTLStoreActionStore":1,"MTLStoreActionMultisampleResolve":2})
+- Name: '1472'
+  JsName: 'MTLClearColor'
+  Module: 'Metal.MTLRenderPass'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: red
+    Signature:
+      Type: Double
+  - Name: green
+    Signature:
+      Type: Double
+  - Name: blue
+    Signature:
+      Type: Double
+  - Name: alpha
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: 'MTLRenderPassAttachmentDescriptor'
+  JsName: 'MTLRenderPassAttachmentDescriptor'
+  Module: 'Metal.MTLRenderPass'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'depthPlane'
+    JsName: 'depthPlane'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'depthPlane'
+      JsName: 'depthPlane'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'depthPlane'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setDepthPlane:'
+      JsName: 'setDepthPlane'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDepthPlane:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'level'
+    JsName: 'level'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'level'
+      JsName: 'level'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'level'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setLevel:'
+      JsName: 'setLevel'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLevel:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'loadAction'
+    JsName: 'loadAction'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'loadAction'
+      JsName: 'loadAction'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'loadAction'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setLoadAction:'
+      JsName: 'setLoadAction'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLoadAction:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'resolveDepthPlane'
+    JsName: 'resolveDepthPlane'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'resolveDepthPlane'
+      JsName: 'resolveDepthPlane'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'resolveDepthPlane'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setResolveDepthPlane:'
+      JsName: 'setResolveDepthPlane'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setResolveDepthPlane:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'resolveLevel'
+    JsName: 'resolveLevel'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'resolveLevel'
+      JsName: 'resolveLevel'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'resolveLevel'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setResolveLevel:'
+      JsName: 'setResolveLevel'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setResolveLevel:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'resolveSlice'
+    JsName: 'resolveSlice'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'resolveSlice'
+      JsName: 'resolveSlice'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'resolveSlice'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setResolveSlice:'
+      JsName: 'setResolveSlice'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setResolveSlice:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'resolveTexture'
+    JsName: 'resolveTexture'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'resolveTexture'
+      JsName: 'resolveTexture'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'resolveTexture'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLTexture
+          Name: MTLTexture
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setResolveTexture:'
+      JsName: 'setResolveTexture'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setResolveTexture:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLTexture
+          Name: MTLTexture
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'slice'
+    JsName: 'slice'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'slice'
+      JsName: 'slice'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'slice'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setSlice:'
+      JsName: 'setSlice'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSlice:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'storeAction'
+    JsName: 'storeAction'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'storeAction'
+      JsName: 'storeAction'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'storeAction'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setStoreAction:'
+      JsName: 'setStoreAction'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setStoreAction:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'texture'
+    JsName: 'texture'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'texture'
+      JsName: 'texture'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'texture'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLTexture
+          Name: MTLTexture
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setTexture:'
+      JsName: 'setTexture'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setTexture:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLTexture
+          Name: MTLTexture
+      TypeEncoding: 'v24@0:8@16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLRenderPassColorAttachmentDescriptor'
+  JsName: 'MTLRenderPassColorAttachmentDescriptor'
+  Module: 'Metal.MTLRenderPass'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'clearColor'
+    JsName: 'clearColor'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'clearColor'
+      JsName: 'clearColor'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'clearColor'
+      Signature:
+      - Type: Struct
+        Module: Metal.MTLRenderPass
+        Name: MTLClearColor
+      TypeEncoding: '{?=dddd}16@0:8'
+    Setter:
+      Name: 'setClearColor:'
+      JsName: 'setClearColor'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setClearColor:'
+      Signature:
+      - Type: Void
+      - Type: Struct
+        Module: Metal.MTLRenderPass
+        Name: MTLClearColor
+      TypeEncoding: 'v48@0:8{?=dddd}16'
+  Protocols: []
+  Base:
+    Module: Metal.MTLRenderPass
+    Name: MTLRenderPassAttachmentDescriptor
+  Type: Interface
+- Name: 'MTLRenderPassDepthAttachmentDescriptor'
+  JsName: 'MTLRenderPassDepthAttachmentDescriptor'
+  Module: 'Metal.MTLRenderPass'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'clearDepth'
+    JsName: 'clearDepth'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'clearDepth'
+      JsName: 'clearDepth'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'clearDepth'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+    Setter:
+      Name: 'setClearDepth:'
+      JsName: 'setClearDepth'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setClearDepth:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v24@0:8d16'
+  Protocols: []
+  Base:
+    Module: Metal.MTLRenderPass
+    Name: MTLRenderPassAttachmentDescriptor
+  Type: Interface
+- Name: 'MTLRenderPassStencilAttachmentDescriptor'
+  JsName: 'MTLRenderPassStencilAttachmentDescriptor'
+  Module: 'Metal.MTLRenderPass'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'clearStencil'
+    JsName: 'clearStencil'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'clearStencil'
+      JsName: 'clearStencil'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'clearStencil'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I16@0:8'
+    Setter:
+      Name: 'setClearStencil:'
+      JsName: 'setClearStencil'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setClearStencil:'
+      Signature:
+      - Type: Void
+      - Type: UInt
+      TypeEncoding: 'v20@0:8I16'
+  Protocols: []
+  Base:
+    Module: Metal.MTLRenderPass
+    Name: MTLRenderPassAttachmentDescriptor
+  Type: Interface
+- Name: 'MTLRenderPassColorAttachmentDescriptorArray'
+  JsName: 'MTLRenderPassColorAttachmentDescriptorArray'
+  Module: 'Metal.MTLRenderPass'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'objectAtIndexedSubscript:'
+    JsName: 'objectAtIndexedSubscript'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'objectAtIndexedSubscript:'
+    Signature:
+    - Type: Interface
+      Module: Metal.MTLRenderPass
+      Name: MTLRenderPassColorAttachmentDescriptor
+    - Type: ULong
+    TypeEncoding: '@24@0:8Q16'
+  - Name: 'setObject:atIndexedSubscript:'
+    JsName: 'setObjectAtIndexedSubscript'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setObject:atIndexedSubscript:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Metal.MTLRenderPass
+      Name: MTLRenderPassColorAttachmentDescriptor
+    - Type: ULong
+    TypeEncoding: 'v32@0:8@16Q24'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLRenderPassDescriptor'
+  JsName: 'MTLRenderPassDescriptor'
+  Module: 'Metal.MTLRenderPass'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'renderPassDescriptor'
+    JsName: 'renderPassDescriptor'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'renderPassDescriptor'
+    Signature:
+    - Type: Interface
+      Module: Metal.MTLRenderPass
+      Name: MTLRenderPassDescriptor
+    TypeEncoding: '@16@0:8'
+  Properties:
+  - Name: 'colorAttachments'
+    JsName: 'colorAttachments'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'colorAttachments'
+      JsName: 'colorAttachments'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'colorAttachments'
+      Signature:
+      - Type: Interface
+        Module: Metal.MTLRenderPass
+        Name: MTLRenderPassColorAttachmentDescriptorArray
+      TypeEncoding: '@16@0:8'
+  - Name: 'depthAttachment'
+    JsName: 'depthAttachment'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'depthAttachment'
+      JsName: 'depthAttachment'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'depthAttachment'
+      Signature:
+      - Type: Interface
+        Module: Metal.MTLRenderPass
+        Name: MTLRenderPassDepthAttachmentDescriptor
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDepthAttachment:'
+      JsName: 'setDepthAttachment'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDepthAttachment:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Metal.MTLRenderPass
+        Name: MTLRenderPassDepthAttachmentDescriptor
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'stencilAttachment'
+    JsName: 'stencilAttachment'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'stencilAttachment'
+      JsName: 'stencilAttachment'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'stencilAttachment'
+      Signature:
+      - Type: Interface
+        Module: Metal.MTLRenderPass
+        Name: MTLRenderPassStencilAttachmentDescriptor
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setStencilAttachment:'
+      JsName: 'setStencilAttachment'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setStencilAttachment:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Metal.MTLRenderPass
+        Name: MTLRenderPassStencilAttachmentDescriptor
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'visibilityResultBuffer'
+    JsName: 'visibilityResultBuffer'
+    Module: 'Metal.MTLRenderPass'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'visibilityResultBuffer'
+      JsName: 'visibilityResultBuffer'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'visibilityResultBuffer'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLBuffer
+          Name: MTLBuffer
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setVisibilityResultBuffer:'
+      JsName: 'setVisibilityResultBuffer'
+      Module: 'Metal.MTLRenderPass'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setVisibilityResultBuffer:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLBuffer
+          Name: MTLBuffer
+      TypeEncoding: 'v24@0:8@16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLDataType'
+  JsName: 'MTLDataType'
+  Module: 'Metal.MTLArgument'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLDataTypeNone":0,"MTLDataTypeStruct":1,"MTLDataTypeArray":2,"MTLDataTypeFloat":3,"MTLDataTypeFloat2":4,"MTLDataTypeFloat3":5,"MTLDataTypeFloat4":6,"MTLDataTypeFloat2x2":7,"MTLDataTypeFloat2x3":8,"MTLDataTypeFloat2x4":9,"MTLDataTypeFloat3x2":10,"MTLDataTypeFloat3x3":11,"MTLDataTypeFloat3x4":12,"MTLDataTypeFloat4x2":13,"MTLDataTypeFloat4x3":14,"MTLDataTypeFloat4x4":15,"MTLDataTypeHalf":16,"MTLDataTypeHalf2":17,"MTLDataTypeHalf3":18,"MTLDataTypeHalf4":19,"MTLDataTypeHalf2x2":20,"MTLDataTypeHalf2x3":21,"MTLDataTypeHalf2x4":22,"MTLDataTypeHalf3x2":23,"MTLDataTypeHalf3x3":24,"MTLDataTypeHalf3x4":25,"MTLDataTypeHalf4x2":26,"MTLDataTypeHalf4x3":27,"MTLDataTypeHalf4x4":28,"MTLDataTypeInt":29,"MTLDataTypeInt2":30,"MTLDataTypeInt3":31,"MTLDataTypeInt4":32,"MTLDataTypeUInt":33,"MTLDataTypeUInt2":34,"MTLDataTypeUInt3":35,"MTLDataTypeUInt4":36,"MTLDataTypeShort":37,"MTLDataTypeShort2":38,"MTLDataTypeShort3":39,"MTLDataTypeShort4":40,"MTLDataTypeUShort":41,"MTLDataTypeUShort2":42,"MTLDataTypeUShort3":43,"MTLDataTypeUShort4":44,"MTLDataTypeChar":45,"MTLDataTypeChar2":46,"MTLDataTypeChar3":47,"MTLDataTypeChar4":48,"MTLDataTypeUChar":49,"MTLDataTypeUChar2":50,"MTLDataTypeUChar3":51,"MTLDataTypeUChar4":52,"MTLDataTypeBool":53,"MTLDataTypeBool2":54,"MTLDataTypeBool3":55,"MTLDataTypeBool4":56})
+- Name: 'MTLArgumentType'
+  JsName: 'MTLArgumentType'
+  Module: 'Metal.MTLArgument'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLArgumentTypeBuffer":0,"MTLArgumentTypeThreadgroupMemory":1,"MTLArgumentTypeTexture":2,"MTLArgumentTypeSampler":3})
+- Name: 'MTLArgumentAccess'
+  JsName: 'MTLArgumentAccess'
+  Module: 'Metal.MTLArgument'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLArgumentAccessReadOnly":0,"MTLArgumentAccessReadWrite":1,"MTLArgumentAccessWriteOnly":2})
+- Name: 'MTLStructMember'
+  JsName: 'MTLStructMember'
+  Module: 'Metal.MTLArgument'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'arrayType'
+    JsName: 'arrayType'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'arrayType'
+    Signature:
+    - Type: Interface
+      Module: Metal.MTLArgument
+      Name: MTLArrayType
+    TypeEncoding: '@16@0:8'
+  - Name: 'structType'
+    JsName: 'structType'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'structType'
+    Signature:
+    - Type: Interface
+      Module: Metal.MTLArgument
+      Name: MTLStructType
+    TypeEncoding: '@16@0:8'
+  StaticMethods: []
+  Properties:
+  - Name: 'dataType'
+    JsName: 'dataType'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'dataType'
+      JsName: 'dataType'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'dataType'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'offset'
+    JsName: 'offset'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'offset'
+      JsName: 'offset'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'offset'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLStructType'
+  JsName: 'MTLStructType'
+  Module: 'Metal.MTLArgument'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'memberByName:'
+    JsName: 'memberByName'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'memberByName:'
+    Signature:
+    - Type: Interface
+      Module: Metal.MTLArgument
+      Name: MTLStructMember
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'members'
+    JsName: 'members'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'members'
+      JsName: 'members'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'members'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLArrayType'
+  JsName: 'MTLArrayType'
+  Module: 'Metal.MTLArgument'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'elementArrayType'
+    JsName: 'elementArrayType'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'elementArrayType'
+    Signature:
+    - Type: Interface
+      Module: Metal.MTLArgument
+      Name: MTLArrayType
+    TypeEncoding: '@16@0:8'
+  - Name: 'elementStructType'
+    JsName: 'elementStructType'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'elementStructType'
+    Signature:
+    - Type: Interface
+      Module: Metal.MTLArgument
+      Name: MTLStructType
+    TypeEncoding: '@16@0:8'
+  StaticMethods: []
+  Properties:
+  - Name: 'arrayLength'
+    JsName: 'arrayLength'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'arrayLength'
+      JsName: 'arrayLength'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'arrayLength'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'elementType'
+    JsName: 'elementType'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'elementType'
+      JsName: 'elementType'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'elementType'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'stride'
+    JsName: 'stride'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'stride'
+      JsName: 'stride'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'stride'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLArgument'
+  JsName: 'MTLArgument'
+  Module: 'Metal.MTLArgument'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'access'
+    JsName: 'access'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'access'
+      JsName: 'access'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'access'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'active'
+    JsName: 'active'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isActive'
+      JsName: 'isActive'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isActive'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'bufferAlignment'
+    JsName: 'bufferAlignment'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'bufferAlignment'
+      JsName: 'bufferAlignment'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'bufferAlignment'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'bufferDataSize'
+    JsName: 'bufferDataSize'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'bufferDataSize'
+      JsName: 'bufferDataSize'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'bufferDataSize'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'bufferDataType'
+    JsName: 'bufferDataType'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'bufferDataType'
+      JsName: 'bufferDataType'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'bufferDataType'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'bufferStructType'
+    JsName: 'bufferStructType'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'bufferStructType'
+      JsName: 'bufferStructType'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'bufferStructType'
+      Signature:
+      - Type: Interface
+        Module: Metal.MTLArgument
+        Name: MTLStructType
+      TypeEncoding: '@16@0:8'
+  - Name: 'index'
+    JsName: 'index'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'index'
+      JsName: 'index'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'index'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'textureDataType'
+    JsName: 'textureDataType'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'textureDataType'
+      JsName: 'textureDataType'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'textureDataType'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'textureType'
+    JsName: 'textureType'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'textureType'
+      JsName: 'textureType'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'textureType'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'threadgroupMemoryAlignment'
+    JsName: 'threadgroupMemoryAlignment'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'threadgroupMemoryAlignment'
+      JsName: 'threadgroupMemoryAlignment'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'threadgroupMemoryAlignment'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'threadgroupMemoryDataSize'
+    JsName: 'threadgroupMemoryDataSize'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'threadgroupMemoryDataSize'
+      JsName: 'threadgroupMemoryDataSize'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'threadgroupMemoryDataSize'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'type'
+    JsName: 'type'
+    Module: 'Metal.MTLArgument'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'type'
+      JsName: 'type'
+      Module: 'Metal.MTLArgument'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'type'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLComputePipelineReflection'
+  JsName: 'MTLComputePipelineReflection'
+  Module: 'Metal.MTLComputePipeline'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'arguments'
+    JsName: 'arguments'
+    Module: 'Metal.MTLComputePipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'arguments'
+      JsName: 'arguments'
+      Module: 'Metal.MTLComputePipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'arguments'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLComputePipelineState'
+  JsName: 'MTLComputePipelineState'
+  Module: 'Metal.MTLComputePipeline'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'device'
+    JsName: 'device'
+    Module: 'Metal.MTLComputePipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'device'
+      JsName: 'device'
+      Module: 'Metal.MTLComputePipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'device'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLDevice
+          Name: MTLDevice
+      TypeEncoding: '@16@0:8'
+  - Name: 'maxTotalThreadsPerThreadgroup'
+    JsName: 'maxTotalThreadsPerThreadgroup'
+    Module: 'Metal.MTLComputePipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'maxTotalThreadsPerThreadgroup'
+      JsName: 'maxTotalThreadsPerThreadgroup'
+      Module: 'Metal.MTLComputePipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'maxTotalThreadsPerThreadgroup'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'threadExecutionWidth'
+    JsName: 'threadExecutionWidth'
+    Module: 'Metal.MTLComputePipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'threadExecutionWidth'
+      JsName: 'threadExecutionWidth'
+      Module: 'Metal.MTLComputePipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'threadExecutionWidth'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MTLBlendFactor'
+  JsName: 'MTLBlendFactor'
+  Module: 'Metal.MTLRenderPipeline'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLBlendFactorZero":0,"MTLBlendFactorOne":1,"MTLBlendFactorSourceColor":2,"MTLBlendFactorOneMinusSourceColor":3,"MTLBlendFactorSourceAlpha":4,"MTLBlendFactorOneMinusSourceAlpha":5,"MTLBlendFactorDestinationColor":6,"MTLBlendFactorOneMinusDestinationColor":7,"MTLBlendFactorDestinationAlpha":8,"MTLBlendFactorOneMinusDestinationAlpha":9,"MTLBlendFactorSourceAlphaSaturated":10,"MTLBlendFactorBlendColor":11,"MTLBlendFactorOneMinusBlendColor":12,"MTLBlendFactorBlendAlpha":13,"MTLBlendFactorOneMinusBlendAlpha":14})
+- Name: 'MTLBlendOperation'
+  JsName: 'MTLBlendOperation'
+  Module: 'Metal.MTLRenderPipeline'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLBlendOperationAdd":0,"MTLBlendOperationSubtract":1,"MTLBlendOperationReverseSubtract":2,"MTLBlendOperationMin":3,"MTLBlendOperationMax":4})
+- Name: 'MTLColorWriteMask'
+  JsName: 'MTLColorWriteMask'
+  Module: 'Metal.MTLRenderPipeline'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLColorWriteMaskNone":0,"MTLColorWriteMaskRed":8,"MTLColorWriteMaskGreen":4,"MTLColorWriteMaskBlue":2,"MTLColorWriteMaskAlpha":1,"MTLColorWriteMaskAll":15})
+- Name: 'MTLRenderPipelineColorAttachmentDescriptor'
+  JsName: 'MTLRenderPipelineColorAttachmentDescriptor'
+  Module: 'Metal.MTLRenderPipeline'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'alphaBlendOperation'
+    JsName: 'alphaBlendOperation'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'alphaBlendOperation'
+      JsName: 'alphaBlendOperation'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'alphaBlendOperation'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setAlphaBlendOperation:'
+      JsName: 'setAlphaBlendOperation'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAlphaBlendOperation:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'blendingEnabled'
+    JsName: 'blendingEnabled'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isBlendingEnabled'
+      JsName: 'isBlendingEnabled'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isBlendingEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setBlendingEnabled:'
+      JsName: 'setBlendingEnabled'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setBlendingEnabled:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'destinationAlphaBlendFactor'
+    JsName: 'destinationAlphaBlendFactor'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'destinationAlphaBlendFactor'
+      JsName: 'destinationAlphaBlendFactor'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'destinationAlphaBlendFactor'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setDestinationAlphaBlendFactor:'
+      JsName: 'setDestinationAlphaBlendFactor'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDestinationAlphaBlendFactor:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'destinationRGBBlendFactor'
+    JsName: 'destinationRGBBlendFactor'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'destinationRGBBlendFactor'
+      JsName: 'destinationRGBBlendFactor'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'destinationRGBBlendFactor'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setDestinationRGBBlendFactor:'
+      JsName: 'setDestinationRGBBlendFactor'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDestinationRGBBlendFactor:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'pixelFormat'
+    JsName: 'pixelFormat'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'pixelFormat'
+      JsName: 'pixelFormat'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'pixelFormat'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setPixelFormat:'
+      JsName: 'setPixelFormat'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPixelFormat:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'rgbBlendOperation'
+    JsName: 'rgbBlendOperation'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'rgbBlendOperation'
+      JsName: 'rgbBlendOperation'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rgbBlendOperation'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setRgbBlendOperation:'
+      JsName: 'setRgbBlendOperation'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRgbBlendOperation:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'sourceAlphaBlendFactor'
+    JsName: 'sourceAlphaBlendFactor'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'sourceAlphaBlendFactor'
+      JsName: 'sourceAlphaBlendFactor'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'sourceAlphaBlendFactor'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setSourceAlphaBlendFactor:'
+      JsName: 'setSourceAlphaBlendFactor'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSourceAlphaBlendFactor:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'sourceRGBBlendFactor'
+    JsName: 'sourceRGBBlendFactor'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'sourceRGBBlendFactor'
+      JsName: 'sourceRGBBlendFactor'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'sourceRGBBlendFactor'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setSourceRGBBlendFactor:'
+      JsName: 'setSourceRGBBlendFactor'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSourceRGBBlendFactor:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'writeMask'
+    JsName: 'writeMask'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'writeMask'
+      JsName: 'writeMask'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'writeMask'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setWriteMask:'
+      JsName: 'setWriteMask'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setWriteMask:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLRenderPipelineReflection'
+  JsName: 'MTLRenderPipelineReflection'
+  Module: 'Metal.MTLRenderPipeline'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'fragmentArguments'
+    JsName: 'fragmentArguments'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'fragmentArguments'
+      JsName: 'fragmentArguments'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'fragmentArguments'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  - Name: 'vertexArguments'
+    JsName: 'vertexArguments'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'vertexArguments'
+      JsName: 'vertexArguments'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'vertexArguments'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLRenderPipelineDescriptor'
+  JsName: 'MTLRenderPipelineDescriptor'
+  Module: 'Metal.MTLRenderPipeline'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'reset'
+    JsName: 'reset'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'reset'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods: []
+  Properties:
+  - Name: 'alphaToCoverageEnabled'
+    JsName: 'alphaToCoverageEnabled'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isAlphaToCoverageEnabled'
+      JsName: 'isAlphaToCoverageEnabled'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isAlphaToCoverageEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setAlphaToCoverageEnabled:'
+      JsName: 'setAlphaToCoverageEnabled'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAlphaToCoverageEnabled:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'alphaToOneEnabled'
+    JsName: 'alphaToOneEnabled'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isAlphaToOneEnabled'
+      JsName: 'isAlphaToOneEnabled'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isAlphaToOneEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setAlphaToOneEnabled:'
+      JsName: 'setAlphaToOneEnabled'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAlphaToOneEnabled:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'colorAttachments'
+    JsName: 'colorAttachments'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'colorAttachments'
+      JsName: 'colorAttachments'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'colorAttachments'
+      Signature:
+      - Type: Interface
+        Module: Metal.MTLRenderPipeline
+        Name: MTLRenderPipelineColorAttachmentDescriptorArray
+      TypeEncoding: '@16@0:8'
+  - Name: 'depthAttachmentPixelFormat'
+    JsName: 'depthAttachmentPixelFormat'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'depthAttachmentPixelFormat'
+      JsName: 'depthAttachmentPixelFormat'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'depthAttachmentPixelFormat'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setDepthAttachmentPixelFormat:'
+      JsName: 'setDepthAttachmentPixelFormat'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDepthAttachmentPixelFormat:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'fragmentFunction'
+    JsName: 'fragmentFunction'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'fragmentFunction'
+      JsName: 'fragmentFunction'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'fragmentFunction'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLLibrary
+          Name: MTLFunction
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setFragmentFunction:'
+      JsName: 'setFragmentFunction'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setFragmentFunction:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLLibrary
+          Name: MTLFunction
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'label'
+    JsName: 'label'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'label'
+      JsName: 'label'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'label'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setLabel:'
+      JsName: 'setLabel'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLabel:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'rasterizationEnabled'
+    JsName: 'rasterizationEnabled'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isRasterizationEnabled'
+      JsName: 'isRasterizationEnabled'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isRasterizationEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setRasterizationEnabled:'
+      JsName: 'setRasterizationEnabled'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRasterizationEnabled:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'sampleCount'
+    JsName: 'sampleCount'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'sampleCount'
+      JsName: 'sampleCount'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'sampleCount'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setSampleCount:'
+      JsName: 'setSampleCount'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSampleCount:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'stencilAttachmentPixelFormat'
+    JsName: 'stencilAttachmentPixelFormat'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'stencilAttachmentPixelFormat'
+      JsName: 'stencilAttachmentPixelFormat'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'stencilAttachmentPixelFormat'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setStencilAttachmentPixelFormat:'
+      JsName: 'setStencilAttachmentPixelFormat'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setStencilAttachmentPixelFormat:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'vertexDescriptor'
+    JsName: 'vertexDescriptor'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'vertexDescriptor'
+      JsName: 'vertexDescriptor'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'vertexDescriptor'
+      Signature:
+      - Type: Interface
+        Module: Metal.MTLVertexDescriptor
+        Name: MTLVertexDescriptor
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setVertexDescriptor:'
+      JsName: 'setVertexDescriptor'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setVertexDescriptor:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Metal.MTLVertexDescriptor
+        Name: MTLVertexDescriptor
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'vertexFunction'
+    JsName: 'vertexFunction'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'vertexFunction'
+      JsName: 'vertexFunction'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'vertexFunction'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLLibrary
+          Name: MTLFunction
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setVertexFunction:'
+      JsName: 'setVertexFunction'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setVertexFunction:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLLibrary
+          Name: MTLFunction
+      TypeEncoding: 'v24@0:8@16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLRenderPipelineState'
+  JsName: 'MTLRenderPipelineState'
+  Module: 'Metal.MTLRenderPipeline'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'device'
+    JsName: 'device'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'device'
+      JsName: 'device'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'device'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLDevice
+          Name: MTLDevice
+      TypeEncoding: '@16@0:8'
+  - Name: 'label'
+    JsName: 'label'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'label'
+      JsName: 'label'
+      Module: 'Metal.MTLRenderPipeline'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'label'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MTLRenderPipelineColorAttachmentDescriptorArray'
+  JsName: 'MTLRenderPipelineColorAttachmentDescriptorArray'
+  Module: 'Metal.MTLRenderPipeline'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'objectAtIndexedSubscript:'
+    JsName: 'objectAtIndexedSubscript'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'objectAtIndexedSubscript:'
+    Signature:
+    - Type: Interface
+      Module: Metal.MTLRenderPipeline
+      Name: MTLRenderPipelineColorAttachmentDescriptor
+    - Type: ULong
+    TypeEncoding: '@24@0:8Q16'
+  - Name: 'setObject:atIndexedSubscript:'
+    JsName: 'setObjectAtIndexedSubscript'
+    Module: 'Metal.MTLRenderPipeline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setObject:atIndexedSubscript:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Metal.MTLRenderPipeline
+      Name: MTLRenderPipelineColorAttachmentDescriptor
+    - Type: ULong
+    TypeEncoding: 'v32@0:8@16Q24'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLVertexFormat'
+  JsName: 'MTLVertexFormat'
+  Module: 'Metal.MTLVertexDescriptor'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLVertexFormatInvalid":0,"MTLVertexFormatUChar2":1,"MTLVertexFormatUChar3":2,"MTLVertexFormatUChar4":3,"MTLVertexFormatChar2":4,"MTLVertexFormatChar3":5,"MTLVertexFormatChar4":6,"MTLVertexFormatUChar2Normalized":7,"MTLVertexFormatUChar3Normalized":8,"MTLVertexFormatUChar4Normalized":9,"MTLVertexFormatChar2Normalized":10,"MTLVertexFormatChar3Normalized":11,"MTLVertexFormatChar4Normalized":12,"MTLVertexFormatUShort2":13,"MTLVertexFormatUShort3":14,"MTLVertexFormatUShort4":15,"MTLVertexFormatShort2":16,"MTLVertexFormatShort3":17,"MTLVertexFormatShort4":18,"MTLVertexFormatUShort2Normalized":19,"MTLVertexFormatUShort3Normalized":20,"MTLVertexFormatUShort4Normalized":21,"MTLVertexFormatShort2Normalized":22,"MTLVertexFormatShort3Normalized":23,"MTLVertexFormatShort4Normalized":24,"MTLVertexFormatHalf2":25,"MTLVertexFormatHalf3":26,"MTLVertexFormatHalf4":27,"MTLVertexFormatFloat":28,"MTLVertexFormatFloat2":29,"MTLVertexFormatFloat3":30,"MTLVertexFormatFloat4":31,"MTLVertexFormatInt":32,"MTLVertexFormatInt2":33,"MTLVertexFormatInt3":34,"MTLVertexFormatInt4":35,"MTLVertexFormatUInt":36,"MTLVertexFormatUInt2":37,"MTLVertexFormatUInt3":38,"MTLVertexFormatUInt4":39,"MTLVertexFormatInt1010102Normalized":40,"MTLVertexFormatUInt1010102Normalized":41})
+- Name: 'MTLVertexStepFunction'
+  JsName: 'MTLVertexStepFunction'
+  Module: 'Metal.MTLVertexDescriptor'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLVertexStepFunctionConstant":0,"MTLVertexStepFunctionPerVertex":1,"MTLVertexStepFunctionPerInstance":2})
+- Name: 'MTLVertexBufferLayoutDescriptor'
+  JsName: 'MTLVertexBufferLayoutDescriptor'
+  Module: 'Metal.MTLVertexDescriptor'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'stepFunction'
+    JsName: 'stepFunction'
+    Module: 'Metal.MTLVertexDescriptor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'stepFunction'
+      JsName: 'stepFunction'
+      Module: 'Metal.MTLVertexDescriptor'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'stepFunction'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setStepFunction:'
+      JsName: 'setStepFunction'
+      Module: 'Metal.MTLVertexDescriptor'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setStepFunction:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'stepRate'
+    JsName: 'stepRate'
+    Module: 'Metal.MTLVertexDescriptor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'stepRate'
+      JsName: 'stepRate'
+      Module: 'Metal.MTLVertexDescriptor'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'stepRate'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setStepRate:'
+      JsName: 'setStepRate'
+      Module: 'Metal.MTLVertexDescriptor'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setStepRate:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'stride'
+    JsName: 'stride'
+    Module: 'Metal.MTLVertexDescriptor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'stride'
+      JsName: 'stride'
+      Module: 'Metal.MTLVertexDescriptor'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'stride'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setStride:'
+      JsName: 'setStride'
+      Module: 'Metal.MTLVertexDescriptor'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setStride:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLVertexBufferLayoutDescriptorArray'
+  JsName: 'MTLVertexBufferLayoutDescriptorArray'
+  Module: 'Metal.MTLVertexDescriptor'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'objectAtIndexedSubscript:'
+    JsName: 'objectAtIndexedSubscript'
+    Module: 'Metal.MTLVertexDescriptor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'objectAtIndexedSubscript:'
+    Signature:
+    - Type: Interface
+      Module: Metal.MTLVertexDescriptor
+      Name: MTLVertexBufferLayoutDescriptor
+    - Type: ULong
+    TypeEncoding: '@24@0:8Q16'
+  - Name: 'setObject:atIndexedSubscript:'
+    JsName: 'setObjectAtIndexedSubscript'
+    Module: 'Metal.MTLVertexDescriptor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setObject:atIndexedSubscript:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Metal.MTLVertexDescriptor
+      Name: MTLVertexBufferLayoutDescriptor
+    - Type: ULong
+    TypeEncoding: 'v32@0:8@16Q24'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLVertexAttributeDescriptor'
+  JsName: 'MTLVertexAttributeDescriptor'
+  Module: 'Metal.MTLVertexDescriptor'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'bufferIndex'
+    JsName: 'bufferIndex'
+    Module: 'Metal.MTLVertexDescriptor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'bufferIndex'
+      JsName: 'bufferIndex'
+      Module: 'Metal.MTLVertexDescriptor'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'bufferIndex'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setBufferIndex:'
+      JsName: 'setBufferIndex'
+      Module: 'Metal.MTLVertexDescriptor'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setBufferIndex:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'format'
+    JsName: 'format'
+    Module: 'Metal.MTLVertexDescriptor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'format'
+      JsName: 'format'
+      Module: 'Metal.MTLVertexDescriptor'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'format'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setFormat:'
+      JsName: 'setFormat'
+      Module: 'Metal.MTLVertexDescriptor'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setFormat:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'offset'
+    JsName: 'offset'
+    Module: 'Metal.MTLVertexDescriptor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'offset'
+      JsName: 'offset'
+      Module: 'Metal.MTLVertexDescriptor'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'offset'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setOffset:'
+      JsName: 'setOffset'
+      Module: 'Metal.MTLVertexDescriptor'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setOffset:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLVertexAttributeDescriptorArray'
+  JsName: 'MTLVertexAttributeDescriptorArray'
+  Module: 'Metal.MTLVertexDescriptor'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'objectAtIndexedSubscript:'
+    JsName: 'objectAtIndexedSubscript'
+    Module: 'Metal.MTLVertexDescriptor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'objectAtIndexedSubscript:'
+    Signature:
+    - Type: Interface
+      Module: Metal.MTLVertexDescriptor
+      Name: MTLVertexAttributeDescriptor
+    - Type: ULong
+    TypeEncoding: '@24@0:8Q16'
+  - Name: 'setObject:atIndexedSubscript:'
+    JsName: 'setObjectAtIndexedSubscript'
+    Module: 'Metal.MTLVertexDescriptor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setObject:atIndexedSubscript:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Metal.MTLVertexDescriptor
+      Name: MTLVertexAttributeDescriptor
+    - Type: ULong
+    TypeEncoding: 'v32@0:8@16Q24'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLVertexDescriptor'
+  JsName: 'MTLVertexDescriptor'
+  Module: 'Metal.MTLVertexDescriptor'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'reset'
+    JsName: 'reset'
+    Module: 'Metal.MTLVertexDescriptor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'reset'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods:
+  - Name: 'vertexDescriptor'
+    JsName: 'vertexDescriptor'
+    Module: 'Metal.MTLVertexDescriptor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'vertexDescriptor'
+    Signature:
+    - Type: Interface
+      Module: Metal.MTLVertexDescriptor
+      Name: MTLVertexDescriptor
+    TypeEncoding: '@16@0:8'
+  Properties:
+  - Name: 'attributes'
+    JsName: 'attributes'
+    Module: 'Metal.MTLVertexDescriptor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'attributes'
+      JsName: 'attributes'
+      Module: 'Metal.MTLVertexDescriptor'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'attributes'
+      Signature:
+      - Type: Interface
+        Module: Metal.MTLVertexDescriptor
+        Name: MTLVertexAttributeDescriptorArray
+      TypeEncoding: '@16@0:8'
+  - Name: 'layouts'
+    JsName: 'layouts'
+    Module: 'Metal.MTLVertexDescriptor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'layouts'
+      JsName: 'layouts'
+      Module: 'Metal.MTLVertexDescriptor'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'layouts'
+      Signature:
+      - Type: Interface
+        Module: Metal.MTLVertexDescriptor
+        Name: MTLVertexBufferLayoutDescriptorArray
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLParallelRenderCommandEncoder'
+  JsName: 'MTLParallelRenderCommandEncoder'
+  Module: 'Metal.MTLParallelRenderCommandEncoder'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'renderCommandEncoder'
+    JsName: 'renderCommandEncoder'
+    Module: 'Metal.MTLParallelRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'renderCommandEncoder'
+    Signature:
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLRenderCommandEncoder
+        Name: MTLRenderCommandEncoder
+    TypeEncoding: '@16@0:8'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: Metal.MTLCommandEncoder
+    Name: MTLCommandEncoder
+  Type: Protocol
+- Name: 'MTLPrimitiveType'
+  JsName: 'MTLPrimitiveType'
+  Module: 'Metal.MTLRenderCommandEncoder'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLPrimitiveTypePoint":0,"MTLPrimitiveTypeLine":1,"MTLPrimitiveTypeLineStrip":2,"MTLPrimitiveTypeTriangle":3,"MTLPrimitiveTypeTriangleStrip":4})
+- Name: 'MTLIndexType'
+  JsName: 'MTLIndexType'
+  Module: 'Metal.MTLRenderCommandEncoder'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLIndexTypeUInt16":0,"MTLIndexTypeUInt32":1})
+- Name: 'MTLVisibilityResultMode'
+  JsName: 'MTLVisibilityResultMode'
+  Module: 'Metal.MTLRenderCommandEncoder'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLVisibilityResultModeDisabled":0,"MTLVisibilityResultModeBoolean":1})
+- Name: '1473'
+  JsName: 'MTLScissorRect'
+  Module: 'Metal.MTLRenderCommandEncoder'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: x
+    Signature:
+      Type: ULong
+  - Name: y
+    Signature:
+      Type: ULong
+  - Name: width
+    Signature:
+      Type: ULong
+  - Name: height
+    Signature:
+      Type: ULong
+  Type: Struct
+- Name: '1474'
+  JsName: 'MTLViewport'
+  Module: 'Metal.MTLRenderCommandEncoder'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: originX
+    Signature:
+      Type: Double
+  - Name: originY
+    Signature:
+      Type: Double
+  - Name: width
+    Signature:
+      Type: Double
+  - Name: height
+    Signature:
+      Type: Double
+  - Name: znear
+    Signature:
+      Type: Double
+  - Name: zfar
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: 'MTLCullMode'
+  JsName: 'MTLCullMode'
+  Module: 'Metal.MTLRenderCommandEncoder'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLCullModeNone":0,"MTLCullModeFront":1,"MTLCullModeBack":2})
+- Name: 'MTLWinding'
+  JsName: 'MTLWinding'
+  Module: 'Metal.MTLRenderCommandEncoder'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLWindingClockwise":0,"MTLWindingCounterClockwise":1})
+- Name: 'MTLTriangleFillMode'
+  JsName: 'MTLTriangleFillMode'
+  Module: 'Metal.MTLRenderCommandEncoder'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLTriangleFillModeFill":0,"MTLTriangleFillModeLines":1})
+- Name: 'MTLRenderCommandEncoder'
+  JsName: 'MTLRenderCommandEncoder'
+  Module: 'Metal.MTLRenderCommandEncoder'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'drawIndexedPrimitives:indexCount:indexType:indexBuffer:indexBufferOffset:'
+    JsName: 'drawIndexedPrimitivesIndexCountIndexTypeIndexBufferIndexBufferOffset'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'drawIndexedPrimitives:indexCount:indexType:indexBuffer:indexBufferOffset:'
+    Signature:
+    - Type: Void
+    - Type: ULong
+    - Type: ULong
+    - Type: ULong
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLBuffer
+        Name: MTLBuffer
+    - Type: ULong
+    TypeEncoding: 'v56@0:8Q16Q24Q32@40Q48'
+  - Name: 'drawIndexedPrimitives:indexCount:indexType:indexBuffer:indexBufferOffset:instanceCount:'
+    JsName: 'drawIndexedPrimitivesIndexCountIndexTypeIndexBufferIndexBufferOffsetInstanceCount'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'drawIndexedPrimitives:indexCount:indexType:indexBuffer:indexBufferOffset:instanceCount:'
+    Signature:
+    - Type: Void
+    - Type: ULong
+    - Type: ULong
+    - Type: ULong
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLBuffer
+        Name: MTLBuffer
+    - Type: ULong
+    - Type: ULong
+    TypeEncoding: 'v64@0:8Q16Q24Q32@40Q48Q56'
+  - Name: 'drawPrimitives:vertexStart:vertexCount:'
+    JsName: 'drawPrimitivesVertexStartVertexCount'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'drawPrimitives:vertexStart:vertexCount:'
+    Signature:
+    - Type: Void
+    - Type: ULong
+    - Type: ULong
+    - Type: ULong
+    TypeEncoding: 'v40@0:8Q16Q24Q32'
+  - Name: 'drawPrimitives:vertexStart:vertexCount:instanceCount:'
+    JsName: 'drawPrimitivesVertexStartVertexCountInstanceCount'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'drawPrimitives:vertexStart:vertexCount:instanceCount:'
+    Signature:
+    - Type: Void
+    - Type: ULong
+    - Type: ULong
+    - Type: ULong
+    - Type: ULong
+    TypeEncoding: 'v48@0:8Q16Q24Q32Q40'
+  - Name: 'setBlendColorRed:green:blue:alpha:'
+    JsName: 'setBlendColorRedGreenBlueAlpha'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setBlendColorRed:green:blue:alpha:'
+    Signature:
+    - Type: Void
+    - Type: Float
+    - Type: Float
+    - Type: Float
+    - Type: Float
+    TypeEncoding: 'v32@0:8f16f20f24f28'
+  - Name: 'setCullMode:'
+    JsName: 'setCullMode'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setCullMode:'
+    Signature:
+    - Type: Void
+    - Type: ULong
+    TypeEncoding: 'v24@0:8Q16'
+  - Name: 'setDepthBias:slopeScale:clamp:'
+    JsName: 'setDepthBiasSlopeScaleClamp'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setDepthBias:slopeScale:clamp:'
+    Signature:
+    - Type: Void
+    - Type: Float
+    - Type: Float
+    - Type: Float
+    TypeEncoding: 'v28@0:8f16f20f24'
+  - Name: 'setDepthStencilState:'
+    JsName: 'setDepthStencilState'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setDepthStencilState:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLDepthStencil
+        Name: MTLDepthStencilState
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setFragmentBuffer:offset:atIndex:'
+    JsName: 'setFragmentBufferOffsetAtIndex'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setFragmentBuffer:offset:atIndex:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLBuffer
+        Name: MTLBuffer
+    - Type: ULong
+    - Type: ULong
+    TypeEncoding: 'v40@0:8@16Q24Q32'
+  - Name: 'setFragmentBuffers:offsets:withRange:'
+    JsName: 'setFragmentBuffersOffsetsWithRange'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setFragmentBuffers:offsets:withRange:'
+    Signature:
+    - Type: Void
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Id
+        WithProtocols:
+        - Module: Metal.MTLBuffer
+          Name: MTLBuffer
+    - Type: IncompleteArray
+      ArrayType:
+        Type: ULong
+    - Type: Struct
+      Module: Foundation.NSRange
+      Name: NSRange
+    TypeEncoding: 'v48@0:8r^@16r^Q24{_NSRange=QQ}32'
+  - Name: 'setFragmentSamplerState:atIndex:'
+    JsName: 'setFragmentSamplerStateAtIndex'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setFragmentSamplerState:atIndex:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLSampler
+        Name: MTLSamplerState
+    - Type: ULong
+    TypeEncoding: 'v32@0:8@16Q24'
+  - Name: 'setFragmentSamplerState:lodMinClamp:lodMaxClamp:atIndex:'
+    JsName: 'setFragmentSamplerStateLodMinClampLodMaxClampAtIndex'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setFragmentSamplerState:lodMinClamp:lodMaxClamp:atIndex:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLSampler
+        Name: MTLSamplerState
+    - Type: Float
+    - Type: Float
+    - Type: ULong
+    TypeEncoding: 'v40@0:8@16f24f28Q32'
+  - Name: 'setFragmentSamplerStates:lodMinClamps:lodMaxClamps:withRange:'
+    JsName: 'setFragmentSamplerStatesLodMinClampsLodMaxClampsWithRange'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setFragmentSamplerStates:lodMinClamps:lodMaxClamps:withRange:'
+    Signature:
+    - Type: Void
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Id
+        WithProtocols:
+        - Module: Metal.MTLSampler
+          Name: MTLSamplerState
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Float
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Float
+    - Type: Struct
+      Module: Foundation.NSRange
+      Name: NSRange
+    TypeEncoding: 'v56@0:8r^@16r^f24r^f32{_NSRange=QQ}40'
+  - Name: 'setFragmentSamplerStates:withRange:'
+    JsName: 'setFragmentSamplerStatesWithRange'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setFragmentSamplerStates:withRange:'
+    Signature:
+    - Type: Void
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Id
+        WithProtocols:
+        - Module: Metal.MTLSampler
+          Name: MTLSamplerState
+    - Type: Struct
+      Module: Foundation.NSRange
+      Name: NSRange
+    TypeEncoding: 'v40@0:8r^@16{_NSRange=QQ}24'
+  - Name: 'setFragmentTexture:atIndex:'
+    JsName: 'setFragmentTextureAtIndex'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setFragmentTexture:atIndex:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLTexture
+        Name: MTLTexture
+    - Type: ULong
+    TypeEncoding: 'v32@0:8@16Q24'
+  - Name: 'setFragmentTextures:withRange:'
+    JsName: 'setFragmentTexturesWithRange'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setFragmentTextures:withRange:'
+    Signature:
+    - Type: Void
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Id
+        WithProtocols:
+        - Module: Metal.MTLTexture
+          Name: MTLTexture
+    - Type: Struct
+      Module: Foundation.NSRange
+      Name: NSRange
+    TypeEncoding: 'v40@0:8r^@16{_NSRange=QQ}24'
+  - Name: 'setFrontFacingWinding:'
+    JsName: 'setFrontFacingWinding'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setFrontFacingWinding:'
+    Signature:
+    - Type: Void
+    - Type: ULong
+    TypeEncoding: 'v24@0:8Q16'
+  - Name: 'setRenderPipelineState:'
+    JsName: 'setRenderPipelineState'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setRenderPipelineState:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLRenderPipeline
+        Name: MTLRenderPipelineState
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setScissorRect:'
+    JsName: 'setScissorRect'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setScissorRect:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: Metal.MTLRenderCommandEncoder
+      Name: MTLScissorRect
+    TypeEncoding: 'v48@0:8{?=QQQQ}16'
+  - Name: 'setStencilReferenceValue:'
+    JsName: 'setStencilReferenceValue'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setStencilReferenceValue:'
+    Signature:
+    - Type: Void
+    - Type: UInt
+    TypeEncoding: 'v20@0:8I16'
+  - Name: 'setTriangleFillMode:'
+    JsName: 'setTriangleFillMode'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setTriangleFillMode:'
+    Signature:
+    - Type: Void
+    - Type: ULong
+    TypeEncoding: 'v24@0:8Q16'
+  - Name: 'setVertexBuffer:offset:atIndex:'
+    JsName: 'setVertexBufferOffsetAtIndex'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setVertexBuffer:offset:atIndex:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLBuffer
+        Name: MTLBuffer
+    - Type: ULong
+    - Type: ULong
+    TypeEncoding: 'v40@0:8@16Q24Q32'
+  - Name: 'setVertexBuffers:offsets:withRange:'
+    JsName: 'setVertexBuffersOffsetsWithRange'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setVertexBuffers:offsets:withRange:'
+    Signature:
+    - Type: Void
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Id
+        WithProtocols:
+        - Module: Metal.MTLBuffer
+          Name: MTLBuffer
+    - Type: IncompleteArray
+      ArrayType:
+        Type: ULong
+    - Type: Struct
+      Module: Foundation.NSRange
+      Name: NSRange
+    TypeEncoding: 'v48@0:8r^@16r^Q24{_NSRange=QQ}32'
+  - Name: 'setVertexSamplerState:atIndex:'
+    JsName: 'setVertexSamplerStateAtIndex'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setVertexSamplerState:atIndex:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLSampler
+        Name: MTLSamplerState
+    - Type: ULong
+    TypeEncoding: 'v32@0:8@16Q24'
+  - Name: 'setVertexSamplerState:lodMinClamp:lodMaxClamp:atIndex:'
+    JsName: 'setVertexSamplerStateLodMinClampLodMaxClampAtIndex'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setVertexSamplerState:lodMinClamp:lodMaxClamp:atIndex:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLSampler
+        Name: MTLSamplerState
+    - Type: Float
+    - Type: Float
+    - Type: ULong
+    TypeEncoding: 'v40@0:8@16f24f28Q32'
+  - Name: 'setVertexSamplerStates:lodMinClamps:lodMaxClamps:withRange:'
+    JsName: 'setVertexSamplerStatesLodMinClampsLodMaxClampsWithRange'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setVertexSamplerStates:lodMinClamps:lodMaxClamps:withRange:'
+    Signature:
+    - Type: Void
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Id
+        WithProtocols:
+        - Module: Metal.MTLSampler
+          Name: MTLSamplerState
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Float
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Float
+    - Type: Struct
+      Module: Foundation.NSRange
+      Name: NSRange
+    TypeEncoding: 'v56@0:8r^@16r^f24r^f32{_NSRange=QQ}40'
+  - Name: 'setVertexSamplerStates:withRange:'
+    JsName: 'setVertexSamplerStatesWithRange'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setVertexSamplerStates:withRange:'
+    Signature:
+    - Type: Void
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Id
+        WithProtocols:
+        - Module: Metal.MTLSampler
+          Name: MTLSamplerState
+    - Type: Struct
+      Module: Foundation.NSRange
+      Name: NSRange
+    TypeEncoding: 'v40@0:8r^@16{_NSRange=QQ}24'
+  - Name: 'setVertexTexture:atIndex:'
+    JsName: 'setVertexTextureAtIndex'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setVertexTexture:atIndex:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: Metal.MTLTexture
+        Name: MTLTexture
+    - Type: ULong
+    TypeEncoding: 'v32@0:8@16Q24'
+  - Name: 'setVertexTextures:withRange:'
+    JsName: 'setVertexTexturesWithRange'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setVertexTextures:withRange:'
+    Signature:
+    - Type: Void
+    - Type: IncompleteArray
+      ArrayType:
+        Type: Id
+        WithProtocols:
+        - Module: Metal.MTLTexture
+          Name: MTLTexture
+    - Type: Struct
+      Module: Foundation.NSRange
+      Name: NSRange
+    TypeEncoding: 'v40@0:8r^@16{_NSRange=QQ}24'
+  - Name: 'setViewport:'
+    JsName: 'setViewport'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setViewport:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: Metal.MTLRenderCommandEncoder
+      Name: MTLViewport
+    TypeEncoding: 'v64@0:8{?=dddddd}16'
+  - Name: 'setVisibilityResultMode:offset:'
+    JsName: 'setVisibilityResultModeOffset'
+    Module: 'Metal.MTLRenderCommandEncoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setVisibilityResultMode:offset:'
+    Signature:
+    - Type: Void
+    - Type: ULong
+    - Type: ULong
+    TypeEncoding: 'v32@0:8Q16Q24'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: Metal.MTLCommandEncoder
+    Name: MTLCommandEncoder
+  Type: Protocol
+- Name: 'MTLSamplerMinMagFilter'
+  JsName: 'MTLSamplerMinMagFilter'
+  Module: 'Metal.MTLSampler'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLSamplerMinMagFilterNearest":0,"MTLSamplerMinMagFilterLinear":1})
+- Name: 'MTLSamplerMipFilter'
+  JsName: 'MTLSamplerMipFilter'
+  Module: 'Metal.MTLSampler'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLSamplerMipFilterNotMipmapped":0,"MTLSamplerMipFilterNearest":1,"MTLSamplerMipFilterLinear":2})
+- Name: 'MTLSamplerAddressMode'
+  JsName: 'MTLSamplerAddressMode'
+  Module: 'Metal.MTLSampler'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MTLSamplerAddressModeClampToEdge":0,"MTLSamplerAddressModeRepeat":2,"MTLSamplerAddressModeMirrorRepeat":3,"MTLSamplerAddressModeClampToZero":4})
+- Name: 'MTLSamplerDescriptor'
+  JsName: 'MTLSamplerDescriptor'
+  Module: 'Metal.MTLSampler'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'label'
+    JsName: 'label'
+    Module: 'Metal.MTLSampler'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'label'
+      JsName: 'label'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'label'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setLabel:'
+      JsName: 'setLabel'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLabel:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'lodMaxClamp'
+    JsName: 'lodMaxClamp'
+    Module: 'Metal.MTLSampler'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'lodMaxClamp'
+      JsName: 'lodMaxClamp'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lodMaxClamp'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f16@0:8'
+    Setter:
+      Name: 'setLodMaxClamp:'
+      JsName: 'setLodMaxClamp'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLodMaxClamp:'
+      Signature:
+      - Type: Void
+      - Type: Float
+      TypeEncoding: 'v20@0:8f16'
+  - Name: 'lodMinClamp'
+    JsName: 'lodMinClamp'
+    Module: 'Metal.MTLSampler'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'lodMinClamp'
+      JsName: 'lodMinClamp'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lodMinClamp'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f16@0:8'
+    Setter:
+      Name: 'setLodMinClamp:'
+      JsName: 'setLodMinClamp'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLodMinClamp:'
+      Signature:
+      - Type: Void
+      - Type: Float
+      TypeEncoding: 'v20@0:8f16'
+  - Name: 'magFilter'
+    JsName: 'magFilter'
+    Module: 'Metal.MTLSampler'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'magFilter'
+      JsName: 'magFilter'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'magFilter'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setMagFilter:'
+      JsName: 'setMagFilter'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMagFilter:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'maxAnisotropy'
+    JsName: 'maxAnisotropy'
+    Module: 'Metal.MTLSampler'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'maxAnisotropy'
+      JsName: 'maxAnisotropy'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'maxAnisotropy'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setMaxAnisotropy:'
+      JsName: 'setMaxAnisotropy'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMaxAnisotropy:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'minFilter'
+    JsName: 'minFilter'
+    Module: 'Metal.MTLSampler'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'minFilter'
+      JsName: 'minFilter'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'minFilter'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setMinFilter:'
+      JsName: 'setMinFilter'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMinFilter:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'mipFilter'
+    JsName: 'mipFilter'
+    Module: 'Metal.MTLSampler'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'mipFilter'
+      JsName: 'mipFilter'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mipFilter'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setMipFilter:'
+      JsName: 'setMipFilter'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMipFilter:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'normalizedCoordinates'
+    JsName: 'normalizedCoordinates'
+    Module: 'Metal.MTLSampler'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'normalizedCoordinates'
+      JsName: 'normalizedCoordinates'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'normalizedCoordinates'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setNormalizedCoordinates:'
+      JsName: 'setNormalizedCoordinates'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setNormalizedCoordinates:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'rAddressMode'
+    JsName: 'rAddressMode'
+    Module: 'Metal.MTLSampler'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'rAddressMode'
+      JsName: 'rAddressMode'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rAddressMode'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setRAddressMode:'
+      JsName: 'setRAddressMode'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRAddressMode:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'sAddressMode'
+    JsName: 'sAddressMode'
+    Module: 'Metal.MTLSampler'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'sAddressMode'
+      JsName: 'sAddressMode'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'sAddressMode'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setSAddressMode:'
+      JsName: 'setSAddressMode'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSAddressMode:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'tAddressMode'
+    JsName: 'tAddressMode'
+    Module: 'Metal.MTLSampler'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'tAddressMode'
+      JsName: 'tAddressMode'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'tAddressMode'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setTAddressMode:'
+      JsName: 'setTAddressMode'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setTAddressMode:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MTLSamplerState'
+  JsName: 'MTLSamplerState'
+  Module: 'Metal.MTLSampler'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'device'
+    JsName: 'device'
+    Module: 'Metal.MTLSampler'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'device'
+      JsName: 'device'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'device'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: Metal.MTLDevice
+          Name: MTLDevice
+      TypeEncoding: '@16@0:8'
+  - Name: 'label'
+    JsName: 'label'
+    Module: 'Metal.MTLSampler'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'label'
+      JsName: 'label'
+      Module: 'Metal.MTLSampler'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'label'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+...

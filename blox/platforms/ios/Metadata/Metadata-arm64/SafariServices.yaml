@@ -1,0 +1,81 @@
+name: SafariServices
+items:
+- Name: 'SSReadingList'
+  JsName: 'SSReadingList'
+  Module: 'SafariServices.SSReadingList'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addReadingListItemWithURL:title:previewText:error:'
+    JsName: 'addReadingListItemWithURLTitlePreviewTextError'
+    Module: 'SafariServices.SSReadingList'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addReadingListItemWithURL:title:previewText:error:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'B48@0:8@16@24@32^@40'
+  StaticMethods:
+  - Name: 'defaultReadingList'
+    JsName: 'defaultReadingList'
+    Module: 'SafariServices.SSReadingList'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'defaultReadingList'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@16@0:8'
+  - Name: 'supportsURL:'
+    JsName: 'supportsURL'
+    Module: 'SafariServices.SSReadingList'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'supportsURL:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    TypeEncoding: 'B24@0:8@16'
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'SSReadingListErrorDomain'
+  JsName: 'SSReadingListErrorDomain'
+  Module: 'SafariServices.SSReadingList'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'SSReadingListErrorCode'
+  JsName: 'SSReadingListErrorCode'
+  Module: 'SafariServices.SSReadingList'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"SSReadingListErrorURLSchemeNotAllowed":1})
+...

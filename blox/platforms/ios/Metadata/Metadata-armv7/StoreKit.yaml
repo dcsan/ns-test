@@ -1,0 +1,1594 @@
+name: StoreKit
+items:
+- Name: 'SKDownloadState'
+  JsName: 'SKDownloadState'
+  Module: 'StoreKit.SKDownload'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"SKDownloadStateWaiting":0,"SKDownloadStateActive":1,"SKDownloadStatePaused":2,"SKDownloadStateFinished":3,"SKDownloadStateFailed":4,"SKDownloadStateCancelled":5})
+- Name: 'SKDownloadTimeRemainingUnknown'
+  JsName: 'SKDownloadTimeRemainingUnknown'
+  Module: 'StoreKit.SKDownload'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Double
+- Name: 'SKDownload'
+  JsName: 'SKDownload'
+  Module: 'StoreKit.SKDownload'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'contentIdentifier'
+    JsName: 'contentIdentifier'
+    Module: 'StoreKit.SKDownload'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'contentIdentifier'
+      JsName: 'contentIdentifier'
+      Module: 'StoreKit.SKDownload'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'contentIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'contentLength'
+    JsName: 'contentLength'
+    Module: 'StoreKit.SKDownload'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'contentLength'
+      JsName: 'contentLength'
+      Module: 'StoreKit.SKDownload'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'contentLength'
+      Signature:
+      - Type: LongLong
+      TypeEncoding: 'q8@0:4'
+  - Name: 'contentURL'
+    JsName: 'contentURL'
+    Module: 'StoreKit.SKDownload'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'contentURL'
+      JsName: 'contentURL'
+      Module: 'StoreKit.SKDownload'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'contentURL'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@8@0:4'
+  - Name: 'contentVersion'
+    JsName: 'contentVersion'
+    Module: 'StoreKit.SKDownload'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'contentVersion'
+      JsName: 'contentVersion'
+      Module: 'StoreKit.SKDownload'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'contentVersion'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'downloadState'
+    JsName: 'downloadState'
+    Module: 'StoreKit.SKDownload'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'downloadState'
+      JsName: 'downloadState'
+      Module: 'StoreKit.SKDownload'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'downloadState'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  - Name: 'error'
+    JsName: 'error'
+    Module: 'StoreKit.SKDownload'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'error'
+      JsName: 'error'
+      Module: 'StoreKit.SKDownload'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'error'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+      TypeEncoding: '@8@0:4'
+  - Name: 'progress'
+    JsName: 'progress'
+    Module: 'StoreKit.SKDownload'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'progress'
+      JsName: 'progress'
+      Module: 'StoreKit.SKDownload'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'progress'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f8@0:4'
+  - Name: 'timeRemaining'
+    JsName: 'timeRemaining'
+    Module: 'StoreKit.SKDownload'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'timeRemaining'
+      JsName: 'timeRemaining'
+      Module: 'StoreKit.SKDownload'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'timeRemaining'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'transaction'
+    JsName: 'transaction'
+    Module: 'StoreKit.SKDownload'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'transaction'
+      JsName: 'transaction'
+      Module: 'StoreKit.SKDownload'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'transaction'
+      Signature:
+      - Type: Interface
+        Module: StoreKit.SKPaymentTransaction
+        Name: SKPaymentTransaction
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'SKErrorDomain'
+  JsName: 'SKErrorDomain'
+  Module: 'StoreKit.SKError'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'SKErrorUnknown'
+  JsName: 'SKErrorUnknown'
+  Module: 'StoreKit.SKError'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'SKErrorClientInvalid'
+  JsName: 'SKErrorClientInvalid'
+  Module: 'StoreKit.SKError'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'SKErrorPaymentCancelled'
+  JsName: 'SKErrorPaymentCancelled'
+  Module: 'StoreKit.SKError'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'SKErrorPaymentInvalid'
+  JsName: 'SKErrorPaymentInvalid'
+  Module: 'StoreKit.SKError'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 3
+- Name: 'SKErrorPaymentNotAllowed'
+  JsName: 'SKErrorPaymentNotAllowed'
+  Module: 'StoreKit.SKError'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'SKErrorStoreProductNotAvailable'
+  JsName: 'SKErrorStoreProductNotAvailable'
+  Module: 'StoreKit.SKError'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 5
+- Name: 'SKPayment'
+  JsName: 'SKPayment'
+  Module: 'StoreKit.SKPayment'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'paymentWithProduct:'
+    JsName: 'paymentWithProduct'
+    Module: 'StoreKit.SKPayment'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'paymentWithProduct:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: StoreKit.SKProduct
+      Name: SKProduct
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'paymentWithProductIdentifier:'
+    JsName: 'paymentWithProductIdentifier'
+    Module: 'StoreKit.SKPayment'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'paymentWithProductIdentifier:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@12@0:4@8'
+  Properties:
+  - Name: 'applicationUsername'
+    JsName: 'applicationUsername'
+    Module: 'StoreKit.SKPayment'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'applicationUsername'
+      JsName: 'applicationUsername'
+      Module: 'StoreKit.SKPayment'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'applicationUsername'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'productIdentifier'
+    JsName: 'productIdentifier'
+    Module: 'StoreKit.SKPayment'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'productIdentifier'
+      JsName: 'productIdentifier'
+      Module: 'StoreKit.SKPayment'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'productIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'quantity'
+    JsName: 'quantity'
+    Module: 'StoreKit.SKPayment'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'quantity'
+      JsName: 'quantity'
+      Module: 'StoreKit.SKPayment'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'quantity'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  - Name: 'requestData'
+    JsName: 'requestData'
+    Module: 'StoreKit.SKPayment'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'requestData'
+      JsName: 'requestData'
+      Module: 'StoreKit.SKPayment'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'requestData'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSMutableCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'SKMutablePayment'
+  JsName: 'SKMutablePayment'
+  Module: 'StoreKit.SKPayment'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'applicationUsername'
+    JsName: 'applicationUsername'
+    Module: 'StoreKit.SKPayment'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'applicationUsername'
+      JsName: 'applicationUsername'
+      Module: 'StoreKit.SKPayment'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'applicationUsername'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setApplicationUsername:'
+      JsName: 'setApplicationUsername'
+      Module: 'StoreKit.SKPayment'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setApplicationUsername:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'productIdentifier'
+    JsName: 'productIdentifier'
+    Module: 'StoreKit.SKPayment'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'productIdentifier'
+      JsName: 'productIdentifier'
+      Module: 'StoreKit.SKPayment'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'productIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setProductIdentifier:'
+      JsName: 'setProductIdentifier'
+      Module: 'StoreKit.SKPayment'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setProductIdentifier:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'quantity'
+    JsName: 'quantity'
+    Module: 'StoreKit.SKPayment'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'quantity'
+      JsName: 'quantity'
+      Module: 'StoreKit.SKPayment'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'quantity'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setQuantity:'
+      JsName: 'setQuantity'
+      Module: 'StoreKit.SKPayment'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setQuantity:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'requestData'
+    JsName: 'requestData'
+    Module: 'StoreKit.SKPayment'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'requestData'
+      JsName: 'requestData'
+      Module: 'StoreKit.SKPayment'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'requestData'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setRequestData:'
+      JsName: 'setRequestData'
+      Module: 'StoreKit.SKPayment'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRequestData:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: StoreKit.SKPayment
+    Name: SKPayment
+  Type: Interface
+- Name: 'SKPaymentQueue'
+  JsName: 'SKPaymentQueue'
+  Module: 'StoreKit.SKPaymentQueue'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addPayment:'
+    JsName: 'addPayment'
+    Module: 'StoreKit.SKPaymentQueue'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addPayment:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: StoreKit.SKPayment
+      Name: SKPayment
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'addTransactionObserver:'
+    JsName: 'addTransactionObserver'
+    Module: 'StoreKit.SKPaymentQueue'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addTransactionObserver:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: StoreKit.SKPaymentQueue
+        Name: SKPaymentTransactionObserver
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'cancelDownloads:'
+    JsName: 'cancelDownloads'
+    Module: 'StoreKit.SKPaymentQueue'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancelDownloads:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'finishTransaction:'
+    JsName: 'finishTransaction'
+    Module: 'StoreKit.SKPaymentQueue'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'finishTransaction:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: StoreKit.SKPaymentTransaction
+      Name: SKPaymentTransaction
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'pauseDownloads:'
+    JsName: 'pauseDownloads'
+    Module: 'StoreKit.SKPaymentQueue'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'pauseDownloads:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'removeTransactionObserver:'
+    JsName: 'removeTransactionObserver'
+    Module: 'StoreKit.SKPaymentQueue'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeTransactionObserver:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: StoreKit.SKPaymentQueue
+        Name: SKPaymentTransactionObserver
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'restoreCompletedTransactions'
+    JsName: 'restoreCompletedTransactions'
+    Module: 'StoreKit.SKPaymentQueue'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'restoreCompletedTransactions'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'restoreCompletedTransactionsWithApplicationUsername:'
+    JsName: 'restoreCompletedTransactionsWithApplicationUsername'
+    Module: 'StoreKit.SKPaymentQueue'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'restoreCompletedTransactionsWithApplicationUsername:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'resumeDownloads:'
+    JsName: 'resumeDownloads'
+    Module: 'StoreKit.SKPaymentQueue'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'resumeDownloads:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'startDownloads:'
+    JsName: 'startDownloads'
+    Module: 'StoreKit.SKPaymentQueue'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startDownloads:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v12@0:4@8'
+  StaticMethods:
+  - Name: 'canMakePayments'
+    JsName: 'canMakePayments'
+    Module: 'StoreKit.SKPaymentQueue'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'canMakePayments'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  - Name: 'defaultQueue'
+    JsName: 'defaultQueue'
+    Module: 'StoreKit.SKPaymentQueue'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'defaultQueue'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  Properties:
+  - Name: 'transactions'
+    JsName: 'transactions'
+    Module: 'StoreKit.SKPaymentQueue'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'transactions'
+      JsName: 'transactions'
+      Module: 'StoreKit.SKPaymentQueue'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'transactions'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'SKPaymentTransactionObserver'
+  JsName: 'SKPaymentTransactionObserver'
+  Module: 'StoreKit.SKPaymentQueue'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'paymentQueue:removedTransactions:'
+    JsName: 'paymentQueueRemovedTransactions'
+    Module: 'StoreKit.SKPaymentQueue'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'paymentQueue:removedTransactions:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: StoreKit.SKPaymentQueue
+      Name: SKPaymentQueue
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'paymentQueue:restoreCompletedTransactionsFailedWithError:'
+    JsName: 'paymentQueueRestoreCompletedTransactionsFailedWithError'
+    Module: 'StoreKit.SKPaymentQueue'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'paymentQueue:restoreCompletedTransactionsFailedWithError:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: StoreKit.SKPaymentQueue
+      Name: SKPaymentQueue
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'paymentQueueRestoreCompletedTransactionsFinished:'
+    JsName: 'paymentQueueRestoreCompletedTransactionsFinished'
+    Module: 'StoreKit.SKPaymentQueue'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'paymentQueueRestoreCompletedTransactionsFinished:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: StoreKit.SKPaymentQueue
+      Name: SKPaymentQueue
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'paymentQueue:updatedDownloads:'
+    JsName: 'paymentQueueUpdatedDownloads'
+    Module: 'StoreKit.SKPaymentQueue'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'paymentQueue:updatedDownloads:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: StoreKit.SKPaymentQueue
+      Name: SKPaymentQueue
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'paymentQueue:updatedTransactions:'
+    JsName: 'paymentQueueUpdatedTransactions'
+    Module: 'StoreKit.SKPaymentQueue'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'paymentQueue:updatedTransactions:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: StoreKit.SKPaymentQueue
+      Name: SKPaymentQueue
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v16@0:4@8@12'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'SKPaymentTransactionState'
+  JsName: 'SKPaymentTransactionState'
+  Module: 'StoreKit.SKPaymentTransaction'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"SKPaymentTransactionStatePurchasing":0,"SKPaymentTransactionStatePurchased":1,"SKPaymentTransactionStateFailed":2,"SKPaymentTransactionStateRestored":3,"SKPaymentTransactionStateDeferred":4})
+- Name: 'SKPaymentTransaction'
+  JsName: 'SKPaymentTransaction'
+  Module: 'StoreKit.SKPaymentTransaction'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'downloads'
+    JsName: 'downloads'
+    Module: 'StoreKit.SKPaymentTransaction'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'downloads'
+      JsName: 'downloads'
+      Module: 'StoreKit.SKPaymentTransaction'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'downloads'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'error'
+    JsName: 'error'
+    Module: 'StoreKit.SKPaymentTransaction'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'error'
+      JsName: 'error'
+      Module: 'StoreKit.SKPaymentTransaction'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'error'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+      TypeEncoding: '@8@0:4'
+  - Name: 'originalTransaction'
+    JsName: 'originalTransaction'
+    Module: 'StoreKit.SKPaymentTransaction'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'originalTransaction'
+      JsName: 'originalTransaction'
+      Module: 'StoreKit.SKPaymentTransaction'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'originalTransaction'
+      Signature:
+      - Type: Interface
+        Module: StoreKit.SKPaymentTransaction
+        Name: SKPaymentTransaction
+      TypeEncoding: '@8@0:4'
+  - Name: 'payment'
+    JsName: 'payment'
+    Module: 'StoreKit.SKPaymentTransaction'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'payment'
+      JsName: 'payment'
+      Module: 'StoreKit.SKPaymentTransaction'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'payment'
+      Signature:
+      - Type: Interface
+        Module: StoreKit.SKPayment
+        Name: SKPayment
+      TypeEncoding: '@8@0:4'
+  - Name: 'transactionDate'
+    JsName: 'transactionDate'
+    Module: 'StoreKit.SKPaymentTransaction'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'transactionDate'
+      JsName: 'transactionDate'
+      Module: 'StoreKit.SKPaymentTransaction'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'transactionDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'transactionIdentifier'
+    JsName: 'transactionIdentifier'
+    Module: 'StoreKit.SKPaymentTransaction'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'transactionIdentifier'
+      JsName: 'transactionIdentifier'
+      Module: 'StoreKit.SKPaymentTransaction'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'transactionIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'transactionReceipt'
+    JsName: 'transactionReceipt'
+    Module: 'StoreKit.SKPaymentTransaction'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'transactionReceipt'
+      JsName: 'transactionReceipt'
+      Module: 'StoreKit.SKPaymentTransaction'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'transactionReceipt'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@8@0:4'
+  - Name: 'transactionState'
+    JsName: 'transactionState'
+    Module: 'StoreKit.SKPaymentTransaction'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'transactionState'
+      JsName: 'transactionState'
+      Module: 'StoreKit.SKPaymentTransaction'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'transactionState'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'SKProduct'
+  JsName: 'SKProduct'
+  Module: 'StoreKit.SKProduct'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'downloadable'
+    JsName: 'downloadable'
+    Module: 'StoreKit.SKProduct'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isDownloadable'
+      JsName: 'isDownloadable'
+      Module: 'StoreKit.SKProduct'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isDownloadable'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'downloadContentLengths'
+    JsName: 'downloadContentLengths'
+    Module: 'StoreKit.SKProduct'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'downloadContentLengths'
+      JsName: 'downloadContentLengths'
+      Module: 'StoreKit.SKProduct'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'downloadContentLengths'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'downloadContentVersion'
+    JsName: 'downloadContentVersion'
+    Module: 'StoreKit.SKProduct'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'downloadContentVersion'
+      JsName: 'downloadContentVersion'
+      Module: 'StoreKit.SKProduct'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'downloadContentVersion'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'localizedDescription'
+    JsName: 'localizedDescription'
+    Module: 'StoreKit.SKProduct'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'localizedDescription'
+      JsName: 'localizedDescription'
+      Module: 'StoreKit.SKProduct'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'localizedDescription'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'localizedTitle'
+    JsName: 'localizedTitle'
+    Module: 'StoreKit.SKProduct'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'localizedTitle'
+      JsName: 'localizedTitle'
+      Module: 'StoreKit.SKProduct'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'localizedTitle'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'price'
+    JsName: 'price'
+    Module: 'StoreKit.SKProduct'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'price'
+      JsName: 'price'
+      Module: 'StoreKit.SKProduct'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'price'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDecimalNumber
+        Name: NSDecimalNumber
+      TypeEncoding: '@8@0:4'
+  - Name: 'priceLocale'
+    JsName: 'priceLocale'
+    Module: 'StoreKit.SKProduct'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'priceLocale'
+      JsName: 'priceLocale'
+      Module: 'StoreKit.SKProduct'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'priceLocale'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSLocale
+        Name: NSLocale
+      TypeEncoding: '@8@0:4'
+  - Name: 'productIdentifier'
+    JsName: 'productIdentifier'
+    Module: 'StoreKit.SKProduct'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'productIdentifier'
+      JsName: 'productIdentifier'
+      Module: 'StoreKit.SKProduct'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'productIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'SKRequest'
+  JsName: 'SKRequest'
+  Module: 'StoreKit.SKRequest'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'cancel'
+    JsName: 'cancel'
+    Module: 'StoreKit.SKRequest'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancel'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'start'
+    JsName: 'start'
+    Module: 'StoreKit.SKRequest'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'start'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  StaticMethods: []
+  Properties:
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'StoreKit.SKRequest'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'StoreKit.SKRequest'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: StoreKit.SKRequest
+          Name: SKRequestDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'StoreKit.SKRequest'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: StoreKit.SKRequest
+          Name: SKRequestDelegate
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'SKRequestDelegate'
+  JsName: 'SKRequestDelegate'
+  Module: 'StoreKit.SKRequest'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'request:didFailWithError:'
+    JsName: 'requestDidFailWithError'
+    Module: 'StoreKit.SKRequest'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'request:didFailWithError:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: StoreKit.SKRequest
+      Name: SKRequest
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'requestDidFinish:'
+    JsName: 'requestDidFinish'
+    Module: 'StoreKit.SKRequest'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'requestDidFinish:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: StoreKit.SKRequest
+      Name: SKRequest
+    TypeEncoding: 'v12@0:4@8'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'SKProductsRequestDelegate'
+  JsName: 'SKProductsRequestDelegate'
+  Module: 'StoreKit.SKProductsRequest'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'productsRequest:didReceiveResponse:'
+    JsName: 'productsRequestDidReceiveResponse'
+    Module: 'StoreKit.SKProductsRequest'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'productsRequest:didReceiveResponse:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: StoreKit.SKProductsRequest
+      Name: SKProductsRequest
+    - Type: Interface
+      Module: StoreKit.SKProductsRequest
+      Name: SKProductsResponse
+    TypeEncoding: 'v16@0:4@8@12'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: StoreKit.SKRequest
+    Name: SKRequestDelegate
+  Type: Protocol
+- Name: 'SKProductsRequest'
+  JsName: 'SKProductsRequest'
+  Module: 'StoreKit.SKProductsRequest'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithProductIdentifiers:'
+    JsName: 'initWithProductIdentifiers'
+    Module: 'StoreKit.SKProductsRequest'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithProductIdentifiers:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSSet
+      Name: NSSet
+    TypeEncoding: '@12@0:4@8'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: StoreKit.SKRequest
+    Name: SKRequest
+  Type: Interface
+- Name: 'SKProductsResponse'
+  JsName: 'SKProductsResponse'
+  Module: 'StoreKit.SKProductsRequest'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'invalidProductIdentifiers'
+    JsName: 'invalidProductIdentifiers'
+    Module: 'StoreKit.SKProductsRequest'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'invalidProductIdentifiers'
+      JsName: 'invalidProductIdentifiers'
+      Module: 'StoreKit.SKProductsRequest'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'invalidProductIdentifiers'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'products'
+    JsName: 'products'
+    Module: 'StoreKit.SKProductsRequest'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'products'
+      JsName: 'products'
+      Module: 'StoreKit.SKProductsRequest'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'products'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'SKReceiptRefreshRequest'
+  JsName: 'SKReceiptRefreshRequest'
+  Module: 'StoreKit.SKReceiptRefreshRequest'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithReceiptProperties:'
+    JsName: 'initWithReceiptProperties'
+    Module: 'StoreKit.SKReceiptRefreshRequest'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithReceiptProperties:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@12@0:4@8'
+  StaticMethods: []
+  Properties:
+  - Name: 'receiptProperties'
+    JsName: 'receiptProperties'
+    Module: 'StoreKit.SKReceiptRefreshRequest'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'receiptProperties'
+      JsName: 'receiptProperties'
+      Module: 'StoreKit.SKReceiptRefreshRequest'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'receiptProperties'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: StoreKit.SKRequest
+    Name: SKRequest
+  Type: Interface
+- Name: 'SKTerminateForInvalidReceipt'
+  JsName: 'SKTerminateForInvalidReceipt'
+  Module: 'StoreKit.SKReceiptRefreshRequest'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+- Name: 'SKReceiptPropertyIsExpired'
+  JsName: 'SKReceiptPropertyIsExpired'
+  Module: 'StoreKit.SKReceiptRefreshRequest'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'SKReceiptPropertyIsRevoked'
+  JsName: 'SKReceiptPropertyIsRevoked'
+  Module: 'StoreKit.SKReceiptRefreshRequest'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'SKReceiptPropertyIsVolumePurchase'
+  JsName: 'SKReceiptPropertyIsVolumePurchase'
+  Module: 'StoreKit.SKReceiptRefreshRequest'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'SKStoreProductViewController'
+  JsName: 'SKStoreProductViewController'
+  Module: 'StoreKit.SKStoreProductViewController'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'loadProductWithParameters:completionBlock:'
+    JsName: 'loadProductWithParametersCompletionBlock'
+    Module: 'StoreKit.SKStoreProductViewController'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'loadProductWithParameters:completionBlock:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  StaticMethods: []
+  Properties:
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'StoreKit.SKStoreProductViewController'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'StoreKit.SKStoreProductViewController'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: StoreKit.SKStoreProductViewController
+          Name: SKStoreProductViewControllerDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'StoreKit.SKStoreProductViewController'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: StoreKit.SKStoreProductViewController
+          Name: SKStoreProductViewControllerDelegate
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Interface
+- Name: 'SKStoreProductViewControllerDelegate'
+  JsName: 'SKStoreProductViewControllerDelegate'
+  Module: 'StoreKit.SKStoreProductViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'productViewControllerDidFinish:'
+    JsName: 'productViewControllerDidFinish'
+    Module: 'StoreKit.SKStoreProductViewController'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'productViewControllerDidFinish:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: StoreKit.SKStoreProductViewController
+      Name: SKStoreProductViewController
+    TypeEncoding: 'v12@0:4@8'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'SKStoreProductParameterITunesItemIdentifier'
+  JsName: 'SKStoreProductParameterITunesItemIdentifier'
+  Module: 'StoreKit.SKStoreProductViewController'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'SKStoreProductParameterAffiliateToken'
+  JsName: 'SKStoreProductParameterAffiliateToken'
+  Module: 'StoreKit.SKStoreProductViewController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'SKStoreProductParameterCampaignToken'
+  JsName: 'SKStoreProductParameterCampaignToken'
+  Module: 'StoreKit.SKStoreProductViewController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+...

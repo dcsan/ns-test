@@ -1,0 +1,4293 @@
+name: HealthKit
+items:
+- Name: 'HKErrorDomain'
+  JsName: 'HKErrorDomain'
+  Module: 'HealthKit.HKDefines'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKErrorCode'
+  JsName: 'HKErrorCode'
+  Module: 'HealthKit.HKDefines'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HKNoError":0,"HKErrorHealthDataUnavailable":1,"HKErrorHealthDataRestricted":2,"HKErrorInvalidArgument":3,"HKErrorAuthorizationDenied":4,"HKErrorAuthorizationNotDetermined":5,"HKErrorDatabaseInaccessible":6,"HKErrorUserCanceled":7})
+- Name: 'HKUpdateFrequency'
+  JsName: 'HKUpdateFrequency'
+  Module: 'HealthKit.HKDefines'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HKUpdateFrequencyImmediate":1,"HKUpdateFrequencyHourly":2,"HKUpdateFrequencyDaily":3,"HKUpdateFrequencyWeekly":4})
+- Name: 'HKAuthorizationStatus'
+  JsName: 'HKAuthorizationStatus'
+  Module: 'HealthKit.HKDefines'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HKAuthorizationStatusNotDetermined":0,"HKAuthorizationStatusSharingDenied":1,"HKAuthorizationStatusSharingAuthorized":2})
+- Name: 'HKBiologicalSex'
+  JsName: 'HKBiologicalSex'
+  Module: 'HealthKit.HKDefines'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HKBiologicalSexNotSet":0,"HKBiologicalSexFemale":1,"HKBiologicalSexMale":2,"HKBiologicalSexOther":3})
+- Name: 'HKBloodType'
+  JsName: 'HKBloodType'
+  Module: 'HealthKit.HKDefines'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HKBloodTypeNotSet":0,"HKBloodTypeAPositive":1,"HKBloodTypeANegative":2,"HKBloodTypeBPositive":3,"HKBloodTypeBNegative":4,"HKBloodTypeABPositive":5,"HKBloodTypeABNegative":6,"HKBloodTypeOPositive":7,"HKBloodTypeONegative":8})
+- Name: 'HKCategoryValueSleepAnalysis'
+  JsName: 'HKCategoryValueSleepAnalysis'
+  Module: 'HealthKit.HKDefines'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HKCategoryValueSleepAnalysisInBed":0,"HKCategoryValueSleepAnalysisAsleep":1})
+- Name: 'HKObject'
+  JsName: 'HKObject'
+  Module: 'HealthKit.HKObject'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'metadata'
+    JsName: 'metadata'
+    Module: 'HealthKit.HKObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'metadata'
+      JsName: 'metadata'
+      Module: 'HealthKit.HKObject'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'metadata'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: '@8@0:4'
+  - Name: 'source'
+    JsName: 'source'
+    Module: 'HealthKit.HKObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'source'
+      JsName: 'source'
+      Module: 'HealthKit.HKObject'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'source'
+      Signature:
+      - Type: Interface
+        Module: HealthKit.HKSource
+        Name: HKSource
+      TypeEncoding: '@8@0:4'
+  - Name: 'UUID'
+    JsName: 'UUID'
+    Module: 'HealthKit.HKObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'UUID'
+      JsName: 'UUID'
+      Module: 'HealthKit.HKObject'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'UUID'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSUUID
+        Name: NSUUID
+      TypeEncoding: '@8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HKPredicateKeyPathUUID'
+  JsName: 'HKPredicateKeyPathUUID'
+  Module: 'HealthKit.HKObject'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKPredicateKeyPathSource'
+  JsName: 'HKPredicateKeyPathSource'
+  Module: 'HealthKit.HKObject'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKPredicateKeyPathMetadata'
+  JsName: 'HKPredicateKeyPathMetadata'
+  Module: 'HealthKit.HKObject'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKPredicateKeyPathCorrelation'
+  JsName: 'HKPredicateKeyPathCorrelation'
+  Module: 'HealthKit.HKObject'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKPredicateKeyPathWorkout'
+  JsName: 'HKPredicateKeyPathWorkout'
+  Module: 'HealthKit.HKObject'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKSample'
+  JsName: 'HKSample'
+  Module: 'HealthKit.HKSample'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'endDate'
+    JsName: 'endDate'
+    Module: 'HealthKit.HKSample'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'endDate'
+      JsName: 'endDate'
+      Module: 'HealthKit.HKSample'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'endDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'sampleType'
+    JsName: 'sampleType'
+    Module: 'HealthKit.HKSample'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'sampleType'
+      JsName: 'sampleType'
+      Module: 'HealthKit.HKSample'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'sampleType'
+      Signature:
+      - Type: Interface
+        Module: HealthKit.HKObjectType
+        Name: HKSampleType
+      TypeEncoding: '@8@0:4'
+  - Name: 'startDate'
+    JsName: 'startDate'
+    Module: 'HealthKit.HKSample'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'startDate'
+      JsName: 'startDate'
+      Module: 'HealthKit.HKSample'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'startDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: HealthKit.HKObject
+    Name: HKObject
+  Type: Interface
+- Name: 'HKSampleSortIdentifierStartDate'
+  JsName: 'HKSampleSortIdentifierStartDate'
+  Module: 'HealthKit.HKSample'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKSampleSortIdentifierEndDate'
+  JsName: 'HKSampleSortIdentifierEndDate'
+  Module: 'HealthKit.HKSample'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKPredicateKeyPathStartDate'
+  JsName: 'HKPredicateKeyPathStartDate'
+  Module: 'HealthKit.HKSample'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKPredicateKeyPathEndDate'
+  JsName: 'HKPredicateKeyPathEndDate'
+  Module: 'HealthKit.HKSample'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKWorkoutActivityType'
+  JsName: 'HKWorkoutActivityType'
+  Module: 'HealthKit.HKWorkout'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HKWorkoutActivityTypeAmericanFootball":1,"HKWorkoutActivityTypeArchery":2,"HKWorkoutActivityTypeAustralianFootball":3,"HKWorkoutActivityTypeBadminton":4,"HKWorkoutActivityTypeBaseball":5,"HKWorkoutActivityTypeBasketball":6,"HKWorkoutActivityTypeBowling":7,"HKWorkoutActivityTypeBoxing":8,"HKWorkoutActivityTypeClimbing":9,"HKWorkoutActivityTypeCricket":10,"HKWorkoutActivityTypeCrossTraining":11,"HKWorkoutActivityTypeCurling":12,"HKWorkoutActivityTypeCycling":13,"HKWorkoutActivityTypeDance":14,"HKWorkoutActivityTypeDanceInspiredTraining":15,"HKWorkoutActivityTypeElliptical":16,"HKWorkoutActivityTypeEquestrianSports":17,"HKWorkoutActivityTypeFencing":18,"HKWorkoutActivityTypeFishing":19,"HKWorkoutActivityTypeFunctionalStrengthTraining":20,"HKWorkoutActivityTypeGolf":21,"HKWorkoutActivityTypeGymnastics":22,"HKWorkoutActivityTypeHandball":23,"HKWorkoutActivityTypeHiking":24,"HKWorkoutActivityTypeHockey":25,"HKWorkoutActivityTypeHunting":26,"HKWorkoutActivityTypeLacrosse":27,"HKWorkoutActivityTypeMartialArts":28,"HKWorkoutActivityTypeMindAndBody":29,"HKWorkoutActivityTypeMixedMetabolicCardioTraining":30,"HKWorkoutActivityTypePaddleSports":31,"HKWorkoutActivityTypePlay":32,"HKWorkoutActivityTypePreparationAndRecovery":33,"HKWorkoutActivityTypeRacquetball":34,"HKWorkoutActivityTypeRowing":35,"HKWorkoutActivityTypeRugby":36,"HKWorkoutActivityTypeRunning":37,"HKWorkoutActivityTypeSailing":38,"HKWorkoutActivityTypeSkatingSports":39,"HKWorkoutActivityTypeSnowSports":40,"HKWorkoutActivityTypeSoccer":41,"HKWorkoutActivityTypeSoftball":42,"HKWorkoutActivityTypeSquash":43,"HKWorkoutActivityTypeStairClimbing":44,"HKWorkoutActivityTypeSurfingSports":45,"HKWorkoutActivityTypeSwimming":46,"HKWorkoutActivityTypeTableTennis":47,"HKWorkoutActivityTypeTennis":48,"HKWorkoutActivityTypeTrackAndField":49,"HKWorkoutActivityTypeTraditionalStrengthTraining":50,"HKWorkoutActivityTypeVolleyball":51,"HKWorkoutActivityTypeWalking":52,"HKWorkoutActivityTypeWaterFitness":53,"HKWorkoutActivityTypeWaterPolo":54,"HKWorkoutActivityTypeWaterSports":55,"HKWorkoutActivityTypeWrestling":56,"HKWorkoutActivityTypeYoga":57,"HKWorkoutActivityTypeOther":3000})
+- Name: 'HKWorkoutEventType'
+  JsName: 'HKWorkoutEventType'
+  Module: 'HealthKit.HKWorkout'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HKWorkoutEventTypePause":1,"HKWorkoutEventTypeResume":2})
+- Name: 'HKWorkoutEvent'
+  JsName: 'HKWorkoutEvent'
+  Module: 'HealthKit.HKWorkout'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'workoutEventWithType:date:'
+    JsName: 'workoutEventWithTypeDate'
+    Module: 'HealthKit.HKWorkout'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'workoutEventWithType:date:'
+    Signature:
+    - Type: Instancetype
+    - Type: Int
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    TypeEncoding: '@16@0:4i8@12'
+  Properties:
+  - Name: 'date'
+    JsName: 'date'
+    Module: 'HealthKit.HKWorkout'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'date'
+      JsName: 'date'
+      Module: 'HealthKit.HKWorkout'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'date'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'type'
+    JsName: 'type'
+    Module: 'HealthKit.HKWorkout'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'type'
+      JsName: 'type'
+      Module: 'HealthKit.HKWorkout'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'type'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HKWorkout'
+  JsName: 'HKWorkout'
+  Module: 'HealthKit.HKWorkout'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'workoutWithActivityType:startDate:endDate:'
+    JsName: 'workoutWithActivityTypeStartDateEndDate'
+    Module: 'HealthKit.HKWorkout'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'workoutWithActivityType:startDate:endDate:'
+    Signature:
+    - Type: Instancetype
+    - Type: UInt
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    TypeEncoding: '@20@0:4I8@12@16'
+  - Name: 'workoutWithActivityType:startDate:endDate:duration:totalEnergyBurned:totalDistance:metadata:'
+    JsName: 'workoutWithActivityTypeStartDateEndDateDurationTotalEnergyBurnedTotalDistanceMetadata'
+    Module: 'HealthKit.HKWorkout'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'workoutWithActivityType:startDate:endDate:duration:totalEnergyBurned:totalDistance:metadata:'
+    Signature:
+    - Type: Instancetype
+    - Type: UInt
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Double
+    - Type: Interface
+      Module: HealthKit.HKQuantity
+      Name: HKQuantity
+    - Type: Interface
+      Module: HealthKit.HKQuantity
+      Name: HKQuantity
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@40@0:4I8@12@16d20@28@32@36'
+  - Name: 'workoutWithActivityType:startDate:endDate:workoutEvents:totalEnergyBurned:totalDistance:metadata:'
+    JsName: 'workoutWithActivityTypeStartDateEndDateWorkoutEventsTotalEnergyBurnedTotalDistanceMetadata'
+    Module: 'HealthKit.HKWorkout'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'workoutWithActivityType:startDate:endDate:workoutEvents:totalEnergyBurned:totalDistance:metadata:'
+    Signature:
+    - Type: Instancetype
+    - Type: UInt
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: HealthKit.HKQuantity
+      Name: HKQuantity
+    - Type: Interface
+      Module: HealthKit.HKQuantity
+      Name: HKQuantity
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@36@0:4I8@12@16@20@24@28@32'
+  Properties:
+  - Name: 'duration'
+    JsName: 'duration'
+    Module: 'HealthKit.HKWorkout'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'duration'
+      JsName: 'duration'
+      Module: 'HealthKit.HKWorkout'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'duration'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'totalDistance'
+    JsName: 'totalDistance'
+    Module: 'HealthKit.HKWorkout'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'totalDistance'
+      JsName: 'totalDistance'
+      Module: 'HealthKit.HKWorkout'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'totalDistance'
+      Signature:
+      - Type: Interface
+        Module: HealthKit.HKQuantity
+        Name: HKQuantity
+      TypeEncoding: '@8@0:4'
+  - Name: 'totalEnergyBurned'
+    JsName: 'totalEnergyBurned'
+    Module: 'HealthKit.HKWorkout'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'totalEnergyBurned'
+      JsName: 'totalEnergyBurned'
+      Module: 'HealthKit.HKWorkout'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'totalEnergyBurned'
+      Signature:
+      - Type: Interface
+        Module: HealthKit.HKQuantity
+        Name: HKQuantity
+      TypeEncoding: '@8@0:4'
+  - Name: 'workoutActivityType'
+    JsName: 'workoutActivityType'
+    Module: 'HealthKit.HKWorkout'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'workoutActivityType'
+      JsName: 'workoutActivityType'
+      Module: 'HealthKit.HKWorkout'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'workoutActivityType'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'workoutEvents'
+    JsName: 'workoutEvents'
+    Module: 'HealthKit.HKWorkout'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'workoutEvents'
+      JsName: 'workoutEvents'
+      Module: 'HealthKit.HKWorkout'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'workoutEvents'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: HealthKit.HKSample
+    Name: HKSample
+  Type: Interface
+- Name: 'HKPredicateKeyPathWorkoutDuration'
+  JsName: 'HKPredicateKeyPathWorkoutDuration'
+  Module: 'HealthKit.HKWorkout'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKPredicateKeyPathWorkoutTotalDistance'
+  JsName: 'HKPredicateKeyPathWorkoutTotalDistance'
+  Module: 'HealthKit.HKWorkout'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKPredicateKeyPathWorkoutTotalEnergyBurned'
+  JsName: 'HKPredicateKeyPathWorkoutTotalEnergyBurned'
+  Module: 'HealthKit.HKWorkout'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKPredicateKeyPathWorkoutType'
+  JsName: 'HKPredicateKeyPathWorkoutType'
+  Module: 'HealthKit.HKWorkout'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKWorkoutSortIdentifierDuration'
+  JsName: 'HKWorkoutSortIdentifierDuration'
+  Module: 'HealthKit.HKWorkout'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKWorkoutSortIdentifierTotalDistance'
+  JsName: 'HKWorkoutSortIdentifierTotalDistance'
+  Module: 'HealthKit.HKWorkout'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKWorkoutSortIdentifierTotalEnergyBurned'
+  JsName: 'HKWorkoutSortIdentifierTotalEnergyBurned'
+  Module: 'HealthKit.HKWorkout'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuery'
+  JsName: 'HKQuery'
+  Module: 'HealthKit.HKQuery'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'predicateForCategorySamplesWithOperatorType:value:'
+    JsName: 'predicateForCategorySamplesWithOperatorTypeValue'
+    Module: 'HealthKit.HKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForCategorySamplesWithOperatorType:value:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: UInt
+    - Type: Int
+    TypeEncoding: '@16@0:4I8i12'
+  - Name: 'predicateForObjectsFromSource:'
+    JsName: 'predicateForObjectsFromSource'
+    Module: 'HealthKit.HKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForObjectsFromSource:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Interface
+      Module: HealthKit.HKSource
+      Name: HKSource
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'predicateForObjectsFromSources:'
+    JsName: 'predicateForObjectsFromSources'
+    Module: 'HealthKit.HKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForObjectsFromSources:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Interface
+      Module: Foundation.NSSet
+      Name: NSSet
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'predicateForObjectsFromWorkout:'
+    JsName: 'predicateForObjectsFromWorkout'
+    Module: 'HealthKit.HKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForObjectsFromWorkout:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Interface
+      Module: HealthKit.HKWorkout
+      Name: HKWorkout
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'predicateForObjectsWithMetadataKey:'
+    JsName: 'predicateForObjectsWithMetadataKey'
+    Module: 'HealthKit.HKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForObjectsWithMetadataKey:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'predicateForObjectsWithMetadataKey:allowedValues:'
+    JsName: 'predicateForObjectsWithMetadataKeyAllowedValues'
+    Module: 'HealthKit.HKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForObjectsWithMetadataKey:allowedValues:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@16@0:4@8@12'
+  - Name: 'predicateForObjectsWithMetadataKey:operatorType:value:'
+    JsName: 'predicateForObjectsWithMetadataKeyOperatorTypeValue'
+    Module: 'HealthKit.HKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForObjectsWithMetadataKey:operatorType:value:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: UInt
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: '@20@0:4@8I12@16'
+  - Name: 'predicateForObjectsWithNoCorrelation'
+    JsName: 'predicateForObjectsWithNoCorrelation'
+    Module: 'HealthKit.HKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForObjectsWithNoCorrelation'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    TypeEncoding: '@8@0:4'
+  - Name: 'predicateForObjectsWithUUIDs:'
+    JsName: 'predicateForObjectsWithUUIDs'
+    Module: 'HealthKit.HKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForObjectsWithUUIDs:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Interface
+      Module: Foundation.NSSet
+      Name: NSSet
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'predicateForObjectWithUUID:'
+    JsName: 'predicateForObjectWithUUID'
+    Module: 'HealthKit.HKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForObjectWithUUID:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Interface
+      Module: Foundation.NSUUID
+      Name: NSUUID
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'predicateForQuantitySamplesWithOperatorType:quantity:'
+    JsName: 'predicateForQuantitySamplesWithOperatorTypeQuantity'
+    Module: 'HealthKit.HKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForQuantitySamplesWithOperatorType:quantity:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: UInt
+    - Type: Interface
+      Module: HealthKit.HKQuantity
+      Name: HKQuantity
+    TypeEncoding: '@16@0:4I8@12'
+  - Name: 'predicateForSamplesWithStartDate:endDate:options:'
+    JsName: 'predicateForSamplesWithStartDateEndDateOptions'
+    Module: 'HealthKit.HKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForSamplesWithStartDate:endDate:options:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: UInt
+    TypeEncoding: '@20@0:4@8@12I16'
+  - Name: 'predicateForWorkoutsWithOperatorType:duration:'
+    JsName: 'predicateForWorkoutsWithOperatorTypeDuration'
+    Module: 'HealthKit.HKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForWorkoutsWithOperatorType:duration:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: UInt
+    - Type: Double
+    TypeEncoding: '@20@0:4I8d12'
+  - Name: 'predicateForWorkoutsWithOperatorType:totalDistance:'
+    JsName: 'predicateForWorkoutsWithOperatorTypeTotalDistance'
+    Module: 'HealthKit.HKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForWorkoutsWithOperatorType:totalDistance:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: UInt
+    - Type: Interface
+      Module: HealthKit.HKQuantity
+      Name: HKQuantity
+    TypeEncoding: '@16@0:4I8@12'
+  - Name: 'predicateForWorkoutsWithOperatorType:totalEnergyBurned:'
+    JsName: 'predicateForWorkoutsWithOperatorTypeTotalEnergyBurned'
+    Module: 'HealthKit.HKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForWorkoutsWithOperatorType:totalEnergyBurned:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: UInt
+    - Type: Interface
+      Module: HealthKit.HKQuantity
+      Name: HKQuantity
+    TypeEncoding: '@16@0:4I8@12'
+  - Name: 'predicateForWorkoutsWithWorkoutActivityType:'
+    JsName: 'predicateForWorkoutsWithWorkoutActivityType'
+    Module: 'HealthKit.HKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'predicateForWorkoutsWithWorkoutActivityType:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: UInt
+    TypeEncoding: '@12@0:4I8'
+  Properties:
+  - Name: 'predicate'
+    JsName: 'predicate'
+    Module: 'HealthKit.HKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'predicate'
+      JsName: 'predicate'
+      Module: 'HealthKit.HKQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'predicate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSPredicate
+        Name: NSPredicate
+      TypeEncoding: '@8@0:4'
+  - Name: 'sampleType'
+    JsName: 'sampleType'
+    Module: 'HealthKit.HKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'sampleType'
+      JsName: 'sampleType'
+      Module: 'HealthKit.HKQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'sampleType'
+      Signature:
+      - Type: Interface
+        Module: HealthKit.HKObjectType
+        Name: HKSampleType
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HKQueryOptions'
+  JsName: 'HKQueryOptions'
+  Module: 'HealthKit.HKQuery'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HKQueryOptionNone":0,"HKQueryOptionStrictStartDate":1,"HKQueryOptionStrictEndDate":2})
+- Name: 'HKAnchoredObjectQuery'
+  JsName: 'HKAnchoredObjectQuery'
+  Module: 'HealthKit.HKAnchoredObjectQuery'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithType:predicate:anchor:limit:completionHandler:'
+    JsName: 'initWithTypePredicateAnchorLimitCompletionHandler'
+    Module: 'HealthKit.HKAnchoredObjectQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithType:predicate:anchor:limit:completionHandler:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKSampleType
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: UInt
+    - Type: UInt
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: HealthKit.HKAnchoredObjectQuery
+        Name: HKAnchoredObjectQuery
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      - Type: UInt
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@28@0:4@8@12I16I20@?24'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: HealthKit.HKQuery
+    Name: HKQuery
+  Type: Interface
+- Name: 'HKCategorySample'
+  JsName: 'HKCategorySample'
+  Module: 'HealthKit.HKCategorySample'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'categorySampleWithType:value:startDate:endDate:'
+    JsName: 'categorySampleWithTypeValueStartDateEndDate'
+    Module: 'HealthKit.HKCategorySample'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'categorySampleWithType:value:startDate:endDate:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKCategoryType
+    - Type: Int
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    TypeEncoding: '@24@0:4@8i12@16@20'
+  - Name: 'categorySampleWithType:value:startDate:endDate:metadata:'
+    JsName: 'categorySampleWithTypeValueStartDateEndDateMetadata'
+    Module: 'HealthKit.HKCategorySample'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'categorySampleWithType:value:startDate:endDate:metadata:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKCategoryType
+    - Type: Int
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@28@0:4@8i12@16@20@24'
+  Properties:
+  - Name: 'categoryType'
+    JsName: 'categoryType'
+    Module: 'HealthKit.HKCategorySample'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'categoryType'
+      JsName: 'categoryType'
+      Module: 'HealthKit.HKCategorySample'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'categoryType'
+      Signature:
+      - Type: Interface
+        Module: HealthKit.HKObjectType
+        Name: HKCategoryType
+      TypeEncoding: '@8@0:4'
+  - Name: 'value'
+    JsName: 'value'
+    Module: 'HealthKit.HKCategorySample'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'value'
+      JsName: 'value'
+      Module: 'HealthKit.HKCategorySample'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'value'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  Protocols: []
+  Base:
+    Module: HealthKit.HKSample
+    Name: HKSample
+  Type: Interface
+- Name: 'HKPredicateKeyPathCategoryValue'
+  JsName: 'HKPredicateKeyPathCategoryValue'
+  Module: 'HealthKit.HKCategorySample'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKCorrelation'
+  JsName: 'HKCorrelation'
+  Module: 'HealthKit.HKCorrelation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'objectsForType:'
+    JsName: 'objectsForType'
+    Module: 'HealthKit.HKCorrelation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'objectsForType:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSSet
+      Name: NSSet
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKObjectType
+    TypeEncoding: '@12@0:4@8'
+  StaticMethods:
+  - Name: 'correlationWithType:startDate:endDate:objects:'
+    JsName: 'correlationWithTypeStartDateEndDateObjects'
+    Module: 'HealthKit.HKCorrelation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'correlationWithType:startDate:endDate:objects:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKCorrelationType
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSSet
+      Name: NSSet
+    TypeEncoding: '@24@0:4@8@12@16@20'
+  - Name: 'correlationWithType:startDate:endDate:objects:metadata:'
+    JsName: 'correlationWithTypeStartDateEndDateObjectsMetadata'
+    Module: 'HealthKit.HKCorrelation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'correlationWithType:startDate:endDate:objects:metadata:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKCorrelationType
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSSet
+      Name: NSSet
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@28@0:4@8@12@16@20@24'
+  Properties:
+  - Name: 'correlationType'
+    JsName: 'correlationType'
+    Module: 'HealthKit.HKCorrelation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'correlationType'
+      JsName: 'correlationType'
+      Module: 'HealthKit.HKCorrelation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'correlationType'
+      Signature:
+      - Type: Interface
+        Module: HealthKit.HKObjectType
+        Name: HKCorrelationType
+      TypeEncoding: '@8@0:4'
+  - Name: 'objects'
+    JsName: 'objects'
+    Module: 'HealthKit.HKCorrelation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'objects'
+      JsName: 'objects'
+      Module: 'HealthKit.HKCorrelation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'objects'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSSet
+        Name: NSSet
+      TypeEncoding: '@8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: HealthKit.HKSample
+    Name: HKSample
+  Type: Interface
+- Name: 'HKCorrelationQuery'
+  JsName: 'HKCorrelationQuery'
+  Module: 'HealthKit.HKCorrelationQuery'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithType:predicate:samplePredicates:completion:'
+    JsName: 'initWithTypePredicateSamplePredicatesCompletion'
+    Module: 'HealthKit.HKCorrelationQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithType:predicate:samplePredicates:completion:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKCorrelationType
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: HealthKit.HKCorrelationQuery
+        Name: HKCorrelationQuery
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@24@0:4@8@12@16@?20'
+  StaticMethods: []
+  Properties:
+  - Name: 'correlationType'
+    JsName: 'correlationType'
+    Module: 'HealthKit.HKCorrelationQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'correlationType'
+      JsName: 'correlationType'
+      Module: 'HealthKit.HKCorrelationQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'correlationType'
+      Signature:
+      - Type: Interface
+        Module: HealthKit.HKObjectType
+        Name: HKCorrelationType
+      TypeEncoding: '@8@0:4'
+  - Name: 'samplePredicates'
+    JsName: 'samplePredicates'
+    Module: 'HealthKit.HKCorrelationQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'samplePredicates'
+      JsName: 'samplePredicates'
+      Module: 'HealthKit.HKCorrelationQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'samplePredicates'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: HealthKit.HKQuery
+    Name: HKQuery
+  Type: Interface
+- Name: 'HKHealthStore'
+  JsName: 'HKHealthStore'
+  Module: 'HealthKit.HKHealthStore'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addSamples:toWorkout:completion:'
+    JsName: 'addSamplesToWorkoutCompletion'
+    Module: 'HealthKit.HKHealthStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addSamples:toWorkout:completion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: HealthKit.HKWorkout
+      Name: HKWorkout
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@?16'
+  - Name: 'authorizationStatusForType:'
+    JsName: 'authorizationStatusForType'
+    Module: 'HealthKit.HKHealthStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'authorizationStatusForType:'
+    Signature:
+    - Type: Int
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKObjectType
+    TypeEncoding: 'i12@0:4@8'
+  - Name: 'biologicalSexWithError:'
+    JsName: 'biologicalSexWithError'
+    Module: 'HealthKit.HKHealthStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'biologicalSexWithError:'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKHealthStore
+      Name: HKBiologicalSexObject
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@12@0:4^@8'
+  - Name: 'bloodTypeWithError:'
+    JsName: 'bloodTypeWithError'
+    Module: 'HealthKit.HKHealthStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'bloodTypeWithError:'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKHealthStore
+      Name: HKBloodTypeObject
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@12@0:4^@8'
+  - Name: 'dateOfBirthWithError:'
+    JsName: 'dateOfBirthWithError'
+    Module: 'HealthKit.HKHealthStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'dateOfBirthWithError:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@12@0:4^@8'
+  - Name: 'deleteObject:withCompletion:'
+    JsName: 'deleteObjectWithCompletion'
+    Module: 'HealthKit.HKHealthStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'deleteObject:withCompletion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HealthKit.HKObject
+      Name: HKObject
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'disableAllBackgroundDeliveryWithCompletion:'
+    JsName: 'disableAllBackgroundDeliveryWithCompletion'
+    Module: 'HealthKit.HKHealthStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'disableAllBackgroundDeliveryWithCompletion:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v12@0:4@?8'
+  - Name: 'disableBackgroundDeliveryForType:withCompletion:'
+    JsName: 'disableBackgroundDeliveryForTypeWithCompletion'
+    Module: 'HealthKit.HKHealthStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'disableBackgroundDeliveryForType:withCompletion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKObjectType
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'enableBackgroundDeliveryForType:frequency:withCompletion:'
+    JsName: 'enableBackgroundDeliveryForTypeFrequencyWithCompletion'
+    Module: 'HealthKit.HKHealthStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'enableBackgroundDeliveryForType:frequency:withCompletion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKObjectType
+    - Type: Int
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v20@0:4@8i12@?16'
+  - Name: 'executeQuery:'
+    JsName: 'executeQuery'
+    Module: 'HealthKit.HKHealthStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'executeQuery:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HealthKit.HKQuery
+      Name: HKQuery
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'preferredUnitsForQuantityTypes:completion:'
+    JsName: 'preferredUnitsForQuantityTypesCompletion'
+    Module: 'HealthKit.HKHealthStore'
+    IntroducedIn: 8.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'preferredUnitsForQuantityTypes:completion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSSet
+      Name: NSSet
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'requestAuthorizationToShareTypes:readTypes:completion:'
+    JsName: 'requestAuthorizationToShareTypesReadTypesCompletion'
+    Module: 'HealthKit.HKHealthStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'requestAuthorizationToShareTypes:readTypes:completion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSSet
+      Name: NSSet
+    - Type: Interface
+      Module: Foundation.NSSet
+      Name: NSSet
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@?16'
+  - Name: 'saveObjects:withCompletion:'
+    JsName: 'saveObjectsWithCompletion'
+    Module: 'HealthKit.HKHealthStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'saveObjects:withCompletion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'saveObject:withCompletion:'
+    JsName: 'saveObjectWithCompletion'
+    Module: 'HealthKit.HKHealthStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'saveObject:withCompletion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HealthKit.HKObject
+      Name: HKObject
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Bool
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'stopQuery:'
+    JsName: 'stopQuery'
+    Module: 'HealthKit.HKHealthStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopQuery:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HealthKit.HKQuery
+      Name: HKQuery
+    TypeEncoding: 'v12@0:4@8'
+  StaticMethods:
+  - Name: 'isHealthDataAvailable'
+    JsName: 'isHealthDataAvailable'
+    Module: 'HealthKit.HKHealthStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isHealthDataAvailable'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HKUserPreferencesDidChangeNotification'
+  JsName: 'HKUserPreferencesDidChangeNotification'
+  Module: 'HealthKit.HKHealthStore'
+  IntroducedIn: 8.2
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKBiologicalSexObject'
+  JsName: 'HKBiologicalSexObject'
+  Module: 'HealthKit.HKHealthStore'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'biologicalSex'
+    JsName: 'biologicalSex'
+    Module: 'HealthKit.HKHealthStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'biologicalSex'
+      JsName: 'biologicalSex'
+      Module: 'HealthKit.HKHealthStore'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'biologicalSex'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HKBloodTypeObject'
+  JsName: 'HKBloodTypeObject'
+  Module: 'HealthKit.HKHealthStore'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'bloodType'
+    JsName: 'bloodType'
+    Module: 'HealthKit.HKHealthStore'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'bloodType'
+      JsName: 'bloodType'
+      Module: 'HealthKit.HKHealthStore'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'bloodType'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HKMetadataKeyDeviceSerialNumber'
+  JsName: 'HKMetadataKeyDeviceSerialNumber'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKMetadataKeyBodyTemperatureSensorLocation'
+  JsName: 'HKMetadataKeyBodyTemperatureSensorLocation'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKBodyTemperatureSensorLocation'
+  JsName: 'HKBodyTemperatureSensorLocation'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HKBodyTemperatureSensorLocationOther":0,"HKBodyTemperatureSensorLocationArmpit":1,"HKBodyTemperatureSensorLocationBody":2,"HKBodyTemperatureSensorLocationEar":3,"HKBodyTemperatureSensorLocationFinger":4,"HKBodyTemperatureSensorLocationGastroIntestinal":5,"HKBodyTemperatureSensorLocationMouth":6,"HKBodyTemperatureSensorLocationRectum":7,"HKBodyTemperatureSensorLocationToe":8,"HKBodyTemperatureSensorLocationEarDrum":9,"HKBodyTemperatureSensorLocationTemporalArtery":10,"HKBodyTemperatureSensorLocationForehead":11})
+- Name: 'HKMetadataKeyHeartRateSensorLocation'
+  JsName: 'HKMetadataKeyHeartRateSensorLocation'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKHeartRateSensorLocation'
+  JsName: 'HKHeartRateSensorLocation'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HKHeartRateSensorLocationOther":0,"HKHeartRateSensorLocationChest":1,"HKHeartRateSensorLocationWrist":2,"HKHeartRateSensorLocationFinger":3,"HKHeartRateSensorLocationHand":4,"HKHeartRateSensorLocationEarLobe":5,"HKHeartRateSensorLocationFoot":6})
+- Name: 'HKMetadataKeyFoodType'
+  JsName: 'HKMetadataKeyFoodType'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKMetadataKeyUDIDeviceIdentifier'
+  JsName: 'HKMetadataKeyUDIDeviceIdentifier'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKMetadataKeyUDIProductionIdentifier'
+  JsName: 'HKMetadataKeyUDIProductionIdentifier'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKMetadataKeyDigitalSignature'
+  JsName: 'HKMetadataKeyDigitalSignature'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKMetadataKeyExternalUUID'
+  JsName: 'HKMetadataKeyExternalUUID'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKMetadataKeyTimeZone'
+  JsName: 'HKMetadataKeyTimeZone'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKMetadataKeyDeviceName'
+  JsName: 'HKMetadataKeyDeviceName'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKMetadataKeyDeviceManufacturerName'
+  JsName: 'HKMetadataKeyDeviceManufacturerName'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKMetadataKeyWasTakenInLab'
+  JsName: 'HKMetadataKeyWasTakenInLab'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKMetadataKeyReferenceRangeLowerLimit'
+  JsName: 'HKMetadataKeyReferenceRangeLowerLimit'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKMetadataKeyReferenceRangeUpperLimit'
+  JsName: 'HKMetadataKeyReferenceRangeUpperLimit'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKMetadataKeyWasUserEntered'
+  JsName: 'HKMetadataKeyWasUserEntered'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKMetadataKeyWorkoutBrandName'
+  JsName: 'HKMetadataKeyWorkoutBrandName'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKMetadataKeyGroupFitness'
+  JsName: 'HKMetadataKeyGroupFitness'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKMetadataKeyIndoorWorkout'
+  JsName: 'HKMetadataKeyIndoorWorkout'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKMetadataKeyCoachedWorkout'
+  JsName: 'HKMetadataKeyCoachedWorkout'
+  Module: 'HealthKit.HKMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierBodyMassIndex'
+  JsName: 'HKQuantityTypeIdentifierBodyMassIndex'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierBodyFatPercentage'
+  JsName: 'HKQuantityTypeIdentifierBodyFatPercentage'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierHeight'
+  JsName: 'HKQuantityTypeIdentifierHeight'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierBodyMass'
+  JsName: 'HKQuantityTypeIdentifierBodyMass'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierLeanBodyMass'
+  JsName: 'HKQuantityTypeIdentifierLeanBodyMass'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierStepCount'
+  JsName: 'HKQuantityTypeIdentifierStepCount'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDistanceWalkingRunning'
+  JsName: 'HKQuantityTypeIdentifierDistanceWalkingRunning'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDistanceCycling'
+  JsName: 'HKQuantityTypeIdentifierDistanceCycling'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierBasalEnergyBurned'
+  JsName: 'HKQuantityTypeIdentifierBasalEnergyBurned'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierActiveEnergyBurned'
+  JsName: 'HKQuantityTypeIdentifierActiveEnergyBurned'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierFlightsClimbed'
+  JsName: 'HKQuantityTypeIdentifierFlightsClimbed'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierNikeFuel'
+  JsName: 'HKQuantityTypeIdentifierNikeFuel'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierHeartRate'
+  JsName: 'HKQuantityTypeIdentifierHeartRate'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierBodyTemperature'
+  JsName: 'HKQuantityTypeIdentifierBodyTemperature'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierBloodPressureSystolic'
+  JsName: 'HKQuantityTypeIdentifierBloodPressureSystolic'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierBloodPressureDiastolic'
+  JsName: 'HKQuantityTypeIdentifierBloodPressureDiastolic'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierRespiratoryRate'
+  JsName: 'HKQuantityTypeIdentifierRespiratoryRate'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierOxygenSaturation'
+  JsName: 'HKQuantityTypeIdentifierOxygenSaturation'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierPeripheralPerfusionIndex'
+  JsName: 'HKQuantityTypeIdentifierPeripheralPerfusionIndex'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierBloodGlucose'
+  JsName: 'HKQuantityTypeIdentifierBloodGlucose'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierNumberOfTimesFallen'
+  JsName: 'HKQuantityTypeIdentifierNumberOfTimesFallen'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierElectrodermalActivity'
+  JsName: 'HKQuantityTypeIdentifierElectrodermalActivity'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierInhalerUsage'
+  JsName: 'HKQuantityTypeIdentifierInhalerUsage'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierBloodAlcoholContent'
+  JsName: 'HKQuantityTypeIdentifierBloodAlcoholContent'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierForcedVitalCapacity'
+  JsName: 'HKQuantityTypeIdentifierForcedVitalCapacity'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierForcedExpiratoryVolume1'
+  JsName: 'HKQuantityTypeIdentifierForcedExpiratoryVolume1'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierPeakExpiratoryFlowRate'
+  JsName: 'HKQuantityTypeIdentifierPeakExpiratoryFlowRate'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryFatTotal'
+  JsName: 'HKQuantityTypeIdentifierDietaryFatTotal'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryFatPolyunsaturated'
+  JsName: 'HKQuantityTypeIdentifierDietaryFatPolyunsaturated'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryFatMonounsaturated'
+  JsName: 'HKQuantityTypeIdentifierDietaryFatMonounsaturated'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryFatSaturated'
+  JsName: 'HKQuantityTypeIdentifierDietaryFatSaturated'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryCholesterol'
+  JsName: 'HKQuantityTypeIdentifierDietaryCholesterol'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietarySodium'
+  JsName: 'HKQuantityTypeIdentifierDietarySodium'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryCarbohydrates'
+  JsName: 'HKQuantityTypeIdentifierDietaryCarbohydrates'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryFiber'
+  JsName: 'HKQuantityTypeIdentifierDietaryFiber'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietarySugar'
+  JsName: 'HKQuantityTypeIdentifierDietarySugar'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryEnergyConsumed'
+  JsName: 'HKQuantityTypeIdentifierDietaryEnergyConsumed'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryProtein'
+  JsName: 'HKQuantityTypeIdentifierDietaryProtein'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryVitaminA'
+  JsName: 'HKQuantityTypeIdentifierDietaryVitaminA'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryVitaminB6'
+  JsName: 'HKQuantityTypeIdentifierDietaryVitaminB6'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryVitaminB12'
+  JsName: 'HKQuantityTypeIdentifierDietaryVitaminB12'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryVitaminC'
+  JsName: 'HKQuantityTypeIdentifierDietaryVitaminC'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryVitaminD'
+  JsName: 'HKQuantityTypeIdentifierDietaryVitaminD'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryVitaminE'
+  JsName: 'HKQuantityTypeIdentifierDietaryVitaminE'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryVitaminK'
+  JsName: 'HKQuantityTypeIdentifierDietaryVitaminK'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryCalcium'
+  JsName: 'HKQuantityTypeIdentifierDietaryCalcium'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryIron'
+  JsName: 'HKQuantityTypeIdentifierDietaryIron'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryThiamin'
+  JsName: 'HKQuantityTypeIdentifierDietaryThiamin'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryRiboflavin'
+  JsName: 'HKQuantityTypeIdentifierDietaryRiboflavin'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryNiacin'
+  JsName: 'HKQuantityTypeIdentifierDietaryNiacin'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryFolate'
+  JsName: 'HKQuantityTypeIdentifierDietaryFolate'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryBiotin'
+  JsName: 'HKQuantityTypeIdentifierDietaryBiotin'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryPantothenicAcid'
+  JsName: 'HKQuantityTypeIdentifierDietaryPantothenicAcid'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryPhosphorus'
+  JsName: 'HKQuantityTypeIdentifierDietaryPhosphorus'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryIodine'
+  JsName: 'HKQuantityTypeIdentifierDietaryIodine'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryMagnesium'
+  JsName: 'HKQuantityTypeIdentifierDietaryMagnesium'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryZinc'
+  JsName: 'HKQuantityTypeIdentifierDietaryZinc'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietarySelenium'
+  JsName: 'HKQuantityTypeIdentifierDietarySelenium'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryCopper'
+  JsName: 'HKQuantityTypeIdentifierDietaryCopper'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryManganese'
+  JsName: 'HKQuantityTypeIdentifierDietaryManganese'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryChromium'
+  JsName: 'HKQuantityTypeIdentifierDietaryChromium'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryMolybdenum'
+  JsName: 'HKQuantityTypeIdentifierDietaryMolybdenum'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryChloride'
+  JsName: 'HKQuantityTypeIdentifierDietaryChloride'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryPotassium'
+  JsName: 'HKQuantityTypeIdentifierDietaryPotassium'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKQuantityTypeIdentifierDietaryCaffeine'
+  JsName: 'HKQuantityTypeIdentifierDietaryCaffeine'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKCategoryTypeIdentifierSleepAnalysis'
+  JsName: 'HKCategoryTypeIdentifierSleepAnalysis'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKCharacteristicTypeIdentifierBiologicalSex'
+  JsName: 'HKCharacteristicTypeIdentifierBiologicalSex'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKCharacteristicTypeIdentifierBloodType'
+  JsName: 'HKCharacteristicTypeIdentifierBloodType'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKCharacteristicTypeIdentifierDateOfBirth'
+  JsName: 'HKCharacteristicTypeIdentifierDateOfBirth'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKCorrelationTypeIdentifierBloodPressure'
+  JsName: 'HKCorrelationTypeIdentifierBloodPressure'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKCorrelationTypeIdentifierFood'
+  JsName: 'HKCorrelationTypeIdentifierFood'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKWorkoutTypeIdentifier'
+  JsName: 'HKWorkoutTypeIdentifier'
+  Module: 'HealthKit.HKTypeIdentifiers'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKObjectType'
+  JsName: 'HKObjectType'
+  Module: 'HealthKit.HKObjectType'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'categoryTypeForIdentifier:'
+    JsName: 'categoryTypeForIdentifier'
+    Module: 'HealthKit.HKObjectType'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'categoryTypeForIdentifier:'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKCategoryType
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'characteristicTypeForIdentifier:'
+    JsName: 'characteristicTypeForIdentifier'
+    Module: 'HealthKit.HKObjectType'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'characteristicTypeForIdentifier:'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKCharacteristicType
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'correlationTypeForIdentifier:'
+    JsName: 'correlationTypeForIdentifier'
+    Module: 'HealthKit.HKObjectType'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'correlationTypeForIdentifier:'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKCorrelationType
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'quantityTypeForIdentifier:'
+    JsName: 'quantityTypeForIdentifier'
+    Module: 'HealthKit.HKObjectType'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'quantityTypeForIdentifier:'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKQuantityType
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'workoutType'
+    JsName: 'workoutType'
+    Module: 'HealthKit.HKObjectType'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'workoutType'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKWorkoutType
+    TypeEncoding: '@8@0:4'
+  Properties:
+  - Name: 'identifier'
+    JsName: 'identifier'
+    Module: 'HealthKit.HKObjectType'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'identifier'
+      JsName: 'identifier'
+      Module: 'HealthKit.HKObjectType'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'identifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HKCharacteristicType'
+  JsName: 'HKCharacteristicType'
+  Module: 'HealthKit.HKObjectType'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: HealthKit.HKObjectType
+    Name: HKObjectType
+  Type: Interface
+- Name: 'HKSampleType'
+  JsName: 'HKSampleType'
+  Module: 'HealthKit.HKObjectType'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: HealthKit.HKObjectType
+    Name: HKObjectType
+  Type: Interface
+- Name: 'HKCategoryType'
+  JsName: 'HKCategoryType'
+  Module: 'HealthKit.HKObjectType'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: HealthKit.HKObjectType
+    Name: HKSampleType
+  Type: Interface
+- Name: 'HKCorrelationType'
+  JsName: 'HKCorrelationType'
+  Module: 'HealthKit.HKObjectType'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: HealthKit.HKObjectType
+    Name: HKSampleType
+  Type: Interface
+- Name: 'HKQuantityAggregationStyle'
+  JsName: 'HKQuantityAggregationStyle'
+  Module: 'HealthKit.HKObjectType'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HKQuantityAggregationStyleCumulative":0,"HKQuantityAggregationStyleDiscrete":1})
+- Name: 'HKQuantityType'
+  JsName: 'HKQuantityType'
+  Module: 'HealthKit.HKObjectType'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'isCompatibleWithUnit:'
+    JsName: 'isCompatibleWithUnit'
+    Module: 'HealthKit.HKObjectType'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isCompatibleWithUnit:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: HealthKit.HKUnit
+      Name: HKUnit
+    TypeEncoding: 'c12@0:4@8'
+  StaticMethods: []
+  Properties:
+  - Name: 'aggregationStyle'
+    JsName: 'aggregationStyle'
+    Module: 'HealthKit.HKObjectType'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'aggregationStyle'
+      JsName: 'aggregationStyle'
+      Module: 'HealthKit.HKObjectType'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'aggregationStyle'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  Protocols: []
+  Base:
+    Module: HealthKit.HKObjectType
+    Name: HKSampleType
+  Type: Interface
+- Name: 'HKWorkoutType'
+  JsName: 'HKWorkoutType'
+  Module: 'HealthKit.HKObjectType'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: HealthKit.HKObjectType
+    Name: HKSampleType
+  Type: Interface
+- Name: 'HKObserverQuery'
+  JsName: 'HKObserverQuery'
+  Module: 'HealthKit.HKObserverQuery'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithSampleType:predicate:updateHandler:'
+    JsName: 'initWithSampleTypePredicateUpdateHandler'
+    Module: 'HealthKit.HKObserverQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithSampleType:predicate:updateHandler:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKSampleType
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: HealthKit.HKObserverQuery
+        Name: HKObserverQuery
+      - Type: Block
+        Signature:
+        - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@20@0:4@8@12@?16'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: HealthKit.HKQuery
+    Name: HKQuery
+  Type: Interface
+- Name: 'HKQuantity'
+  JsName: 'HKQuantity'
+  Module: 'HealthKit.HKQuantity'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'compare:'
+    JsName: 'compare'
+    Module: 'HealthKit.HKQuantity'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'compare:'
+    Signature:
+    - Type: Int
+    - Type: Interface
+      Module: HealthKit.HKQuantity
+      Name: HKQuantity
+    TypeEncoding: 'i12@0:4@8'
+  - Name: 'doubleValueForUnit:'
+    JsName: 'doubleValueForUnit'
+    Module: 'HealthKit.HKQuantity'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'doubleValueForUnit:'
+    Signature:
+    - Type: Double
+    - Type: Interface
+      Module: HealthKit.HKUnit
+      Name: HKUnit
+    TypeEncoding: 'd12@0:4@8'
+  - Name: 'isCompatibleWithUnit:'
+    JsName: 'isCompatibleWithUnit'
+    Module: 'HealthKit.HKQuantity'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isCompatibleWithUnit:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: HealthKit.HKUnit
+      Name: HKUnit
+    TypeEncoding: 'c12@0:4@8'
+  StaticMethods:
+  - Name: 'quantityWithUnit:doubleValue:'
+    JsName: 'quantityWithUnitDoubleValue'
+    Module: 'HealthKit.HKQuantity'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'quantityWithUnit:doubleValue:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: HealthKit.HKUnit
+      Name: HKUnit
+    - Type: Double
+    TypeEncoding: '@20@0:4@8d12'
+  Properties: []
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HKQuantitySample'
+  JsName: 'HKQuantitySample'
+  Module: 'HealthKit.HKQuantitySample'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'quantitySampleWithType:quantity:startDate:endDate:'
+    JsName: 'quantitySampleWithTypeQuantityStartDateEndDate'
+    Module: 'HealthKit.HKQuantitySample'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'quantitySampleWithType:quantity:startDate:endDate:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKQuantityType
+    - Type: Interface
+      Module: HealthKit.HKQuantity
+      Name: HKQuantity
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    TypeEncoding: '@24@0:4@8@12@16@20'
+  - Name: 'quantitySampleWithType:quantity:startDate:endDate:metadata:'
+    JsName: 'quantitySampleWithTypeQuantityStartDateEndDateMetadata'
+    Module: 'HealthKit.HKQuantitySample'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'quantitySampleWithType:quantity:startDate:endDate:metadata:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKQuantityType
+    - Type: Interface
+      Module: HealthKit.HKQuantity
+      Name: HKQuantity
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@28@0:4@8@12@16@20@24'
+  Properties:
+  - Name: 'quantity'
+    JsName: 'quantity'
+    Module: 'HealthKit.HKQuantitySample'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'quantity'
+      JsName: 'quantity'
+      Module: 'HealthKit.HKQuantitySample'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'quantity'
+      Signature:
+      - Type: Interface
+        Module: HealthKit.HKQuantity
+        Name: HKQuantity
+      TypeEncoding: '@8@0:4'
+  - Name: 'quantityType'
+    JsName: 'quantityType'
+    Module: 'HealthKit.HKQuantitySample'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'quantityType'
+      JsName: 'quantityType'
+      Module: 'HealthKit.HKQuantitySample'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'quantityType'
+      Signature:
+      - Type: Interface
+        Module: HealthKit.HKObjectType
+        Name: HKQuantityType
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: HealthKit.HKSample
+    Name: HKSample
+  Type: Interface
+- Name: 'HKPredicateKeyPathQuantity'
+  JsName: 'HKPredicateKeyPathQuantity'
+  Module: 'HealthKit.HKQuantitySample'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HKSampleQuery'
+  JsName: 'HKSampleQuery'
+  Module: 'HealthKit.HKSampleQuery'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithSampleType:predicate:limit:sortDescriptors:resultsHandler:'
+    JsName: 'initWithSampleTypePredicateLimitSortDescriptorsResultsHandler'
+    Module: 'HealthKit.HKSampleQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithSampleType:predicate:limit:sortDescriptors:resultsHandler:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKSampleType
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: UInt
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: HealthKit.HKSampleQuery
+        Name: HKSampleQuery
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@28@0:4@8@12I16@20@?24'
+  StaticMethods: []
+  Properties:
+  - Name: 'limit'
+    JsName: 'limit'
+    Module: 'HealthKit.HKSampleQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'limit'
+      JsName: 'limit'
+      Module: 'HealthKit.HKSampleQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'limit'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'sortDescriptors'
+    JsName: 'sortDescriptors'
+    Module: 'HealthKit.HKSampleQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'sortDescriptors'
+      JsName: 'sortDescriptors'
+      Module: 'HealthKit.HKSampleQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'sortDescriptors'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: HealthKit.HKQuery
+    Name: HKQuery
+  Type: Interface
+- Name: 'HKSource'
+  JsName: 'HKSource'
+  Module: 'HealthKit.HKSource'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'defaultSource'
+    JsName: 'defaultSource'
+    Module: 'HealthKit.HKSource'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'defaultSource'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKSource
+      Name: HKSource
+    TypeEncoding: '@8@0:4'
+  Properties:
+  - Name: 'bundleIdentifier'
+    JsName: 'bundleIdentifier'
+    Module: 'HealthKit.HKSource'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'bundleIdentifier'
+      JsName: 'bundleIdentifier'
+      Module: 'HealthKit.HKSource'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'bundleIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'HealthKit.HKSource'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'HealthKit.HKSource'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HKSourceQuery'
+  JsName: 'HKSourceQuery'
+  Module: 'HealthKit.HKSourceQuery'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithSampleType:samplePredicate:completionHandler:'
+    JsName: 'initWithSampleTypeSamplePredicateCompletionHandler'
+    Module: 'HealthKit.HKSourceQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithSampleType:samplePredicate:completionHandler:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKSampleType
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: HealthKit.HKSourceQuery
+        Name: HKSourceQuery
+      - Type: Interface
+        Module: Foundation.NSSet
+        Name: NSSet
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@20@0:4@8@12@?16'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: HealthKit.HKQuery
+    Name: HKQuery
+  Type: Interface
+- Name: 'HKStatisticsOptions'
+  JsName: 'HKStatisticsOptions'
+  Module: 'HealthKit.HKStatistics'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HKStatisticsOptionNone":0,"HKStatisticsOptionSeparateBySource":1,"HKStatisticsOptionDiscreteAverage":2,"HKStatisticsOptionDiscreteMin":4,"HKStatisticsOptionDiscreteMax":8,"HKStatisticsOptionCumulativeSum":16})
+- Name: 'HKStatistics'
+  JsName: 'HKStatistics'
+  Module: 'HealthKit.HKStatistics'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'averageQuantity'
+    JsName: 'averageQuantity'
+    Module: 'HealthKit.HKStatistics'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'averageQuantity'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKQuantity
+      Name: HKQuantity
+    TypeEncoding: '@8@0:4'
+  - Name: 'averageQuantityForSource:'
+    JsName: 'averageQuantityForSource'
+    Module: 'HealthKit.HKStatistics'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'averageQuantityForSource:'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKQuantity
+      Name: HKQuantity
+    - Type: Interface
+      Module: HealthKit.HKSource
+      Name: HKSource
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'maximumQuantity'
+    JsName: 'maximumQuantity'
+    Module: 'HealthKit.HKStatistics'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'maximumQuantity'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKQuantity
+      Name: HKQuantity
+    TypeEncoding: '@8@0:4'
+  - Name: 'maximumQuantityForSource:'
+    JsName: 'maximumQuantityForSource'
+    Module: 'HealthKit.HKStatistics'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'maximumQuantityForSource:'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKQuantity
+      Name: HKQuantity
+    - Type: Interface
+      Module: HealthKit.HKSource
+      Name: HKSource
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'minimumQuantity'
+    JsName: 'minimumQuantity'
+    Module: 'HealthKit.HKStatistics'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'minimumQuantity'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKQuantity
+      Name: HKQuantity
+    TypeEncoding: '@8@0:4'
+  - Name: 'minimumQuantityForSource:'
+    JsName: 'minimumQuantityForSource'
+    Module: 'HealthKit.HKStatistics'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'minimumQuantityForSource:'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKQuantity
+      Name: HKQuantity
+    - Type: Interface
+      Module: HealthKit.HKSource
+      Name: HKSource
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'sumQuantity'
+    JsName: 'sumQuantity'
+    Module: 'HealthKit.HKStatistics'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'sumQuantity'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKQuantity
+      Name: HKQuantity
+    TypeEncoding: '@8@0:4'
+  - Name: 'sumQuantityForSource:'
+    JsName: 'sumQuantityForSource'
+    Module: 'HealthKit.HKStatistics'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'sumQuantityForSource:'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKQuantity
+      Name: HKQuantity
+    - Type: Interface
+      Module: HealthKit.HKSource
+      Name: HKSource
+    TypeEncoding: '@12@0:4@8'
+  StaticMethods: []
+  Properties:
+  - Name: 'endDate'
+    JsName: 'endDate'
+    Module: 'HealthKit.HKStatistics'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'endDate'
+      JsName: 'endDate'
+      Module: 'HealthKit.HKStatistics'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'endDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'quantityType'
+    JsName: 'quantityType'
+    Module: 'HealthKit.HKStatistics'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'quantityType'
+      JsName: 'quantityType'
+      Module: 'HealthKit.HKStatistics'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'quantityType'
+      Signature:
+      - Type: Interface
+        Module: HealthKit.HKObjectType
+        Name: HKQuantityType
+      TypeEncoding: '@8@0:4'
+  - Name: 'sources'
+    JsName: 'sources'
+    Module: 'HealthKit.HKStatistics'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'sources'
+      JsName: 'sources'
+      Module: 'HealthKit.HKStatistics'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'sources'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'startDate'
+    JsName: 'startDate'
+    Module: 'HealthKit.HKStatistics'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'startDate'
+      JsName: 'startDate'
+      Module: 'HealthKit.HKStatistics'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'startDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HKStatisticsCollection'
+  JsName: 'HKStatisticsCollection'
+  Module: 'HealthKit.HKStatisticsCollectionQuery'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'enumerateStatisticsFromDate:toDate:withBlock:'
+    JsName: 'enumerateStatisticsFromDateToDateWithBlock'
+    Module: 'HealthKit.HKStatisticsCollectionQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'enumerateStatisticsFromDate:toDate:withBlock:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: HealthKit.HKStatistics
+        Name: HKStatistics
+      - Type: Pointer
+        PointerType:
+          Type: Bool
+    TypeEncoding: 'v20@0:4@8@12@?16'
+  - Name: 'sources'
+    JsName: 'sources'
+    Module: 'HealthKit.HKStatisticsCollectionQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'sources'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSSet
+      Name: NSSet
+    TypeEncoding: '@8@0:4'
+  - Name: 'statistics'
+    JsName: 'statistics'
+    Module: 'HealthKit.HKStatisticsCollectionQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'statistics'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@8@0:4'
+  - Name: 'statisticsForDate:'
+    JsName: 'statisticsForDate'
+    Module: 'HealthKit.HKStatisticsCollectionQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'statisticsForDate:'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKStatistics
+      Name: HKStatistics
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    TypeEncoding: '@12@0:4@8'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HKStatisticsCollectionQuery'
+  JsName: 'HKStatisticsCollectionQuery'
+  Module: 'HealthKit.HKStatisticsCollectionQuery'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithQuantityType:quantitySamplePredicate:options:anchorDate:intervalComponents:'
+    JsName: 'initWithQuantityTypeQuantitySamplePredicateOptionsAnchorDateIntervalComponents'
+    Module: 'HealthKit.HKStatisticsCollectionQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithQuantityType:quantitySamplePredicate:options:anchorDate:intervalComponents:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKQuantityType
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: UInt
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSCalendar
+      Name: NSDateComponents
+    TypeEncoding: '@28@0:4@8@12I16@20@24'
+  StaticMethods: []
+  Properties:
+  - Name: 'anchorDate'
+    JsName: 'anchorDate'
+    Module: 'HealthKit.HKStatisticsCollectionQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'anchorDate'
+      JsName: 'anchorDate'
+      Module: 'HealthKit.HKStatisticsCollectionQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'anchorDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'initialResultsHandler'
+    JsName: 'initialResultsHandler'
+    Module: 'HealthKit.HKStatisticsCollectionQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'initialResultsHandler'
+      JsName: 'initialResultsHandler'
+      Module: 'HealthKit.HKStatisticsCollectionQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'initialResultsHandler'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: HealthKit.HKStatisticsCollectionQuery
+          Name: HKStatisticsCollectionQuery
+        - Type: Interface
+          Module: HealthKit.HKStatisticsCollectionQuery
+          Name: HKStatisticsCollection
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: '@?8@0:4'
+    Setter:
+      Name: 'setInitialResultsHandler:'
+      JsName: 'setInitialResultsHandler'
+      Module: 'HealthKit.HKStatisticsCollectionQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setInitialResultsHandler:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: HealthKit.HKStatisticsCollectionQuery
+          Name: HKStatisticsCollectionQuery
+        - Type: Interface
+          Module: HealthKit.HKStatisticsCollectionQuery
+          Name: HKStatisticsCollection
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: 'v12@0:4@?8'
+  - Name: 'intervalComponents'
+    JsName: 'intervalComponents'
+    Module: 'HealthKit.HKStatisticsCollectionQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'intervalComponents'
+      JsName: 'intervalComponents'
+      Module: 'HealthKit.HKStatisticsCollectionQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'intervalComponents'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSCalendar
+        Name: NSDateComponents
+      TypeEncoding: '@8@0:4'
+  - Name: 'options'
+    JsName: 'options'
+    Module: 'HealthKit.HKStatisticsCollectionQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'options'
+      JsName: 'options'
+      Module: 'HealthKit.HKStatisticsCollectionQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'options'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I8@0:4'
+  - Name: 'statisticsUpdateHandler'
+    JsName: 'statisticsUpdateHandler'
+    Module: 'HealthKit.HKStatisticsCollectionQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'statisticsUpdateHandler'
+      JsName: 'statisticsUpdateHandler'
+      Module: 'HealthKit.HKStatisticsCollectionQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'statisticsUpdateHandler'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: HealthKit.HKStatisticsCollectionQuery
+          Name: HKStatisticsCollectionQuery
+        - Type: Interface
+          Module: HealthKit.HKStatistics
+          Name: HKStatistics
+        - Type: Interface
+          Module: HealthKit.HKStatisticsCollectionQuery
+          Name: HKStatisticsCollection
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: '@?8@0:4'
+    Setter:
+      Name: 'setStatisticsUpdateHandler:'
+      JsName: 'setStatisticsUpdateHandler'
+      Module: 'HealthKit.HKStatisticsCollectionQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setStatisticsUpdateHandler:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: HealthKit.HKStatisticsCollectionQuery
+          Name: HKStatisticsCollectionQuery
+        - Type: Interface
+          Module: HealthKit.HKStatistics
+          Name: HKStatistics
+        - Type: Interface
+          Module: HealthKit.HKStatisticsCollectionQuery
+          Name: HKStatisticsCollection
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: 'v12@0:4@?8'
+  Protocols: []
+  Base:
+    Module: HealthKit.HKQuery
+    Name: HKQuery
+  Type: Interface
+- Name: 'HKStatisticsQuery'
+  JsName: 'HKStatisticsQuery'
+  Module: 'HealthKit.HKStatisticsQuery'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithQuantityType:quantitySamplePredicate:options:completionHandler:'
+    JsName: 'initWithQuantityTypeQuantitySamplePredicateOptionsCompletionHandler'
+    Module: 'HealthKit.HKStatisticsQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithQuantityType:quantitySamplePredicate:options:completionHandler:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: HealthKit.HKObjectType
+      Name: HKQuantityType
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: UInt
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: HealthKit.HKStatisticsQuery
+        Name: HKStatisticsQuery
+      - Type: Interface
+        Module: HealthKit.HKStatistics
+        Name: HKStatistics
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@24@0:4@8@12I16@?20'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: HealthKit.HKQuery
+    Name: HKQuery
+  Type: Interface
+- Name: 'HKUnit'
+  JsName: 'HKUnit'
+  Module: 'HealthKit.HKUnit'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'isNull'
+    JsName: 'isNull'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isNull'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  - Name: 'reciprocalUnit'
+    JsName: 'reciprocalUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'reciprocalUnit'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKUnit
+      Name: HKUnit
+    TypeEncoding: '@8@0:4'
+  - Name: 'unitDividedByUnit:'
+    JsName: 'unitDividedByUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'unitDividedByUnit:'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKUnit
+      Name: HKUnit
+    - Type: Interface
+      Module: HealthKit.HKUnit
+      Name: HKUnit
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'unitMultipliedByUnit:'
+    JsName: 'unitMultipliedByUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'unitMultipliedByUnit:'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKUnit
+      Name: HKUnit
+    - Type: Interface
+      Module: HealthKit.HKUnit
+      Name: HKUnit
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'unitRaisedToPower:'
+    JsName: 'unitRaisedToPower'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'unitRaisedToPower:'
+    Signature:
+    - Type: Interface
+      Module: HealthKit.HKUnit
+      Name: HKUnit
+    - Type: Int
+    TypeEncoding: '@12@0:4i8'
+  StaticMethods:
+  - Name: 'atmosphereUnit'
+    JsName: 'atmosphereUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'atmosphereUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'calorieUnit'
+    JsName: 'calorieUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'calorieUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'centimeterOfWaterUnit'
+    JsName: 'centimeterOfWaterUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'centimeterOfWaterUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'countUnit'
+    JsName: 'countUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'countUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'dayUnit'
+    JsName: 'dayUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'dayUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'degreeCelsiusUnit'
+    JsName: 'degreeCelsiusUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'degreeCelsiusUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'degreeFahrenheitUnit'
+    JsName: 'degreeFahrenheitUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'degreeFahrenheitUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'energyFormatterUnitFromUnit:'
+    JsName: 'energyFormatterUnitFromUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'energyFormatterUnitFromUnit:'
+    Signature:
+    - Type: Int
+    - Type: Interface
+      Module: HealthKit.HKUnit
+      Name: HKUnit
+    TypeEncoding: 'i12@0:4@8'
+  - Name: 'fluidOunceImperialUnit'
+    JsName: 'fluidOunceImperialUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fluidOunceImperialUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'fluidOunceUSUnit'
+    JsName: 'fluidOunceUSUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fluidOunceUSUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'footUnit'
+    JsName: 'footUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'footUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'gramUnit'
+    JsName: 'gramUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'gramUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'gramUnitWithMetricPrefix:'
+    JsName: 'gramUnitWithMetricPrefix'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'gramUnitWithMetricPrefix:'
+    Signature:
+    - Type: Instancetype
+    - Type: Int
+    TypeEncoding: '@12@0:4i8'
+  - Name: 'hourUnit'
+    JsName: 'hourUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'hourUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'inchUnit'
+    JsName: 'inchUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'inchUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'jouleUnit'
+    JsName: 'jouleUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'jouleUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'jouleUnitWithMetricPrefix:'
+    JsName: 'jouleUnitWithMetricPrefix'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'jouleUnitWithMetricPrefix:'
+    Signature:
+    - Type: Instancetype
+    - Type: Int
+    TypeEncoding: '@12@0:4i8'
+  - Name: 'kelvinUnit'
+    JsName: 'kelvinUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'kelvinUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'kilocalorieUnit'
+    JsName: 'kilocalorieUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'kilocalorieUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'lengthFormatterUnitFromUnit:'
+    JsName: 'lengthFormatterUnitFromUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'lengthFormatterUnitFromUnit:'
+    Signature:
+    - Type: Int
+    - Type: Interface
+      Module: HealthKit.HKUnit
+      Name: HKUnit
+    TypeEncoding: 'i12@0:4@8'
+  - Name: 'literUnit'
+    JsName: 'literUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'literUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'literUnitWithMetricPrefix:'
+    JsName: 'literUnitWithMetricPrefix'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'literUnitWithMetricPrefix:'
+    Signature:
+    - Type: Instancetype
+    - Type: Int
+    TypeEncoding: '@12@0:4i8'
+  - Name: 'massFormatterUnitFromUnit:'
+    JsName: 'massFormatterUnitFromUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'massFormatterUnitFromUnit:'
+    Signature:
+    - Type: Int
+    - Type: Interface
+      Module: HealthKit.HKUnit
+      Name: HKUnit
+    TypeEncoding: 'i12@0:4@8'
+  - Name: 'meterUnit'
+    JsName: 'meterUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'meterUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'meterUnitWithMetricPrefix:'
+    JsName: 'meterUnitWithMetricPrefix'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'meterUnitWithMetricPrefix:'
+    Signature:
+    - Type: Instancetype
+    - Type: Int
+    TypeEncoding: '@12@0:4i8'
+  - Name: 'mileUnit'
+    JsName: 'mileUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mileUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'millimeterOfMercuryUnit'
+    JsName: 'millimeterOfMercuryUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'millimeterOfMercuryUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'minuteUnit'
+    JsName: 'minuteUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'minuteUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'moleUnitWithMetricPrefix:molarMass:'
+    JsName: 'moleUnitWithMetricPrefixMolarMass'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'moleUnitWithMetricPrefix:molarMass:'
+    Signature:
+    - Type: Instancetype
+    - Type: Int
+    - Type: Double
+    TypeEncoding: '@20@0:4i8d12'
+  - Name: 'moleUnitWithMolarMass:'
+    JsName: 'moleUnitWithMolarMass'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'moleUnitWithMolarMass:'
+    Signature:
+    - Type: Instancetype
+    - Type: Double
+    TypeEncoding: '@16@0:4d8'
+  - Name: 'ounceUnit'
+    JsName: 'ounceUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'ounceUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'pascalUnit'
+    JsName: 'pascalUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'pascalUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'pascalUnitWithMetricPrefix:'
+    JsName: 'pascalUnitWithMetricPrefix'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'pascalUnitWithMetricPrefix:'
+    Signature:
+    - Type: Instancetype
+    - Type: Int
+    TypeEncoding: '@12@0:4i8'
+  - Name: 'percentUnit'
+    JsName: 'percentUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'percentUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'pintImperialUnit'
+    JsName: 'pintImperialUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'pintImperialUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'pintUSUnit'
+    JsName: 'pintUSUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'pintUSUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'poundUnit'
+    JsName: 'poundUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'poundUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'secondUnit'
+    JsName: 'secondUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'secondUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'secondUnitWithMetricPrefix:'
+    JsName: 'secondUnitWithMetricPrefix'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'secondUnitWithMetricPrefix:'
+    Signature:
+    - Type: Instancetype
+    - Type: Int
+    TypeEncoding: '@12@0:4i8'
+  - Name: 'siemenUnit'
+    JsName: 'siemenUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'siemenUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'siemenUnitWithMetricPrefix:'
+    JsName: 'siemenUnitWithMetricPrefix'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'siemenUnitWithMetricPrefix:'
+    Signature:
+    - Type: Instancetype
+    - Type: Int
+    TypeEncoding: '@12@0:4i8'
+  - Name: 'stoneUnit'
+    JsName: 'stoneUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stoneUnit'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@8@0:4'
+  - Name: 'unitFromEnergyFormatterUnit:'
+    JsName: 'unitFromEnergyFormatterUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'unitFromEnergyFormatterUnit:'
+    Signature:
+    - Type: Instancetype
+    - Type: Int
+    TypeEncoding: '@12@0:4i8'
+  - Name: 'unitFromLengthFormatterUnit:'
+    JsName: 'unitFromLengthFormatterUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'unitFromLengthFormatterUnit:'
+    Signature:
+    - Type: Instancetype
+    - Type: Int
+    TypeEncoding: '@12@0:4i8'
+  - Name: 'unitFromMassFormatterUnit:'
+    JsName: 'unitFromMassFormatterUnit'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'unitFromMassFormatterUnit:'
+    Signature:
+    - Type: Instancetype
+    - Type: Int
+    TypeEncoding: '@12@0:4i8'
+  - Name: 'unitFromString:'
+    JsName: 'unitFromString'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'unitFromString:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@12@0:4@8'
+  Properties:
+  - Name: 'unitString'
+    JsName: 'unitString'
+    Module: 'HealthKit.HKUnit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'unitString'
+      JsName: 'unitString'
+      Module: 'HealthKit.HKUnit'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'unitString'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HKMetricPrefix'
+  JsName: 'HKMetricPrefix'
+  Module: 'HealthKit.HKUnit'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HKMetricPrefixNone":0,"HKMetricPrefixPico":1,"HKMetricPrefixNano":2,"HKMetricPrefixMicro":3,"HKMetricPrefixMilli":4,"HKMetricPrefixCenti":5,"HKMetricPrefixDeci":6,"HKMetricPrefixDeca":7,"HKMetricPrefixHecto":8,"HKMetricPrefixKilo":9,"HKMetricPrefixMega":10,"HKMetricPrefixGiga":11,"HKMetricPrefixTera":12})
+...

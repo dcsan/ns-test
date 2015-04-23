@@ -1,0 +1,4949 @@
+name: CloudKit
+items:
+- Name: 'CKOwnerDefaultName'
+  JsName: 'CKOwnerDefaultName'
+  Module: 'CloudKit.CKContainer'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CKContainer'
+  JsName: 'CKContainer'
+  Module: 'CloudKit.CKContainer'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'accountStatusWithCompletionHandler:'
+    JsName: 'accountStatusWithCompletionHandler'
+    Module: 'CloudKit.CKContainer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'accountStatusWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Long
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v24@0:8@?16'
+  - Name: 'addOperation:'
+    JsName: 'addOperation'
+    Module: 'CloudKit.CKContainer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addOperation:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CloudKit.CKOperation
+      Name: CKOperation
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'discoverAllContactUserInfosWithCompletionHandler:'
+    JsName: 'discoverAllContactUserInfosWithCompletionHandler'
+    Module: 'CloudKit.CKContainer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'discoverAllContactUserInfosWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v24@0:8@?16'
+  - Name: 'discoverUserInfoWithEmailAddress:completionHandler:'
+    JsName: 'discoverUserInfoWithEmailAddressCompletionHandler'
+    Module: 'CloudKit.CKContainer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'discoverUserInfoWithEmailAddress:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKDiscoveredUserInfo
+        Name: CKDiscoveredUserInfo
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'discoverUserInfoWithUserRecordID:completionHandler:'
+    JsName: 'discoverUserInfoWithUserRecordIDCompletionHandler'
+    Module: 'CloudKit.CKContainer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'discoverUserInfoWithUserRecordID:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CloudKit.CKRecordID
+      Name: CKRecordID
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKDiscoveredUserInfo
+        Name: CKDiscoveredUserInfo
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'fetchUserRecordIDWithCompletionHandler:'
+    JsName: 'fetchUserRecordIDWithCompletionHandler'
+    Module: 'CloudKit.CKContainer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchUserRecordIDWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKRecordID
+        Name: CKRecordID
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v24@0:8@?16'
+  - Name: 'requestApplicationPermission:completionHandler:'
+    JsName: 'requestApplicationPermissionCompletionHandler'
+    Module: 'CloudKit.CKContainer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'requestApplicationPermission:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: ULong
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Long
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8Q16@?24'
+  - Name: 'statusForApplicationPermission:completionHandler:'
+    JsName: 'statusForApplicationPermissionCompletionHandler'
+    Module: 'CloudKit.CKContainer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'statusForApplicationPermission:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: ULong
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Long
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8Q16@?24'
+  StaticMethods:
+  - Name: 'containerWithIdentifier:'
+    JsName: 'containerWithIdentifier'
+    Module: 'CloudKit.CKContainer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'containerWithIdentifier:'
+    Signature:
+    - Type: Interface
+      Module: CloudKit.CKContainer
+      Name: CKContainer
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'defaultContainer'
+    JsName: 'defaultContainer'
+    Module: 'CloudKit.CKContainer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'defaultContainer'
+    Signature:
+    - Type: Interface
+      Module: CloudKit.CKContainer
+      Name: CKContainer
+    TypeEncoding: '@16@0:8'
+  Properties:
+  - Name: 'containerIdentifier'
+    JsName: 'containerIdentifier'
+    Module: 'CloudKit.CKContainer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'containerIdentifier'
+      JsName: 'containerIdentifier'
+      Module: 'CloudKit.CKContainer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'containerIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'privateCloudDatabase'
+    JsName: 'privateCloudDatabase'
+    Module: 'CloudKit.CKContainer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'privateCloudDatabase'
+      JsName: 'privateCloudDatabase'
+      Module: 'CloudKit.CKContainer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'privateCloudDatabase'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKDatabase
+        Name: CKDatabase
+      TypeEncoding: '@16@0:8'
+  - Name: 'publicCloudDatabase'
+    JsName: 'publicCloudDatabase'
+    Module: 'CloudKit.CKContainer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'publicCloudDatabase'
+      JsName: 'publicCloudDatabase'
+      Module: 'CloudKit.CKContainer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'publicCloudDatabase'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKDatabase
+        Name: CKDatabase
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CKAccountStatus'
+  JsName: 'CKAccountStatus'
+  Module: 'CloudKit.CKContainer'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CKAccountStatusCouldNotDetermine":0,"CKAccountStatusAvailable":1,"CKAccountStatusRestricted":2,"CKAccountStatusNoAccount":3})
+- Name: 'CKApplicationPermissions'
+  JsName: 'CKApplicationPermissions'
+  Module: 'CloudKit.CKContainer'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CKApplicationPermissionUserDiscoverability":1})
+- Name: 'CKApplicationPermissionStatus'
+  JsName: 'CKApplicationPermissionStatus'
+  Module: 'CloudKit.CKContainer'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CKApplicationPermissionStatusInitialState":0,"CKApplicationPermissionStatusCouldNotComplete":1,"CKApplicationPermissionStatusDenied":2,"CKApplicationPermissionStatusGranted":3})
+- Name: 'CKAsset'
+  JsName: 'CKAsset'
+  Module: 'CloudKit.CKAsset'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithFileURL:'
+    JsName: 'initWithFileURL'
+    Module: 'CloudKit.CKAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithFileURL:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'fileURL'
+    JsName: 'fileURL'
+    Module: 'CloudKit.CKAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'fileURL'
+      JsName: 'fileURL'
+      Module: 'CloudKit.CKAsset'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'fileURL'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: CloudKit.CKRecord
+    Name: CKRecordValue
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CKDatabase'
+  JsName: 'CKDatabase'
+  Module: 'CloudKit.CKDatabase'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addOperation:'
+    JsName: 'addOperation'
+    Module: 'CloudKit.CKDatabase'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addOperation:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CloudKit.CKDatabaseOperation
+      Name: CKDatabaseOperation
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'deleteRecordWithID:completionHandler:'
+    JsName: 'deleteRecordWithIDCompletionHandler'
+    Module: 'CloudKit.CKDatabase'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'deleteRecordWithID:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CloudKit.CKRecordID
+      Name: CKRecordID
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKRecordID
+        Name: CKRecordID
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'deleteRecordZoneWithID:completionHandler:'
+    JsName: 'deleteRecordZoneWithIDCompletionHandler'
+    Module: 'CloudKit.CKDatabase'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'deleteRecordZoneWithID:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CloudKit.CKRecordZoneID
+      Name: CKRecordZoneID
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKRecordZoneID
+        Name: CKRecordZoneID
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'deleteSubscriptionWithID:completionHandler:'
+    JsName: 'deleteSubscriptionWithIDCompletionHandler'
+    Module: 'CloudKit.CKDatabase'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'deleteSubscriptionWithID:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'fetchAllRecordZonesWithCompletionHandler:'
+    JsName: 'fetchAllRecordZonesWithCompletionHandler'
+    Module: 'CloudKit.CKDatabase'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchAllRecordZonesWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v24@0:8@?16'
+  - Name: 'fetchAllSubscriptionsWithCompletionHandler:'
+    JsName: 'fetchAllSubscriptionsWithCompletionHandler'
+    Module: 'CloudKit.CKDatabase'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchAllSubscriptionsWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v24@0:8@?16'
+  - Name: 'fetchRecordWithID:completionHandler:'
+    JsName: 'fetchRecordWithIDCompletionHandler'
+    Module: 'CloudKit.CKDatabase'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchRecordWithID:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CloudKit.CKRecordID
+      Name: CKRecordID
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKRecord
+        Name: CKRecord
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'fetchRecordZoneWithID:completionHandler:'
+    JsName: 'fetchRecordZoneWithIDCompletionHandler'
+    Module: 'CloudKit.CKDatabase'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchRecordZoneWithID:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CloudKit.CKRecordZoneID
+      Name: CKRecordZoneID
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKRecordZone
+        Name: CKRecordZone
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'fetchSubscriptionWithID:completionHandler:'
+    JsName: 'fetchSubscriptionWithIDCompletionHandler'
+    Module: 'CloudKit.CKDatabase'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchSubscriptionWithID:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKSubscription
+        Name: CKSubscription
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'performQuery:inZoneWithID:completionHandler:'
+    JsName: 'performQueryInZoneWithIDCompletionHandler'
+    Module: 'CloudKit.CKDatabase'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'performQuery:inZoneWithID:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CloudKit.CKQuery
+      Name: CKQuery
+    - Type: Interface
+      Module: CloudKit.CKRecordZoneID
+      Name: CKRecordZoneID
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v40@0:8@16@24@?32'
+  - Name: 'saveRecord:completionHandler:'
+    JsName: 'saveRecordCompletionHandler'
+    Module: 'CloudKit.CKDatabase'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'saveRecord:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CloudKit.CKRecord
+      Name: CKRecord
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKRecord
+        Name: CKRecord
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'saveRecordZone:completionHandler:'
+    JsName: 'saveRecordZoneCompletionHandler'
+    Module: 'CloudKit.CKDatabase'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'saveRecordZone:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CloudKit.CKRecordZone
+      Name: CKRecordZone
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKRecordZone
+        Name: CKRecordZone
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'saveSubscription:completionHandler:'
+    JsName: 'saveSubscriptionCompletionHandler'
+    Module: 'CloudKit.CKDatabase'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'saveSubscription:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CloudKit.CKSubscription
+      Name: CKSubscription
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKSubscription
+        Name: CKSubscription
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CKErrorDomain'
+  JsName: 'CKErrorDomain'
+  Module: 'CloudKit.CKError'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CKPartialErrorsByItemIDKey'
+  JsName: 'CKPartialErrorsByItemIDKey'
+  Module: 'CloudKit.CKError'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CKRecordChangedErrorAncestorRecordKey'
+  JsName: 'CKRecordChangedErrorAncestorRecordKey'
+  Module: 'CloudKit.CKError'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CKRecordChangedErrorServerRecordKey'
+  JsName: 'CKRecordChangedErrorServerRecordKey'
+  Module: 'CloudKit.CKError'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CKRecordChangedErrorClientRecordKey'
+  JsName: 'CKRecordChangedErrorClientRecordKey'
+  Module: 'CloudKit.CKError'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CKErrorRetryAfterKey'
+  JsName: 'CKErrorRetryAfterKey'
+  Module: 'CloudKit.CKError'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CKErrorCode'
+  JsName: 'CKErrorCode'
+  Module: 'CloudKit.CKError'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CKErrorInternalError":1,"CKErrorPartialFailure":2,"CKErrorNetworkUnavailable":3,"CKErrorNetworkFailure":4,"CKErrorBadContainer":5,"CKErrorServiceUnavailable":6,"CKErrorRequestRateLimited":7,"CKErrorMissingEntitlement":8,"CKErrorNotAuthenticated":9,"CKErrorPermissionFailure":10,"CKErrorUnknownItem":11,"CKErrorInvalidArguments":12,"CKErrorResultsTruncated":13,"CKErrorServerRecordChanged":14,"CKErrorServerRejectedRequest":15,"CKErrorAssetFileNotFound":16,"CKErrorAssetFileModified":17,"CKErrorIncompatibleVersion":18,"CKErrorConstraintViolation":19,"CKErrorOperationCancelled":20,"CKErrorChangeTokenExpired":21,"CKErrorBatchRequestFailed":22,"CKErrorZoneBusy":23,"CKErrorBadDatabase":24,"CKErrorQuotaExceeded":25,"CKErrorZoneNotFound":26,"CKErrorLimitExceeded":27,"CKErrorUserDeletedZone":28})
+- Name: 'CKLocationSortDescriptor'
+  JsName: 'CKLocationSortDescriptor'
+  Module: 'CloudKit.CKLocationSortDescriptor'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithKey:relativeLocation:'
+    JsName: 'initWithKeyRelativeLocation'
+    Module: 'CloudKit.CKLocationSortDescriptor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithKey:relativeLocation:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: CoreLocation.CLLocation
+      Name: CLLocation
+    TypeEncoding: '@32@0:8@16@24'
+  StaticMethods: []
+  Properties:
+  - Name: 'relativeLocation'
+    JsName: 'relativeLocation'
+    Module: 'CloudKit.CKLocationSortDescriptor'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'relativeLocation'
+      JsName: 'relativeLocation'
+      Module: 'CloudKit.CKLocationSortDescriptor'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'relativeLocation'
+      Signature:
+      - Type: Interface
+        Module: CoreLocation.CLLocation
+        Name: CLLocation
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: Foundation.NSSortDescriptor
+    Name: NSSortDescriptor
+  Type: Interface
+- Name: 'CKNotificationID'
+  JsName: 'CKNotificationID'
+  Module: 'CloudKit.CKNotification'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CKNotificationType'
+  JsName: 'CKNotificationType'
+  Module: 'CloudKit.CKNotification'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CKNotificationTypeQuery":1,"CKNotificationTypeRecordZone":2,"CKNotificationTypeReadNotification":3})
+- Name: 'CKNotification'
+  JsName: 'CKNotification'
+  Module: 'CloudKit.CKNotification'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'notificationFromRemoteNotificationDictionary:'
+    JsName: 'notificationFromRemoteNotificationDictionary'
+    Module: 'CloudKit.CKNotification'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'notificationFromRemoteNotificationDictionary:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@24@0:8@16'
+  Properties:
+  - Name: 'alertActionLocalizationKey'
+    JsName: 'alertActionLocalizationKey'
+    Module: 'CloudKit.CKNotification'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'alertActionLocalizationKey'
+      JsName: 'alertActionLocalizationKey'
+      Module: 'CloudKit.CKNotification'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'alertActionLocalizationKey'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'alertBody'
+    JsName: 'alertBody'
+    Module: 'CloudKit.CKNotification'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'alertBody'
+      JsName: 'alertBody'
+      Module: 'CloudKit.CKNotification'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'alertBody'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'alertLaunchImage'
+    JsName: 'alertLaunchImage'
+    Module: 'CloudKit.CKNotification'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'alertLaunchImage'
+      JsName: 'alertLaunchImage'
+      Module: 'CloudKit.CKNotification'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'alertLaunchImage'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'alertLocalizationArgs'
+    JsName: 'alertLocalizationArgs'
+    Module: 'CloudKit.CKNotification'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'alertLocalizationArgs'
+      JsName: 'alertLocalizationArgs'
+      Module: 'CloudKit.CKNotification'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'alertLocalizationArgs'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  - Name: 'alertLocalizationKey'
+    JsName: 'alertLocalizationKey'
+    Module: 'CloudKit.CKNotification'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'alertLocalizationKey'
+      JsName: 'alertLocalizationKey'
+      Module: 'CloudKit.CKNotification'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'alertLocalizationKey'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'badge'
+    JsName: 'badge'
+    Module: 'CloudKit.CKNotification'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'badge'
+      JsName: 'badge'
+      Module: 'CloudKit.CKNotification'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'badge'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@16@0:8'
+  - Name: 'containerIdentifier'
+    JsName: 'containerIdentifier'
+    Module: 'CloudKit.CKNotification'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'containerIdentifier'
+      JsName: 'containerIdentifier'
+      Module: 'CloudKit.CKNotification'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'containerIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'isPruned'
+    JsName: 'isPruned'
+    Module: 'CloudKit.CKNotification'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isPruned'
+      JsName: 'isPruned'
+      Module: 'CloudKit.CKNotification'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isPruned'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'notificationID'
+    JsName: 'notificationID'
+    Module: 'CloudKit.CKNotification'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'notificationID'
+      JsName: 'notificationID'
+      Module: 'CloudKit.CKNotification'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'notificationID'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKNotification
+        Name: CKNotificationID
+      TypeEncoding: '@16@0:8'
+  - Name: 'notificationType'
+    JsName: 'notificationType'
+    Module: 'CloudKit.CKNotification'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'notificationType'
+      JsName: 'notificationType'
+      Module: 'CloudKit.CKNotification'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'notificationType'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+  - Name: 'soundName'
+    JsName: 'soundName'
+    Module: 'CloudKit.CKNotification'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'soundName'
+      JsName: 'soundName'
+      Module: 'CloudKit.CKNotification'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'soundName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CKQueryNotificationReason'
+  JsName: 'CKQueryNotificationReason'
+  Module: 'CloudKit.CKNotification'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CKQueryNotificationReasonRecordCreated":1,"CKQueryNotificationReasonRecordUpdated":2,"CKQueryNotificationReasonRecordDeleted":3})
+- Name: 'CKQueryNotification'
+  JsName: 'CKQueryNotification'
+  Module: 'CloudKit.CKNotification'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'isPublicDatabase'
+    JsName: 'isPublicDatabase'
+    Module: 'CloudKit.CKNotification'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isPublicDatabase'
+      JsName: 'isPublicDatabase'
+      Module: 'CloudKit.CKNotification'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isPublicDatabase'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'queryNotificationReason'
+    JsName: 'queryNotificationReason'
+    Module: 'CloudKit.CKNotification'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'queryNotificationReason'
+      JsName: 'queryNotificationReason'
+      Module: 'CloudKit.CKNotification'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'queryNotificationReason'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+  - Name: 'recordFields'
+    JsName: 'recordFields'
+    Module: 'CloudKit.CKNotification'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'recordFields'
+      JsName: 'recordFields'
+      Module: 'CloudKit.CKNotification'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordFields'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: '@16@0:8'
+  - Name: 'recordID'
+    JsName: 'recordID'
+    Module: 'CloudKit.CKNotification'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'recordID'
+      JsName: 'recordID'
+      Module: 'CloudKit.CKNotification'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordID'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKRecordID
+        Name: CKRecordID
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: CloudKit.CKNotification
+    Name: CKNotification
+  Type: Interface
+- Name: 'CKRecordZoneNotification'
+  JsName: 'CKRecordZoneNotification'
+  Module: 'CloudKit.CKNotification'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'recordZoneID'
+    JsName: 'recordZoneID'
+    Module: 'CloudKit.CKNotification'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'recordZoneID'
+      JsName: 'recordZoneID'
+      Module: 'CloudKit.CKNotification'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordZoneID'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKRecordZoneID
+        Name: CKRecordZoneID
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: CloudKit.CKNotification
+    Name: CKNotification
+  Type: Interface
+- Name: 'CKQuery'
+  JsName: 'CKQuery'
+  Module: 'CloudKit.CKQuery'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithRecordType:predicate:'
+    JsName: 'initWithRecordTypePredicate'
+    Module: 'CloudKit.CKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithRecordType:predicate:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    TypeEncoding: '@32@0:8@16@24'
+  StaticMethods: []
+  Properties:
+  - Name: 'predicate'
+    JsName: 'predicate'
+    Module: 'CloudKit.CKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'predicate'
+      JsName: 'predicate'
+      Module: 'CloudKit.CKQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'predicate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSPredicate
+        Name: NSPredicate
+      TypeEncoding: '@16@0:8'
+  - Name: 'recordType'
+    JsName: 'recordType'
+    Module: 'CloudKit.CKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'recordType'
+      JsName: 'recordType'
+      Module: 'CloudKit.CKQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordType'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'sortDescriptors'
+    JsName: 'sortDescriptors'
+    Module: 'CloudKit.CKQuery'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'sortDescriptors'
+      JsName: 'sortDescriptors'
+      Module: 'CloudKit.CKQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'sortDescriptors'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setSortDescriptors:'
+      JsName: 'setSortDescriptors'
+      Module: 'CloudKit.CKQuery'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSortDescriptors:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CKRecordZoneCapabilities'
+  JsName: 'CKRecordZoneCapabilities'
+  Module: 'CloudKit.CKRecordZone'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CKRecordZoneCapabilityFetchChanges":1,"CKRecordZoneCapabilityAtomic":2})
+- Name: 'CKRecordZoneDefaultName'
+  JsName: 'CKRecordZoneDefaultName'
+  Module: 'CloudKit.CKRecordZone'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CKRecordZone'
+  JsName: 'CKRecordZone'
+  Module: 'CloudKit.CKRecordZone'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithZoneID:'
+    JsName: 'initWithZoneID'
+    Module: 'CloudKit.CKRecordZone'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithZoneID:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: CloudKit.CKRecordZoneID
+      Name: CKRecordZoneID
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'initWithZoneName:'
+    JsName: 'initWithZoneName'
+    Module: 'CloudKit.CKRecordZone'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithZoneName:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods:
+  - Name: 'defaultRecordZone'
+    JsName: 'defaultRecordZone'
+    Module: 'CloudKit.CKRecordZone'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'defaultRecordZone'
+    Signature:
+    - Type: Interface
+      Module: CloudKit.CKRecordZone
+      Name: CKRecordZone
+    TypeEncoding: '@16@0:8'
+  Properties:
+  - Name: 'capabilities'
+    JsName: 'capabilities'
+    Module: 'CloudKit.CKRecordZone'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'capabilities'
+      JsName: 'capabilities'
+      Module: 'CloudKit.CKRecordZone'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'capabilities'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'zoneID'
+    JsName: 'zoneID'
+    Module: 'CloudKit.CKRecordZone'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'zoneID'
+      JsName: 'zoneID'
+      Module: 'CloudKit.CKRecordZone'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'zoneID'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKRecordZoneID
+        Name: CKRecordZoneID
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CKReferenceAction'
+  JsName: 'CKReferenceAction'
+  Module: 'CloudKit.CKReference'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CKReferenceActionNone":0,"CKReferenceActionDeleteSelf":1})
+- Name: 'CKReference'
+  JsName: 'CKReference'
+  Module: 'CloudKit.CKReference'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithRecord:action:'
+    JsName: 'initWithRecordAction'
+    Module: 'CloudKit.CKReference'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithRecord:action:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: CloudKit.CKRecord
+      Name: CKRecord
+    - Type: ULong
+    TypeEncoding: '@32@0:8@16Q24'
+  - Name: 'initWithRecordID:action:'
+    JsName: 'initWithRecordIDAction'
+    Module: 'CloudKit.CKReference'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithRecordID:action:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: CloudKit.CKRecordID
+      Name: CKRecordID
+    - Type: ULong
+    TypeEncoding: '@32@0:8@16Q24'
+  StaticMethods: []
+  Properties:
+  - Name: 'recordID'
+    JsName: 'recordID'
+    Module: 'CloudKit.CKReference'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'recordID'
+      JsName: 'recordID'
+      Module: 'CloudKit.CKReference'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordID'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKRecordID
+        Name: CKRecordID
+      TypeEncoding: '@16@0:8'
+  - Name: 'referenceAction'
+    JsName: 'referenceAction'
+    Module: 'CloudKit.CKReference'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'referenceAction'
+      JsName: 'referenceAction'
+      Module: 'CloudKit.CKReference'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'referenceAction'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  Protocols:
+  - Module: CloudKit.CKRecord
+    Name: CKRecordValue
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CKRecordTypeUserRecord'
+  JsName: 'CKRecordTypeUserRecord'
+  Module: 'CloudKit.CKRecord'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CKRecordValue'
+  JsName: 'CKRecordValue'
+  Module: 'CloudKit.CKRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'CKRecord'
+  JsName: 'CKRecord'
+  Module: 'CloudKit.CKRecord'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'allKeys'
+    JsName: 'allKeys'
+    Module: 'CloudKit.CKRecord'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'allKeys'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@16@0:8'
+  - Name: 'allTokens'
+    JsName: 'allTokens'
+    Module: 'CloudKit.CKRecord'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'allTokens'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@16@0:8'
+  - Name: 'changedKeys'
+    JsName: 'changedKeys'
+    Module: 'CloudKit.CKRecord'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'changedKeys'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@16@0:8'
+  - Name: 'encodeSystemFieldsWithCoder:'
+    JsName: 'encodeSystemFieldsWithCoder'
+    Module: 'CloudKit.CKRecord'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'encodeSystemFieldsWithCoder:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSCoder
+      Name: NSCoder
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'initWithRecordType:'
+    JsName: 'initWithRecordType'
+    Module: 'CloudKit.CKRecord'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithRecordType:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'initWithRecordType:recordID:'
+    JsName: 'initWithRecordTypeRecordID'
+    Module: 'CloudKit.CKRecord'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithRecordType:recordID:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: CloudKit.CKRecordID
+      Name: CKRecordID
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'initWithRecordType:zoneID:'
+    JsName: 'initWithRecordTypeZoneID'
+    Module: 'CloudKit.CKRecord'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithRecordType:zoneID:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: CloudKit.CKRecordZoneID
+      Name: CKRecordZoneID
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'objectForKey:'
+    JsName: 'objectForKey'
+    Module: 'CloudKit.CKRecord'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'objectForKey:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'objectForKeyedSubscript:'
+    JsName: 'objectForKeyedSubscript'
+    Module: 'CloudKit.CKRecord'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'objectForKeyedSubscript:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'setObject:forKey:'
+    JsName: 'setObjectForKey'
+    Module: 'CloudKit.CKRecord'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setObject:forKey:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: CloudKit.CKRecord
+        Name: CKRecordValue
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'setObject:forKeyedSubscript:'
+    JsName: 'setObjectForKeyedSubscript'
+    Module: 'CloudKit.CKRecord'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setObject:forKeyedSubscript:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: CloudKit.CKRecord
+        Name: CKRecordValue
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v32@0:8@16@24'
+  StaticMethods: []
+  Properties:
+  - Name: 'creationDate'
+    JsName: 'creationDate'
+    Module: 'CloudKit.CKRecord'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'creationDate'
+      JsName: 'creationDate'
+      Module: 'CloudKit.CKRecord'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'creationDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@16@0:8'
+  - Name: 'creatorUserRecordID'
+    JsName: 'creatorUserRecordID'
+    Module: 'CloudKit.CKRecord'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'creatorUserRecordID'
+      JsName: 'creatorUserRecordID'
+      Module: 'CloudKit.CKRecord'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'creatorUserRecordID'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKRecordID
+        Name: CKRecordID
+      TypeEncoding: '@16@0:8'
+  - Name: 'lastModifiedUserRecordID'
+    JsName: 'lastModifiedUserRecordID'
+    Module: 'CloudKit.CKRecord'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'lastModifiedUserRecordID'
+      JsName: 'lastModifiedUserRecordID'
+      Module: 'CloudKit.CKRecord'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lastModifiedUserRecordID'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKRecordID
+        Name: CKRecordID
+      TypeEncoding: '@16@0:8'
+  - Name: 'modificationDate'
+    JsName: 'modificationDate'
+    Module: 'CloudKit.CKRecord'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'modificationDate'
+      JsName: 'modificationDate'
+      Module: 'CloudKit.CKRecord'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'modificationDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@16@0:8'
+  - Name: 'recordChangeTag'
+    JsName: 'recordChangeTag'
+    Module: 'CloudKit.CKRecord'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'recordChangeTag'
+      JsName: 'recordChangeTag'
+      Module: 'CloudKit.CKRecord'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordChangeTag'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'recordID'
+    JsName: 'recordID'
+    Module: 'CloudKit.CKRecord'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'recordID'
+      JsName: 'recordID'
+      Module: 'CloudKit.CKRecord'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordID'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKRecordID
+        Name: CKRecordID
+      TypeEncoding: '@16@0:8'
+  - Name: 'recordType'
+    JsName: 'recordType'
+    Module: 'CloudKit.CKRecord'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'recordType'
+      JsName: 'recordType'
+      Module: 'CloudKit.CKRecord'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordType'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CKRecordValue'
+  JsName: 'CKRecordValue'
+  Module: 'CloudKit.CKRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: CloudKit.CKRecord
+    Name: CKRecordValue
+  ExtendedInterface:
+    Module: Foundation.NSString
+    Name: NSString
+  Type: Category
+- Name: 'CKRecordValue'
+  JsName: 'CKRecordValue'
+  Module: 'CloudKit.CKRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: CloudKit.CKRecord
+    Name: CKRecordValue
+  ExtendedInterface:
+    Module: Foundation.NSValue
+    Name: NSNumber
+  Type: Category
+- Name: 'CKRecordValue'
+  JsName: 'CKRecordValue'
+  Module: 'CloudKit.CKRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: CloudKit.CKRecord
+    Name: CKRecordValue
+  ExtendedInterface:
+    Module: Foundation.NSArray
+    Name: NSArray
+  Type: Category
+- Name: 'CKRecordValue'
+  JsName: 'CKRecordValue'
+  Module: 'CloudKit.CKRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: CloudKit.CKRecord
+    Name: CKRecordValue
+  ExtendedInterface:
+    Module: Foundation.NSDate
+    Name: NSDate
+  Type: Category
+- Name: 'CKRecordValue'
+  JsName: 'CKRecordValue'
+  Module: 'CloudKit.CKRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: CloudKit.CKRecord
+    Name: CKRecordValue
+  ExtendedInterface:
+    Module: Foundation.NSData
+    Name: NSData
+  Type: Category
+- Name: 'CKRecordValue'
+  JsName: 'CKRecordValue'
+  Module: 'CloudKit.CKRecord'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: CloudKit.CKRecord
+    Name: CKRecordValue
+  ExtendedInterface:
+    Module: CoreLocation.CLLocation
+    Name: CLLocation
+  Type: Category
+- Name: 'CKRecordID'
+  JsName: 'CKRecordID'
+  Module: 'CloudKit.CKRecordID'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithRecordName:'
+    JsName: 'initWithRecordName'
+    Module: 'CloudKit.CKRecordID'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithRecordName:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'initWithRecordName:zoneID:'
+    JsName: 'initWithRecordNameZoneID'
+    Module: 'CloudKit.CKRecordID'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithRecordName:zoneID:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: CloudKit.CKRecordZoneID
+      Name: CKRecordZoneID
+    TypeEncoding: '@32@0:8@16@24'
+  StaticMethods: []
+  Properties:
+  - Name: 'recordName'
+    JsName: 'recordName'
+    Module: 'CloudKit.CKRecordID'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'recordName'
+      JsName: 'recordName'
+      Module: 'CloudKit.CKRecordID'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'zoneID'
+    JsName: 'zoneID'
+    Module: 'CloudKit.CKRecordID'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'zoneID'
+      JsName: 'zoneID'
+      Module: 'CloudKit.CKRecordID'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'zoneID'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKRecordZoneID
+        Name: CKRecordZoneID
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CKRecordZoneID'
+  JsName: 'CKRecordZoneID'
+  Module: 'CloudKit.CKRecordZoneID'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithZoneName:ownerName:'
+    JsName: 'initWithZoneNameOwnerName'
+    Module: 'CloudKit.CKRecordZoneID'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithZoneName:ownerName:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@32@0:8@16@24'
+  StaticMethods: []
+  Properties:
+  - Name: 'ownerName'
+    JsName: 'ownerName'
+    Module: 'CloudKit.CKRecordZoneID'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'ownerName'
+      JsName: 'ownerName'
+      Module: 'CloudKit.CKRecordZoneID'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'ownerName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'zoneName'
+    JsName: 'zoneName'
+    Module: 'CloudKit.CKRecordZoneID'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'zoneName'
+      JsName: 'zoneName'
+      Module: 'CloudKit.CKRecordZoneID'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'zoneName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CKSubscriptionType'
+  JsName: 'CKSubscriptionType'
+  Module: 'CloudKit.CKSubscription'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CKSubscriptionTypeQuery":1,"CKSubscriptionTypeRecordZone":2})
+- Name: 'CKSubscriptionOptions'
+  JsName: 'CKSubscriptionOptions'
+  Module: 'CloudKit.CKSubscription'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CKSubscriptionOptionsFiresOnRecordCreation":1,"CKSubscriptionOptionsFiresOnRecordUpdate":2,"CKSubscriptionOptionsFiresOnRecordDeletion":4,"CKSubscriptionOptionsFiresOnce":8})
+- Name: 'CKSubscription'
+  JsName: 'CKSubscription'
+  Module: 'CloudKit.CKSubscription'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithRecordType:predicate:options:'
+    JsName: 'initWithRecordTypePredicateOptions'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithRecordType:predicate:options:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: ULong
+    TypeEncoding: '@40@0:8@16@24Q32'
+  - Name: 'initWithRecordType:predicate:subscriptionID:options:'
+    JsName: 'initWithRecordTypePredicateSubscriptionIDOptions'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithRecordType:predicate:subscriptionID:options:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSPredicate
+      Name: NSPredicate
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: ULong
+    TypeEncoding: '@48@0:8@16@24@32Q40'
+  - Name: 'initWithZoneID:options:'
+    JsName: 'initWithZoneIDOptions'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithZoneID:options:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: CloudKit.CKRecordZoneID
+      Name: CKRecordZoneID
+    - Type: ULong
+    TypeEncoding: '@32@0:8@16Q24'
+  - Name: 'initWithZoneID:subscriptionID:options:'
+    JsName: 'initWithZoneIDSubscriptionIDOptions'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithZoneID:subscriptionID:options:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: CloudKit.CKRecordZoneID
+      Name: CKRecordZoneID
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: ULong
+    TypeEncoding: '@40@0:8@16@24Q32'
+  StaticMethods: []
+  Properties:
+  - Name: 'notificationInfo'
+    JsName: 'notificationInfo'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'notificationInfo'
+      JsName: 'notificationInfo'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'notificationInfo'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKSubscription
+        Name: CKNotificationInfo
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setNotificationInfo:'
+      JsName: 'setNotificationInfo'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setNotificationInfo:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKSubscription
+        Name: CKNotificationInfo
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'predicate'
+    JsName: 'predicate'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'predicate'
+      JsName: 'predicate'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'predicate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSPredicate
+        Name: NSPredicate
+      TypeEncoding: '@16@0:8'
+  - Name: 'recordType'
+    JsName: 'recordType'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'recordType'
+      JsName: 'recordType'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordType'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'subscriptionID'
+    JsName: 'subscriptionID'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'subscriptionID'
+      JsName: 'subscriptionID'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'subscriptionID'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'subscriptionOptions'
+    JsName: 'subscriptionOptions'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'subscriptionOptions'
+      JsName: 'subscriptionOptions'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'subscriptionOptions'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'subscriptionType'
+    JsName: 'subscriptionType'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'subscriptionType'
+      JsName: 'subscriptionType'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'subscriptionType'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+  - Name: 'zoneID'
+    JsName: 'zoneID'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'zoneID'
+      JsName: 'zoneID'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'zoneID'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKRecordZoneID
+        Name: CKRecordZoneID
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setZoneID:'
+      JsName: 'setZoneID'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setZoneID:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKRecordZoneID
+        Name: CKRecordZoneID
+      TypeEncoding: 'v24@0:8@16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CKNotificationInfo'
+  JsName: 'CKNotificationInfo'
+  Module: 'CloudKit.CKSubscription'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'alertActionLocalizationKey'
+    JsName: 'alertActionLocalizationKey'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'alertActionLocalizationKey'
+      JsName: 'alertActionLocalizationKey'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'alertActionLocalizationKey'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setAlertActionLocalizationKey:'
+      JsName: 'setAlertActionLocalizationKey'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAlertActionLocalizationKey:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'alertBody'
+    JsName: 'alertBody'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'alertBody'
+      JsName: 'alertBody'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'alertBody'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setAlertBody:'
+      JsName: 'setAlertBody'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAlertBody:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'alertLaunchImage'
+    JsName: 'alertLaunchImage'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'alertLaunchImage'
+      JsName: 'alertLaunchImage'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'alertLaunchImage'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setAlertLaunchImage:'
+      JsName: 'setAlertLaunchImage'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAlertLaunchImage:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'alertLocalizationArgs'
+    JsName: 'alertLocalizationArgs'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'alertLocalizationArgs'
+      JsName: 'alertLocalizationArgs'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'alertLocalizationArgs'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setAlertLocalizationArgs:'
+      JsName: 'setAlertLocalizationArgs'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAlertLocalizationArgs:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'alertLocalizationKey'
+    JsName: 'alertLocalizationKey'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'alertLocalizationKey'
+      JsName: 'alertLocalizationKey'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'alertLocalizationKey'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setAlertLocalizationKey:'
+      JsName: 'setAlertLocalizationKey'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAlertLocalizationKey:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'desiredKeys'
+    JsName: 'desiredKeys'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'desiredKeys'
+      JsName: 'desiredKeys'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'desiredKeys'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDesiredKeys:'
+      JsName: 'setDesiredKeys'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDesiredKeys:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'shouldBadge'
+    JsName: 'shouldBadge'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'shouldBadge'
+      JsName: 'shouldBadge'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'shouldBadge'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setShouldBadge:'
+      JsName: 'setShouldBadge'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShouldBadge:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'shouldSendContentAvailable'
+    JsName: 'shouldSendContentAvailable'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'shouldSendContentAvailable'
+      JsName: 'shouldSendContentAvailable'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'shouldSendContentAvailable'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setShouldSendContentAvailable:'
+      JsName: 'setShouldSendContentAvailable'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShouldSendContentAvailable:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'soundName'
+    JsName: 'soundName'
+    Module: 'CloudKit.CKSubscription'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'soundName'
+      JsName: 'soundName'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'soundName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setSoundName:'
+      JsName: 'setSoundName'
+      Module: 'CloudKit.CKSubscription'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSoundName:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CKDiscoveredUserInfo'
+  JsName: 'CKDiscoveredUserInfo'
+  Module: 'CloudKit.CKDiscoveredUserInfo'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'firstName'
+    JsName: 'firstName'
+    Module: 'CloudKit.CKDiscoveredUserInfo'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'firstName'
+      JsName: 'firstName'
+      Module: 'CloudKit.CKDiscoveredUserInfo'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'firstName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'lastName'
+    JsName: 'lastName'
+    Module: 'CloudKit.CKDiscoveredUserInfo'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'lastName'
+      JsName: 'lastName'
+      Module: 'CloudKit.CKDiscoveredUserInfo'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lastName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'userRecordID'
+    JsName: 'userRecordID'
+    Module: 'CloudKit.CKDiscoveredUserInfo'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'userRecordID'
+      JsName: 'userRecordID'
+      Module: 'CloudKit.CKDiscoveredUserInfo'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'userRecordID'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKRecordID
+        Name: CKRecordID
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CKOperation'
+  JsName: 'CKOperation'
+  Module: 'CloudKit.CKOperation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'allowsCellularAccess'
+    JsName: 'allowsCellularAccess'
+    Module: 'CloudKit.CKOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'allowsCellularAccess'
+      JsName: 'allowsCellularAccess'
+      Module: 'CloudKit.CKOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'allowsCellularAccess'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setAllowsCellularAccess:'
+      JsName: 'setAllowsCellularAccess'
+      Module: 'CloudKit.CKOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAllowsCellularAccess:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'container'
+    JsName: 'container'
+    Module: 'CloudKit.CKOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'container'
+      JsName: 'container'
+      Module: 'CloudKit.CKOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'container'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKContainer
+        Name: CKContainer
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setContainer:'
+      JsName: 'setContainer'
+      Module: 'CloudKit.CKOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setContainer:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKContainer
+        Name: CKContainer
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'usesBackgroundSession'
+    JsName: 'usesBackgroundSession'
+    Module: 'CloudKit.CKOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'usesBackgroundSession'
+      JsName: 'usesBackgroundSession'
+      Module: 'CloudKit.CKOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'usesBackgroundSession'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setUsesBackgroundSession:'
+      JsName: 'setUsesBackgroundSession'
+      Module: 'CloudKit.CKOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setUsesBackgroundSession:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  Protocols: []
+  Base:
+    Module: Foundation.NSOperation
+    Name: NSOperation
+  Type: Interface
+- Name: 'CKDatabaseOperation'
+  JsName: 'CKDatabaseOperation'
+  Module: 'CloudKit.CKDatabaseOperation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'database'
+    JsName: 'database'
+    Module: 'CloudKit.CKDatabaseOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'database'
+      JsName: 'database'
+      Module: 'CloudKit.CKDatabaseOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'database'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKDatabase
+        Name: CKDatabase
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDatabase:'
+      JsName: 'setDatabase'
+      Module: 'CloudKit.CKDatabaseOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDatabase:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKDatabase
+        Name: CKDatabase
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: CloudKit.CKOperation
+    Name: CKOperation
+  Type: Interface
+- Name: 'CKRecordSavePolicy'
+  JsName: 'CKRecordSavePolicy'
+  Module: 'CloudKit.CKModifyRecordsOperation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CKRecordSaveIfServerRecordUnchanged":0,"CKRecordSaveChangedKeys":1,"CKRecordSaveAllKeys":2})
+- Name: 'CKModifyRecordsOperation'
+  JsName: 'CKModifyRecordsOperation'
+  Module: 'CloudKit.CKModifyRecordsOperation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithRecordsToSave:recordIDsToDelete:'
+    JsName: 'initWithRecordsToSaveRecordIDsToDelete'
+    Module: 'CloudKit.CKModifyRecordsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithRecordsToSave:recordIDsToDelete:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@32@0:8@16@24'
+  StaticMethods: []
+  Properties:
+  - Name: 'atomic'
+    JsName: 'atomic'
+    Module: 'CloudKit.CKModifyRecordsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'atomic'
+      JsName: 'atomic'
+      Module: 'CloudKit.CKModifyRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'atomic'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setAtomic:'
+      JsName: 'setAtomic'
+      Module: 'CloudKit.CKModifyRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAtomic:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'clientChangeTokenData'
+    JsName: 'clientChangeTokenData'
+    Module: 'CloudKit.CKModifyRecordsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'clientChangeTokenData'
+      JsName: 'clientChangeTokenData'
+      Module: 'CloudKit.CKModifyRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'clientChangeTokenData'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setClientChangeTokenData:'
+      JsName: 'setClientChangeTokenData'
+      Module: 'CloudKit.CKModifyRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setClientChangeTokenData:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'modifyRecordsCompletionBlock'
+    JsName: 'modifyRecordsCompletionBlock'
+    Module: 'CloudKit.CKModifyRecordsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'modifyRecordsCompletionBlock'
+      JsName: 'modifyRecordsCompletionBlock'
+      Module: 'CloudKit.CKModifyRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'modifyRecordsCompletionBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSArray
+          Name: NSArray
+        - Type: Interface
+          Module: Foundation.NSArray
+          Name: NSArray
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setModifyRecordsCompletionBlock:'
+      JsName: 'setModifyRecordsCompletionBlock'
+      Module: 'CloudKit.CKModifyRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setModifyRecordsCompletionBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSArray
+          Name: NSArray
+        - Type: Interface
+          Module: Foundation.NSArray
+          Name: NSArray
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'perRecordCompletionBlock'
+    JsName: 'perRecordCompletionBlock'
+    Module: 'CloudKit.CKModifyRecordsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'perRecordCompletionBlock'
+      JsName: 'perRecordCompletionBlock'
+      Module: 'CloudKit.CKModifyRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'perRecordCompletionBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKRecord
+          Name: CKRecord
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setPerRecordCompletionBlock:'
+      JsName: 'setPerRecordCompletionBlock'
+      Module: 'CloudKit.CKModifyRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPerRecordCompletionBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKRecord
+          Name: CKRecord
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'perRecordProgressBlock'
+    JsName: 'perRecordProgressBlock'
+    Module: 'CloudKit.CKModifyRecordsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'perRecordProgressBlock'
+      JsName: 'perRecordProgressBlock'
+      Module: 'CloudKit.CKModifyRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'perRecordProgressBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKRecord
+          Name: CKRecord
+        - Type: Double
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setPerRecordProgressBlock:'
+      JsName: 'setPerRecordProgressBlock'
+      Module: 'CloudKit.CKModifyRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPerRecordProgressBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKRecord
+          Name: CKRecord
+        - Type: Double
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'recordIDsToDelete'
+    JsName: 'recordIDsToDelete'
+    Module: 'CloudKit.CKModifyRecordsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'recordIDsToDelete'
+      JsName: 'recordIDsToDelete'
+      Module: 'CloudKit.CKModifyRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordIDsToDelete'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setRecordIDsToDelete:'
+      JsName: 'setRecordIDsToDelete'
+      Module: 'CloudKit.CKModifyRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRecordIDsToDelete:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'recordsToSave'
+    JsName: 'recordsToSave'
+    Module: 'CloudKit.CKModifyRecordsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'recordsToSave'
+      JsName: 'recordsToSave'
+      Module: 'CloudKit.CKModifyRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordsToSave'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setRecordsToSave:'
+      JsName: 'setRecordsToSave'
+      Module: 'CloudKit.CKModifyRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRecordsToSave:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'savePolicy'
+    JsName: 'savePolicy'
+    Module: 'CloudKit.CKModifyRecordsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'savePolicy'
+      JsName: 'savePolicy'
+      Module: 'CloudKit.CKModifyRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'savePolicy'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+    Setter:
+      Name: 'setSavePolicy:'
+      JsName: 'setSavePolicy'
+      Module: 'CloudKit.CKModifyRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSavePolicy:'
+      Signature:
+      - Type: Void
+      - Type: Long
+      TypeEncoding: 'v24@0:8q16'
+  Protocols: []
+  Base:
+    Module: CloudKit.CKDatabaseOperation
+    Name: CKDatabaseOperation
+  Type: Interface
+- Name: 'CKDiscoverAllContactsOperation'
+  JsName: 'CKDiscoverAllContactsOperation'
+  Module: 'CloudKit.CKDiscoverAllContactsOperation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'discoverAllContactsCompletionBlock'
+    JsName: 'discoverAllContactsCompletionBlock'
+    Module: 'CloudKit.CKDiscoverAllContactsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'discoverAllContactsCompletionBlock'
+      JsName: 'discoverAllContactsCompletionBlock'
+      Module: 'CloudKit.CKDiscoverAllContactsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'discoverAllContactsCompletionBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSArray
+          Name: NSArray
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setDiscoverAllContactsCompletionBlock:'
+      JsName: 'setDiscoverAllContactsCompletionBlock'
+      Module: 'CloudKit.CKDiscoverAllContactsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDiscoverAllContactsCompletionBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSArray
+          Name: NSArray
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: 'v24@0:8@?16'
+  Protocols: []
+  Base:
+    Module: CloudKit.CKOperation
+    Name: CKOperation
+  Type: Interface
+- Name: 'CKDiscoverUserInfosOperation'
+  JsName: 'CKDiscoverUserInfosOperation'
+  Module: 'CloudKit.CKDiscoverUserInfosOperation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithEmailAddresses:userRecordIDs:'
+    JsName: 'initWithEmailAddressesUserRecordIDs'
+    Module: 'CloudKit.CKDiscoverUserInfosOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithEmailAddresses:userRecordIDs:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@32@0:8@16@24'
+  StaticMethods: []
+  Properties:
+  - Name: 'discoverUserInfosCompletionBlock'
+    JsName: 'discoverUserInfosCompletionBlock'
+    Module: 'CloudKit.CKDiscoverUserInfosOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'discoverUserInfosCompletionBlock'
+      JsName: 'discoverUserInfosCompletionBlock'
+      Module: 'CloudKit.CKDiscoverUserInfosOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'discoverUserInfosCompletionBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSDictionary
+          Name: NSDictionary
+        - Type: Interface
+          Module: Foundation.NSDictionary
+          Name: NSDictionary
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setDiscoverUserInfosCompletionBlock:'
+      JsName: 'setDiscoverUserInfosCompletionBlock'
+      Module: 'CloudKit.CKDiscoverUserInfosOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDiscoverUserInfosCompletionBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSDictionary
+          Name: NSDictionary
+        - Type: Interface
+          Module: Foundation.NSDictionary
+          Name: NSDictionary
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'emailAddresses'
+    JsName: 'emailAddresses'
+    Module: 'CloudKit.CKDiscoverUserInfosOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'emailAddresses'
+      JsName: 'emailAddresses'
+      Module: 'CloudKit.CKDiscoverUserInfosOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'emailAddresses'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setEmailAddresses:'
+      JsName: 'setEmailAddresses'
+      Module: 'CloudKit.CKDiscoverUserInfosOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setEmailAddresses:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'userRecordIDs'
+    JsName: 'userRecordIDs'
+    Module: 'CloudKit.CKDiscoverUserInfosOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'userRecordIDs'
+      JsName: 'userRecordIDs'
+      Module: 'CloudKit.CKDiscoverUserInfosOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'userRecordIDs'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setUserRecordIDs:'
+      JsName: 'setUserRecordIDs'
+      Module: 'CloudKit.CKDiscoverUserInfosOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setUserRecordIDs:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: CloudKit.CKOperation
+    Name: CKOperation
+  Type: Interface
+- Name: 'CKFetchRecordsOperation'
+  JsName: 'CKFetchRecordsOperation'
+  Module: 'CloudKit.CKFetchRecordsOperation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithRecordIDs:'
+    JsName: 'initWithRecordIDs'
+    Module: 'CloudKit.CKFetchRecordsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithRecordIDs:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods:
+  - Name: 'fetchCurrentUserRecordOperation'
+    JsName: 'fetchCurrentUserRecordOperation'
+    Module: 'CloudKit.CKFetchRecordsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchCurrentUserRecordOperation'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@16@0:8'
+  Properties:
+  - Name: 'desiredKeys'
+    JsName: 'desiredKeys'
+    Module: 'CloudKit.CKFetchRecordsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'desiredKeys'
+      JsName: 'desiredKeys'
+      Module: 'CloudKit.CKFetchRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'desiredKeys'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDesiredKeys:'
+      JsName: 'setDesiredKeys'
+      Module: 'CloudKit.CKFetchRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDesiredKeys:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'fetchRecordsCompletionBlock'
+    JsName: 'fetchRecordsCompletionBlock'
+    Module: 'CloudKit.CKFetchRecordsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'fetchRecordsCompletionBlock'
+      JsName: 'fetchRecordsCompletionBlock'
+      Module: 'CloudKit.CKFetchRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'fetchRecordsCompletionBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSDictionary
+          Name: NSDictionary
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setFetchRecordsCompletionBlock:'
+      JsName: 'setFetchRecordsCompletionBlock'
+      Module: 'CloudKit.CKFetchRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setFetchRecordsCompletionBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSDictionary
+          Name: NSDictionary
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'perRecordCompletionBlock'
+    JsName: 'perRecordCompletionBlock'
+    Module: 'CloudKit.CKFetchRecordsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'perRecordCompletionBlock'
+      JsName: 'perRecordCompletionBlock'
+      Module: 'CloudKit.CKFetchRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'perRecordCompletionBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKRecord
+          Name: CKRecord
+        - Type: Interface
+          Module: CloudKit.CKRecordID
+          Name: CKRecordID
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setPerRecordCompletionBlock:'
+      JsName: 'setPerRecordCompletionBlock'
+      Module: 'CloudKit.CKFetchRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPerRecordCompletionBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKRecord
+          Name: CKRecord
+        - Type: Interface
+          Module: CloudKit.CKRecordID
+          Name: CKRecordID
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'perRecordProgressBlock'
+    JsName: 'perRecordProgressBlock'
+    Module: 'CloudKit.CKFetchRecordsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'perRecordProgressBlock'
+      JsName: 'perRecordProgressBlock'
+      Module: 'CloudKit.CKFetchRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'perRecordProgressBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKRecordID
+          Name: CKRecordID
+        - Type: Double
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setPerRecordProgressBlock:'
+      JsName: 'setPerRecordProgressBlock'
+      Module: 'CloudKit.CKFetchRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPerRecordProgressBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKRecordID
+          Name: CKRecordID
+        - Type: Double
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'recordIDs'
+    JsName: 'recordIDs'
+    Module: 'CloudKit.CKFetchRecordsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'recordIDs'
+      JsName: 'recordIDs'
+      Module: 'CloudKit.CKFetchRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordIDs'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setRecordIDs:'
+      JsName: 'setRecordIDs'
+      Module: 'CloudKit.CKFetchRecordsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRecordIDs:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: CloudKit.CKDatabaseOperation
+    Name: CKDatabaseOperation
+  Type: Interface
+- Name: 'CKServerChangeToken'
+  JsName: 'CKServerChangeToken'
+  Module: 'CloudKit.CKFetchRecordChangesOperation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CKFetchRecordChangesOperation'
+  JsName: 'CKFetchRecordChangesOperation'
+  Module: 'CloudKit.CKFetchRecordChangesOperation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithRecordZoneID:previousServerChangeToken:'
+    JsName: 'initWithRecordZoneIDPreviousServerChangeToken'
+    Module: 'CloudKit.CKFetchRecordChangesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithRecordZoneID:previousServerChangeToken:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: CloudKit.CKRecordZoneID
+      Name: CKRecordZoneID
+    - Type: Interface
+      Module: CloudKit.CKFetchRecordChangesOperation
+      Name: CKServerChangeToken
+    TypeEncoding: '@32@0:8@16@24'
+  StaticMethods: []
+  Properties:
+  - Name: 'desiredKeys'
+    JsName: 'desiredKeys'
+    Module: 'CloudKit.CKFetchRecordChangesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'desiredKeys'
+      JsName: 'desiredKeys'
+      Module: 'CloudKit.CKFetchRecordChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'desiredKeys'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDesiredKeys:'
+      JsName: 'setDesiredKeys'
+      Module: 'CloudKit.CKFetchRecordChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDesiredKeys:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'fetchRecordChangesCompletionBlock'
+    JsName: 'fetchRecordChangesCompletionBlock'
+    Module: 'CloudKit.CKFetchRecordChangesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'fetchRecordChangesCompletionBlock'
+      JsName: 'fetchRecordChangesCompletionBlock'
+      Module: 'CloudKit.CKFetchRecordChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'fetchRecordChangesCompletionBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKFetchRecordChangesOperation
+          Name: CKServerChangeToken
+        - Type: Interface
+          Module: Foundation.NSData
+          Name: NSData
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setFetchRecordChangesCompletionBlock:'
+      JsName: 'setFetchRecordChangesCompletionBlock'
+      Module: 'CloudKit.CKFetchRecordChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setFetchRecordChangesCompletionBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKFetchRecordChangesOperation
+          Name: CKServerChangeToken
+        - Type: Interface
+          Module: Foundation.NSData
+          Name: NSData
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'moreComing'
+    JsName: 'moreComing'
+    Module: 'CloudKit.CKFetchRecordChangesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'moreComing'
+      JsName: 'moreComing'
+      Module: 'CloudKit.CKFetchRecordChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'moreComing'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'previousServerChangeToken'
+    JsName: 'previousServerChangeToken'
+    Module: 'CloudKit.CKFetchRecordChangesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'previousServerChangeToken'
+      JsName: 'previousServerChangeToken'
+      Module: 'CloudKit.CKFetchRecordChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'previousServerChangeToken'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKFetchRecordChangesOperation
+        Name: CKServerChangeToken
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setPreviousServerChangeToken:'
+      JsName: 'setPreviousServerChangeToken'
+      Module: 'CloudKit.CKFetchRecordChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPreviousServerChangeToken:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKFetchRecordChangesOperation
+        Name: CKServerChangeToken
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'recordChangedBlock'
+    JsName: 'recordChangedBlock'
+    Module: 'CloudKit.CKFetchRecordChangesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'recordChangedBlock'
+      JsName: 'recordChangedBlock'
+      Module: 'CloudKit.CKFetchRecordChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordChangedBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKRecord
+          Name: CKRecord
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setRecordChangedBlock:'
+      JsName: 'setRecordChangedBlock'
+      Module: 'CloudKit.CKFetchRecordChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRecordChangedBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKRecord
+          Name: CKRecord
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'recordWithIDWasDeletedBlock'
+    JsName: 'recordWithIDWasDeletedBlock'
+    Module: 'CloudKit.CKFetchRecordChangesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'recordWithIDWasDeletedBlock'
+      JsName: 'recordWithIDWasDeletedBlock'
+      Module: 'CloudKit.CKFetchRecordChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordWithIDWasDeletedBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKRecordID
+          Name: CKRecordID
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setRecordWithIDWasDeletedBlock:'
+      JsName: 'setRecordWithIDWasDeletedBlock'
+      Module: 'CloudKit.CKFetchRecordChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRecordWithIDWasDeletedBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKRecordID
+          Name: CKRecordID
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'recordZoneID'
+    JsName: 'recordZoneID'
+    Module: 'CloudKit.CKFetchRecordChangesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'recordZoneID'
+      JsName: 'recordZoneID'
+      Module: 'CloudKit.CKFetchRecordChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordZoneID'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKRecordZoneID
+        Name: CKRecordZoneID
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setRecordZoneID:'
+      JsName: 'setRecordZoneID'
+      Module: 'CloudKit.CKFetchRecordChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRecordZoneID:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKRecordZoneID
+        Name: CKRecordZoneID
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'resultsLimit'
+    JsName: 'resultsLimit'
+    Module: 'CloudKit.CKFetchRecordChangesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'resultsLimit'
+      JsName: 'resultsLimit'
+      Module: 'CloudKit.CKFetchRecordChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'resultsLimit'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setResultsLimit:'
+      JsName: 'setResultsLimit'
+      Module: 'CloudKit.CKFetchRecordChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setResultsLimit:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  Protocols: []
+  Base:
+    Module: CloudKit.CKDatabaseOperation
+    Name: CKDatabaseOperation
+  Type: Interface
+- Name: 'CKQueryCursor'
+  JsName: 'CKQueryCursor'
+  Module: 'CloudKit.CKQueryOperation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CKQueryOperationMaximumResults'
+  JsName: 'CKQueryOperationMaximumResults'
+  Module: 'CloudKit.CKQueryOperation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: ULong
+- Name: 'CKQueryOperation'
+  JsName: 'CKQueryOperation'
+  Module: 'CloudKit.CKQueryOperation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithCursor:'
+    JsName: 'initWithCursor'
+    Module: 'CloudKit.CKQueryOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithCursor:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: CloudKit.CKQueryOperation
+      Name: CKQueryCursor
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'initWithQuery:'
+    JsName: 'initWithQuery'
+    Module: 'CloudKit.CKQueryOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithQuery:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: CloudKit.CKQuery
+      Name: CKQuery
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'cursor'
+    JsName: 'cursor'
+    Module: 'CloudKit.CKQueryOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'cursor'
+      JsName: 'cursor'
+      Module: 'CloudKit.CKQueryOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'cursor'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKQueryOperation
+        Name: CKQueryCursor
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setCursor:'
+      JsName: 'setCursor'
+      Module: 'CloudKit.CKQueryOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCursor:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKQueryOperation
+        Name: CKQueryCursor
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'desiredKeys'
+    JsName: 'desiredKeys'
+    Module: 'CloudKit.CKQueryOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'desiredKeys'
+      JsName: 'desiredKeys'
+      Module: 'CloudKit.CKQueryOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'desiredKeys'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDesiredKeys:'
+      JsName: 'setDesiredKeys'
+      Module: 'CloudKit.CKQueryOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDesiredKeys:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'query'
+    JsName: 'query'
+    Module: 'CloudKit.CKQueryOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'query'
+      JsName: 'query'
+      Module: 'CloudKit.CKQueryOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'query'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKQuery
+        Name: CKQuery
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setQuery:'
+      JsName: 'setQuery'
+      Module: 'CloudKit.CKQueryOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setQuery:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKQuery
+        Name: CKQuery
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'queryCompletionBlock'
+    JsName: 'queryCompletionBlock'
+    Module: 'CloudKit.CKQueryOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'queryCompletionBlock'
+      JsName: 'queryCompletionBlock'
+      Module: 'CloudKit.CKQueryOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'queryCompletionBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKQueryOperation
+          Name: CKQueryCursor
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setQueryCompletionBlock:'
+      JsName: 'setQueryCompletionBlock'
+      Module: 'CloudKit.CKQueryOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setQueryCompletionBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKQueryOperation
+          Name: CKQueryCursor
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'recordFetchedBlock'
+    JsName: 'recordFetchedBlock'
+    Module: 'CloudKit.CKQueryOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'recordFetchedBlock'
+      JsName: 'recordFetchedBlock'
+      Module: 'CloudKit.CKQueryOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordFetchedBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKRecord
+          Name: CKRecord
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setRecordFetchedBlock:'
+      JsName: 'setRecordFetchedBlock'
+      Module: 'CloudKit.CKQueryOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRecordFetchedBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKRecord
+          Name: CKRecord
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'resultsLimit'
+    JsName: 'resultsLimit'
+    Module: 'CloudKit.CKQueryOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'resultsLimit'
+      JsName: 'resultsLimit'
+      Module: 'CloudKit.CKQueryOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'resultsLimit'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setResultsLimit:'
+      JsName: 'setResultsLimit'
+      Module: 'CloudKit.CKQueryOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setResultsLimit:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'zoneID'
+    JsName: 'zoneID'
+    Module: 'CloudKit.CKQueryOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'zoneID'
+      JsName: 'zoneID'
+      Module: 'CloudKit.CKQueryOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'zoneID'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKRecordZoneID
+        Name: CKRecordZoneID
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setZoneID:'
+      JsName: 'setZoneID'
+      Module: 'CloudKit.CKQueryOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setZoneID:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKRecordZoneID
+        Name: CKRecordZoneID
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: CloudKit.CKDatabaseOperation
+    Name: CKDatabaseOperation
+  Type: Interface
+- Name: 'CKModifyBadgeOperation'
+  JsName: 'CKModifyBadgeOperation'
+  Module: 'CloudKit.CKModifyBadgeOperation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithBadgeValue:'
+    JsName: 'initWithBadgeValue'
+    Module: 'CloudKit.CKModifyBadgeOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithBadgeValue:'
+    Signature:
+    - Type: Instancetype
+    - Type: ULong
+    TypeEncoding: '@24@0:8Q16'
+  StaticMethods: []
+  Properties:
+  - Name: 'badgeValue'
+    JsName: 'badgeValue'
+    Module: 'CloudKit.CKModifyBadgeOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'badgeValue'
+      JsName: 'badgeValue'
+      Module: 'CloudKit.CKModifyBadgeOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'badgeValue'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setBadgeValue:'
+      JsName: 'setBadgeValue'
+      Module: 'CloudKit.CKModifyBadgeOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setBadgeValue:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'modifyBadgeCompletionBlock'
+    JsName: 'modifyBadgeCompletionBlock'
+    Module: 'CloudKit.CKModifyBadgeOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'modifyBadgeCompletionBlock'
+      JsName: 'modifyBadgeCompletionBlock'
+      Module: 'CloudKit.CKModifyBadgeOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'modifyBadgeCompletionBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setModifyBadgeCompletionBlock:'
+      JsName: 'setModifyBadgeCompletionBlock'
+      Module: 'CloudKit.CKModifyBadgeOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setModifyBadgeCompletionBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: 'v24@0:8@?16'
+  Protocols: []
+  Base:
+    Module: CloudKit.CKOperation
+    Name: CKOperation
+  Type: Interface
+- Name: 'CKFetchNotificationChangesOperation'
+  JsName: 'CKFetchNotificationChangesOperation'
+  Module: 'CloudKit.CKFetchNotificationChangesOperation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithPreviousServerChangeToken:'
+    JsName: 'initWithPreviousServerChangeToken'
+    Module: 'CloudKit.CKFetchNotificationChangesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithPreviousServerChangeToken:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: CloudKit.CKFetchRecordChangesOperation
+      Name: CKServerChangeToken
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'fetchNotificationChangesCompletionBlock'
+    JsName: 'fetchNotificationChangesCompletionBlock'
+    Module: 'CloudKit.CKFetchNotificationChangesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'fetchNotificationChangesCompletionBlock'
+      JsName: 'fetchNotificationChangesCompletionBlock'
+      Module: 'CloudKit.CKFetchNotificationChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'fetchNotificationChangesCompletionBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKFetchRecordChangesOperation
+          Name: CKServerChangeToken
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setFetchNotificationChangesCompletionBlock:'
+      JsName: 'setFetchNotificationChangesCompletionBlock'
+      Module: 'CloudKit.CKFetchNotificationChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setFetchNotificationChangesCompletionBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKFetchRecordChangesOperation
+          Name: CKServerChangeToken
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'moreComing'
+    JsName: 'moreComing'
+    Module: 'CloudKit.CKFetchNotificationChangesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'moreComing'
+      JsName: 'moreComing'
+      Module: 'CloudKit.CKFetchNotificationChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'moreComing'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'notificationChangedBlock'
+    JsName: 'notificationChangedBlock'
+    Module: 'CloudKit.CKFetchNotificationChangesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'notificationChangedBlock'
+      JsName: 'notificationChangedBlock'
+      Module: 'CloudKit.CKFetchNotificationChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'notificationChangedBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKNotification
+          Name: CKNotification
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setNotificationChangedBlock:'
+      JsName: 'setNotificationChangedBlock'
+      Module: 'CloudKit.CKFetchNotificationChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setNotificationChangedBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: CloudKit.CKNotification
+          Name: CKNotification
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'previousServerChangeToken'
+    JsName: 'previousServerChangeToken'
+    Module: 'CloudKit.CKFetchNotificationChangesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'previousServerChangeToken'
+      JsName: 'previousServerChangeToken'
+      Module: 'CloudKit.CKFetchNotificationChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'previousServerChangeToken'
+      Signature:
+      - Type: Interface
+        Module: CloudKit.CKFetchRecordChangesOperation
+        Name: CKServerChangeToken
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setPreviousServerChangeToken:'
+      JsName: 'setPreviousServerChangeToken'
+      Module: 'CloudKit.CKFetchNotificationChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPreviousServerChangeToken:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CloudKit.CKFetchRecordChangesOperation
+        Name: CKServerChangeToken
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'resultsLimit'
+    JsName: 'resultsLimit'
+    Module: 'CloudKit.CKFetchNotificationChangesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'resultsLimit'
+      JsName: 'resultsLimit'
+      Module: 'CloudKit.CKFetchNotificationChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'resultsLimit'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setResultsLimit:'
+      JsName: 'setResultsLimit'
+      Module: 'CloudKit.CKFetchNotificationChangesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setResultsLimit:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  Protocols: []
+  Base:
+    Module: CloudKit.CKOperation
+    Name: CKOperation
+  Type: Interface
+- Name: 'CKMarkNotificationsReadOperation'
+  JsName: 'CKMarkNotificationsReadOperation'
+  Module: 'CloudKit.CKMarkNotificationsReadOperation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithNotificationIDsToMarkRead:'
+    JsName: 'initWithNotificationIDsToMarkRead'
+    Module: 'CloudKit.CKMarkNotificationsReadOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithNotificationIDsToMarkRead:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'markNotificationsReadCompletionBlock'
+    JsName: 'markNotificationsReadCompletionBlock'
+    Module: 'CloudKit.CKMarkNotificationsReadOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'markNotificationsReadCompletionBlock'
+      JsName: 'markNotificationsReadCompletionBlock'
+      Module: 'CloudKit.CKMarkNotificationsReadOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'markNotificationsReadCompletionBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSArray
+          Name: NSArray
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setMarkNotificationsReadCompletionBlock:'
+      JsName: 'setMarkNotificationsReadCompletionBlock'
+      Module: 'CloudKit.CKMarkNotificationsReadOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMarkNotificationsReadCompletionBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSArray
+          Name: NSArray
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'notificationIDs'
+    JsName: 'notificationIDs'
+    Module: 'CloudKit.CKMarkNotificationsReadOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'notificationIDs'
+      JsName: 'notificationIDs'
+      Module: 'CloudKit.CKMarkNotificationsReadOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'notificationIDs'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setNotificationIDs:'
+      JsName: 'setNotificationIDs'
+      Module: 'CloudKit.CKMarkNotificationsReadOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setNotificationIDs:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: CloudKit.CKOperation
+    Name: CKOperation
+  Type: Interface
+- Name: 'CKFetchSubscriptionsOperation'
+  JsName: 'CKFetchSubscriptionsOperation'
+  Module: 'CloudKit.CKFetchSubscriptionsOperation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithSubscriptionIDs:'
+    JsName: 'initWithSubscriptionIDs'
+    Module: 'CloudKit.CKFetchSubscriptionsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithSubscriptionIDs:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods:
+  - Name: 'fetchAllSubscriptionsOperation'
+    JsName: 'fetchAllSubscriptionsOperation'
+    Module: 'CloudKit.CKFetchSubscriptionsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchAllSubscriptionsOperation'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@16@0:8'
+  Properties:
+  - Name: 'fetchSubscriptionCompletionBlock'
+    JsName: 'fetchSubscriptionCompletionBlock'
+    Module: 'CloudKit.CKFetchSubscriptionsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'fetchSubscriptionCompletionBlock'
+      JsName: 'fetchSubscriptionCompletionBlock'
+      Module: 'CloudKit.CKFetchSubscriptionsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'fetchSubscriptionCompletionBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSDictionary
+          Name: NSDictionary
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setFetchSubscriptionCompletionBlock:'
+      JsName: 'setFetchSubscriptionCompletionBlock'
+      Module: 'CloudKit.CKFetchSubscriptionsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setFetchSubscriptionCompletionBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSDictionary
+          Name: NSDictionary
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'subscriptionIDs'
+    JsName: 'subscriptionIDs'
+    Module: 'CloudKit.CKFetchSubscriptionsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'subscriptionIDs'
+      JsName: 'subscriptionIDs'
+      Module: 'CloudKit.CKFetchSubscriptionsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'subscriptionIDs'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setSubscriptionIDs:'
+      JsName: 'setSubscriptionIDs'
+      Module: 'CloudKit.CKFetchSubscriptionsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSubscriptionIDs:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: CloudKit.CKDatabaseOperation
+    Name: CKDatabaseOperation
+  Type: Interface
+- Name: 'CKModifySubscriptionsOperation'
+  JsName: 'CKModifySubscriptionsOperation'
+  Module: 'CloudKit.CKModifySubscriptionsOperation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithSubscriptionsToSave:subscriptionIDsToDelete:'
+    JsName: 'initWithSubscriptionsToSaveSubscriptionIDsToDelete'
+    Module: 'CloudKit.CKModifySubscriptionsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithSubscriptionsToSave:subscriptionIDsToDelete:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@32@0:8@16@24'
+  StaticMethods: []
+  Properties:
+  - Name: 'modifySubscriptionsCompletionBlock'
+    JsName: 'modifySubscriptionsCompletionBlock'
+    Module: 'CloudKit.CKModifySubscriptionsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'modifySubscriptionsCompletionBlock'
+      JsName: 'modifySubscriptionsCompletionBlock'
+      Module: 'CloudKit.CKModifySubscriptionsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'modifySubscriptionsCompletionBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSArray
+          Name: NSArray
+        - Type: Interface
+          Module: Foundation.NSArray
+          Name: NSArray
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setModifySubscriptionsCompletionBlock:'
+      JsName: 'setModifySubscriptionsCompletionBlock'
+      Module: 'CloudKit.CKModifySubscriptionsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setModifySubscriptionsCompletionBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSArray
+          Name: NSArray
+        - Type: Interface
+          Module: Foundation.NSArray
+          Name: NSArray
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'subscriptionIDsToDelete'
+    JsName: 'subscriptionIDsToDelete'
+    Module: 'CloudKit.CKModifySubscriptionsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'subscriptionIDsToDelete'
+      JsName: 'subscriptionIDsToDelete'
+      Module: 'CloudKit.CKModifySubscriptionsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'subscriptionIDsToDelete'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setSubscriptionIDsToDelete:'
+      JsName: 'setSubscriptionIDsToDelete'
+      Module: 'CloudKit.CKModifySubscriptionsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSubscriptionIDsToDelete:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'subscriptionsToSave'
+    JsName: 'subscriptionsToSave'
+    Module: 'CloudKit.CKModifySubscriptionsOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'subscriptionsToSave'
+      JsName: 'subscriptionsToSave'
+      Module: 'CloudKit.CKModifySubscriptionsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'subscriptionsToSave'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setSubscriptionsToSave:'
+      JsName: 'setSubscriptionsToSave'
+      Module: 'CloudKit.CKModifySubscriptionsOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSubscriptionsToSave:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: CloudKit.CKDatabaseOperation
+    Name: CKDatabaseOperation
+  Type: Interface
+- Name: 'CKModifyRecordZonesOperation'
+  JsName: 'CKModifyRecordZonesOperation'
+  Module: 'CloudKit.CKModifyRecordZonesOperation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithRecordZonesToSave:recordZoneIDsToDelete:'
+    JsName: 'initWithRecordZonesToSaveRecordZoneIDsToDelete'
+    Module: 'CloudKit.CKModifyRecordZonesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithRecordZonesToSave:recordZoneIDsToDelete:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@32@0:8@16@24'
+  StaticMethods: []
+  Properties:
+  - Name: 'modifyRecordZonesCompletionBlock'
+    JsName: 'modifyRecordZonesCompletionBlock'
+    Module: 'CloudKit.CKModifyRecordZonesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'modifyRecordZonesCompletionBlock'
+      JsName: 'modifyRecordZonesCompletionBlock'
+      Module: 'CloudKit.CKModifyRecordZonesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'modifyRecordZonesCompletionBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSArray
+          Name: NSArray
+        - Type: Interface
+          Module: Foundation.NSArray
+          Name: NSArray
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setModifyRecordZonesCompletionBlock:'
+      JsName: 'setModifyRecordZonesCompletionBlock'
+      Module: 'CloudKit.CKModifyRecordZonesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setModifyRecordZonesCompletionBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSArray
+          Name: NSArray
+        - Type: Interface
+          Module: Foundation.NSArray
+          Name: NSArray
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'recordZoneIDsToDelete'
+    JsName: 'recordZoneIDsToDelete'
+    Module: 'CloudKit.CKModifyRecordZonesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'recordZoneIDsToDelete'
+      JsName: 'recordZoneIDsToDelete'
+      Module: 'CloudKit.CKModifyRecordZonesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordZoneIDsToDelete'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setRecordZoneIDsToDelete:'
+      JsName: 'setRecordZoneIDsToDelete'
+      Module: 'CloudKit.CKModifyRecordZonesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRecordZoneIDsToDelete:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'recordZonesToSave'
+    JsName: 'recordZonesToSave'
+    Module: 'CloudKit.CKModifyRecordZonesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'recordZonesToSave'
+      JsName: 'recordZonesToSave'
+      Module: 'CloudKit.CKModifyRecordZonesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordZonesToSave'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setRecordZonesToSave:'
+      JsName: 'setRecordZonesToSave'
+      Module: 'CloudKit.CKModifyRecordZonesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRecordZonesToSave:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: CloudKit.CKDatabaseOperation
+    Name: CKDatabaseOperation
+  Type: Interface
+- Name: 'CKFetchRecordZonesOperation'
+  JsName: 'CKFetchRecordZonesOperation'
+  Module: 'CloudKit.CKFetchRecordZonesOperation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithRecordZoneIDs:'
+    JsName: 'initWithRecordZoneIDs'
+    Module: 'CloudKit.CKFetchRecordZonesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithRecordZoneIDs:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods:
+  - Name: 'fetchAllRecordZonesOperation'
+    JsName: 'fetchAllRecordZonesOperation'
+    Module: 'CloudKit.CKFetchRecordZonesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fetchAllRecordZonesOperation'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@16@0:8'
+  Properties:
+  - Name: 'fetchRecordZonesCompletionBlock'
+    JsName: 'fetchRecordZonesCompletionBlock'
+    Module: 'CloudKit.CKFetchRecordZonesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'fetchRecordZonesCompletionBlock'
+      JsName: 'fetchRecordZonesCompletionBlock'
+      Module: 'CloudKit.CKFetchRecordZonesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'fetchRecordZonesCompletionBlock'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSDictionary
+          Name: NSDictionary
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setFetchRecordZonesCompletionBlock:'
+      JsName: 'setFetchRecordZonesCompletionBlock'
+      Module: 'CloudKit.CKFetchRecordZonesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setFetchRecordZonesCompletionBlock:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Interface
+          Module: Foundation.NSDictionary
+          Name: NSDictionary
+        - Type: Interface
+          Module: Foundation.NSError
+          Name: NSError
+      TypeEncoding: 'v24@0:8@?16'
+  - Name: 'recordZoneIDs'
+    JsName: 'recordZoneIDs'
+    Module: 'CloudKit.CKFetchRecordZonesOperation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'recordZoneIDs'
+      JsName: 'recordZoneIDs'
+      Module: 'CloudKit.CKFetchRecordZonesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recordZoneIDs'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setRecordZoneIDs:'
+      JsName: 'setRecordZoneIDs'
+      Module: 'CloudKit.CKFetchRecordZonesOperation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRecordZoneIDs:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: CloudKit.CKDatabaseOperation
+    Name: CKDatabaseOperation
+  Type: Interface
+...

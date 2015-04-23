@@ -1,0 +1,313 @@
+name: Twitter
+items:
+- Name: 'TWRequestMethodGET'
+  JsName: 'TWRequestMethodGET'
+  Module: 'Twitter.TWRequest'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'TWRequestMethodPOST'
+  JsName: 'TWRequestMethodPOST'
+  Module: 'Twitter.TWRequest'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'TWRequestMethodDELETE'
+  JsName: 'TWRequestMethodDELETE'
+  Module: 'Twitter.TWRequest'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'TWRequest'
+  JsName: 'TWRequest'
+  Module: 'Twitter.TWRequest'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addMultiPartData:withName:type:'
+    JsName: 'addMultiPartDataWithNameType'
+    Module: 'Twitter.TWRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addMultiPartData:withName:type:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v40@0:8@16@24@32'
+  - Name: 'initWithURL:parameters:requestMethod:'
+    JsName: 'initWithURLParametersRequestMethod'
+    Module: 'Twitter.TWRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithURL:parameters:requestMethod:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Long
+    TypeEncoding: '@40@0:8@16@24q32'
+  - Name: 'performRequestWithHandler:'
+    JsName: 'performRequestWithHandler'
+    Module: 'Twitter.TWRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'performRequestWithHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      - Type: Interface
+        Module: Foundation.NSURLResponse
+        Name: NSHTTPURLResponse
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v24@0:8@?16'
+  - Name: 'signedURLRequest'
+    JsName: 'signedURLRequest'
+    Module: 'Twitter.TWRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'signedURLRequest'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSURLRequest
+      Name: NSURLRequest
+    TypeEncoding: '@16@0:8'
+  StaticMethods: []
+  Properties:
+  - Name: 'account'
+    JsName: 'account'
+    Module: 'Twitter.TWRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'account'
+      JsName: 'account'
+      Module: 'Twitter.TWRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'account'
+      Signature:
+      - Type: Interface
+        Module: Accounts.ACAccount
+        Name: ACAccount
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setAccount:'
+      JsName: 'setAccount'
+      Module: 'Twitter.TWRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAccount:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Accounts.ACAccount
+        Name: ACAccount
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'parameters'
+    JsName: 'parameters'
+    Module: 'Twitter.TWRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'parameters'
+      JsName: 'parameters'
+      Module: 'Twitter.TWRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'parameters'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: '@16@0:8'
+  - Name: 'requestMethod'
+    JsName: 'requestMethod'
+    Module: 'Twitter.TWRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'requestMethod'
+      JsName: 'requestMethod'
+      Module: 'Twitter.TWRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'requestMethod'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+  - Name: 'URL'
+    JsName: 'URL'
+    Module: 'Twitter.TWRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'URL'
+      JsName: 'URL'
+      Module: 'Twitter.TWRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'URL'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'TWTweetComposeViewControllerResultCancelled'
+  JsName: 'TWTweetComposeViewControllerResultCancelled'
+  Module: 'Twitter.TWTweetComposeViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'TWTweetComposeViewControllerResultDone'
+  JsName: 'TWTweetComposeViewControllerResultDone'
+  Module: 'Twitter.TWTweetComposeViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'TWTweetComposeViewController'
+  JsName: 'TWTweetComposeViewController'
+  Module: 'Twitter.TWTweetComposeViewController'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addImage:'
+    JsName: 'addImage'
+    Module: 'Twitter.TWTweetComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addImage:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: UIKit.UIImage
+      Name: UIImage
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'addURL:'
+    JsName: 'addURL'
+    Module: 'Twitter.TWTweetComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addURL:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'removeAllImages'
+    JsName: 'removeAllImages'
+    Module: 'Twitter.TWTweetComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeAllImages'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  - Name: 'removeAllURLs'
+    JsName: 'removeAllURLs'
+    Module: 'Twitter.TWTweetComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeAllURLs'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  - Name: 'setInitialText:'
+    JsName: 'setInitialText'
+    Module: 'Twitter.TWTweetComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setInitialText:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'B24@0:8@16'
+  StaticMethods:
+  - Name: 'canSendTweet'
+    JsName: 'canSendTweet'
+    Module: 'Twitter.TWTweetComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'canSendTweet'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  Properties:
+  - Name: 'completionHandler'
+    JsName: 'completionHandler'
+    Module: 'Twitter.TWTweetComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'completionHandler'
+      JsName: 'completionHandler'
+      Module: 'Twitter.TWTweetComposeViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'completionHandler'
+      Signature:
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Long
+      TypeEncoding: '@?16@0:8'
+    Setter:
+      Name: 'setCompletionHandler:'
+      JsName: 'setCompletionHandler'
+      Module: 'Twitter.TWTweetComposeViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCompletionHandler:'
+      Signature:
+      - Type: Void
+      - Type: Block
+        Signature:
+        - Type: Void
+        - Type: Long
+      TypeEncoding: 'v24@0:8@?16'
+  Protocols: []
+  Base:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Interface
+...

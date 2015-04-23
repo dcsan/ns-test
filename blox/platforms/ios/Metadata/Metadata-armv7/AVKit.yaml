@@ -1,0 +1,161 @@
+name: AVKit
+items:
+- Name: 'AVPlayerViewController'
+  JsName: 'AVPlayerViewController'
+  Module: 'AVKit.AVPlayerViewController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'contentOverlayView'
+    JsName: 'contentOverlayView'
+    Module: 'AVKit.AVPlayerViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'contentOverlayView'
+      JsName: 'contentOverlayView'
+      Module: 'AVKit.AVPlayerViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'contentOverlayView'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIView
+        Name: UIView
+      TypeEncoding: '@8@0:4'
+  - Name: 'player'
+    JsName: 'player'
+    Module: 'AVKit.AVPlayerViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'player'
+      JsName: 'player'
+      Module: 'AVKit.AVPlayerViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'player'
+      Signature:
+      - Type: Interface
+        Module: AVFoundation.AVPlayer
+        Name: AVPlayer
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setPlayer:'
+      JsName: 'setPlayer'
+      Module: 'AVKit.AVPlayerViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPlayer:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: AVFoundation.AVPlayer
+        Name: AVPlayer
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'readyForDisplay'
+    JsName: 'readyForDisplay'
+    Module: 'AVKit.AVPlayerViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isReadyForDisplay'
+      JsName: 'isReadyForDisplay'
+      Module: 'AVKit.AVPlayerViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isReadyForDisplay'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'showsPlaybackControls'
+    JsName: 'showsPlaybackControls'
+    Module: 'AVKit.AVPlayerViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'showsPlaybackControls'
+      JsName: 'showsPlaybackControls'
+      Module: 'AVKit.AVPlayerViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'showsPlaybackControls'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setShowsPlaybackControls:'
+      JsName: 'setShowsPlaybackControls'
+      Module: 'AVKit.AVPlayerViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShowsPlaybackControls:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'videoBounds'
+    JsName: 'videoBounds'
+    Module: 'AVKit.AVPlayerViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'videoBounds'
+      JsName: 'videoBounds'
+      Module: 'AVKit.AVPlayerViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'videoBounds'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGRect
+      TypeEncoding: '{CGRect={CGPoint=ff}{CGSize=ff}}8@0:4'
+  - Name: 'videoGravity'
+    JsName: 'videoGravity'
+    Module: 'AVKit.AVPlayerViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'videoGravity'
+      JsName: 'videoGravity'
+      Module: 'AVKit.AVPlayerViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'videoGravity'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setVideoGravity:'
+      JsName: 'setVideoGravity'
+      Module: 'AVKit.AVPlayerViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setVideoGravity:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Interface
+...

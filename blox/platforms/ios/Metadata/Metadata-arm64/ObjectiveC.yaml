@@ -1,0 +1,634 @@
+name: ObjectiveC
+items:
+- Name: 'objc_object'
+  JsName: 'objc_object'
+  Module: 'ObjectiveC.objc'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: isa
+    Signature:
+      Type: Class
+  Type: Struct
+- Name: 'sel_getName'
+  JsName: 'sel_getName'
+  Module: 'ObjectiveC.objc'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: Selector
+- Name: 'sel_registerName'
+  JsName: 'sel_registerName'
+  Module: 'ObjectiveC.objc'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Selector
+  - Type: CString
+- Name: 'object_getClassName'
+  JsName: 'object_getClassName'
+  Module: 'ObjectiveC.objc'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: Id
+    WithProtocols: []
+- Name: 'sel_isMapped'
+  JsName: 'sel_isMapped'
+  Module: 'ObjectiveC.objc'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Selector
+- Name: 'sel_getUid'
+  JsName: 'sel_getUid'
+  Module: 'ObjectiveC.objc'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Selector
+  - Type: CString
+- Name: 'NSObject'
+  JsName: 'NSObjectProtocol'
+  Module: 'ObjectiveC.NSObject'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'autorelease'
+    JsName: 'autorelease'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'autorelease'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@16@0:8'
+  - Name: 'class'
+    JsName: 'class'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'class'
+    Signature:
+    - Type: Class
+    TypeEncoding: '#16@0:8'
+  - Name: 'conformsToProtocol:'
+    JsName: 'conformsToProtocol'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'conformsToProtocol:'
+    Signature:
+    - Type: Bool
+    - Type: Protocol
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'isEqual:'
+    JsName: 'isEqual'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isEqual:'
+    Signature:
+    - Type: Bool
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'isKindOfClass:'
+    JsName: 'isKindOfClass'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isKindOfClass:'
+    Signature:
+    - Type: Bool
+    - Type: Class
+    TypeEncoding: 'B24@0:8#16'
+  - Name: 'isMemberOfClass:'
+    JsName: 'isMemberOfClass'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isMemberOfClass:'
+    Signature:
+    - Type: Bool
+    - Type: Class
+    TypeEncoding: 'B24@0:8#16'
+  - Name: 'isProxy'
+    JsName: 'isProxy'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isProxy'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  - Name: 'performSelector:'
+    JsName: 'performSelector'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'performSelector:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Selector
+    TypeEncoding: '@24@0:8:16'
+  - Name: 'performSelector:withObject:'
+    JsName: 'performSelectorWithObject'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'performSelector:withObject:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Selector
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: '@32@0:8:16@24'
+  - Name: 'performSelector:withObject:withObject:'
+    JsName: 'performSelectorWithObjectWithObject'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'performSelector:withObject:withObject:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Selector
+    - Type: Id
+      WithProtocols: []
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: '@40@0:8:16@24@32'
+  - Name: 'release'
+    JsName: 'release'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'release'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'Vv16@0:8'
+  - Name: 'respondsToSelector:'
+    JsName: 'respondsToSelector'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'respondsToSelector:'
+    Signature:
+    - Type: Bool
+    - Type: Selector
+    TypeEncoding: 'B24@0:8:16'
+  - Name: 'retain'
+    JsName: 'retain'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'retain'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@16@0:8'
+  - Name: 'retainCount'
+    JsName: 'retainCount'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'retainCount'
+    Signature:
+    - Type: ULong
+    TypeEncoding: 'Q16@0:8'
+  - Name: 'self'
+    JsName: 'self'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'self'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@16@0:8'
+  - Name: 'zone'
+    JsName: 'zone'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'zone'
+    Signature:
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '^{_NSZone=}16@0:8'
+  StaticMethods: []
+  Properties:
+  - Name: 'debugDescription'
+    JsName: 'debugDescription'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'debugDescription'
+      JsName: 'debugDescription'
+      Module: 'ObjectiveC.NSObject'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'debugDescription'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'description'
+    JsName: 'description'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'description'
+      JsName: 'description'
+      Module: 'ObjectiveC.NSObject'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'description'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'hash'
+    JsName: 'hash'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'hash'
+      JsName: 'hash'
+      Module: 'ObjectiveC.NSObject'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'hash'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  - Name: 'superclass'
+    JsName: 'superclass'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'superclass'
+      JsName: 'superclass'
+      Module: 'ObjectiveC.NSObject'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'superclass'
+      Signature:
+      - Type: Class
+      TypeEncoding: '#16@0:8'
+  Protocols: []
+  Type: Protocol
+- Name: 'NSObject'
+  JsName: 'NSObject'
+  Module: 'ObjectiveC.NSObject'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'copy'
+    JsName: 'copy'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'copy'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: '@16@0:8'
+  - Name: 'dealloc'
+    JsName: 'dealloc'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'dealloc'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'doesNotRecognizeSelector:'
+    JsName: 'doesNotRecognizeSelector'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'doesNotRecognizeSelector:'
+    Signature:
+    - Type: Void
+    - Type: Selector
+    TypeEncoding: 'v24@0:8:16'
+  - Name: 'finalize'
+    JsName: 'finalize'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'finalize'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'forwardingTargetForSelector:'
+    JsName: 'forwardingTargetForSelector'
+    Module: 'ObjectiveC.NSObject'
+    IntroducedIn: 2.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'forwardingTargetForSelector:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Selector
+    TypeEncoding: '@24@0:8:16'
+  - Name: 'forwardInvocation:'
+    JsName: 'forwardInvocation'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'forwardInvocation:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSInvocation
+      Name: NSInvocation
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'init'
+    JsName: 'init'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'init'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@16@0:8'
+  - Name: 'methodForSelector:'
+    JsName: 'methodForSelector'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'methodForSelector:'
+    Signature:
+    - Type: FunctionPointer
+      Signature:
+      - Type: Id
+        WithProtocols: []
+      - Type: Id
+        WithProtocols: []
+      - Type: Selector
+    - Type: Selector
+    TypeEncoding: '^?24@0:8:16'
+  - Name: 'methodSignatureForSelector:'
+    JsName: 'methodSignatureForSelector'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'methodSignatureForSelector:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSMethodSignature
+      Name: NSMethodSignature
+    - Type: Selector
+    TypeEncoding: '@24@0:8:16'
+  - Name: 'mutableCopy'
+    JsName: 'mutableCopy'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'mutableCopy'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: '@16@0:8'
+  StaticMethods:
+  - Name: 'alloc'
+    JsName: 'alloc'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'alloc'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@16@0:8'
+  - Name: 'allocWithZone:'
+    JsName: 'allocWithZone'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'allocWithZone:'
+    Signature:
+    - Type: Instancetype
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '@24@0:8^{_NSZone=}16'
+  - Name: 'class'
+    JsName: 'class'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'class'
+    Signature:
+    - Type: Class
+    TypeEncoding: '#16@0:8'
+  - Name: 'conformsToProtocol:'
+    JsName: 'conformsToProtocol'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'conformsToProtocol:'
+    Signature:
+    - Type: Bool
+    - Type: Protocol
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'copyWithZone:'
+    JsName: 'copyWithZone'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'copyWithZone:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '@24@0:8^{_NSZone=}16'
+  - Name: 'debugDescription'
+    JsName: 'debugDescription'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'debugDescription'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@16@0:8'
+  - Name: 'description'
+    JsName: 'description'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'description'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@16@0:8'
+  - Name: 'hash'
+    JsName: 'hash'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'hash'
+    Signature:
+    - Type: ULong
+    TypeEncoding: 'Q16@0:8'
+  - Name: 'initialize'
+    JsName: 'initialize'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initialize'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'instanceMethodForSelector:'
+    JsName: 'instanceMethodForSelector'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'instanceMethodForSelector:'
+    Signature:
+    - Type: FunctionPointer
+      Signature:
+      - Type: Id
+        WithProtocols: []
+      - Type: Id
+        WithProtocols: []
+      - Type: Selector
+    - Type: Selector
+    TypeEncoding: '^?24@0:8:16'
+  - Name: 'instanceMethodSignatureForSelector:'
+    JsName: 'instanceMethodSignatureForSelector'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'instanceMethodSignatureForSelector:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSMethodSignature
+      Name: NSMethodSignature
+    - Type: Selector
+    TypeEncoding: '@24@0:8:16'
+  - Name: 'instancesRespondToSelector:'
+    JsName: 'instancesRespondToSelector'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'instancesRespondToSelector:'
+    Signature:
+    - Type: Bool
+    - Type: Selector
+    TypeEncoding: 'B24@0:8:16'
+  - Name: 'isSubclassOfClass:'
+    JsName: 'isSubclassOfClass'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isSubclassOfClass:'
+    Signature:
+    - Type: Bool
+    - Type: Class
+    TypeEncoding: 'B24@0:8#16'
+  - Name: 'load'
+    JsName: 'load'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'load'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'mutableCopyWithZone:'
+    JsName: 'mutableCopyWithZone'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'mutableCopyWithZone:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '@24@0:8^{_NSZone=}16'
+  - Name: 'new'
+    JsName: 'new'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'new'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@16@0:8'
+  - Name: 'resolveClassMethod:'
+    JsName: 'resolveClassMethod'
+    Module: 'ObjectiveC.NSObject'
+    IntroducedIn: 2.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'resolveClassMethod:'
+    Signature:
+    - Type: Bool
+    - Type: Selector
+    TypeEncoding: 'B24@0:8:16'
+  - Name: 'resolveInstanceMethod:'
+    JsName: 'resolveInstanceMethod'
+    Module: 'ObjectiveC.NSObject'
+    IntroducedIn: 2.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'resolveInstanceMethod:'
+    Signature:
+    - Type: Bool
+    - Type: Selector
+    TypeEncoding: 'B24@0:8:16'
+  - Name: 'superclass'
+    JsName: 'superclass'
+    Module: 'ObjectiveC.NSObject'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'superclass'
+    Signature:
+    - Type: Class
+    TypeEncoding: '#16@0:8'
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Base: 
+  Type: Interface
+...

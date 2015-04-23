@@ -1,0 +1,283 @@
+name: PushKit
+items:
+- Name: 'PKPushCredentials'
+  JsName: 'PKPushCredentials'
+  Module: 'PushKit.PKPushCredentials'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'token'
+    JsName: 'token'
+    Module: 'PushKit.PKPushCredentials'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'token'
+      JsName: 'token'
+      Module: 'PushKit.PKPushCredentials'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'token'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@8@0:4'
+  - Name: 'type'
+    JsName: 'type'
+    Module: 'PushKit.PKPushCredentials'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'type'
+      JsName: 'type'
+      Module: 'PushKit.PKPushCredentials'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'type'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PKPushPayload'
+  JsName: 'PKPushPayload'
+  Module: 'PushKit.PKPushPayload'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'dictionaryPayload'
+    JsName: 'dictionaryPayload'
+    Module: 'PushKit.PKPushPayload'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'dictionaryPayload'
+      JsName: 'dictionaryPayload'
+      Module: 'PushKit.PKPushPayload'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'dictionaryPayload'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: '@8@0:4'
+  - Name: 'type'
+    JsName: 'type'
+    Module: 'PushKit.PKPushPayload'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'type'
+      JsName: 'type'
+      Module: 'PushKit.PKPushPayload'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'type'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PKPushTypeVoIP'
+  JsName: 'PKPushTypeVoIP'
+  Module: 'PushKit.PKPushRegistry'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'PKPushRegistry'
+  JsName: 'PKPushRegistry'
+  Module: 'PushKit.PKPushRegistry'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithQueue:'
+    JsName: 'initWithQueue'
+    Module: 'PushKit.PKPushRegistry'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithQueue:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'pushTokenForType:'
+    JsName: 'pushTokenForType'
+    Module: 'PushKit.PKPushRegistry'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'pushTokenForType:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@12@0:4@8'
+  StaticMethods: []
+  Properties:
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'PushKit.PKPushRegistry'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'PushKit.PKPushRegistry'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: PushKit.PKPushRegistry
+          Name: PKPushRegistryDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'PushKit.PKPushRegistry'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: PushKit.PKPushRegistry
+          Name: PKPushRegistryDelegate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'desiredPushTypes'
+    JsName: 'desiredPushTypes'
+    Module: 'PushKit.PKPushRegistry'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'desiredPushTypes'
+      JsName: 'desiredPushTypes'
+      Module: 'PushKit.PKPushRegistry'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'desiredPushTypes'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSSet
+        Name: NSSet
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDesiredPushTypes:'
+      JsName: 'setDesiredPushTypes'
+      Module: 'PushKit.PKPushRegistry'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDesiredPushTypes:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSSet
+        Name: NSSet
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'PKPushRegistryDelegate'
+  JsName: 'PKPushRegistryDelegate'
+  Module: 'PushKit.PKPushRegistry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'pushRegistry:didInvalidatePushTokenForType:'
+    JsName: 'pushRegistryDidInvalidatePushTokenForType'
+    Module: 'PushKit.PKPushRegistry'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'pushRegistry:didInvalidatePushTokenForType:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: PushKit.PKPushRegistry
+      Name: PKPushRegistry
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'pushRegistry:didReceiveIncomingPushWithPayload:forType:'
+    JsName: 'pushRegistryDidReceiveIncomingPushWithPayloadForType'
+    Module: 'PushKit.PKPushRegistry'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'pushRegistry:didReceiveIncomingPushWithPayload:forType:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: PushKit.PKPushRegistry
+      Name: PKPushRegistry
+    - Type: Interface
+      Module: PushKit.PKPushPayload
+      Name: PKPushPayload
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'pushRegistry:didUpdatePushCredentials:forType:'
+    JsName: 'pushRegistryDidUpdatePushCredentialsForType'
+    Module: 'PushKit.PKPushRegistry'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'pushRegistry:didUpdatePushCredentials:forType:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: PushKit.PKPushRegistry
+      Name: PKPushRegistry
+    - Type: Interface
+      Module: PushKit.PKPushCredentials
+      Name: PKPushCredentials
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v20@0:4@8@12@16'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+...

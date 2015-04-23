@@ -1,0 +1,1722 @@
+name: CoreMotion
+items:
+- Name: 'CMLogItem'
+  JsName: 'CMLogItem'
+  Module: 'CoreMotion.CMLogItem'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'timestamp'
+    JsName: 'timestamp'
+    Module: 'CoreMotion.CMLogItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'timestamp'
+      JsName: 'timestamp'
+      Module: 'CoreMotion.CMLogItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'timestamp'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: '1069'
+  JsName: 'CMAcceleration'
+  Module: 'CoreMotion.CMAccelerometer'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: x
+    Signature:
+      Type: Double
+  - Name: y
+    Signature:
+      Type: Double
+  - Name: z
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: 'CMAccelerometerData'
+  JsName: 'CMAccelerometerData'
+  Module: 'CoreMotion.CMAccelerometer'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'acceleration'
+    JsName: 'acceleration'
+    Module: 'CoreMotion.CMAccelerometer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'acceleration'
+      JsName: 'acceleration'
+      Module: 'CoreMotion.CMAccelerometer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'acceleration'
+      Signature:
+      - Type: Struct
+        Module: CoreMotion.CMAccelerometer
+        Name: CMAcceleration
+      TypeEncoding: '{?=ddd}8@0:4'
+  Protocols: []
+  Base:
+    Module: CoreMotion.CMLogItem
+    Name: CMLogItem
+  Type: Interface
+- Name: 'CMAltitudeData'
+  JsName: 'CMAltitudeData'
+  Module: 'CoreMotion.CMAltitude'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'pressure'
+    JsName: 'pressure'
+    Module: 'CoreMotion.CMAltitude'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'pressure'
+      JsName: 'pressure'
+      Module: 'CoreMotion.CMAltitude'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'pressure'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@8@0:4'
+  - Name: 'relativeAltitude'
+    JsName: 'relativeAltitude'
+    Module: 'CoreMotion.CMAltitude'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'relativeAltitude'
+      JsName: 'relativeAltitude'
+      Module: 'CoreMotion.CMAltitude'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'relativeAltitude'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: CoreMotion.CMLogItem
+    Name: CMLogItem
+  Type: Interface
+- Name: 'CMAltimeter'
+  JsName: 'CMAltimeter'
+  Module: 'CoreMotion.CMAltimeter'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'startRelativeAltitudeUpdatesToQueue:withHandler:'
+    JsName: 'startRelativeAltitudeUpdatesToQueueWithHandler'
+    Module: 'CoreMotion.CMAltimeter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startRelativeAltitudeUpdatesToQueue:withHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSOperation
+      Name: NSOperationQueue
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CoreMotion.CMAltitude
+        Name: CMAltitudeData
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'stopRelativeAltitudeUpdates'
+    JsName: 'stopRelativeAltitudeUpdates'
+    Module: 'CoreMotion.CMAltimeter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopRelativeAltitudeUpdates'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  StaticMethods:
+  - Name: 'isRelativeAltitudeAvailable'
+    JsName: 'isRelativeAltitudeAvailable'
+    Module: 'CoreMotion.CMAltimeter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isRelativeAltitudeAvailable'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: '1071'
+  JsName: 'CMRotationMatrix'
+  Module: 'CoreMotion.CMAttitude'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: m11
+    Signature:
+      Type: Double
+  - Name: m12
+    Signature:
+      Type: Double
+  - Name: m13
+    Signature:
+      Type: Double
+  - Name: m21
+    Signature:
+      Type: Double
+  - Name: m22
+    Signature:
+      Type: Double
+  - Name: m23
+    Signature:
+      Type: Double
+  - Name: m31
+    Signature:
+      Type: Double
+  - Name: m32
+    Signature:
+      Type: Double
+  - Name: m33
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: '1072'
+  JsName: 'CMQuaternion'
+  Module: 'CoreMotion.CMAttitude'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: x
+    Signature:
+      Type: Double
+  - Name: y
+    Signature:
+      Type: Double
+  - Name: z
+    Signature:
+      Type: Double
+  - Name: w
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: '1073'
+  JsName: 'CMAttitudeReferenceFrame'
+  Module: 'CoreMotion.CMAttitude'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CMAttitudeReferenceFrameXArbitraryZVertical":1,"CMAttitudeReferenceFrameXArbitraryCorrectedZVertical":2,"CMAttitudeReferenceFrameXMagneticNorthZVertical":4,"CMAttitudeReferenceFrameXTrueNorthZVertical":8})
+- Name: 'CMAttitude'
+  JsName: 'CMAttitude'
+  Module: 'CoreMotion.CMAttitude'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'multiplyByInverseOfAttitude:'
+    JsName: 'multiplyByInverseOfAttitude'
+    Module: 'CoreMotion.CMAttitude'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'multiplyByInverseOfAttitude:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreMotion.CMAttitude
+      Name: CMAttitude
+    TypeEncoding: 'v12@0:4@8'
+  StaticMethods: []
+  Properties:
+  - Name: 'pitch'
+    JsName: 'pitch'
+    Module: 'CoreMotion.CMAttitude'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'pitch'
+      JsName: 'pitch'
+      Module: 'CoreMotion.CMAttitude'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'pitch'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'quaternion'
+    JsName: 'quaternion'
+    Module: 'CoreMotion.CMAttitude'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'quaternion'
+      JsName: 'quaternion'
+      Module: 'CoreMotion.CMAttitude'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'quaternion'
+      Signature:
+      - Type: Struct
+        Module: CoreMotion.CMAttitude
+        Name: CMQuaternion
+      TypeEncoding: '{?=dddd}8@0:4'
+  - Name: 'roll'
+    JsName: 'roll'
+    Module: 'CoreMotion.CMAttitude'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'roll'
+      JsName: 'roll'
+      Module: 'CoreMotion.CMAttitude'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'roll'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'rotationMatrix'
+    JsName: 'rotationMatrix'
+    Module: 'CoreMotion.CMAttitude'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'rotationMatrix'
+      JsName: 'rotationMatrix'
+      Module: 'CoreMotion.CMAttitude'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rotationMatrix'
+      Signature:
+      - Type: Struct
+        Module: CoreMotion.CMAttitude
+        Name: CMRotationMatrix
+      TypeEncoding: '{?=ddddddddd}8@0:4'
+  - Name: 'yaw'
+    JsName: 'yaw'
+    Module: 'CoreMotion.CMAttitude'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'yaw'
+      JsName: 'yaw'
+      Module: 'CoreMotion.CMAttitude'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'yaw'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: '1074'
+  JsName: 'CMRotationRate'
+  Module: 'CoreMotion.CMGyro'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: x
+    Signature:
+      Type: Double
+  - Name: y
+    Signature:
+      Type: Double
+  - Name: z
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: 'CMGyroData'
+  JsName: 'CMGyroData'
+  Module: 'CoreMotion.CMGyro'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'rotationRate'
+    JsName: 'rotationRate'
+    Module: 'CoreMotion.CMGyro'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'rotationRate'
+      JsName: 'rotationRate'
+      Module: 'CoreMotion.CMGyro'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rotationRate'
+      Signature:
+      - Type: Struct
+        Module: CoreMotion.CMGyro
+        Name: CMRotationRate
+      TypeEncoding: '{?=ddd}8@0:4'
+  Protocols: []
+  Base:
+    Module: CoreMotion.CMLogItem
+    Name: CMLogItem
+  Type: Interface
+- Name: '1075'
+  JsName: 'CMMagneticField'
+  Module: 'CoreMotion.CMMagnetometer'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: x
+    Signature:
+      Type: Double
+  - Name: y
+    Signature:
+      Type: Double
+  - Name: z
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: 'CMMagnetometerData'
+  JsName: 'CMMagnetometerData'
+  Module: 'CoreMotion.CMMagnetometer'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'magneticField'
+    JsName: 'magneticField'
+    Module: 'CoreMotion.CMMagnetometer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'magneticField'
+      JsName: 'magneticField'
+      Module: 'CoreMotion.CMMagnetometer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'magneticField'
+      Signature:
+      - Type: Struct
+        Module: CoreMotion.CMMagnetometer
+        Name: CMMagneticField
+      TypeEncoding: '{?=ddd}8@0:4'
+  Protocols: []
+  Base:
+    Module: CoreMotion.CMLogItem
+    Name: CMLogItem
+  Type: Interface
+- Name: '1076'
+  JsName: 'CMMagneticFieldCalibrationAccuracy'
+  Module: 'CoreMotion.CMDeviceMotion'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CMMagneticFieldCalibrationAccuracyUncalibrated":-1,"CMMagneticFieldCalibrationAccuracyLow":0,"CMMagneticFieldCalibrationAccuracyMedium":1,"CMMagneticFieldCalibrationAccuracyHigh":2})
+- Name: '1077'
+  JsName: 'CMCalibratedMagneticField'
+  Module: 'CoreMotion.CMDeviceMotion'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: field
+    Signature:
+      Type: Struct
+      Module: CoreMotion.CMMagnetometer
+      Name: CMMagneticField
+  - Name: accuracy
+    Signature:
+      Type: Int
+  Type: Struct
+- Name: 'CMDeviceMotion'
+  JsName: 'CMDeviceMotion'
+  Module: 'CoreMotion.CMDeviceMotion'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'attitude'
+    JsName: 'attitude'
+    Module: 'CoreMotion.CMDeviceMotion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'attitude'
+      JsName: 'attitude'
+      Module: 'CoreMotion.CMDeviceMotion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'attitude'
+      Signature:
+      - Type: Interface
+        Module: CoreMotion.CMAttitude
+        Name: CMAttitude
+      TypeEncoding: '@8@0:4'
+  - Name: 'gravity'
+    JsName: 'gravity'
+    Module: 'CoreMotion.CMDeviceMotion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'gravity'
+      JsName: 'gravity'
+      Module: 'CoreMotion.CMDeviceMotion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'gravity'
+      Signature:
+      - Type: Struct
+        Module: CoreMotion.CMAccelerometer
+        Name: CMAcceleration
+      TypeEncoding: '{?=ddd}8@0:4'
+  - Name: 'magneticField'
+    JsName: 'magneticField'
+    Module: 'CoreMotion.CMDeviceMotion'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'magneticField'
+      JsName: 'magneticField'
+      Module: 'CoreMotion.CMDeviceMotion'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'magneticField'
+      Signature:
+      - Type: Struct
+        Module: CoreMotion.CMDeviceMotion
+        Name: CMCalibratedMagneticField
+      TypeEncoding: '{?={?=ddd}i}8@0:4'
+  - Name: 'rotationRate'
+    JsName: 'rotationRate'
+    Module: 'CoreMotion.CMDeviceMotion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'rotationRate'
+      JsName: 'rotationRate'
+      Module: 'CoreMotion.CMDeviceMotion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rotationRate'
+      Signature:
+      - Type: Struct
+        Module: CoreMotion.CMGyro
+        Name: CMRotationRate
+      TypeEncoding: '{?=ddd}8@0:4'
+  - Name: 'userAcceleration'
+    JsName: 'userAcceleration'
+    Module: 'CoreMotion.CMDeviceMotion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'userAcceleration'
+      JsName: 'userAcceleration'
+      Module: 'CoreMotion.CMDeviceMotion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'userAcceleration'
+      Signature:
+      - Type: Struct
+        Module: CoreMotion.CMAccelerometer
+        Name: CMAcceleration
+      TypeEncoding: '{?=ddd}8@0:4'
+  Protocols: []
+  Base:
+    Module: CoreMotion.CMLogItem
+    Name: CMLogItem
+  Type: Interface
+- Name: '1078'
+  JsName: 'CMError'
+  Module: 'CoreMotion.CMError'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CMErrorNULL":100,"CMErrorDeviceRequiresMovement":101,"CMErrorTrueNorthNotAvailable":102,"CMErrorUnknown":103,"CMErrorMotionActivityNotAvailable":104,"CMErrorMotionActivityNotAuthorized":105,"CMErrorMotionActivityNotEntitled":106,"CMErrorInvalidParameter":107,"CMErrorInvalidAction":108,"CMErrorNotAvailable":109,"CMErrorNotEntitled":110,"CMErrorNotAuthorized":111})
+- Name: 'CMErrorDomain'
+  JsName: 'CMErrorDomain'
+  Module: 'CoreMotion.CMErrorDomain'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CMMotionActivityConfidence'
+  JsName: 'CMMotionActivityConfidence'
+  Module: 'CoreMotion.CMMotionActivity'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CMMotionActivityConfidenceLow":0,"CMMotionActivityConfidenceMedium":1,"CMMotionActivityConfidenceHigh":2})
+- Name: 'CMMotionActivity'
+  JsName: 'CMMotionActivity'
+  Module: 'CoreMotion.CMMotionActivity'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'automotive'
+    JsName: 'automotive'
+    Module: 'CoreMotion.CMMotionActivity'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'automotive'
+      JsName: 'automotive'
+      Module: 'CoreMotion.CMMotionActivity'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'automotive'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'confidence'
+    JsName: 'confidence'
+    Module: 'CoreMotion.CMMotionActivity'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'confidence'
+      JsName: 'confidence'
+      Module: 'CoreMotion.CMMotionActivity'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'confidence'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  - Name: 'cycling'
+    JsName: 'cycling'
+    Module: 'CoreMotion.CMMotionActivity'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'cycling'
+      JsName: 'cycling'
+      Module: 'CoreMotion.CMMotionActivity'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'cycling'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'running'
+    JsName: 'running'
+    Module: 'CoreMotion.CMMotionActivity'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'running'
+      JsName: 'running'
+      Module: 'CoreMotion.CMMotionActivity'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'running'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'startDate'
+    JsName: 'startDate'
+    Module: 'CoreMotion.CMMotionActivity'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'startDate'
+      JsName: 'startDate'
+      Module: 'CoreMotion.CMMotionActivity'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'startDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'stationary'
+    JsName: 'stationary'
+    Module: 'CoreMotion.CMMotionActivity'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'stationary'
+      JsName: 'stationary'
+      Module: 'CoreMotion.CMMotionActivity'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'stationary'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'unknown'
+    JsName: 'unknown'
+    Module: 'CoreMotion.CMMotionActivity'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'unknown'
+      JsName: 'unknown'
+      Module: 'CoreMotion.CMMotionActivity'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'unknown'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'walking'
+    JsName: 'walking'
+    Module: 'CoreMotion.CMMotionActivity'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'walking'
+      JsName: 'walking'
+      Module: 'CoreMotion.CMMotionActivity'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'walking'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  Protocols: []
+  Base:
+    Module: CoreMotion.CMLogItem
+    Name: CMLogItem
+  Type: Interface
+- Name: 'CMMotionActivityManager'
+  JsName: 'CMMotionActivityManager'
+  Module: 'CoreMotion.CMMotionActivityManager'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'queryActivityStartingFromDate:toDate:toQueue:withHandler:'
+    JsName: 'queryActivityStartingFromDateToDateToQueueWithHandler'
+    Module: 'CoreMotion.CMMotionActivityManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'queryActivityStartingFromDate:toDate:toQueue:withHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSOperation
+      Name: NSOperationQueue
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v24@0:4@8@12@16@?20'
+  - Name: 'startActivityUpdatesToQueue:withHandler:'
+    JsName: 'startActivityUpdatesToQueueWithHandler'
+    Module: 'CoreMotion.CMMotionActivityManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startActivityUpdatesToQueue:withHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSOperation
+      Name: NSOperationQueue
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CoreMotion.CMMotionActivity
+        Name: CMMotionActivity
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'stopActivityUpdates'
+    JsName: 'stopActivityUpdates'
+    Module: 'CoreMotion.CMMotionActivityManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopActivityUpdates'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  StaticMethods:
+  - Name: 'isActivityAvailable'
+    JsName: 'isActivityAvailable'
+    Module: 'CoreMotion.CMMotionActivityManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isActivityAvailable'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CMMotionManager'
+  JsName: 'CMMotionManager'
+  Module: 'CoreMotion.CMMotionManager'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'startAccelerometerUpdates'
+    JsName: 'startAccelerometerUpdates'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startAccelerometerUpdates'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'startAccelerometerUpdatesToQueue:withHandler:'
+    JsName: 'startAccelerometerUpdatesToQueueWithHandler'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startAccelerometerUpdatesToQueue:withHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSOperation
+      Name: NSOperationQueue
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CoreMotion.CMAccelerometer
+        Name: CMAccelerometerData
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'startDeviceMotionUpdates'
+    JsName: 'startDeviceMotionUpdates'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startDeviceMotionUpdates'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'startDeviceMotionUpdatesToQueue:withHandler:'
+    JsName: 'startDeviceMotionUpdatesToQueueWithHandler'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startDeviceMotionUpdatesToQueue:withHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSOperation
+      Name: NSOperationQueue
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CoreMotion.CMDeviceMotion
+        Name: CMDeviceMotion
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'startDeviceMotionUpdatesUsingReferenceFrame:'
+    JsName: 'startDeviceMotionUpdatesUsingReferenceFrame'
+    Module: 'CoreMotion.CMMotionManager'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startDeviceMotionUpdatesUsingReferenceFrame:'
+    Signature:
+    - Type: Void
+    - Type: UInt
+    TypeEncoding: 'v12@0:4i8'
+  - Name: 'startDeviceMotionUpdatesUsingReferenceFrame:toQueue:withHandler:'
+    JsName: 'startDeviceMotionUpdatesUsingReferenceFrameToQueueWithHandler'
+    Module: 'CoreMotion.CMMotionManager'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startDeviceMotionUpdatesUsingReferenceFrame:toQueue:withHandler:'
+    Signature:
+    - Type: Void
+    - Type: UInt
+    - Type: Interface
+      Module: Foundation.NSOperation
+      Name: NSOperationQueue
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CoreMotion.CMDeviceMotion
+        Name: CMDeviceMotion
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v20@0:4i8@12@?16'
+  - Name: 'startGyroUpdates'
+    JsName: 'startGyroUpdates'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startGyroUpdates'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'startGyroUpdatesToQueue:withHandler:'
+    JsName: 'startGyroUpdatesToQueueWithHandler'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startGyroUpdatesToQueue:withHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSOperation
+      Name: NSOperationQueue
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CoreMotion.CMGyro
+        Name: CMGyroData
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'startMagnetometerUpdates'
+    JsName: 'startMagnetometerUpdates'
+    Module: 'CoreMotion.CMMotionManager'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startMagnetometerUpdates'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'startMagnetometerUpdatesToQueue:withHandler:'
+    JsName: 'startMagnetometerUpdatesToQueueWithHandler'
+    Module: 'CoreMotion.CMMotionManager'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startMagnetometerUpdatesToQueue:withHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSOperation
+      Name: NSOperationQueue
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CoreMotion.CMMagnetometer
+        Name: CMMagnetometerData
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'stopAccelerometerUpdates'
+    JsName: 'stopAccelerometerUpdates'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopAccelerometerUpdates'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'stopDeviceMotionUpdates'
+    JsName: 'stopDeviceMotionUpdates'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopDeviceMotionUpdates'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'stopGyroUpdates'
+    JsName: 'stopGyroUpdates'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopGyroUpdates'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'stopMagnetometerUpdates'
+    JsName: 'stopMagnetometerUpdates'
+    Module: 'CoreMotion.CMMotionManager'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopMagnetometerUpdates'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  StaticMethods:
+  - Name: 'availableAttitudeReferenceFrames'
+    JsName: 'availableAttitudeReferenceFrames'
+    Module: 'CoreMotion.CMMotionManager'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'availableAttitudeReferenceFrames'
+    Signature:
+    - Type: UInt
+    TypeEncoding: 'I8@0:4'
+  Properties:
+  - Name: 'accelerometerActive'
+    JsName: 'accelerometerActive'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isAccelerometerActive'
+      JsName: 'isAccelerometerActive'
+      Module: 'CoreMotion.CMMotionManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isAccelerometerActive'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'accelerometerAvailable'
+    JsName: 'accelerometerAvailable'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isAccelerometerAvailable'
+      JsName: 'isAccelerometerAvailable'
+      Module: 'CoreMotion.CMMotionManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isAccelerometerAvailable'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'accelerometerData'
+    JsName: 'accelerometerData'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'accelerometerData'
+      JsName: 'accelerometerData'
+      Module: 'CoreMotion.CMMotionManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'accelerometerData'
+      Signature:
+      - Type: Interface
+        Module: CoreMotion.CMAccelerometer
+        Name: CMAccelerometerData
+      TypeEncoding: '@8@0:4'
+  - Name: 'accelerometerUpdateInterval'
+    JsName: 'accelerometerUpdateInterval'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'accelerometerUpdateInterval'
+      JsName: 'accelerometerUpdateInterval'
+      Module: 'CoreMotion.CMMotionManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'accelerometerUpdateInterval'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+    Setter:
+      Name: 'setAccelerometerUpdateInterval:'
+      JsName: 'setAccelerometerUpdateInterval'
+      Module: 'CoreMotion.CMMotionManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAccelerometerUpdateInterval:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v16@0:4d8'
+  - Name: 'attitudeReferenceFrame'
+    JsName: 'attitudeReferenceFrame'
+    Module: 'CoreMotion.CMMotionManager'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'attitudeReferenceFrame'
+      JsName: 'attitudeReferenceFrame'
+      Module: 'CoreMotion.CMMotionManager'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'attitudeReferenceFrame'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'i8@0:4'
+  - Name: 'deviceMotion'
+    JsName: 'deviceMotion'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'deviceMotion'
+      JsName: 'deviceMotion'
+      Module: 'CoreMotion.CMMotionManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'deviceMotion'
+      Signature:
+      - Type: Interface
+        Module: CoreMotion.CMDeviceMotion
+        Name: CMDeviceMotion
+      TypeEncoding: '@8@0:4'
+  - Name: 'deviceMotionActive'
+    JsName: 'deviceMotionActive'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isDeviceMotionActive'
+      JsName: 'isDeviceMotionActive'
+      Module: 'CoreMotion.CMMotionManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isDeviceMotionActive'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'deviceMotionAvailable'
+    JsName: 'deviceMotionAvailable'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isDeviceMotionAvailable'
+      JsName: 'isDeviceMotionAvailable'
+      Module: 'CoreMotion.CMMotionManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isDeviceMotionAvailable'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'deviceMotionUpdateInterval'
+    JsName: 'deviceMotionUpdateInterval'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'deviceMotionUpdateInterval'
+      JsName: 'deviceMotionUpdateInterval'
+      Module: 'CoreMotion.CMMotionManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'deviceMotionUpdateInterval'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+    Setter:
+      Name: 'setDeviceMotionUpdateInterval:'
+      JsName: 'setDeviceMotionUpdateInterval'
+      Module: 'CoreMotion.CMMotionManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDeviceMotionUpdateInterval:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v16@0:4d8'
+  - Name: 'gyroActive'
+    JsName: 'gyroActive'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isGyroActive'
+      JsName: 'isGyroActive'
+      Module: 'CoreMotion.CMMotionManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isGyroActive'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'gyroAvailable'
+    JsName: 'gyroAvailable'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isGyroAvailable'
+      JsName: 'isGyroAvailable'
+      Module: 'CoreMotion.CMMotionManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isGyroAvailable'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'gyroData'
+    JsName: 'gyroData'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'gyroData'
+      JsName: 'gyroData'
+      Module: 'CoreMotion.CMMotionManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'gyroData'
+      Signature:
+      - Type: Interface
+        Module: CoreMotion.CMGyro
+        Name: CMGyroData
+      TypeEncoding: '@8@0:4'
+  - Name: 'gyroUpdateInterval'
+    JsName: 'gyroUpdateInterval'
+    Module: 'CoreMotion.CMMotionManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'gyroUpdateInterval'
+      JsName: 'gyroUpdateInterval'
+      Module: 'CoreMotion.CMMotionManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'gyroUpdateInterval'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+    Setter:
+      Name: 'setGyroUpdateInterval:'
+      JsName: 'setGyroUpdateInterval'
+      Module: 'CoreMotion.CMMotionManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setGyroUpdateInterval:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v16@0:4d8'
+  - Name: 'magnetometerActive'
+    JsName: 'magnetometerActive'
+    Module: 'CoreMotion.CMMotionManager'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isMagnetometerActive'
+      JsName: 'isMagnetometerActive'
+      Module: 'CoreMotion.CMMotionManager'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isMagnetometerActive'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'magnetometerAvailable'
+    JsName: 'magnetometerAvailable'
+    Module: 'CoreMotion.CMMotionManager'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isMagnetometerAvailable'
+      JsName: 'isMagnetometerAvailable'
+      Module: 'CoreMotion.CMMotionManager'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isMagnetometerAvailable'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'magnetometerData'
+    JsName: 'magnetometerData'
+    Module: 'CoreMotion.CMMotionManager'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'magnetometerData'
+      JsName: 'magnetometerData'
+      Module: 'CoreMotion.CMMotionManager'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'magnetometerData'
+      Signature:
+      - Type: Interface
+        Module: CoreMotion.CMMagnetometer
+        Name: CMMagnetometerData
+      TypeEncoding: '@8@0:4'
+  - Name: 'magnetometerUpdateInterval'
+    JsName: 'magnetometerUpdateInterval'
+    Module: 'CoreMotion.CMMotionManager'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'magnetometerUpdateInterval'
+      JsName: 'magnetometerUpdateInterval'
+      Module: 'CoreMotion.CMMotionManager'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'magnetometerUpdateInterval'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+    Setter:
+      Name: 'setMagnetometerUpdateInterval:'
+      JsName: 'setMagnetometerUpdateInterval'
+      Module: 'CoreMotion.CMMotionManager'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMagnetometerUpdateInterval:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v16@0:4d8'
+  - Name: 'showsDeviceMovementDisplay'
+    JsName: 'showsDeviceMovementDisplay'
+    Module: 'CoreMotion.CMMotionManager'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'showsDeviceMovementDisplay'
+      JsName: 'showsDeviceMovementDisplay'
+      Module: 'CoreMotion.CMMotionManager'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'showsDeviceMovementDisplay'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setShowsDeviceMovementDisplay:'
+      JsName: 'setShowsDeviceMovementDisplay'
+      Module: 'CoreMotion.CMMotionManager'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShowsDeviceMovementDisplay:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CMPedometerData'
+  JsName: 'CMPedometerData'
+  Module: 'CoreMotion.CMPedometer'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'distance'
+    JsName: 'distance'
+    Module: 'CoreMotion.CMPedometer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'distance'
+      JsName: 'distance'
+      Module: 'CoreMotion.CMPedometer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'distance'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@8@0:4'
+  - Name: 'endDate'
+    JsName: 'endDate'
+    Module: 'CoreMotion.CMPedometer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'endDate'
+      JsName: 'endDate'
+      Module: 'CoreMotion.CMPedometer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'endDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'floorsAscended'
+    JsName: 'floorsAscended'
+    Module: 'CoreMotion.CMPedometer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'floorsAscended'
+      JsName: 'floorsAscended'
+      Module: 'CoreMotion.CMPedometer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'floorsAscended'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@8@0:4'
+  - Name: 'floorsDescended'
+    JsName: 'floorsDescended'
+    Module: 'CoreMotion.CMPedometer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'floorsDescended'
+      JsName: 'floorsDescended'
+      Module: 'CoreMotion.CMPedometer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'floorsDescended'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@8@0:4'
+  - Name: 'numberOfSteps'
+    JsName: 'numberOfSteps'
+    Module: 'CoreMotion.CMPedometer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'numberOfSteps'
+      JsName: 'numberOfSteps'
+      Module: 'CoreMotion.CMPedometer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'numberOfSteps'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@8@0:4'
+  - Name: 'startDate'
+    JsName: 'startDate'
+    Module: 'CoreMotion.CMPedometer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'startDate'
+      JsName: 'startDate'
+      Module: 'CoreMotion.CMPedometer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'startDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CMPedometer'
+  JsName: 'CMPedometer'
+  Module: 'CoreMotion.CMPedometer'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'queryPedometerDataFromDate:toDate:withHandler:'
+    JsName: 'queryPedometerDataFromDateToDateWithHandler'
+    Module: 'CoreMotion.CMPedometer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'queryPedometerDataFromDate:toDate:withHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CoreMotion.CMPedometer
+        Name: CMPedometerData
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@?16'
+  - Name: 'startPedometerUpdatesFromDate:withHandler:'
+    JsName: 'startPedometerUpdatesFromDateWithHandler'
+    Module: 'CoreMotion.CMPedometer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startPedometerUpdatesFromDate:withHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: CoreMotion.CMPedometer
+        Name: CMPedometerData
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'stopPedometerUpdates'
+    JsName: 'stopPedometerUpdates'
+    Module: 'CoreMotion.CMPedometer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopPedometerUpdates'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  StaticMethods:
+  - Name: 'isDistanceAvailable'
+    JsName: 'isDistanceAvailable'
+    Module: 'CoreMotion.CMPedometer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isDistanceAvailable'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  - Name: 'isFloorCountingAvailable'
+    JsName: 'isFloorCountingAvailable'
+    Module: 'CoreMotion.CMPedometer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isFloorCountingAvailable'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  - Name: 'isStepCountingAvailable'
+    JsName: 'isStepCountingAvailable'
+    Module: 'CoreMotion.CMPedometer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isStepCountingAvailable'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CMStepCounter'
+  JsName: 'CMStepCounter'
+  Module: 'CoreMotion.CMStepCounter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'queryStepCountStartingFrom:to:toQueue:withHandler:'
+    JsName: 'queryStepCountStartingFromToToQueueWithHandler'
+    Module: 'CoreMotion.CMStepCounter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'queryStepCountStartingFrom:to:toQueue:withHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSOperation
+      Name: NSOperationQueue
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Int
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v24@0:4@8@12@16@?20'
+  - Name: 'startStepCountingUpdatesToQueue:updateOn:withHandler:'
+    JsName: 'startStepCountingUpdatesToQueueUpdateOnWithHandler'
+    Module: 'CoreMotion.CMStepCounter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startStepCountingUpdatesToQueue:updateOn:withHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSOperation
+      Name: NSOperationQueue
+    - Type: Int
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Int
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v20@0:4@8i12@?16'
+  - Name: 'stopStepCountingUpdates'
+    JsName: 'stopStepCountingUpdates'
+    Module: 'CoreMotion.CMStepCounter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopStepCountingUpdates'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  StaticMethods:
+  - Name: 'isStepCountingAvailable'
+    JsName: 'isStepCountingAvailable'
+    Module: 'CoreMotion.CMStepCounter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isStepCountingAvailable'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+...

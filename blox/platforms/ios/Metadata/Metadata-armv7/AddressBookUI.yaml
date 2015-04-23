@@ -1,0 +1,1305 @@
+name: AddressBookUI
+items:
+- Name: 'ABPeoplePickerNavigationController'
+  JsName: 'ABPeoplePickerNavigationController'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'addressBook'
+    JsName: 'addressBook'
+    Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'addressBook'
+      JsName: 'addressBook'
+      Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'addressBook'
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: '^v8@0:4'
+    Setter:
+      Name: 'setAddressBook:'
+      JsName: 'setAddressBook'
+      Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAddressBook:'
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: 'v12@0:4^v8'
+  - Name: 'displayedProperties'
+    JsName: 'displayedProperties'
+    Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'displayedProperties'
+      JsName: 'displayedProperties'
+      Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'displayedProperties'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDisplayedProperties:'
+      JsName: 'setDisplayedProperties'
+      Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDisplayedProperties:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'peoplePickerDelegate'
+    JsName: 'peoplePickerDelegate'
+    Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'peoplePickerDelegate'
+      JsName: 'peoplePickerDelegate'
+      Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'peoplePickerDelegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: AddressBookUI.ABPeoplePickerNavigationController
+          Name: ABPeoplePickerNavigationControllerDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setPeoplePickerDelegate:'
+      JsName: 'setPeoplePickerDelegate'
+      Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPeoplePickerDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: AddressBookUI.ABPeoplePickerNavigationController
+          Name: ABPeoplePickerNavigationControllerDelegate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'predicateForEnablingPerson'
+    JsName: 'predicateForEnablingPerson'
+    Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'predicateForEnablingPerson'
+      JsName: 'predicateForEnablingPerson'
+      Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'predicateForEnablingPerson'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSPredicate
+        Name: NSPredicate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setPredicateForEnablingPerson:'
+      JsName: 'setPredicateForEnablingPerson'
+      Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPredicateForEnablingPerson:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSPredicate
+        Name: NSPredicate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'predicateForSelectionOfPerson'
+    JsName: 'predicateForSelectionOfPerson'
+    Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'predicateForSelectionOfPerson'
+      JsName: 'predicateForSelectionOfPerson'
+      Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'predicateForSelectionOfPerson'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSPredicate
+        Name: NSPredicate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setPredicateForSelectionOfPerson:'
+      JsName: 'setPredicateForSelectionOfPerson'
+      Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPredicateForSelectionOfPerson:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSPredicate
+        Name: NSPredicate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'predicateForSelectionOfProperty'
+    JsName: 'predicateForSelectionOfProperty'
+    Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'predicateForSelectionOfProperty'
+      JsName: 'predicateForSelectionOfProperty'
+      Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'predicateForSelectionOfProperty'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSPredicate
+        Name: NSPredicate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setPredicateForSelectionOfProperty:'
+      JsName: 'setPredicateForSelectionOfProperty'
+      Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPredicateForSelectionOfProperty:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSPredicate
+        Name: NSPredicate
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: UIKit.UINavigationController
+    Name: UINavigationController
+  Type: Interface
+- Name: 'ABPersonNamePrefixProperty'
+  JsName: 'ABPersonNamePrefixProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonGivenNameProperty'
+  JsName: 'ABPersonGivenNameProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonMiddleNameProperty'
+  JsName: 'ABPersonMiddleNameProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonFamilyNameProperty'
+  JsName: 'ABPersonFamilyNameProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonNameSuffixProperty'
+  JsName: 'ABPersonNameSuffixProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonPreviousFamilyNameProperty'
+  JsName: 'ABPersonPreviousFamilyNameProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonNicknameProperty'
+  JsName: 'ABPersonNicknameProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonPhoneticGivenNameProperty'
+  JsName: 'ABPersonPhoneticGivenNameProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonPhoneticMiddleNameProperty'
+  JsName: 'ABPersonPhoneticMiddleNameProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonPhoneticFamilyNameProperty'
+  JsName: 'ABPersonPhoneticFamilyNameProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonOrganizationNameProperty'
+  JsName: 'ABPersonOrganizationNameProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonDepartmentNameProperty'
+  JsName: 'ABPersonDepartmentNameProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonJobTitleProperty'
+  JsName: 'ABPersonJobTitleProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonBirthdayProperty'
+  JsName: 'ABPersonBirthdayProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonNoteProperty'
+  JsName: 'ABPersonNoteProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonPhoneNumbersProperty'
+  JsName: 'ABPersonPhoneNumbersProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonEmailAddressesProperty'
+  JsName: 'ABPersonEmailAddressesProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonUrlAddressesProperty'
+  JsName: 'ABPersonUrlAddressesProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonDatesProperty'
+  JsName: 'ABPersonDatesProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonInstantMessageAddressesProperty'
+  JsName: 'ABPersonInstantMessageAddressesProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonRelatedNamesProperty'
+  JsName: 'ABPersonRelatedNamesProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonSocialProfilesProperty'
+  JsName: 'ABPersonSocialProfilesProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPersonPostalAddressesProperty'
+  JsName: 'ABPersonPostalAddressesProperty'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ABPeoplePickerNavigationControllerDelegate'
+  JsName: 'ABPeoplePickerNavigationControllerDelegate'
+  Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'peoplePickerNavigationControllerDidCancel:'
+    JsName: 'peoplePickerNavigationControllerDidCancel'
+    Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peoplePickerNavigationControllerDidCancel:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: AddressBookUI.ABPeoplePickerNavigationController
+      Name: ABPeoplePickerNavigationController
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'peoplePickerNavigationController:didSelectPerson:'
+    JsName: 'peoplePickerNavigationControllerDidSelectPerson'
+    Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peoplePickerNavigationController:didSelectPerson:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: AddressBookUI.ABPeoplePickerNavigationController
+      Name: ABPeoplePickerNavigationController
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: 'v16@0:4@8^v12'
+  - Name: 'peoplePickerNavigationController:didSelectPerson:property:identifier:'
+    JsName: 'peoplePickerNavigationControllerDidSelectPersonPropertyIdentifier'
+    Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peoplePickerNavigationController:didSelectPerson:property:identifier:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: AddressBookUI.ABPeoplePickerNavigationController
+      Name: ABPeoplePickerNavigationController
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Int
+    TypeEncoding: 'v24@0:4@8^v12i16i20'
+  - Name: 'peoplePickerNavigationController:shouldContinueAfterSelectingPerson:'
+    JsName: 'peoplePickerNavigationControllerShouldContinueAfterSelectingPerson'
+    Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+    IntroducedIn: 2.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peoplePickerNavigationController:shouldContinueAfterSelectingPerson:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: AddressBookUI.ABPeoplePickerNavigationController
+      Name: ABPeoplePickerNavigationController
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: 'c16@0:4@8^v12'
+  - Name: 'peoplePickerNavigationController:shouldContinueAfterSelectingPerson:property:identifier:'
+    JsName: 'peoplePickerNavigationControllerShouldContinueAfterSelectingPersonPropertyIdentifier'
+    Module: 'AddressBookUI.ABPeoplePickerNavigationController'
+    IntroducedIn: 2.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peoplePickerNavigationController:shouldContinueAfterSelectingPerson:property:identifier:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: AddressBookUI.ABPeoplePickerNavigationController
+      Name: ABPeoplePickerNavigationController
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Int
+    TypeEncoding: 'c24@0:4@8^v12i16i20'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'ABPersonViewController'
+  JsName: 'ABPersonViewController'
+  Module: 'AddressBookUI.ABPersonViewController'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'setHighlightedItemForProperty:withIdentifier:'
+    JsName: 'setHighlightedItemForPropertyWithIdentifier'
+    Module: 'AddressBookUI.ABPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setHighlightedItemForProperty:withIdentifier:'
+    Signature:
+    - Type: Void
+    - Type: Int
+    - Type: Int
+    TypeEncoding: 'v16@0:4i8i12'
+  StaticMethods: []
+  Properties:
+  - Name: 'addressBook'
+    JsName: 'addressBook'
+    Module: 'AddressBookUI.ABPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'addressBook'
+      JsName: 'addressBook'
+      Module: 'AddressBookUI.ABPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'addressBook'
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: '^v8@0:4'
+    Setter:
+      Name: 'setAddressBook:'
+      JsName: 'setAddressBook'
+      Module: 'AddressBookUI.ABPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAddressBook:'
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: 'v12@0:4^v8'
+  - Name: 'allowsActions'
+    JsName: 'allowsActions'
+    Module: 'AddressBookUI.ABPersonViewController'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'allowsActions'
+      JsName: 'allowsActions'
+      Module: 'AddressBookUI.ABPersonViewController'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'allowsActions'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setAllowsActions:'
+      JsName: 'setAllowsActions'
+      Module: 'AddressBookUI.ABPersonViewController'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAllowsActions:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'allowsEditing'
+    JsName: 'allowsEditing'
+    Module: 'AddressBookUI.ABPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'allowsEditing'
+      JsName: 'allowsEditing'
+      Module: 'AddressBookUI.ABPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'allowsEditing'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setAllowsEditing:'
+      JsName: 'setAllowsEditing'
+      Module: 'AddressBookUI.ABPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAllowsEditing:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'displayedPerson'
+    JsName: 'displayedPerson'
+    Module: 'AddressBookUI.ABPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'displayedPerson'
+      JsName: 'displayedPerson'
+      Module: 'AddressBookUI.ABPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'displayedPerson'
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: '^v8@0:4'
+    Setter:
+      Name: 'setDisplayedPerson:'
+      JsName: 'setDisplayedPerson'
+      Module: 'AddressBookUI.ABPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDisplayedPerson:'
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: 'v12@0:4^v8'
+  - Name: 'displayedProperties'
+    JsName: 'displayedProperties'
+    Module: 'AddressBookUI.ABPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'displayedProperties'
+      JsName: 'displayedProperties'
+      Module: 'AddressBookUI.ABPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'displayedProperties'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDisplayedProperties:'
+      JsName: 'setDisplayedProperties'
+      Module: 'AddressBookUI.ABPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDisplayedProperties:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'personViewDelegate'
+    JsName: 'personViewDelegate'
+    Module: 'AddressBookUI.ABPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'personViewDelegate'
+      JsName: 'personViewDelegate'
+      Module: 'AddressBookUI.ABPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'personViewDelegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: AddressBookUI.ABPersonViewController
+          Name: ABPersonViewControllerDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setPersonViewDelegate:'
+      JsName: 'setPersonViewDelegate'
+      Module: 'AddressBookUI.ABPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPersonViewDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: AddressBookUI.ABPersonViewController
+          Name: ABPersonViewControllerDelegate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'shouldShowLinkedPeople'
+    JsName: 'shouldShowLinkedPeople'
+    Module: 'AddressBookUI.ABPersonViewController'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'shouldShowLinkedPeople'
+      JsName: 'shouldShowLinkedPeople'
+      Module: 'AddressBookUI.ABPersonViewController'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'shouldShowLinkedPeople'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setShouldShowLinkedPeople:'
+      JsName: 'setShouldShowLinkedPeople'
+      Module: 'AddressBookUI.ABPersonViewController'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShouldShowLinkedPeople:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  Protocols:
+  - Module: UIKit.UIStateRestoration
+    Name: UIViewControllerRestoration
+  Base:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Interface
+- Name: 'ABPersonViewControllerDelegate'
+  JsName: 'ABPersonViewControllerDelegate'
+  Module: 'AddressBookUI.ABPersonViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'personViewController:shouldPerformDefaultActionForPerson:property:identifier:'
+    JsName: 'personViewControllerShouldPerformDefaultActionForPersonPropertyIdentifier'
+    Module: 'AddressBookUI.ABPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'personViewController:shouldPerformDefaultActionForPerson:property:identifier:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: AddressBookUI.ABPersonViewController
+      Name: ABPersonViewController
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Int
+    TypeEncoding: 'c24@0:4@8^v12i16i20'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'ABNewPersonViewController'
+  JsName: 'ABNewPersonViewController'
+  Module: 'AddressBookUI.ABNewPersonViewController'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'addressBook'
+    JsName: 'addressBook'
+    Module: 'AddressBookUI.ABNewPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'addressBook'
+      JsName: 'addressBook'
+      Module: 'AddressBookUI.ABNewPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'addressBook'
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: '^v8@0:4'
+    Setter:
+      Name: 'setAddressBook:'
+      JsName: 'setAddressBook'
+      Module: 'AddressBookUI.ABNewPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAddressBook:'
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: 'v12@0:4^v8'
+  - Name: 'displayedPerson'
+    JsName: 'displayedPerson'
+    Module: 'AddressBookUI.ABNewPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'displayedPerson'
+      JsName: 'displayedPerson'
+      Module: 'AddressBookUI.ABNewPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'displayedPerson'
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: '^v8@0:4'
+    Setter:
+      Name: 'setDisplayedPerson:'
+      JsName: 'setDisplayedPerson'
+      Module: 'AddressBookUI.ABNewPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDisplayedPerson:'
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: 'v12@0:4^v8'
+  - Name: 'newPersonViewDelegate'
+    JsName: 'newPersonViewDelegate'
+    Module: 'AddressBookUI.ABNewPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'newPersonViewDelegate'
+      JsName: 'newPersonViewDelegate'
+      Module: 'AddressBookUI.ABNewPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      - MethodOwnsReturnedCocoaObject
+      Selector: 'newPersonViewDelegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: AddressBookUI.ABNewPersonViewController
+          Name: ABNewPersonViewControllerDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setNewPersonViewDelegate:'
+      JsName: 'setNewPersonViewDelegate'
+      Module: 'AddressBookUI.ABNewPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setNewPersonViewDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: AddressBookUI.ABNewPersonViewController
+          Name: ABNewPersonViewControllerDelegate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'parentGroup'
+    JsName: 'parentGroup'
+    Module: 'AddressBookUI.ABNewPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'parentGroup'
+      JsName: 'parentGroup'
+      Module: 'AddressBookUI.ABNewPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'parentGroup'
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: '^v8@0:4'
+    Setter:
+      Name: 'setParentGroup:'
+      JsName: 'setParentGroup'
+      Module: 'AddressBookUI.ABNewPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setParentGroup:'
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: 'v12@0:4^v8'
+  Protocols: []
+  Base:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Interface
+- Name: 'ABNewPersonViewControllerDelegate'
+  JsName: 'ABNewPersonViewControllerDelegate'
+  Module: 'AddressBookUI.ABNewPersonViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'newPersonViewController:didCompleteWithNewPerson:'
+    JsName: 'newPersonViewControllerDidCompleteWithNewPerson'
+    Module: 'AddressBookUI.ABNewPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - MethodOwnsReturnedCocoaObject
+    Selector: 'newPersonViewController:didCompleteWithNewPerson:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: AddressBookUI.ABNewPersonViewController
+      Name: ABNewPersonViewController
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: 'v16@0:4@8^v12'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'ABUnknownPersonViewController'
+  JsName: 'ABUnknownPersonViewController'
+  Module: 'AddressBookUI.ABUnknownPersonViewController'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'addressBook'
+    JsName: 'addressBook'
+    Module: 'AddressBookUI.ABUnknownPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'addressBook'
+      JsName: 'addressBook'
+      Module: 'AddressBookUI.ABUnknownPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'addressBook'
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: '^v8@0:4'
+    Setter:
+      Name: 'setAddressBook:'
+      JsName: 'setAddressBook'
+      Module: 'AddressBookUI.ABUnknownPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAddressBook:'
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: 'v12@0:4^v8'
+  - Name: 'allowsActions'
+    JsName: 'allowsActions'
+    Module: 'AddressBookUI.ABUnknownPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'allowsActions'
+      JsName: 'allowsActions'
+      Module: 'AddressBookUI.ABUnknownPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'allowsActions'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setAllowsActions:'
+      JsName: 'setAllowsActions'
+      Module: 'AddressBookUI.ABUnknownPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAllowsActions:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'allowsAddingToAddressBook'
+    JsName: 'allowsAddingToAddressBook'
+    Module: 'AddressBookUI.ABUnknownPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'allowsAddingToAddressBook'
+      JsName: 'allowsAddingToAddressBook'
+      Module: 'AddressBookUI.ABUnknownPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'allowsAddingToAddressBook'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setAllowsAddingToAddressBook:'
+      JsName: 'setAllowsAddingToAddressBook'
+      Module: 'AddressBookUI.ABUnknownPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAllowsAddingToAddressBook:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'alternateName'
+    JsName: 'alternateName'
+    Module: 'AddressBookUI.ABUnknownPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'alternateName'
+      JsName: 'alternateName'
+      Module: 'AddressBookUI.ABUnknownPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'alternateName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setAlternateName:'
+      JsName: 'setAlternateName'
+      Module: 'AddressBookUI.ABUnknownPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAlternateName:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'displayedPerson'
+    JsName: 'displayedPerson'
+    Module: 'AddressBookUI.ABUnknownPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'displayedPerson'
+      JsName: 'displayedPerson'
+      Module: 'AddressBookUI.ABUnknownPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'displayedPerson'
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: '^v8@0:4'
+    Setter:
+      Name: 'setDisplayedPerson:'
+      JsName: 'setDisplayedPerson'
+      Module: 'AddressBookUI.ABUnknownPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDisplayedPerson:'
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: 'v12@0:4^v8'
+  - Name: 'message'
+    JsName: 'message'
+    Module: 'AddressBookUI.ABUnknownPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'message'
+      JsName: 'message'
+      Module: 'AddressBookUI.ABUnknownPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'message'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setMessage:'
+      JsName: 'setMessage'
+      Module: 'AddressBookUI.ABUnknownPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMessage:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'unknownPersonViewDelegate'
+    JsName: 'unknownPersonViewDelegate'
+    Module: 'AddressBookUI.ABUnknownPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'unknownPersonViewDelegate'
+      JsName: 'unknownPersonViewDelegate'
+      Module: 'AddressBookUI.ABUnknownPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'unknownPersonViewDelegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: AddressBookUI.ABUnknownPersonViewController
+          Name: ABUnknownPersonViewControllerDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setUnknownPersonViewDelegate:'
+      JsName: 'setUnknownPersonViewDelegate'
+      Module: 'AddressBookUI.ABUnknownPersonViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setUnknownPersonViewDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: AddressBookUI.ABUnknownPersonViewController
+          Name: ABUnknownPersonViewControllerDelegate
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Interface
+- Name: 'ABUnknownPersonViewControllerDelegate'
+  JsName: 'ABUnknownPersonViewControllerDelegate'
+  Module: 'AddressBookUI.ABUnknownPersonViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'unknownPersonViewController:didResolveToPerson:'
+    JsName: 'unknownPersonViewControllerDidResolveToPerson'
+    Module: 'AddressBookUI.ABUnknownPersonViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'unknownPersonViewController:didResolveToPerson:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: AddressBookUI.ABUnknownPersonViewController
+      Name: ABUnknownPersonViewController
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: 'v16@0:4@8^v12'
+  - Name: 'unknownPersonViewController:shouldPerformDefaultActionForPerson:property:identifier:'
+    JsName: 'unknownPersonViewControllerShouldPerformDefaultActionForPersonPropertyIdentifier'
+    Module: 'AddressBookUI.ABUnknownPersonViewController'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'unknownPersonViewController:shouldPerformDefaultActionForPerson:property:identifier:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: AddressBookUI.ABUnknownPersonViewController
+      Name: ABUnknownPersonViewController
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Int
+    TypeEncoding: 'c24@0:4@8^v12i16i20'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'ABCreateStringWithAddressDictionary'
+  JsName: 'ABCreateStringWithAddressDictionary'
+  Module: 'AddressBookUI.ABAddressFormatting'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+  - Type: Interface
+    Module: Foundation.NSDictionary
+    Name: NSDictionary
+  - Type: Bool
+...

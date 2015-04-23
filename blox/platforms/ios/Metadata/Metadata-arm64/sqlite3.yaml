@@ -1,0 +1,4209 @@
+name: sqlite3
+items:
+- Name: 'sqlite3_version'
+  JsName: 'sqlite3_version'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: IncompleteArray
+    ArrayType:
+      Type: Char
+- Name: 'sqlite3_libversion'
+  JsName: 'sqlite3_libversion'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+- Name: 'sqlite3_sourceid'
+  JsName: 'sqlite3_sourceid'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+- Name: 'sqlite3_libversion_number'
+  JsName: 'sqlite3_libversion_number'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+- Name: 'sqlite3_compileoption_used'
+  JsName: 'sqlite3_compileoption_used'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: CString
+- Name: 'sqlite3_compileoption_get'
+  JsName: 'sqlite3_compileoption_get'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: Int
+- Name: 'sqlite3_threadsafe'
+  JsName: 'sqlite3_threadsafe'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+- Name: 'sqlite3_close'
+  JsName: 'sqlite3_close'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_close_v2'
+  JsName: 'sqlite3_close_v2'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_exec'
+  JsName: 'sqlite3_exec'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: FunctionPointer
+    Signature:
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: CString
+    - Type: Pointer
+      PointerType:
+        Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: CString
+- Name: 'sqlite3_file'
+  JsName: 'sqlite3_file'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: pMethods
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: sqlite3
+        Name: sqlite3_io_methods
+  Type: Struct
+- Name: 'sqlite3_io_methods'
+  JsName: 'sqlite3_io_methods'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: iVersion
+    Signature:
+      Type: Int
+  - Name: xClose
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_file
+  - Name: xRead
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_file
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Int
+      - Type: LongLong
+  - Name: xWrite
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_file
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Int
+      - Type: LongLong
+  - Name: xTruncate
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_file
+      - Type: LongLong
+  - Name: xSync
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_file
+      - Type: Int
+  - Name: xFileSize
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_file
+      - Type: Pointer
+        PointerType:
+          Type: LongLong
+  - Name: xLock
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_file
+      - Type: Int
+  - Name: xUnlock
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_file
+      - Type: Int
+  - Name: xCheckReservedLock
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_file
+      - Type: Pointer
+        PointerType:
+          Type: Int
+  - Name: xFileControl
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_file
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: xSectorSize
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_file
+  - Name: xDeviceCharacteristics
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_file
+  - Name: xShmMap
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_file
+      - Type: Int
+      - Type: Int
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+  - Name: xShmLock
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_file
+      - Type: Int
+      - Type: Int
+      - Type: Int
+  - Name: xShmBarrier
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_file
+  - Name: xShmUnmap
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_file
+      - Type: Int
+  - Name: xFetch
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_file
+      - Type: LongLong
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+  - Name: xUnfetch
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_file
+      - Type: LongLong
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  Type: Struct
+- Name: 'sqlite3_vfs'
+  JsName: 'sqlite3_vfs'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: iVersion
+    Signature:
+      Type: Int
+  - Name: szOsFile
+    Signature:
+      Type: Int
+  - Name: mxPathname
+    Signature:
+      Type: Int
+  - Name: pNext
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: sqlite3
+        Name: sqlite3_vfs
+  - Name: zName
+    Signature:
+      Type: CString
+  - Name: pAppData
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: xOpen
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vfs
+      - Type: CString
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_file
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Int
+  - Name: xDelete
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vfs
+      - Type: CString
+      - Type: Int
+  - Name: xAccess
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vfs
+      - Type: CString
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Int
+  - Name: xFullPathname
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vfs
+      - Type: CString
+      - Type: Int
+      - Type: CString
+  - Name: xDlOpen
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vfs
+      - Type: CString
+  - Name: xDlError
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vfs
+      - Type: Int
+      - Type: CString
+  - Name: xDlSym
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: FunctionPointer
+        Signature:
+        - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vfs
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: CString
+  - Name: xDlClose
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vfs
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: xRandomness
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vfs
+      - Type: Int
+      - Type: CString
+  - Name: xSleep
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vfs
+      - Type: Int
+  - Name: xCurrentTime
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vfs
+      - Type: Pointer
+        PointerType:
+          Type: Double
+  - Name: xGetLastError
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vfs
+      - Type: Int
+      - Type: CString
+  - Name: xCurrentTimeInt64
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vfs
+      - Type: Pointer
+        PointerType:
+          Type: LongLong
+  - Name: xSetSystemCall
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vfs
+      - Type: CString
+      - Type: FunctionPointer
+        Signature:
+        - Type: Void
+  - Name: xGetSystemCall
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: FunctionPointer
+        Signature:
+        - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vfs
+      - Type: CString
+  - Name: xNextSystemCall
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: CString
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vfs
+      - Type: CString
+  Type: Struct
+- Name: 'sqlite3_initialize'
+  JsName: 'sqlite3_initialize'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+- Name: 'sqlite3_shutdown'
+  JsName: 'sqlite3_shutdown'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+- Name: 'sqlite3_os_init'
+  JsName: 'sqlite3_os_init'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+- Name: 'sqlite3_os_end'
+  JsName: 'sqlite3_os_end'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+- Name: 'sqlite3_mem_methods'
+  JsName: 'sqlite3_mem_methods'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: xMalloc
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Int
+  - Name: xFree
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: xRealloc
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Int
+  - Name: xSize
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: xRoundup
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Int
+  - Name: xInit
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: xShutdown
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: pAppData
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  Type: Struct
+- Name: 'sqlite3_extended_result_codes'
+  JsName: 'sqlite3_extended_result_codes'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_last_insert_rowid'
+  JsName: 'sqlite3_last_insert_rowid'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: LongLong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_changes'
+  JsName: 'sqlite3_changes'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_total_changes'
+  JsName: 'sqlite3_total_changes'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_interrupt'
+  JsName: 'sqlite3_interrupt'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_complete'
+  JsName: 'sqlite3_complete'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: CString
+- Name: 'sqlite3_complete16'
+  JsName: 'sqlite3_complete16'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_busy_handler'
+  JsName: 'sqlite3_busy_handler'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_busy_timeout'
+  JsName: 'sqlite3_busy_timeout'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_get_table'
+  JsName: 'sqlite3_get_table'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: CString
+- Name: 'sqlite3_free_table'
+  JsName: 'sqlite3_free_table'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: CString
+- Name: 'sqlite3_malloc'
+  JsName: 'sqlite3_malloc'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_realloc'
+  JsName: 'sqlite3_realloc'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_free'
+  JsName: 'sqlite3_free'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_memory_used'
+  JsName: 'sqlite3_memory_used'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: LongLong
+- Name: 'sqlite3_memory_highwater'
+  JsName: 'sqlite3_memory_highwater'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: LongLong
+  - Type: Int
+- Name: 'sqlite3_randomness'
+  JsName: 'sqlite3_randomness'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_set_authorizer'
+  JsName: 'sqlite3_set_authorizer'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: CString
+    - Type: CString
+    - Type: CString
+    - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_trace'
+  JsName: 'sqlite3_trace'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_profile'
+  JsName: 'sqlite3_profile'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: CString
+    - Type: ULongLong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_progress_handler'
+  JsName: 'sqlite3_progress_handler'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: FunctionPointer
+    Signature:
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_open'
+  JsName: 'sqlite3_open'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_open16'
+  JsName: 'sqlite3_open16'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_open_v2'
+  JsName: 'sqlite3_open_v2'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Int
+  - Type: CString
+- Name: 'sqlite3_uri_parameter'
+  JsName: 'sqlite3_uri_parameter'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: CString
+  - Type: CString
+- Name: 'sqlite3_uri_boolean'
+  JsName: 'sqlite3_uri_boolean'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: CString
+  - Type: CString
+  - Type: Int
+- Name: 'sqlite3_uri_int64'
+  JsName: 'sqlite3_uri_int64'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: LongLong
+  - Type: CString
+  - Type: CString
+  - Type: LongLong
+- Name: 'sqlite3_errcode'
+  JsName: 'sqlite3_errcode'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_extended_errcode'
+  JsName: 'sqlite3_extended_errcode'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_errmsg'
+  JsName: 'sqlite3_errmsg'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_errmsg16'
+  JsName: 'sqlite3_errmsg16'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_errstr'
+  JsName: 'sqlite3_errstr'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: Int
+- Name: 'sqlite3_limit'
+  JsName: 'sqlite3_limit'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Int
+- Name: 'sqlite3_prepare'
+  JsName: 'sqlite3_prepare'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: CString
+- Name: 'sqlite3_prepare_v2'
+  JsName: 'sqlite3_prepare_v2'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: CString
+- Name: 'sqlite3_prepare16'
+  JsName: 'sqlite3_prepare16'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_prepare16_v2'
+  JsName: 'sqlite3_prepare16_v2'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_sql'
+  JsName: 'sqlite3_sql'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_stmt_readonly'
+  JsName: 'sqlite3_stmt_readonly'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_stmt_busy'
+  JsName: 'sqlite3_stmt_busy'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_bind_blob'
+  JsName: 'sqlite3_bind_blob'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_bind_double'
+  JsName: 'sqlite3_bind_double'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Double
+- Name: 'sqlite3_bind_int'
+  JsName: 'sqlite3_bind_int'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Int
+- Name: 'sqlite3_bind_int64'
+  JsName: 'sqlite3_bind_int64'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: LongLong
+- Name: 'sqlite3_bind_null'
+  JsName: 'sqlite3_bind_null'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_bind_text'
+  JsName: 'sqlite3_bind_text'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: CString
+  - Type: Int
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_bind_text16'
+  JsName: 'sqlite3_bind_text16'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_bind_value'
+  JsName: 'sqlite3_bind_value'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_bind_zeroblob'
+  JsName: 'sqlite3_bind_zeroblob'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Int
+- Name: 'sqlite3_bind_parameter_count'
+  JsName: 'sqlite3_bind_parameter_count'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_bind_parameter_name'
+  JsName: 'sqlite3_bind_parameter_name'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_bind_parameter_index'
+  JsName: 'sqlite3_bind_parameter_index'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'sqlite3_clear_bindings'
+  JsName: 'sqlite3_clear_bindings'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_column_count'
+  JsName: 'sqlite3_column_count'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_column_name'
+  JsName: 'sqlite3_column_name'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_column_name16'
+  JsName: 'sqlite3_column_name16'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_column_decltype'
+  JsName: 'sqlite3_column_decltype'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_column_decltype16'
+  JsName: 'sqlite3_column_decltype16'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_step'
+  JsName: 'sqlite3_step'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_data_count'
+  JsName: 'sqlite3_data_count'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_column_blob'
+  JsName: 'sqlite3_column_blob'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_column_bytes'
+  JsName: 'sqlite3_column_bytes'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_column_bytes16'
+  JsName: 'sqlite3_column_bytes16'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_column_double'
+  JsName: 'sqlite3_column_double'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_column_int'
+  JsName: 'sqlite3_column_int'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_column_int64'
+  JsName: 'sqlite3_column_int64'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: LongLong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_column_text'
+  JsName: 'sqlite3_column_text'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_column_text16'
+  JsName: 'sqlite3_column_text16'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_column_type'
+  JsName: 'sqlite3_column_type'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_column_value'
+  JsName: 'sqlite3_column_value'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_finalize'
+  JsName: 'sqlite3_finalize'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_reset'
+  JsName: 'sqlite3_reset'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_create_function'
+  JsName: 'sqlite3_create_function'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Pointer
+        PointerType:
+          Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Pointer
+        PointerType:
+          Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_create_function16'
+  JsName: 'sqlite3_create_function16'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Pointer
+        PointerType:
+          Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Pointer
+        PointerType:
+          Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_create_function_v2'
+  JsName: 'sqlite3_create_function_v2'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Pointer
+        PointerType:
+          Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Pointer
+        PointerType:
+          Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_aggregate_count'
+  JsName: 'sqlite3_aggregate_count'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_expired'
+  JsName: 'sqlite3_expired'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_transfer_bindings'
+  JsName: 'sqlite3_transfer_bindings'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_global_recover'
+  JsName: 'sqlite3_global_recover'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+- Name: 'sqlite3_thread_cleanup'
+  JsName: 'sqlite3_thread_cleanup'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+- Name: 'sqlite3_memory_alarm'
+  JsName: 'sqlite3_memory_alarm'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: LongLong
+    - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: LongLong
+- Name: 'sqlite3_value_blob'
+  JsName: 'sqlite3_value_blob'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_value_bytes'
+  JsName: 'sqlite3_value_bytes'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_value_bytes16'
+  JsName: 'sqlite3_value_bytes16'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_value_double'
+  JsName: 'sqlite3_value_double'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_value_int'
+  JsName: 'sqlite3_value_int'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_value_int64'
+  JsName: 'sqlite3_value_int64'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: LongLong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_value_text'
+  JsName: 'sqlite3_value_text'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_value_text16'
+  JsName: 'sqlite3_value_text16'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_value_text16le'
+  JsName: 'sqlite3_value_text16le'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_value_text16be'
+  JsName: 'sqlite3_value_text16be'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_value_type'
+  JsName: 'sqlite3_value_type'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_value_numeric_type'
+  JsName: 'sqlite3_value_numeric_type'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_aggregate_context'
+  JsName: 'sqlite3_aggregate_context'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_user_data'
+  JsName: 'sqlite3_user_data'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_context_db_handle'
+  JsName: 'sqlite3_context_db_handle'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_get_auxdata'
+  JsName: 'sqlite3_get_auxdata'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_set_auxdata'
+  JsName: 'sqlite3_set_auxdata'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_result_blob'
+  JsName: 'sqlite3_result_blob'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_result_double'
+  JsName: 'sqlite3_result_double'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+- Name: 'sqlite3_result_error'
+  JsName: 'sqlite3_result_error'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Int
+- Name: 'sqlite3_result_error16'
+  JsName: 'sqlite3_result_error16'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_result_error_toobig'
+  JsName: 'sqlite3_result_error_toobig'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_result_error_nomem'
+  JsName: 'sqlite3_result_error_nomem'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_result_error_code'
+  JsName: 'sqlite3_result_error_code'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_result_int'
+  JsName: 'sqlite3_result_int'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_result_int64'
+  JsName: 'sqlite3_result_int64'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: LongLong
+- Name: 'sqlite3_result_null'
+  JsName: 'sqlite3_result_null'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_result_text'
+  JsName: 'sqlite3_result_text'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Int
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_result_text16'
+  JsName: 'sqlite3_result_text16'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_result_text16le'
+  JsName: 'sqlite3_result_text16le'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_result_text16be'
+  JsName: 'sqlite3_result_text16be'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_result_value'
+  JsName: 'sqlite3_result_value'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_result_zeroblob'
+  JsName: 'sqlite3_result_zeroblob'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_create_collation'
+  JsName: 'sqlite3_create_collation'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_create_collation_v2'
+  JsName: 'sqlite3_create_collation_v2'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_create_collation16'
+  JsName: 'sqlite3_create_collation16'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_collation_needed'
+  JsName: 'sqlite3_collation_needed'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: CString
+- Name: 'sqlite3_collation_needed16'
+  JsName: 'sqlite3_collation_needed16'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_sleep'
+  JsName: 'sqlite3_sleep'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Int
+- Name: 'sqlite3_temp_directory'
+  JsName: 'sqlite3_temp_directory'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: CString
+- Name: 'sqlite3_data_directory'
+  JsName: 'sqlite3_data_directory'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: CString
+- Name: 'sqlite3_get_autocommit'
+  JsName: 'sqlite3_get_autocommit'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_db_handle'
+  JsName: 'sqlite3_db_handle'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_db_filename'
+  JsName: 'sqlite3_db_filename'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'sqlite3_db_readonly'
+  JsName: 'sqlite3_db_readonly'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'sqlite3_next_stmt'
+  JsName: 'sqlite3_next_stmt'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_commit_hook'
+  JsName: 'sqlite3_commit_hook'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_rollback_hook'
+  JsName: 'sqlite3_rollback_hook'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_update_hook'
+  JsName: 'sqlite3_update_hook'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Int
+    - Type: CString
+    - Type: CString
+    - Type: LongLong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_enable_shared_cache'
+  JsName: 'sqlite3_enable_shared_cache'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Int
+- Name: 'sqlite3_release_memory'
+  JsName: 'sqlite3_release_memory'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Int
+- Name: 'sqlite3_db_release_memory'
+  JsName: 'sqlite3_db_release_memory'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_soft_heap_limit64'
+  JsName: 'sqlite3_soft_heap_limit64'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: LongLong
+  - Type: LongLong
+- Name: 'sqlite3_soft_heap_limit'
+  JsName: 'sqlite3_soft_heap_limit'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Int
+- Name: 'sqlite3_auto_extension'
+  JsName: 'sqlite3_auto_extension'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+- Name: 'sqlite3_cancel_auto_extension'
+  JsName: 'sqlite3_cancel_auto_extension'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+- Name: 'sqlite3_reset_auto_extension'
+  JsName: 'sqlite3_reset_auto_extension'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+- Name: 'sqlite3_module'
+  JsName: 'sqlite3_module'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: iVersion
+    Signature:
+      Type: Int
+  - Name: xCreate
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: CString
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Struct
+            Module: sqlite3
+            Name: sqlite3_vtab
+      - Type: Pointer
+        PointerType:
+          Type: CString
+  - Name: xConnect
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: CString
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Struct
+            Module: sqlite3
+            Name: sqlite3_vtab
+      - Type: Pointer
+        PointerType:
+          Type: CString
+  - Name: xBestIndex
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_index_info
+  - Name: xDisconnect
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab
+  - Name: xDestroy
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab
+  - Name: xOpen
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Struct
+            Module: sqlite3
+            Name: sqlite3_vtab_cursor
+  - Name: xClose
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab_cursor
+  - Name: xFilter
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab_cursor
+      - Type: Int
+      - Type: CString
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+  - Name: xNext
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab_cursor
+  - Name: xEof
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab_cursor
+  - Name: xColumn
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab_cursor
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Int
+  - Name: xRowid
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab_cursor
+      - Type: Pointer
+        PointerType:
+          Type: LongLong
+  - Name: xUpdate
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: LongLong
+  - Name: xBegin
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab
+  - Name: xSync
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab
+  - Name: xCommit
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab
+  - Name: xRollback
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab
+  - Name: xFindFunction
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab
+      - Type: Int
+      - Type: CString
+      - Type: Pointer
+        PointerType:
+          Type: FunctionPointer
+          Signature:
+          - Type: Void
+          - Type: Pointer
+            PointerType:
+              Type: Void
+          - Type: Int
+          - Type: Pointer
+            PointerType:
+              Type: Pointer
+              PointerType:
+                Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+  - Name: xRename
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab
+      - Type: CString
+  - Name: xSavepoint
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab
+      - Type: Int
+  - Name: xRelease
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab
+      - Type: Int
+  - Name: xRollbackTo
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_vtab
+      - Type: Int
+  Type: Struct
+- Name: 'sqlite3_index_info'
+  JsName: 'sqlite3_index_info'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: nConstraint
+    Signature:
+      Type: Int
+  - Name: aConstraint
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: sqlite3
+        Name: sqlite3_index_constraint
+  - Name: nOrderBy
+    Signature:
+      Type: Int
+  - Name: aOrderBy
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: sqlite3
+        Name: sqlite3_index_orderby
+  - Name: aConstraintUsage
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: sqlite3
+        Name: sqlite3_index_constraint_usage
+  - Name: idxNum
+    Signature:
+      Type: Int
+  - Name: idxStr
+    Signature:
+      Type: CString
+  - Name: needToFreeIdxStr
+    Signature:
+      Type: Int
+  - Name: orderByConsumed
+    Signature:
+      Type: Int
+  - Name: estimatedCost
+    Signature:
+      Type: Double
+  - Name: estimatedRows
+    Signature:
+      Type: LongLong
+  Type: Struct
+- Name: 'sqlite3_index_constraint'
+  JsName: 'sqlite3_index_constraint'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: iColumn
+    Signature:
+      Type: Int
+  - Name: op
+    Signature:
+      Type: UChar
+  - Name: usable
+    Signature:
+      Type: UChar
+  - Name: iTermOffset
+    Signature:
+      Type: Int
+  Type: Struct
+- Name: 'sqlite3_index_orderby'
+  JsName: 'sqlite3_index_orderby'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: iColumn
+    Signature:
+      Type: Int
+  - Name: desc
+    Signature:
+      Type: UChar
+  Type: Struct
+- Name: 'sqlite3_index_constraint_usage'
+  JsName: 'sqlite3_index_constraint_usage'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: argvIndex
+    Signature:
+      Type: Int
+  - Name: omit
+    Signature:
+      Type: UChar
+  Type: Struct
+- Name: 'sqlite3_create_module'
+  JsName: 'sqlite3_create_module'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: sqlite3
+      Name: sqlite3_module
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_create_module_v2'
+  JsName: 'sqlite3_create_module_v2'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: sqlite3
+      Name: sqlite3_module
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_vtab'
+  JsName: 'sqlite3_vtab'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: pModule
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: sqlite3
+        Name: sqlite3_module
+  - Name: nRef
+    Signature:
+      Type: Int
+  - Name: zErrMsg
+    Signature:
+      Type: CString
+  Type: Struct
+- Name: 'sqlite3_vtab_cursor'
+  JsName: 'sqlite3_vtab_cursor'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: pVtab
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: sqlite3
+        Name: sqlite3_vtab
+  Type: Struct
+- Name: 'sqlite3_declare_vtab'
+  JsName: 'sqlite3_declare_vtab'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'sqlite3_overload_function'
+  JsName: 'sqlite3_overload_function'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Int
+- Name: 'sqlite3_blob_open'
+  JsName: 'sqlite3_blob_open'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: CString
+  - Type: CString
+  - Type: LongLong
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_blob_reopen'
+  JsName: 'sqlite3_blob_reopen'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: LongLong
+- Name: 'sqlite3_blob_close'
+  JsName: 'sqlite3_blob_close'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_blob_bytes'
+  JsName: 'sqlite3_blob_bytes'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_blob_read'
+  JsName: 'sqlite3_blob_read'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Int
+- Name: 'sqlite3_blob_write'
+  JsName: 'sqlite3_blob_write'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Int
+- Name: 'sqlite3_vfs_find'
+  JsName: 'sqlite3_vfs_find'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: sqlite3
+      Name: sqlite3_vfs
+  - Type: CString
+- Name: 'sqlite3_vfs_register'
+  JsName: 'sqlite3_vfs_register'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: sqlite3
+      Name: sqlite3_vfs
+  - Type: Int
+- Name: 'sqlite3_vfs_unregister'
+  JsName: 'sqlite3_vfs_unregister'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: sqlite3
+      Name: sqlite3_vfs
+- Name: 'sqlite3_mutex_alloc'
+  JsName: 'sqlite3_mutex_alloc'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_mutex_free'
+  JsName: 'sqlite3_mutex_free'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_mutex_enter'
+  JsName: 'sqlite3_mutex_enter'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_mutex_try'
+  JsName: 'sqlite3_mutex_try'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_mutex_leave'
+  JsName: 'sqlite3_mutex_leave'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_mutex_methods'
+  JsName: 'sqlite3_mutex_methods'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: xMutexInit
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+  - Name: xMutexEnd
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+  - Name: xMutexAlloc
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Int
+  - Name: xMutexFree
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: xMutexEnter
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: xMutexTry
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: xMutexLeave
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: xMutexHeld
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: xMutexNotheld
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  Type: Struct
+- Name: 'sqlite3_db_mutex'
+  JsName: 'sqlite3_db_mutex'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_file_control'
+  JsName: 'sqlite3_file_control'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_status'
+  JsName: 'sqlite3_status'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Int
+- Name: 'sqlite3_db_status'
+  JsName: 'sqlite3_db_status'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Int
+- Name: 'sqlite3_stmt_status'
+  JsName: 'sqlite3_stmt_status'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Int
+- Name: 'sqlite3_pcache_page'
+  JsName: 'sqlite3_pcache_page'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: pBuf
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: pExtra
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  Type: Struct
+- Name: 'sqlite3_pcache_methods2'
+  JsName: 'sqlite3_pcache_methods2'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: iVersion
+    Signature:
+      Type: Int
+  - Name: pArg
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: xInit
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: xShutdown
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: xCreate
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Int
+      - Type: Int
+      - Type: Int
+  - Name: xCachesize
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Int
+  - Name: xPagecount
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: xFetch
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_pcache_page
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: UInt
+      - Type: Int
+  - Name: xUnpin
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_pcache_page
+      - Type: Int
+  - Name: xRekey
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: sqlite3
+          Name: sqlite3_pcache_page
+      - Type: UInt
+      - Type: UInt
+  - Name: xTruncate
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: UInt
+  - Name: xDestroy
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: xShrink
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  Type: Struct
+- Name: 'sqlite3_pcache_methods'
+  JsName: 'sqlite3_pcache_methods'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: pArg
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: xInit
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: xShutdown
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: xCreate
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Int
+      - Type: Int
+  - Name: xCachesize
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Int
+  - Name: xPagecount
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Int
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: xFetch
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: UInt
+      - Type: Int
+  - Name: xUnpin
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Int
+  - Name: xRekey
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: UInt
+      - Type: UInt
+  - Name: xTruncate
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: UInt
+  - Name: xDestroy
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  Type: Struct
+- Name: 'sqlite3_backup_init'
+  JsName: 'sqlite3_backup_init'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'sqlite3_backup_step'
+  JsName: 'sqlite3_backup_step'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_backup_finish'
+  JsName: 'sqlite3_backup_finish'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_backup_remaining'
+  JsName: 'sqlite3_backup_remaining'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_backup_pagecount'
+  JsName: 'sqlite3_backup_pagecount'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_stricmp'
+  JsName: 'sqlite3_stricmp'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: CString
+  - Type: CString
+- Name: 'sqlite3_strnicmp'
+  JsName: 'sqlite3_strnicmp'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: CString
+  - Type: CString
+  - Type: Int
+- Name: 'sqlite3_strglob'
+  JsName: 'sqlite3_strglob'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: CString
+  - Type: CString
+- Name: 'sqlite3_wal_hook'
+  JsName: 'sqlite3_wal_hook'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: CString
+    - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_wal_autocheckpoint'
+  JsName: 'sqlite3_wal_autocheckpoint'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+- Name: 'sqlite3_wal_checkpoint'
+  JsName: 'sqlite3_wal_checkpoint'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'sqlite3_wal_checkpoint_v2'
+  JsName: 'sqlite3_wal_checkpoint_v2'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'sqlite3_vtab_on_conflict'
+  JsName: 'sqlite3_vtab_on_conflict'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_rtree_geometry_callback'
+  JsName: 'sqlite3_rtree_geometry_callback'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: FunctionPointer
+    Signature:
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: sqlite3
+        Name: sqlite3_rtree_geometry
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Double
+    - Type: Pointer
+      PointerType:
+        Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'sqlite3_rtree_geometry'
+  JsName: 'sqlite3_rtree_geometry'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: pContext
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: nParam
+    Signature:
+      Type: Int
+  - Name: aParam
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Double
+  - Name: pUser
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: xDelUser
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  Type: Struct
+- Name: 'sqlite3_rtree_query_callback'
+  JsName: 'sqlite3_rtree_query_callback'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: FunctionPointer
+    Signature:
+    - Type: Int
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: sqlite3
+        Name: sqlite3_rtree_query_info
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'sqlite3_rtree_query_info'
+  JsName: 'sqlite3_rtree_query_info'
+  Module: 'sqlite3'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: pContext
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: nParam
+    Signature:
+      Type: Int
+  - Name: aParam
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Double
+  - Name: pUser
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: xDelUser
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: aCoord
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Double
+  - Name: anQueue
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: UInt
+  - Name: nCoord
+    Signature:
+      Type: Int
+  - Name: iLevel
+    Signature:
+      Type: Int
+  - Name: mxLevel
+    Signature:
+      Type: Int
+  - Name: iRowid
+    Signature:
+      Type: LongLong
+  - Name: rParentScore
+    Signature:
+      Type: Double
+  - Name: eParentWithin
+    Signature:
+      Type: Int
+  - Name: eWithin
+    Signature:
+      Type: Int
+  - Name: rScore
+    Signature:
+      Type: Double
+  Type: Struct
+...

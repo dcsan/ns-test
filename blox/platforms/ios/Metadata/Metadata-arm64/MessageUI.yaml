@@ -1,0 +1,523 @@
+name: MessageUI
+items:
+- Name: 'MFMailComposeResult'
+  JsName: 'MFMailComposeResult'
+  Module: 'MessageUI.MFMailComposeViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MFMailComposeResultCancelled":0,"MFMailComposeResultSaved":1,"MFMailComposeResultSent":2,"MFMailComposeResultFailed":3})
+- Name: 'MFMailComposeErrorDomain'
+  JsName: 'MFMailComposeErrorDomain'
+  Module: 'MessageUI.MFMailComposeViewController'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MFMailComposeErrorCode'
+  JsName: 'MFMailComposeErrorCode'
+  Module: 'MessageUI.MFMailComposeViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MFMailComposeErrorCodeSaveFailed":0,"MFMailComposeErrorCodeSendFailed":1})
+- Name: 'MFMailComposeViewController'
+  JsName: 'MFMailComposeViewController'
+  Module: 'MessageUI.MFMailComposeViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addAttachmentData:mimeType:fileName:'
+    JsName: 'addAttachmentDataMimeTypeFileName'
+    Module: 'MessageUI.MFMailComposeViewController'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addAttachmentData:mimeType:fileName:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v40@0:8@16@24@32'
+  - Name: 'setBccRecipients:'
+    JsName: 'setBccRecipients'
+    Module: 'MessageUI.MFMailComposeViewController'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setBccRecipients:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setCcRecipients:'
+    JsName: 'setCcRecipients'
+    Module: 'MessageUI.MFMailComposeViewController'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setCcRecipients:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setMessageBody:isHTML:'
+    JsName: 'setMessageBodyIsHTML'
+    Module: 'MessageUI.MFMailComposeViewController'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setMessageBody:isHTML:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Bool
+    TypeEncoding: 'v28@0:8@16B24'
+  - Name: 'setSubject:'
+    JsName: 'setSubject'
+    Module: 'MessageUI.MFMailComposeViewController'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setSubject:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setToRecipients:'
+    JsName: 'setToRecipients'
+    Module: 'MessageUI.MFMailComposeViewController'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setToRecipients:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v24@0:8@16'
+  StaticMethods:
+  - Name: 'canSendMail'
+    JsName: 'canSendMail'
+    Module: 'MessageUI.MFMailComposeViewController'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'canSendMail'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  Properties:
+  - Name: 'mailComposeDelegate'
+    JsName: 'mailComposeDelegate'
+    Module: 'MessageUI.MFMailComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'mailComposeDelegate'
+      JsName: 'mailComposeDelegate'
+      Module: 'MessageUI.MFMailComposeViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mailComposeDelegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: MessageUI.MFMailComposeViewController
+          Name: MFMailComposeViewControllerDelegate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setMailComposeDelegate:'
+      JsName: 'setMailComposeDelegate'
+      Module: 'MessageUI.MFMailComposeViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMailComposeDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: MessageUI.MFMailComposeViewController
+          Name: MFMailComposeViewControllerDelegate
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: UIKit.UINavigationController
+    Name: UINavigationController
+  Type: Interface
+- Name: 'MFMailComposeViewControllerDelegate'
+  JsName: 'MFMailComposeViewControllerDelegate'
+  Module: 'MessageUI.MFMailComposeViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'mailComposeController:didFinishWithResult:error:'
+    JsName: 'mailComposeControllerDidFinishWithResultError'
+    Module: 'MessageUI.MFMailComposeViewController'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mailComposeController:didFinishWithResult:error:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MessageUI.MFMailComposeViewController
+      Name: MFMailComposeViewController
+    - Type: UInt
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v36@0:8@16i24@28'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MessageComposeResult'
+  JsName: 'MessageComposeResult'
+  Module: 'MessageUI.MFMessageComposeViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MessageComposeResultCancelled":0,"MessageComposeResultSent":1,"MessageComposeResultFailed":2})
+- Name: 'MFMessageComposeViewControllerAttachmentURL'
+  JsName: 'MFMessageComposeViewControllerAttachmentURL'
+  Module: 'MessageUI.MFMessageComposeViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MFMessageComposeViewControllerAttachmentAlternateFilename'
+  JsName: 'MFMessageComposeViewControllerAttachmentAlternateFilename'
+  Module: 'MessageUI.MFMessageComposeViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MFMessageComposeViewControllerTextMessageAvailabilityDidChangeNotification'
+  JsName: 'MFMessageComposeViewControllerTextMessageAvailabilityDidChangeNotification'
+  Module: 'MessageUI.MFMessageComposeViewController'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MFMessageComposeViewControllerTextMessageAvailabilityKey'
+  JsName: 'MFMessageComposeViewControllerTextMessageAvailabilityKey'
+  Module: 'MessageUI.MFMessageComposeViewController'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MFMessageComposeViewController'
+  JsName: 'MFMessageComposeViewController'
+  Module: 'MessageUI.MFMessageComposeViewController'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addAttachmentData:typeIdentifier:filename:'
+    JsName: 'addAttachmentDataTypeIdentifierFilename'
+    Module: 'MessageUI.MFMessageComposeViewController'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addAttachmentData:typeIdentifier:filename:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'B40@0:8@16@24@32'
+  - Name: 'addAttachmentURL:withAlternateFilename:'
+    JsName: 'addAttachmentURLWithAlternateFilename'
+    Module: 'MessageUI.MFMessageComposeViewController'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addAttachmentURL:withAlternateFilename:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'B32@0:8@16@24'
+  - Name: 'disableUserAttachments'
+    JsName: 'disableUserAttachments'
+    Module: 'MessageUI.MFMessageComposeViewController'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'disableUserAttachments'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods:
+  - Name: 'canSendAttachments'
+    JsName: 'canSendAttachments'
+    Module: 'MessageUI.MFMessageComposeViewController'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'canSendAttachments'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  - Name: 'canSendSubject'
+    JsName: 'canSendSubject'
+    Module: 'MessageUI.MFMessageComposeViewController'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'canSendSubject'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  - Name: 'canSendText'
+    JsName: 'canSendText'
+    Module: 'MessageUI.MFMessageComposeViewController'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'canSendText'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  - Name: 'isSupportedAttachmentUTI:'
+    JsName: 'isSupportedAttachmentUTI'
+    Module: 'MessageUI.MFMessageComposeViewController'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isSupportedAttachmentUTI:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'B24@0:8@16'
+  Properties:
+  - Name: 'attachments'
+    JsName: 'attachments'
+    Module: 'MessageUI.MFMessageComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'attachments'
+      JsName: 'attachments'
+      Module: 'MessageUI.MFMessageComposeViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'attachments'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  - Name: 'body'
+    JsName: 'body'
+    Module: 'MessageUI.MFMessageComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'body'
+      JsName: 'body'
+      Module: 'MessageUI.MFMessageComposeViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'body'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setBody:'
+      JsName: 'setBody'
+      Module: 'MessageUI.MFMessageComposeViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setBody:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'messageComposeDelegate'
+    JsName: 'messageComposeDelegate'
+    Module: 'MessageUI.MFMessageComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'messageComposeDelegate'
+      JsName: 'messageComposeDelegate'
+      Module: 'MessageUI.MFMessageComposeViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'messageComposeDelegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: MessageUI.MFMessageComposeViewController
+          Name: MFMessageComposeViewControllerDelegate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setMessageComposeDelegate:'
+      JsName: 'setMessageComposeDelegate'
+      Module: 'MessageUI.MFMessageComposeViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMessageComposeDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: MessageUI.MFMessageComposeViewController
+          Name: MFMessageComposeViewControllerDelegate
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'recipients'
+    JsName: 'recipients'
+    Module: 'MessageUI.MFMessageComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'recipients'
+      JsName: 'recipients'
+      Module: 'MessageUI.MFMessageComposeViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recipients'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setRecipients:'
+      JsName: 'setRecipients'
+      Module: 'MessageUI.MFMessageComposeViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRecipients:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'subject'
+    JsName: 'subject'
+    Module: 'MessageUI.MFMessageComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'subject'
+      JsName: 'subject'
+      Module: 'MessageUI.MFMessageComposeViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'subject'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setSubject:'
+      JsName: 'setSubject'
+      Module: 'MessageUI.MFMessageComposeViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSubject:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: UIKit.UINavigationController
+    Name: UINavigationController
+  Type: Interface
+- Name: 'MFMessageComposeViewControllerDelegate'
+  JsName: 'MFMessageComposeViewControllerDelegate'
+  Module: 'MessageUI.MFMessageComposeViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'messageComposeViewController:didFinishWithResult:'
+    JsName: 'messageComposeViewControllerDidFinishWithResult'
+    Module: 'MessageUI.MFMessageComposeViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'messageComposeViewController:didFinishWithResult:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MessageUI.MFMessageComposeViewController
+      Name: MFMessageComposeViewController
+    - Type: UInt
+    TypeEncoding: 'v28@0:8@16i24'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+...

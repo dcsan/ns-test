@@ -1,0 +1,191 @@
+name: MediaToolbox
+items:
+- Name: 'MTAudioProcessingTapGetTypeID'
+  JsName: 'MTAudioProcessingTapGetTypeID'
+  Module: 'MediaToolbox.MTAudioProcessingTap'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'kMTAudioProcessingTapCreationFlag_PreEffects'
+  JsName: 'kMTAudioProcessingTapCreationFlag_PreEffects'
+  Module: 'MediaToolbox.MTAudioProcessingTap'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kMTAudioProcessingTapCreationFlag_PostEffects'
+  JsName: 'kMTAudioProcessingTapCreationFlag_PostEffects'
+  Module: 'MediaToolbox.MTAudioProcessingTap'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kMTAudioProcessingTapFlag_StartOfStream'
+  JsName: 'kMTAudioProcessingTapFlag_StartOfStream'
+  Module: 'MediaToolbox.MTAudioProcessingTap'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 256
+- Name: 'kMTAudioProcessingTapFlag_EndOfStream'
+  JsName: 'kMTAudioProcessingTapFlag_EndOfStream'
+  Module: 'MediaToolbox.MTAudioProcessingTap'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 512
+- Name: 'kMTAudioProcessingTapCallbacksVersion_0'
+  JsName: 'kMTAudioProcessingTapCallbacksVersion_0'
+  Module: 'MediaToolbox.MTAudioProcessingTap'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: '920'
+  JsName: 'MTAudioProcessingTapCallbacks'
+  Module: 'MediaToolbox.MTAudioProcessingTap'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: version
+    Signature:
+      Type: Int
+  - Name: clientInfo
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  - Name: init
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Pointer
+          PointerType:
+            Type: Void
+  - Name: finalize
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: prepare
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Long
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: CoreAudio
+          Name: AudioStreamBasicDescription
+  - Name: unprepare
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: process
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Long
+      - Type: UInt
+      - Type: Pointer
+        PointerType:
+          Type: Struct
+          Module: CoreAudio
+          Name: AudioBufferList
+      - Type: Pointer
+        PointerType:
+          Type: Long
+      - Type: Pointer
+        PointerType:
+          Type: UInt
+  Type: Struct
+- Name: 'MTAudioProcessingTapCreate'
+  JsName: 'MTAudioProcessingTapCreate'
+  Module: 'MediaToolbox.MTAudioProcessingTap'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: MediaToolbox.MTAudioProcessingTap
+      Name: MTAudioProcessingTapCallbacks
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'MTAudioProcessingTapGetStorage'
+  JsName: 'MTAudioProcessingTapGetStorage'
+  Module: 'MediaToolbox.MTAudioProcessingTap'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'MTAudioProcessingTapGetSourceAudio'
+  JsName: 'MTAudioProcessingTapGetSourceAudio'
+  Module: 'MediaToolbox.MTAudioProcessingTap'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreAudio
+      Name: AudioBufferList
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreMedia.CMTimeRange
+      Name: CMTimeRange
+  - Type: Pointer
+    PointerType:
+      Type: Long
+...

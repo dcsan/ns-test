@@ -1,0 +1,2599 @@
+name: GLKit
+items:
+- Name: 'GLKViewDrawableColorFormat'
+  JsName: 'GLKViewDrawableColorFormat'
+  Module: 'GLKit.GLKView'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"GLKViewDrawableColorFormatRGBA8888":0,"GLKViewDrawableColorFormatRGB565":1,"GLKViewDrawableColorFormatSRGBA8888":2})
+- Name: 'GLKViewDrawableDepthFormat'
+  JsName: 'GLKViewDrawableDepthFormat'
+  Module: 'GLKit.GLKView'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"GLKViewDrawableDepthFormatNone":0,"GLKViewDrawableDepthFormat16":1,"GLKViewDrawableDepthFormat24":2})
+- Name: 'GLKViewDrawableStencilFormat'
+  JsName: 'GLKViewDrawableStencilFormat'
+  Module: 'GLKit.GLKView'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"GLKViewDrawableStencilFormatNone":0,"GLKViewDrawableStencilFormat8":1})
+- Name: 'GLKViewDrawableMultisample'
+  JsName: 'GLKViewDrawableMultisample'
+  Module: 'GLKit.GLKView'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"GLKViewDrawableMultisampleNone":0,"GLKViewDrawableMultisample4X":1})
+- Name: 'GLKView'
+  JsName: 'GLKView'
+  Module: 'GLKit.GLKView'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'bindDrawable'
+    JsName: 'bindDrawable'
+    Module: 'GLKit.GLKView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'bindDrawable'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'deleteDrawable'
+    JsName: 'deleteDrawable'
+    Module: 'GLKit.GLKView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'deleteDrawable'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'display'
+    JsName: 'display'
+    Module: 'GLKit.GLKView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'display'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'initWithFrame:context:'
+    JsName: 'initWithFrameContext'
+    Module: 'GLKit.GLKView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithFrame:context:'
+    Signature:
+    - Type: Instancetype
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Interface
+      Module: OpenGLES.EAGL
+      Name: EAGLContext
+    TypeEncoding: '@56@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16@48'
+  StaticMethods: []
+  Properties:
+  - Name: 'context'
+    JsName: 'context'
+    Module: 'GLKit.GLKView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'context'
+      JsName: 'context'
+      Module: 'GLKit.GLKView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'context'
+      Signature:
+      - Type: Interface
+        Module: OpenGLES.EAGL
+        Name: EAGLContext
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setContext:'
+      JsName: 'setContext'
+      Module: 'GLKit.GLKView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setContext:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: OpenGLES.EAGL
+        Name: EAGLContext
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'GLKit.GLKView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'GLKit.GLKView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: GLKit.GLKView
+          Name: GLKViewDelegate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'GLKit.GLKView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: GLKit.GLKView
+          Name: GLKViewDelegate
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'drawableColorFormat'
+    JsName: 'drawableColorFormat'
+    Module: 'GLKit.GLKView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'drawableColorFormat'
+      JsName: 'drawableColorFormat'
+      Module: 'GLKit.GLKView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'drawableColorFormat'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i16@0:8'
+    Setter:
+      Name: 'setDrawableColorFormat:'
+      JsName: 'setDrawableColorFormat'
+      Module: 'GLKit.GLKView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDrawableColorFormat:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v20@0:8i16'
+  - Name: 'drawableDepthFormat'
+    JsName: 'drawableDepthFormat'
+    Module: 'GLKit.GLKView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'drawableDepthFormat'
+      JsName: 'drawableDepthFormat'
+      Module: 'GLKit.GLKView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'drawableDepthFormat'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i16@0:8'
+    Setter:
+      Name: 'setDrawableDepthFormat:'
+      JsName: 'setDrawableDepthFormat'
+      Module: 'GLKit.GLKView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDrawableDepthFormat:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v20@0:8i16'
+  - Name: 'drawableHeight'
+    JsName: 'drawableHeight'
+    Module: 'GLKit.GLKView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'drawableHeight'
+      JsName: 'drawableHeight'
+      Module: 'GLKit.GLKView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'drawableHeight'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+  - Name: 'drawableMultisample'
+    JsName: 'drawableMultisample'
+    Module: 'GLKit.GLKView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'drawableMultisample'
+      JsName: 'drawableMultisample'
+      Module: 'GLKit.GLKView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'drawableMultisample'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i16@0:8'
+    Setter:
+      Name: 'setDrawableMultisample:'
+      JsName: 'setDrawableMultisample'
+      Module: 'GLKit.GLKView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDrawableMultisample:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v20@0:8i16'
+  - Name: 'drawableStencilFormat'
+    JsName: 'drawableStencilFormat'
+    Module: 'GLKit.GLKView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'drawableStencilFormat'
+      JsName: 'drawableStencilFormat'
+      Module: 'GLKit.GLKView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'drawableStencilFormat'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i16@0:8'
+    Setter:
+      Name: 'setDrawableStencilFormat:'
+      JsName: 'setDrawableStencilFormat'
+      Module: 'GLKit.GLKView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDrawableStencilFormat:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v20@0:8i16'
+  - Name: 'drawableWidth'
+    JsName: 'drawableWidth'
+    Module: 'GLKit.GLKView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'drawableWidth'
+      JsName: 'drawableWidth'
+      Module: 'GLKit.GLKView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'drawableWidth'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+  - Name: 'enableSetNeedsDisplay'
+    JsName: 'enableSetNeedsDisplay'
+    Module: 'GLKit.GLKView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'enableSetNeedsDisplay'
+      JsName: 'enableSetNeedsDisplay'
+      Module: 'GLKit.GLKView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'enableSetNeedsDisplay'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setEnableSetNeedsDisplay:'
+      JsName: 'setEnableSetNeedsDisplay'
+      Module: 'GLKit.GLKView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setEnableSetNeedsDisplay:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'snapshot'
+    JsName: 'snapshot'
+    Module: 'GLKit.GLKView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'snapshot'
+      JsName: 'snapshot'
+      Module: 'GLKit.GLKView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'snapshot'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIImage
+        Name: UIImage
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCoding
+  Base:
+    Module: UIKit.UIView
+    Name: UIView
+  Type: Interface
+- Name: 'GLKViewDelegate'
+  JsName: 'GLKViewDelegate'
+  Module: 'GLKit.GLKView'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'glkView:drawInRect:'
+    JsName: 'glkViewDrawInRect'
+    Module: 'GLKit.GLKView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'glkView:drawInRect:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: GLKit.GLKView
+      Name: GLKView
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    TypeEncoding: 'v56@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'GLKViewController'
+  JsName: 'GLKViewController'
+  Module: 'GLKit.GLKViewController'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'GLKit.GLKViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'GLKit.GLKViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: GLKit.GLKViewController
+          Name: GLKViewControllerDelegate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'GLKit.GLKViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: GLKit.GLKViewController
+          Name: GLKViewControllerDelegate
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'framesDisplayed'
+    JsName: 'framesDisplayed'
+    Module: 'GLKit.GLKViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'framesDisplayed'
+      JsName: 'framesDisplayed'
+      Module: 'GLKit.GLKViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'framesDisplayed'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+  - Name: 'framesPerSecond'
+    JsName: 'framesPerSecond'
+    Module: 'GLKit.GLKViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'framesPerSecond'
+      JsName: 'framesPerSecond'
+      Module: 'GLKit.GLKViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'framesPerSecond'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+  - Name: 'paused'
+    JsName: 'paused'
+    Module: 'GLKit.GLKViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isPaused'
+      JsName: 'isPaused'
+      Module: 'GLKit.GLKViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isPaused'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setPaused:'
+      JsName: 'setPaused'
+      Module: 'GLKit.GLKViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPaused:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'pauseOnWillResignActive'
+    JsName: 'pauseOnWillResignActive'
+    Module: 'GLKit.GLKViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'pauseOnWillResignActive'
+      JsName: 'pauseOnWillResignActive'
+      Module: 'GLKit.GLKViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'pauseOnWillResignActive'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setPauseOnWillResignActive:'
+      JsName: 'setPauseOnWillResignActive'
+      Module: 'GLKit.GLKViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPauseOnWillResignActive:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'preferredFramesPerSecond'
+    JsName: 'preferredFramesPerSecond'
+    Module: 'GLKit.GLKViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'preferredFramesPerSecond'
+      JsName: 'preferredFramesPerSecond'
+      Module: 'GLKit.GLKViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'preferredFramesPerSecond'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+    Setter:
+      Name: 'setPreferredFramesPerSecond:'
+      JsName: 'setPreferredFramesPerSecond'
+      Module: 'GLKit.GLKViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPreferredFramesPerSecond:'
+      Signature:
+      - Type: Void
+      - Type: Long
+      TypeEncoding: 'v24@0:8q16'
+  - Name: 'resumeOnDidBecomeActive'
+    JsName: 'resumeOnDidBecomeActive'
+    Module: 'GLKit.GLKViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'resumeOnDidBecomeActive'
+      JsName: 'resumeOnDidBecomeActive'
+      Module: 'GLKit.GLKViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'resumeOnDidBecomeActive'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setResumeOnDidBecomeActive:'
+      JsName: 'setResumeOnDidBecomeActive'
+      Module: 'GLKit.GLKViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setResumeOnDidBecomeActive:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'timeSinceFirstResume'
+    JsName: 'timeSinceFirstResume'
+    Module: 'GLKit.GLKViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'timeSinceFirstResume'
+      JsName: 'timeSinceFirstResume'
+      Module: 'GLKit.GLKViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'timeSinceFirstResume'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+  - Name: 'timeSinceLastDraw'
+    JsName: 'timeSinceLastDraw'
+    Module: 'GLKit.GLKViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'timeSinceLastDraw'
+      JsName: 'timeSinceLastDraw'
+      Module: 'GLKit.GLKViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'timeSinceLastDraw'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+  - Name: 'timeSinceLastResume'
+    JsName: 'timeSinceLastResume'
+    Module: 'GLKit.GLKViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'timeSinceLastResume'
+      JsName: 'timeSinceLastResume'
+      Module: 'GLKit.GLKViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'timeSinceLastResume'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+  - Name: 'timeSinceLastUpdate'
+    JsName: 'timeSinceLastUpdate'
+    Module: 'GLKit.GLKViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'timeSinceLastUpdate'
+      JsName: 'timeSinceLastUpdate'
+      Module: 'GLKit.GLKViewController'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'timeSinceLastUpdate'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+  Protocols:
+  - Module: GLKit.GLKView
+    Name: GLKViewDelegate
+  - Module: Foundation.NSObject
+    Name: NSCoding
+  Base:
+    Module: UIKit.UIViewController
+    Name: UIViewController
+  Type: Interface
+- Name: 'GLKViewControllerDelegate'
+  JsName: 'GLKViewControllerDelegate'
+  Module: 'GLKit.GLKViewController'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'glkViewControllerUpdate:'
+    JsName: 'glkViewControllerUpdate'
+    Module: 'GLKit.GLKViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'glkViewControllerUpdate:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: GLKit.GLKViewController
+      Name: GLKViewController
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'glkViewController:willPause:'
+    JsName: 'glkViewControllerWillPause'
+    Module: 'GLKit.GLKViewController'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'glkViewController:willPause:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: GLKit.GLKViewController
+      Name: GLKViewController
+    - Type: Bool
+    TypeEncoding: 'v28@0:8@16B24'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'GLKNamedEffect'
+  JsName: 'GLKNamedEffect'
+  Module: 'GLKit.GLKNamedEffect'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'prepareToDraw'
+    JsName: 'prepareToDraw'
+    Module: 'GLKit.GLKNamedEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'prepareToDraw'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Type: Protocol
+- Name: 'GLKMatrixStackCreate'
+  JsName: 'GLKMatrixStackCreate'
+  Module: 'GLKit.GLKMatrixStack'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'GLKMatrixStackGetTypeID'
+  JsName: 'GLKMatrixStackGetTypeID'
+  Module: 'GLKit.GLKMatrixStack'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'GLKMatrixStackPush'
+  JsName: 'GLKMatrixStackPush'
+  Module: 'GLKit.GLKMatrixStack'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'GLKMatrixStackPop'
+  JsName: 'GLKMatrixStackPop'
+  Module: 'GLKit.GLKMatrixStack'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'GLKMatrixStackSize'
+  JsName: 'GLKMatrixStackSize'
+  Module: 'GLKit.GLKMatrixStack'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'GLKMatrixStackMultiplyMatrixStack'
+  JsName: 'GLKMatrixStackMultiplyMatrixStack'
+  Module: 'GLKit.GLKMatrixStack'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'GLKMatrixStackTranslate'
+  JsName: 'GLKMatrixStackTranslate'
+  Module: 'GLKit.GLKMatrixStack'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Float
+  - Type: Float
+  - Type: Float
+- Name: 'GLKMatrixStackScale'
+  JsName: 'GLKMatrixStackScale'
+  Module: 'GLKit.GLKMatrixStack'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Float
+  - Type: Float
+  - Type: Float
+- Name: 'GLKMatrixStackRotate'
+  JsName: 'GLKMatrixStackRotate'
+  Module: 'GLKit.GLKMatrixStack'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Float
+  - Type: Float
+  - Type: Float
+  - Type: Float
+- Name: 'GLKMatrixStackRotateX'
+  JsName: 'GLKMatrixStackRotateX'
+  Module: 'GLKit.GLKMatrixStack'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Float
+- Name: 'GLKMatrixStackRotateY'
+  JsName: 'GLKMatrixStackRotateY'
+  Module: 'GLKit.GLKMatrixStack'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Float
+- Name: 'GLKMatrixStackRotateZ'
+  JsName: 'GLKMatrixStackRotateZ'
+  Module: 'GLKit.GLKMatrixStack'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Float
+- Name: 'GLKEffectProperty'
+  JsName: 'GLKEffectProperty'
+  Module: 'GLKit.GLKEffectProperty'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'GLKEffectPropertyTransform'
+  JsName: 'GLKEffectPropertyTransform'
+  Module: 'GLKit.GLKEffectPropertyTransform'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: GLKit.GLKEffectProperty
+    Name: GLKEffectProperty
+  Type: Interface
+- Name: 'GLKLightingType'
+  JsName: 'GLKLightingType'
+  Module: 'GLKit.GLKEffectPropertyLight'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"GLKLightingTypePerVertex":0,"GLKLightingTypePerPixel":1})
+- Name: 'GLKEffectPropertyLight'
+  JsName: 'GLKEffectPropertyLight'
+  Module: 'GLKit.GLKEffectPropertyLight'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'constantAttenuation'
+    JsName: 'constantAttenuation'
+    Module: 'GLKit.GLKEffectPropertyLight'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'constantAttenuation'
+      JsName: 'constantAttenuation'
+      Module: 'GLKit.GLKEffectPropertyLight'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'constantAttenuation'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f16@0:8'
+    Setter:
+      Name: 'setConstantAttenuation:'
+      JsName: 'setConstantAttenuation'
+      Module: 'GLKit.GLKEffectPropertyLight'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setConstantAttenuation:'
+      Signature:
+      - Type: Void
+      - Type: Float
+      TypeEncoding: 'v20@0:8f16'
+  - Name: 'enabled'
+    JsName: 'enabled'
+    Module: 'GLKit.GLKEffectPropertyLight'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'enabled'
+      JsName: 'enabled'
+      Module: 'GLKit.GLKEffectPropertyLight'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'enabled'
+      Signature:
+      - Type: UChar
+      TypeEncoding: 'C16@0:8'
+    Setter:
+      Name: 'setEnabled:'
+      JsName: 'setEnabled'
+      Module: 'GLKit.GLKEffectPropertyLight'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setEnabled:'
+      Signature:
+      - Type: Void
+      - Type: UChar
+      TypeEncoding: 'v20@0:8C16'
+  - Name: 'linearAttenuation'
+    JsName: 'linearAttenuation'
+    Module: 'GLKit.GLKEffectPropertyLight'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'linearAttenuation'
+      JsName: 'linearAttenuation'
+      Module: 'GLKit.GLKEffectPropertyLight'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'linearAttenuation'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f16@0:8'
+    Setter:
+      Name: 'setLinearAttenuation:'
+      JsName: 'setLinearAttenuation'
+      Module: 'GLKit.GLKEffectPropertyLight'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLinearAttenuation:'
+      Signature:
+      - Type: Void
+      - Type: Float
+      TypeEncoding: 'v20@0:8f16'
+  - Name: 'quadraticAttenuation'
+    JsName: 'quadraticAttenuation'
+    Module: 'GLKit.GLKEffectPropertyLight'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'quadraticAttenuation'
+      JsName: 'quadraticAttenuation'
+      Module: 'GLKit.GLKEffectPropertyLight'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'quadraticAttenuation'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f16@0:8'
+    Setter:
+      Name: 'setQuadraticAttenuation:'
+      JsName: 'setQuadraticAttenuation'
+      Module: 'GLKit.GLKEffectPropertyLight'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setQuadraticAttenuation:'
+      Signature:
+      - Type: Void
+      - Type: Float
+      TypeEncoding: 'v20@0:8f16'
+  - Name: 'spotCutoff'
+    JsName: 'spotCutoff'
+    Module: 'GLKit.GLKEffectPropertyLight'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'spotCutoff'
+      JsName: 'spotCutoff'
+      Module: 'GLKit.GLKEffectPropertyLight'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'spotCutoff'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f16@0:8'
+    Setter:
+      Name: 'setSpotCutoff:'
+      JsName: 'setSpotCutoff'
+      Module: 'GLKit.GLKEffectPropertyLight'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSpotCutoff:'
+      Signature:
+      - Type: Void
+      - Type: Float
+      TypeEncoding: 'v20@0:8f16'
+  - Name: 'spotExponent'
+    JsName: 'spotExponent'
+    Module: 'GLKit.GLKEffectPropertyLight'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'spotExponent'
+      JsName: 'spotExponent'
+      Module: 'GLKit.GLKEffectPropertyLight'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'spotExponent'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f16@0:8'
+    Setter:
+      Name: 'setSpotExponent:'
+      JsName: 'setSpotExponent'
+      Module: 'GLKit.GLKEffectPropertyLight'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSpotExponent:'
+      Signature:
+      - Type: Void
+      - Type: Float
+      TypeEncoding: 'v20@0:8f16'
+  - Name: 'transform'
+    JsName: 'transform'
+    Module: 'GLKit.GLKEffectPropertyLight'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'transform'
+      JsName: 'transform'
+      Module: 'GLKit.GLKEffectPropertyLight'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'transform'
+      Signature:
+      - Type: Interface
+        Module: GLKit.GLKEffectPropertyTransform
+        Name: GLKEffectPropertyTransform
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setTransform:'
+      JsName: 'setTransform'
+      Module: 'GLKit.GLKEffectPropertyLight'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setTransform:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: GLKit.GLKEffectPropertyTransform
+        Name: GLKEffectPropertyTransform
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: GLKit.GLKEffectProperty
+    Name: GLKEffectProperty
+  Type: Interface
+- Name: 'GLKEffectPropertyMaterial'
+  JsName: 'GLKEffectPropertyMaterial'
+  Module: 'GLKit.GLKEffectPropertyMaterial'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'shininess'
+    JsName: 'shininess'
+    Module: 'GLKit.GLKEffectPropertyMaterial'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'shininess'
+      JsName: 'shininess'
+      Module: 'GLKit.GLKEffectPropertyMaterial'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'shininess'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f16@0:8'
+    Setter:
+      Name: 'setShininess:'
+      JsName: 'setShininess'
+      Module: 'GLKit.GLKEffectPropertyMaterial'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShininess:'
+      Signature:
+      - Type: Void
+      - Type: Float
+      TypeEncoding: 'v20@0:8f16'
+  Protocols: []
+  Base:
+    Module: GLKit.GLKEffectProperty
+    Name: GLKEffectProperty
+  Type: Interface
+- Name: 'GLKTextureTarget'
+  JsName: 'GLKTextureTarget'
+  Module: 'GLKit.GLKEffectPropertyTexture'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"GLKTextureTarget2D":3553,"GLKTextureTargetCubeMap":34067,"GLKTextureTargetCt":2})
+- Name: 'GLKTextureEnvMode'
+  JsName: 'GLKTextureEnvMode'
+  Module: 'GLKit.GLKEffectPropertyTexture'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"GLKTextureEnvModeReplace":0,"GLKTextureEnvModeModulate":1,"GLKTextureEnvModeDecal":2})
+- Name: 'GLKEffectPropertyTexture'
+  JsName: 'GLKEffectPropertyTexture'
+  Module: 'GLKit.GLKEffectPropertyTexture'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'enabled'
+    JsName: 'enabled'
+    Module: 'GLKit.GLKEffectPropertyTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'enabled'
+      JsName: 'enabled'
+      Module: 'GLKit.GLKEffectPropertyTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'enabled'
+      Signature:
+      - Type: UChar
+      TypeEncoding: 'C16@0:8'
+    Setter:
+      Name: 'setEnabled:'
+      JsName: 'setEnabled'
+      Module: 'GLKit.GLKEffectPropertyTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setEnabled:'
+      Signature:
+      - Type: Void
+      - Type: UChar
+      TypeEncoding: 'v20@0:8C16'
+  - Name: 'envMode'
+    JsName: 'envMode'
+    Module: 'GLKit.GLKEffectPropertyTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'envMode'
+      JsName: 'envMode'
+      Module: 'GLKit.GLKEffectPropertyTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'envMode'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i16@0:8'
+    Setter:
+      Name: 'setEnvMode:'
+      JsName: 'setEnvMode'
+      Module: 'GLKit.GLKEffectPropertyTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setEnvMode:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v20@0:8i16'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'GLKit.GLKEffectPropertyTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'GLKit.GLKEffectPropertyTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I16@0:8'
+    Setter:
+      Name: 'setName:'
+      JsName: 'setName'
+      Module: 'GLKit.GLKEffectPropertyTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setName:'
+      Signature:
+      - Type: Void
+      - Type: UInt
+      TypeEncoding: 'v20@0:8I16'
+  - Name: 'target'
+    JsName: 'target'
+    Module: 'GLKit.GLKEffectPropertyTexture'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'target'
+      JsName: 'target'
+      Module: 'GLKit.GLKEffectPropertyTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'target'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I16@0:8'
+    Setter:
+      Name: 'setTarget:'
+      JsName: 'setTarget'
+      Module: 'GLKit.GLKEffectPropertyTexture'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setTarget:'
+      Signature:
+      - Type: Void
+      - Type: UInt
+      TypeEncoding: 'v20@0:8I16'
+  Protocols: []
+  Base:
+    Module: GLKit.GLKEffectProperty
+    Name: GLKEffectProperty
+  Type: Interface
+- Name: 'GLKFogMode'
+  JsName: 'GLKFogMode'
+  Module: 'GLKit.GLKEffectPropertyFog'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"GLKFogModeExp":0,"GLKFogModeExp2":1,"GLKFogModeLinear":2})
+- Name: 'GLKEffectPropertyFog'
+  JsName: 'GLKEffectPropertyFog'
+  Module: 'GLKit.GLKEffectPropertyFog'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'density'
+    JsName: 'density'
+    Module: 'GLKit.GLKEffectPropertyFog'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'density'
+      JsName: 'density'
+      Module: 'GLKit.GLKEffectPropertyFog'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'density'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f16@0:8'
+    Setter:
+      Name: 'setDensity:'
+      JsName: 'setDensity'
+      Module: 'GLKit.GLKEffectPropertyFog'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDensity:'
+      Signature:
+      - Type: Void
+      - Type: Float
+      TypeEncoding: 'v20@0:8f16'
+  - Name: 'enabled'
+    JsName: 'enabled'
+    Module: 'GLKit.GLKEffectPropertyFog'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'enabled'
+      JsName: 'enabled'
+      Module: 'GLKit.GLKEffectPropertyFog'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'enabled'
+      Signature:
+      - Type: UChar
+      TypeEncoding: 'C16@0:8'
+    Setter:
+      Name: 'setEnabled:'
+      JsName: 'setEnabled'
+      Module: 'GLKit.GLKEffectPropertyFog'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setEnabled:'
+      Signature:
+      - Type: Void
+      - Type: UChar
+      TypeEncoding: 'v20@0:8C16'
+  - Name: 'end'
+    JsName: 'end'
+    Module: 'GLKit.GLKEffectPropertyFog'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'end'
+      JsName: 'end'
+      Module: 'GLKit.GLKEffectPropertyFog'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'end'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f16@0:8'
+    Setter:
+      Name: 'setEnd:'
+      JsName: 'setEnd'
+      Module: 'GLKit.GLKEffectPropertyFog'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setEnd:'
+      Signature:
+      - Type: Void
+      - Type: Float
+      TypeEncoding: 'v20@0:8f16'
+  - Name: 'mode'
+    JsName: 'mode'
+    Module: 'GLKit.GLKEffectPropertyFog'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'mode'
+      JsName: 'mode'
+      Module: 'GLKit.GLKEffectPropertyFog'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mode'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i16@0:8'
+    Setter:
+      Name: 'setMode:'
+      JsName: 'setMode'
+      Module: 'GLKit.GLKEffectPropertyFog'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMode:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v20@0:8i16'
+  - Name: 'start'
+    JsName: 'start'
+    Module: 'GLKit.GLKEffectPropertyFog'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'start'
+      JsName: 'start'
+      Module: 'GLKit.GLKEffectPropertyFog'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'start'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f16@0:8'
+    Setter:
+      Name: 'setStart:'
+      JsName: 'setStart'
+      Module: 'GLKit.GLKEffectPropertyFog'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setStart:'
+      Signature:
+      - Type: Void
+      - Type: Float
+      TypeEncoding: 'v20@0:8f16'
+  Protocols: []
+  Base:
+    Module: GLKit.GLKEffectProperty
+    Name: GLKEffectProperty
+  Type: Interface
+- Name: 'GLKBaseEffect'
+  JsName: 'GLKBaseEffect'
+  Module: 'GLKit.GLKBaseEffect'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'colorMaterialEnabled'
+    JsName: 'colorMaterialEnabled'
+    Module: 'GLKit.GLKBaseEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'colorMaterialEnabled'
+      JsName: 'colorMaterialEnabled'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'colorMaterialEnabled'
+      Signature:
+      - Type: UChar
+      TypeEncoding: 'C16@0:8'
+    Setter:
+      Name: 'setColorMaterialEnabled:'
+      JsName: 'setColorMaterialEnabled'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setColorMaterialEnabled:'
+      Signature:
+      - Type: Void
+      - Type: UChar
+      TypeEncoding: 'v20@0:8C16'
+  - Name: 'fog'
+    JsName: 'fog'
+    Module: 'GLKit.GLKBaseEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'fog'
+      JsName: 'fog'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'fog'
+      Signature:
+      - Type: Interface
+        Module: GLKit.GLKEffectPropertyFog
+        Name: GLKEffectPropertyFog
+      TypeEncoding: '@16@0:8'
+  - Name: 'label'
+    JsName: 'label'
+    Module: 'GLKit.GLKBaseEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'label'
+      JsName: 'label'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'label'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setLabel:'
+      JsName: 'setLabel'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLabel:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'light0'
+    JsName: 'light0'
+    Module: 'GLKit.GLKBaseEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'light0'
+      JsName: 'light0'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'light0'
+      Signature:
+      - Type: Interface
+        Module: GLKit.GLKEffectPropertyLight
+        Name: GLKEffectPropertyLight
+      TypeEncoding: '@16@0:8'
+  - Name: 'light1'
+    JsName: 'light1'
+    Module: 'GLKit.GLKBaseEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'light1'
+      JsName: 'light1'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'light1'
+      Signature:
+      - Type: Interface
+        Module: GLKit.GLKEffectPropertyLight
+        Name: GLKEffectPropertyLight
+      TypeEncoding: '@16@0:8'
+  - Name: 'light2'
+    JsName: 'light2'
+    Module: 'GLKit.GLKBaseEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'light2'
+      JsName: 'light2'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'light2'
+      Signature:
+      - Type: Interface
+        Module: GLKit.GLKEffectPropertyLight
+        Name: GLKEffectPropertyLight
+      TypeEncoding: '@16@0:8'
+  - Name: 'lightingType'
+    JsName: 'lightingType'
+    Module: 'GLKit.GLKBaseEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'lightingType'
+      JsName: 'lightingType'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lightingType'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i16@0:8'
+    Setter:
+      Name: 'setLightingType:'
+      JsName: 'setLightingType'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLightingType:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v20@0:8i16'
+  - Name: 'lightModelTwoSided'
+    JsName: 'lightModelTwoSided'
+    Module: 'GLKit.GLKBaseEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'lightModelTwoSided'
+      JsName: 'lightModelTwoSided'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lightModelTwoSided'
+      Signature:
+      - Type: UChar
+      TypeEncoding: 'C16@0:8'
+    Setter:
+      Name: 'setLightModelTwoSided:'
+      JsName: 'setLightModelTwoSided'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLightModelTwoSided:'
+      Signature:
+      - Type: Void
+      - Type: UChar
+      TypeEncoding: 'v20@0:8C16'
+  - Name: 'material'
+    JsName: 'material'
+    Module: 'GLKit.GLKBaseEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'material'
+      JsName: 'material'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'material'
+      Signature:
+      - Type: Interface
+        Module: GLKit.GLKEffectPropertyMaterial
+        Name: GLKEffectPropertyMaterial
+      TypeEncoding: '@16@0:8'
+  - Name: 'texture2d0'
+    JsName: 'texture2d0'
+    Module: 'GLKit.GLKBaseEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'texture2d0'
+      JsName: 'texture2d0'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'texture2d0'
+      Signature:
+      - Type: Interface
+        Module: GLKit.GLKEffectPropertyTexture
+        Name: GLKEffectPropertyTexture
+      TypeEncoding: '@16@0:8'
+  - Name: 'texture2d1'
+    JsName: 'texture2d1'
+    Module: 'GLKit.GLKBaseEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'texture2d1'
+      JsName: 'texture2d1'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'texture2d1'
+      Signature:
+      - Type: Interface
+        Module: GLKit.GLKEffectPropertyTexture
+        Name: GLKEffectPropertyTexture
+      TypeEncoding: '@16@0:8'
+  - Name: 'textureOrder'
+    JsName: 'textureOrder'
+    Module: 'GLKit.GLKBaseEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'textureOrder'
+      JsName: 'textureOrder'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'textureOrder'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setTextureOrder:'
+      JsName: 'setTextureOrder'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setTextureOrder:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'transform'
+    JsName: 'transform'
+    Module: 'GLKit.GLKBaseEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'transform'
+      JsName: 'transform'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'transform'
+      Signature:
+      - Type: Interface
+        Module: GLKit.GLKEffectPropertyTransform
+        Name: GLKEffectPropertyTransform
+      TypeEncoding: '@16@0:8'
+  - Name: 'useConstantColor'
+    JsName: 'useConstantColor'
+    Module: 'GLKit.GLKBaseEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'useConstantColor'
+      JsName: 'useConstantColor'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'useConstantColor'
+      Signature:
+      - Type: UChar
+      TypeEncoding: 'C16@0:8'
+    Setter:
+      Name: 'setUseConstantColor:'
+      JsName: 'setUseConstantColor'
+      Module: 'GLKit.GLKBaseEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setUseConstantColor:'
+      Signature:
+      - Type: Void
+      - Type: UChar
+      TypeEncoding: 'v20@0:8C16'
+  Protocols:
+  - Module: GLKit.GLKNamedEffect
+    Name: GLKNamedEffect
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'GLKReflectionMapEffect'
+  JsName: 'GLKReflectionMapEffect'
+  Module: 'GLKit.GLKReflectionMapEffect'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'textureCubeMap'
+    JsName: 'textureCubeMap'
+    Module: 'GLKit.GLKReflectionMapEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'textureCubeMap'
+      JsName: 'textureCubeMap'
+      Module: 'GLKit.GLKReflectionMapEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'textureCubeMap'
+      Signature:
+      - Type: Interface
+        Module: GLKit.GLKEffectPropertyTexture
+        Name: GLKEffectPropertyTexture
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: GLKit.GLKNamedEffect
+    Name: GLKNamedEffect
+  Base:
+    Module: GLKit.GLKBaseEffect
+    Name: GLKBaseEffect
+  Type: Interface
+- Name: 'GLKSkyboxEffect'
+  JsName: 'GLKSkyboxEffect'
+  Module: 'GLKit.GLKSkyboxEffect'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'draw'
+    JsName: 'draw'
+    Module: 'GLKit.GLKSkyboxEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'draw'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods: []
+  Properties:
+  - Name: 'label'
+    JsName: 'label'
+    Module: 'GLKit.GLKSkyboxEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'label'
+      JsName: 'label'
+      Module: 'GLKit.GLKSkyboxEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'label'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setLabel:'
+      JsName: 'setLabel'
+      Module: 'GLKit.GLKSkyboxEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLabel:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'textureCubeMap'
+    JsName: 'textureCubeMap'
+    Module: 'GLKit.GLKSkyboxEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'textureCubeMap'
+      JsName: 'textureCubeMap'
+      Module: 'GLKit.GLKSkyboxEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'textureCubeMap'
+      Signature:
+      - Type: Interface
+        Module: GLKit.GLKEffectPropertyTexture
+        Name: GLKEffectPropertyTexture
+      TypeEncoding: '@16@0:8'
+  - Name: 'transform'
+    JsName: 'transform'
+    Module: 'GLKit.GLKSkyboxEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'transform'
+      JsName: 'transform'
+      Module: 'GLKit.GLKSkyboxEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'transform'
+      Signature:
+      - Type: Interface
+        Module: GLKit.GLKEffectPropertyTransform
+        Name: GLKEffectPropertyTransform
+      TypeEncoding: '@16@0:8'
+  - Name: 'xSize'
+    JsName: 'xSize'
+    Module: 'GLKit.GLKSkyboxEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'xSize'
+      JsName: 'xSize'
+      Module: 'GLKit.GLKSkyboxEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'xSize'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f16@0:8'
+    Setter:
+      Name: 'setXSize:'
+      JsName: 'setXSize'
+      Module: 'GLKit.GLKSkyboxEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setXSize:'
+      Signature:
+      - Type: Void
+      - Type: Float
+      TypeEncoding: 'v20@0:8f16'
+  - Name: 'ySize'
+    JsName: 'ySize'
+    Module: 'GLKit.GLKSkyboxEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'ySize'
+      JsName: 'ySize'
+      Module: 'GLKit.GLKSkyboxEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'ySize'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f16@0:8'
+    Setter:
+      Name: 'setYSize:'
+      JsName: 'setYSize'
+      Module: 'GLKit.GLKSkyboxEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setYSize:'
+      Signature:
+      - Type: Void
+      - Type: Float
+      TypeEncoding: 'v20@0:8f16'
+  - Name: 'zSize'
+    JsName: 'zSize'
+    Module: 'GLKit.GLKSkyboxEffect'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'zSize'
+      JsName: 'zSize'
+      Module: 'GLKit.GLKSkyboxEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'zSize'
+      Signature:
+      - Type: Float
+      TypeEncoding: 'f16@0:8'
+    Setter:
+      Name: 'setZSize:'
+      JsName: 'setZSize'
+      Module: 'GLKit.GLKSkyboxEffect'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setZSize:'
+      Signature:
+      - Type: Void
+      - Type: Float
+      TypeEncoding: 'v20@0:8f16'
+  Protocols:
+  - Module: GLKit.GLKNamedEffect
+    Name: GLKNamedEffect
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'GLKVertexAttrib'
+  JsName: 'GLKVertexAttrib'
+  Module: 'GLKit.GLKEffects'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"GLKVertexAttribPosition":0,"GLKVertexAttribNormal":1,"GLKVertexAttribColor":2,"GLKVertexAttribTexCoord0":3,"GLKVertexAttribTexCoord1":4})
+- Name: 'GLKTextureLoaderApplyPremultiplication'
+  JsName: 'GLKTextureLoaderApplyPremultiplication'
+  Module: 'GLKit.GLKTextureLoader'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'GLKTextureLoaderGenerateMipmaps'
+  JsName: 'GLKTextureLoaderGenerateMipmaps'
+  Module: 'GLKit.GLKTextureLoader'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'GLKTextureLoaderOriginBottomLeft'
+  JsName: 'GLKTextureLoaderOriginBottomLeft'
+  Module: 'GLKit.GLKTextureLoader'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'GLKTextureLoaderGrayscaleAsAlpha'
+  JsName: 'GLKTextureLoaderGrayscaleAsAlpha'
+  Module: 'GLKit.GLKTextureLoader'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'GLKTextureLoaderSRGB'
+  JsName: 'GLKTextureLoaderSRGB'
+  Module: 'GLKit.GLKTextureLoader'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'GLKTextureLoaderErrorDomain'
+  JsName: 'GLKTextureLoaderErrorDomain'
+  Module: 'GLKit.GLKTextureLoader'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'GLKTextureLoaderErrorKey'
+  JsName: 'GLKTextureLoaderErrorKey'
+  Module: 'GLKit.GLKTextureLoader'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'GLKTextureLoaderGLErrorKey'
+  JsName: 'GLKTextureLoaderGLErrorKey'
+  Module: 'GLKit.GLKTextureLoader'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'GLKTextureLoaderError'
+  JsName: 'GLKTextureLoaderError'
+  Module: 'GLKit.GLKTextureLoader'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"GLKTextureLoaderErrorFileOrURLNotFound":0,"GLKTextureLoaderErrorInvalidNSData":1,"GLKTextureLoaderErrorInvalidCGImage":2,"GLKTextureLoaderErrorUnknownPathType":3,"GLKTextureLoaderErrorUnknownFileType":4,"GLKTextureLoaderErrorPVRAtlasUnsupported":5,"GLKTextureLoaderErrorCubeMapInvalidNumFiles":6,"GLKTextureLoaderErrorCompressedTextureUpload":7,"GLKTextureLoaderErrorUncompressedTextureUpload":8,"GLKTextureLoaderErrorUnsupportedCubeMapDimensions":9,"GLKTextureLoaderErrorUnsupportedBitDepth":10,"GLKTextureLoaderErrorUnsupportedPVRFormat":11,"GLKTextureLoaderErrorDataPreprocessingFailure":12,"GLKTextureLoaderErrorMipmapUnsupported":13,"GLKTextureLoaderErrorUnsupportedOrientation":14,"GLKTextureLoaderErrorReorientationFailure":15,"GLKTextureLoaderErrorAlphaPremultiplicationFailure":16,"GLKTextureLoaderErrorInvalidEAGLContext":17,"GLKTextureLoaderErrorIncompatibleFormatSRGB":18})
+- Name: 'GLKTextureInfoAlphaState'
+  JsName: 'GLKTextureInfoAlphaState'
+  Module: 'GLKit.GLKTextureLoader'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"GLKTextureInfoAlphaStateNone":0,"GLKTextureInfoAlphaStateNonPremultiplied":1,"GLKTextureInfoAlphaStatePremultiplied":2})
+- Name: 'GLKTextureInfoOrigin'
+  JsName: 'GLKTextureInfoOrigin'
+  Module: 'GLKit.GLKTextureLoader'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"GLKTextureInfoOriginUnknown":0,"GLKTextureInfoOriginTopLeft":1,"GLKTextureInfoOriginBottomLeft":2})
+- Name: 'GLKTextureInfo'
+  JsName: 'GLKTextureInfo'
+  Module: 'GLKit.GLKTextureLoader'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'alphaState'
+    JsName: 'alphaState'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'alphaState'
+      JsName: 'alphaState'
+      Module: 'GLKit.GLKTextureLoader'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'alphaState'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i16@0:8'
+  - Name: 'containsMipmaps'
+    JsName: 'containsMipmaps'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'containsMipmaps'
+      JsName: 'containsMipmaps'
+      Module: 'GLKit.GLKTextureLoader'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'containsMipmaps'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'height'
+    JsName: 'height'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'height'
+      JsName: 'height'
+      Module: 'GLKit.GLKTextureLoader'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'height'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I16@0:8'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'GLKit.GLKTextureLoader'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I16@0:8'
+  - Name: 'target'
+    JsName: 'target'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'target'
+      JsName: 'target'
+      Module: 'GLKit.GLKTextureLoader'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'target'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I16@0:8'
+  - Name: 'textureOrigin'
+    JsName: 'textureOrigin'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'textureOrigin'
+      JsName: 'textureOrigin'
+      Module: 'GLKit.GLKTextureLoader'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'textureOrigin'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i16@0:8'
+  - Name: 'width'
+    JsName: 'width'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'width'
+      JsName: 'width'
+      Module: 'GLKit.GLKTextureLoader'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'width'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'I16@0:8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'GLKTextureLoader'
+  JsName: 'GLKTextureLoader'
+  Module: 'GLKit.GLKTextureLoader'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'cubeMapWithContentsOfFile:options:queue:completionHandler:'
+    JsName: 'cubeMapWithContentsOfFileOptionsQueueCompletionHandler'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cubeMapWithContentsOfFile:options:queue:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: GLKit.GLKTextureLoader
+        Name: GLKTextureInfo
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v48@0:8@16@24@32@?40'
+  - Name: 'cubeMapWithContentsOfFiles:options:queue:completionHandler:'
+    JsName: 'cubeMapWithContentsOfFilesOptionsQueueCompletionHandler'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cubeMapWithContentsOfFiles:options:queue:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: GLKit.GLKTextureLoader
+        Name: GLKTextureInfo
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v48@0:8@16@24@32@?40'
+  - Name: 'cubeMapWithContentsOfURL:options:queue:completionHandler:'
+    JsName: 'cubeMapWithContentsOfURLOptionsQueueCompletionHandler'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cubeMapWithContentsOfURL:options:queue:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: GLKit.GLKTextureLoader
+        Name: GLKTextureInfo
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v48@0:8@16@24@32@?40'
+  - Name: 'initWithSharegroup:'
+    JsName: 'initWithSharegroup'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithSharegroup:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: OpenGLES.EAGL
+      Name: EAGLSharegroup
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'textureWithCGImage:options:queue:completionHandler:'
+    JsName: 'textureWithCGImageOptionsQueueCompletionHandler'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'textureWithCGImage:options:queue:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: GLKit.GLKTextureLoader
+        Name: GLKTextureInfo
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v48@0:8^{CGImage=}16@24@32@?40'
+  - Name: 'textureWithContentsOfData:options:queue:completionHandler:'
+    JsName: 'textureWithContentsOfDataOptionsQueueCompletionHandler'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'textureWithContentsOfData:options:queue:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: GLKit.GLKTextureLoader
+        Name: GLKTextureInfo
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v48@0:8@16@24@32@?40'
+  - Name: 'textureWithContentsOfFile:options:queue:completionHandler:'
+    JsName: 'textureWithContentsOfFileOptionsQueueCompletionHandler'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'textureWithContentsOfFile:options:queue:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: GLKit.GLKTextureLoader
+        Name: GLKTextureInfo
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v48@0:8@16@24@32@?40'
+  - Name: 'textureWithContentsOfURL:options:queue:completionHandler:'
+    JsName: 'textureWithContentsOfURLOptionsQueueCompletionHandler'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'textureWithContentsOfURL:options:queue:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: GLKit.GLKTextureLoader
+        Name: GLKTextureInfo
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v48@0:8@16@24@32@?40'
+  StaticMethods:
+  - Name: 'cubeMapWithContentsOfFile:options:error:'
+    JsName: 'cubeMapWithContentsOfFileOptionsError'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cubeMapWithContentsOfFile:options:error:'
+    Signature:
+    - Type: Interface
+      Module: GLKit.GLKTextureLoader
+      Name: GLKTextureInfo
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@40@0:8@16@24^@32'
+  - Name: 'cubeMapWithContentsOfFiles:options:error:'
+    JsName: 'cubeMapWithContentsOfFilesOptionsError'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cubeMapWithContentsOfFiles:options:error:'
+    Signature:
+    - Type: Interface
+      Module: GLKit.GLKTextureLoader
+      Name: GLKTextureInfo
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@40@0:8@16@24^@32'
+  - Name: 'cubeMapWithContentsOfURL:options:error:'
+    JsName: 'cubeMapWithContentsOfURLOptionsError'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cubeMapWithContentsOfURL:options:error:'
+    Signature:
+    - Type: Interface
+      Module: GLKit.GLKTextureLoader
+      Name: GLKTextureInfo
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@40@0:8@16@24^@32'
+  - Name: 'textureWithCGImage:options:error:'
+    JsName: 'textureWithCGImageOptionsError'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'textureWithCGImage:options:error:'
+    Signature:
+    - Type: Interface
+      Module: GLKit.GLKTextureLoader
+      Name: GLKTextureInfo
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@40@0:8^{CGImage=}16@24^@32'
+  - Name: 'textureWithContentsOfData:options:error:'
+    JsName: 'textureWithContentsOfDataOptionsError'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'textureWithContentsOfData:options:error:'
+    Signature:
+    - Type: Interface
+      Module: GLKit.GLKTextureLoader
+      Name: GLKTextureInfo
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@40@0:8@16@24^@32'
+  - Name: 'textureWithContentsOfFile:options:error:'
+    JsName: 'textureWithContentsOfFileOptionsError'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'textureWithContentsOfFile:options:error:'
+    Signature:
+    - Type: Interface
+      Module: GLKit.GLKTextureLoader
+      Name: GLKTextureInfo
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@40@0:8@16@24^@32'
+  - Name: 'textureWithContentsOfURL:options:error:'
+    JsName: 'textureWithContentsOfURLOptionsError'
+    Module: 'GLKit.GLKTextureLoader'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'textureWithContentsOfURL:options:error:'
+    Signature:
+    - Type: Interface
+      Module: GLKit.GLKTextureLoader
+      Name: GLKTextureInfo
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: '@40@0:8@16@24^@32'
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+...

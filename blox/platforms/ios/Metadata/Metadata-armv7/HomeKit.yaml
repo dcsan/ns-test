@@ -1,0 +1,3753 @@
+name: HomeKit
+items:
+- Name: 'HMHomeManager'
+  JsName: 'HMHomeManager'
+  Module: 'HomeKit.HMHomeManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addHomeWithName:completionHandler:'
+    JsName: 'addHomeWithNameCompletionHandler'
+    Module: 'HomeKit.HMHomeManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addHomeWithName:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: HomeKit.HMHome
+        Name: HMHome
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'removeHome:completionHandler:'
+    JsName: 'removeHomeCompletionHandler'
+    Module: 'HomeKit.HMHomeManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeHome:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'updatePrimaryHome:completionHandler:'
+    JsName: 'updatePrimaryHomeCompletionHandler'
+    Module: 'HomeKit.HMHomeManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'updatePrimaryHome:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  StaticMethods: []
+  Properties:
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'HomeKit.HMHomeManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'HomeKit.HMHomeManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: HomeKit.HMHomeManager
+          Name: HMHomeManagerDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'HomeKit.HMHomeManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: HomeKit.HMHomeManager
+          Name: HMHomeManagerDelegate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'homes'
+    JsName: 'homes'
+    Module: 'HomeKit.HMHomeManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'homes'
+      JsName: 'homes'
+      Module: 'HomeKit.HMHomeManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'homes'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'primaryHome'
+    JsName: 'primaryHome'
+    Module: 'HomeKit.HMHomeManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'primaryHome'
+      JsName: 'primaryHome'
+      Module: 'HomeKit.HMHomeManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'primaryHome'
+      Signature:
+      - Type: Interface
+        Module: HomeKit.HMHome
+        Name: HMHome
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HMHomeManagerDelegate'
+  JsName: 'HMHomeManagerDelegate'
+  Module: 'HomeKit.HMHomeManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'homeManager:didAddHome:'
+    JsName: 'homeManagerDidAddHome'
+    Module: 'HomeKit.HMHomeManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'homeManager:didAddHome:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHomeManager
+      Name: HMHomeManager
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'homeManager:didRemoveHome:'
+    JsName: 'homeManagerDidRemoveHome'
+    Module: 'HomeKit.HMHomeManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'homeManager:didRemoveHome:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHomeManager
+      Name: HMHomeManager
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'homeManagerDidUpdateHomes:'
+    JsName: 'homeManagerDidUpdateHomes'
+    Module: 'HomeKit.HMHomeManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'homeManagerDidUpdateHomes:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHomeManager
+      Name: HMHomeManager
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'homeManagerDidUpdatePrimaryHome:'
+    JsName: 'homeManagerDidUpdatePrimaryHome'
+    Module: 'HomeKit.HMHomeManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'homeManagerDidUpdatePrimaryHome:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHomeManager
+      Name: HMHomeManager
+    TypeEncoding: 'v12@0:4@8'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'HMAccessoryBrowser'
+  JsName: 'HMAccessoryBrowser'
+  Module: 'HomeKit.HMAccessoryBrowser'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'startSearchingForNewAccessories'
+    JsName: 'startSearchingForNewAccessories'
+    Module: 'HomeKit.HMAccessoryBrowser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startSearchingForNewAccessories'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'stopSearchingForNewAccessories'
+    JsName: 'stopSearchingForNewAccessories'
+    Module: 'HomeKit.HMAccessoryBrowser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopSearchingForNewAccessories'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  StaticMethods: []
+  Properties:
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'HomeKit.HMAccessoryBrowser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'HomeKit.HMAccessoryBrowser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: HomeKit.HMAccessoryBrowser
+          Name: HMAccessoryBrowserDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'HomeKit.HMAccessoryBrowser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: HomeKit.HMAccessoryBrowser
+          Name: HMAccessoryBrowserDelegate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'discoveredAccessories'
+    JsName: 'discoveredAccessories'
+    Module: 'HomeKit.HMAccessoryBrowser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'discoveredAccessories'
+      JsName: 'discoveredAccessories'
+      Module: 'HomeKit.HMAccessoryBrowser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'discoveredAccessories'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HMAccessoryBrowserDelegate'
+  JsName: 'HMAccessoryBrowserDelegate'
+  Module: 'HomeKit.HMAccessoryBrowser'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'accessoryBrowser:didFindNewAccessory:'
+    JsName: 'accessoryBrowserDidFindNewAccessory'
+    Module: 'HomeKit.HMAccessoryBrowser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'accessoryBrowser:didFindNewAccessory:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMAccessoryBrowser
+      Name: HMAccessoryBrowser
+    - Type: Interface
+      Module: HomeKit.HMAccessory
+      Name: HMAccessory
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'accessoryBrowser:didRemoveNewAccessory:'
+    JsName: 'accessoryBrowserDidRemoveNewAccessory'
+    Module: 'HomeKit.HMAccessoryBrowser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'accessoryBrowser:didRemoveNewAccessory:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMAccessoryBrowser
+      Name: HMAccessoryBrowser
+    - Type: Interface
+      Module: HomeKit.HMAccessory
+      Name: HMAccessory
+    TypeEncoding: 'v16@0:4@8@12'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'HMHome'
+  JsName: 'HMHome'
+  Module: 'HomeKit.HMHome'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addAccessory:completionHandler:'
+    JsName: 'addAccessoryCompletionHandler'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addAccessory:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMAccessory
+      Name: HMAccessory
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'addActionSetWithName:completionHandler:'
+    JsName: 'addActionSetWithNameCompletionHandler'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addActionSetWithName:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: HomeKit.HMActionSet
+        Name: HMActionSet
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'addRoomWithName:completionHandler:'
+    JsName: 'addRoomWithNameCompletionHandler'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addRoomWithName:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: HomeKit.HMRoom
+        Name: HMRoom
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'addServiceGroupWithName:completionHandler:'
+    JsName: 'addServiceGroupWithNameCompletionHandler'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addServiceGroupWithName:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: HomeKit.HMServiceGroup
+        Name: HMServiceGroup
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'addTrigger:completionHandler:'
+    JsName: 'addTriggerCompletionHandler'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addTrigger:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMTrigger
+      Name: HMTrigger
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'addUserWithCompletionHandler:'
+    JsName: 'addUserWithCompletionHandler'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addUserWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: HomeKit.HMUser
+        Name: HMUser
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v12@0:4@?8'
+  - Name: 'addZoneWithName:completionHandler:'
+    JsName: 'addZoneWithNameCompletionHandler'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addZoneWithName:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: HomeKit.HMZone
+        Name: HMZone
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'assignAccessory:toRoom:completionHandler:'
+    JsName: 'assignAccessoryToRoomCompletionHandler'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'assignAccessory:toRoom:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMAccessory
+      Name: HMAccessory
+    - Type: Interface
+      Module: HomeKit.HMRoom
+      Name: HMRoom
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@?16'
+  - Name: 'executeActionSet:completionHandler:'
+    JsName: 'executeActionSetCompletionHandler'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'executeActionSet:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMActionSet
+      Name: HMActionSet
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'removeAccessory:completionHandler:'
+    JsName: 'removeAccessoryCompletionHandler'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeAccessory:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMAccessory
+      Name: HMAccessory
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'removeActionSet:completionHandler:'
+    JsName: 'removeActionSetCompletionHandler'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeActionSet:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMActionSet
+      Name: HMActionSet
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'removeRoom:completionHandler:'
+    JsName: 'removeRoomCompletionHandler'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeRoom:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMRoom
+      Name: HMRoom
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'removeServiceGroup:completionHandler:'
+    JsName: 'removeServiceGroupCompletionHandler'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeServiceGroup:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMServiceGroup
+      Name: HMServiceGroup
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'removeTrigger:completionHandler:'
+    JsName: 'removeTriggerCompletionHandler'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeTrigger:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMTrigger
+      Name: HMTrigger
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'removeUser:completionHandler:'
+    JsName: 'removeUserCompletionHandler'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeUser:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMUser
+      Name: HMUser
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'removeZone:completionHandler:'
+    JsName: 'removeZoneCompletionHandler'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeZone:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMZone
+      Name: HMZone
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'roomForEntireHome'
+    JsName: 'roomForEntireHome'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'roomForEntireHome'
+    Signature:
+    - Type: Interface
+      Module: HomeKit.HMRoom
+      Name: HMRoom
+    TypeEncoding: '@8@0:4'
+  - Name: 'servicesWithTypes:'
+    JsName: 'servicesWithTypes'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'servicesWithTypes:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@12@0:4@8'
+  - Name: 'unblockAccessory:completionHandler:'
+    JsName: 'unblockAccessoryCompletionHandler'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'unblockAccessory:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMAccessory
+      Name: HMAccessory
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'updateName:completionHandler:'
+    JsName: 'updateNameCompletionHandler'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'updateName:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  StaticMethods: []
+  Properties:
+  - Name: 'accessories'
+    JsName: 'accessories'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'accessories'
+      JsName: 'accessories'
+      Module: 'HomeKit.HMHome'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'accessories'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'actionSets'
+    JsName: 'actionSets'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'actionSets'
+      JsName: 'actionSets'
+      Module: 'HomeKit.HMHome'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'actionSets'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'HomeKit.HMHome'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: HomeKit.HMHome
+          Name: HMHomeDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'HomeKit.HMHome'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: HomeKit.HMHome
+          Name: HMHomeDelegate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'HomeKit.HMHome'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'primary'
+    JsName: 'primary'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isPrimary'
+      JsName: 'isPrimary'
+      Module: 'HomeKit.HMHome'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isPrimary'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'rooms'
+    JsName: 'rooms'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'rooms'
+      JsName: 'rooms'
+      Module: 'HomeKit.HMHome'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rooms'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'serviceGroups'
+    JsName: 'serviceGroups'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'serviceGroups'
+      JsName: 'serviceGroups'
+      Module: 'HomeKit.HMHome'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'serviceGroups'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'triggers'
+    JsName: 'triggers'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'triggers'
+      JsName: 'triggers'
+      Module: 'HomeKit.HMHome'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'triggers'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'users'
+    JsName: 'users'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'users'
+      JsName: 'users'
+      Module: 'HomeKit.HMHome'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'users'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'zones'
+    JsName: 'zones'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'zones'
+      JsName: 'zones'
+      Module: 'HomeKit.HMHome'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'zones'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HMHomeDelegate'
+  JsName: 'HMHomeDelegate'
+  Module: 'HomeKit.HMHome'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'home:didAddAccessory:'
+    JsName: 'homeDidAddAccessory'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didAddAccessory:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMAccessory
+      Name: HMAccessory
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didAddActionSet:'
+    JsName: 'homeDidAddActionSet'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didAddActionSet:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMActionSet
+      Name: HMActionSet
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didAddRoom:'
+    JsName: 'homeDidAddRoom'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didAddRoom:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMRoom
+      Name: HMRoom
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didAddRoom:toZone:'
+    JsName: 'homeDidAddRoomToZone'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didAddRoom:toZone:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMRoom
+      Name: HMRoom
+    - Type: Interface
+      Module: HomeKit.HMZone
+      Name: HMZone
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'home:didAddServiceGroup:'
+    JsName: 'homeDidAddServiceGroup'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didAddServiceGroup:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMServiceGroup
+      Name: HMServiceGroup
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didAddService:toServiceGroup:'
+    JsName: 'homeDidAddServiceToServiceGroup'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didAddService:toServiceGroup:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMService
+      Name: HMService
+    - Type: Interface
+      Module: HomeKit.HMServiceGroup
+      Name: HMServiceGroup
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'home:didAddTrigger:'
+    JsName: 'homeDidAddTrigger'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didAddTrigger:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMTrigger
+      Name: HMTrigger
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didAddUser:'
+    JsName: 'homeDidAddUser'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didAddUser:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMUser
+      Name: HMUser
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didAddZone:'
+    JsName: 'homeDidAddZone'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didAddZone:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMZone
+      Name: HMZone
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didEncounterError:forAccessory:'
+    JsName: 'homeDidEncounterErrorForAccessory'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didEncounterError:forAccessory:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    - Type: Interface
+      Module: HomeKit.HMAccessory
+      Name: HMAccessory
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'home:didRemoveAccessory:'
+    JsName: 'homeDidRemoveAccessory'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didRemoveAccessory:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMAccessory
+      Name: HMAccessory
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didRemoveActionSet:'
+    JsName: 'homeDidRemoveActionSet'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didRemoveActionSet:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMActionSet
+      Name: HMActionSet
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didRemoveRoom:'
+    JsName: 'homeDidRemoveRoom'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didRemoveRoom:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMRoom
+      Name: HMRoom
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didRemoveRoom:fromZone:'
+    JsName: 'homeDidRemoveRoomFromZone'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didRemoveRoom:fromZone:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMRoom
+      Name: HMRoom
+    - Type: Interface
+      Module: HomeKit.HMZone
+      Name: HMZone
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'home:didRemoveService:fromServiceGroup:'
+    JsName: 'homeDidRemoveServiceFromServiceGroup'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didRemoveService:fromServiceGroup:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMService
+      Name: HMService
+    - Type: Interface
+      Module: HomeKit.HMServiceGroup
+      Name: HMServiceGroup
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'home:didRemoveServiceGroup:'
+    JsName: 'homeDidRemoveServiceGroup'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didRemoveServiceGroup:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMServiceGroup
+      Name: HMServiceGroup
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didRemoveTrigger:'
+    JsName: 'homeDidRemoveTrigger'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didRemoveTrigger:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMTrigger
+      Name: HMTrigger
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didRemoveUser:'
+    JsName: 'homeDidRemoveUser'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didRemoveUser:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMUser
+      Name: HMUser
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didRemoveZone:'
+    JsName: 'homeDidRemoveZone'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didRemoveZone:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMZone
+      Name: HMZone
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didUnblockAccessory:'
+    JsName: 'homeDidUnblockAccessory'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didUnblockAccessory:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMAccessory
+      Name: HMAccessory
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didUpdateActionsForActionSet:'
+    JsName: 'homeDidUpdateActionsForActionSet'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didUpdateActionsForActionSet:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMActionSet
+      Name: HMActionSet
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'homeDidUpdateName:'
+    JsName: 'homeDidUpdateName'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'homeDidUpdateName:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'home:didUpdateNameForActionSet:'
+    JsName: 'homeDidUpdateNameForActionSet'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didUpdateNameForActionSet:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMActionSet
+      Name: HMActionSet
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didUpdateNameForRoom:'
+    JsName: 'homeDidUpdateNameForRoom'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didUpdateNameForRoom:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMRoom
+      Name: HMRoom
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didUpdateNameForServiceGroup:'
+    JsName: 'homeDidUpdateNameForServiceGroup'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didUpdateNameForServiceGroup:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMServiceGroup
+      Name: HMServiceGroup
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didUpdateNameForTrigger:'
+    JsName: 'homeDidUpdateNameForTrigger'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didUpdateNameForTrigger:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMTrigger
+      Name: HMTrigger
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didUpdateNameForZone:'
+    JsName: 'homeDidUpdateNameForZone'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didUpdateNameForZone:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMZone
+      Name: HMZone
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'home:didUpdateRoom:forAccessory:'
+    JsName: 'homeDidUpdateRoomForAccessory'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didUpdateRoom:forAccessory:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMRoom
+      Name: HMRoom
+    - Type: Interface
+      Module: HomeKit.HMAccessory
+      Name: HMAccessory
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'home:didUpdateTrigger:'
+    JsName: 'homeDidUpdateTrigger'
+    Module: 'HomeKit.HMHome'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'home:didUpdateTrigger:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMHome
+      Name: HMHome
+    - Type: Interface
+      Module: HomeKit.HMTrigger
+      Name: HMTrigger
+    TypeEncoding: 'v16@0:4@8@12'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'HMUserFailedAccessoriesKey'
+  JsName: 'HMUserFailedAccessoriesKey'
+  Module: 'HomeKit.HMHome'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMRoom'
+  JsName: 'HMRoom'
+  Module: 'HomeKit.HMRoom'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'updateName:completionHandler:'
+    JsName: 'updateNameCompletionHandler'
+    Module: 'HomeKit.HMRoom'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'updateName:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  StaticMethods: []
+  Properties:
+  - Name: 'accessories'
+    JsName: 'accessories'
+    Module: 'HomeKit.HMRoom'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'accessories'
+      JsName: 'accessories'
+      Module: 'HomeKit.HMRoom'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'accessories'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'HomeKit.HMRoom'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'HomeKit.HMRoom'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HMZone'
+  JsName: 'HMZone'
+  Module: 'HomeKit.HMZone'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addRoom:completionHandler:'
+    JsName: 'addRoomCompletionHandler'
+    Module: 'HomeKit.HMZone'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addRoom:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMRoom
+      Name: HMRoom
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'removeRoom:completionHandler:'
+    JsName: 'removeRoomCompletionHandler'
+    Module: 'HomeKit.HMZone'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeRoom:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMRoom
+      Name: HMRoom
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'updateName:completionHandler:'
+    JsName: 'updateNameCompletionHandler'
+    Module: 'HomeKit.HMZone'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'updateName:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  StaticMethods: []
+  Properties:
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'HomeKit.HMZone'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'HomeKit.HMZone'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'rooms'
+    JsName: 'rooms'
+    Module: 'HomeKit.HMZone'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'rooms'
+      JsName: 'rooms'
+      Module: 'HomeKit.HMZone'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rooms'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HMServiceGroup'
+  JsName: 'HMServiceGroup'
+  Module: 'HomeKit.HMServiceGroup'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addService:completionHandler:'
+    JsName: 'addServiceCompletionHandler'
+    Module: 'HomeKit.HMServiceGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addService:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMService
+      Name: HMService
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'removeService:completionHandler:'
+    JsName: 'removeServiceCompletionHandler'
+    Module: 'HomeKit.HMServiceGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeService:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMService
+      Name: HMService
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'updateName:completionHandler:'
+    JsName: 'updateNameCompletionHandler'
+    Module: 'HomeKit.HMServiceGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'updateName:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  StaticMethods: []
+  Properties:
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'HomeKit.HMServiceGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'HomeKit.HMServiceGroup'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'services'
+    JsName: 'services'
+    Module: 'HomeKit.HMServiceGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'services'
+      JsName: 'services'
+      Module: 'HomeKit.HMServiceGroup'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'services'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HMAccessory'
+  JsName: 'HMAccessory'
+  Module: 'HomeKit.HMAccessory'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'identifyWithCompletionHandler:'
+    JsName: 'identifyWithCompletionHandler'
+    Module: 'HomeKit.HMAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'identifyWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v12@0:4@?8'
+  - Name: 'updateName:completionHandler:'
+    JsName: 'updateNameCompletionHandler'
+    Module: 'HomeKit.HMAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'updateName:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  StaticMethods: []
+  Properties:
+  - Name: 'blocked'
+    JsName: 'blocked'
+    Module: 'HomeKit.HMAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isBlocked'
+      JsName: 'isBlocked'
+      Module: 'HomeKit.HMAccessory'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isBlocked'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'bridged'
+    JsName: 'bridged'
+    Module: 'HomeKit.HMAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isBridged'
+      JsName: 'isBridged'
+      Module: 'HomeKit.HMAccessory'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isBridged'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'HomeKit.HMAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'HomeKit.HMAccessory'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: HomeKit.HMAccessory
+          Name: HMAccessoryDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'HomeKit.HMAccessory'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: HomeKit.HMAccessory
+          Name: HMAccessoryDelegate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'identifier'
+    JsName: 'identifier'
+    Module: 'HomeKit.HMAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'identifier'
+      JsName: 'identifier'
+      Module: 'HomeKit.HMAccessory'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'identifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSUUID
+        Name: NSUUID
+      TypeEncoding: '@8@0:4'
+  - Name: 'identifiersForBridgedAccessories'
+    JsName: 'identifiersForBridgedAccessories'
+    Module: 'HomeKit.HMAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'identifiersForBridgedAccessories'
+      JsName: 'identifiersForBridgedAccessories'
+      Module: 'HomeKit.HMAccessory'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'identifiersForBridgedAccessories'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'HomeKit.HMAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'HomeKit.HMAccessory'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'reachable'
+    JsName: 'reachable'
+    Module: 'HomeKit.HMAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isReachable'
+      JsName: 'isReachable'
+      Module: 'HomeKit.HMAccessory'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isReachable'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'room'
+    JsName: 'room'
+    Module: 'HomeKit.HMAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'room'
+      JsName: 'room'
+      Module: 'HomeKit.HMAccessory'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'room'
+      Signature:
+      - Type: Interface
+        Module: HomeKit.HMRoom
+        Name: HMRoom
+      TypeEncoding: '@8@0:4'
+  - Name: 'services'
+    JsName: 'services'
+    Module: 'HomeKit.HMAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'services'
+      JsName: 'services'
+      Module: 'HomeKit.HMAccessory'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'services'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HMAccessoryDelegate'
+  JsName: 'HMAccessoryDelegate'
+  Module: 'HomeKit.HMAccessory'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'accessory:didUpdateAssociatedServiceTypeForService:'
+    JsName: 'accessoryDidUpdateAssociatedServiceTypeForService'
+    Module: 'HomeKit.HMAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'accessory:didUpdateAssociatedServiceTypeForService:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMAccessory
+      Name: HMAccessory
+    - Type: Interface
+      Module: HomeKit.HMService
+      Name: HMService
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'accessoryDidUpdateName:'
+    JsName: 'accessoryDidUpdateName'
+    Module: 'HomeKit.HMAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'accessoryDidUpdateName:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMAccessory
+      Name: HMAccessory
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'accessory:didUpdateNameForService:'
+    JsName: 'accessoryDidUpdateNameForService'
+    Module: 'HomeKit.HMAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'accessory:didUpdateNameForService:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMAccessory
+      Name: HMAccessory
+    - Type: Interface
+      Module: HomeKit.HMService
+      Name: HMService
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'accessoryDidUpdateReachability:'
+    JsName: 'accessoryDidUpdateReachability'
+    Module: 'HomeKit.HMAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'accessoryDidUpdateReachability:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMAccessory
+      Name: HMAccessory
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'accessoryDidUpdateServices:'
+    JsName: 'accessoryDidUpdateServices'
+    Module: 'HomeKit.HMAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'accessoryDidUpdateServices:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMAccessory
+      Name: HMAccessory
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'accessory:service:didUpdateValueForCharacteristic:'
+    JsName: 'accessoryServiceDidUpdateValueForCharacteristic'
+    Module: 'HomeKit.HMAccessory'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'accessory:service:didUpdateValueForCharacteristic:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMAccessory
+      Name: HMAccessory
+    - Type: Interface
+      Module: HomeKit.HMService
+      Name: HMService
+    - Type: Interface
+      Module: HomeKit.HMCharacteristic
+      Name: HMCharacteristic
+    TypeEncoding: 'v20@0:4@8@12@16'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'HMService'
+  JsName: 'HMService'
+  Module: 'HomeKit.HMService'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'updateAssociatedServiceType:completionHandler:'
+    JsName: 'updateAssociatedServiceTypeCompletionHandler'
+    Module: 'HomeKit.HMService'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'updateAssociatedServiceType:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'updateName:completionHandler:'
+    JsName: 'updateNameCompletionHandler'
+    Module: 'HomeKit.HMService'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'updateName:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  StaticMethods: []
+  Properties:
+  - Name: 'accessory'
+    JsName: 'accessory'
+    Module: 'HomeKit.HMService'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'accessory'
+      JsName: 'accessory'
+      Module: 'HomeKit.HMService'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'accessory'
+      Signature:
+      - Type: Interface
+        Module: HomeKit.HMAccessory
+        Name: HMAccessory
+      TypeEncoding: '@8@0:4'
+  - Name: 'associatedServiceType'
+    JsName: 'associatedServiceType'
+    Module: 'HomeKit.HMService'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'associatedServiceType'
+      JsName: 'associatedServiceType'
+      Module: 'HomeKit.HMService'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'associatedServiceType'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'characteristics'
+    JsName: 'characteristics'
+    Module: 'HomeKit.HMService'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'characteristics'
+      JsName: 'characteristics'
+      Module: 'HomeKit.HMService'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'characteristics'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'HomeKit.HMService'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'HomeKit.HMService'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'serviceType'
+    JsName: 'serviceType'
+    Module: 'HomeKit.HMService'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'serviceType'
+      JsName: 'serviceType'
+      Module: 'HomeKit.HMService'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'serviceType'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HMServiceTypeLightbulb'
+  JsName: 'HMServiceTypeLightbulb'
+  Module: 'HomeKit.HMService'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMServiceTypeSwitch'
+  JsName: 'HMServiceTypeSwitch'
+  Module: 'HomeKit.HMService'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMServiceTypeThermostat'
+  JsName: 'HMServiceTypeThermostat'
+  Module: 'HomeKit.HMService'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMServiceTypeGarageDoorOpener'
+  JsName: 'HMServiceTypeGarageDoorOpener'
+  Module: 'HomeKit.HMService'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMServiceTypeAccessoryInformation'
+  JsName: 'HMServiceTypeAccessoryInformation'
+  Module: 'HomeKit.HMService'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMServiceTypeFan'
+  JsName: 'HMServiceTypeFan'
+  Module: 'HomeKit.HMService'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMServiceTypeOutlet'
+  JsName: 'HMServiceTypeOutlet'
+  Module: 'HomeKit.HMService'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMServiceTypeLockMechanism'
+  JsName: 'HMServiceTypeLockMechanism'
+  Module: 'HomeKit.HMService'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMServiceTypeLockManagement'
+  JsName: 'HMServiceTypeLockManagement'
+  Module: 'HomeKit.HMService'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristic'
+  JsName: 'HMCharacteristic'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'enableNotification:completionHandler:'
+    JsName: 'enableNotificationCompletionHandler'
+    Module: 'HomeKit.HMCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'enableNotification:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Bool
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4c8@?12'
+  - Name: 'readValueWithCompletionHandler:'
+    JsName: 'readValueWithCompletionHandler'
+    Module: 'HomeKit.HMCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'readValueWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v12@0:4@?8'
+  - Name: 'updateAuthorizationData:completionHandler:'
+    JsName: 'updateAuthorizationDataCompletionHandler'
+    Module: 'HomeKit.HMCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'updateAuthorizationData:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'writeValue:completionHandler:'
+    JsName: 'writeValueCompletionHandler'
+    Module: 'HomeKit.HMCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'writeValue:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols: []
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  StaticMethods: []
+  Properties:
+  - Name: 'characteristicType'
+    JsName: 'characteristicType'
+    Module: 'HomeKit.HMCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'characteristicType'
+      JsName: 'characteristicType'
+      Module: 'HomeKit.HMCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'characteristicType'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'metadata'
+    JsName: 'metadata'
+    Module: 'HomeKit.HMCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'metadata'
+      JsName: 'metadata'
+      Module: 'HomeKit.HMCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'metadata'
+      Signature:
+      - Type: Interface
+        Module: HomeKit.HMCharacteristicMetadata
+        Name: HMCharacteristicMetadata
+      TypeEncoding: '@8@0:4'
+  - Name: 'notificationEnabled'
+    JsName: 'notificationEnabled'
+    Module: 'HomeKit.HMCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isNotificationEnabled'
+      JsName: 'isNotificationEnabled'
+      Module: 'HomeKit.HMCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isNotificationEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'properties'
+    JsName: 'properties'
+    Module: 'HomeKit.HMCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'properties'
+      JsName: 'properties'
+      Module: 'HomeKit.HMCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'properties'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'service'
+    JsName: 'service'
+    Module: 'HomeKit.HMCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'service'
+      JsName: 'service'
+      Module: 'HomeKit.HMCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'service'
+      Signature:
+      - Type: Interface
+        Module: HomeKit.HMService
+        Name: HMService
+      TypeEncoding: '@8@0:4'
+  - Name: 'value'
+    JsName: 'value'
+    Module: 'HomeKit.HMCharacteristic'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'value'
+      JsName: 'value'
+      Module: 'HomeKit.HMCharacteristic'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'value'
+      Signature:
+      - Type: Id
+        WithProtocols: []
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HMCharacteristicPropertySupportsEventNotification'
+  JsName: 'HMCharacteristicPropertySupportsEventNotification'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicPropertyReadable'
+  JsName: 'HMCharacteristicPropertyReadable'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicPropertyWritable'
+  JsName: 'HMCharacteristicPropertyWritable'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypePowerState'
+  JsName: 'HMCharacteristicTypePowerState'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeHue'
+  JsName: 'HMCharacteristicTypeHue'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeSaturation'
+  JsName: 'HMCharacteristicTypeSaturation'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeBrightness'
+  JsName: 'HMCharacteristicTypeBrightness'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeTemperatureUnits'
+  JsName: 'HMCharacteristicTypeTemperatureUnits'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeCurrentTemperature'
+  JsName: 'HMCharacteristicTypeCurrentTemperature'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeTargetTemperature'
+  JsName: 'HMCharacteristicTypeTargetTemperature'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeCurrentHeatingCooling'
+  JsName: 'HMCharacteristicTypeCurrentHeatingCooling'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeTargetHeatingCooling'
+  JsName: 'HMCharacteristicTypeTargetHeatingCooling'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeCoolingThreshold'
+  JsName: 'HMCharacteristicTypeCoolingThreshold'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeHeatingThreshold'
+  JsName: 'HMCharacteristicTypeHeatingThreshold'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeCurrentRelativeHumidity'
+  JsName: 'HMCharacteristicTypeCurrentRelativeHumidity'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeTargetRelativeHumidity'
+  JsName: 'HMCharacteristicTypeTargetRelativeHumidity'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeCurrentDoorState'
+  JsName: 'HMCharacteristicTypeCurrentDoorState'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeTargetDoorState'
+  JsName: 'HMCharacteristicTypeTargetDoorState'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeObstructionDetected'
+  JsName: 'HMCharacteristicTypeObstructionDetected'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeName'
+  JsName: 'HMCharacteristicTypeName'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeManufacturer'
+  JsName: 'HMCharacteristicTypeManufacturer'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeModel'
+  JsName: 'HMCharacteristicTypeModel'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeSerialNumber'
+  JsName: 'HMCharacteristicTypeSerialNumber'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeIdentify'
+  JsName: 'HMCharacteristicTypeIdentify'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeRotationDirection'
+  JsName: 'HMCharacteristicTypeRotationDirection'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeRotationSpeed'
+  JsName: 'HMCharacteristicTypeRotationSpeed'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeOutletInUse'
+  JsName: 'HMCharacteristicTypeOutletInUse'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeVersion'
+  JsName: 'HMCharacteristicTypeVersion'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeLogs'
+  JsName: 'HMCharacteristicTypeLogs'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeAudioFeedback'
+  JsName: 'HMCharacteristicTypeAudioFeedback'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeAdminOnlyAccess'
+  JsName: 'HMCharacteristicTypeAdminOnlyAccess'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeMotionDetected'
+  JsName: 'HMCharacteristicTypeMotionDetected'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeCurrentLockMechanismState'
+  JsName: 'HMCharacteristicTypeCurrentLockMechanismState'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeTargetLockMechanismState'
+  JsName: 'HMCharacteristicTypeTargetLockMechanismState'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeLockMechanismLastKnownAction'
+  JsName: 'HMCharacteristicTypeLockMechanismLastKnownAction'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeLockManagementControlPoint'
+  JsName: 'HMCharacteristicTypeLockManagementControlPoint'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicTypeLockManagementAutoSecureTimeout'
+  JsName: 'HMCharacteristicTypeLockManagementAutoSecureTimeout'
+  Module: 'HomeKit.HMCharacteristic'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicValueDoorState'
+  JsName: 'HMCharacteristicValueDoorState'
+  Module: 'HomeKit.HMCharacteristicDefines'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HMCharacteristicValueDoorStateOpen":0,"HMCharacteristicValueDoorStateClosed":1,"HMCharacteristicValueDoorStateOpening":2,"HMCharacteristicValueDoorStateClosing":3,"HMCharacteristicValueDoorStateStopped":4})
+- Name: 'HMCharacteristicValueHeatingCooling'
+  JsName: 'HMCharacteristicValueHeatingCooling'
+  Module: 'HomeKit.HMCharacteristicDefines'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HMCharacteristicValueHeatingCoolingOff":0,"HMCharacteristicValueHeatingCoolingHeat":1,"HMCharacteristicValueHeatingCoolingCool":2,"HMCharacteristicValueHeatingCoolingAuto":3})
+- Name: 'HMCharacteristicValueRotationDirection'
+  JsName: 'HMCharacteristicValueRotationDirection'
+  Module: 'HomeKit.HMCharacteristicDefines'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HMCharacteristicValueRotationDirectionClockwise":0,"HMCharacteristicValueRotationDirectionCounterClockwise":1})
+- Name: 'HMCharacteristicValueTemperatureUnit'
+  JsName: 'HMCharacteristicValueTemperatureUnit'
+  Module: 'HomeKit.HMCharacteristicDefines'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HMCharacteristicValueTemperatureUnitCelsius":0,"HMCharacteristicValueTemperatureUnitFahrenheit":1})
+- Name: 'HMCharacteristicValueLockMechanismState'
+  JsName: 'HMCharacteristicValueLockMechanismState'
+  Module: 'HomeKit.HMCharacteristicDefines'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HMCharacteristicValueLockMechanismStateUnsecured":0,"HMCharacteristicValueLockMechanismStateSecured":1,"HMCharacteristicValueLockMechanismStateJammed":2,"HMCharacteristicValueLockMechanismStateUnknown":3})
+- Name: 'HMCharacteristicValueLockMechanism'
+  JsName: 'HMCharacteristicValueLockMechanism'
+  Module: 'HomeKit.HMCharacteristicDefines'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovementInterior":0,"HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovementInterior":1,"HMCharacteristicValueLockMechanismLastKnownActionSecuredUsingPhysicalMovementExterior":2,"HMCharacteristicValueLockMechanismLastKnownActionUnsecuredUsingPhysicalMovementExterior":3,"HMCharacteristicValueLockMechanismLastKnownActionSecuredWithKeypad":4,"HMCharacteristicValueLockMechanismLastKnownActionUnsecuredWithKeypad":5,"HMCharacteristicValueLockMechanismLastKnownActionSecuredRemotely":6,"HMCharacteristicValueLockMechanismLastKnownActionUnsecuredRemotely":7,"HMCharacteristicValueLockMechanismLastKnownActionSecuredWithAutomaticSecureTimeout":8})
+- Name: 'HMCharacteristicMetadata'
+  JsName: 'HMCharacteristicMetadata'
+  Module: 'HomeKit.HMCharacteristicMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'format'
+    JsName: 'format'
+    Module: 'HomeKit.HMCharacteristicMetadata'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'format'
+      JsName: 'format'
+      Module: 'HomeKit.HMCharacteristicMetadata'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'format'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'manufacturerDescription'
+    JsName: 'manufacturerDescription'
+    Module: 'HomeKit.HMCharacteristicMetadata'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'manufacturerDescription'
+      JsName: 'manufacturerDescription'
+      Module: 'HomeKit.HMCharacteristicMetadata'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'manufacturerDescription'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'maximumValue'
+    JsName: 'maximumValue'
+    Module: 'HomeKit.HMCharacteristicMetadata'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'maximumValue'
+      JsName: 'maximumValue'
+      Module: 'HomeKit.HMCharacteristicMetadata'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'maximumValue'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@8@0:4'
+  - Name: 'maxLength'
+    JsName: 'maxLength'
+    Module: 'HomeKit.HMCharacteristicMetadata'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'maxLength'
+      JsName: 'maxLength'
+      Module: 'HomeKit.HMCharacteristicMetadata'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'maxLength'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@8@0:4'
+  - Name: 'minimumValue'
+    JsName: 'minimumValue'
+    Module: 'HomeKit.HMCharacteristicMetadata'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'minimumValue'
+      JsName: 'minimumValue'
+      Module: 'HomeKit.HMCharacteristicMetadata'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'minimumValue'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@8@0:4'
+  - Name: 'stepValue'
+    JsName: 'stepValue'
+    Module: 'HomeKit.HMCharacteristicMetadata'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'stepValue'
+      JsName: 'stepValue'
+      Module: 'HomeKit.HMCharacteristicMetadata'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'stepValue'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@8@0:4'
+  - Name: 'units'
+    JsName: 'units'
+    Module: 'HomeKit.HMCharacteristicMetadata'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'units'
+      JsName: 'units'
+      Module: 'HomeKit.HMCharacteristicMetadata'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'units'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HMCharacteristicMetadataFormatBool'
+  JsName: 'HMCharacteristicMetadataFormatBool'
+  Module: 'HomeKit.HMCharacteristicMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicMetadataFormatInt'
+  JsName: 'HMCharacteristicMetadataFormatInt'
+  Module: 'HomeKit.HMCharacteristicMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicMetadataFormatFloat'
+  JsName: 'HMCharacteristicMetadataFormatFloat'
+  Module: 'HomeKit.HMCharacteristicMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicMetadataFormatString'
+  JsName: 'HMCharacteristicMetadataFormatString'
+  Module: 'HomeKit.HMCharacteristicMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicMetadataFormatArray'
+  JsName: 'HMCharacteristicMetadataFormatArray'
+  Module: 'HomeKit.HMCharacteristicMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicMetadataFormatDictionary'
+  JsName: 'HMCharacteristicMetadataFormatDictionary'
+  Module: 'HomeKit.HMCharacteristicMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicMetadataFormatUInt8'
+  JsName: 'HMCharacteristicMetadataFormatUInt8'
+  Module: 'HomeKit.HMCharacteristicMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicMetadataFormatUInt16'
+  JsName: 'HMCharacteristicMetadataFormatUInt16'
+  Module: 'HomeKit.HMCharacteristicMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicMetadataFormatUInt32'
+  JsName: 'HMCharacteristicMetadataFormatUInt32'
+  Module: 'HomeKit.HMCharacteristicMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicMetadataFormatUInt64'
+  JsName: 'HMCharacteristicMetadataFormatUInt64'
+  Module: 'HomeKit.HMCharacteristicMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicMetadataFormatData'
+  JsName: 'HMCharacteristicMetadataFormatData'
+  Module: 'HomeKit.HMCharacteristicMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicMetadataFormatTLV8'
+  JsName: 'HMCharacteristicMetadataFormatTLV8'
+  Module: 'HomeKit.HMCharacteristicMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicMetadataUnitsCelsius'
+  JsName: 'HMCharacteristicMetadataUnitsCelsius'
+  Module: 'HomeKit.HMCharacteristicMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicMetadataUnitsFahrenheit'
+  JsName: 'HMCharacteristicMetadataUnitsFahrenheit'
+  Module: 'HomeKit.HMCharacteristicMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicMetadataUnitsPercentage'
+  JsName: 'HMCharacteristicMetadataUnitsPercentage'
+  Module: 'HomeKit.HMCharacteristicMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMCharacteristicMetadataUnitsArcDegree'
+  JsName: 'HMCharacteristicMetadataUnitsArcDegree'
+  Module: 'HomeKit.HMCharacteristicMetadata'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMAction'
+  JsName: 'HMAction'
+  Module: 'HomeKit.HMAction'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HMCharacteristicWriteAction'
+  JsName: 'HMCharacteristicWriteAction'
+  Module: 'HomeKit.HMCharacteristicWriteAction'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithCharacteristic:targetValue:'
+    JsName: 'initWithCharacteristicTargetValue'
+    Module: 'HomeKit.HMCharacteristicWriteAction'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithCharacteristic:targetValue:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: HomeKit.HMCharacteristic
+      Name: HMCharacteristic
+    - Type: Id
+      WithProtocols: []
+    TypeEncoding: '@16@0:4@8@12'
+  - Name: 'updateTargetValue:completionHandler:'
+    JsName: 'updateTargetValueCompletionHandler'
+    Module: 'HomeKit.HMCharacteristicWriteAction'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'updateTargetValue:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols: []
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  StaticMethods: []
+  Properties:
+  - Name: 'characteristic'
+    JsName: 'characteristic'
+    Module: 'HomeKit.HMCharacteristicWriteAction'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'characteristic'
+      JsName: 'characteristic'
+      Module: 'HomeKit.HMCharacteristicWriteAction'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'characteristic'
+      Signature:
+      - Type: Interface
+        Module: HomeKit.HMCharacteristic
+        Name: HMCharacteristic
+      TypeEncoding: '@8@0:4'
+  - Name: 'targetValue'
+    JsName: 'targetValue'
+    Module: 'HomeKit.HMCharacteristicWriteAction'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'targetValue'
+      JsName: 'targetValue'
+      Module: 'HomeKit.HMCharacteristicWriteAction'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'targetValue'
+      Signature:
+      - Type: Id
+        WithProtocols: []
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: HomeKit.HMAction
+    Name: HMAction
+  Type: Interface
+- Name: 'HMActionSet'
+  JsName: 'HMActionSet'
+  Module: 'HomeKit.HMActionSet'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addAction:completionHandler:'
+    JsName: 'addActionCompletionHandler'
+    Module: 'HomeKit.HMActionSet'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addAction:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMAction
+      Name: HMAction
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'removeAction:completionHandler:'
+    JsName: 'removeActionCompletionHandler'
+    Module: 'HomeKit.HMActionSet'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeAction:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMAction
+      Name: HMAction
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'updateName:completionHandler:'
+    JsName: 'updateNameCompletionHandler'
+    Module: 'HomeKit.HMActionSet'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'updateName:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  StaticMethods: []
+  Properties:
+  - Name: 'actions'
+    JsName: 'actions'
+    Module: 'HomeKit.HMActionSet'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'actions'
+      JsName: 'actions'
+      Module: 'HomeKit.HMActionSet'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'actions'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSSet
+        Name: NSSet
+      TypeEncoding: '@8@0:4'
+  - Name: 'executing'
+    JsName: 'executing'
+    Module: 'HomeKit.HMActionSet'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isExecuting'
+      JsName: 'isExecuting'
+      Module: 'HomeKit.HMActionSet'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isExecuting'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'HomeKit.HMActionSet'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'HomeKit.HMActionSet'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HMTrigger'
+  JsName: 'HMTrigger'
+  Module: 'HomeKit.HMTrigger'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addActionSet:completionHandler:'
+    JsName: 'addActionSetCompletionHandler'
+    Module: 'HomeKit.HMTrigger'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addActionSet:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMActionSet
+      Name: HMActionSet
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'enable:completionHandler:'
+    JsName: 'enableCompletionHandler'
+    Module: 'HomeKit.HMTrigger'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'enable:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Bool
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4c8@?12'
+  - Name: 'removeActionSet:completionHandler:'
+    JsName: 'removeActionSetCompletionHandler'
+    Module: 'HomeKit.HMTrigger'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeActionSet:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: HomeKit.HMActionSet
+      Name: HMActionSet
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'updateName:completionHandler:'
+    JsName: 'updateNameCompletionHandler'
+    Module: 'HomeKit.HMTrigger'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'updateName:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  StaticMethods: []
+  Properties:
+  - Name: 'actionSets'
+    JsName: 'actionSets'
+    Module: 'HomeKit.HMTrigger'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'actionSets'
+      JsName: 'actionSets'
+      Module: 'HomeKit.HMTrigger'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'actionSets'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'enabled'
+    JsName: 'enabled'
+    Module: 'HomeKit.HMTrigger'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isEnabled'
+      JsName: 'isEnabled'
+      Module: 'HomeKit.HMTrigger'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'lastFireDate'
+    JsName: 'lastFireDate'
+    Module: 'HomeKit.HMTrigger'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'lastFireDate'
+      JsName: 'lastFireDate'
+      Module: 'HomeKit.HMTrigger'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lastFireDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'HomeKit.HMTrigger'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'HomeKit.HMTrigger'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HMTimerTrigger'
+  JsName: 'HMTimerTrigger'
+  Module: 'HomeKit.HMTimerTrigger'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithName:fireDate:timeZone:recurrence:recurrenceCalendar:'
+    JsName: 'initWithNameFireDateTimeZoneRecurrenceRecurrenceCalendar'
+    Module: 'HomeKit.HMTimerTrigger'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithName:fireDate:timeZone:recurrence:recurrenceCalendar:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Interface
+      Module: Foundation.NSTimeZone
+      Name: NSTimeZone
+    - Type: Interface
+      Module: Foundation.NSCalendar
+      Name: NSDateComponents
+    - Type: Interface
+      Module: Foundation.NSCalendar
+      Name: NSCalendar
+    TypeEncoding: '@28@0:4@8@12@16@20@24'
+  - Name: 'updateFireDate:completionHandler:'
+    JsName: 'updateFireDateCompletionHandler'
+    Module: 'HomeKit.HMTimerTrigger'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'updateFireDate:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'updateRecurrence:completionHandler:'
+    JsName: 'updateRecurrenceCompletionHandler'
+    Module: 'HomeKit.HMTimerTrigger'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'updateRecurrence:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSCalendar
+      Name: NSDateComponents
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'updateTimeZone:completionHandler:'
+    JsName: 'updateTimeZoneCompletionHandler'
+    Module: 'HomeKit.HMTimerTrigger'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'updateTimeZone:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSTimeZone
+      Name: NSTimeZone
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  StaticMethods: []
+  Properties:
+  - Name: 'fireDate'
+    JsName: 'fireDate'
+    Module: 'HomeKit.HMTimerTrigger'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'fireDate'
+      JsName: 'fireDate'
+      Module: 'HomeKit.HMTimerTrigger'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'fireDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'recurrence'
+    JsName: 'recurrence'
+    Module: 'HomeKit.HMTimerTrigger'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'recurrence'
+      JsName: 'recurrence'
+      Module: 'HomeKit.HMTimerTrigger'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recurrence'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSCalendar
+        Name: NSDateComponents
+      TypeEncoding: '@8@0:4'
+  - Name: 'recurrenceCalendar'
+    JsName: 'recurrenceCalendar'
+    Module: 'HomeKit.HMTimerTrigger'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'recurrenceCalendar'
+      JsName: 'recurrenceCalendar'
+      Module: 'HomeKit.HMTimerTrigger'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'recurrenceCalendar'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSCalendar
+        Name: NSCalendar
+      TypeEncoding: '@8@0:4'
+  - Name: 'timeZone'
+    JsName: 'timeZone'
+    Module: 'HomeKit.HMTimerTrigger'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'timeZone'
+      JsName: 'timeZone'
+      Module: 'HomeKit.HMTimerTrigger'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'timeZone'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSTimeZone
+        Name: NSTimeZone
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: HomeKit.HMTrigger
+    Name: HMTrigger
+  Type: Interface
+- Name: 'HMUser'
+  JsName: 'HMUser'
+  Module: 'HomeKit.HMUser'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'HomeKit.HMUser'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'HomeKit.HMUser'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'HMErrorDomain'
+  JsName: 'HMErrorDomain'
+  Module: 'HomeKit.HMError'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'HMErrorCode'
+  JsName: 'HMErrorCode'
+  Module: 'HomeKit.HMError'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"HMErrorCodeAlreadyExists":1,"HMErrorCodeNotFound":2,"HMErrorCodeInvalidParameter":3,"HMErrorCodeAccessoryNotReachable":4,"HMErrorCodeReadOnlyCharacteristic":5,"HMErrorCodeWriteOnlyCharacteristic":6,"HMErrorCodeNotificationNotSupported":7,"HMErrorCodeOperationTimedOut":8,"HMErrorCodeAccessoryPoweredOff":9,"HMErrorCodeAccessDenied":10,"HMErrorCodeObjectAssociatedToAnotherHome":11,"HMErrorCodeObjectNotAssociatedToAnyHome":12,"HMErrorCodeObjectAlreadyAssociatedToHome":13,"HMErrorCodeAccessoryIsBusy":14,"HMErrorCodeOperationInProgress":15,"HMErrorCodeAccessoryOutOfResources":16,"HMErrorCodeInsufficientPrivileges":17,"HMErrorCodeAccessoryPairingFailed":18,"HMErrorCodeInvalidDataFormatSpecified":19,"HMErrorCodeNilParameter":20,"HMErrorCodeUnconfiguredParameter":21,"HMErrorCodeInvalidClass":22,"HMErrorCodeOperationCancelled":23,"HMErrorCodeRoomForHomeCannotBeInZone":24,"HMErrorCodeNoActionsInActionSet":25,"HMErrorCodeNoRegisteredActionSets":26,"HMErrorCodeMissingParameter":27,"HMErrorCodeFireDateInPast":28,"HMErrorCodeRoomForHomeCannotBeUpdated":29,"HMErrorCodeActionInAnotherActionSet":30,"HMErrorCodeObjectWithSimilarNameExistsInHome":31,"HMErrorCodeHomeWithSimilarNameExists":32,"HMErrorCodeRenameWithSimilarName":33,"HMErrorCodeCannotRemoveNonBridgeAccessory":34,"HMErrorCodeNameContainsProhibitedCharacters":35,"HMErrorCodeNameDoesNotStartWithValidCharacters":36,"HMErrorCodeUserIDNotEmailAddress":37,"HMErrorCodeUserDeclinedAddingUser":38,"HMErrorCodeUserDeclinedRemovingUser":39,"HMErrorCodeUserDeclinedInvite":40,"HMErrorCodeUserManagementFailed":41,"HMErrorCodeRecurrenceTooSmall":42,"HMErrorCodeInvalidValueType":43,"HMErrorCodeValueLowerThanMinimum":44,"HMErrorCodeValueHigherThanMaximum":45,"HMErrorCodeStringLongerThanMaximum":46,"HMErrorCodeHomeAccessNotAuthorized":47,"HMErrorCodeOperationNotSupported":48,"HMErrorCodeMaximumObjectLimitReached":49,"HMErrorCodeAccessorySentInvalidResponse":50,"HMErrorCodeStringShorterThanMinimum":51,"HMErrorCodeGenericError":52,"HMErrorCodeSecurityFailure":53,"HMErrorCodeCommunicationFailure":54,"HMErrorCodeMessageAuthenticationFailed":55,"HMErrorCodeInvalidMessageSize":56,"HMErrorCodeAccessoryDiscoveryFailed":57,"HMErrorCodeClientRequestError":58,"HMErrorCodeAccessoryResponseError":59,"HMErrorCodeNameDoesNotEndWithValidCharacters":60,"HMErrorCodeAccessoryIsBlocked":61,"HMErrorCodeInvalidAssociatedServiceType":62,"HMErrorCodeActionSetExecutionFailed":63,"HMErrorCodeActionSetExecutionPartialSuccess":64,"HMErrorCodeActionSetExecutionInProgress":65,"HMErrorCodeAccessoryOutOfCompliance":66,"HMErrorCodeDataResetFailure":67,"HMErrorCodeNotificationAlreadyEnabled":68,"HMErrorCodeRecurrenceMustBeOnSpecifiedBoundaries":69,"HMErrorCodeDateMustBeOnSpecifiedBoundaries":70,"HMErrorCodeCannotActivateTriggerTooFarInFuture":71,"HMErrorCodeRecurrenceTooLarge":72,"HMErrorCodeReadWritePartialSuccess":73,"HMErrorCodeReadWriteFailure":74,"HMErrorCodeNotSignedIntoiCloud":75,"HMErrorCodeKeychainSyncNotEnabled":76,"HMErrorCodeCloudDataSyncInProgress":77,"HMErrorCodeNetworkUnavailable":78,"HMErrorCodeAddAccessoryFailed":79,"HMErrorCodeMissingEntitlement":80})
+...

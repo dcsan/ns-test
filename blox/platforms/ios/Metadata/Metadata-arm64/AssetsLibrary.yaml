@@ -1,0 +1,1173 @@
+name: AssetsLibrary
+items:
+- Name: 'ALAssetOrientation'
+  JsName: 'ALAssetOrientation'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"ALAssetOrientationUp":0,"ALAssetOrientationDown":1,"ALAssetOrientationLeft":2,"ALAssetOrientationRight":3,"ALAssetOrientationUpMirrored":4,"ALAssetOrientationDownMirrored":5,"ALAssetOrientationLeftMirrored":6,"ALAssetOrientationRightMirrored":7})
+- Name: 'ALAssetsGroupLibrary'
+  JsName: 'ALAssetsGroupLibrary'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'ALAssetsGroupAlbum'
+  JsName: 'ALAssetsGroupAlbum'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'ALAssetsGroupEvent'
+  JsName: 'ALAssetsGroupEvent'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'ALAssetsGroupFaces'
+  JsName: 'ALAssetsGroupFaces'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'ALAssetsGroupSavedPhotos'
+  JsName: 'ALAssetsGroupSavedPhotos'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 16
+- Name: 'ALAssetsGroupPhotoStream'
+  JsName: 'ALAssetsGroupPhotoStream'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 32
+- Name: 'ALAssetsGroupAll'
+  JsName: 'ALAssetsGroupAll'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -1
+- Name: 'ALAuthorizationStatus'
+  JsName: 'ALAuthorizationStatus'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"ALAuthorizationStatusNotDetermined":0,"ALAuthorizationStatusRestricted":1,"ALAuthorizationStatusDenied":2,"ALAuthorizationStatusAuthorized":3})
+- Name: 'ALAssetsLibrary'
+  JsName: 'ALAssetsLibrary'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addAssetsGroupAlbumWithName:resultBlock:failureBlock:'
+    JsName: 'addAssetsGroupAlbumWithNameResultBlockFailureBlock'
+    Module: 'AssetsLibrary.ALAssetsLibrary'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addAssetsGroupAlbumWithName:resultBlock:failureBlock:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: AssetsLibrary.ALAssetsGroup
+        Name: ALAssetsGroup
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v40@0:8@16@?24@?32'
+  - Name: 'assetForURL:resultBlock:failureBlock:'
+    JsName: 'assetForURLResultBlockFailureBlock'
+    Module: 'AssetsLibrary.ALAssetsLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'assetForURL:resultBlock:failureBlock:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: AssetsLibrary.ALAsset
+        Name: ALAsset
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v40@0:8@16@?24@?32'
+  - Name: 'enumerateGroupsWithTypes:usingBlock:failureBlock:'
+    JsName: 'enumerateGroupsWithTypesUsingBlockFailureBlock'
+    Module: 'AssetsLibrary.ALAssetsLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'enumerateGroupsWithTypes:usingBlock:failureBlock:'
+    Signature:
+    - Type: Void
+    - Type: ULong
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: AssetsLibrary.ALAssetsGroup
+        Name: ALAssetsGroup
+      - Type: Pointer
+        PointerType:
+          Type: Bool
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v40@0:8Q16@?24@?32'
+  - Name: 'groupForURL:resultBlock:failureBlock:'
+    JsName: 'groupForURLResultBlockFailureBlock'
+    Module: 'AssetsLibrary.ALAssetsLibrary'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'groupForURL:resultBlock:failureBlock:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: AssetsLibrary.ALAssetsGroup
+        Name: ALAssetsGroup
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v40@0:8@16@?24@?32'
+  - Name: 'videoAtPathIsCompatibleWithSavedPhotosAlbum:'
+    JsName: 'videoAtPathIsCompatibleWithSavedPhotosAlbum'
+    Module: 'AssetsLibrary.ALAssetsLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'videoAtPathIsCompatibleWithSavedPhotosAlbum:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'writeImageDataToSavedPhotosAlbum:metadata:completionBlock:'
+    JsName: 'writeImageDataToSavedPhotosAlbumMetadataCompletionBlock'
+    Module: 'AssetsLibrary.ALAssetsLibrary'
+    IntroducedIn: 4.1
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'writeImageDataToSavedPhotosAlbum:metadata:completionBlock:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v40@0:8@16@24@?32'
+  - Name: 'writeImageToSavedPhotosAlbum:metadata:completionBlock:'
+    JsName: 'writeImageToSavedPhotosAlbumMetadataCompletionBlock'
+    Module: 'AssetsLibrary.ALAssetsLibrary'
+    IntroducedIn: 4.1
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'writeImageToSavedPhotosAlbum:metadata:completionBlock:'
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v40@0:8^{CGImage=}16@24@?32'
+  - Name: 'writeImageToSavedPhotosAlbum:orientation:completionBlock:'
+    JsName: 'writeImageToSavedPhotosAlbumOrientationCompletionBlock'
+    Module: 'AssetsLibrary.ALAssetsLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'writeImageToSavedPhotosAlbum:orientation:completionBlock:'
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Long
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v40@0:8^{CGImage=}16q24@?32'
+  - Name: 'writeVideoAtPathToSavedPhotosAlbum:completionBlock:'
+    JsName: 'writeVideoAtPathToSavedPhotosAlbumCompletionBlock'
+    Module: 'AssetsLibrary.ALAssetsLibrary'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'writeVideoAtPathToSavedPhotosAlbum:completionBlock:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  StaticMethods:
+  - Name: 'authorizationStatus'
+    JsName: 'authorizationStatus'
+    Module: 'AssetsLibrary.ALAssetsLibrary'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'authorizationStatus'
+    Signature:
+    - Type: Long
+    TypeEncoding: 'q16@0:8'
+  - Name: 'disableSharedPhotoStreamsSupport'
+    JsName: 'disableSharedPhotoStreamsSupport'
+    Module: 'AssetsLibrary.ALAssetsLibrary'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'disableSharedPhotoStreamsSupport'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'ALAssetsLibraryChangedNotification'
+  JsName: 'ALAssetsLibraryChangedNotification'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetLibraryUpdatedAssetsKey'
+  JsName: 'ALAssetLibraryUpdatedAssetsKey'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetLibraryInsertedAssetGroupsKey'
+  JsName: 'ALAssetLibraryInsertedAssetGroupsKey'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetLibraryUpdatedAssetGroupsKey'
+  JsName: 'ALAssetLibraryUpdatedAssetGroupsKey'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetLibraryDeletedAssetGroupsKey'
+  JsName: 'ALAssetLibraryDeletedAssetGroupsKey'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetsLibraryErrorDomain'
+  JsName: 'ALAssetsLibraryErrorDomain'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetsLibraryUnknownError'
+  JsName: 'ALAssetsLibraryUnknownError'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -1
+- Name: 'ALAssetsLibraryWriteFailedError'
+  JsName: 'ALAssetsLibraryWriteFailedError'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -3300
+- Name: 'ALAssetsLibraryWriteBusyError'
+  JsName: 'ALAssetsLibraryWriteBusyError'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -3301
+- Name: 'ALAssetsLibraryWriteInvalidDataError'
+  JsName: 'ALAssetsLibraryWriteInvalidDataError'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -3302
+- Name: 'ALAssetsLibraryWriteIncompatibleDataError'
+  JsName: 'ALAssetsLibraryWriteIncompatibleDataError'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -3303
+- Name: 'ALAssetsLibraryWriteDataEncodingError'
+  JsName: 'ALAssetsLibraryWriteDataEncodingError'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -3304
+- Name: 'ALAssetsLibraryWriteDiskSpaceError'
+  JsName: 'ALAssetsLibraryWriteDiskSpaceError'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -3305
+- Name: 'ALAssetsLibraryDataUnavailableError'
+  JsName: 'ALAssetsLibraryDataUnavailableError'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -3310
+- Name: 'ALAssetsLibraryAccessUserDeniedError'
+  JsName: 'ALAssetsLibraryAccessUserDeniedError'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -3311
+- Name: 'ALAssetsLibraryAccessGloballyDeniedError'
+  JsName: 'ALAssetsLibraryAccessGloballyDeniedError'
+  Module: 'AssetsLibrary.ALAssetsLibrary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -3312
+- Name: 'ALErrorInvalidProperty'
+  JsName: 'ALErrorInvalidProperty'
+  Module: 'AssetsLibrary.ALAsset'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetPropertyType'
+  JsName: 'ALAssetPropertyType'
+  Module: 'AssetsLibrary.ALAsset'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetPropertyLocation'
+  JsName: 'ALAssetPropertyLocation'
+  Module: 'AssetsLibrary.ALAsset'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetPropertyDuration'
+  JsName: 'ALAssetPropertyDuration'
+  Module: 'AssetsLibrary.ALAsset'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetPropertyOrientation'
+  JsName: 'ALAssetPropertyOrientation'
+  Module: 'AssetsLibrary.ALAsset'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetPropertyDate'
+  JsName: 'ALAssetPropertyDate'
+  Module: 'AssetsLibrary.ALAsset'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetPropertyRepresentations'
+  JsName: 'ALAssetPropertyRepresentations'
+  Module: 'AssetsLibrary.ALAsset'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetPropertyURLs'
+  JsName: 'ALAssetPropertyURLs'
+  Module: 'AssetsLibrary.ALAsset'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetPropertyAssetURL'
+  JsName: 'ALAssetPropertyAssetURL'
+  Module: 'AssetsLibrary.ALAsset'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetTypePhoto'
+  JsName: 'ALAssetTypePhoto'
+  Module: 'AssetsLibrary.ALAsset'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetTypeVideo'
+  JsName: 'ALAssetTypeVideo'
+  Module: 'AssetsLibrary.ALAsset'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetTypeUnknown'
+  JsName: 'ALAssetTypeUnknown'
+  Module: 'AssetsLibrary.ALAsset'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAsset'
+  JsName: 'ALAsset'
+  Module: 'AssetsLibrary.ALAsset'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'aspectRatioThumbnail'
+    JsName: 'aspectRatioThumbnail'
+    Module: 'AssetsLibrary.ALAsset'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'aspectRatioThumbnail'
+    Signature:
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '^{CGImage=}16@0:8'
+  - Name: 'defaultRepresentation'
+    JsName: 'defaultRepresentation'
+    Module: 'AssetsLibrary.ALAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'defaultRepresentation'
+    Signature:
+    - Type: Interface
+      Module: AssetsLibrary.ALAssetRepresentation
+      Name: ALAssetRepresentation
+    TypeEncoding: '@16@0:8'
+  - Name: 'representationForUTI:'
+    JsName: 'representationForUTI'
+    Module: 'AssetsLibrary.ALAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'representationForUTI:'
+    Signature:
+    - Type: Interface
+      Module: AssetsLibrary.ALAssetRepresentation
+      Name: ALAssetRepresentation
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'setImageData:metadata:completionBlock:'
+    JsName: 'setImageDataMetadataCompletionBlock'
+    Module: 'AssetsLibrary.ALAsset'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setImageData:metadata:completionBlock:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v40@0:8@16@24@?32'
+  - Name: 'setVideoAtPath:completionBlock:'
+    JsName: 'setVideoAtPathCompletionBlock'
+    Module: 'AssetsLibrary.ALAsset'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setVideoAtPath:completionBlock:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  - Name: 'thumbnail'
+    JsName: 'thumbnail'
+    Module: 'AssetsLibrary.ALAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'thumbnail'
+    Signature:
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '^{CGImage=}16@0:8'
+  - Name: 'valueForProperty:'
+    JsName: 'valueForProperty'
+    Module: 'AssetsLibrary.ALAsset'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueForProperty:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'writeModifiedImageDataToSavedPhotosAlbum:metadata:completionBlock:'
+    JsName: 'writeModifiedImageDataToSavedPhotosAlbumMetadataCompletionBlock'
+    Module: 'AssetsLibrary.ALAsset'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'writeModifiedImageDataToSavedPhotosAlbum:metadata:completionBlock:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSData
+      Name: NSData
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v40@0:8@16@24@?32'
+  - Name: 'writeModifiedVideoAtPathToSavedPhotosAlbum:completionBlock:'
+    JsName: 'writeModifiedVideoAtPathToSavedPhotosAlbumCompletionBlock'
+    Module: 'AssetsLibrary.ALAsset'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'writeModifiedVideoAtPathToSavedPhotosAlbum:completionBlock:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  StaticMethods: []
+  Properties:
+  - Name: 'editable'
+    JsName: 'editable'
+    Module: 'AssetsLibrary.ALAsset'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isEditable'
+      JsName: 'isEditable'
+      Module: 'AssetsLibrary.ALAsset'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isEditable'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'originalAsset'
+    JsName: 'originalAsset'
+    Module: 'AssetsLibrary.ALAsset'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'originalAsset'
+      JsName: 'originalAsset'
+      Module: 'AssetsLibrary.ALAsset'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'originalAsset'
+      Signature:
+      - Type: Interface
+        Module: AssetsLibrary.ALAsset
+        Name: ALAsset
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'ALAssetsFilter'
+  JsName: 'ALAssetsFilter'
+  Module: 'AssetsLibrary.ALAssetsFilter'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'allAssets'
+    JsName: 'allAssets'
+    Module: 'AssetsLibrary.ALAssetsFilter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'allAssets'
+    Signature:
+    - Type: Interface
+      Module: AssetsLibrary.ALAssetsFilter
+      Name: ALAssetsFilter
+    TypeEncoding: '@16@0:8'
+  - Name: 'allPhotos'
+    JsName: 'allPhotos'
+    Module: 'AssetsLibrary.ALAssetsFilter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'allPhotos'
+    Signature:
+    - Type: Interface
+      Module: AssetsLibrary.ALAssetsFilter
+      Name: ALAssetsFilter
+    TypeEncoding: '@16@0:8'
+  - Name: 'allVideos'
+    JsName: 'allVideos'
+    Module: 'AssetsLibrary.ALAssetsFilter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'allVideos'
+    Signature:
+    - Type: Interface
+      Module: AssetsLibrary.ALAssetsFilter
+      Name: ALAssetsFilter
+    TypeEncoding: '@16@0:8'
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'ALAssetsGroupPropertyName'
+  JsName: 'ALAssetsGroupPropertyName'
+  Module: 'AssetsLibrary.ALAssetsGroup'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetsGroupPropertyType'
+  JsName: 'ALAssetsGroupPropertyType'
+  Module: 'AssetsLibrary.ALAssetsGroup'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetsGroupPropertyPersistentID'
+  JsName: 'ALAssetsGroupPropertyPersistentID'
+  Module: 'AssetsLibrary.ALAssetsGroup'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetsGroupPropertyURL'
+  JsName: 'ALAssetsGroupPropertyURL'
+  Module: 'AssetsLibrary.ALAssetsGroup'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'ALAssetsGroup'
+  JsName: 'ALAssetsGroup'
+  Module: 'AssetsLibrary.ALAssetsGroup'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addAsset:'
+    JsName: 'addAsset'
+    Module: 'AssetsLibrary.ALAssetsGroup'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addAsset:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: AssetsLibrary.ALAsset
+      Name: ALAsset
+    TypeEncoding: 'B24@0:8@16'
+  - Name: 'enumerateAssetsAtIndexes:options:usingBlock:'
+    JsName: 'enumerateAssetsAtIndexesOptionsUsingBlock'
+    Module: 'AssetsLibrary.ALAssetsGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'enumerateAssetsAtIndexes:options:usingBlock:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSIndexSet
+      Name: NSIndexSet
+    - Type: ULong
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: AssetsLibrary.ALAsset
+        Name: ALAsset
+      - Type: ULong
+      - Type: Pointer
+        PointerType:
+          Type: Bool
+    TypeEncoding: 'v40@0:8@16Q24@?32'
+  - Name: 'enumerateAssetsUsingBlock:'
+    JsName: 'enumerateAssetsUsingBlock'
+    Module: 'AssetsLibrary.ALAssetsGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'enumerateAssetsUsingBlock:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: AssetsLibrary.ALAsset
+        Name: ALAsset
+      - Type: ULong
+      - Type: Pointer
+        PointerType:
+          Type: Bool
+    TypeEncoding: 'v24@0:8@?16'
+  - Name: 'enumerateAssetsWithOptions:usingBlock:'
+    JsName: 'enumerateAssetsWithOptionsUsingBlock'
+    Module: 'AssetsLibrary.ALAssetsGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'enumerateAssetsWithOptions:usingBlock:'
+    Signature:
+    - Type: Void
+    - Type: ULong
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: AssetsLibrary.ALAsset
+        Name: ALAsset
+      - Type: ULong
+      - Type: Pointer
+        PointerType:
+          Type: Bool
+    TypeEncoding: 'v32@0:8Q16@?24'
+  - Name: 'numberOfAssets'
+    JsName: 'numberOfAssets'
+    Module: 'AssetsLibrary.ALAssetsGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'numberOfAssets'
+    Signature:
+    - Type: Long
+    TypeEncoding: 'q16@0:8'
+  - Name: 'posterImage'
+    JsName: 'posterImage'
+    Module: 'AssetsLibrary.ALAssetsGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'posterImage'
+    Signature:
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '^{CGImage=}16@0:8'
+  - Name: 'setAssetsFilter:'
+    JsName: 'setAssetsFilter'
+    Module: 'AssetsLibrary.ALAssetsGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setAssetsFilter:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: AssetsLibrary.ALAssetsFilter
+      Name: ALAssetsFilter
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'valueForProperty:'
+    JsName: 'valueForProperty'
+    Module: 'AssetsLibrary.ALAssetsGroup'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueForProperty:'
+    Signature:
+    - Type: Id
+      WithProtocols: []
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'editable'
+    JsName: 'editable'
+    Module: 'AssetsLibrary.ALAssetsGroup'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isEditable'
+      JsName: 'isEditable'
+      Module: 'AssetsLibrary.ALAssetsGroup'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isEditable'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'ALAssetRepresentation'
+  JsName: 'ALAssetRepresentation'
+  Module: 'AssetsLibrary.ALAssetRepresentation'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'CGImageWithOptions:'
+    JsName: 'CGImageWithOptions'
+    Module: 'AssetsLibrary.ALAssetRepresentation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'CGImageWithOptions:'
+    Signature:
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '^{CGImage=}24@0:8@16'
+  - Name: 'dimensions'
+    JsName: 'dimensions'
+    Module: 'AssetsLibrary.ALAssetRepresentation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'dimensions'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGSize
+    TypeEncoding: '{CGSize=dd}16@0:8'
+  - Name: 'filename'
+    JsName: 'filename'
+    Module: 'AssetsLibrary.ALAssetRepresentation'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'filename'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@16@0:8'
+  - Name: 'fullResolutionImage'
+    JsName: 'fullResolutionImage'
+    Module: 'AssetsLibrary.ALAssetRepresentation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fullResolutionImage'
+    Signature:
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '^{CGImage=}16@0:8'
+  - Name: 'fullScreenImage'
+    JsName: 'fullScreenImage'
+    Module: 'AssetsLibrary.ALAssetRepresentation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fullScreenImage'
+    Signature:
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: '^{CGImage=}16@0:8'
+  - Name: 'getBytes:fromOffset:length:error:'
+    JsName: 'getBytesFromOffsetLengthError'
+    Module: 'AssetsLibrary.ALAssetRepresentation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'getBytes:fromOffset:length:error:'
+    Signature:
+    - Type: ULong
+    - Type: CString
+    - Type: LongLong
+    - Type: ULong
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'Q48@0:8*16q24Q32^@40'
+  - Name: 'metadata'
+    JsName: 'metadata'
+    Module: 'AssetsLibrary.ALAssetRepresentation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'metadata'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@16@0:8'
+  - Name: 'orientation'
+    JsName: 'orientation'
+    Module: 'AssetsLibrary.ALAssetRepresentation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'orientation'
+    Signature:
+    - Type: Long
+    TypeEncoding: 'q16@0:8'
+  - Name: 'scale'
+    JsName: 'scale'
+    Module: 'AssetsLibrary.ALAssetRepresentation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'scale'
+    Signature:
+    - Type: Float
+    TypeEncoding: 'f16@0:8'
+  - Name: 'size'
+    JsName: 'size'
+    Module: 'AssetsLibrary.ALAssetRepresentation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'size'
+    Signature:
+    - Type: LongLong
+    TypeEncoding: 'q16@0:8'
+  - Name: 'url'
+    JsName: 'url'
+    Module: 'AssetsLibrary.ALAssetRepresentation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'url'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    TypeEncoding: '@16@0:8'
+  - Name: 'UTI'
+    JsName: 'UTI'
+    Module: 'AssetsLibrary.ALAssetRepresentation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'UTI'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@16@0:8'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+...

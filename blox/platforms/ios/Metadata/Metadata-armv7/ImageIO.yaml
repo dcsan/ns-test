@@ -1,0 +1,4575 @@
+name: ImageIO
+items:
+- Name: 'CGImageSourceStatus'
+  JsName: 'CGImageSourceStatus'
+  Module: 'ImageIO.CGImageSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGImageStatusUnexpectedEOF":-5,"kCGImageStatusInvalidData":-4,"kCGImageStatusUnknownType":-3,"kCGImageStatusReadingHeader":-2,"kCGImageStatusIncomplete":-1,"kCGImageStatusComplete":0})
+- Name: 'kCGImageSourceTypeIdentifierHint'
+  JsName: 'kCGImageSourceTypeIdentifierHint'
+  Module: 'ImageIO.CGImageSource'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageSourceShouldCache'
+  JsName: 'kCGImageSourceShouldCache'
+  Module: 'ImageIO.CGImageSource'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageSourceShouldCacheImmediately'
+  JsName: 'kCGImageSourceShouldCacheImmediately'
+  Module: 'ImageIO.CGImageSource'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageSourceShouldAllowFloat'
+  JsName: 'kCGImageSourceShouldAllowFloat'
+  Module: 'ImageIO.CGImageSource'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageSourceCreateThumbnailFromImageIfAbsent'
+  JsName: 'kCGImageSourceCreateThumbnailFromImageIfAbsent'
+  Module: 'ImageIO.CGImageSource'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageSourceCreateThumbnailFromImageAlways'
+  JsName: 'kCGImageSourceCreateThumbnailFromImageAlways'
+  Module: 'ImageIO.CGImageSource'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageSourceThumbnailMaxPixelSize'
+  JsName: 'kCGImageSourceThumbnailMaxPixelSize'
+  Module: 'ImageIO.CGImageSource'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageSourceCreateThumbnailWithTransform'
+  JsName: 'kCGImageSourceCreateThumbnailWithTransform'
+  Module: 'ImageIO.CGImageSource'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CGImageSourceGetTypeID'
+  JsName: 'CGImageSourceGetTypeID'
+  Module: 'ImageIO.CGImageSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CGImageSourceCopyTypeIdentifiers'
+  JsName: 'CGImageSourceCopyTypeIdentifiers'
+  Module: 'ImageIO.CGImageSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+- Name: 'CGImageSourceCreateWithDataProvider'
+  JsName: 'CGImageSourceCreateWithDataProvider'
+  Module: 'ImageIO.CGImageSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGImageSourceCreateWithData'
+  JsName: 'CGImageSourceCreateWithData'
+  Module: 'ImageIO.CGImageSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGImageSourceCreateWithURL'
+  JsName: 'CGImageSourceCreateWithURL'
+  Module: 'ImageIO.CGImageSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGImageSourceGetType'
+  JsName: 'CGImageSourceGetType'
+  Module: 'ImageIO.CGImageSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageSourceGetCount'
+  JsName: 'CGImageSourceGetCount'
+  Module: 'ImageIO.CGImageSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageSourceCopyProperties'
+  JsName: 'CGImageSourceCopyProperties'
+  Module: 'ImageIO.CGImageSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGImageSourceCopyPropertiesAtIndex'
+  JsName: 'CGImageSourceCopyPropertiesAtIndex'
+  Module: 'ImageIO.CGImageSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGImageSourceCopyMetadataAtIndex'
+  JsName: 'CGImageSourceCopyMetadataAtIndex'
+  Module: 'ImageIO.CGImageSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGImageSourceCreateImageAtIndex'
+  JsName: 'CGImageSourceCreateImageAtIndex'
+  Module: 'ImageIO.CGImageSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGImageSourceRemoveCacheAtIndex'
+  JsName: 'CGImageSourceRemoveCacheAtIndex'
+  Module: 'ImageIO.CGImageSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+- Name: 'CGImageSourceCreateThumbnailAtIndex'
+  JsName: 'CGImageSourceCreateThumbnailAtIndex'
+  Module: 'ImageIO.CGImageSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGImageSourceCreateIncremental'
+  JsName: 'CGImageSourceCreateIncremental'
+  Module: 'ImageIO.CGImageSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGImageSourceUpdateData'
+  JsName: 'CGImageSourceUpdateData'
+  Module: 'ImageIO.CGImageSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Bool
+- Name: 'CGImageSourceUpdateDataProvider'
+  JsName: 'CGImageSourceUpdateDataProvider'
+  Module: 'ImageIO.CGImageSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Bool
+- Name: 'CGImageSourceGetStatus'
+  JsName: 'CGImageSourceGetStatus'
+  Module: 'ImageIO.CGImageSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageSourceGetStatusAtIndex'
+  JsName: 'CGImageSourceGetStatusAtIndex'
+  Module: 'ImageIO.CGImageSource'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+- Name: 'CGImageMetadataGetTypeID'
+  JsName: 'CGImageMetadataGetTypeID'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CGImageMetadataCreateMutable'
+  JsName: 'CGImageMetadataCreateMutable'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageMetadataCreateMutableCopy'
+  JsName: 'CGImageMetadataCreateMutableCopy'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageMetadataTagGetTypeID'
+  JsName: 'CGImageMetadataTagGetTypeID'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'kCGImageMetadataNamespaceExif'
+  JsName: 'kCGImageMetadataNamespaceExif'
+  Module: 'ImageIO.CGImageMetadata'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageMetadataNamespaceExifAux'
+  JsName: 'kCGImageMetadataNamespaceExifAux'
+  Module: 'ImageIO.CGImageMetadata'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageMetadataNamespaceExifEX'
+  JsName: 'kCGImageMetadataNamespaceExifEX'
+  Module: 'ImageIO.CGImageMetadata'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageMetadataNamespaceDublinCore'
+  JsName: 'kCGImageMetadataNamespaceDublinCore'
+  Module: 'ImageIO.CGImageMetadata'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageMetadataNamespaceIPTCCore'
+  JsName: 'kCGImageMetadataNamespaceIPTCCore'
+  Module: 'ImageIO.CGImageMetadata'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageMetadataNamespacePhotoshop'
+  JsName: 'kCGImageMetadataNamespacePhotoshop'
+  Module: 'ImageIO.CGImageMetadata'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageMetadataNamespaceTIFF'
+  JsName: 'kCGImageMetadataNamespaceTIFF'
+  Module: 'ImageIO.CGImageMetadata'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageMetadataNamespaceXMPBasic'
+  JsName: 'kCGImageMetadataNamespaceXMPBasic'
+  Module: 'ImageIO.CGImageMetadata'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageMetadataNamespaceXMPRights'
+  JsName: 'kCGImageMetadataNamespaceXMPRights'
+  Module: 'ImageIO.CGImageMetadata'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageMetadataPrefixExif'
+  JsName: 'kCGImageMetadataPrefixExif'
+  Module: 'ImageIO.CGImageMetadata'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageMetadataPrefixExifAux'
+  JsName: 'kCGImageMetadataPrefixExifAux'
+  Module: 'ImageIO.CGImageMetadata'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageMetadataPrefixExifEX'
+  JsName: 'kCGImageMetadataPrefixExifEX'
+  Module: 'ImageIO.CGImageMetadata'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageMetadataPrefixDublinCore'
+  JsName: 'kCGImageMetadataPrefixDublinCore'
+  Module: 'ImageIO.CGImageMetadata'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageMetadataPrefixIPTCCore'
+  JsName: 'kCGImageMetadataPrefixIPTCCore'
+  Module: 'ImageIO.CGImageMetadata'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageMetadataPrefixPhotoshop'
+  JsName: 'kCGImageMetadataPrefixPhotoshop'
+  Module: 'ImageIO.CGImageMetadata'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageMetadataPrefixTIFF'
+  JsName: 'kCGImageMetadataPrefixTIFF'
+  Module: 'ImageIO.CGImageMetadata'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageMetadataPrefixXMPBasic'
+  JsName: 'kCGImageMetadataPrefixXMPBasic'
+  Module: 'ImageIO.CGImageMetadata'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageMetadataPrefixXMPRights'
+  JsName: 'kCGImageMetadataPrefixXMPRights'
+  Module: 'ImageIO.CGImageMetadata'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CGImageMetadataType'
+  JsName: 'CGImageMetadataType'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGImageMetadataTypeInvalid":-1,"kCGImageMetadataTypeDefault":0,"kCGImageMetadataTypeString":1,"kCGImageMetadataTypeArrayUnordered":2,"kCGImageMetadataTypeArrayOrdered":3,"kCGImageMetadataTypeAlternateArray":4,"kCGImageMetadataTypeAlternateText":5,"kCGImageMetadataTypeStructure":6})
+- Name: 'CGImageMetadataTagCreate'
+  JsName: 'CGImageMetadataTagCreate'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageMetadataTagCopyNamespace'
+  JsName: 'CGImageMetadataTagCopyNamespace'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageMetadataTagCopyPrefix'
+  JsName: 'CGImageMetadataTagCopyPrefix'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageMetadataTagCopyName'
+  JsName: 'CGImageMetadataTagCopyName'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageMetadataTagCopyValue'
+  JsName: 'CGImageMetadataTagCopyValue'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageMetadataTagGetType'
+  JsName: 'CGImageMetadataTagGetType'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageMetadataTagCopyQualifiers'
+  JsName: 'CGImageMetadataTagCopyQualifiers'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageMetadataCopyTags'
+  JsName: 'CGImageMetadataCopyTags'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageMetadataCopyTagWithPath'
+  JsName: 'CGImageMetadataCopyTagWithPath'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CGImageMetadataCopyStringValueWithPath'
+  JsName: 'CGImageMetadataCopyStringValueWithPath'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CGImageMetadataRegisterNamespaceForPrefix'
+  JsName: 'CGImageMetadataRegisterNamespaceForPrefix'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFError
+      Name: NSError
+- Name: 'CGImageMetadataSetTagWithPath'
+  JsName: 'CGImageMetadataSetTagWithPath'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageMetadataSetValueWithPath'
+  JsName: 'CGImageMetadataSetValueWithPath'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageMetadataRemoveTagWithPath'
+  JsName: 'CGImageMetadataRemoveTagWithPath'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CGImageMetadataEnumerateTagsUsingBlock'
+  JsName: 'CGImageMetadataEnumerateTagsUsingBlock'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Block
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: CoreFoundation.CFBase
+      Name: NSString
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'kCGImageMetadataEnumerateRecursively'
+  JsName: 'kCGImageMetadataEnumerateRecursively'
+  Module: 'ImageIO.CGImageMetadata'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CGImageMetadataCopyTagMatchingImageProperty'
+  JsName: 'CGImageMetadataCopyTagMatchingImageProperty'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CGImageMetadataSetValueMatchingImageProperty'
+  JsName: 'CGImageMetadataSetValueMatchingImageProperty'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageMetadataCreateXMPData'
+  JsName: 'CGImageMetadataCreateXMPData'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGImageMetadataCreateFromXMPData'
+  JsName: 'CGImageMetadataCreateFromXMPData'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+- Name: 'kCFErrorDomainCGImageMetadata'
+  JsName: 'kCFErrorDomainCGImageMetadata'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CGImageMetadataErrors'
+  JsName: 'CGImageMetadataErrors'
+  Module: 'ImageIO.CGImageMetadata'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGImageMetadataErrorUnknown":0,"kCGImageMetadataErrorUnsupportedFormat":1,"kCGImageMetadataErrorBadArgument":2,"kCGImageMetadataErrorConflictingArguments":3,"kCGImageMetadataErrorPrefixConflict":4})
+- Name: 'kCGImageDestinationLossyCompressionQuality'
+  JsName: 'kCGImageDestinationLossyCompressionQuality'
+  Module: 'ImageIO.CGImageDestination'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageDestinationBackgroundColor'
+  JsName: 'kCGImageDestinationBackgroundColor'
+  Module: 'ImageIO.CGImageDestination'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageDestinationImageMaxPixelSize'
+  JsName: 'kCGImageDestinationImageMaxPixelSize'
+  Module: 'ImageIO.CGImageDestination'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageDestinationEmbedThumbnail'
+  JsName: 'kCGImageDestinationEmbedThumbnail'
+  Module: 'ImageIO.CGImageDestination'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CGImageDestinationGetTypeID'
+  JsName: 'CGImageDestinationGetTypeID'
+  Module: 'ImageIO.CGImageDestination'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CGImageDestinationCopyTypeIdentifiers'
+  JsName: 'CGImageDestinationCopyTypeIdentifiers'
+  Module: 'ImageIO.CGImageDestination'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+- Name: 'CGImageDestinationCreateWithDataConsumer'
+  JsName: 'CGImageDestinationCreateWithDataConsumer'
+  Module: 'ImageIO.CGImageDestination'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: ULong
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGImageDestinationCreateWithData'
+  JsName: 'CGImageDestinationCreateWithData'
+  Module: 'ImageIO.CGImageDestination'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSMutableData
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: ULong
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGImageDestinationCreateWithURL'
+  JsName: 'CGImageDestinationCreateWithURL'
+  Module: 'ImageIO.CGImageDestination'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: ULong
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGImageDestinationSetProperties'
+  JsName: 'CGImageDestinationSetProperties'
+  Module: 'ImageIO.CGImageDestination'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGImageDestinationAddImage'
+  JsName: 'CGImageDestinationAddImage'
+  Module: 'ImageIO.CGImageDestination'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGImageDestinationAddImageFromSource'
+  JsName: 'CGImageDestinationAddImageFromSource'
+  Module: 'ImageIO.CGImageDestination'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGImageDestinationFinalize'
+  JsName: 'CGImageDestinationFinalize'
+  Module: 'ImageIO.CGImageDestination'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageDestinationAddImageAndMetadata'
+  JsName: 'CGImageDestinationAddImageAndMetadata'
+  Module: 'ImageIO.CGImageDestination'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'kCGImageDestinationMetadata'
+  JsName: 'kCGImageDestinationMetadata'
+  Module: 'ImageIO.CGImageDestination'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageDestinationMergeMetadata'
+  JsName: 'kCGImageDestinationMergeMetadata'
+  Module: 'ImageIO.CGImageDestination'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageMetadataShouldExcludeXMP'
+  JsName: 'kCGImageMetadataShouldExcludeXMP'
+  Module: 'ImageIO.CGImageDestination'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageMetadataShouldExcludeGPS'
+  JsName: 'kCGImageMetadataShouldExcludeGPS'
+  Module: 'ImageIO.CGImageDestination'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageDestinationDateTime'
+  JsName: 'kCGImageDestinationDateTime'
+  Module: 'ImageIO.CGImageDestination'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageDestinationOrientation'
+  JsName: 'kCGImageDestinationOrientation'
+  Module: 'ImageIO.CGImageDestination'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CGImageDestinationCopyImageSource'
+  JsName: 'CGImageDestinationCopyImageSource'
+  Module: 'ImageIO.CGImageDestination'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFError
+      Name: NSError
+- Name: 'kCGImagePropertyTIFFDictionary'
+  JsName: 'kCGImagePropertyTIFFDictionary'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGIFDictionary'
+  JsName: 'kCGImagePropertyGIFDictionary'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyJFIFDictionary'
+  JsName: 'kCGImagePropertyJFIFDictionary'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifDictionary'
+  JsName: 'kCGImagePropertyExifDictionary'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyPNGDictionary'
+  JsName: 'kCGImagePropertyPNGDictionary'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCDictionary'
+  JsName: 'kCGImagePropertyIPTCDictionary'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSDictionary'
+  JsName: 'kCGImagePropertyGPSDictionary'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyRawDictionary'
+  JsName: 'kCGImagePropertyRawDictionary'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFDictionary'
+  JsName: 'kCGImagePropertyCIFFDictionary'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerCanonDictionary'
+  JsName: 'kCGImagePropertyMakerCanonDictionary'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerNikonDictionary'
+  JsName: 'kCGImagePropertyMakerNikonDictionary'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerMinoltaDictionary'
+  JsName: 'kCGImagePropertyMakerMinoltaDictionary'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerFujiDictionary'
+  JsName: 'kCGImagePropertyMakerFujiDictionary'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerOlympusDictionary'
+  JsName: 'kCGImagePropertyMakerOlympusDictionary'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerPentaxDictionary'
+  JsName: 'kCGImagePropertyMakerPentaxDictionary'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageProperty8BIMDictionary'
+  JsName: 'kCGImageProperty8BIMDictionary'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyDNGDictionary'
+  JsName: 'kCGImagePropertyDNGDictionary'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifAuxDictionary'
+  JsName: 'kCGImagePropertyExifAuxDictionary'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerAppleDictionary'
+  JsName: 'kCGImagePropertyMakerAppleDictionary'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyFileSize'
+  JsName: 'kCGImagePropertyFileSize'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyPixelHeight'
+  JsName: 'kCGImagePropertyPixelHeight'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyPixelWidth'
+  JsName: 'kCGImagePropertyPixelWidth'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyDPIHeight'
+  JsName: 'kCGImagePropertyDPIHeight'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyDPIWidth'
+  JsName: 'kCGImagePropertyDPIWidth'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyDepth'
+  JsName: 'kCGImagePropertyDepth'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyOrientation'
+  JsName: 'kCGImagePropertyOrientation'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIsFloat'
+  JsName: 'kCGImagePropertyIsFloat'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIsIndexed'
+  JsName: 'kCGImagePropertyIsIndexed'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyHasAlpha'
+  JsName: 'kCGImagePropertyHasAlpha'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyColorModel'
+  JsName: 'kCGImagePropertyColorModel'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyProfileName'
+  JsName: 'kCGImagePropertyProfileName'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyColorModelRGB'
+  JsName: 'kCGImagePropertyColorModelRGB'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyColorModelGray'
+  JsName: 'kCGImagePropertyColorModelGray'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyColorModelCMYK'
+  JsName: 'kCGImagePropertyColorModelCMYK'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyColorModelLab'
+  JsName: 'kCGImagePropertyColorModelLab'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyTIFFCompression'
+  JsName: 'kCGImagePropertyTIFFCompression'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyTIFFPhotometricInterpretation'
+  JsName: 'kCGImagePropertyTIFFPhotometricInterpretation'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyTIFFDocumentName'
+  JsName: 'kCGImagePropertyTIFFDocumentName'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyTIFFImageDescription'
+  JsName: 'kCGImagePropertyTIFFImageDescription'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyTIFFMake'
+  JsName: 'kCGImagePropertyTIFFMake'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyTIFFModel'
+  JsName: 'kCGImagePropertyTIFFModel'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyTIFFOrientation'
+  JsName: 'kCGImagePropertyTIFFOrientation'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyTIFFXResolution'
+  JsName: 'kCGImagePropertyTIFFXResolution'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyTIFFYResolution'
+  JsName: 'kCGImagePropertyTIFFYResolution'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyTIFFResolutionUnit'
+  JsName: 'kCGImagePropertyTIFFResolutionUnit'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyTIFFSoftware'
+  JsName: 'kCGImagePropertyTIFFSoftware'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyTIFFTransferFunction'
+  JsName: 'kCGImagePropertyTIFFTransferFunction'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyTIFFDateTime'
+  JsName: 'kCGImagePropertyTIFFDateTime'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyTIFFArtist'
+  JsName: 'kCGImagePropertyTIFFArtist'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyTIFFHostComputer'
+  JsName: 'kCGImagePropertyTIFFHostComputer'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyTIFFCopyright'
+  JsName: 'kCGImagePropertyTIFFCopyright'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyTIFFWhitePoint'
+  JsName: 'kCGImagePropertyTIFFWhitePoint'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyTIFFPrimaryChromaticities'
+  JsName: 'kCGImagePropertyTIFFPrimaryChromaticities'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyJFIFVersion'
+  JsName: 'kCGImagePropertyJFIFVersion'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyJFIFXDensity'
+  JsName: 'kCGImagePropertyJFIFXDensity'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyJFIFYDensity'
+  JsName: 'kCGImagePropertyJFIFYDensity'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyJFIFDensityUnit'
+  JsName: 'kCGImagePropertyJFIFDensityUnit'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyJFIFIsProgressive'
+  JsName: 'kCGImagePropertyJFIFIsProgressive'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifExposureTime'
+  JsName: 'kCGImagePropertyExifExposureTime'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifFNumber'
+  JsName: 'kCGImagePropertyExifFNumber'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifExposureProgram'
+  JsName: 'kCGImagePropertyExifExposureProgram'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifSpectralSensitivity'
+  JsName: 'kCGImagePropertyExifSpectralSensitivity'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifISOSpeedRatings'
+  JsName: 'kCGImagePropertyExifISOSpeedRatings'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifOECF'
+  JsName: 'kCGImagePropertyExifOECF'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifSensitivityType'
+  JsName: 'kCGImagePropertyExifSensitivityType'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifStandardOutputSensitivity'
+  JsName: 'kCGImagePropertyExifStandardOutputSensitivity'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifRecommendedExposureIndex'
+  JsName: 'kCGImagePropertyExifRecommendedExposureIndex'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifISOSpeed'
+  JsName: 'kCGImagePropertyExifISOSpeed'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifISOSpeedLatitudeyyy'
+  JsName: 'kCGImagePropertyExifISOSpeedLatitudeyyy'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifISOSpeedLatitudezzz'
+  JsName: 'kCGImagePropertyExifISOSpeedLatitudezzz'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifVersion'
+  JsName: 'kCGImagePropertyExifVersion'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifDateTimeOriginal'
+  JsName: 'kCGImagePropertyExifDateTimeOriginal'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifDateTimeDigitized'
+  JsName: 'kCGImagePropertyExifDateTimeDigitized'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifComponentsConfiguration'
+  JsName: 'kCGImagePropertyExifComponentsConfiguration'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifCompressedBitsPerPixel'
+  JsName: 'kCGImagePropertyExifCompressedBitsPerPixel'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifShutterSpeedValue'
+  JsName: 'kCGImagePropertyExifShutterSpeedValue'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifApertureValue'
+  JsName: 'kCGImagePropertyExifApertureValue'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifBrightnessValue'
+  JsName: 'kCGImagePropertyExifBrightnessValue'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifExposureBiasValue'
+  JsName: 'kCGImagePropertyExifExposureBiasValue'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifMaxApertureValue'
+  JsName: 'kCGImagePropertyExifMaxApertureValue'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifSubjectDistance'
+  JsName: 'kCGImagePropertyExifSubjectDistance'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifMeteringMode'
+  JsName: 'kCGImagePropertyExifMeteringMode'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifLightSource'
+  JsName: 'kCGImagePropertyExifLightSource'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifFlash'
+  JsName: 'kCGImagePropertyExifFlash'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifFocalLength'
+  JsName: 'kCGImagePropertyExifFocalLength'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifSubjectArea'
+  JsName: 'kCGImagePropertyExifSubjectArea'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifMakerNote'
+  JsName: 'kCGImagePropertyExifMakerNote'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifUserComment'
+  JsName: 'kCGImagePropertyExifUserComment'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifSubsecTime'
+  JsName: 'kCGImagePropertyExifSubsecTime'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifSubsecTimeOrginal'
+  JsName: 'kCGImagePropertyExifSubsecTimeOrginal'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifSubsecTimeDigitized'
+  JsName: 'kCGImagePropertyExifSubsecTimeDigitized'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifFlashPixVersion'
+  JsName: 'kCGImagePropertyExifFlashPixVersion'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifColorSpace'
+  JsName: 'kCGImagePropertyExifColorSpace'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifPixelXDimension'
+  JsName: 'kCGImagePropertyExifPixelXDimension'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifPixelYDimension'
+  JsName: 'kCGImagePropertyExifPixelYDimension'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifRelatedSoundFile'
+  JsName: 'kCGImagePropertyExifRelatedSoundFile'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifFlashEnergy'
+  JsName: 'kCGImagePropertyExifFlashEnergy'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifSpatialFrequencyResponse'
+  JsName: 'kCGImagePropertyExifSpatialFrequencyResponse'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifFocalPlaneXResolution'
+  JsName: 'kCGImagePropertyExifFocalPlaneXResolution'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifFocalPlaneYResolution'
+  JsName: 'kCGImagePropertyExifFocalPlaneYResolution'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifFocalPlaneResolutionUnit'
+  JsName: 'kCGImagePropertyExifFocalPlaneResolutionUnit'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifSubjectLocation'
+  JsName: 'kCGImagePropertyExifSubjectLocation'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifExposureIndex'
+  JsName: 'kCGImagePropertyExifExposureIndex'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifSensingMethod'
+  JsName: 'kCGImagePropertyExifSensingMethod'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifFileSource'
+  JsName: 'kCGImagePropertyExifFileSource'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifSceneType'
+  JsName: 'kCGImagePropertyExifSceneType'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifCFAPattern'
+  JsName: 'kCGImagePropertyExifCFAPattern'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifCustomRendered'
+  JsName: 'kCGImagePropertyExifCustomRendered'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifExposureMode'
+  JsName: 'kCGImagePropertyExifExposureMode'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifWhiteBalance'
+  JsName: 'kCGImagePropertyExifWhiteBalance'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifDigitalZoomRatio'
+  JsName: 'kCGImagePropertyExifDigitalZoomRatio'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifFocalLenIn35mmFilm'
+  JsName: 'kCGImagePropertyExifFocalLenIn35mmFilm'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifSceneCaptureType'
+  JsName: 'kCGImagePropertyExifSceneCaptureType'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifGainControl'
+  JsName: 'kCGImagePropertyExifGainControl'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifContrast'
+  JsName: 'kCGImagePropertyExifContrast'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifSaturation'
+  JsName: 'kCGImagePropertyExifSaturation'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifSharpness'
+  JsName: 'kCGImagePropertyExifSharpness'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifDeviceSettingDescription'
+  JsName: 'kCGImagePropertyExifDeviceSettingDescription'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifSubjectDistRange'
+  JsName: 'kCGImagePropertyExifSubjectDistRange'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifImageUniqueID'
+  JsName: 'kCGImagePropertyExifImageUniqueID'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifCameraOwnerName'
+  JsName: 'kCGImagePropertyExifCameraOwnerName'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifBodySerialNumber'
+  JsName: 'kCGImagePropertyExifBodySerialNumber'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifLensSpecification'
+  JsName: 'kCGImagePropertyExifLensSpecification'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifLensMake'
+  JsName: 'kCGImagePropertyExifLensMake'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifLensModel'
+  JsName: 'kCGImagePropertyExifLensModel'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifLensSerialNumber'
+  JsName: 'kCGImagePropertyExifLensSerialNumber'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifGamma'
+  JsName: 'kCGImagePropertyExifGamma'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifAuxLensInfo'
+  JsName: 'kCGImagePropertyExifAuxLensInfo'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifAuxLensModel'
+  JsName: 'kCGImagePropertyExifAuxLensModel'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifAuxSerialNumber'
+  JsName: 'kCGImagePropertyExifAuxSerialNumber'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifAuxLensID'
+  JsName: 'kCGImagePropertyExifAuxLensID'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifAuxLensSerialNumber'
+  JsName: 'kCGImagePropertyExifAuxLensSerialNumber'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifAuxImageNumber'
+  JsName: 'kCGImagePropertyExifAuxImageNumber'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifAuxFlashCompensation'
+  JsName: 'kCGImagePropertyExifAuxFlashCompensation'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifAuxOwnerName'
+  JsName: 'kCGImagePropertyExifAuxOwnerName'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyExifAuxFirmware'
+  JsName: 'kCGImagePropertyExifAuxFirmware'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGIFLoopCount'
+  JsName: 'kCGImagePropertyGIFLoopCount'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGIFDelayTime'
+  JsName: 'kCGImagePropertyGIFDelayTime'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGIFImageColorMap'
+  JsName: 'kCGImagePropertyGIFImageColorMap'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGIFHasGlobalColorMap'
+  JsName: 'kCGImagePropertyGIFHasGlobalColorMap'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGIFUnclampedDelayTime'
+  JsName: 'kCGImagePropertyGIFUnclampedDelayTime'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyPNGGamma'
+  JsName: 'kCGImagePropertyPNGGamma'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyPNGInterlaceType'
+  JsName: 'kCGImagePropertyPNGInterlaceType'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyPNGXPixelsPerMeter'
+  JsName: 'kCGImagePropertyPNGXPixelsPerMeter'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyPNGYPixelsPerMeter'
+  JsName: 'kCGImagePropertyPNGYPixelsPerMeter'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyPNGsRGBIntent'
+  JsName: 'kCGImagePropertyPNGsRGBIntent'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyPNGChromaticities'
+  JsName: 'kCGImagePropertyPNGChromaticities'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyPNGAuthor'
+  JsName: 'kCGImagePropertyPNGAuthor'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyPNGCopyright'
+  JsName: 'kCGImagePropertyPNGCopyright'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyPNGCreationTime'
+  JsName: 'kCGImagePropertyPNGCreationTime'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyPNGDescription'
+  JsName: 'kCGImagePropertyPNGDescription'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyPNGModificationTime'
+  JsName: 'kCGImagePropertyPNGModificationTime'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyPNGSoftware'
+  JsName: 'kCGImagePropertyPNGSoftware'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyPNGTitle'
+  JsName: 'kCGImagePropertyPNGTitle'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyAPNGLoopCount'
+  JsName: 'kCGImagePropertyAPNGLoopCount'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyAPNGDelayTime'
+  JsName: 'kCGImagePropertyAPNGDelayTime'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyAPNGUnclampedDelayTime'
+  JsName: 'kCGImagePropertyAPNGUnclampedDelayTime'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSVersion'
+  JsName: 'kCGImagePropertyGPSVersion'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSLatitudeRef'
+  JsName: 'kCGImagePropertyGPSLatitudeRef'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSLatitude'
+  JsName: 'kCGImagePropertyGPSLatitude'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSLongitudeRef'
+  JsName: 'kCGImagePropertyGPSLongitudeRef'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSLongitude'
+  JsName: 'kCGImagePropertyGPSLongitude'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSAltitudeRef'
+  JsName: 'kCGImagePropertyGPSAltitudeRef'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSAltitude'
+  JsName: 'kCGImagePropertyGPSAltitude'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSTimeStamp'
+  JsName: 'kCGImagePropertyGPSTimeStamp'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSSatellites'
+  JsName: 'kCGImagePropertyGPSSatellites'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSStatus'
+  JsName: 'kCGImagePropertyGPSStatus'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSMeasureMode'
+  JsName: 'kCGImagePropertyGPSMeasureMode'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSDOP'
+  JsName: 'kCGImagePropertyGPSDOP'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSSpeedRef'
+  JsName: 'kCGImagePropertyGPSSpeedRef'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSSpeed'
+  JsName: 'kCGImagePropertyGPSSpeed'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSTrackRef'
+  JsName: 'kCGImagePropertyGPSTrackRef'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSTrack'
+  JsName: 'kCGImagePropertyGPSTrack'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSImgDirectionRef'
+  JsName: 'kCGImagePropertyGPSImgDirectionRef'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSImgDirection'
+  JsName: 'kCGImagePropertyGPSImgDirection'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSMapDatum'
+  JsName: 'kCGImagePropertyGPSMapDatum'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSDestLatitudeRef'
+  JsName: 'kCGImagePropertyGPSDestLatitudeRef'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSDestLatitude'
+  JsName: 'kCGImagePropertyGPSDestLatitude'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSDestLongitudeRef'
+  JsName: 'kCGImagePropertyGPSDestLongitudeRef'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSDestLongitude'
+  JsName: 'kCGImagePropertyGPSDestLongitude'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSDestBearingRef'
+  JsName: 'kCGImagePropertyGPSDestBearingRef'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSDestBearing'
+  JsName: 'kCGImagePropertyGPSDestBearing'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSDestDistanceRef'
+  JsName: 'kCGImagePropertyGPSDestDistanceRef'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSDestDistance'
+  JsName: 'kCGImagePropertyGPSDestDistance'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSProcessingMethod'
+  JsName: 'kCGImagePropertyGPSProcessingMethod'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSAreaInformation'
+  JsName: 'kCGImagePropertyGPSAreaInformation'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSDateStamp'
+  JsName: 'kCGImagePropertyGPSDateStamp'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSDifferental'
+  JsName: 'kCGImagePropertyGPSDifferental'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyGPSHPositioningError'
+  JsName: 'kCGImagePropertyGPSHPositioningError'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCObjectTypeReference'
+  JsName: 'kCGImagePropertyIPTCObjectTypeReference'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCObjectAttributeReference'
+  JsName: 'kCGImagePropertyIPTCObjectAttributeReference'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCObjectName'
+  JsName: 'kCGImagePropertyIPTCObjectName'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCEditStatus'
+  JsName: 'kCGImagePropertyIPTCEditStatus'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCEditorialUpdate'
+  JsName: 'kCGImagePropertyIPTCEditorialUpdate'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCUrgency'
+  JsName: 'kCGImagePropertyIPTCUrgency'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCSubjectReference'
+  JsName: 'kCGImagePropertyIPTCSubjectReference'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCCategory'
+  JsName: 'kCGImagePropertyIPTCCategory'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCSupplementalCategory'
+  JsName: 'kCGImagePropertyIPTCSupplementalCategory'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCFixtureIdentifier'
+  JsName: 'kCGImagePropertyIPTCFixtureIdentifier'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCKeywords'
+  JsName: 'kCGImagePropertyIPTCKeywords'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCContentLocationCode'
+  JsName: 'kCGImagePropertyIPTCContentLocationCode'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCContentLocationName'
+  JsName: 'kCGImagePropertyIPTCContentLocationName'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCReleaseDate'
+  JsName: 'kCGImagePropertyIPTCReleaseDate'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCReleaseTime'
+  JsName: 'kCGImagePropertyIPTCReleaseTime'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCExpirationDate'
+  JsName: 'kCGImagePropertyIPTCExpirationDate'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCExpirationTime'
+  JsName: 'kCGImagePropertyIPTCExpirationTime'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCSpecialInstructions'
+  JsName: 'kCGImagePropertyIPTCSpecialInstructions'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCActionAdvised'
+  JsName: 'kCGImagePropertyIPTCActionAdvised'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCReferenceService'
+  JsName: 'kCGImagePropertyIPTCReferenceService'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCReferenceDate'
+  JsName: 'kCGImagePropertyIPTCReferenceDate'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCReferenceNumber'
+  JsName: 'kCGImagePropertyIPTCReferenceNumber'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCDateCreated'
+  JsName: 'kCGImagePropertyIPTCDateCreated'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCTimeCreated'
+  JsName: 'kCGImagePropertyIPTCTimeCreated'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCDigitalCreationDate'
+  JsName: 'kCGImagePropertyIPTCDigitalCreationDate'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCDigitalCreationTime'
+  JsName: 'kCGImagePropertyIPTCDigitalCreationTime'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCOriginatingProgram'
+  JsName: 'kCGImagePropertyIPTCOriginatingProgram'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCProgramVersion'
+  JsName: 'kCGImagePropertyIPTCProgramVersion'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCObjectCycle'
+  JsName: 'kCGImagePropertyIPTCObjectCycle'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCByline'
+  JsName: 'kCGImagePropertyIPTCByline'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCBylineTitle'
+  JsName: 'kCGImagePropertyIPTCBylineTitle'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCCity'
+  JsName: 'kCGImagePropertyIPTCCity'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCSubLocation'
+  JsName: 'kCGImagePropertyIPTCSubLocation'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCProvinceState'
+  JsName: 'kCGImagePropertyIPTCProvinceState'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCCountryPrimaryLocationCode'
+  JsName: 'kCGImagePropertyIPTCCountryPrimaryLocationCode'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCCountryPrimaryLocationName'
+  JsName: 'kCGImagePropertyIPTCCountryPrimaryLocationName'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCOriginalTransmissionReference'
+  JsName: 'kCGImagePropertyIPTCOriginalTransmissionReference'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCHeadline'
+  JsName: 'kCGImagePropertyIPTCHeadline'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCCredit'
+  JsName: 'kCGImagePropertyIPTCCredit'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCSource'
+  JsName: 'kCGImagePropertyIPTCSource'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCCopyrightNotice'
+  JsName: 'kCGImagePropertyIPTCCopyrightNotice'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCContact'
+  JsName: 'kCGImagePropertyIPTCContact'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCCaptionAbstract'
+  JsName: 'kCGImagePropertyIPTCCaptionAbstract'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCWriterEditor'
+  JsName: 'kCGImagePropertyIPTCWriterEditor'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCImageType'
+  JsName: 'kCGImagePropertyIPTCImageType'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCImageOrientation'
+  JsName: 'kCGImagePropertyIPTCImageOrientation'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCLanguageIdentifier'
+  JsName: 'kCGImagePropertyIPTCLanguageIdentifier'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCStarRating'
+  JsName: 'kCGImagePropertyIPTCStarRating'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCCreatorContactInfo'
+  JsName: 'kCGImagePropertyIPTCCreatorContactInfo'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCRightsUsageTerms'
+  JsName: 'kCGImagePropertyIPTCRightsUsageTerms'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCScene'
+  JsName: 'kCGImagePropertyIPTCScene'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCContactInfoCity'
+  JsName: 'kCGImagePropertyIPTCContactInfoCity'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCContactInfoCountry'
+  JsName: 'kCGImagePropertyIPTCContactInfoCountry'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCContactInfoAddress'
+  JsName: 'kCGImagePropertyIPTCContactInfoAddress'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCContactInfoPostalCode'
+  JsName: 'kCGImagePropertyIPTCContactInfoPostalCode'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCContactInfoStateProvince'
+  JsName: 'kCGImagePropertyIPTCContactInfoStateProvince'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCContactInfoEmails'
+  JsName: 'kCGImagePropertyIPTCContactInfoEmails'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCContactInfoPhones'
+  JsName: 'kCGImagePropertyIPTCContactInfoPhones'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyIPTCContactInfoWebURLs'
+  JsName: 'kCGImagePropertyIPTCContactInfoWebURLs'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageProperty8BIMLayerNames'
+  JsName: 'kCGImageProperty8BIMLayerNames'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImageProperty8BIMVersion'
+  JsName: 'kCGImageProperty8BIMVersion'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyDNGVersion'
+  JsName: 'kCGImagePropertyDNGVersion'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyDNGBackwardVersion'
+  JsName: 'kCGImagePropertyDNGBackwardVersion'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyDNGUniqueCameraModel'
+  JsName: 'kCGImagePropertyDNGUniqueCameraModel'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyDNGLocalizedCameraModel'
+  JsName: 'kCGImagePropertyDNGLocalizedCameraModel'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyDNGCameraSerialNumber'
+  JsName: 'kCGImagePropertyDNGCameraSerialNumber'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyDNGLensInfo'
+  JsName: 'kCGImagePropertyDNGLensInfo'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFDescription'
+  JsName: 'kCGImagePropertyCIFFDescription'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFFirmware'
+  JsName: 'kCGImagePropertyCIFFFirmware'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFOwnerName'
+  JsName: 'kCGImagePropertyCIFFOwnerName'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFImageName'
+  JsName: 'kCGImagePropertyCIFFImageName'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFImageFileName'
+  JsName: 'kCGImagePropertyCIFFImageFileName'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFReleaseMethod'
+  JsName: 'kCGImagePropertyCIFFReleaseMethod'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFReleaseTiming'
+  JsName: 'kCGImagePropertyCIFFReleaseTiming'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFRecordID'
+  JsName: 'kCGImagePropertyCIFFRecordID'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFSelfTimingTime'
+  JsName: 'kCGImagePropertyCIFFSelfTimingTime'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFCameraSerialNumber'
+  JsName: 'kCGImagePropertyCIFFCameraSerialNumber'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFImageSerialNumber'
+  JsName: 'kCGImagePropertyCIFFImageSerialNumber'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFContinuousDrive'
+  JsName: 'kCGImagePropertyCIFFContinuousDrive'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFFocusMode'
+  JsName: 'kCGImagePropertyCIFFFocusMode'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFMeteringMode'
+  JsName: 'kCGImagePropertyCIFFMeteringMode'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFShootingMode'
+  JsName: 'kCGImagePropertyCIFFShootingMode'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFLensModel'
+  JsName: 'kCGImagePropertyCIFFLensModel'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFLensMaxMM'
+  JsName: 'kCGImagePropertyCIFFLensMaxMM'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFLensMinMM'
+  JsName: 'kCGImagePropertyCIFFLensMinMM'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFWhiteBalanceIndex'
+  JsName: 'kCGImagePropertyCIFFWhiteBalanceIndex'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFFlashExposureComp'
+  JsName: 'kCGImagePropertyCIFFFlashExposureComp'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyCIFFMeasuredEV'
+  JsName: 'kCGImagePropertyCIFFMeasuredEV'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerNikonISOSetting'
+  JsName: 'kCGImagePropertyMakerNikonISOSetting'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerNikonColorMode'
+  JsName: 'kCGImagePropertyMakerNikonColorMode'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerNikonQuality'
+  JsName: 'kCGImagePropertyMakerNikonQuality'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerNikonWhiteBalanceMode'
+  JsName: 'kCGImagePropertyMakerNikonWhiteBalanceMode'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerNikonSharpenMode'
+  JsName: 'kCGImagePropertyMakerNikonSharpenMode'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerNikonFocusMode'
+  JsName: 'kCGImagePropertyMakerNikonFocusMode'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerNikonFlashSetting'
+  JsName: 'kCGImagePropertyMakerNikonFlashSetting'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerNikonISOSelection'
+  JsName: 'kCGImagePropertyMakerNikonISOSelection'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerNikonFlashExposureComp'
+  JsName: 'kCGImagePropertyMakerNikonFlashExposureComp'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerNikonImageAdjustment'
+  JsName: 'kCGImagePropertyMakerNikonImageAdjustment'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerNikonLensAdapter'
+  JsName: 'kCGImagePropertyMakerNikonLensAdapter'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerNikonLensType'
+  JsName: 'kCGImagePropertyMakerNikonLensType'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerNikonLensInfo'
+  JsName: 'kCGImagePropertyMakerNikonLensInfo'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerNikonFocusDistance'
+  JsName: 'kCGImagePropertyMakerNikonFocusDistance'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerNikonDigitalZoom'
+  JsName: 'kCGImagePropertyMakerNikonDigitalZoom'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerNikonShootingMode'
+  JsName: 'kCGImagePropertyMakerNikonShootingMode'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerNikonCameraSerialNumber'
+  JsName: 'kCGImagePropertyMakerNikonCameraSerialNumber'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerNikonShutterCount'
+  JsName: 'kCGImagePropertyMakerNikonShutterCount'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerCanonOwnerName'
+  JsName: 'kCGImagePropertyMakerCanonOwnerName'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerCanonCameraSerialNumber'
+  JsName: 'kCGImagePropertyMakerCanonCameraSerialNumber'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerCanonImageSerialNumber'
+  JsName: 'kCGImagePropertyMakerCanonImageSerialNumber'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerCanonFlashExposureComp'
+  JsName: 'kCGImagePropertyMakerCanonFlashExposureComp'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerCanonContinuousDrive'
+  JsName: 'kCGImagePropertyMakerCanonContinuousDrive'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerCanonLensModel'
+  JsName: 'kCGImagePropertyMakerCanonLensModel'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerCanonFirmware'
+  JsName: 'kCGImagePropertyMakerCanonFirmware'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGImagePropertyMakerCanonAspectRatioInfo'
+  JsName: 'kCGImagePropertyMakerCanonAspectRatioInfo'
+  Module: 'ImageIO.CGImageProperties'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CGImagePropertyOrientation'
+  JsName: 'CGImagePropertyOrientation'
+  Module: 'ImageIO.CGImageProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGImagePropertyOrientationUp":1,"kCGImagePropertyOrientationUpMirrored":2,"kCGImagePropertyOrientationDown":3,"kCGImagePropertyOrientationDownMirrored":4,"kCGImagePropertyOrientationLeftMirrored":5,"kCGImagePropertyOrientationRight":6,"kCGImagePropertyOrientationRightMirrored":7,"kCGImagePropertyOrientationLeft":8})
+...

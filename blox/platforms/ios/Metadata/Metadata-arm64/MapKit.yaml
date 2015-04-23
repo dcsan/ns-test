@@ -1,0 +1,6985 @@
+name: MapKit
+items:
+- Name: 'MKAnnotation'
+  JsName: 'MKAnnotation'
+  Module: 'MapKit.MKAnnotation'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'setCoordinate:'
+    JsName: 'setCoordinate'
+    Module: 'MapKit.MKAnnotation'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setCoordinate:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+    TypeEncoding: 'v32@0:8{?=dd}16'
+  StaticMethods: []
+  Properties:
+  - Name: 'coordinate'
+    JsName: 'coordinate'
+    Module: 'MapKit.MKAnnotation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'coordinate'
+      JsName: 'coordinate'
+      Module: 'MapKit.MKAnnotation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'coordinate'
+      Signature:
+      - Type: Struct
+        Module: CoreLocation.CLLocation
+        Name: CLLocationCoordinate2D
+      TypeEncoding: '{?=dd}16@0:8'
+  - Name: 'subtitle'
+    JsName: 'subtitle'
+    Module: 'MapKit.MKAnnotation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'subtitle'
+      JsName: 'subtitle'
+      Module: 'MapKit.MKAnnotation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'subtitle'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'title'
+    JsName: 'title'
+    Module: 'MapKit.MKAnnotation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'title'
+      JsName: 'title'
+      Module: 'MapKit.MKAnnotation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'title'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MKAnnotationCalloutInfoDidChangeNotification'
+  JsName: 'MKAnnotationCalloutInfoDidChangeNotification'
+  Module: 'MapKit.MKAnnotationView'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MKAnnotationViewDragState'
+  JsName: 'MKAnnotationViewDragState'
+  Module: 'MapKit.MKAnnotationView'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MKAnnotationViewDragStateNone":0,"MKAnnotationViewDragStateStarting":1,"MKAnnotationViewDragStateDragging":2,"MKAnnotationViewDragStateCanceling":3,"MKAnnotationViewDragStateEnding":4})
+- Name: 'MKAnnotationView'
+  JsName: 'MKAnnotationView'
+  Module: 'MapKit.MKAnnotationView'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithAnnotation:reuseIdentifier:'
+    JsName: 'initWithAnnotationReuseIdentifier'
+    Module: 'MapKit.MKAnnotationView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithAnnotation:reuseIdentifier:'
+    Signature:
+    - Type: Instancetype
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKAnnotation
+        Name: MKAnnotation
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'prepareForReuse'
+    JsName: 'prepareForReuse'
+    Module: 'MapKit.MKAnnotationView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'prepareForReuse'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'setDragState:animated:'
+    JsName: 'setDragStateAnimated'
+    Module: 'MapKit.MKAnnotationView'
+    IntroducedIn: 4.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setDragState:animated:'
+    Signature:
+    - Type: Void
+    - Type: ULong
+    - Type: Bool
+    TypeEncoding: 'v28@0:8Q16B24'
+  - Name: 'setSelected:animated:'
+    JsName: 'setSelectedAnimated'
+    Module: 'MapKit.MKAnnotationView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setSelected:animated:'
+    Signature:
+    - Type: Void
+    - Type: Bool
+    - Type: Bool
+    TypeEncoding: 'v24@0:8B16B20'
+  StaticMethods: []
+  Properties:
+  - Name: 'annotation'
+    JsName: 'annotation'
+    Module: 'MapKit.MKAnnotationView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'annotation'
+      JsName: 'annotation'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'annotation'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: MapKit.MKAnnotation
+          Name: MKAnnotation
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setAnnotation:'
+      JsName: 'setAnnotation'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAnnotation:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: MapKit.MKAnnotation
+          Name: MKAnnotation
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'calloutOffset'
+    JsName: 'calloutOffset'
+    Module: 'MapKit.MKAnnotationView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'calloutOffset'
+      JsName: 'calloutOffset'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'calloutOffset'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGPoint
+      TypeEncoding: '{CGPoint=dd}16@0:8'
+    Setter:
+      Name: 'setCalloutOffset:'
+      JsName: 'setCalloutOffset'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCalloutOffset:'
+      Signature:
+      - Type: Void
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGPoint
+      TypeEncoding: 'v32@0:8{CGPoint=dd}16'
+  - Name: 'canShowCallout'
+    JsName: 'canShowCallout'
+    Module: 'MapKit.MKAnnotationView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'canShowCallout'
+      JsName: 'canShowCallout'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'canShowCallout'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setCanShowCallout:'
+      JsName: 'setCanShowCallout'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCanShowCallout:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'centerOffset'
+    JsName: 'centerOffset'
+    Module: 'MapKit.MKAnnotationView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'centerOffset'
+      JsName: 'centerOffset'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'centerOffset'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGPoint
+      TypeEncoding: '{CGPoint=dd}16@0:8'
+    Setter:
+      Name: 'setCenterOffset:'
+      JsName: 'setCenterOffset'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCenterOffset:'
+      Signature:
+      - Type: Void
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGPoint
+      TypeEncoding: 'v32@0:8{CGPoint=dd}16'
+  - Name: 'draggable'
+    JsName: 'draggable'
+    Module: 'MapKit.MKAnnotationView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isDraggable'
+      JsName: 'isDraggable'
+      Module: 'MapKit.MKAnnotationView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isDraggable'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setDraggable:'
+      JsName: 'setDraggable'
+      Module: 'MapKit.MKAnnotationView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDraggable:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'dragState'
+    JsName: 'dragState'
+    Module: 'MapKit.MKAnnotationView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'dragState'
+      JsName: 'dragState'
+      Module: 'MapKit.MKAnnotationView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'dragState'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setDragState:'
+      JsName: 'setDragState'
+      Module: 'MapKit.MKAnnotationView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDragState:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'enabled'
+    JsName: 'enabled'
+    Module: 'MapKit.MKAnnotationView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isEnabled'
+      JsName: 'isEnabled'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setEnabled:'
+      JsName: 'setEnabled'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setEnabled:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'highlighted'
+    JsName: 'highlighted'
+    Module: 'MapKit.MKAnnotationView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isHighlighted'
+      JsName: 'isHighlighted'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isHighlighted'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setHighlighted:'
+      JsName: 'setHighlighted'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setHighlighted:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'image'
+    JsName: 'image'
+    Module: 'MapKit.MKAnnotationView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'image'
+      JsName: 'image'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'image'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIImage
+        Name: UIImage
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setImage:'
+      JsName: 'setImage'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setImage:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: UIKit.UIImage
+        Name: UIImage
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'leftCalloutAccessoryView'
+    JsName: 'leftCalloutAccessoryView'
+    Module: 'MapKit.MKAnnotationView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'leftCalloutAccessoryView'
+      JsName: 'leftCalloutAccessoryView'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'leftCalloutAccessoryView'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIView
+        Name: UIView
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setLeftCalloutAccessoryView:'
+      JsName: 'setLeftCalloutAccessoryView'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLeftCalloutAccessoryView:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: UIKit.UIView
+        Name: UIView
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'reuseIdentifier'
+    JsName: 'reuseIdentifier'
+    Module: 'MapKit.MKAnnotationView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'reuseIdentifier'
+      JsName: 'reuseIdentifier'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'reuseIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'rightCalloutAccessoryView'
+    JsName: 'rightCalloutAccessoryView'
+    Module: 'MapKit.MKAnnotationView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'rightCalloutAccessoryView'
+      JsName: 'rightCalloutAccessoryView'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rightCalloutAccessoryView'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIView
+        Name: UIView
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setRightCalloutAccessoryView:'
+      JsName: 'setRightCalloutAccessoryView'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRightCalloutAccessoryView:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: UIKit.UIView
+        Name: UIView
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'selected'
+    JsName: 'selected'
+    Module: 'MapKit.MKAnnotationView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isSelected'
+      JsName: 'isSelected'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isSelected'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setSelected:'
+      JsName: 'setSelected'
+      Module: 'MapKit.MKAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSelected:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  Protocols: []
+  Base:
+    Module: UIKit.UIView
+    Name: UIView
+  Type: Interface
+- Name: 'MKDistanceFormatterUnits'
+  JsName: 'MKDistanceFormatterUnits'
+  Module: 'MapKit.MKDistanceFormatter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MKDistanceFormatterUnitsDefault":0,"MKDistanceFormatterUnitsMetric":1,"MKDistanceFormatterUnitsImperial":2,"MKDistanceFormatterUnitsImperialWithYards":3})
+- Name: 'MKDistanceFormatterUnitStyle'
+  JsName: 'MKDistanceFormatterUnitStyle'
+  Module: 'MapKit.MKDistanceFormatter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MKDistanceFormatterUnitStyleDefault":0,"MKDistanceFormatterUnitStyleAbbreviated":1,"MKDistanceFormatterUnitStyleFull":2})
+- Name: 'MKDistanceFormatter'
+  JsName: 'MKDistanceFormatter'
+  Module: 'MapKit.MKDistanceFormatter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'distanceFromString:'
+    JsName: 'distanceFromString'
+    Module: 'MapKit.MKDistanceFormatter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'distanceFromString:'
+    Signature:
+    - Type: Double
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: 'd24@0:8@16'
+  - Name: 'stringFromDistance:'
+    JsName: 'stringFromDistance'
+    Module: 'MapKit.MKDistanceFormatter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stringFromDistance:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Double
+    TypeEncoding: '@24@0:8d16'
+  StaticMethods: []
+  Properties:
+  - Name: 'locale'
+    JsName: 'locale'
+    Module: 'MapKit.MKDistanceFormatter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'locale'
+      JsName: 'locale'
+      Module: 'MapKit.MKDistanceFormatter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'locale'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSLocale
+        Name: NSLocale
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setLocale:'
+      JsName: 'setLocale'
+      Module: 'MapKit.MKDistanceFormatter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLocale:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSLocale
+        Name: NSLocale
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'units'
+    JsName: 'units'
+    Module: 'MapKit.MKDistanceFormatter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'units'
+      JsName: 'units'
+      Module: 'MapKit.MKDistanceFormatter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'units'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setUnits:'
+      JsName: 'setUnits'
+      Module: 'MapKit.MKDistanceFormatter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setUnits:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'unitStyle'
+    JsName: 'unitStyle'
+    Module: 'MapKit.MKDistanceFormatter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'unitStyle'
+      JsName: 'unitStyle'
+      Module: 'MapKit.MKDistanceFormatter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'unitStyle'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setUnitStyle:'
+      JsName: 'setUnitStyle'
+      Module: 'MapKit.MKDistanceFormatter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setUnitStyle:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  Protocols: []
+  Base:
+    Module: Foundation.NSFormatter
+    Name: NSFormatter
+  Type: Interface
+- Name: '1451'
+  JsName: 'MKCoordinateSpan'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: latitudeDelta
+    Signature:
+      Type: Double
+  - Name: longitudeDelta
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: '1452'
+  JsName: 'MKCoordinateRegion'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: center
+    Signature:
+      Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+  - Name: span
+    Signature:
+      Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKCoordinateSpan
+  Type: Struct
+- Name: 'MKCoordinateRegionMakeWithDistance'
+  JsName: 'MKCoordinateRegionMakeWithDistance'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKCoordinateRegion
+  - Type: Struct
+    Module: CoreLocation.CLLocation
+    Name: CLLocationCoordinate2D
+  - Type: Double
+  - Type: Double
+- Name: '1453'
+  JsName: 'MKMapPoint'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: x
+    Signature:
+      Type: Double
+  - Name: y
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: '1454'
+  JsName: 'MKMapSize'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: width
+    Signature:
+      Type: Double
+  - Name: height
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: '1455'
+  JsName: 'MKMapRect'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: origin
+    Signature:
+      Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapPoint
+  - Name: size
+    Signature:
+      Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapSize
+  Type: Struct
+- Name: 'MKMapSizeWorld'
+  JsName: 'MKMapSizeWorld'
+  Module: 'MapKit.MKGeometry'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapSize
+- Name: 'MKMapRectWorld'
+  JsName: 'MKMapRectWorld'
+  Module: 'MapKit.MKGeometry'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+- Name: 'MKMapPointForCoordinate'
+  JsName: 'MKMapPointForCoordinate'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapPoint
+  - Type: Struct
+    Module: CoreLocation.CLLocation
+    Name: CLLocationCoordinate2D
+- Name: 'MKCoordinateForMapPoint'
+  JsName: 'MKCoordinateForMapPoint'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreLocation.CLLocation
+    Name: CLLocationCoordinate2D
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapPoint
+- Name: 'MKMetersPerMapPointAtLatitude'
+  JsName: 'MKMetersPerMapPointAtLatitude'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Double
+- Name: 'MKMapPointsPerMeterAtLatitude'
+  JsName: 'MKMapPointsPerMeterAtLatitude'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Double
+- Name: 'MKMetersBetweenMapPoints'
+  JsName: 'MKMetersBetweenMapPoints'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapPoint
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapPoint
+- Name: 'MKMapRectNull'
+  JsName: 'MKMapRectNull'
+  Module: 'MapKit.MKGeometry'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+- Name: 'MKMapRectUnion'
+  JsName: 'MKMapRectUnion'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+- Name: 'MKMapRectIntersection'
+  JsName: 'MKMapRectIntersection'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+- Name: 'MKMapRectInset'
+  JsName: 'MKMapRectInset'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+  - Type: Double
+  - Type: Double
+- Name: 'MKMapRectOffset'
+  JsName: 'MKMapRectOffset'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+  - Type: Double
+  - Type: Double
+- Name: 'MKMapRectDivide'
+  JsName: 'MKMapRectDivide'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+  - Type: Double
+  - Type: UInt
+- Name: 'MKMapRectContainsPoint'
+  JsName: 'MKMapRectContainsPoint'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapPoint
+- Name: 'MKMapRectContainsRect'
+  JsName: 'MKMapRectContainsRect'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+- Name: 'MKMapRectIntersectsRect'
+  JsName: 'MKMapRectIntersectsRect'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+- Name: 'MKCoordinateRegionForMapRect'
+  JsName: 'MKCoordinateRegionForMapRect'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKCoordinateRegion
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+- Name: 'MKMapRectSpans180thMeridian'
+  JsName: 'MKMapRectSpans180thMeridian'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+- Name: 'MKMapRectRemainder'
+  JsName: 'MKMapRectRemainder'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+  - Type: Struct
+    Module: MapKit.MKGeometry
+    Name: MKMapRect
+- Name: 'NSValueMapKitGeometryExtensions'
+  JsName: 'NSValueMapKitGeometryExtensions'
+  Module: 'MapKit.MKGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'valueWithMKCoordinate:'
+    JsName: 'valueWithMKCoordinate'
+    Module: 'MapKit.MKGeometry'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueWithMKCoordinate:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSValue
+      Name: NSValue
+    - Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+    TypeEncoding: '@32@0:8{?=dd}16'
+  - Name: 'valueWithMKCoordinateSpan:'
+    JsName: 'valueWithMKCoordinateSpan'
+    Module: 'MapKit.MKGeometry'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'valueWithMKCoordinateSpan:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSValue
+      Name: NSValue
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKCoordinateSpan
+    TypeEncoding: '@32@0:8{?=dd}16'
+  Properties:
+  - Name: 'MKCoordinateSpanValue'
+    JsName: 'MKCoordinateSpanValue'
+    Module: 'MapKit.MKGeometry'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'MKCoordinateSpanValue'
+      JsName: 'MKCoordinateSpanValue'
+      Module: 'MapKit.MKGeometry'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'MKCoordinateSpanValue'
+      Signature:
+      - Type: Struct
+        Module: MapKit.MKGeometry
+        Name: MKCoordinateSpan
+      TypeEncoding: '{?=dd}16@0:8'
+  - Name: 'MKCoordinateValue'
+    JsName: 'MKCoordinateValue'
+    Module: 'MapKit.MKGeometry'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'MKCoordinateValue'
+      JsName: 'MKCoordinateValue'
+      Module: 'MapKit.MKGeometry'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'MKCoordinateValue'
+      Signature:
+      - Type: Struct
+        Module: CoreLocation.CLLocation
+        Name: CLLocationCoordinate2D
+      TypeEncoding: '{?=dd}16@0:8'
+  Protocols: []
+  ExtendedInterface:
+    Module: Foundation.NSValue
+    Name: NSValue
+  Type: Category
+- Name: 'MKPlacemark'
+  JsName: 'MKPlacemark'
+  Module: 'MapKit.MKPlacemark'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithCoordinate:addressDictionary:'
+    JsName: 'initWithCoordinateAddressDictionary'
+    Module: 'MapKit.MKPlacemark'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithCoordinate:addressDictionary:'
+    Signature:
+    - Type: Instancetype
+    - Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: '@40@0:8{?=dd}16@32'
+  StaticMethods: []
+  Properties:
+  - Name: 'countryCode'
+    JsName: 'countryCode'
+    Module: 'MapKit.MKPlacemark'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'countryCode'
+      JsName: 'countryCode'
+      Module: 'MapKit.MKPlacemark'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'countryCode'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: MapKit.MKAnnotation
+    Name: MKAnnotation
+  Base:
+    Module: CoreLocation.CLPlacemark
+    Name: CLPlacemark
+  Type: Interface
+- Name: 'MKMapItem'
+  JsName: 'MKMapItem'
+  Module: 'MapKit.MKMapItem'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithPlacemark:'
+    JsName: 'initWithPlacemark'
+    Module: 'MapKit.MKMapItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithPlacemark:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: MapKit.MKPlacemark
+      Name: MKPlacemark
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'openInMapsWithLaunchOptions:'
+    JsName: 'openInMapsWithLaunchOptions'
+    Module: 'MapKit.MKMapItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'openInMapsWithLaunchOptions:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: 'B24@0:8@16'
+  StaticMethods:
+  - Name: 'mapItemForCurrentLocation'
+    JsName: 'mapItemForCurrentLocation'
+    Module: 'MapKit.MKMapItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapItemForCurrentLocation'
+    Signature:
+    - Type: Interface
+      Module: MapKit.MKMapItem
+      Name: MKMapItem
+    TypeEncoding: '@16@0:8'
+  - Name: 'openMapsWithItems:launchOptions:'
+    JsName: 'openMapsWithItemsLaunchOptions'
+    Module: 'MapKit.MKMapItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'openMapsWithItems:launchOptions:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    TypeEncoding: 'B32@0:8@16@24'
+  Properties:
+  - Name: 'isCurrentLocation'
+    JsName: 'isCurrentLocation'
+    Module: 'MapKit.MKMapItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isCurrentLocation'
+      JsName: 'isCurrentLocation'
+      Module: 'MapKit.MKMapItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isCurrentLocation'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'MapKit.MKMapItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'MapKit.MKMapItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setName:'
+      JsName: 'setName'
+      Module: 'MapKit.MKMapItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setName:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'phoneNumber'
+    JsName: 'phoneNumber'
+    Module: 'MapKit.MKMapItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'phoneNumber'
+      JsName: 'phoneNumber'
+      Module: 'MapKit.MKMapItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'phoneNumber'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setPhoneNumber:'
+      JsName: 'setPhoneNumber'
+      Module: 'MapKit.MKMapItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPhoneNumber:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'placemark'
+    JsName: 'placemark'
+    Module: 'MapKit.MKMapItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'placemark'
+      JsName: 'placemark'
+      Module: 'MapKit.MKMapItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'placemark'
+      Signature:
+      - Type: Interface
+        Module: MapKit.MKPlacemark
+        Name: MKPlacemark
+      TypeEncoding: '@16@0:8'
+  - Name: 'url'
+    JsName: 'url'
+    Module: 'MapKit.MKMapItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'url'
+      JsName: 'url'
+      Module: 'MapKit.MKMapItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'url'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setUrl:'
+      JsName: 'setUrl'
+      Module: 'MapKit.MKMapItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setUrl:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MKLaunchOptionsDirectionsModeKey'
+  JsName: 'MKLaunchOptionsDirectionsModeKey'
+  Module: 'MapKit.MKMapItem'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MKLaunchOptionsMapTypeKey'
+  JsName: 'MKLaunchOptionsMapTypeKey'
+  Module: 'MapKit.MKMapItem'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MKLaunchOptionsShowsTrafficKey'
+  JsName: 'MKLaunchOptionsShowsTrafficKey'
+  Module: 'MapKit.MKMapItem'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MKLaunchOptionsDirectionsModeDriving'
+  JsName: 'MKLaunchOptionsDirectionsModeDriving'
+  Module: 'MapKit.MKMapItem'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MKLaunchOptionsDirectionsModeWalking'
+  JsName: 'MKLaunchOptionsDirectionsModeWalking'
+  Module: 'MapKit.MKMapItem'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MKLaunchOptionsMapCenterKey'
+  JsName: 'MKLaunchOptionsMapCenterKey'
+  Module: 'MapKit.MKMapItem'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MKLaunchOptionsMapSpanKey'
+  JsName: 'MKLaunchOptionsMapSpanKey'
+  Module: 'MapKit.MKMapItem'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MKLaunchOptionsCameraKey'
+  JsName: 'MKLaunchOptionsCameraKey'
+  Module: 'MapKit.MKMapItem'
+  IntroducedIn: 7.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MKMapType'
+  JsName: 'MKMapType'
+  Module: 'MapKit.MKTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MKMapTypeStandard":0,"MKMapTypeSatellite":1,"MKMapTypeHybrid":2})
+- Name: 'MKErrorDomain'
+  JsName: 'MKErrorDomain'
+  Module: 'MapKit.MKTypes'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'MKErrorCode'
+  JsName: 'MKErrorCode'
+  Module: 'MapKit.MKTypes'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MKErrorUnknown":1,"MKErrorServerFailure":2,"MKErrorLoadingThrottled":3,"MKErrorPlacemarkNotFound":4,"MKErrorDirectionsNotFound":5})
+- Name: 'MKOverlay'
+  JsName: 'MKOverlay'
+  Module: 'MapKit.MKOverlay'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'canReplaceMapContent'
+    JsName: 'canReplaceMapContent'
+    Module: 'MapKit.MKOverlay'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'canReplaceMapContent'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'B16@0:8'
+  - Name: 'intersectsMapRect:'
+    JsName: 'intersectsMapRect'
+    Module: 'MapKit.MKOverlay'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'intersectsMapRect:'
+    Signature:
+    - Type: Bool
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    TypeEncoding: 'B48@0:8{?={?=dd}{?=dd}}16'
+  StaticMethods: []
+  Properties:
+  - Name: 'boundingMapRect'
+    JsName: 'boundingMapRect'
+    Module: 'MapKit.MKOverlay'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'boundingMapRect'
+      JsName: 'boundingMapRect'
+      Module: 'MapKit.MKOverlay'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'boundingMapRect'
+      Signature:
+      - Type: Struct
+        Module: MapKit.MKGeometry
+        Name: MKMapRect
+      TypeEncoding: '{?={?=dd}{?=dd}}16@0:8'
+  Protocols:
+  - Module: MapKit.MKAnnotation
+    Name: MKAnnotation
+  Type: Protocol
+- Name: 'MKOverlayRenderer'
+  JsName: 'MKOverlayRenderer'
+  Module: 'MapKit.MKOverlayRenderer'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'canDrawMapRect:zoomScale:'
+    JsName: 'canDrawMapRectZoomScale'
+    Module: 'MapKit.MKOverlayRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'canDrawMapRect:zoomScale:'
+    Signature:
+    - Type: Bool
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    - Type: Double
+    TypeEncoding: 'B56@0:8{?={?=dd}{?=dd}}16d48'
+  - Name: 'drawMapRect:zoomScale:inContext:'
+    JsName: 'drawMapRectZoomScaleInContext'
+    Module: 'MapKit.MKOverlayRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'drawMapRect:zoomScale:inContext:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    - Type: Double
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: 'v64@0:8{?={?=dd}{?=dd}}16d48^{CGContext=}56'
+  - Name: 'initWithOverlay:'
+    JsName: 'initWithOverlay'
+    Module: 'MapKit.MKOverlayRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithOverlay:'
+    Signature:
+    - Type: Instancetype
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKOverlay
+        Name: MKOverlay
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'mapPointForPoint:'
+    JsName: 'mapPointForPoint'
+    Module: 'MapKit.MKOverlayRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapPointForPoint:'
+    Signature:
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapPoint
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+    TypeEncoding: '{?=dd}32@0:8{CGPoint=dd}16'
+  - Name: 'mapRectForRect:'
+    JsName: 'mapRectForRect'
+    Module: 'MapKit.MKOverlayRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapRectForRect:'
+    Signature:
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    TypeEncoding: '{?={?=dd}{?=dd}}48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16'
+  - Name: 'pointForMapPoint:'
+    JsName: 'pointForMapPoint'
+    Module: 'MapKit.MKOverlayRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'pointForMapPoint:'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapPoint
+    TypeEncoding: '{CGPoint=dd}32@0:8{?=dd}16'
+  - Name: 'rectForMapRect:'
+    JsName: 'rectForMapRect'
+    Module: 'MapKit.MKOverlayRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'rectForMapRect:'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    TypeEncoding: '{CGRect={CGPoint=dd}{CGSize=dd}}48@0:8{?={?=dd}{?=dd}}16'
+  - Name: 'setNeedsDisplay'
+    JsName: 'setNeedsDisplay'
+    Module: 'MapKit.MKOverlayRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setNeedsDisplay'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'setNeedsDisplayInMapRect:'
+    JsName: 'setNeedsDisplayInMapRect'
+    Module: 'MapKit.MKOverlayRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setNeedsDisplayInMapRect:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    TypeEncoding: 'v48@0:8{?={?=dd}{?=dd}}16'
+  - Name: 'setNeedsDisplayInMapRect:zoomScale:'
+    JsName: 'setNeedsDisplayInMapRectZoomScale'
+    Module: 'MapKit.MKOverlayRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setNeedsDisplayInMapRect:zoomScale:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    - Type: Double
+    TypeEncoding: 'v56@0:8{?={?=dd}{?=dd}}16d48'
+  StaticMethods: []
+  Properties:
+  - Name: 'alpha'
+    JsName: 'alpha'
+    Module: 'MapKit.MKOverlayRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'alpha'
+      JsName: 'alpha'
+      Module: 'MapKit.MKOverlayRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'alpha'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+    Setter:
+      Name: 'setAlpha:'
+      JsName: 'setAlpha'
+      Module: 'MapKit.MKOverlayRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAlpha:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v24@0:8d16'
+  - Name: 'contentScaleFactor'
+    JsName: 'contentScaleFactor'
+    Module: 'MapKit.MKOverlayRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'contentScaleFactor'
+      JsName: 'contentScaleFactor'
+      Module: 'MapKit.MKOverlayRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'contentScaleFactor'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+  - Name: 'overlay'
+    JsName: 'overlay'
+    Module: 'MapKit.MKOverlayRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'overlay'
+      JsName: 'overlay'
+      Module: 'MapKit.MKOverlayRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'overlay'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: MapKit.MKOverlay
+          Name: MKOverlay
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MKRoadWidthAtZoomScale'
+  JsName: 'MKRoadWidthAtZoomScale'
+  Module: 'MapKit.MKOverlayRenderer'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Double
+- Name: 'MKOverlayView'
+  JsName: 'MKOverlayView'
+  Module: 'MapKit.MKOverlayView'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'canDrawMapRect:zoomScale:'
+    JsName: 'canDrawMapRectZoomScale'
+    Module: 'MapKit.MKOverlayView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'canDrawMapRect:zoomScale:'
+    Signature:
+    - Type: Bool
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    - Type: Double
+    TypeEncoding: 'B56@0:8{?={?=dd}{?=dd}}16d48'
+  - Name: 'drawMapRect:zoomScale:inContext:'
+    JsName: 'drawMapRectZoomScaleInContext'
+    Module: 'MapKit.MKOverlayView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'drawMapRect:zoomScale:inContext:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    - Type: Double
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: 'v64@0:8{?={?=dd}{?=dd}}16d48^{CGContext=}56'
+  - Name: 'initWithOverlay:'
+    JsName: 'initWithOverlay'
+    Module: 'MapKit.MKOverlayView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithOverlay:'
+    Signature:
+    - Type: Instancetype
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKOverlay
+        Name: MKOverlay
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'mapPointForPoint:'
+    JsName: 'mapPointForPoint'
+    Module: 'MapKit.MKOverlayView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapPointForPoint:'
+    Signature:
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapPoint
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+    TypeEncoding: '{?=dd}32@0:8{CGPoint=dd}16'
+  - Name: 'mapRectForRect:'
+    JsName: 'mapRectForRect'
+    Module: 'MapKit.MKOverlayView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapRectForRect:'
+    Signature:
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    TypeEncoding: '{?={?=dd}{?=dd}}48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16'
+  - Name: 'pointForMapPoint:'
+    JsName: 'pointForMapPoint'
+    Module: 'MapKit.MKOverlayView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'pointForMapPoint:'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapPoint
+    TypeEncoding: '{CGPoint=dd}32@0:8{?=dd}16'
+  - Name: 'rectForMapRect:'
+    JsName: 'rectForMapRect'
+    Module: 'MapKit.MKOverlayView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'rectForMapRect:'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    TypeEncoding: '{CGRect={CGPoint=dd}{CGSize=dd}}48@0:8{?={?=dd}{?=dd}}16'
+  - Name: 'setNeedsDisplayInMapRect:'
+    JsName: 'setNeedsDisplayInMapRect'
+    Module: 'MapKit.MKOverlayView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setNeedsDisplayInMapRect:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    TypeEncoding: 'v48@0:8{?={?=dd}{?=dd}}16'
+  - Name: 'setNeedsDisplayInMapRect:zoomScale:'
+    JsName: 'setNeedsDisplayInMapRectZoomScale'
+    Module: 'MapKit.MKOverlayView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setNeedsDisplayInMapRect:zoomScale:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    - Type: Double
+    TypeEncoding: 'v56@0:8{?={?=dd}{?=dd}}16d48'
+  StaticMethods: []
+  Properties:
+  - Name: 'overlay'
+    JsName: 'overlay'
+    Module: 'MapKit.MKOverlayView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'overlay'
+      JsName: 'overlay'
+      Module: 'MapKit.MKOverlayView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'overlay'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: MapKit.MKOverlay
+          Name: MKOverlay
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: UIKit.UIView
+    Name: UIView
+  Type: Interface
+- Name: 'MKUserTrackingMode'
+  JsName: 'MKUserTrackingMode'
+  Module: 'MapKit.MKMapView'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MKUserTrackingModeNone":0,"MKUserTrackingModeFollow":1,"MKUserTrackingModeFollowWithHeading":2})
+- Name: 'MKMapView'
+  JsName: 'MKMapView'
+  Module: 'MapKit.MKMapView'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'addAnnotation:'
+    JsName: 'addAnnotation'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addAnnotation:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKAnnotation
+        Name: MKAnnotation
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'addAnnotations:'
+    JsName: 'addAnnotations'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addAnnotations:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'addOverlay:'
+    JsName: 'addOverlay'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addOverlay:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKOverlay
+        Name: MKOverlay
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'addOverlay:level:'
+    JsName: 'addOverlayLevel'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addOverlay:level:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKOverlay
+        Name: MKOverlay
+    - Type: Long
+    TypeEncoding: 'v32@0:8@16q24'
+  - Name: 'addOverlays:'
+    JsName: 'addOverlays'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addOverlays:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'addOverlays:level:'
+    JsName: 'addOverlaysLevel'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'addOverlays:level:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Long
+    TypeEncoding: 'v32@0:8@16q24'
+  - Name: 'annotationsInMapRect:'
+    JsName: 'annotationsInMapRect'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'annotationsInMapRect:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSSet
+      Name: NSSet
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    TypeEncoding: '@48@0:8{?={?=dd}{?=dd}}16'
+  - Name: 'convertCoordinate:toPointToView:'
+    JsName: 'convertCoordinateToPointToView'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'convertCoordinate:toPointToView:'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+    - Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+    - Type: Interface
+      Module: UIKit.UIView
+      Name: UIView
+    TypeEncoding: '{CGPoint=dd}40@0:8{?=dd}16@32'
+  - Name: 'convertPoint:toCoordinateFromView:'
+    JsName: 'convertPointToCoordinateFromView'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'convertPoint:toCoordinateFromView:'
+    Signature:
+    - Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+    - Type: Interface
+      Module: UIKit.UIView
+      Name: UIView
+    TypeEncoding: '{?=dd}40@0:8{CGPoint=dd}16@32'
+  - Name: 'convertRect:toRegionFromView:'
+    JsName: 'convertRectToRegionFromView'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'convertRect:toRegionFromView:'
+    Signature:
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKCoordinateRegion
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Interface
+      Module: UIKit.UIView
+      Name: UIView
+    TypeEncoding: '{?={?=dd}{?=dd}}56@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16@48'
+  - Name: 'convertRegion:toRectToView:'
+    JsName: 'convertRegionToRectToView'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'convertRegion:toRectToView:'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKCoordinateRegion
+    - Type: Interface
+      Module: UIKit.UIView
+      Name: UIView
+    TypeEncoding: '{CGRect={CGPoint=dd}{CGSize=dd}}56@0:8{?={?=dd}{?=dd}}16@48'
+  - Name: 'dequeueReusableAnnotationViewWithIdentifier:'
+    JsName: 'dequeueReusableAnnotationViewWithIdentifier'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'dequeueReusableAnnotationViewWithIdentifier:'
+    Signature:
+    - Type: Interface
+      Module: MapKit.MKAnnotationView
+      Name: MKAnnotationView
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'deselectAnnotation:animated:'
+    JsName: 'deselectAnnotationAnimated'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'deselectAnnotation:animated:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKAnnotation
+        Name: MKAnnotation
+    - Type: Bool
+    TypeEncoding: 'v28@0:8@16B24'
+  - Name: 'exchangeOverlayAtIndex:withOverlayAtIndex:'
+    JsName: 'exchangeOverlayAtIndexWithOverlayAtIndex'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'exchangeOverlayAtIndex:withOverlayAtIndex:'
+    Signature:
+    - Type: Void
+    - Type: ULong
+    - Type: ULong
+    TypeEncoding: 'v32@0:8Q16Q24'
+  - Name: 'exchangeOverlay:withOverlay:'
+    JsName: 'exchangeOverlayWithOverlay'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'exchangeOverlay:withOverlay:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKOverlay
+        Name: MKOverlay
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKOverlay
+        Name: MKOverlay
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'insertOverlay:aboveOverlay:'
+    JsName: 'insertOverlayAboveOverlay'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'insertOverlay:aboveOverlay:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKOverlay
+        Name: MKOverlay
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKOverlay
+        Name: MKOverlay
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'insertOverlay:atIndex:'
+    JsName: 'insertOverlayAtIndex'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'insertOverlay:atIndex:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKOverlay
+        Name: MKOverlay
+    - Type: ULong
+    TypeEncoding: 'v32@0:8@16Q24'
+  - Name: 'insertOverlay:atIndex:level:'
+    JsName: 'insertOverlayAtIndexLevel'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'insertOverlay:atIndex:level:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKOverlay
+        Name: MKOverlay
+    - Type: ULong
+    - Type: Long
+    TypeEncoding: 'v40@0:8@16Q24q32'
+  - Name: 'insertOverlay:belowOverlay:'
+    JsName: 'insertOverlayBelowOverlay'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'insertOverlay:belowOverlay:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKOverlay
+        Name: MKOverlay
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKOverlay
+        Name: MKOverlay
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'mapRectThatFits:'
+    JsName: 'mapRectThatFits'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapRectThatFits:'
+    Signature:
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    TypeEncoding: '{?={?=dd}{?=dd}}48@0:8{?={?=dd}{?=dd}}16'
+  - Name: 'mapRectThatFits:edgePadding:'
+    JsName: 'mapRectThatFitsEdgePadding'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapRectThatFits:edgePadding:'
+    Signature:
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    - Type: Struct
+      Module: UIKit.UIGeometry
+      Name: UIEdgeInsets
+    TypeEncoding: '{?={?=dd}{?=dd}}80@0:8{?={?=dd}{?=dd}}16{UIEdgeInsets=dddd}48'
+  - Name: 'overlaysInLevel:'
+    JsName: 'overlaysInLevel'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'overlaysInLevel:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Long
+    TypeEncoding: '@24@0:8q16'
+  - Name: 'regionThatFits:'
+    JsName: 'regionThatFits'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'regionThatFits:'
+    Signature:
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKCoordinateRegion
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKCoordinateRegion
+    TypeEncoding: '{?={?=dd}{?=dd}}48@0:8{?={?=dd}{?=dd}}16'
+  - Name: 'removeAnnotation:'
+    JsName: 'removeAnnotation'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeAnnotation:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKAnnotation
+        Name: MKAnnotation
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'removeAnnotations:'
+    JsName: 'removeAnnotations'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeAnnotations:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'removeOverlay:'
+    JsName: 'removeOverlay'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeOverlay:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKOverlay
+        Name: MKOverlay
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'removeOverlays:'
+    JsName: 'removeOverlays'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeOverlays:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'rendererForOverlay:'
+    JsName: 'rendererForOverlay'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'rendererForOverlay:'
+    Signature:
+    - Type: Interface
+      Module: MapKit.MKOverlayRenderer
+      Name: MKOverlayRenderer
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKOverlay
+        Name: MKOverlay
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'selectAnnotation:animated:'
+    JsName: 'selectAnnotationAnimated'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'selectAnnotation:animated:'
+    Signature:
+    - Type: Void
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKAnnotation
+        Name: MKAnnotation
+    - Type: Bool
+    TypeEncoding: 'v28@0:8@16B24'
+  - Name: 'setCamera:animated:'
+    JsName: 'setCameraAnimated'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setCamera:animated:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapCamera
+      Name: MKMapCamera
+    - Type: Bool
+    TypeEncoding: 'v28@0:8@16B24'
+  - Name: 'setCenterCoordinate:animated:'
+    JsName: 'setCenterCoordinateAnimated'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setCenterCoordinate:animated:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+    - Type: Bool
+    TypeEncoding: 'v36@0:8{?=dd}16B32'
+  - Name: 'setRegion:animated:'
+    JsName: 'setRegionAnimated'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setRegion:animated:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKCoordinateRegion
+    - Type: Bool
+    TypeEncoding: 'v52@0:8{?={?=dd}{?=dd}}16B48'
+  - Name: 'setUserTrackingMode:animated:'
+    JsName: 'setUserTrackingModeAnimated'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setUserTrackingMode:animated:'
+    Signature:
+    - Type: Void
+    - Type: Long
+    - Type: Bool
+    TypeEncoding: 'v28@0:8q16B24'
+  - Name: 'setVisibleMapRect:animated:'
+    JsName: 'setVisibleMapRectAnimated'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setVisibleMapRect:animated:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    - Type: Bool
+    TypeEncoding: 'v52@0:8{?={?=dd}{?=dd}}16B48'
+  - Name: 'setVisibleMapRect:edgePadding:animated:'
+    JsName: 'setVisibleMapRectEdgePaddingAnimated'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setVisibleMapRect:edgePadding:animated:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    - Type: Struct
+      Module: UIKit.UIGeometry
+      Name: UIEdgeInsets
+    - Type: Bool
+    TypeEncoding: 'v84@0:8{?={?=dd}{?=dd}}16{UIEdgeInsets=dddd}48B80'
+  - Name: 'showAnnotations:animated:'
+    JsName: 'showAnnotationsAnimated'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'showAnnotations:animated:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Bool
+    TypeEncoding: 'v28@0:8@16B24'
+  - Name: 'viewForAnnotation:'
+    JsName: 'viewForAnnotation'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'viewForAnnotation:'
+    Signature:
+    - Type: Interface
+      Module: MapKit.MKAnnotationView
+      Name: MKAnnotationView
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKAnnotation
+        Name: MKAnnotation
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'viewForOverlay:'
+    JsName: 'viewForOverlay'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'viewForOverlay:'
+    Signature:
+    - Type: Interface
+      Module: MapKit.MKOverlayView
+      Name: MKOverlayView
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKOverlay
+        Name: MKOverlay
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'annotations'
+    JsName: 'annotations'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'annotations'
+      JsName: 'annotations'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'annotations'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  - Name: 'annotationVisibleRect'
+    JsName: 'annotationVisibleRect'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'annotationVisibleRect'
+      JsName: 'annotationVisibleRect'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'annotationVisibleRect'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGRect
+      TypeEncoding: '{CGRect={CGPoint=dd}{CGSize=dd}}16@0:8'
+  - Name: 'camera'
+    JsName: 'camera'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'camera'
+      JsName: 'camera'
+      Module: 'MapKit.MKMapView'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'camera'
+      Signature:
+      - Type: Interface
+        Module: MapKit.MKMapCamera
+        Name: MKMapCamera
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setCamera:'
+      JsName: 'setCamera'
+      Module: 'MapKit.MKMapView'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCamera:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: MapKit.MKMapCamera
+        Name: MKMapCamera
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'centerCoordinate'
+    JsName: 'centerCoordinate'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'centerCoordinate'
+      JsName: 'centerCoordinate'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'centerCoordinate'
+      Signature:
+      - Type: Struct
+        Module: CoreLocation.CLLocation
+        Name: CLLocationCoordinate2D
+      TypeEncoding: '{?=dd}16@0:8'
+    Setter:
+      Name: 'setCenterCoordinate:'
+      JsName: 'setCenterCoordinate'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCenterCoordinate:'
+      Signature:
+      - Type: Void
+      - Type: Struct
+        Module: CoreLocation.CLLocation
+        Name: CLLocationCoordinate2D
+      TypeEncoding: 'v32@0:8{?=dd}16'
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: MapKit.MKMapView
+          Name: MKMapViewDelegate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: MapKit.MKMapView
+          Name: MKMapViewDelegate
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'mapType'
+    JsName: 'mapType'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'mapType'
+      JsName: 'mapType'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mapType'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setMapType:'
+      JsName: 'setMapType'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMapType:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'overlays'
+    JsName: 'overlays'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'overlays'
+      JsName: 'overlays'
+      Module: 'MapKit.MKMapView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'overlays'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  - Name: 'pitchEnabled'
+    JsName: 'pitchEnabled'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isPitchEnabled'
+      JsName: 'isPitchEnabled'
+      Module: 'MapKit.MKMapView'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isPitchEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setPitchEnabled:'
+      JsName: 'setPitchEnabled'
+      Module: 'MapKit.MKMapView'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPitchEnabled:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'region'
+    JsName: 'region'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'region'
+      JsName: 'region'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'region'
+      Signature:
+      - Type: Struct
+        Module: MapKit.MKGeometry
+        Name: MKCoordinateRegion
+      TypeEncoding: '{?={?=dd}{?=dd}}16@0:8'
+    Setter:
+      Name: 'setRegion:'
+      JsName: 'setRegion'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRegion:'
+      Signature:
+      - Type: Void
+      - Type: Struct
+        Module: MapKit.MKGeometry
+        Name: MKCoordinateRegion
+      TypeEncoding: 'v48@0:8{?={?=dd}{?=dd}}16'
+  - Name: 'rotateEnabled'
+    JsName: 'rotateEnabled'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isRotateEnabled'
+      JsName: 'isRotateEnabled'
+      Module: 'MapKit.MKMapView'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isRotateEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setRotateEnabled:'
+      JsName: 'setRotateEnabled'
+      Module: 'MapKit.MKMapView'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRotateEnabled:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'scrollEnabled'
+    JsName: 'scrollEnabled'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isScrollEnabled'
+      JsName: 'isScrollEnabled'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isScrollEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setScrollEnabled:'
+      JsName: 'setScrollEnabled'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setScrollEnabled:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'selectedAnnotations'
+    JsName: 'selectedAnnotations'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'selectedAnnotations'
+      JsName: 'selectedAnnotations'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'selectedAnnotations'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setSelectedAnnotations:'
+      JsName: 'setSelectedAnnotations'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSelectedAnnotations:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'showsBuildings'
+    JsName: 'showsBuildings'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'showsBuildings'
+      JsName: 'showsBuildings'
+      Module: 'MapKit.MKMapView'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'showsBuildings'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setShowsBuildings:'
+      JsName: 'setShowsBuildings'
+      Module: 'MapKit.MKMapView'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShowsBuildings:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'showsPointsOfInterest'
+    JsName: 'showsPointsOfInterest'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'showsPointsOfInterest'
+      JsName: 'showsPointsOfInterest'
+      Module: 'MapKit.MKMapView'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'showsPointsOfInterest'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setShowsPointsOfInterest:'
+      JsName: 'setShowsPointsOfInterest'
+      Module: 'MapKit.MKMapView'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShowsPointsOfInterest:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'showsUserLocation'
+    JsName: 'showsUserLocation'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'showsUserLocation'
+      JsName: 'showsUserLocation'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'showsUserLocation'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setShowsUserLocation:'
+      JsName: 'setShowsUserLocation'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShowsUserLocation:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'userLocation'
+    JsName: 'userLocation'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'userLocation'
+      JsName: 'userLocation'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'userLocation'
+      Signature:
+      - Type: Interface
+        Module: MapKit.MKUserLocation
+        Name: MKUserLocation
+      TypeEncoding: '@16@0:8'
+  - Name: 'userLocationVisible'
+    JsName: 'userLocationVisible'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isUserLocationVisible'
+      JsName: 'isUserLocationVisible'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isUserLocationVisible'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  - Name: 'userTrackingMode'
+    JsName: 'userTrackingMode'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'userTrackingMode'
+      JsName: 'userTrackingMode'
+      Module: 'MapKit.MKMapView'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'userTrackingMode'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+    Setter:
+      Name: 'setUserTrackingMode:'
+      JsName: 'setUserTrackingMode'
+      Module: 'MapKit.MKMapView'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setUserTrackingMode:'
+      Signature:
+      - Type: Void
+      - Type: Long
+      TypeEncoding: 'v24@0:8q16'
+  - Name: 'visibleMapRect'
+    JsName: 'visibleMapRect'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'visibleMapRect'
+      JsName: 'visibleMapRect'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'visibleMapRect'
+      Signature:
+      - Type: Struct
+        Module: MapKit.MKGeometry
+        Name: MKMapRect
+      TypeEncoding: '{?={?=dd}{?=dd}}16@0:8'
+    Setter:
+      Name: 'setVisibleMapRect:'
+      JsName: 'setVisibleMapRect'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setVisibleMapRect:'
+      Signature:
+      - Type: Void
+      - Type: Struct
+        Module: MapKit.MKGeometry
+        Name: MKMapRect
+      TypeEncoding: 'v48@0:8{?={?=dd}{?=dd}}16'
+  - Name: 'zoomEnabled'
+    JsName: 'zoomEnabled'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isZoomEnabled'
+      JsName: 'isZoomEnabled'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isZoomEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setZoomEnabled:'
+      JsName: 'setZoomEnabled'
+      Module: 'MapKit.MKMapView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setZoomEnabled:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCoding
+  Base:
+    Module: UIKit.UIView
+    Name: UIView
+  Type: Interface
+- Name: 'MKOverlayLevel'
+  JsName: 'MKOverlayLevel'
+  Module: 'MapKit.MKMapView'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MKOverlayLevelAboveRoads":0,"MKOverlayLevelAboveLabels":1})
+- Name: 'MKMapViewDelegate'
+  JsName: 'MKMapViewDelegate'
+  Module: 'MapKit.MKMapView'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'mapView:annotationView:calloutAccessoryControlTapped:'
+    JsName: 'mapViewAnnotationViewCalloutAccessoryControlTapped'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapView:annotationView:calloutAccessoryControlTapped:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    - Type: Interface
+      Module: MapKit.MKAnnotationView
+      Name: MKAnnotationView
+    - Type: Interface
+      Module: UIKit.UIControl
+      Name: UIControl
+    TypeEncoding: 'v40@0:8@16@24@32'
+  - Name: 'mapView:annotationView:didChangeDragState:fromOldState:'
+    JsName: 'mapViewAnnotationViewDidChangeDragStateFromOldState'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapView:annotationView:didChangeDragState:fromOldState:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    - Type: Interface
+      Module: MapKit.MKAnnotationView
+      Name: MKAnnotationView
+    - Type: ULong
+    - Type: ULong
+    TypeEncoding: 'v48@0:8@16@24Q32Q40'
+  - Name: 'mapView:didAddAnnotationViews:'
+    JsName: 'mapViewDidAddAnnotationViews'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapView:didAddAnnotationViews:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'mapView:didAddOverlayRenderers:'
+    JsName: 'mapViewDidAddOverlayRenderers'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapView:didAddOverlayRenderers:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'mapView:didAddOverlayViews:'
+    JsName: 'mapViewDidAddOverlayViews'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapView:didAddOverlayViews:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'mapView:didChangeUserTrackingMode:animated:'
+    JsName: 'mapViewDidChangeUserTrackingModeAnimated'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapView:didChangeUserTrackingMode:animated:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    - Type: Long
+    - Type: Bool
+    TypeEncoding: 'v36@0:8@16q24B32'
+  - Name: 'mapView:didDeselectAnnotationView:'
+    JsName: 'mapViewDidDeselectAnnotationView'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapView:didDeselectAnnotationView:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    - Type: Interface
+      Module: MapKit.MKAnnotationView
+      Name: MKAnnotationView
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'mapViewDidFailLoadingMap:withError:'
+    JsName: 'mapViewDidFailLoadingMapWithError'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapViewDidFailLoadingMap:withError:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'mapView:didFailToLocateUserWithError:'
+    JsName: 'mapViewDidFailToLocateUserWithError'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapView:didFailToLocateUserWithError:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'mapViewDidFinishLoadingMap:'
+    JsName: 'mapViewDidFinishLoadingMap'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapViewDidFinishLoadingMap:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'mapViewDidFinishRenderingMap:fullyRendered:'
+    JsName: 'mapViewDidFinishRenderingMapFullyRendered'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapViewDidFinishRenderingMap:fullyRendered:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    - Type: Bool
+    TypeEncoding: 'v28@0:8@16B24'
+  - Name: 'mapView:didSelectAnnotationView:'
+    JsName: 'mapViewDidSelectAnnotationView'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapView:didSelectAnnotationView:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    - Type: Interface
+      Module: MapKit.MKAnnotationView
+      Name: MKAnnotationView
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'mapViewDidStopLocatingUser:'
+    JsName: 'mapViewDidStopLocatingUser'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapViewDidStopLocatingUser:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'mapView:didUpdateUserLocation:'
+    JsName: 'mapViewDidUpdateUserLocation'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapView:didUpdateUserLocation:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    - Type: Interface
+      Module: MapKit.MKUserLocation
+      Name: MKUserLocation
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'mapView:regionDidChangeAnimated:'
+    JsName: 'mapViewRegionDidChangeAnimated'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapView:regionDidChangeAnimated:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    - Type: Bool
+    TypeEncoding: 'v28@0:8@16B24'
+  - Name: 'mapView:regionWillChangeAnimated:'
+    JsName: 'mapViewRegionWillChangeAnimated'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapView:regionWillChangeAnimated:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    - Type: Bool
+    TypeEncoding: 'v28@0:8@16B24'
+  - Name: 'mapView:rendererForOverlay:'
+    JsName: 'mapViewRendererForOverlay'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapView:rendererForOverlay:'
+    Signature:
+    - Type: Interface
+      Module: MapKit.MKOverlayRenderer
+      Name: MKOverlayRenderer
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKOverlay
+        Name: MKOverlay
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'mapView:viewForAnnotation:'
+    JsName: 'mapViewViewForAnnotation'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapView:viewForAnnotation:'
+    Signature:
+    - Type: Interface
+      Module: MapKit.MKAnnotationView
+      Name: MKAnnotationView
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKAnnotation
+        Name: MKAnnotation
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'mapView:viewForOverlay:'
+    JsName: 'mapViewViewForOverlay'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapView:viewForOverlay:'
+    Signature:
+    - Type: Interface
+      Module: MapKit.MKOverlayView
+      Name: MKOverlayView
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    - Type: Id
+      WithProtocols:
+      - Module: MapKit.MKOverlay
+        Name: MKOverlay
+    TypeEncoding: '@32@0:8@16@24'
+  - Name: 'mapViewWillStartLoadingMap:'
+    JsName: 'mapViewWillStartLoadingMap'
+    Module: 'MapKit.MKMapView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapViewWillStartLoadingMap:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'mapViewWillStartLocatingUser:'
+    JsName: 'mapViewWillStartLocatingUser'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapViewWillStartLocatingUser:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'mapViewWillStartRenderingMap:'
+    JsName: 'mapViewWillStartRenderingMap'
+    Module: 'MapKit.MKMapView'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'mapViewWillStartRenderingMap:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    TypeEncoding: 'v24@0:8@16'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MKPinAnnotationColor'
+  JsName: 'MKPinAnnotationColor'
+  Module: 'MapKit.MKPinAnnotationView'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MKPinAnnotationColorRed":0,"MKPinAnnotationColorGreen":1,"MKPinAnnotationColorPurple":2})
+- Name: 'MKPinAnnotationView'
+  JsName: 'MKPinAnnotationView'
+  Module: 'MapKit.MKPinAnnotationView'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'animatesDrop'
+    JsName: 'animatesDrop'
+    Module: 'MapKit.MKPinAnnotationView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'animatesDrop'
+      JsName: 'animatesDrop'
+      Module: 'MapKit.MKPinAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'animatesDrop'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setAnimatesDrop:'
+      JsName: 'setAnimatesDrop'
+      Module: 'MapKit.MKPinAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAnimatesDrop:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'pinColor'
+    JsName: 'pinColor'
+    Module: 'MapKit.MKPinAnnotationView'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'pinColor'
+      JsName: 'pinColor'
+      Module: 'MapKit.MKPinAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'pinColor'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setPinColor:'
+      JsName: 'setPinColor'
+      Module: 'MapKit.MKPinAnnotationView'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPinColor:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  Protocols: []
+  Base:
+    Module: MapKit.MKAnnotationView
+    Name: MKAnnotationView
+  Type: Interface
+- Name: 'MKUserLocation'
+  JsName: 'MKUserLocation'
+  Module: 'MapKit.MKUserLocation'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'heading'
+    JsName: 'heading'
+    Module: 'MapKit.MKUserLocation'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'heading'
+      JsName: 'heading'
+      Module: 'MapKit.MKUserLocation'
+      IntroducedIn: 5.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'heading'
+      Signature:
+      - Type: Interface
+        Module: CoreLocation.CLHeading
+        Name: CLHeading
+      TypeEncoding: '@16@0:8'
+  - Name: 'location'
+    JsName: 'location'
+    Module: 'MapKit.MKUserLocation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'location'
+      JsName: 'location'
+      Module: 'MapKit.MKUserLocation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'location'
+      Signature:
+      - Type: Interface
+        Module: CoreLocation.CLLocation
+        Name: CLLocation
+      TypeEncoding: '@16@0:8'
+  - Name: 'subtitle'
+    JsName: 'subtitle'
+    Module: 'MapKit.MKUserLocation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'subtitle'
+      JsName: 'subtitle'
+      Module: 'MapKit.MKUserLocation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'subtitle'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setSubtitle:'
+      JsName: 'setSubtitle'
+      Module: 'MapKit.MKUserLocation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSubtitle:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'title'
+    JsName: 'title'
+    Module: 'MapKit.MKUserLocation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'title'
+      JsName: 'title'
+      Module: 'MapKit.MKUserLocation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'title'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setTitle:'
+      JsName: 'setTitle'
+      Module: 'MapKit.MKUserLocation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setTitle:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'updating'
+    JsName: 'updating'
+    Module: 'MapKit.MKUserLocation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isUpdating'
+      JsName: 'isUpdating'
+      Module: 'MapKit.MKUserLocation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isUpdating'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  Protocols:
+  - Module: MapKit.MKAnnotation
+    Name: MKAnnotation
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MKShape'
+  JsName: 'MKShape'
+  Module: 'MapKit.MKShape'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'subtitle'
+    JsName: 'subtitle'
+    Module: 'MapKit.MKShape'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'subtitle'
+      JsName: 'subtitle'
+      Module: 'MapKit.MKShape'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'subtitle'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setSubtitle:'
+      JsName: 'setSubtitle'
+      Module: 'MapKit.MKShape'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSubtitle:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'title'
+    JsName: 'title'
+    Module: 'MapKit.MKShape'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'title'
+      JsName: 'title'
+      Module: 'MapKit.MKShape'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'title'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setTitle:'
+      JsName: 'setTitle'
+      Module: 'MapKit.MKShape'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setTitle:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  Protocols:
+  - Module: MapKit.MKAnnotation
+    Name: MKAnnotation
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MKPointAnnotation'
+  JsName: 'MKPointAnnotation'
+  Module: 'MapKit.MKPointAnnotation'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'coordinate'
+    JsName: 'coordinate'
+    Module: 'MapKit.MKPointAnnotation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'coordinate'
+      JsName: 'coordinate'
+      Module: 'MapKit.MKPointAnnotation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'coordinate'
+      Signature:
+      - Type: Struct
+        Module: CoreLocation.CLLocation
+        Name: CLLocationCoordinate2D
+      TypeEncoding: '{?=dd}16@0:8'
+    Setter:
+      Name: 'setCoordinate:'
+      JsName: 'setCoordinate'
+      Module: 'MapKit.MKPointAnnotation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCoordinate:'
+      Signature:
+      - Type: Void
+      - Type: Struct
+        Module: CoreLocation.CLLocation
+        Name: CLLocationCoordinate2D
+      TypeEncoding: 'v32@0:8{?=dd}16'
+  Protocols: []
+  Base:
+    Module: MapKit.MKShape
+    Name: MKShape
+  Type: Interface
+- Name: 'MKMultiPoint'
+  JsName: 'MKMultiPoint'
+  Module: 'MapKit.MKMultiPoint'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'getCoordinates:range:'
+    JsName: 'getCoordinatesRange'
+    Module: 'MapKit.MKMultiPoint'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'getCoordinates:range:'
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreLocation.CLLocation
+        Name: CLLocationCoordinate2D
+    - Type: Struct
+      Module: Foundation.NSRange
+      Name: NSRange
+    TypeEncoding: 'v40@0:8^{?=dd}16{_NSRange=QQ}24'
+  - Name: 'points'
+    JsName: 'points'
+    Module: 'MapKit.MKMultiPoint'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'points'
+    Signature:
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: MapKit.MKGeometry
+        Name: MKMapPoint
+    TypeEncoding: '^{?=dd}16@0:8'
+  StaticMethods: []
+  Properties:
+  - Name: 'pointCount'
+    JsName: 'pointCount'
+    Module: 'MapKit.MKMultiPoint'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'pointCount'
+      JsName: 'pointCount'
+      Module: 'MapKit.MKMultiPoint'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'pointCount'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  Protocols: []
+  Base:
+    Module: MapKit.MKShape
+    Name: MKShape
+  Type: Interface
+- Name: 'MKPolyline'
+  JsName: 'MKPolyline'
+  Module: 'MapKit.MKPolyline'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'polylineWithCoordinates:count:'
+    JsName: 'polylineWithCoordinatesCount'
+    Module: 'MapKit.MKPolyline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'polylineWithCoordinates:count:'
+    Signature:
+    - Type: Instancetype
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreLocation.CLLocation
+        Name: CLLocationCoordinate2D
+    - Type: ULong
+    TypeEncoding: '@32@0:8^{?=dd}16Q24'
+  - Name: 'polylineWithPoints:count:'
+    JsName: 'polylineWithPointsCount'
+    Module: 'MapKit.MKPolyline'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'polylineWithPoints:count:'
+    Signature:
+    - Type: Instancetype
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: MapKit.MKGeometry
+        Name: MKMapPoint
+    - Type: ULong
+    TypeEncoding: '@32@0:8^{?=dd}16Q24'
+  Properties: []
+  Protocols:
+  - Module: MapKit.MKOverlay
+    Name: MKOverlay
+  Base:
+    Module: MapKit.MKMultiPoint
+    Name: MKMultiPoint
+  Type: Interface
+- Name: 'MKPolygon'
+  JsName: 'MKPolygon'
+  Module: 'MapKit.MKPolygon'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'polygonWithCoordinates:count:'
+    JsName: 'polygonWithCoordinatesCount'
+    Module: 'MapKit.MKPolygon'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'polygonWithCoordinates:count:'
+    Signature:
+    - Type: Instancetype
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreLocation.CLLocation
+        Name: CLLocationCoordinate2D
+    - Type: ULong
+    TypeEncoding: '@32@0:8^{?=dd}16Q24'
+  - Name: 'polygonWithCoordinates:count:interiorPolygons:'
+    JsName: 'polygonWithCoordinatesCountInteriorPolygons'
+    Module: 'MapKit.MKPolygon'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'polygonWithCoordinates:count:interiorPolygons:'
+    Signature:
+    - Type: Instancetype
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreLocation.CLLocation
+        Name: CLLocationCoordinate2D
+    - Type: ULong
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@40@0:8^{?=dd}16Q24@32'
+  - Name: 'polygonWithPoints:count:'
+    JsName: 'polygonWithPointsCount'
+    Module: 'MapKit.MKPolygon'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'polygonWithPoints:count:'
+    Signature:
+    - Type: Instancetype
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: MapKit.MKGeometry
+        Name: MKMapPoint
+    - Type: ULong
+    TypeEncoding: '@32@0:8^{?=dd}16Q24'
+  - Name: 'polygonWithPoints:count:interiorPolygons:'
+    JsName: 'polygonWithPointsCountInteriorPolygons'
+    Module: 'MapKit.MKPolygon'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'polygonWithPoints:count:interiorPolygons:'
+    Signature:
+    - Type: Instancetype
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: MapKit.MKGeometry
+        Name: MKMapPoint
+    - Type: ULong
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: '@40@0:8^{?=dd}16Q24@32'
+  Properties:
+  - Name: 'interiorPolygons'
+    JsName: 'interiorPolygons'
+    Module: 'MapKit.MKPolygon'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'interiorPolygons'
+      JsName: 'interiorPolygons'
+      Module: 'MapKit.MKPolygon'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'interiorPolygons'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: MapKit.MKOverlay
+    Name: MKOverlay
+  Base:
+    Module: MapKit.MKMultiPoint
+    Name: MKMultiPoint
+  Type: Interface
+- Name: 'MKCircle'
+  JsName: 'MKCircle'
+  Module: 'MapKit.MKCircle'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'circleWithCenterCoordinate:radius:'
+    JsName: 'circleWithCenterCoordinateRadius'
+    Module: 'MapKit.MKCircle'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'circleWithCenterCoordinate:radius:'
+    Signature:
+    - Type: Instancetype
+    - Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+    - Type: Double
+    TypeEncoding: '@40@0:8{?=dd}16d32'
+  - Name: 'circleWithMapRect:'
+    JsName: 'circleWithMapRect'
+    Module: 'MapKit.MKCircle'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'circleWithMapRect:'
+    Signature:
+    - Type: Instancetype
+    - Type: Struct
+      Module: MapKit.MKGeometry
+      Name: MKMapRect
+    TypeEncoding: '@48@0:8{?={?=dd}{?=dd}}16'
+  Properties:
+  - Name: 'radius'
+    JsName: 'radius'
+    Module: 'MapKit.MKCircle'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'radius'
+      JsName: 'radius'
+      Module: 'MapKit.MKCircle'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'radius'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+  Protocols:
+  - Module: MapKit.MKOverlay
+    Name: MKOverlay
+  Base:
+    Module: MapKit.MKShape
+    Name: MKShape
+  Type: Interface
+- Name: 'MKGeodesicPolyline'
+  JsName: 'MKGeodesicPolyline'
+  Module: 'MapKit.MKGeodesicPolyline'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: MapKit.MKPolyline
+    Name: MKPolyline
+  Type: Interface
+- Name: 'MKOverlayPathRenderer'
+  JsName: 'MKOverlayPathRenderer'
+  Module: 'MapKit.MKOverlayPathRenderer'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'applyFillPropertiesToContext:atZoomScale:'
+    JsName: 'applyFillPropertiesToContextAtZoomScale'
+    Module: 'MapKit.MKOverlayPathRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'applyFillPropertiesToContext:atZoomScale:'
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Double
+    TypeEncoding: 'v32@0:8^{CGContext=}16d24'
+  - Name: 'applyStrokePropertiesToContext:atZoomScale:'
+    JsName: 'applyStrokePropertiesToContextAtZoomScale'
+    Module: 'MapKit.MKOverlayPathRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'applyStrokePropertiesToContext:atZoomScale:'
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Double
+    TypeEncoding: 'v32@0:8^{CGContext=}16d24'
+  - Name: 'createPath'
+    JsName: 'createPath'
+    Module: 'MapKit.MKOverlayPathRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'createPath'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'fillPath:inContext:'
+    JsName: 'fillPathInContext'
+    Module: 'MapKit.MKOverlayPathRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fillPath:inContext:'
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: 'v32@0:8^{CGPath=}16^{CGContext=}24'
+  - Name: 'invalidatePath'
+    JsName: 'invalidatePath'
+    Module: 'MapKit.MKOverlayPathRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'invalidatePath'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'strokePath:inContext:'
+    JsName: 'strokePathInContext'
+    Module: 'MapKit.MKOverlayPathRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'strokePath:inContext:'
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: 'v32@0:8^{CGPath=}16^{CGContext=}24'
+  StaticMethods: []
+  Properties:
+  - Name: 'fillColor'
+    JsName: 'fillColor'
+    Module: 'MapKit.MKOverlayPathRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'fillColor'
+      JsName: 'fillColor'
+      Module: 'MapKit.MKOverlayPathRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'fillColor'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIColor
+        Name: UIColor
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setFillColor:'
+      JsName: 'setFillColor'
+      Module: 'MapKit.MKOverlayPathRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setFillColor:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: UIKit.UIColor
+        Name: UIColor
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'lineCap'
+    JsName: 'lineCap'
+    Module: 'MapKit.MKOverlayPathRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'lineCap'
+      JsName: 'lineCap'
+      Module: 'MapKit.MKOverlayPathRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lineCap'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'i16@0:8'
+    Setter:
+      Name: 'setLineCap:'
+      JsName: 'setLineCap'
+      Module: 'MapKit.MKOverlayPathRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLineCap:'
+      Signature:
+      - Type: Void
+      - Type: UInt
+      TypeEncoding: 'v20@0:8i16'
+  - Name: 'lineDashPattern'
+    JsName: 'lineDashPattern'
+    Module: 'MapKit.MKOverlayPathRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'lineDashPattern'
+      JsName: 'lineDashPattern'
+      Module: 'MapKit.MKOverlayPathRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lineDashPattern'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setLineDashPattern:'
+      JsName: 'setLineDashPattern'
+      Module: 'MapKit.MKOverlayPathRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLineDashPattern:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'lineDashPhase'
+    JsName: 'lineDashPhase'
+    Module: 'MapKit.MKOverlayPathRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'lineDashPhase'
+      JsName: 'lineDashPhase'
+      Module: 'MapKit.MKOverlayPathRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lineDashPhase'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+    Setter:
+      Name: 'setLineDashPhase:'
+      JsName: 'setLineDashPhase'
+      Module: 'MapKit.MKOverlayPathRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLineDashPhase:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v24@0:8d16'
+  - Name: 'lineJoin'
+    JsName: 'lineJoin'
+    Module: 'MapKit.MKOverlayPathRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'lineJoin'
+      JsName: 'lineJoin'
+      Module: 'MapKit.MKOverlayPathRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lineJoin'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'i16@0:8'
+    Setter:
+      Name: 'setLineJoin:'
+      JsName: 'setLineJoin'
+      Module: 'MapKit.MKOverlayPathRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLineJoin:'
+      Signature:
+      - Type: Void
+      - Type: UInt
+      TypeEncoding: 'v20@0:8i16'
+  - Name: 'lineWidth'
+    JsName: 'lineWidth'
+    Module: 'MapKit.MKOverlayPathRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'lineWidth'
+      JsName: 'lineWidth'
+      Module: 'MapKit.MKOverlayPathRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lineWidth'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+    Setter:
+      Name: 'setLineWidth:'
+      JsName: 'setLineWidth'
+      Module: 'MapKit.MKOverlayPathRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLineWidth:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v24@0:8d16'
+  - Name: 'miterLimit'
+    JsName: 'miterLimit'
+    Module: 'MapKit.MKOverlayPathRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'miterLimit'
+      JsName: 'miterLimit'
+      Module: 'MapKit.MKOverlayPathRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'miterLimit'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+    Setter:
+      Name: 'setMiterLimit:'
+      JsName: 'setMiterLimit'
+      Module: 'MapKit.MKOverlayPathRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMiterLimit:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v24@0:8d16'
+  - Name: 'path'
+    JsName: 'path'
+    Module: 'MapKit.MKOverlayPathRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'path'
+      JsName: 'path'
+      Module: 'MapKit.MKOverlayPathRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'path'
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: '^{CGPath=}16@0:8'
+    Setter:
+      Name: 'setPath:'
+      JsName: 'setPath'
+      Module: 'MapKit.MKOverlayPathRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPath:'
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: 'v24@0:8^{CGPath=}16'
+  - Name: 'strokeColor'
+    JsName: 'strokeColor'
+    Module: 'MapKit.MKOverlayPathRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'strokeColor'
+      JsName: 'strokeColor'
+      Module: 'MapKit.MKOverlayPathRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'strokeColor'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIColor
+        Name: UIColor
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setStrokeColor:'
+      JsName: 'setStrokeColor'
+      Module: 'MapKit.MKOverlayPathRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setStrokeColor:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: UIKit.UIColor
+        Name: UIColor
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: MapKit.MKOverlayRenderer
+    Name: MKOverlayRenderer
+  Type: Interface
+- Name: 'MKPolygonRenderer'
+  JsName: 'MKPolygonRenderer'
+  Module: 'MapKit.MKPolygonRenderer'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithPolygon:'
+    JsName: 'initWithPolygon'
+    Module: 'MapKit.MKPolygonRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithPolygon:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: MapKit.MKPolygon
+      Name: MKPolygon
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'polygon'
+    JsName: 'polygon'
+    Module: 'MapKit.MKPolygonRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'polygon'
+      JsName: 'polygon'
+      Module: 'MapKit.MKPolygonRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'polygon'
+      Signature:
+      - Type: Interface
+        Module: MapKit.MKPolygon
+        Name: MKPolygon
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: MapKit.MKOverlayPathRenderer
+    Name: MKOverlayPathRenderer
+  Type: Interface
+- Name: 'MKPolylineRenderer'
+  JsName: 'MKPolylineRenderer'
+  Module: 'MapKit.MKPolylineRenderer'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithPolyline:'
+    JsName: 'initWithPolyline'
+    Module: 'MapKit.MKPolylineRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithPolyline:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: MapKit.MKPolyline
+      Name: MKPolyline
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'polyline'
+    JsName: 'polyline'
+    Module: 'MapKit.MKPolylineRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'polyline'
+      JsName: 'polyline'
+      Module: 'MapKit.MKPolylineRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'polyline'
+      Signature:
+      - Type: Interface
+        Module: MapKit.MKPolyline
+        Name: MKPolyline
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: MapKit.MKOverlayPathRenderer
+    Name: MKOverlayPathRenderer
+  Type: Interface
+- Name: 'MKCircleRenderer'
+  JsName: 'MKCircleRenderer'
+  Module: 'MapKit.MKCircleRenderer'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithCircle:'
+    JsName: 'initWithCircle'
+    Module: 'MapKit.MKCircleRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithCircle:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: MapKit.MKCircle
+      Name: MKCircle
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'circle'
+    JsName: 'circle'
+    Module: 'MapKit.MKCircleRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'circle'
+      JsName: 'circle'
+      Module: 'MapKit.MKCircleRenderer'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'circle'
+      Signature:
+      - Type: Interface
+        Module: MapKit.MKCircle
+        Name: MKCircle
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: MapKit.MKOverlayPathRenderer
+    Name: MKOverlayPathRenderer
+  Type: Interface
+- Name: 'MKLocalSearch'
+  JsName: 'MKLocalSearch'
+  Module: 'MapKit.MKLocalSearch'
+  IntroducedIn: 6.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'cancel'
+    JsName: 'cancel'
+    Module: 'MapKit.MKLocalSearch'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancel'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'initWithRequest:'
+    JsName: 'initWithRequest'
+    Module: 'MapKit.MKLocalSearch'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithRequest:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: MapKit.MKLocalSearchRequest
+      Name: MKLocalSearchRequest
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'startWithCompletionHandler:'
+    JsName: 'startWithCompletionHandler'
+    Module: 'MapKit.MKLocalSearch'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: MapKit.MKLocalSearchResponse
+        Name: MKLocalSearchResponse
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v24@0:8@?16'
+  StaticMethods: []
+  Properties:
+  - Name: 'searching'
+    JsName: 'searching'
+    Module: 'MapKit.MKLocalSearch'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isSearching'
+      JsName: 'isSearching'
+      Module: 'MapKit.MKLocalSearch'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isSearching'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MKLocalSearchRequest'
+  JsName: 'MKLocalSearchRequest'
+  Module: 'MapKit.MKLocalSearchRequest'
+  IntroducedIn: 6.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'naturalLanguageQuery'
+    JsName: 'naturalLanguageQuery'
+    Module: 'MapKit.MKLocalSearchRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'naturalLanguageQuery'
+      JsName: 'naturalLanguageQuery'
+      Module: 'MapKit.MKLocalSearchRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'naturalLanguageQuery'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setNaturalLanguageQuery:'
+      JsName: 'setNaturalLanguageQuery'
+      Module: 'MapKit.MKLocalSearchRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setNaturalLanguageQuery:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'region'
+    JsName: 'region'
+    Module: 'MapKit.MKLocalSearchRequest'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'region'
+      JsName: 'region'
+      Module: 'MapKit.MKLocalSearchRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'region'
+      Signature:
+      - Type: Struct
+        Module: MapKit.MKGeometry
+        Name: MKCoordinateRegion
+      TypeEncoding: '{?={?=dd}{?=dd}}16@0:8'
+    Setter:
+      Name: 'setRegion:'
+      JsName: 'setRegion'
+      Module: 'MapKit.MKLocalSearchRequest'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRegion:'
+      Signature:
+      - Type: Void
+      - Type: Struct
+        Module: MapKit.MKGeometry
+        Name: MKCoordinateRegion
+      TypeEncoding: 'v48@0:8{?={?=dd}{?=dd}}16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MKLocalSearchResponse'
+  JsName: 'MKLocalSearchResponse'
+  Module: 'MapKit.MKLocalSearchResponse'
+  IntroducedIn: 6.1
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'boundingRegion'
+    JsName: 'boundingRegion'
+    Module: 'MapKit.MKLocalSearchResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'boundingRegion'
+      JsName: 'boundingRegion'
+      Module: 'MapKit.MKLocalSearchResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'boundingRegion'
+      Signature:
+      - Type: Struct
+        Module: MapKit.MKGeometry
+        Name: MKCoordinateRegion
+      TypeEncoding: '{?={?=dd}{?=dd}}16@0:8'
+  - Name: 'mapItems'
+    JsName: 'mapItems'
+    Module: 'MapKit.MKLocalSearchResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'mapItems'
+      JsName: 'mapItems'
+      Module: 'MapKit.MKLocalSearchResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mapItems'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MKDirectionsTransportType'
+  JsName: 'MKDirectionsTransportType'
+  Module: 'MapKit.MKDirectionsTypes'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"MKDirectionsTransportTypeAutomobile":1,"MKDirectionsTransportTypeWalking":2,"MKDirectionsTransportTypeAny":268435455})
+- Name: 'MKDirectionsRequest'
+  JsName: 'MKDirectionsRequest'
+  Module: 'MapKit.MKDirectionsRequest'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'destination'
+    JsName: 'destination'
+    Module: 'MapKit.MKDirectionsRequest'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'destination'
+    Signature:
+    - Type: Interface
+      Module: MapKit.MKMapItem
+      Name: MKMapItem
+    TypeEncoding: '@16@0:8'
+  - Name: 'initWithContentsOfURL:'
+    JsName: 'initWithContentsOfURL'
+    Module: 'MapKit.MKDirectionsRequest'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithContentsOfURL:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'setDestination:'
+    JsName: 'setDestination'
+    Module: 'MapKit.MKDirectionsRequest'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setDestination:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapItem
+      Name: MKMapItem
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'setSource:'
+    JsName: 'setSource'
+    Module: 'MapKit.MKDirectionsRequest'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'setSource:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKMapItem
+      Name: MKMapItem
+    TypeEncoding: 'v24@0:8@16'
+  - Name: 'source'
+    JsName: 'source'
+    Module: 'MapKit.MKDirectionsRequest'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'source'
+    Signature:
+    - Type: Interface
+      Module: MapKit.MKMapItem
+      Name: MKMapItem
+    TypeEncoding: '@16@0:8'
+  StaticMethods:
+  - Name: 'isDirectionsRequestURL:'
+    JsName: 'isDirectionsRequestURL'
+    Module: 'MapKit.MKDirectionsRequest'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isDirectionsRequestURL:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    TypeEncoding: 'B24@0:8@16'
+  Properties:
+  - Name: 'arrivalDate'
+    JsName: 'arrivalDate'
+    Module: 'MapKit.MKDirectionsRequest'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'arrivalDate'
+      JsName: 'arrivalDate'
+      Module: 'MapKit.MKDirectionsRequest'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'arrivalDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setArrivalDate:'
+      JsName: 'setArrivalDate'
+      Module: 'MapKit.MKDirectionsRequest'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setArrivalDate:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'departureDate'
+    JsName: 'departureDate'
+    Module: 'MapKit.MKDirectionsRequest'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'departureDate'
+      JsName: 'departureDate'
+      Module: 'MapKit.MKDirectionsRequest'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'departureDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDepartureDate:'
+      JsName: 'setDepartureDate'
+      Module: 'MapKit.MKDirectionsRequest'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDepartureDate:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'requestsAlternateRoutes'
+    JsName: 'requestsAlternateRoutes'
+    Module: 'MapKit.MKDirectionsRequest'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'requestsAlternateRoutes'
+      JsName: 'requestsAlternateRoutes'
+      Module: 'MapKit.MKDirectionsRequest'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'requestsAlternateRoutes'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setRequestsAlternateRoutes:'
+      JsName: 'setRequestsAlternateRoutes'
+      Module: 'MapKit.MKDirectionsRequest'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRequestsAlternateRoutes:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'transportType'
+    JsName: 'transportType'
+    Module: 'MapKit.MKDirectionsRequest'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'transportType'
+      JsName: 'transportType'
+      Module: 'MapKit.MKDirectionsRequest'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'transportType'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setTransportType:'
+      JsName: 'setTransportType'
+      Module: 'MapKit.MKDirectionsRequest'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setTransportType:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MKDirections'
+  JsName: 'MKDirections'
+  Module: 'MapKit.MKDirections'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'calculateDirectionsWithCompletionHandler:'
+    JsName: 'calculateDirectionsWithCompletionHandler'
+    Module: 'MapKit.MKDirections'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'calculateDirectionsWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: MapKit.MKDirectionsResponse
+        Name: MKDirectionsResponse
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v24@0:8@?16'
+  - Name: 'calculateETAWithCompletionHandler:'
+    JsName: 'calculateETAWithCompletionHandler'
+    Module: 'MapKit.MKDirections'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'calculateETAWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: MapKit.MKDirectionsResponse
+        Name: MKETAResponse
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v24@0:8@?16'
+  - Name: 'cancel'
+    JsName: 'cancel'
+    Module: 'MapKit.MKDirections'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancel'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'initWithRequest:'
+    JsName: 'initWithRequest'
+    Module: 'MapKit.MKDirections'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithRequest:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: MapKit.MKDirectionsRequest
+      Name: MKDirectionsRequest
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'calculating'
+    JsName: 'calculating'
+    Module: 'MapKit.MKDirections'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isCalculating'
+      JsName: 'isCalculating'
+      Module: 'MapKit.MKDirections'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isCalculating'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MKDirectionsResponse'
+  JsName: 'MKDirectionsResponse'
+  Module: 'MapKit.MKDirectionsResponse'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'destination'
+    JsName: 'destination'
+    Module: 'MapKit.MKDirectionsResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'destination'
+      JsName: 'destination'
+      Module: 'MapKit.MKDirectionsResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'destination'
+      Signature:
+      - Type: Interface
+        Module: MapKit.MKMapItem
+        Name: MKMapItem
+      TypeEncoding: '@16@0:8'
+  - Name: 'routes'
+    JsName: 'routes'
+    Module: 'MapKit.MKDirectionsResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'routes'
+      JsName: 'routes'
+      Module: 'MapKit.MKDirectionsResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'routes'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  - Name: 'source'
+    JsName: 'source'
+    Module: 'MapKit.MKDirectionsResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'source'
+      JsName: 'source'
+      Module: 'MapKit.MKDirectionsResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'source'
+      Signature:
+      - Type: Interface
+        Module: MapKit.MKMapItem
+        Name: MKMapItem
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MKRoute'
+  JsName: 'MKRoute'
+  Module: 'MapKit.MKDirectionsResponse'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'advisoryNotices'
+    JsName: 'advisoryNotices'
+    Module: 'MapKit.MKDirectionsResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'advisoryNotices'
+      JsName: 'advisoryNotices'
+      Module: 'MapKit.MKDirectionsResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'advisoryNotices'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  - Name: 'distance'
+    JsName: 'distance'
+    Module: 'MapKit.MKDirectionsResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'distance'
+      JsName: 'distance'
+      Module: 'MapKit.MKDirectionsResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'distance'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+  - Name: 'expectedTravelTime'
+    JsName: 'expectedTravelTime'
+    Module: 'MapKit.MKDirectionsResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'expectedTravelTime'
+      JsName: 'expectedTravelTime'
+      Module: 'MapKit.MKDirectionsResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'expectedTravelTime'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'MapKit.MKDirectionsResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'MapKit.MKDirectionsResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'polyline'
+    JsName: 'polyline'
+    Module: 'MapKit.MKDirectionsResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'polyline'
+      JsName: 'polyline'
+      Module: 'MapKit.MKDirectionsResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'polyline'
+      Signature:
+      - Type: Interface
+        Module: MapKit.MKPolyline
+        Name: MKPolyline
+      TypeEncoding: '@16@0:8'
+  - Name: 'steps'
+    JsName: 'steps'
+    Module: 'MapKit.MKDirectionsResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'steps'
+      JsName: 'steps'
+      Module: 'MapKit.MKDirectionsResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'steps'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+  - Name: 'transportType'
+    JsName: 'transportType'
+    Module: 'MapKit.MKDirectionsResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'transportType'
+      JsName: 'transportType'
+      Module: 'MapKit.MKDirectionsResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'transportType'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MKRouteStep'
+  JsName: 'MKRouteStep'
+  Module: 'MapKit.MKDirectionsResponse'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'distance'
+    JsName: 'distance'
+    Module: 'MapKit.MKDirectionsResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'distance'
+      JsName: 'distance'
+      Module: 'MapKit.MKDirectionsResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'distance'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+  - Name: 'instructions'
+    JsName: 'instructions'
+    Module: 'MapKit.MKDirectionsResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'instructions'
+      JsName: 'instructions'
+      Module: 'MapKit.MKDirectionsResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'instructions'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'notice'
+    JsName: 'notice'
+    Module: 'MapKit.MKDirectionsResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'notice'
+      JsName: 'notice'
+      Module: 'MapKit.MKDirectionsResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'notice'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  - Name: 'polyline'
+    JsName: 'polyline'
+    Module: 'MapKit.MKDirectionsResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'polyline'
+      JsName: 'polyline'
+      Module: 'MapKit.MKDirectionsResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'polyline'
+      Signature:
+      - Type: Interface
+        Module: MapKit.MKPolyline
+        Name: MKPolyline
+      TypeEncoding: '@16@0:8'
+  - Name: 'transportType'
+    JsName: 'transportType'
+    Module: 'MapKit.MKDirectionsResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'transportType'
+      JsName: 'transportType'
+      Module: 'MapKit.MKDirectionsResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'transportType'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MKETAResponse'
+  JsName: 'MKETAResponse'
+  Module: 'MapKit.MKDirectionsResponse'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'destination'
+    JsName: 'destination'
+    Module: 'MapKit.MKDirectionsResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'destination'
+      JsName: 'destination'
+      Module: 'MapKit.MKDirectionsResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'destination'
+      Signature:
+      - Type: Interface
+        Module: MapKit.MKMapItem
+        Name: MKMapItem
+      TypeEncoding: '@16@0:8'
+  - Name: 'expectedTravelTime'
+    JsName: 'expectedTravelTime'
+    Module: 'MapKit.MKDirectionsResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'expectedTravelTime'
+      JsName: 'expectedTravelTime'
+      Module: 'MapKit.MKDirectionsResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'expectedTravelTime'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+  - Name: 'source'
+    JsName: 'source'
+    Module: 'MapKit.MKDirectionsResponse'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'source'
+      JsName: 'source'
+      Module: 'MapKit.MKDirectionsResponse'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'source'
+      Signature:
+      - Type: Interface
+        Module: MapKit.MKMapItem
+        Name: MKMapItem
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MKMapSnapshotOptions'
+  JsName: 'MKMapSnapshotOptions'
+  Module: 'MapKit.MKMapSnapshotOptions'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'camera'
+    JsName: 'camera'
+    Module: 'MapKit.MKMapSnapshotOptions'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'camera'
+      JsName: 'camera'
+      Module: 'MapKit.MKMapSnapshotOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'camera'
+      Signature:
+      - Type: Interface
+        Module: MapKit.MKMapCamera
+        Name: MKMapCamera
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setCamera:'
+      JsName: 'setCamera'
+      Module: 'MapKit.MKMapSnapshotOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCamera:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: MapKit.MKMapCamera
+        Name: MKMapCamera
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'mapRect'
+    JsName: 'mapRect'
+    Module: 'MapKit.MKMapSnapshotOptions'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'mapRect'
+      JsName: 'mapRect'
+      Module: 'MapKit.MKMapSnapshotOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mapRect'
+      Signature:
+      - Type: Struct
+        Module: MapKit.MKGeometry
+        Name: MKMapRect
+      TypeEncoding: '{?={?=dd}{?=dd}}16@0:8'
+    Setter:
+      Name: 'setMapRect:'
+      JsName: 'setMapRect'
+      Module: 'MapKit.MKMapSnapshotOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMapRect:'
+      Signature:
+      - Type: Void
+      - Type: Struct
+        Module: MapKit.MKGeometry
+        Name: MKMapRect
+      TypeEncoding: 'v48@0:8{?={?=dd}{?=dd}}16'
+  - Name: 'mapType'
+    JsName: 'mapType'
+    Module: 'MapKit.MKMapSnapshotOptions'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'mapType'
+      JsName: 'mapType'
+      Module: 'MapKit.MKMapSnapshotOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mapType'
+      Signature:
+      - Type: ULong
+      TypeEncoding: 'Q16@0:8'
+    Setter:
+      Name: 'setMapType:'
+      JsName: 'setMapType'
+      Module: 'MapKit.MKMapSnapshotOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMapType:'
+      Signature:
+      - Type: Void
+      - Type: ULong
+      TypeEncoding: 'v24@0:8Q16'
+  - Name: 'region'
+    JsName: 'region'
+    Module: 'MapKit.MKMapSnapshotOptions'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'region'
+      JsName: 'region'
+      Module: 'MapKit.MKMapSnapshotOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'region'
+      Signature:
+      - Type: Struct
+        Module: MapKit.MKGeometry
+        Name: MKCoordinateRegion
+      TypeEncoding: '{?={?=dd}{?=dd}}16@0:8'
+    Setter:
+      Name: 'setRegion:'
+      JsName: 'setRegion'
+      Module: 'MapKit.MKMapSnapshotOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRegion:'
+      Signature:
+      - Type: Void
+      - Type: Struct
+        Module: MapKit.MKGeometry
+        Name: MKCoordinateRegion
+      TypeEncoding: 'v48@0:8{?={?=dd}{?=dd}}16'
+  - Name: 'scale'
+    JsName: 'scale'
+    Module: 'MapKit.MKMapSnapshotOptions'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'scale'
+      JsName: 'scale'
+      Module: 'MapKit.MKMapSnapshotOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'scale'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+    Setter:
+      Name: 'setScale:'
+      JsName: 'setScale'
+      Module: 'MapKit.MKMapSnapshotOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setScale:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v24@0:8d16'
+  - Name: 'showsBuildings'
+    JsName: 'showsBuildings'
+    Module: 'MapKit.MKMapSnapshotOptions'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'showsBuildings'
+      JsName: 'showsBuildings'
+      Module: 'MapKit.MKMapSnapshotOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'showsBuildings'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setShowsBuildings:'
+      JsName: 'setShowsBuildings'
+      Module: 'MapKit.MKMapSnapshotOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShowsBuildings:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'showsPointsOfInterest'
+    JsName: 'showsPointsOfInterest'
+    Module: 'MapKit.MKMapSnapshotOptions'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'showsPointsOfInterest'
+      JsName: 'showsPointsOfInterest'
+      Module: 'MapKit.MKMapSnapshotOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'showsPointsOfInterest'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setShowsPointsOfInterest:'
+      JsName: 'setShowsPointsOfInterest'
+      Module: 'MapKit.MKMapSnapshotOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setShowsPointsOfInterest:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'size'
+    JsName: 'size'
+    Module: 'MapKit.MKMapSnapshotOptions'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'size'
+      JsName: 'size'
+      Module: 'MapKit.MKMapSnapshotOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'size'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGSize
+      TypeEncoding: '{CGSize=dd}16@0:8'
+    Setter:
+      Name: 'setSize:'
+      JsName: 'setSize'
+      Module: 'MapKit.MKMapSnapshotOptions'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSize:'
+      Signature:
+      - Type: Void
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGSize
+      TypeEncoding: 'v32@0:8{CGSize=dd}16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MKMapSnapshotter'
+  JsName: 'MKMapSnapshotter'
+  Module: 'MapKit.MKMapSnapshotter'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'cancel'
+    JsName: 'cancel'
+    Module: 'MapKit.MKMapSnapshotter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancel'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'initWithOptions:'
+    JsName: 'initWithOptions'
+    Module: 'MapKit.MKMapSnapshotter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithOptions:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: MapKit.MKMapSnapshotOptions
+      Name: MKMapSnapshotOptions
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'startWithCompletionHandler:'
+    JsName: 'startWithCompletionHandler'
+    Module: 'MapKit.MKMapSnapshotter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: MapKit.MKMapSnapshot
+        Name: MKMapSnapshot
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v24@0:8@?16'
+  - Name: 'startWithQueue:completionHandler:'
+    JsName: 'startWithQueueCompletionHandler'
+    Module: 'MapKit.MKMapSnapshotter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startWithQueue:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: ObjectiveC.NSObject
+      Name: NSObject
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: MapKit.MKMapSnapshot
+        Name: MKMapSnapshot
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v32@0:8@16@?24'
+  StaticMethods: []
+  Properties:
+  - Name: 'loading'
+    JsName: 'loading'
+    Module: 'MapKit.MKMapSnapshotter'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isLoading'
+      JsName: 'isLoading'
+      Module: 'MapKit.MKMapSnapshotter'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isLoading'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MKMapSnapshot'
+  JsName: 'MKMapSnapshot'
+  Module: 'MapKit.MKMapSnapshot'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'pointForCoordinate:'
+    JsName: 'pointForCoordinate'
+    Module: 'MapKit.MKMapSnapshot'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'pointForCoordinate:'
+    Signature:
+    - Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+    - Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+    TypeEncoding: '{CGPoint=dd}32@0:8{?=dd}16'
+  StaticMethods: []
+  Properties:
+  - Name: 'image'
+    JsName: 'image'
+    Module: 'MapKit.MKMapSnapshot'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'image'
+      JsName: 'image'
+      Module: 'MapKit.MKMapSnapshot'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'image'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIImage
+        Name: UIImage
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MKTileOverlay'
+  JsName: 'MKTileOverlay'
+  Module: 'MapKit.MKTileOverlay'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithURLTemplate:'
+    JsName: 'initWithURLTemplate'
+    Module: 'MapKit.MKTileOverlay'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithURLTemplate:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'loadTileAtPath:result:'
+    JsName: 'loadTileAtPathResult'
+    Module: 'MapKit.MKTileOverlay'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'loadTileAtPath:result:'
+    Signature:
+    - Type: Void
+    - Type: Struct
+      Module: MapKit.MKTileOverlay
+      Name: MKTileOverlayPath
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v56@0:8{?=qqqd}16@?48'
+  - Name: 'URLForTilePath:'
+    JsName: 'URLForTilePath'
+    Module: 'MapKit.MKTileOverlay'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'URLForTilePath:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSURL
+      Name: NSURL
+    - Type: Struct
+      Module: MapKit.MKTileOverlay
+      Name: MKTileOverlayPath
+    TypeEncoding: '@48@0:8{?=qqqd}16'
+  StaticMethods: []
+  Properties:
+  - Name: 'canReplaceMapContent'
+    JsName: 'canReplaceMapContentProperty'
+    Module: 'MapKit.MKTileOverlay'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'canReplaceMapContent'
+      JsName: 'canReplaceMapContent'
+      Module: 'MapKit.MKTileOverlay'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'canReplaceMapContent'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setCanReplaceMapContent:'
+      JsName: 'setCanReplaceMapContent'
+      Module: 'MapKit.MKTileOverlay'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCanReplaceMapContent:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'geometryFlipped'
+    JsName: 'geometryFlipped'
+    Module: 'MapKit.MKTileOverlay'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isGeometryFlipped'
+      JsName: 'isGeometryFlipped'
+      Module: 'MapKit.MKTileOverlay'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isGeometryFlipped'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+    Setter:
+      Name: 'setGeometryFlipped:'
+      JsName: 'setGeometryFlipped'
+      Module: 'MapKit.MKTileOverlay'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setGeometryFlipped:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v20@0:8B16'
+  - Name: 'maximumZ'
+    JsName: 'maximumZ'
+    Module: 'MapKit.MKTileOverlay'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'maximumZ'
+      JsName: 'maximumZ'
+      Module: 'MapKit.MKTileOverlay'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'maximumZ'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+    Setter:
+      Name: 'setMaximumZ:'
+      JsName: 'setMaximumZ'
+      Module: 'MapKit.MKTileOverlay'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMaximumZ:'
+      Signature:
+      - Type: Void
+      - Type: Long
+      TypeEncoding: 'v24@0:8q16'
+  - Name: 'minimumZ'
+    JsName: 'minimumZ'
+    Module: 'MapKit.MKTileOverlay'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'minimumZ'
+      JsName: 'minimumZ'
+      Module: 'MapKit.MKTileOverlay'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'minimumZ'
+      Signature:
+      - Type: Long
+      TypeEncoding: 'q16@0:8'
+    Setter:
+      Name: 'setMinimumZ:'
+      JsName: 'setMinimumZ'
+      Module: 'MapKit.MKTileOverlay'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMinimumZ:'
+      Signature:
+      - Type: Void
+      - Type: Long
+      TypeEncoding: 'v24@0:8q16'
+  - Name: 'tileSize'
+    JsName: 'tileSize'
+    Module: 'MapKit.MKTileOverlay'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'tileSize'
+      JsName: 'tileSize'
+      Module: 'MapKit.MKTileOverlay'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'tileSize'
+      Signature:
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGSize
+      TypeEncoding: '{CGSize=dd}16@0:8'
+    Setter:
+      Name: 'setTileSize:'
+      JsName: 'setTileSize'
+      Module: 'MapKit.MKTileOverlay'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setTileSize:'
+      Signature:
+      - Type: Void
+      - Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGSize
+      TypeEncoding: 'v32@0:8{CGSize=dd}16'
+  - Name: 'URLTemplate'
+    JsName: 'URLTemplate'
+    Module: 'MapKit.MKTileOverlay'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'URLTemplate'
+      JsName: 'URLTemplate'
+      Module: 'MapKit.MKTileOverlay'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'URLTemplate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@16@0:8'
+  Protocols:
+  - Module: MapKit.MKOverlay
+    Name: MKOverlay
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: '1460'
+  JsName: 'MKTileOverlayPath'
+  Module: 'MapKit.MKTileOverlay'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: x
+    Signature:
+      Type: Long
+  - Name: y
+    Signature:
+      Type: Long
+  - Name: z
+    Signature:
+      Type: Long
+  - Name: contentScaleFactor
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: 'MKTileOverlayRenderer'
+  JsName: 'MKTileOverlayRenderer'
+  Module: 'MapKit.MKTileOverlayRenderer'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithTileOverlay:'
+    JsName: 'initWithTileOverlay'
+    Module: 'MapKit.MKTileOverlayRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithTileOverlay:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: MapKit.MKTileOverlay
+      Name: MKTileOverlay
+    TypeEncoding: '@24@0:8@16'
+  - Name: 'reloadData'
+    JsName: 'reloadData'
+    Module: 'MapKit.MKTileOverlayRenderer'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'reloadData'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: MapKit.MKOverlayRenderer
+    Name: MKOverlayRenderer
+  Type: Interface
+- Name: 'MKMapCamera'
+  JsName: 'MKMapCamera'
+  Module: 'MapKit.MKMapCamera'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods:
+  - Name: 'camera'
+    JsName: 'camera'
+    Module: 'MapKit.MKMapCamera'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'camera'
+    Signature:
+    - Type: Instancetype
+    TypeEncoding: '@16@0:8'
+  - Name: 'cameraLookingAtCenterCoordinate:fromEyeCoordinate:eyeAltitude:'
+    JsName: 'cameraLookingAtCenterCoordinateFromEyeCoordinateEyeAltitude'
+    Module: 'MapKit.MKMapCamera'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cameraLookingAtCenterCoordinate:fromEyeCoordinate:eyeAltitude:'
+    Signature:
+    - Type: Instancetype
+    - Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+    - Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+    - Type: Double
+    TypeEncoding: '@56@0:8{?=dd}16{?=dd}32d48'
+  Properties:
+  - Name: 'altitude'
+    JsName: 'altitude'
+    Module: 'MapKit.MKMapCamera'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'altitude'
+      JsName: 'altitude'
+      Module: 'MapKit.MKMapCamera'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'altitude'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+    Setter:
+      Name: 'setAltitude:'
+      JsName: 'setAltitude'
+      Module: 'MapKit.MKMapCamera'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAltitude:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v24@0:8d16'
+  - Name: 'centerCoordinate'
+    JsName: 'centerCoordinate'
+    Module: 'MapKit.MKMapCamera'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'centerCoordinate'
+      JsName: 'centerCoordinate'
+      Module: 'MapKit.MKMapCamera'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'centerCoordinate'
+      Signature:
+      - Type: Struct
+        Module: CoreLocation.CLLocation
+        Name: CLLocationCoordinate2D
+      TypeEncoding: '{?=dd}16@0:8'
+    Setter:
+      Name: 'setCenterCoordinate:'
+      JsName: 'setCenterCoordinate'
+      Module: 'MapKit.MKMapCamera'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setCenterCoordinate:'
+      Signature:
+      - Type: Void
+      - Type: Struct
+        Module: CoreLocation.CLLocation
+        Name: CLLocationCoordinate2D
+      TypeEncoding: 'v32@0:8{?=dd}16'
+  - Name: 'heading'
+    JsName: 'heading'
+    Module: 'MapKit.MKMapCamera'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'heading'
+      JsName: 'heading'
+      Module: 'MapKit.MKMapCamera'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'heading'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+    Setter:
+      Name: 'setHeading:'
+      JsName: 'setHeading'
+      Module: 'MapKit.MKMapCamera'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setHeading:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v24@0:8d16'
+  - Name: 'pitch'
+    JsName: 'pitch'
+    Module: 'MapKit.MKMapCamera'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'pitch'
+      JsName: 'pitch'
+      Module: 'MapKit.MKMapCamera'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'pitch'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+    Setter:
+      Name: 'setPitch:'
+      JsName: 'setPitch'
+      Module: 'MapKit.MKMapCamera'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPitch:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v24@0:8d16'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MKReverseGeocoder'
+  JsName: 'MKReverseGeocoder'
+  Module: 'MapKit.MKReverseGeocoder'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'cancel'
+    JsName: 'cancel'
+    Module: 'MapKit.MKReverseGeocoder'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancel'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'initWithCoordinate:'
+    JsName: 'initWithCoordinate'
+    Module: 'MapKit.MKReverseGeocoder'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithCoordinate:'
+    Signature:
+    - Type: Instancetype
+    - Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+    TypeEncoding: '@32@0:8{?=dd}16'
+  - Name: 'start'
+    JsName: 'start'
+    Module: 'MapKit.MKReverseGeocoder'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'start'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  StaticMethods: []
+  Properties:
+  - Name: 'coordinate'
+    JsName: 'coordinate'
+    Module: 'MapKit.MKReverseGeocoder'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'coordinate'
+      JsName: 'coordinate'
+      Module: 'MapKit.MKReverseGeocoder'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'coordinate'
+      Signature:
+      - Type: Struct
+        Module: CoreLocation.CLLocation
+        Name: CLLocationCoordinate2D
+      TypeEncoding: '{?=dd}16@0:8'
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'MapKit.MKReverseGeocoder'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'MapKit.MKReverseGeocoder'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: MapKit.MKReverseGeocoder
+          Name: MKReverseGeocoderDelegate
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'MapKit.MKReverseGeocoder'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: MapKit.MKReverseGeocoder
+          Name: MKReverseGeocoderDelegate
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'placemark'
+    JsName: 'placemark'
+    Module: 'MapKit.MKReverseGeocoder'
+    IntroducedIn: 3.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'placemark'
+      JsName: 'placemark'
+      Module: 'MapKit.MKReverseGeocoder'
+      IntroducedIn: 3.2
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'placemark'
+      Signature:
+      - Type: Interface
+        Module: MapKit.MKPlacemark
+        Name: MKPlacemark
+      TypeEncoding: '@16@0:8'
+  - Name: 'querying'
+    JsName: 'querying'
+    Module: 'MapKit.MKReverseGeocoder'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isQuerying'
+      JsName: 'isQuerying'
+      Module: 'MapKit.MKReverseGeocoder'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isQuerying'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'B16@0:8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'MKReverseGeocoderDelegate'
+  JsName: 'MKReverseGeocoderDelegate'
+  Module: 'MapKit.MKReverseGeocoder'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'reverseGeocoder:didFailWithError:'
+    JsName: 'reverseGeocoderDidFailWithError'
+    Module: 'MapKit.MKReverseGeocoder'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'reverseGeocoder:didFailWithError:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKReverseGeocoder
+      Name: MKReverseGeocoder
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v32@0:8@16@24'
+  - Name: 'reverseGeocoder:didFindPlacemark:'
+    JsName: 'reverseGeocoderDidFindPlacemark'
+    Module: 'MapKit.MKReverseGeocoder'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'reverseGeocoder:didFindPlacemark:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: MapKit.MKReverseGeocoder
+      Name: MKReverseGeocoder
+    - Type: Interface
+      Module: MapKit.MKPlacemark
+      Name: MKPlacemark
+    TypeEncoding: 'v32@0:8@16@24'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'MKOverlayPathView'
+  JsName: 'MKOverlayPathView'
+  Module: 'MapKit.MKOverlayPathView'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'applyFillPropertiesToContext:atZoomScale:'
+    JsName: 'applyFillPropertiesToContextAtZoomScale'
+    Module: 'MapKit.MKOverlayPathView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'applyFillPropertiesToContext:atZoomScale:'
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Double
+    TypeEncoding: 'v32@0:8^{CGContext=}16d24'
+  - Name: 'applyStrokePropertiesToContext:atZoomScale:'
+    JsName: 'applyStrokePropertiesToContextAtZoomScale'
+    Module: 'MapKit.MKOverlayPathView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'applyStrokePropertiesToContext:atZoomScale:'
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Double
+    TypeEncoding: 'v32@0:8^{CGContext=}16d24'
+  - Name: 'createPath'
+    JsName: 'createPath'
+    Module: 'MapKit.MKOverlayPathView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'createPath'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'fillPath:inContext:'
+    JsName: 'fillPathInContext'
+    Module: 'MapKit.MKOverlayPathView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'fillPath:inContext:'
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: 'v32@0:8^{CGPath=}16^{CGContext=}24'
+  - Name: 'invalidatePath'
+    JsName: 'invalidatePath'
+    Module: 'MapKit.MKOverlayPathView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'invalidatePath'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v16@0:8'
+  - Name: 'strokePath:inContext:'
+    JsName: 'strokePathInContext'
+    Module: 'MapKit.MKOverlayPathView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'strokePath:inContext:'
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    TypeEncoding: 'v32@0:8^{CGPath=}16^{CGContext=}24'
+  StaticMethods: []
+  Properties:
+  - Name: 'fillColor'
+    JsName: 'fillColor'
+    Module: 'MapKit.MKOverlayPathView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'fillColor'
+      JsName: 'fillColor'
+      Module: 'MapKit.MKOverlayPathView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'fillColor'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIColor
+        Name: UIColor
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setFillColor:'
+      JsName: 'setFillColor'
+      Module: 'MapKit.MKOverlayPathView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setFillColor:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: UIKit.UIColor
+        Name: UIColor
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'lineCap'
+    JsName: 'lineCap'
+    Module: 'MapKit.MKOverlayPathView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'lineCap'
+      JsName: 'lineCap'
+      Module: 'MapKit.MKOverlayPathView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lineCap'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'i16@0:8'
+    Setter:
+      Name: 'setLineCap:'
+      JsName: 'setLineCap'
+      Module: 'MapKit.MKOverlayPathView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLineCap:'
+      Signature:
+      - Type: Void
+      - Type: UInt
+      TypeEncoding: 'v20@0:8i16'
+  - Name: 'lineDashPattern'
+    JsName: 'lineDashPattern'
+    Module: 'MapKit.MKOverlayPathView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'lineDashPattern'
+      JsName: 'lineDashPattern'
+      Module: 'MapKit.MKOverlayPathView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lineDashPattern'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setLineDashPattern:'
+      JsName: 'setLineDashPattern'
+      Module: 'MapKit.MKOverlayPathView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLineDashPattern:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v24@0:8@16'
+  - Name: 'lineDashPhase'
+    JsName: 'lineDashPhase'
+    Module: 'MapKit.MKOverlayPathView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'lineDashPhase'
+      JsName: 'lineDashPhase'
+      Module: 'MapKit.MKOverlayPathView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lineDashPhase'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+    Setter:
+      Name: 'setLineDashPhase:'
+      JsName: 'setLineDashPhase'
+      Module: 'MapKit.MKOverlayPathView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLineDashPhase:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v24@0:8d16'
+  - Name: 'lineJoin'
+    JsName: 'lineJoin'
+    Module: 'MapKit.MKOverlayPathView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'lineJoin'
+      JsName: 'lineJoin'
+      Module: 'MapKit.MKOverlayPathView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lineJoin'
+      Signature:
+      - Type: UInt
+      TypeEncoding: 'i16@0:8'
+    Setter:
+      Name: 'setLineJoin:'
+      JsName: 'setLineJoin'
+      Module: 'MapKit.MKOverlayPathView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLineJoin:'
+      Signature:
+      - Type: Void
+      - Type: UInt
+      TypeEncoding: 'v20@0:8i16'
+  - Name: 'lineWidth'
+    JsName: 'lineWidth'
+    Module: 'MapKit.MKOverlayPathView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'lineWidth'
+      JsName: 'lineWidth'
+      Module: 'MapKit.MKOverlayPathView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lineWidth'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+    Setter:
+      Name: 'setLineWidth:'
+      JsName: 'setLineWidth'
+      Module: 'MapKit.MKOverlayPathView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLineWidth:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v24@0:8d16'
+  - Name: 'miterLimit'
+    JsName: 'miterLimit'
+    Module: 'MapKit.MKOverlayPathView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'miterLimit'
+      JsName: 'miterLimit'
+      Module: 'MapKit.MKOverlayPathView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'miterLimit'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd16@0:8'
+    Setter:
+      Name: 'setMiterLimit:'
+      JsName: 'setMiterLimit'
+      Module: 'MapKit.MKOverlayPathView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMiterLimit:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v24@0:8d16'
+  - Name: 'path'
+    JsName: 'path'
+    Module: 'MapKit.MKOverlayPathView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'path'
+      JsName: 'path'
+      Module: 'MapKit.MKOverlayPathView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'path'
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: '^{CGPath=}16@0:8'
+    Setter:
+      Name: 'setPath:'
+      JsName: 'setPath'
+      Module: 'MapKit.MKOverlayPathView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPath:'
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      TypeEncoding: 'v24@0:8^{CGPath=}16'
+  - Name: 'strokeColor'
+    JsName: 'strokeColor'
+    Module: 'MapKit.MKOverlayPathView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'strokeColor'
+      JsName: 'strokeColor'
+      Module: 'MapKit.MKOverlayPathView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'strokeColor'
+      Signature:
+      - Type: Interface
+        Module: UIKit.UIColor
+        Name: UIColor
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setStrokeColor:'
+      JsName: 'setStrokeColor'
+      Module: 'MapKit.MKOverlayPathView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setStrokeColor:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: UIKit.UIColor
+        Name: UIColor
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: MapKit.MKOverlayView
+    Name: MKOverlayView
+  Type: Interface
+- Name: 'MKPolygonView'
+  JsName: 'MKPolygonView'
+  Module: 'MapKit.MKPolygonView'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithPolygon:'
+    JsName: 'initWithPolygon'
+    Module: 'MapKit.MKPolygonView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithPolygon:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: MapKit.MKPolygon
+      Name: MKPolygon
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'polygon'
+    JsName: 'polygon'
+    Module: 'MapKit.MKPolygonView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'polygon'
+      JsName: 'polygon'
+      Module: 'MapKit.MKPolygonView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'polygon'
+      Signature:
+      - Type: Interface
+        Module: MapKit.MKPolygon
+        Name: MKPolygon
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: MapKit.MKOverlayPathView
+    Name: MKOverlayPathView
+  Type: Interface
+- Name: 'MKPolylineView'
+  JsName: 'MKPolylineView'
+  Module: 'MapKit.MKPolylineView'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithPolyline:'
+    JsName: 'initWithPolyline'
+    Module: 'MapKit.MKPolylineView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithPolyline:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: MapKit.MKPolyline
+      Name: MKPolyline
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'polyline'
+    JsName: 'polyline'
+    Module: 'MapKit.MKPolylineView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'polyline'
+      JsName: 'polyline'
+      Module: 'MapKit.MKPolylineView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'polyline'
+      Signature:
+      - Type: Interface
+        Module: MapKit.MKPolyline
+        Name: MKPolyline
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: MapKit.MKOverlayPathView
+    Name: MKOverlayPathView
+  Type: Interface
+- Name: 'MKCircleView'
+  JsName: 'MKCircleView'
+  Module: 'MapKit.MKCircleView'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithCircle:'
+    JsName: 'initWithCircle'
+    Module: 'MapKit.MKCircleView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithCircle:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: MapKit.MKCircle
+      Name: MKCircle
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'circle'
+    JsName: 'circle'
+    Module: 'MapKit.MKCircleView'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'circle'
+      JsName: 'circle'
+      Module: 'MapKit.MKCircleView'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'circle'
+      Signature:
+      - Type: Interface
+        Module: MapKit.MKCircle
+        Name: MKCircle
+      TypeEncoding: '@16@0:8'
+  Protocols: []
+  Base:
+    Module: MapKit.MKOverlayPathView
+    Name: MKOverlayPathView
+  Type: Interface
+- Name: 'MKUserTrackingBarButtonItem'
+  JsName: 'MKUserTrackingBarButtonItem'
+  Module: 'MapKit.MKUserTrackingBarButtonItem'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithMapView:'
+    JsName: 'initWithMapView'
+    Module: 'MapKit.MKUserTrackingBarButtonItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithMapView:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: MapKit.MKMapView
+      Name: MKMapView
+    TypeEncoding: '@24@0:8@16'
+  StaticMethods: []
+  Properties:
+  - Name: 'mapView'
+    JsName: 'mapView'
+    Module: 'MapKit.MKUserTrackingBarButtonItem'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'mapView'
+      JsName: 'mapView'
+      Module: 'MapKit.MKUserTrackingBarButtonItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'mapView'
+      Signature:
+      - Type: Interface
+        Module: MapKit.MKMapView
+        Name: MKMapView
+      TypeEncoding: '@16@0:8'
+    Setter:
+      Name: 'setMapView:'
+      JsName: 'setMapView'
+      Module: 'MapKit.MKUserTrackingBarButtonItem'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setMapView:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: MapKit.MKMapView
+        Name: MKMapView
+      TypeEncoding: 'v24@0:8@16'
+  Protocols: []
+  Base:
+    Module: UIKit.UIBarButtonItem
+    Name: UIBarButtonItem
+  Type: Interface
+...

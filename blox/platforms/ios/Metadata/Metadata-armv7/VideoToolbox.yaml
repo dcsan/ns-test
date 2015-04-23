@@ -1,0 +1,2386 @@
+name: VideoToolbox
+items:
+- Name: 'kVTCompressionPropertyKey_NumberOfPendingFrames'
+  JsName: 'kVTCompressionPropertyKey_NumberOfPendingFrames'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_PixelBufferPoolIsShared'
+  JsName: 'kVTCompressionPropertyKey_PixelBufferPoolIsShared'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_VideoEncoderPixelBufferAttributes'
+  JsName: 'kVTCompressionPropertyKey_VideoEncoderPixelBufferAttributes'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_MaxKeyFrameInterval'
+  JsName: 'kVTCompressionPropertyKey_MaxKeyFrameInterval'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_MaxKeyFrameIntervalDuration'
+  JsName: 'kVTCompressionPropertyKey_MaxKeyFrameIntervalDuration'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_AllowTemporalCompression'
+  JsName: 'kVTCompressionPropertyKey_AllowTemporalCompression'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_AllowFrameReordering'
+  JsName: 'kVTCompressionPropertyKey_AllowFrameReordering'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_AverageBitRate'
+  JsName: 'kVTCompressionPropertyKey_AverageBitRate'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_DataRateLimits'
+  JsName: 'kVTCompressionPropertyKey_DataRateLimits'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_Quality'
+  JsName: 'kVTCompressionPropertyKey_Quality'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_MoreFramesBeforeStart'
+  JsName: 'kVTCompressionPropertyKey_MoreFramesBeforeStart'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_MoreFramesAfterEnd'
+  JsName: 'kVTCompressionPropertyKey_MoreFramesAfterEnd'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_ProfileLevel'
+  JsName: 'kVTCompressionPropertyKey_ProfileLevel'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Baseline_1_3'
+  JsName: 'kVTProfileLevel_H264_Baseline_1_3'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Baseline_3_0'
+  JsName: 'kVTProfileLevel_H264_Baseline_3_0'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Baseline_3_1'
+  JsName: 'kVTProfileLevel_H264_Baseline_3_1'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Baseline_3_2'
+  JsName: 'kVTProfileLevel_H264_Baseline_3_2'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Baseline_4_0'
+  JsName: 'kVTProfileLevel_H264_Baseline_4_0'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Baseline_4_1'
+  JsName: 'kVTProfileLevel_H264_Baseline_4_1'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Baseline_4_2'
+  JsName: 'kVTProfileLevel_H264_Baseline_4_2'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Baseline_5_0'
+  JsName: 'kVTProfileLevel_H264_Baseline_5_0'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Baseline_5_1'
+  JsName: 'kVTProfileLevel_H264_Baseline_5_1'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Baseline_5_2'
+  JsName: 'kVTProfileLevel_H264_Baseline_5_2'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Baseline_AutoLevel'
+  JsName: 'kVTProfileLevel_H264_Baseline_AutoLevel'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Main_3_0'
+  JsName: 'kVTProfileLevel_H264_Main_3_0'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Main_3_1'
+  JsName: 'kVTProfileLevel_H264_Main_3_1'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Main_3_2'
+  JsName: 'kVTProfileLevel_H264_Main_3_2'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Main_4_0'
+  JsName: 'kVTProfileLevel_H264_Main_4_0'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Main_4_1'
+  JsName: 'kVTProfileLevel_H264_Main_4_1'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Main_4_2'
+  JsName: 'kVTProfileLevel_H264_Main_4_2'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Main_5_0'
+  JsName: 'kVTProfileLevel_H264_Main_5_0'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Main_5_1'
+  JsName: 'kVTProfileLevel_H264_Main_5_1'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Main_5_2'
+  JsName: 'kVTProfileLevel_H264_Main_5_2'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Main_AutoLevel'
+  JsName: 'kVTProfileLevel_H264_Main_AutoLevel'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Extended_5_0'
+  JsName: 'kVTProfileLevel_H264_Extended_5_0'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_Extended_AutoLevel'
+  JsName: 'kVTProfileLevel_H264_Extended_AutoLevel'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_High_3_0'
+  JsName: 'kVTProfileLevel_H264_High_3_0'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_High_3_1'
+  JsName: 'kVTProfileLevel_H264_High_3_1'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_High_3_2'
+  JsName: 'kVTProfileLevel_H264_High_3_2'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_High_4_0'
+  JsName: 'kVTProfileLevel_H264_High_4_0'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_High_4_1'
+  JsName: 'kVTProfileLevel_H264_High_4_1'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_High_4_2'
+  JsName: 'kVTProfileLevel_H264_High_4_2'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_High_5_0'
+  JsName: 'kVTProfileLevel_H264_High_5_0'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_High_5_1'
+  JsName: 'kVTProfileLevel_H264_High_5_1'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_High_5_2'
+  JsName: 'kVTProfileLevel_H264_High_5_2'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H264_High_AutoLevel'
+  JsName: 'kVTProfileLevel_H264_High_AutoLevel'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_MP4V_Simple_L0'
+  JsName: 'kVTProfileLevel_MP4V_Simple_L0'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_MP4V_Simple_L1'
+  JsName: 'kVTProfileLevel_MP4V_Simple_L1'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_MP4V_Simple_L2'
+  JsName: 'kVTProfileLevel_MP4V_Simple_L2'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_MP4V_Simple_L3'
+  JsName: 'kVTProfileLevel_MP4V_Simple_L3'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_MP4V_Main_L2'
+  JsName: 'kVTProfileLevel_MP4V_Main_L2'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_MP4V_Main_L3'
+  JsName: 'kVTProfileLevel_MP4V_Main_L3'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_MP4V_Main_L4'
+  JsName: 'kVTProfileLevel_MP4V_Main_L4'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_MP4V_AdvancedSimple_L0'
+  JsName: 'kVTProfileLevel_MP4V_AdvancedSimple_L0'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_MP4V_AdvancedSimple_L1'
+  JsName: 'kVTProfileLevel_MP4V_AdvancedSimple_L1'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_MP4V_AdvancedSimple_L2'
+  JsName: 'kVTProfileLevel_MP4V_AdvancedSimple_L2'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_MP4V_AdvancedSimple_L3'
+  JsName: 'kVTProfileLevel_MP4V_AdvancedSimple_L3'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_MP4V_AdvancedSimple_L4'
+  JsName: 'kVTProfileLevel_MP4V_AdvancedSimple_L4'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H263_Profile0_Level10'
+  JsName: 'kVTProfileLevel_H263_Profile0_Level10'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H263_Profile0_Level45'
+  JsName: 'kVTProfileLevel_H263_Profile0_Level45'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTProfileLevel_H263_Profile3_Level45'
+  JsName: 'kVTProfileLevel_H263_Profile3_Level45'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_H264EntropyMode'
+  JsName: 'kVTCompressionPropertyKey_H264EntropyMode'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTH264EntropyMode_CAVLC'
+  JsName: 'kVTH264EntropyMode_CAVLC'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTH264EntropyMode_CABAC'
+  JsName: 'kVTH264EntropyMode_CABAC'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_Depth'
+  JsName: 'kVTCompressionPropertyKey_Depth'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_MaxFrameDelayCount'
+  JsName: 'kVTCompressionPropertyKey_MaxFrameDelayCount'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTUnlimitedFrameDelayCount'
+  JsName: 'kVTUnlimitedFrameDelayCount'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -1
+- Name: 'kVTCompressionPropertyKey_MaxH264SliceBytes'
+  JsName: 'kVTCompressionPropertyKey_MaxH264SliceBytes'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_RealTime'
+  JsName: 'kVTCompressionPropertyKey_RealTime'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_SourceFrameCount'
+  JsName: 'kVTCompressionPropertyKey_SourceFrameCount'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_ExpectedFrameRate'
+  JsName: 'kVTCompressionPropertyKey_ExpectedFrameRate'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_ExpectedDuration'
+  JsName: 'kVTCompressionPropertyKey_ExpectedDuration'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTEncodeFrameOptionKey_ForceKeyFrame'
+  JsName: 'kVTEncodeFrameOptionKey_ForceKeyFrame'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_CleanAperture'
+  JsName: 'kVTCompressionPropertyKey_CleanAperture'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_PixelAspectRatio'
+  JsName: 'kVTCompressionPropertyKey_PixelAspectRatio'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_FieldCount'
+  JsName: 'kVTCompressionPropertyKey_FieldCount'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_FieldDetail'
+  JsName: 'kVTCompressionPropertyKey_FieldDetail'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_AspectRatio16x9'
+  JsName: 'kVTCompressionPropertyKey_AspectRatio16x9'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_ProgressiveScan'
+  JsName: 'kVTCompressionPropertyKey_ProgressiveScan'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_ColorPrimaries'
+  JsName: 'kVTCompressionPropertyKey_ColorPrimaries'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_TransferFunction'
+  JsName: 'kVTCompressionPropertyKey_TransferFunction'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_YCbCrMatrix'
+  JsName: 'kVTCompressionPropertyKey_YCbCrMatrix'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_ICCProfile'
+  JsName: 'kVTCompressionPropertyKey_ICCProfile'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_PixelTransferProperties'
+  JsName: 'kVTCompressionPropertyKey_PixelTransferProperties'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTCompressionPropertyKey_MultiPassStorage'
+  JsName: 'kVTCompressionPropertyKey_MultiPassStorage'
+  Module: 'VideoToolbox.VTCompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTPropertyNotSupportedErr'
+  JsName: 'kVTPropertyNotSupportedErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12900
+- Name: 'kVTPropertyReadOnlyErr'
+  JsName: 'kVTPropertyReadOnlyErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12901
+- Name: 'kVTParameterErr'
+  JsName: 'kVTParameterErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12902
+- Name: 'kVTInvalidSessionErr'
+  JsName: 'kVTInvalidSessionErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12903
+- Name: 'kVTAllocationFailedErr'
+  JsName: 'kVTAllocationFailedErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12904
+- Name: 'kVTPixelTransferNotSupportedErr'
+  JsName: 'kVTPixelTransferNotSupportedErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12905
+- Name: 'kVTCouldNotFindVideoDecoderErr'
+  JsName: 'kVTCouldNotFindVideoDecoderErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12906
+- Name: 'kVTCouldNotCreateInstanceErr'
+  JsName: 'kVTCouldNotCreateInstanceErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12907
+- Name: 'kVTCouldNotFindVideoEncoderErr'
+  JsName: 'kVTCouldNotFindVideoEncoderErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12908
+- Name: 'kVTVideoDecoderBadDataErr'
+  JsName: 'kVTVideoDecoderBadDataErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12909
+- Name: 'kVTVideoDecoderUnsupportedDataFormatErr'
+  JsName: 'kVTVideoDecoderUnsupportedDataFormatErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12910
+- Name: 'kVTVideoDecoderMalfunctionErr'
+  JsName: 'kVTVideoDecoderMalfunctionErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12911
+- Name: 'kVTVideoEncoderMalfunctionErr'
+  JsName: 'kVTVideoEncoderMalfunctionErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12912
+- Name: 'kVTVideoDecoderNotAvailableNowErr'
+  JsName: 'kVTVideoDecoderNotAvailableNowErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12913
+- Name: 'kVTImageRotationNotSupportedErr'
+  JsName: 'kVTImageRotationNotSupportedErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12914
+- Name: 'kVTVideoEncoderNotAvailableNowErr'
+  JsName: 'kVTVideoEncoderNotAvailableNowErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12915
+- Name: 'kVTFormatDescriptionChangeNotSupportedErr'
+  JsName: 'kVTFormatDescriptionChangeNotSupportedErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12916
+- Name: 'kVTInsufficientSourceColorDataErr'
+  JsName: 'kVTInsufficientSourceColorDataErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12917
+- Name: 'kVTCouldNotCreateColorCorrectionDataErr'
+  JsName: 'kVTCouldNotCreateColorCorrectionDataErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12918
+- Name: 'kVTColorSyncTransformConvertFailedErr'
+  JsName: 'kVTColorSyncTransformConvertFailedErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12919
+- Name: 'kVTVideoDecoderAuthorizationErr'
+  JsName: 'kVTVideoDecoderAuthorizationErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12210
+- Name: 'kVTVideoEncoderAuthorizationErr'
+  JsName: 'kVTVideoEncoderAuthorizationErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12211
+- Name: 'kVTColorCorrectionPixelTransferFailedErr'
+  JsName: 'kVTColorCorrectionPixelTransferFailedErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12212
+- Name: 'kVTMultiPassStorageIdentifierMismatchErr'
+  JsName: 'kVTMultiPassStorageIdentifierMismatchErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12213
+- Name: 'kVTMultiPassStorageInvalidErr'
+  JsName: 'kVTMultiPassStorageInvalidErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12214
+- Name: 'kVTFrameSiloInvalidTimeStampErr'
+  JsName: 'kVTFrameSiloInvalidTimeStampErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12215
+- Name: 'kVTFrameSiloInvalidTimeRangeErr'
+  JsName: 'kVTFrameSiloInvalidTimeRangeErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12216
+- Name: 'kVTCouldNotFindTemporalFilterErr'
+  JsName: 'kVTCouldNotFindTemporalFilterErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12217
+- Name: 'kVTPixelTransferNotPermittedErr'
+  JsName: 'kVTPixelTransferNotPermittedErr'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: -12218
+- Name: 'kVTDecodeFrame_EnableAsynchronousDecompression'
+  JsName: 'kVTDecodeFrame_EnableAsynchronousDecompression'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kVTDecodeFrame_DoNotOutputFrame'
+  JsName: 'kVTDecodeFrame_DoNotOutputFrame'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kVTDecodeFrame_1xRealTimePlayback'
+  JsName: 'kVTDecodeFrame_1xRealTimePlayback'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kVTDecodeFrame_EnableTemporalProcessing'
+  JsName: 'kVTDecodeFrame_EnableTemporalProcessing'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 8
+- Name: 'kVTDecodeInfo_Asynchronous'
+  JsName: 'kVTDecodeInfo_Asynchronous'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kVTDecodeInfo_FrameDropped'
+  JsName: 'kVTDecodeInfo_FrameDropped'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'kVTDecodeInfo_ImageBufferModifiable'
+  JsName: 'kVTDecodeInfo_ImageBufferModifiable'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 4
+- Name: 'kVTEncodeInfo_Asynchronous'
+  JsName: 'kVTEncodeInfo_Asynchronous'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kVTEncodeInfo_FrameDropped'
+  JsName: 'kVTEncodeInfo_FrameDropped'
+  Module: 'VideoToolbox.VTErrors'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'VTSessionCopySupportedPropertyDictionary'
+  JsName: 'VTSessionCopySupportedPropertyDictionary'
+  Module: 'VideoToolbox.VTSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFDictionary
+      Name: NSDictionary
+- Name: 'kVTPropertyTypeKey'
+  JsName: 'kVTPropertyTypeKey'
+  Module: 'VideoToolbox.VTSession'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTPropertyType_Enumeration'
+  JsName: 'kVTPropertyType_Enumeration'
+  Module: 'VideoToolbox.VTSession'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTPropertyType_Boolean'
+  JsName: 'kVTPropertyType_Boolean'
+  Module: 'VideoToolbox.VTSession'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTPropertyType_Number'
+  JsName: 'kVTPropertyType_Number'
+  Module: 'VideoToolbox.VTSession'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTPropertyReadWriteStatusKey'
+  JsName: 'kVTPropertyReadWriteStatusKey'
+  Module: 'VideoToolbox.VTSession'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTPropertyReadWriteStatus_ReadOnly'
+  JsName: 'kVTPropertyReadWriteStatus_ReadOnly'
+  Module: 'VideoToolbox.VTSession'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTPropertyReadWriteStatus_ReadWrite'
+  JsName: 'kVTPropertyReadWriteStatus_ReadWrite'
+  Module: 'VideoToolbox.VTSession'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTPropertyShouldBeSerializedKey'
+  JsName: 'kVTPropertyShouldBeSerializedKey'
+  Module: 'VideoToolbox.VTSession'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTPropertySupportedValueMinimumKey'
+  JsName: 'kVTPropertySupportedValueMinimumKey'
+  Module: 'VideoToolbox.VTSession'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTPropertySupportedValueMaximumKey'
+  JsName: 'kVTPropertySupportedValueMaximumKey'
+  Module: 'VideoToolbox.VTSession'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTPropertySupportedValueListKey'
+  JsName: 'kVTPropertySupportedValueListKey'
+  Module: 'VideoToolbox.VTSession'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTPropertyDocumentationKey'
+  JsName: 'kVTPropertyDocumentationKey'
+  Module: 'VideoToolbox.VTSession'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'VTSessionSetProperty'
+  JsName: 'VTSessionSetProperty'
+  Module: 'VideoToolbox.VTSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'VTSessionCopyProperty'
+  JsName: 'VTSessionCopyProperty'
+  Module: 'VideoToolbox.VTSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'VTSessionSetProperties'
+  JsName: 'VTSessionSetProperties'
+  Module: 'VideoToolbox.VTSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'VTSessionCopySerializableProperties'
+  JsName: 'VTSessionCopySerializableProperties'
+  Module: 'VideoToolbox.VTSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFDictionary
+      Name: NSDictionary
+- Name: 'kVTVideoEncoderSpecification_EncoderID'
+  JsName: 'kVTVideoEncoderSpecification_EncoderID'
+  Module: 'VideoToolbox.VTCompressionSession'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'VTCompressionSessionCreate'
+  JsName: 'VTCompressionSessionCreate'
+  Module: 'VideoToolbox.VTCompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Int
+  - Type: Int
+  - Type: ULong
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Long
+    - Type: ULong
+    - Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'VTCompressionSessionInvalidate'
+  JsName: 'VTCompressionSessionInvalidate'
+  Module: 'VideoToolbox.VTCompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'VTCompressionSessionGetTypeID'
+  JsName: 'VTCompressionSessionGetTypeID'
+  Module: 'VideoToolbox.VTCompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'VTCompressionSessionGetPixelBufferPool'
+  JsName: 'VTCompressionSessionGetPixelBufferPool'
+  Module: 'VideoToolbox.VTCompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'VTCompressionSessionPrepareToEncodeFrames'
+  JsName: 'VTCompressionSessionPrepareToEncodeFrames'
+  Module: 'VideoToolbox.VTCompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'VTCompressionSessionEncodeFrame'
+  JsName: 'VTCompressionSessionEncodeFrame'
+  Module: 'VideoToolbox.VTCompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreMedia.CMTime
+    Name: CMTime
+  - Type: Struct
+    Module: CoreMedia.CMTime
+    Name: CMTime
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'VTCompressionSessionCompleteFrames'
+  JsName: 'VTCompressionSessionCompleteFrames'
+  Module: 'VideoToolbox.VTCompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreMedia.CMTime
+    Name: CMTime
+- Name: 'VTCompressionSessionOptionFlags'
+  JsName: 'VTCompressionSessionOptionFlags'
+  Module: 'VideoToolbox.VTCompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kVTCompressionSessionBeginFinalPass":1})
+- Name: 'VTCompressionSessionBeginPass'
+  JsName: 'VTCompressionSessionBeginPass'
+  Module: 'VideoToolbox.VTCompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'VTCompressionSessionEndPass'
+  JsName: 'VTCompressionSessionEndPass'
+  Module: 'VideoToolbox.VTCompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'VTCompressionSessionGetTimeRangesForNextPass'
+  JsName: 'VTCompressionSessionGetTimeRangesForNextPass'
+  Module: 'VideoToolbox.VTCompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreMedia.CMTimeRange
+        Name: CMTimeRange
+- Name: 'kVTDecompressionPropertyKey_PixelBufferPool'
+  JsName: 'kVTDecompressionPropertyKey_PixelBufferPool'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionPropertyKey_PixelBufferPoolIsShared'
+  JsName: 'kVTDecompressionPropertyKey_PixelBufferPoolIsShared'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionPropertyKey_OutputPoolRequestedMinimumBufferCount'
+  JsName: 'kVTDecompressionPropertyKey_OutputPoolRequestedMinimumBufferCount'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionPropertyKey_NumberOfFramesBeingDecoded'
+  JsName: 'kVTDecompressionPropertyKey_NumberOfFramesBeingDecoded'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionPropertyKey_MinOutputPresentationTimeStampOfFramesBeingDecoded'
+  JsName: 'kVTDecompressionPropertyKey_MinOutputPresentationTimeStampOfFramesBeingDecoded'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionPropertyKey_MaxOutputPresentationTimeStampOfFramesBeingDecoded'
+  JsName: 'kVTDecompressionPropertyKey_MaxOutputPresentationTimeStampOfFramesBeingDecoded'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionPropertyKey_ContentHasInterframeDependencies'
+  JsName: 'kVTDecompressionPropertyKey_ContentHasInterframeDependencies'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionPropertyKey_RealTime'
+  JsName: 'kVTDecompressionPropertyKey_RealTime'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionPropertyKey_ThreadCount'
+  JsName: 'kVTDecompressionPropertyKey_ThreadCount'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionPropertyKey_FieldMode'
+  JsName: 'kVTDecompressionPropertyKey_FieldMode'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionProperty_FieldMode_BothFields'
+  JsName: 'kVTDecompressionProperty_FieldMode_BothFields'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionProperty_FieldMode_TopFieldOnly'
+  JsName: 'kVTDecompressionProperty_FieldMode_TopFieldOnly'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionProperty_FieldMode_BottomFieldOnly'
+  JsName: 'kVTDecompressionProperty_FieldMode_BottomFieldOnly'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionProperty_FieldMode_SingleField'
+  JsName: 'kVTDecompressionProperty_FieldMode_SingleField'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionProperty_FieldMode_DeinterlaceFields'
+  JsName: 'kVTDecompressionProperty_FieldMode_DeinterlaceFields'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionPropertyKey_DeinterlaceMode'
+  JsName: 'kVTDecompressionPropertyKey_DeinterlaceMode'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionProperty_DeinterlaceMode_VerticalFilter'
+  JsName: 'kVTDecompressionProperty_DeinterlaceMode_VerticalFilter'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionProperty_DeinterlaceMode_Temporal'
+  JsName: 'kVTDecompressionProperty_DeinterlaceMode_Temporal'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionPropertyKey_ReducedResolutionDecode'
+  JsName: 'kVTDecompressionPropertyKey_ReducedResolutionDecode'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionResolutionKey_Width'
+  JsName: 'kVTDecompressionResolutionKey_Width'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionResolutionKey_Height'
+  JsName: 'kVTDecompressionResolutionKey_Height'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionPropertyKey_ReducedCoefficientDecode'
+  JsName: 'kVTDecompressionPropertyKey_ReducedCoefficientDecode'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionPropertyKey_ReducedFrameDelivery'
+  JsName: 'kVTDecompressionPropertyKey_ReducedFrameDelivery'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionPropertyKey_OnlyTheseFrames'
+  JsName: 'kVTDecompressionPropertyKey_OnlyTheseFrames'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionProperty_OnlyTheseFrames_AllFrames'
+  JsName: 'kVTDecompressionProperty_OnlyTheseFrames_AllFrames'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionProperty_OnlyTheseFrames_NonDroppableFrames'
+  JsName: 'kVTDecompressionProperty_OnlyTheseFrames_NonDroppableFrames'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionProperty_OnlyTheseFrames_IFrames'
+  JsName: 'kVTDecompressionProperty_OnlyTheseFrames_IFrames'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionProperty_OnlyTheseFrames_KeyFrames'
+  JsName: 'kVTDecompressionProperty_OnlyTheseFrames_KeyFrames'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionPropertyKey_SuggestedQualityOfServiceTiers'
+  JsName: 'kVTDecompressionPropertyKey_SuggestedQualityOfServiceTiers'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionPropertyKey_SupportedPixelFormatsOrderedByQuality'
+  JsName: 'kVTDecompressionPropertyKey_SupportedPixelFormatsOrderedByQuality'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionPropertyKey_SupportedPixelFormatsOrderedByPerformance'
+  JsName: 'kVTDecompressionPropertyKey_SupportedPixelFormatsOrderedByPerformance'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionPropertyKey_PixelFormatsWithReducedResolutionSupport'
+  JsName: 'kVTDecompressionPropertyKey_PixelFormatsWithReducedResolutionSupport'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTDecompressionPropertyKey_PixelTransferProperties'
+  JsName: 'kVTDecompressionPropertyKey_PixelTransferProperties'
+  Module: 'VideoToolbox.VTDecompressionProperties'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'VTDecompressionOutputCallbackRecord'
+  JsName: 'VTDecompressionOutputCallbackRecord'
+  Module: 'VideoToolbox.VTDecompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: decompressionOutputCallback
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Long
+      - Type: ULong
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Struct
+        Module: CoreMedia.CMTime
+        Name: CMTime
+      - Type: Struct
+        Module: CoreMedia.CMTime
+        Name: CMTime
+  - Name: decompressionOutputRefCon
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Void
+  Type: Struct
+- Name: 'VTDecompressionSessionCreate'
+  JsName: 'VTDecompressionSessionCreate'
+  Module: 'VideoToolbox.VTDecompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: VideoToolbox.VTDecompressionSession
+      Name: VTDecompressionOutputCallbackRecord
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'VTDecompressionSessionInvalidate'
+  JsName: 'VTDecompressionSessionInvalidate'
+  Module: 'VideoToolbox.VTDecompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'VTDecompressionSessionGetTypeID'
+  JsName: 'VTDecompressionSessionGetTypeID'
+  Module: 'VideoToolbox.VTDecompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'VTDecompressionSessionDecodeFrame'
+  JsName: 'VTDecompressionSessionDecodeFrame'
+  Module: 'VideoToolbox.VTDecompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: ULong
+- Name: 'VTDecompressionSessionFinishDelayedFrames'
+  JsName: 'VTDecompressionSessionFinishDelayedFrames'
+  Module: 'VideoToolbox.VTDecompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'VTDecompressionSessionCanAcceptFormatDescription'
+  JsName: 'VTDecompressionSessionCanAcceptFormatDescription'
+  Module: 'VideoToolbox.VTDecompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'VTDecompressionSessionWaitForAsynchronousFrames'
+  JsName: 'VTDecompressionSessionWaitForAsynchronousFrames'
+  Module: 'VideoToolbox.VTDecompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'VTDecompressionSessionCopyBlackPixelBuffer'
+  JsName: 'VTDecompressionSessionCopyBlackPixelBuffer'
+  Module: 'VideoToolbox.VTDecompressionSession'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'VTFrameSiloGetTypeID'
+  JsName: 'VTFrameSiloGetTypeID'
+  Module: 'VideoToolbox.VTFrameSilo'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'VTFrameSiloCreate'
+  JsName: 'VTFrameSiloCreate'
+  Module: 'VideoToolbox.VTFrameSilo'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+  - Type: Struct
+    Module: CoreMedia.CMTimeRange
+    Name: CMTimeRange
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'VTFrameSiloAddSampleBuffer'
+  JsName: 'VTFrameSiloAddSampleBuffer'
+  Module: 'VideoToolbox.VTFrameSilo'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'VTFrameSiloSetTimeRangesForNextPass'
+  JsName: 'VTFrameSiloSetTimeRangesForNextPass'
+  Module: 'VideoToolbox.VTFrameSilo'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreMedia.CMTimeRange
+      Name: CMTimeRange
+- Name: 'VTFrameSiloGetProgressOfCurrentPass'
+  JsName: 'VTFrameSiloGetProgressOfCurrentPass'
+  Module: 'VideoToolbox.VTFrameSilo'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Float
+- Name: 'VTFrameSiloCallFunctionForEachSampleBuffer'
+  JsName: 'VTFrameSiloCallFunctionForEachSampleBuffer'
+  Module: 'VideoToolbox.VTFrameSilo'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreMedia.CMTimeRange
+    Name: CMTimeRange
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Long
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'VTFrameSiloCallBlockForEachSampleBuffer'
+  JsName: 'VTFrameSiloCallBlockForEachSampleBuffer'
+  Module: 'VideoToolbox.VTFrameSilo'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreMedia.CMTimeRange
+    Name: CMTimeRange
+  - Type: Block
+    Signature:
+    - Type: Long
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'VTMultiPassStorageGetTypeID'
+  JsName: 'VTMultiPassStorageGetTypeID'
+  Module: 'VideoToolbox.VTMultiPassStorage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'VTMultiPassStorageCreate'
+  JsName: 'VTMultiPassStorageCreate'
+  Module: 'VideoToolbox.VTMultiPassStorage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+  - Type: Struct
+    Module: CoreMedia.CMTimeRange
+    Name: CMTimeRange
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'kVTMultiPassStorageCreationOption_DoNotDelete'
+  JsName: 'kVTMultiPassStorageCreationOption_DoNotDelete'
+  Module: 'VideoToolbox.VTMultiPassStorage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'VTMultiPassStorageClose'
+  JsName: 'VTMultiPassStorageClose'
+  Module: 'VideoToolbox.VTMultiPassStorage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'VTCopyVideoEncoderList'
+  JsName: 'VTCopyVideoEncoderList'
+  Module: 'VideoToolbox.VTVideoEncoderList'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Long
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Interface
+      Module: CoreFoundation.CFArray
+      Name: NSArray
+- Name: 'kVTVideoEncoderList_CodecType'
+  JsName: 'kVTVideoEncoderList_CodecType'
+  Module: 'VideoToolbox.VTVideoEncoderList'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTVideoEncoderList_EncoderID'
+  JsName: 'kVTVideoEncoderList_EncoderID'
+  Module: 'VideoToolbox.VTVideoEncoderList'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTVideoEncoderList_CodecName'
+  JsName: 'kVTVideoEncoderList_CodecName'
+  Module: 'VideoToolbox.VTVideoEncoderList'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTVideoEncoderList_EncoderName'
+  JsName: 'kVTVideoEncoderList_EncoderName'
+  Module: 'VideoToolbox.VTVideoEncoderList'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kVTVideoEncoderList_DisplayName'
+  JsName: 'kVTVideoEncoderList_DisplayName'
+  Module: 'VideoToolbox.VTVideoEncoderList'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+...

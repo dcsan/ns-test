@@ -1,0 +1,2585 @@
+name: CoreLocation
+items:
+- Name: '964'
+  JsName: 'CLLocationCoordinate2D'
+  Module: 'CoreLocation.CLLocation'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: latitude
+    Signature:
+      Type: Double
+  - Name: longitude
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: 'kCLDistanceFilterNone'
+  JsName: 'kCLDistanceFilterNone'
+  Module: 'CoreLocation.CLLocation'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Double
+- Name: 'kCLLocationAccuracyBestForNavigation'
+  JsName: 'kCLLocationAccuracyBestForNavigation'
+  Module: 'CoreLocation.CLLocation'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Double
+- Name: 'kCLLocationAccuracyBest'
+  JsName: 'kCLLocationAccuracyBest'
+  Module: 'CoreLocation.CLLocation'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Double
+- Name: 'kCLLocationAccuracyNearestTenMeters'
+  JsName: 'kCLLocationAccuracyNearestTenMeters'
+  Module: 'CoreLocation.CLLocation'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Double
+- Name: 'kCLLocationAccuracyHundredMeters'
+  JsName: 'kCLLocationAccuracyHundredMeters'
+  Module: 'CoreLocation.CLLocation'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Double
+- Name: 'kCLLocationAccuracyKilometer'
+  JsName: 'kCLLocationAccuracyKilometer'
+  Module: 'CoreLocation.CLLocation'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Double
+- Name: 'kCLLocationAccuracyThreeKilometers'
+  JsName: 'kCLLocationAccuracyThreeKilometers'
+  Module: 'CoreLocation.CLLocation'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Double
+- Name: 'CLLocationDistanceMax'
+  JsName: 'CLLocationDistanceMax'
+  Module: 'CoreLocation.CLLocation'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Double
+- Name: 'CLTimeIntervalMax'
+  JsName: 'CLTimeIntervalMax'
+  Module: 'CoreLocation.CLLocation'
+  IntroducedIn: 6.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Double
+- Name: 'kCLLocationCoordinate2DInvalid'
+  JsName: 'kCLLocationCoordinate2DInvalid'
+  Module: 'CoreLocation.CLLocation'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Struct
+    Module: CoreLocation.CLLocation
+    Name: CLLocationCoordinate2D
+- Name: 'CLLocationCoordinate2DIsValid'
+  JsName: 'CLLocationCoordinate2DIsValid'
+  Module: 'CoreLocation.CLLocation'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Struct
+    Module: CoreLocation.CLLocation
+    Name: CLLocationCoordinate2D
+- Name: 'CLLocationCoordinate2DMake'
+  JsName: 'CLLocationCoordinate2DMake'
+  Module: 'CoreLocation.CLLocation'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreLocation.CLLocation
+    Name: CLLocationCoordinate2D
+  - Type: Double
+  - Type: Double
+- Name: 'CLFloor'
+  JsName: 'CLFloor'
+  Module: 'CoreLocation.CLLocation'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'level'
+    JsName: 'level'
+    Module: 'CoreLocation.CLLocation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'level'
+      JsName: 'level'
+      Module: 'CoreLocation.CLLocation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'level'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CLLocation'
+  JsName: 'CLLocation'
+  Module: 'CoreLocation.CLLocation'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'distanceFromLocation:'
+    JsName: 'distanceFromLocation'
+    Module: 'CoreLocation.CLLocation'
+    IntroducedIn: 3.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'distanceFromLocation:'
+    Signature:
+    - Type: Double
+    - Type: Interface
+      Module: CoreLocation.CLLocation
+      Name: CLLocation
+    TypeEncoding: 'd12@0:4@8'
+  - Name: 'getDistanceFrom:'
+    JsName: 'getDistanceFrom'
+    Module: 'CoreLocation.CLLocation'
+    IntroducedIn: 2.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'getDistanceFrom:'
+    Signature:
+    - Type: Double
+    - Type: Interface
+      Module: CoreLocation.CLLocation
+      Name: CLLocation
+    TypeEncoding: 'd12@0:4@8'
+  - Name: 'initWithCoordinate:altitude:horizontalAccuracy:verticalAccuracy:course:speed:timestamp:'
+    JsName: 'initWithCoordinateAltitudeHorizontalAccuracyVerticalAccuracyCourseSpeedTimestamp'
+    Module: 'CoreLocation.CLLocation'
+    IntroducedIn: 4.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithCoordinate:altitude:horizontalAccuracy:verticalAccuracy:course:speed:timestamp:'
+    Signature:
+    - Type: Instancetype
+    - Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+    - Type: Double
+    - Type: Double
+    - Type: Double
+    - Type: Double
+    - Type: Double
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    TypeEncoding: '@68@0:4{?=dd}8d24d32d40d48d56@64'
+  - Name: 'initWithCoordinate:altitude:horizontalAccuracy:verticalAccuracy:timestamp:'
+    JsName: 'initWithCoordinateAltitudeHorizontalAccuracyVerticalAccuracyTimestamp'
+    Module: 'CoreLocation.CLLocation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithCoordinate:altitude:horizontalAccuracy:verticalAccuracy:timestamp:'
+    Signature:
+    - Type: Instancetype
+    - Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+    - Type: Double
+    - Type: Double
+    - Type: Double
+    - Type: Interface
+      Module: Foundation.NSDate
+      Name: NSDate
+    TypeEncoding: '@52@0:4{?=dd}8d24d32d40@48'
+  - Name: 'initWithLatitude:longitude:'
+    JsName: 'initWithLatitudeLongitude'
+    Module: 'CoreLocation.CLLocation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithLatitude:longitude:'
+    Signature:
+    - Type: Instancetype
+    - Type: Double
+    - Type: Double
+    TypeEncoding: '@24@0:4d8d16'
+  StaticMethods: []
+  Properties:
+  - Name: 'altitude'
+    JsName: 'altitude'
+    Module: 'CoreLocation.CLLocation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'altitude'
+      JsName: 'altitude'
+      Module: 'CoreLocation.CLLocation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'altitude'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'coordinate'
+    JsName: 'coordinate'
+    Module: 'CoreLocation.CLLocation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'coordinate'
+      JsName: 'coordinate'
+      Module: 'CoreLocation.CLLocation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'coordinate'
+      Signature:
+      - Type: Struct
+        Module: CoreLocation.CLLocation
+        Name: CLLocationCoordinate2D
+      TypeEncoding: '{?=dd}8@0:4'
+  - Name: 'course'
+    JsName: 'course'
+    Module: 'CoreLocation.CLLocation'
+    IntroducedIn: 2.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'course'
+      JsName: 'course'
+      Module: 'CoreLocation.CLLocation'
+      IntroducedIn: 2.2
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'course'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'floor'
+    JsName: 'floor'
+    Module: 'CoreLocation.CLLocation'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'floor'
+      JsName: 'floor'
+      Module: 'CoreLocation.CLLocation'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'floor'
+      Signature:
+      - Type: Interface
+        Module: CoreLocation.CLLocation
+        Name: CLFloor
+      TypeEncoding: '@8@0:4'
+  - Name: 'horizontalAccuracy'
+    JsName: 'horizontalAccuracy'
+    Module: 'CoreLocation.CLLocation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'horizontalAccuracy'
+      JsName: 'horizontalAccuracy'
+      Module: 'CoreLocation.CLLocation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'horizontalAccuracy'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'speed'
+    JsName: 'speed'
+    Module: 'CoreLocation.CLLocation'
+    IntroducedIn: 2.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'speed'
+      JsName: 'speed'
+      Module: 'CoreLocation.CLLocation'
+      IntroducedIn: 2.2
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'speed'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'timestamp'
+    JsName: 'timestamp'
+    Module: 'CoreLocation.CLLocation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'timestamp'
+      JsName: 'timestamp'
+      Module: 'CoreLocation.CLLocation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'timestamp'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'verticalAccuracy'
+    JsName: 'verticalAccuracy'
+    Module: 'CoreLocation.CLLocation'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'verticalAccuracy'
+      JsName: 'verticalAccuracy'
+      Module: 'CoreLocation.CLLocation'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'verticalAccuracy'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'kCLErrorDomain'
+  JsName: 'kCLErrorDomain'
+  Module: 'CoreLocation.CLErrorDomain'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CLError'
+  JsName: 'CLError'
+  Module: 'CoreLocation.CLError'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCLErrorLocationUnknown":0,"kCLErrorDenied":1,"kCLErrorNetwork":2,"kCLErrorHeadingFailure":3,"kCLErrorRegionMonitoringDenied":4,"kCLErrorRegionMonitoringFailure":5,"kCLErrorRegionMonitoringSetupDelayed":6,"kCLErrorRegionMonitoringResponseDelayed":7,"kCLErrorGeocodeFoundNoResult":8,"kCLErrorGeocodeFoundPartialResult":9,"kCLErrorGeocodeCanceled":10,"kCLErrorDeferredFailed":11,"kCLErrorDeferredNotUpdatingLocation":12,"kCLErrorDeferredAccuracyTooLow":13,"kCLErrorDeferredDistanceFiltered":14,"kCLErrorDeferredCanceled":15,"kCLErrorRangingUnavailable":16,"kCLErrorRangingFailure":17})
+- Name: 'kCLErrorUserInfoAlternateRegionKey'
+  JsName: 'kCLErrorUserInfoAlternateRegionKey'
+  Module: 'CoreLocation.CLError'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'CLRegionState'
+  JsName: 'CLRegionState'
+  Module: 'CoreLocation.CLRegion'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CLRegionStateUnknown":0,"CLRegionStateInside":1,"CLRegionStateOutside":2})
+- Name: 'CLProximity'
+  JsName: 'CLProximity'
+  Module: 'CoreLocation.CLRegion'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CLProximityUnknown":0,"CLProximityImmediate":1,"CLProximityNear":2,"CLProximityFar":3})
+- Name: 'CLRegion'
+  JsName: 'CLRegion'
+  Module: 'CoreLocation.CLRegion'
+  IntroducedIn: 4.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'containsCoordinate:'
+    JsName: 'containsCoordinate'
+    Module: 'CoreLocation.CLRegion'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'containsCoordinate:'
+    Signature:
+    - Type: Bool
+    - Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+    TypeEncoding: 'c24@0:4{?=dd}8'
+  - Name: 'initCircularRegionWithCenter:radius:identifier:'
+    JsName: 'initCircularRegionWithCenterRadiusIdentifier'
+    Module: 'CoreLocation.CLRegion'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initCircularRegionWithCenter:radius:identifier:'
+    Signature:
+    - Type: Instancetype
+    - Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+    - Type: Double
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@36@0:4{?=dd}8d24@32'
+  StaticMethods: []
+  Properties:
+  - Name: 'center'
+    JsName: 'center'
+    Module: 'CoreLocation.CLRegion'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'center'
+      JsName: 'center'
+      Module: 'CoreLocation.CLRegion'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'center'
+      Signature:
+      - Type: Struct
+        Module: CoreLocation.CLLocation
+        Name: CLLocationCoordinate2D
+      TypeEncoding: '{?=dd}8@0:4'
+  - Name: 'identifier'
+    JsName: 'identifier'
+    Module: 'CoreLocation.CLRegion'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'identifier'
+      JsName: 'identifier'
+      Module: 'CoreLocation.CLRegion'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'identifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'notifyOnEntry'
+    JsName: 'notifyOnEntry'
+    Module: 'CoreLocation.CLRegion'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'notifyOnEntry'
+      JsName: 'notifyOnEntry'
+      Module: 'CoreLocation.CLRegion'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'notifyOnEntry'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setNotifyOnEntry:'
+      JsName: 'setNotifyOnEntry'
+      Module: 'CoreLocation.CLRegion'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setNotifyOnEntry:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'notifyOnExit'
+    JsName: 'notifyOnExit'
+    Module: 'CoreLocation.CLRegion'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'notifyOnExit'
+      JsName: 'notifyOnExit'
+      Module: 'CoreLocation.CLRegion'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'notifyOnExit'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setNotifyOnExit:'
+      JsName: 'setNotifyOnExit'
+      Module: 'CoreLocation.CLRegion'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setNotifyOnExit:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'radius'
+    JsName: 'radius'
+    Module: 'CoreLocation.CLRegion'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'radius'
+      JsName: 'radius'
+      Module: 'CoreLocation.CLRegion'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'radius'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CLCircularRegion'
+  JsName: 'CLCircularRegion'
+  Module: 'CoreLocation.CLCircularRegion'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithCenter:radius:identifier:'
+    JsName: 'initWithCenterRadiusIdentifier'
+    Module: 'CoreLocation.CLCircularRegion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithCenter:radius:identifier:'
+    Signature:
+    - Type: Instancetype
+    - Type: Struct
+      Module: CoreLocation.CLLocation
+      Name: CLLocationCoordinate2D
+    - Type: Double
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@36@0:4{?=dd}8d24@32'
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: CoreLocation.CLRegion
+    Name: CLRegion
+  Type: Interface
+- Name: 'CLBeaconRegion'
+  JsName: 'CLBeaconRegion'
+  Module: 'CoreLocation.CLBeaconRegion'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithProximityUUID:identifier:'
+    JsName: 'initWithProximityUUIDIdentifier'
+    Module: 'CoreLocation.CLBeaconRegion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithProximityUUID:identifier:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSUUID
+      Name: NSUUID
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@16@0:4@8@12'
+  - Name: 'initWithProximityUUID:major:identifier:'
+    JsName: 'initWithProximityUUIDMajorIdentifier'
+    Module: 'CoreLocation.CLBeaconRegion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithProximityUUID:major:identifier:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSUUID
+      Name: NSUUID
+    - Type: Ushort
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@20@0:4@8S12@16'
+  - Name: 'initWithProximityUUID:major:minor:identifier:'
+    JsName: 'initWithProximityUUIDMajorMinorIdentifier'
+    Module: 'CoreLocation.CLBeaconRegion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithProximityUUID:major:minor:identifier:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSUUID
+      Name: NSUUID
+    - Type: Ushort
+    - Type: Ushort
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    TypeEncoding: '@24@0:4@8S12S16@20'
+  - Name: 'peripheralDataWithMeasuredPower:'
+    JsName: 'peripheralDataWithMeasuredPower'
+    Module: 'CoreLocation.CLBeaconRegion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'peripheralDataWithMeasuredPower:'
+    Signature:
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSMutableDictionary
+    - Type: Interface
+      Module: Foundation.NSValue
+      Name: NSNumber
+    TypeEncoding: '@12@0:4@8'
+  StaticMethods: []
+  Properties:
+  - Name: 'major'
+    JsName: 'major'
+    Module: 'CoreLocation.CLBeaconRegion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'major'
+      JsName: 'major'
+      Module: 'CoreLocation.CLBeaconRegion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'major'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@8@0:4'
+  - Name: 'minor'
+    JsName: 'minor'
+    Module: 'CoreLocation.CLBeaconRegion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'minor'
+      JsName: 'minor'
+      Module: 'CoreLocation.CLBeaconRegion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'minor'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@8@0:4'
+  - Name: 'notifyEntryStateOnDisplay'
+    JsName: 'notifyEntryStateOnDisplay'
+    Module: 'CoreLocation.CLBeaconRegion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'notifyEntryStateOnDisplay'
+      JsName: 'notifyEntryStateOnDisplay'
+      Module: 'CoreLocation.CLBeaconRegion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'notifyEntryStateOnDisplay'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setNotifyEntryStateOnDisplay:'
+      JsName: 'setNotifyEntryStateOnDisplay'
+      Module: 'CoreLocation.CLBeaconRegion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setNotifyEntryStateOnDisplay:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'proximityUUID'
+    JsName: 'proximityUUID'
+    Module: 'CoreLocation.CLBeaconRegion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'proximityUUID'
+      JsName: 'proximityUUID'
+      Module: 'CoreLocation.CLBeaconRegion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'proximityUUID'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSUUID
+        Name: NSUUID
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: CoreLocation.CLRegion
+    Name: CLRegion
+  Type: Interface
+- Name: 'CLBeacon'
+  JsName: 'CLBeacon'
+  Module: 'CoreLocation.CLBeaconRegion'
+  IntroducedIn: 7.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'accuracy'
+    JsName: 'accuracy'
+    Module: 'CoreLocation.CLBeaconRegion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'accuracy'
+      JsName: 'accuracy'
+      Module: 'CoreLocation.CLBeaconRegion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'accuracy'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'major'
+    JsName: 'major'
+    Module: 'CoreLocation.CLBeaconRegion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'major'
+      JsName: 'major'
+      Module: 'CoreLocation.CLBeaconRegion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'major'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@8@0:4'
+  - Name: 'minor'
+    JsName: 'minor'
+    Module: 'CoreLocation.CLBeaconRegion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'minor'
+      JsName: 'minor'
+      Module: 'CoreLocation.CLBeaconRegion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'minor'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSValue
+        Name: NSNumber
+      TypeEncoding: '@8@0:4'
+  - Name: 'proximity'
+    JsName: 'proximity'
+    Module: 'CoreLocation.CLBeaconRegion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'proximity'
+      JsName: 'proximity'
+      Module: 'CoreLocation.CLBeaconRegion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'proximity'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  - Name: 'proximityUUID'
+    JsName: 'proximityUUID'
+    Module: 'CoreLocation.CLBeaconRegion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'proximityUUID'
+      JsName: 'proximityUUID'
+      Module: 'CoreLocation.CLBeaconRegion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'proximityUUID'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSUUID
+        Name: NSUUID
+      TypeEncoding: '@8@0:4'
+  - Name: 'rssi'
+    JsName: 'rssi'
+    Module: 'CoreLocation.CLBeaconRegion'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'rssi'
+      JsName: 'rssi'
+      Module: 'CoreLocation.CLBeaconRegion'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rssi'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'kCLHeadingFilterNone'
+  JsName: 'kCLHeadingFilterNone'
+  Module: 'CoreLocation.CLHeading'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Double
+- Name: 'CLHeading'
+  JsName: 'CLHeading'
+  Module: 'CoreLocation.CLHeading'
+  IntroducedIn: 3.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'headingAccuracy'
+    JsName: 'headingAccuracy'
+    Module: 'CoreLocation.CLHeading'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'headingAccuracy'
+      JsName: 'headingAccuracy'
+      Module: 'CoreLocation.CLHeading'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'headingAccuracy'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'magneticHeading'
+    JsName: 'magneticHeading'
+    Module: 'CoreLocation.CLHeading'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'magneticHeading'
+      JsName: 'magneticHeading'
+      Module: 'CoreLocation.CLHeading'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'magneticHeading'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'timestamp'
+    JsName: 'timestamp'
+    Module: 'CoreLocation.CLHeading'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'timestamp'
+      JsName: 'timestamp'
+      Module: 'CoreLocation.CLHeading'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'timestamp'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'trueHeading'
+    JsName: 'trueHeading'
+    Module: 'CoreLocation.CLHeading'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'trueHeading'
+      JsName: 'trueHeading'
+      Module: 'CoreLocation.CLHeading'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'trueHeading'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'x'
+    JsName: 'x'
+    Module: 'CoreLocation.CLHeading'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'x'
+      JsName: 'x'
+      Module: 'CoreLocation.CLHeading'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'x'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'y'
+    JsName: 'y'
+    Module: 'CoreLocation.CLHeading'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'y'
+      JsName: 'y'
+      Module: 'CoreLocation.CLHeading'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'y'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'z'
+    JsName: 'z'
+    Module: 'CoreLocation.CLHeading'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'z'
+      JsName: 'z'
+      Module: 'CoreLocation.CLHeading'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'z'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CLDeviceOrientation'
+  JsName: 'CLDeviceOrientation'
+  Module: 'CoreLocation.CLLocationManager'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CLDeviceOrientationUnknown":0,"CLDeviceOrientationPortrait":1,"CLDeviceOrientationPortraitUpsideDown":2,"CLDeviceOrientationLandscapeLeft":3,"CLDeviceOrientationLandscapeRight":4,"CLDeviceOrientationFaceUp":5,"CLDeviceOrientationFaceDown":6})
+- Name: 'CLAuthorizationStatus'
+  JsName: 'CLAuthorizationStatus'
+  Module: 'CoreLocation.CLLocationManager'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCLAuthorizationStatusNotDetermined":0,"kCLAuthorizationStatusRestricted":1,"kCLAuthorizationStatusDenied":2,"kCLAuthorizationStatusAuthorizedAlways":3,"kCLAuthorizationStatusAuthorizedWhenInUse":4,"kCLAuthorizationStatusAuthorized":3})
+- Name: 'CLActivityType'
+  JsName: 'CLActivityType'
+  Module: 'CoreLocation.CLLocationManager'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CLActivityTypeOther":1,"CLActivityTypeAutomotiveNavigation":2,"CLActivityTypeFitness":3,"CLActivityTypeOtherNavigation":4})
+- Name: 'CLLocationManager'
+  JsName: 'CLLocationManager'
+  Module: 'CoreLocation.CLLocationManager'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'allowDeferredLocationUpdatesUntilTraveled:timeout:'
+    JsName: 'allowDeferredLocationUpdatesUntilTraveledTimeout'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'allowDeferredLocationUpdatesUntilTraveled:timeout:'
+    Signature:
+    - Type: Void
+    - Type: Double
+    - Type: Double
+    TypeEncoding: 'v24@0:4d8d16'
+  - Name: 'disallowDeferredLocationUpdates'
+    JsName: 'disallowDeferredLocationUpdates'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'disallowDeferredLocationUpdates'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'dismissHeadingCalibrationDisplay'
+    JsName: 'dismissHeadingCalibrationDisplay'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'dismissHeadingCalibrationDisplay'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'requestAlwaysAuthorization'
+    JsName: 'requestAlwaysAuthorization'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'requestAlwaysAuthorization'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'requestStateForRegion:'
+    JsName: 'requestStateForRegion'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'requestStateForRegion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLRegion
+      Name: CLRegion
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'requestWhenInUseAuthorization'
+    JsName: 'requestWhenInUseAuthorization'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'requestWhenInUseAuthorization'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'startMonitoringForRegion:'
+    JsName: 'startMonitoringForRegion'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startMonitoringForRegion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLRegion
+      Name: CLRegion
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'startMonitoringForRegion:desiredAccuracy:'
+    JsName: 'startMonitoringForRegionDesiredAccuracy'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startMonitoringForRegion:desiredAccuracy:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLRegion
+      Name: CLRegion
+    - Type: Double
+    TypeEncoding: 'v20@0:4@8d12'
+  - Name: 'startMonitoringSignificantLocationChanges'
+    JsName: 'startMonitoringSignificantLocationChanges'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startMonitoringSignificantLocationChanges'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'startMonitoringVisits'
+    JsName: 'startMonitoringVisits'
+    Module: 'CoreLocation.CLLocationManager_CLVisitExtensions'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startMonitoringVisits'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'startRangingBeaconsInRegion:'
+    JsName: 'startRangingBeaconsInRegion'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startRangingBeaconsInRegion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLBeaconRegion
+      Name: CLBeaconRegion
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'startUpdatingHeading'
+    JsName: 'startUpdatingHeading'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startUpdatingHeading'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'startUpdatingLocation'
+    JsName: 'startUpdatingLocation'
+    Module: 'CoreLocation.CLLocationManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startUpdatingLocation'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'stopMonitoringForRegion:'
+    JsName: 'stopMonitoringForRegion'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopMonitoringForRegion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLRegion
+      Name: CLRegion
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'stopMonitoringSignificantLocationChanges'
+    JsName: 'stopMonitoringSignificantLocationChanges'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopMonitoringSignificantLocationChanges'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'stopMonitoringVisits'
+    JsName: 'stopMonitoringVisits'
+    Module: 'CoreLocation.CLLocationManager_CLVisitExtensions'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopMonitoringVisits'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'stopRangingBeaconsInRegion:'
+    JsName: 'stopRangingBeaconsInRegion'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopRangingBeaconsInRegion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLBeaconRegion
+      Name: CLBeaconRegion
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'stopUpdatingHeading'
+    JsName: 'stopUpdatingHeading'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopUpdatingHeading'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'stopUpdatingLocation'
+    JsName: 'stopUpdatingLocation'
+    Module: 'CoreLocation.CLLocationManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopUpdatingLocation'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  StaticMethods:
+  - Name: 'authorizationStatus'
+    JsName: 'authorizationStatus'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 4.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'authorizationStatus'
+    Signature:
+    - Type: Int
+    TypeEncoding: 'i8@0:4'
+  - Name: 'deferredLocationUpdatesAvailable'
+    JsName: 'deferredLocationUpdatesAvailable'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'deferredLocationUpdatesAvailable'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  - Name: 'headingAvailable'
+    JsName: 'headingAvailable'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'headingAvailable'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  - Name: 'isMonitoringAvailableForClass:'
+    JsName: 'isMonitoringAvailableForClass'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isMonitoringAvailableForClass:'
+    Signature:
+    - Type: Bool
+    - Type: Class
+    TypeEncoding: 'c12@0:4#8'
+  - Name: 'isRangingAvailable'
+    JsName: 'isRangingAvailable'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'isRangingAvailable'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  - Name: 'locationServicesEnabled'
+    JsName: 'locationServicesEnabled'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'locationServicesEnabled'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  - Name: 'regionMonitoringAvailable'
+    JsName: 'regionMonitoringAvailable'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'regionMonitoringAvailable'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  - Name: 'regionMonitoringEnabled'
+    JsName: 'regionMonitoringEnabled'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'regionMonitoringEnabled'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  - Name: 'significantLocationChangeMonitoringAvailable'
+    JsName: 'significantLocationChangeMonitoringAvailable'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'significantLocationChangeMonitoringAvailable'
+    Signature:
+    - Type: Bool
+    TypeEncoding: 'c8@0:4'
+  Properties:
+  - Name: 'activityType'
+    JsName: 'activityType'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'activityType'
+      JsName: 'activityType'
+      Module: 'CoreLocation.CLLocationManager'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'activityType'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setActivityType:'
+      JsName: 'setActivityType'
+      Module: 'CoreLocation.CLLocationManager'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setActivityType:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'delegate'
+    JsName: 'delegate'
+    Module: 'CoreLocation.CLLocationManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'delegate'
+      JsName: 'delegate'
+      Module: 'CoreLocation.CLLocationManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'delegate'
+      Signature:
+      - Type: Id
+        WithProtocols:
+        - Module: CoreLocation.CLLocationManagerDelegate
+          Name: CLLocationManagerDelegate
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDelegate:'
+      JsName: 'setDelegate'
+      Module: 'CoreLocation.CLLocationManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDelegate:'
+      Signature:
+      - Type: Void
+      - Type: Id
+        WithProtocols:
+        - Module: CoreLocation.CLLocationManagerDelegate
+          Name: CLLocationManagerDelegate
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'desiredAccuracy'
+    JsName: 'desiredAccuracy'
+    Module: 'CoreLocation.CLLocationManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'desiredAccuracy'
+      JsName: 'desiredAccuracy'
+      Module: 'CoreLocation.CLLocationManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'desiredAccuracy'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+    Setter:
+      Name: 'setDesiredAccuracy:'
+      JsName: 'setDesiredAccuracy'
+      Module: 'CoreLocation.CLLocationManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDesiredAccuracy:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v16@0:4d8'
+  - Name: 'distanceFilter'
+    JsName: 'distanceFilter'
+    Module: 'CoreLocation.CLLocationManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'distanceFilter'
+      JsName: 'distanceFilter'
+      Module: 'CoreLocation.CLLocationManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'distanceFilter'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+    Setter:
+      Name: 'setDistanceFilter:'
+      JsName: 'setDistanceFilter'
+      Module: 'CoreLocation.CLLocationManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDistanceFilter:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v16@0:4d8'
+  - Name: 'heading'
+    JsName: 'heading'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'heading'
+      JsName: 'heading'
+      Module: 'CoreLocation.CLLocationManager'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'heading'
+      Signature:
+      - Type: Interface
+        Module: CoreLocation.CLHeading
+        Name: CLHeading
+      TypeEncoding: '@8@0:4'
+  - Name: 'headingAvailable'
+    JsName: 'headingAvailable'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'headingAvailable'
+      JsName: 'headingAvailable'
+      Module: 'CoreLocation.CLLocationManager'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'headingAvailable'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'headingFilter'
+    JsName: 'headingFilter'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'headingFilter'
+      JsName: 'headingFilter'
+      Module: 'CoreLocation.CLLocationManager'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'headingFilter'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+    Setter:
+      Name: 'setHeadingFilter:'
+      JsName: 'setHeadingFilter'
+      Module: 'CoreLocation.CLLocationManager'
+      IntroducedIn: 3.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setHeadingFilter:'
+      Signature:
+      - Type: Void
+      - Type: Double
+      TypeEncoding: 'v16@0:4d8'
+  - Name: 'headingOrientation'
+    JsName: 'headingOrientation'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'headingOrientation'
+      JsName: 'headingOrientation'
+      Module: 'CoreLocation.CLLocationManager'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'headingOrientation'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setHeadingOrientation:'
+      JsName: 'setHeadingOrientation'
+      Module: 'CoreLocation.CLLocationManager'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setHeadingOrientation:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'location'
+    JsName: 'location'
+    Module: 'CoreLocation.CLLocationManager'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'location'
+      JsName: 'location'
+      Module: 'CoreLocation.CLLocationManager'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'location'
+      Signature:
+      - Type: Interface
+        Module: CoreLocation.CLLocation
+        Name: CLLocation
+      TypeEncoding: '@8@0:4'
+  - Name: 'locationServicesEnabled'
+    JsName: 'locationServicesEnabled'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 2.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'locationServicesEnabled'
+      JsName: 'locationServicesEnabled'
+      Module: 'CoreLocation.CLLocationManager'
+      IntroducedIn: 2.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'locationServicesEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  - Name: 'maximumRegionMonitoringDistance'
+    JsName: 'maximumRegionMonitoringDistance'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'maximumRegionMonitoringDistance'
+      JsName: 'maximumRegionMonitoringDistance'
+      Module: 'CoreLocation.CLLocationManager'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'maximumRegionMonitoringDistance'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  - Name: 'monitoredRegions'
+    JsName: 'monitoredRegions'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'monitoredRegions'
+      JsName: 'monitoredRegions'
+      Module: 'CoreLocation.CLLocationManager'
+      IntroducedIn: 4.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'monitoredRegions'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSSet
+        Name: NSSet
+      TypeEncoding: '@8@0:4'
+  - Name: 'pausesLocationUpdatesAutomatically'
+    JsName: 'pausesLocationUpdatesAutomatically'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'pausesLocationUpdatesAutomatically'
+      JsName: 'pausesLocationUpdatesAutomatically'
+      Module: 'CoreLocation.CLLocationManager'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'pausesLocationUpdatesAutomatically'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setPausesLocationUpdatesAutomatically:'
+      JsName: 'setPausesLocationUpdatesAutomatically'
+      Module: 'CoreLocation.CLLocationManager'
+      IntroducedIn: 6.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPausesLocationUpdatesAutomatically:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'purpose'
+    JsName: 'purpose'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 3.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'purpose'
+      JsName: 'purpose'
+      Module: 'CoreLocation.CLLocationManager'
+      IntroducedIn: 3.2
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'purpose'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setPurpose:'
+      JsName: 'setPurpose'
+      Module: 'CoreLocation.CLLocationManager'
+      IntroducedIn: 3.2
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPurpose:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'rangedRegions'
+    JsName: 'rangedRegions'
+    Module: 'CoreLocation.CLLocationManager'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'rangedRegions'
+      JsName: 'rangedRegions'
+      Module: 'CoreLocation.CLLocationManager'
+      IntroducedIn: 7.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'rangedRegions'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSSet
+        Name: NSSet
+      TypeEncoding: '@8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CLVisit'
+  JsName: 'CLVisit'
+  Module: 'CoreLocation.CLVisit'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'arrivalDate'
+    JsName: 'arrivalDate'
+    Module: 'CoreLocation.CLVisit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'arrivalDate'
+      JsName: 'arrivalDate'
+      Module: 'CoreLocation.CLVisit'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'arrivalDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'coordinate'
+    JsName: 'coordinate'
+    Module: 'CoreLocation.CLVisit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'coordinate'
+      JsName: 'coordinate'
+      Module: 'CoreLocation.CLVisit'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'coordinate'
+      Signature:
+      - Type: Struct
+        Module: CoreLocation.CLLocation
+        Name: CLLocationCoordinate2D
+      TypeEncoding: '{?=dd}8@0:4'
+  - Name: 'departureDate'
+    JsName: 'departureDate'
+    Module: 'CoreLocation.CLVisit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'departureDate'
+      JsName: 'departureDate'
+      Module: 'CoreLocation.CLVisit'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'departureDate'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDate
+        Name: NSDate
+      TypeEncoding: '@8@0:4'
+  - Name: 'horizontalAccuracy'
+    JsName: 'horizontalAccuracy'
+    Module: 'CoreLocation.CLVisit'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'horizontalAccuracy'
+      JsName: 'horizontalAccuracy'
+      Module: 'CoreLocation.CLVisit'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'horizontalAccuracy'
+      Signature:
+      - Type: Double
+      TypeEncoding: 'd8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CLLocationManagerDelegate'
+  JsName: 'CLLocationManagerDelegate'
+  Module: 'CoreLocation.CLLocationManagerDelegate'
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'locationManager:didChangeAuthorizationStatus:'
+    JsName: 'locationManagerDidChangeAuthorizationStatus'
+    Module: 'CoreLocation.CLLocationManagerDelegate'
+    IntroducedIn: 4.2
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'locationManager:didChangeAuthorizationStatus:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLLocationManager
+      Name: CLLocationManager
+    - Type: Int
+    TypeEncoding: 'v16@0:4@8i12'
+  - Name: 'locationManager:didDetermineState:forRegion:'
+    JsName: 'locationManagerDidDetermineStateForRegion'
+    Module: 'CoreLocation.CLLocationManagerDelegate'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'locationManager:didDetermineState:forRegion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLLocationManager
+      Name: CLLocationManager
+    - Type: Int
+    - Type: Interface
+      Module: CoreLocation.CLRegion
+      Name: CLRegion
+    TypeEncoding: 'v20@0:4@8i12@16'
+  - Name: 'locationManager:didEnterRegion:'
+    JsName: 'locationManagerDidEnterRegion'
+    Module: 'CoreLocation.CLLocationManagerDelegate'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'locationManager:didEnterRegion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLLocationManager
+      Name: CLLocationManager
+    - Type: Interface
+      Module: CoreLocation.CLRegion
+      Name: CLRegion
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'locationManager:didExitRegion:'
+    JsName: 'locationManagerDidExitRegion'
+    Module: 'CoreLocation.CLLocationManagerDelegate'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'locationManager:didExitRegion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLLocationManager
+      Name: CLLocationManager
+    - Type: Interface
+      Module: CoreLocation.CLRegion
+      Name: CLRegion
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'locationManager:didFailWithError:'
+    JsName: 'locationManagerDidFailWithError'
+    Module: 'CoreLocation.CLLocationManagerDelegate'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'locationManager:didFailWithError:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLLocationManager
+      Name: CLLocationManager
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'locationManager:didFinishDeferredUpdatesWithError:'
+    JsName: 'locationManagerDidFinishDeferredUpdatesWithError'
+    Module: 'CoreLocation.CLLocationManagerDelegate'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'locationManager:didFinishDeferredUpdatesWithError:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLLocationManager
+      Name: CLLocationManager
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'locationManagerDidPauseLocationUpdates:'
+    JsName: 'locationManagerDidPauseLocationUpdates'
+    Module: 'CoreLocation.CLLocationManagerDelegate'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'locationManagerDidPauseLocationUpdates:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLLocationManager
+      Name: CLLocationManager
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'locationManager:didRangeBeacons:inRegion:'
+    JsName: 'locationManagerDidRangeBeaconsInRegion'
+    Module: 'CoreLocation.CLLocationManagerDelegate'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'locationManager:didRangeBeacons:inRegion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLLocationManager
+      Name: CLLocationManager
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Interface
+      Module: CoreLocation.CLBeaconRegion
+      Name: CLBeaconRegion
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'locationManagerDidResumeLocationUpdates:'
+    JsName: 'locationManagerDidResumeLocationUpdates'
+    Module: 'CoreLocation.CLLocationManagerDelegate'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'locationManagerDidResumeLocationUpdates:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLLocationManager
+      Name: CLLocationManager
+    TypeEncoding: 'v12@0:4@8'
+  - Name: 'locationManager:didStartMonitoringForRegion:'
+    JsName: 'locationManagerDidStartMonitoringForRegion'
+    Module: 'CoreLocation.CLLocationManagerDelegate'
+    IntroducedIn: 5.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'locationManager:didStartMonitoringForRegion:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLLocationManager
+      Name: CLLocationManager
+    - Type: Interface
+      Module: CoreLocation.CLRegion
+      Name: CLRegion
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'locationManager:didUpdateHeading:'
+    JsName: 'locationManagerDidUpdateHeading'
+    Module: 'CoreLocation.CLLocationManagerDelegate'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'locationManager:didUpdateHeading:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLLocationManager
+      Name: CLLocationManager
+    - Type: Interface
+      Module: CoreLocation.CLHeading
+      Name: CLHeading
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'locationManager:didUpdateLocations:'
+    JsName: 'locationManagerDidUpdateLocations'
+    Module: 'CoreLocation.CLLocationManagerDelegate'
+    IntroducedIn: 6.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'locationManager:didUpdateLocations:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLLocationManager
+      Name: CLLocationManager
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'locationManager:didUpdateToLocation:fromLocation:'
+    JsName: 'locationManagerDidUpdateToLocationFromLocation'
+    Module: 'CoreLocation.CLLocationManagerDelegate'
+    IntroducedIn: 2.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'locationManager:didUpdateToLocation:fromLocation:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLLocationManager
+      Name: CLLocationManager
+    - Type: Interface
+      Module: CoreLocation.CLLocation
+      Name: CLLocation
+    - Type: Interface
+      Module: CoreLocation.CLLocation
+      Name: CLLocation
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'locationManager:didVisit:'
+    JsName: 'locationManagerDidVisit'
+    Module: 'CoreLocation.CLLocationManagerDelegate'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'locationManager:didVisit:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLLocationManager
+      Name: CLLocationManager
+    - Type: Interface
+      Module: CoreLocation.CLVisit
+      Name: CLVisit
+    TypeEncoding: 'v16@0:4@8@12'
+  - Name: 'locationManager:monitoringDidFailForRegion:withError:'
+    JsName: 'locationManagerMonitoringDidFailForRegionWithError'
+    Module: 'CoreLocation.CLLocationManagerDelegate'
+    IntroducedIn: 4.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'locationManager:monitoringDidFailForRegion:withError:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLLocationManager
+      Name: CLLocationManager
+    - Type: Interface
+      Module: CoreLocation.CLRegion
+      Name: CLRegion
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'locationManager:rangingBeaconsDidFailForRegion:withError:'
+    JsName: 'locationManagerRangingBeaconsDidFailForRegionWithError'
+    Module: 'CoreLocation.CLLocationManagerDelegate'
+    IntroducedIn: 7.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'locationManager:rangingBeaconsDidFailForRegion:withError:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLLocationManager
+      Name: CLLocationManager
+    - Type: Interface
+      Module: CoreLocation.CLBeaconRegion
+      Name: CLBeaconRegion
+    - Type: Interface
+      Module: Foundation.NSError
+      Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@16'
+  - Name: 'locationManagerShouldDisplayHeadingCalibration:'
+    JsName: 'locationManagerShouldDisplayHeadingCalibration'
+    Module: 'CoreLocation.CLLocationManagerDelegate'
+    IntroducedIn: 3.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'locationManagerShouldDisplayHeadingCalibration:'
+    Signature:
+    - Type: Bool
+    - Type: Interface
+      Module: CoreLocation.CLLocationManager
+      Name: CLLocationManager
+    TypeEncoding: 'c12@0:4@8'
+  StaticMethods: []
+  Properties: []
+  Protocols:
+  - Module: ObjectiveC.NSObject
+    Name: NSObjectProtocol
+  Type: Protocol
+- Name: 'CLPlacemark'
+  JsName: 'CLPlacemark'
+  Module: 'CoreLocation.CLPlacemark'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithPlacemark:'
+    JsName: 'initWithPlacemark'
+    Module: 'CoreLocation.CLPlacemark'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithPlacemark:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: CoreLocation.CLPlacemark
+      Name: CLPlacemark
+    TypeEncoding: '@12@0:4@8'
+  StaticMethods: []
+  Properties:
+  - Name: 'addressDictionary'
+    JsName: 'addressDictionary'
+    Module: 'CoreLocation.CLPlacemark'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'addressDictionary'
+      JsName: 'addressDictionary'
+      Module: 'CoreLocation.CLPlacemark'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'addressDictionary'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSDictionary
+        Name: NSDictionary
+      TypeEncoding: '@8@0:4'
+  - Name: 'administrativeArea'
+    JsName: 'administrativeArea'
+    Module: 'CoreLocation.CLPlacemark'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'administrativeArea'
+      JsName: 'administrativeArea'
+      Module: 'CoreLocation.CLPlacemark'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'administrativeArea'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'areasOfInterest'
+    JsName: 'areasOfInterest'
+    Module: 'CoreLocation.CLPlacemark'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'areasOfInterest'
+      JsName: 'areasOfInterest'
+      Module: 'CoreLocation.CLPlacemark'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'areasOfInterest'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'country'
+    JsName: 'country'
+    Module: 'CoreLocation.CLPlacemark'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'country'
+      JsName: 'country'
+      Module: 'CoreLocation.CLPlacemark'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'country'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'inlandWater'
+    JsName: 'inlandWater'
+    Module: 'CoreLocation.CLPlacemark'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'inlandWater'
+      JsName: 'inlandWater'
+      Module: 'CoreLocation.CLPlacemark'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'inlandWater'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'ISOcountryCode'
+    JsName: 'ISOcountryCode'
+    Module: 'CoreLocation.CLPlacemark'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'ISOcountryCode'
+      JsName: 'ISOcountryCode'
+      Module: 'CoreLocation.CLPlacemark'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'ISOcountryCode'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'locality'
+    JsName: 'locality'
+    Module: 'CoreLocation.CLPlacemark'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'locality'
+      JsName: 'locality'
+      Module: 'CoreLocation.CLPlacemark'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'locality'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'location'
+    JsName: 'location'
+    Module: 'CoreLocation.CLPlacemark'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'location'
+      JsName: 'location'
+      Module: 'CoreLocation.CLPlacemark'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'location'
+      Signature:
+      - Type: Interface
+        Module: CoreLocation.CLLocation
+        Name: CLLocation
+      TypeEncoding: '@8@0:4'
+  - Name: 'name'
+    JsName: 'name'
+    Module: 'CoreLocation.CLPlacemark'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'name'
+      JsName: 'name'
+      Module: 'CoreLocation.CLPlacemark'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'name'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'ocean'
+    JsName: 'ocean'
+    Module: 'CoreLocation.CLPlacemark'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'ocean'
+      JsName: 'ocean'
+      Module: 'CoreLocation.CLPlacemark'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'ocean'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'postalCode'
+    JsName: 'postalCode'
+    Module: 'CoreLocation.CLPlacemark'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'postalCode'
+      JsName: 'postalCode'
+      Module: 'CoreLocation.CLPlacemark'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'postalCode'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'region'
+    JsName: 'region'
+    Module: 'CoreLocation.CLPlacemark'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'region'
+      JsName: 'region'
+      Module: 'CoreLocation.CLPlacemark'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'region'
+      Signature:
+      - Type: Interface
+        Module: CoreLocation.CLRegion
+        Name: CLRegion
+      TypeEncoding: '@8@0:4'
+  - Name: 'subAdministrativeArea'
+    JsName: 'subAdministrativeArea'
+    Module: 'CoreLocation.CLPlacemark'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'subAdministrativeArea'
+      JsName: 'subAdministrativeArea'
+      Module: 'CoreLocation.CLPlacemark'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'subAdministrativeArea'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'subLocality'
+    JsName: 'subLocality'
+    Module: 'CoreLocation.CLPlacemark'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'subLocality'
+      JsName: 'subLocality'
+      Module: 'CoreLocation.CLPlacemark'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'subLocality'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'subThoroughfare'
+    JsName: 'subThoroughfare'
+    Module: 'CoreLocation.CLPlacemark'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'subThoroughfare'
+      JsName: 'subThoroughfare'
+      Module: 'CoreLocation.CLPlacemark'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'subThoroughfare'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  - Name: 'thoroughfare'
+    JsName: 'thoroughfare'
+    Module: 'CoreLocation.CLPlacemark'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'thoroughfare'
+      JsName: 'thoroughfare'
+      Module: 'CoreLocation.CLPlacemark'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'thoroughfare'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'CLGeocoder'
+  JsName: 'CLGeocoder'
+  Module: 'CoreLocation.CLGeocoder'
+  IntroducedIn: 5.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'cancelGeocode'
+    JsName: 'cancelGeocode'
+    Module: 'CoreLocation.CLGeocoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'cancelGeocode'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  - Name: 'geocodeAddressDictionary:completionHandler:'
+    JsName: 'geocodeAddressDictionaryCompletionHandler'
+    Module: 'CoreLocation.CLGeocoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'geocodeAddressDictionary:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSDictionary
+      Name: NSDictionary
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'geocodeAddressString:completionHandler:'
+    JsName: 'geocodeAddressStringCompletionHandler'
+    Module: 'CoreLocation.CLGeocoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'geocodeAddressString:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  - Name: 'geocodeAddressString:inRegion:completionHandler:'
+    JsName: 'geocodeAddressStringInRegionCompletionHandler'
+    Module: 'CoreLocation.CLGeocoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'geocodeAddressString:inRegion:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: Foundation.NSString
+      Name: NSString
+    - Type: Interface
+      Module: CoreLocation.CLRegion
+      Name: CLRegion
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v20@0:4@8@12@?16'
+  - Name: 'reverseGeocodeLocation:completionHandler:'
+    JsName: 'reverseGeocodeLocationCompletionHandler'
+    Module: 'CoreLocation.CLGeocoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'reverseGeocodeLocation:completionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Interface
+      Module: CoreLocation.CLLocation
+      Name: CLLocation
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v16@0:4@8@?12'
+  StaticMethods: []
+  Properties:
+  - Name: 'geocoding'
+    JsName: 'geocoding'
+    Module: 'CoreLocation.CLGeocoder'
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'isGeocoding'
+      JsName: 'isGeocoding'
+      Module: 'CoreLocation.CLGeocoder'
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isGeocoding'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+...

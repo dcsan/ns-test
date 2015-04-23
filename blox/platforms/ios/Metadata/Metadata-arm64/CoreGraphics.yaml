@@ -1,0 +1,6657 @@
+name: CoreGraphics
+items:
+- Name: 'CGAffineTransform'
+  JsName: 'CGAffineTransform'
+  Module: 'CoreGraphics.CGAffineTransform'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: a
+    Signature:
+      Type: Double
+  - Name: b
+    Signature:
+      Type: Double
+  - Name: c
+    Signature:
+      Type: Double
+  - Name: d
+    Signature:
+      Type: Double
+  - Name: tx
+    Signature:
+      Type: Double
+  - Name: ty
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: 'CGAffineTransformIdentity'
+  JsName: 'CGAffineTransformIdentity'
+  Module: 'CoreGraphics.CGAffineTransform'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+- Name: 'CGAffineTransformMake'
+  JsName: 'CGAffineTransformMake'
+  Module: 'CoreGraphics.CGAffineTransform'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+- Name: 'CGAffineTransformMakeTranslation'
+  JsName: 'CGAffineTransformMakeTranslation'
+  Module: 'CoreGraphics.CGAffineTransform'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+  - Type: Double
+  - Type: Double
+- Name: 'CGAffineTransformMakeScale'
+  JsName: 'CGAffineTransformMakeScale'
+  Module: 'CoreGraphics.CGAffineTransform'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+  - Type: Double
+  - Type: Double
+- Name: 'CGAffineTransformMakeRotation'
+  JsName: 'CGAffineTransformMakeRotation'
+  Module: 'CoreGraphics.CGAffineTransform'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+  - Type: Double
+- Name: 'CGAffineTransformIsIdentity'
+  JsName: 'CGAffineTransformIsIdentity'
+  Module: 'CoreGraphics.CGAffineTransform'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+- Name: 'CGAffineTransformTranslate'
+  JsName: 'CGAffineTransformTranslate'
+  Module: 'CoreGraphics.CGAffineTransform'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+  - Type: Double
+  - Type: Double
+- Name: 'CGAffineTransformScale'
+  JsName: 'CGAffineTransformScale'
+  Module: 'CoreGraphics.CGAffineTransform'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+  - Type: Double
+  - Type: Double
+- Name: 'CGAffineTransformRotate'
+  JsName: 'CGAffineTransformRotate'
+  Module: 'CoreGraphics.CGAffineTransform'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+  - Type: Double
+- Name: 'CGAffineTransformInvert'
+  JsName: 'CGAffineTransformInvert'
+  Module: 'CoreGraphics.CGAffineTransform'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+- Name: 'CGAffineTransformConcat'
+  JsName: 'CGAffineTransformConcat'
+  Module: 'CoreGraphics.CGAffineTransform'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+- Name: 'CGAffineTransformEqualToTransform'
+  JsName: 'CGAffineTransformEqualToTransform'
+  Module: 'CoreGraphics.CGAffineTransform'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+- Name: 'CGPointApplyAffineTransform'
+  JsName: 'CGPointApplyAffineTransform'
+  Module: 'CoreGraphics.CGAffineTransform'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+- Name: 'CGSizeApplyAffineTransform'
+  JsName: 'CGSizeApplyAffineTransform'
+  Module: 'CoreGraphics.CGAffineTransform'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGSize
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGSize
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+- Name: 'CGRectApplyAffineTransform'
+  JsName: 'CGRectApplyAffineTransform'
+  Module: 'CoreGraphics.CGAffineTransform'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+- Name: 'CGPoint'
+  JsName: 'CGPoint'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: x
+    Signature:
+      Type: Double
+  - Name: y
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: 'CGSize'
+  JsName: 'CGSize'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: width
+    Signature:
+      Type: Double
+  - Name: height
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: 'CGVector'
+  JsName: 'CGVector'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: dx
+    Signature:
+      Type: Double
+  - Name: dy
+    Signature:
+      Type: Double
+  Type: Struct
+- Name: 'CGRect'
+  JsName: 'CGRect'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: origin
+    Signature:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+  - Name: size
+    Signature:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGSize
+  Type: Struct
+- Name: 'CGRectEdge'
+  JsName: 'CGRectEdge'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CGRectMinXEdge":0,"CGRectMinYEdge":1,"CGRectMaxXEdge":2,"CGRectMaxYEdge":3})
+- Name: 'CGPointZero'
+  JsName: 'CGPointZero'
+  Module: 'CoreGraphics.CGGeometry'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+- Name: 'CGSizeZero'
+  JsName: 'CGSizeZero'
+  Module: 'CoreGraphics.CGGeometry'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGSize
+- Name: 'CGRectZero'
+  JsName: 'CGRectZero'
+  Module: 'CoreGraphics.CGGeometry'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectNull'
+  JsName: 'CGRectNull'
+  Module: 'CoreGraphics.CGGeometry'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectInfinite'
+  JsName: 'CGRectInfinite'
+  Module: 'CoreGraphics.CGGeometry'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectGetMinX'
+  JsName: 'CGRectGetMinX'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectGetMidX'
+  JsName: 'CGRectGetMidX'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectGetMaxX'
+  JsName: 'CGRectGetMaxX'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectGetMinY'
+  JsName: 'CGRectGetMinY'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectGetMidY'
+  JsName: 'CGRectGetMidY'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectGetMaxY'
+  JsName: 'CGRectGetMaxY'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectGetWidth'
+  JsName: 'CGRectGetWidth'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectGetHeight'
+  JsName: 'CGRectGetHeight'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGPointEqualToPoint'
+  JsName: 'CGPointEqualToPoint'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+- Name: 'CGSizeEqualToSize'
+  JsName: 'CGSizeEqualToSize'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGSize
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGSize
+- Name: 'CGRectEqualToRect'
+  JsName: 'CGRectEqualToRect'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectStandardize'
+  JsName: 'CGRectStandardize'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectIsEmpty'
+  JsName: 'CGRectIsEmpty'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectIsNull'
+  JsName: 'CGRectIsNull'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectIsInfinite'
+  JsName: 'CGRectIsInfinite'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectInset'
+  JsName: 'CGRectInset'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Double
+  - Type: Double
+- Name: 'CGRectIntegral'
+  JsName: 'CGRectIntegral'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectUnion'
+  JsName: 'CGRectUnion'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectIntersection'
+  JsName: 'CGRectIntersection'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectOffset'
+  JsName: 'CGRectOffset'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Double
+  - Type: Double
+- Name: 'CGRectDivide'
+  JsName: 'CGRectDivide'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+  - Type: Double
+  - Type: UInt
+- Name: 'CGRectContainsPoint'
+  JsName: 'CGRectContainsPoint'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+- Name: 'CGRectContainsRect'
+  JsName: 'CGRectContainsRect'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectIntersectsRect'
+  JsName: 'CGRectIntersectsRect'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGPointCreateDictionaryRepresentation'
+  JsName: 'CGPointCreateDictionaryRepresentation'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+- Name: 'CGPointMakeWithDictionaryRepresentation'
+  JsName: 'CGPointMakeWithDictionaryRepresentation'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+- Name: 'CGSizeCreateDictionaryRepresentation'
+  JsName: 'CGSizeCreateDictionaryRepresentation'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGSize
+- Name: 'CGSizeMakeWithDictionaryRepresentation'
+  JsName: 'CGSizeMakeWithDictionaryRepresentation'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGSize
+- Name: 'CGRectCreateDictionaryRepresentation'
+  JsName: 'CGRectCreateDictionaryRepresentation'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGRectMakeWithDictionaryRepresentation'
+  JsName: 'CGRectMakeWithDictionaryRepresentation'
+  Module: 'CoreGraphics.CGGeometry'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+- Name: 'CGPathDrawingMode'
+  JsName: 'CGPathDrawingMode'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGPathFill":0,"kCGPathEOFill":1,"kCGPathStroke":2,"kCGPathFillStroke":3,"kCGPathEOFillStroke":4})
+- Name: 'CGTextDrawingMode'
+  JsName: 'CGTextDrawingMode'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGTextFill":0,"kCGTextStroke":1,"kCGTextFillStroke":2,"kCGTextInvisible":3,"kCGTextFillClip":4,"kCGTextStrokeClip":5,"kCGTextFillStrokeClip":6,"kCGTextClip":7})
+- Name: 'CGTextEncoding'
+  JsName: 'CGTextEncoding'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGEncodingFontSpecific":0,"kCGEncodingMacRoman":1})
+- Name: 'CGInterpolationQuality'
+  JsName: 'CGInterpolationQuality'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGInterpolationDefault":0,"kCGInterpolationNone":1,"kCGInterpolationLow":2,"kCGInterpolationMedium":4,"kCGInterpolationHigh":3})
+- Name: 'CGBlendMode'
+  JsName: 'CGBlendMode'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGBlendModeNormal":0,"kCGBlendModeMultiply":1,"kCGBlendModeScreen":2,"kCGBlendModeOverlay":3,"kCGBlendModeDarken":4,"kCGBlendModeLighten":5,"kCGBlendModeColorDodge":6,"kCGBlendModeColorBurn":7,"kCGBlendModeSoftLight":8,"kCGBlendModeHardLight":9,"kCGBlendModeDifference":10,"kCGBlendModeExclusion":11,"kCGBlendModeHue":12,"kCGBlendModeSaturation":13,"kCGBlendModeColor":14,"kCGBlendModeLuminosity":15,"kCGBlendModeClear":16,"kCGBlendModeCopy":17,"kCGBlendModeSourceIn":18,"kCGBlendModeSourceOut":19,"kCGBlendModeSourceAtop":20,"kCGBlendModeDestinationOver":21,"kCGBlendModeDestinationIn":22,"kCGBlendModeDestinationOut":23,"kCGBlendModeDestinationAtop":24,"kCGBlendModeXOR":25,"kCGBlendModePlusDarker":26,"kCGBlendModePlusLighter":27})
+- Name: 'CGContextGetTypeID'
+  JsName: 'CGContextGetTypeID'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CGContextSaveGState'
+  JsName: 'CGContextSaveGState'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextRestoreGState'
+  JsName: 'CGContextRestoreGState'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextScaleCTM'
+  JsName: 'CGContextScaleCTM'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+  - Type: Double
+- Name: 'CGContextTranslateCTM'
+  JsName: 'CGContextTranslateCTM'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+  - Type: Double
+- Name: 'CGContextRotateCTM'
+  JsName: 'CGContextRotateCTM'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+- Name: 'CGContextConcatCTM'
+  JsName: 'CGContextConcatCTM'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+- Name: 'CGContextGetCTM'
+  JsName: 'CGContextGetCTM'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextSetLineWidth'
+  JsName: 'CGContextSetLineWidth'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+- Name: 'CGContextSetLineCap'
+  JsName: 'CGContextSetLineCap'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'CGContextSetLineJoin'
+  JsName: 'CGContextSetLineJoin'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'CGContextSetMiterLimit'
+  JsName: 'CGContextSetMiterLimit'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+- Name: 'CGContextSetLineDash'
+  JsName: 'CGContextSetLineDash'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Double
+  - Type: ULong
+- Name: 'CGContextSetFlatness'
+  JsName: 'CGContextSetFlatness'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+- Name: 'CGContextSetAlpha'
+  JsName: 'CGContextSetAlpha'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+- Name: 'CGContextSetBlendMode'
+  JsName: 'CGContextSetBlendMode'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'CGContextBeginPath'
+  JsName: 'CGContextBeginPath'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextMoveToPoint'
+  JsName: 'CGContextMoveToPoint'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+  - Type: Double
+- Name: 'CGContextAddLineToPoint'
+  JsName: 'CGContextAddLineToPoint'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+  - Type: Double
+- Name: 'CGContextAddCurveToPoint'
+  JsName: 'CGContextAddCurveToPoint'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+- Name: 'CGContextAddQuadCurveToPoint'
+  JsName: 'CGContextAddQuadCurveToPoint'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+- Name: 'CGContextClosePath'
+  JsName: 'CGContextClosePath'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextAddRect'
+  JsName: 'CGContextAddRect'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGContextAddRects'
+  JsName: 'CGContextAddRects'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+  - Type: ULong
+- Name: 'CGContextAddLines'
+  JsName: 'CGContextAddLines'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+  - Type: ULong
+- Name: 'CGContextAddEllipseInRect'
+  JsName: 'CGContextAddEllipseInRect'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGContextAddArc'
+  JsName: 'CGContextAddArc'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Int
+- Name: 'CGContextAddArcToPoint'
+  JsName: 'CGContextAddArcToPoint'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+- Name: 'CGContextAddPath'
+  JsName: 'CGContextAddPath'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextReplacePathWithStrokedPath'
+  JsName: 'CGContextReplacePathWithStrokedPath'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextIsPathEmpty'
+  JsName: 'CGContextIsPathEmpty'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextGetPathCurrentPoint'
+  JsName: 'CGContextGetPathCurrentPoint'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextGetPathBoundingBox'
+  JsName: 'CGContextGetPathBoundingBox'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextCopyPath'
+  JsName: 'CGContextCopyPath'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextPathContainsPoint'
+  JsName: 'CGContextPathContainsPoint'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+  - Type: UInt
+- Name: 'CGContextDrawPath'
+  JsName: 'CGContextDrawPath'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'CGContextFillPath'
+  JsName: 'CGContextFillPath'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextEOFillPath'
+  JsName: 'CGContextEOFillPath'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextStrokePath'
+  JsName: 'CGContextStrokePath'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextFillRect'
+  JsName: 'CGContextFillRect'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGContextFillRects'
+  JsName: 'CGContextFillRects'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+  - Type: ULong
+- Name: 'CGContextStrokeRect'
+  JsName: 'CGContextStrokeRect'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGContextStrokeRectWithWidth'
+  JsName: 'CGContextStrokeRectWithWidth'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Double
+- Name: 'CGContextClearRect'
+  JsName: 'CGContextClearRect'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGContextFillEllipseInRect'
+  JsName: 'CGContextFillEllipseInRect'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGContextStrokeEllipseInRect'
+  JsName: 'CGContextStrokeEllipseInRect'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGContextStrokeLineSegments'
+  JsName: 'CGContextStrokeLineSegments'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+  - Type: ULong
+- Name: 'CGContextClip'
+  JsName: 'CGContextClip'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextEOClip'
+  JsName: 'CGContextEOClip'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextClipToMask'
+  JsName: 'CGContextClipToMask'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextGetClipBoundingBox'
+  JsName: 'CGContextGetClipBoundingBox'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextClipToRect'
+  JsName: 'CGContextClipToRect'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGContextClipToRects'
+  JsName: 'CGContextClipToRects'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+  - Type: ULong
+- Name: 'CGContextSetFillColorWithColor'
+  JsName: 'CGContextSetFillColorWithColor'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextSetStrokeColorWithColor'
+  JsName: 'CGContextSetStrokeColorWithColor'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextSetFillColorSpace'
+  JsName: 'CGContextSetFillColorSpace'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextSetStrokeColorSpace'
+  JsName: 'CGContextSetStrokeColorSpace'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextSetFillColor'
+  JsName: 'CGContextSetFillColor'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Double
+- Name: 'CGContextSetStrokeColor'
+  JsName: 'CGContextSetStrokeColor'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Double
+- Name: 'CGContextSetFillPattern'
+  JsName: 'CGContextSetFillPattern'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Double
+- Name: 'CGContextSetStrokePattern'
+  JsName: 'CGContextSetStrokePattern'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Double
+- Name: 'CGContextSetPatternPhase'
+  JsName: 'CGContextSetPatternPhase'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGSize
+- Name: 'CGContextSetGrayFillColor'
+  JsName: 'CGContextSetGrayFillColor'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+  - Type: Double
+- Name: 'CGContextSetGrayStrokeColor'
+  JsName: 'CGContextSetGrayStrokeColor'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+  - Type: Double
+- Name: 'CGContextSetRGBFillColor'
+  JsName: 'CGContextSetRGBFillColor'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+- Name: 'CGContextSetRGBStrokeColor'
+  JsName: 'CGContextSetRGBStrokeColor'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+- Name: 'CGContextSetCMYKFillColor'
+  JsName: 'CGContextSetCMYKFillColor'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+- Name: 'CGContextSetCMYKStrokeColor'
+  JsName: 'CGContextSetCMYKStrokeColor'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+- Name: 'CGContextSetRenderingIntent'
+  JsName: 'CGContextSetRenderingIntent'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'CGContextDrawImage'
+  JsName: 'CGContextDrawImage'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextDrawTiledImage'
+  JsName: 'CGContextDrawTiledImage'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextGetInterpolationQuality'
+  JsName: 'CGContextGetInterpolationQuality'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextSetInterpolationQuality'
+  JsName: 'CGContextSetInterpolationQuality'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'CGContextSetShadowWithColor'
+  JsName: 'CGContextSetShadowWithColor'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGSize
+  - Type: Double
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextSetShadow'
+  JsName: 'CGContextSetShadow'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGSize
+  - Type: Double
+- Name: 'CGContextDrawLinearGradient'
+  JsName: 'CGContextDrawLinearGradient'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+  - Type: UInt
+- Name: 'CGContextDrawRadialGradient'
+  JsName: 'CGContextDrawRadialGradient'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+  - Type: Double
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+  - Type: Double
+  - Type: UInt
+- Name: 'CGContextDrawShading'
+  JsName: 'CGContextDrawShading'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextSetCharacterSpacing'
+  JsName: 'CGContextSetCharacterSpacing'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+- Name: 'CGContextSetTextPosition'
+  JsName: 'CGContextSetTextPosition'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+  - Type: Double
+- Name: 'CGContextGetTextPosition'
+  JsName: 'CGContextGetTextPosition'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextSetTextMatrix'
+  JsName: 'CGContextSetTextMatrix'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+- Name: 'CGContextGetTextMatrix'
+  JsName: 'CGContextGetTextMatrix'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextSetTextDrawingMode'
+  JsName: 'CGContextSetTextDrawingMode'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'CGContextSetFont'
+  JsName: 'CGContextSetFont'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextSetFontSize'
+  JsName: 'CGContextSetFontSize'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+- Name: 'CGContextShowGlyphsAtPositions'
+  JsName: 'CGContextShowGlyphsAtPositions'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Ushort
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+  - Type: ULong
+- Name: 'CGContextDrawPDFPage'
+  JsName: 'CGContextDrawPDFPage'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextBeginPage'
+  JsName: 'CGContextBeginPage'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+- Name: 'CGContextEndPage'
+  JsName: 'CGContextEndPage'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextRetain'
+  JsName: 'CGContextRetain'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextRelease'
+  JsName: 'CGContextRelease'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextFlush'
+  JsName: 'CGContextFlush'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextSynchronize'
+  JsName: 'CGContextSynchronize'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextSetShouldAntialias'
+  JsName: 'CGContextSetShouldAntialias'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Bool
+- Name: 'CGContextSetAllowsAntialiasing'
+  JsName: 'CGContextSetAllowsAntialiasing'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Bool
+- Name: 'CGContextSetShouldSmoothFonts'
+  JsName: 'CGContextSetShouldSmoothFonts'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Bool
+- Name: 'CGContextSetAllowsFontSmoothing'
+  JsName: 'CGContextSetAllowsFontSmoothing'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Bool
+- Name: 'CGContextSetShouldSubpixelPositionFonts'
+  JsName: 'CGContextSetShouldSubpixelPositionFonts'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Bool
+- Name: 'CGContextSetAllowsFontSubpixelPositioning'
+  JsName: 'CGContextSetAllowsFontSubpixelPositioning'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Bool
+- Name: 'CGContextSetShouldSubpixelQuantizeFonts'
+  JsName: 'CGContextSetShouldSubpixelQuantizeFonts'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Bool
+- Name: 'CGContextSetAllowsFontSubpixelQuantization'
+  JsName: 'CGContextSetAllowsFontSubpixelQuantization'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Bool
+- Name: 'CGContextBeginTransparencyLayer'
+  JsName: 'CGContextBeginTransparencyLayer'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGContextBeginTransparencyLayerWithRect'
+  JsName: 'CGContextBeginTransparencyLayerWithRect'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGContextEndTransparencyLayer'
+  JsName: 'CGContextEndTransparencyLayer'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextGetUserSpaceToDeviceSpaceTransform'
+  JsName: 'CGContextGetUserSpaceToDeviceSpaceTransform'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextConvertPointToDeviceSpace'
+  JsName: 'CGContextConvertPointToDeviceSpace'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+- Name: 'CGContextConvertPointToUserSpace'
+  JsName: 'CGContextConvertPointToUserSpace'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+- Name: 'CGContextConvertSizeToDeviceSpace'
+  JsName: 'CGContextConvertSizeToDeviceSpace'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGSize
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGSize
+- Name: 'CGContextConvertSizeToUserSpace'
+  JsName: 'CGContextConvertSizeToUserSpace'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGSize
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGSize
+- Name: 'CGContextConvertRectToDeviceSpace'
+  JsName: 'CGContextConvertRectToDeviceSpace'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGContextConvertRectToUserSpace'
+  JsName: 'CGContextConvertRectToUserSpace'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGContextSelectFont'
+  JsName: 'CGContextSelectFont'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Double
+  - Type: UInt
+- Name: 'CGContextShowText'
+  JsName: 'CGContextShowText'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: ULong
+- Name: 'CGContextShowTextAtPoint'
+  JsName: 'CGContextShowTextAtPoint'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+  - Type: Double
+  - Type: CString
+  - Type: ULong
+- Name: 'CGContextShowGlyphs'
+  JsName: 'CGContextShowGlyphs'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Ushort
+  - Type: ULong
+- Name: 'CGContextShowGlyphsAtPoint'
+  JsName: 'CGContextShowGlyphsAtPoint'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+  - Type: Double
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Ushort
+  - Type: ULong
+- Name: 'CGContextShowGlyphsWithAdvances'
+  JsName: 'CGContextShowGlyphsWithAdvances'
+  Module: 'CoreGraphics.CGContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Ushort
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGSize
+  - Type: ULong
+- Name: 'CGColorCreate'
+  JsName: 'CGColorCreate'
+  Module: 'CoreGraphics.CGColor'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Double
+- Name: 'CGColorCreateWithPattern'
+  JsName: 'CGColorCreateWithPattern'
+  Module: 'CoreGraphics.CGColor'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Double
+- Name: 'CGColorCreateCopy'
+  JsName: 'CGColorCreateCopy'
+  Module: 'CoreGraphics.CGColor'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorCreateCopyWithAlpha'
+  JsName: 'CGColorCreateCopyWithAlpha'
+  Module: 'CoreGraphics.CGColor'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Double
+- Name: 'CGColorRetain'
+  JsName: 'CGColorRetain'
+  Module: 'CoreGraphics.CGColor'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorRelease'
+  JsName: 'CGColorRelease'
+  Module: 'CoreGraphics.CGColor'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorEqualToColor'
+  JsName: 'CGColorEqualToColor'
+  Module: 'CoreGraphics.CGColor'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorGetNumberOfComponents'
+  JsName: 'CGColorGetNumberOfComponents'
+  Module: 'CoreGraphics.CGColor'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorGetComponents'
+  JsName: 'CGColorGetComponents'
+  Module: 'CoreGraphics.CGColor'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Double
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorGetAlpha'
+  JsName: 'CGColorGetAlpha'
+  Module: 'CoreGraphics.CGColor'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorGetColorSpace'
+  JsName: 'CGColorGetColorSpace'
+  Module: 'CoreGraphics.CGColor'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorGetPattern'
+  JsName: 'CGColorGetPattern'
+  Module: 'CoreGraphics.CGColor'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorGetTypeID'
+  JsName: 'CGColorGetTypeID'
+  Module: 'CoreGraphics.CGColor'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CGColorRenderingIntent'
+  JsName: 'CGColorRenderingIntent'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGRenderingIntentDefault":0,"kCGRenderingIntentAbsoluteColorimetric":1,"kCGRenderingIntentRelativeColorimetric":2,"kCGRenderingIntentPerceptual":3,"kCGRenderingIntentSaturation":4})
+- Name: 'CGColorSpaceModel'
+  JsName: 'CGColorSpaceModel'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGColorSpaceModelUnknown":-1,"kCGColorSpaceModelMonochrome":0,"kCGColorSpaceModelRGB":1,"kCGColorSpaceModelCMYK":2,"kCGColorSpaceModelLab":3,"kCGColorSpaceModelDeviceN":4,"kCGColorSpaceModelIndexed":5,"kCGColorSpaceModelPattern":6})
+- Name: 'CGColorSpaceCreateDeviceGray'
+  JsName: 'CGColorSpaceCreateDeviceGray'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorSpaceCreateDeviceRGB'
+  JsName: 'CGColorSpaceCreateDeviceRGB'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorSpaceCreateDeviceCMYK'
+  JsName: 'CGColorSpaceCreateDeviceCMYK'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorSpaceCreateCalibratedGray'
+  JsName: 'CGColorSpaceCreateCalibratedGray'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ConstantArray
+    ArrayType:
+      Type: Double
+    Size: 3
+  - Type: ConstantArray
+    ArrayType:
+      Type: Double
+    Size: 3
+  - Type: Double
+- Name: 'CGColorSpaceCreateCalibratedRGB'
+  JsName: 'CGColorSpaceCreateCalibratedRGB'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ConstantArray
+    ArrayType:
+      Type: Double
+    Size: 3
+  - Type: ConstantArray
+    ArrayType:
+      Type: Double
+    Size: 3
+  - Type: ConstantArray
+    ArrayType:
+      Type: Double
+    Size: 3
+  - Type: ConstantArray
+    ArrayType:
+      Type: Double
+    Size: 9
+- Name: 'CGColorSpaceCreateLab'
+  JsName: 'CGColorSpaceCreateLab'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ConstantArray
+    ArrayType:
+      Type: Double
+    Size: 3
+  - Type: ConstantArray
+    ArrayType:
+      Type: Double
+    Size: 3
+  - Type: ConstantArray
+    ArrayType:
+      Type: Double
+    Size: 4
+- Name: 'CGColorSpaceCreateWithICCProfile'
+  JsName: 'CGColorSpaceCreateWithICCProfile'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+- Name: 'CGColorSpaceCreateICCBased'
+  JsName: 'CGColorSpaceCreateICCBased'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Double
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorSpaceCreateIndexed'
+  JsName: 'CGColorSpaceCreateIndexed'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: CString
+- Name: 'CGColorSpaceCreatePattern'
+  JsName: 'CGColorSpaceCreatePattern'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorSpaceCreateWithName'
+  JsName: 'CGColorSpaceCreateWithName'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CGColorSpaceRetain'
+  JsName: 'CGColorSpaceRetain'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorSpaceRelease'
+  JsName: 'CGColorSpaceRelease'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorSpaceGetTypeID'
+  JsName: 'CGColorSpaceGetTypeID'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CGColorSpaceGetNumberOfComponents'
+  JsName: 'CGColorSpaceGetNumberOfComponents'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorSpaceGetModel'
+  JsName: 'CGColorSpaceGetModel'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorSpaceGetBaseColorSpace'
+  JsName: 'CGColorSpaceGetBaseColorSpace'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorSpaceGetColorTableCount'
+  JsName: 'CGColorSpaceGetColorTableCount'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGColorSpaceGetColorTable'
+  JsName: 'CGColorSpaceGetColorTable'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'CGColorSpaceCopyICCProfile'
+  JsName: 'CGColorSpaceCopyICCProfile'
+  Module: 'CoreGraphics.CGColorSpace'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGDataProviderSequentialCallbacks'
+  JsName: 'CGDataProviderSequentialCallbacks'
+  Module: 'CoreGraphics.CGDataProvider'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: version
+    Signature:
+      Type: UInt
+  - Name: getBytes
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: ULong
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: ULong
+  - Name: skipForward
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: LongLong
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: LongLong
+  - Name: rewind
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: releaseInfo
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  Type: Struct
+- Name: 'CGDataProviderDirectCallbacks'
+  JsName: 'CGDataProviderDirectCallbacks'
+  Module: 'CoreGraphics.CGDataProvider'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: version
+    Signature:
+      Type: UInt
+  - Name: getBytePointer
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: releaseBytePointer
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: getBytesAtPosition
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: ULong
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: LongLong
+      - Type: ULong
+  - Name: releaseInfo
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  Type: Struct
+- Name: 'CGDataProviderGetTypeID'
+  JsName: 'CGDataProviderGetTypeID'
+  Module: 'CoreGraphics.CGDataProvider'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CGDataProviderCreateSequential'
+  JsName: 'CGDataProviderCreateSequential'
+  Module: 'CoreGraphics.CGDataProvider'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGDataProvider
+      Name: CGDataProviderSequentialCallbacks
+- Name: 'CGDataProviderCreateDirect'
+  JsName: 'CGDataProviderCreateDirect'
+  Module: 'CoreGraphics.CGDataProvider'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: LongLong
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGDataProvider
+      Name: CGDataProviderDirectCallbacks
+- Name: 'CGDataProviderCreateWithData'
+  JsName: 'CGDataProviderCreateWithData'
+  Module: 'CoreGraphics.CGDataProvider'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: ULong
+- Name: 'CGDataProviderCreateWithCFData'
+  JsName: 'CGDataProviderCreateWithCFData'
+  Module: 'CoreGraphics.CGDataProvider'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+- Name: 'CGDataProviderCreateWithURL'
+  JsName: 'CGDataProviderCreateWithURL'
+  Module: 'CoreGraphics.CGDataProvider'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+- Name: 'CGDataProviderCreateWithFilename'
+  JsName: 'CGDataProviderCreateWithFilename'
+  Module: 'CoreGraphics.CGDataProvider'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'CGDataProviderRetain'
+  JsName: 'CGDataProviderRetain'
+  Module: 'CoreGraphics.CGDataProvider'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGDataProviderRelease'
+  JsName: 'CGDataProviderRelease'
+  Module: 'CoreGraphics.CGDataProvider'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGDataProviderCopyData'
+  JsName: 'CGDataProviderCopyData'
+  Module: 'CoreGraphics.CGDataProvider'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPatternTiling'
+  JsName: 'CGPatternTiling'
+  Module: 'CoreGraphics.CGPattern'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGPatternTilingNoDistortion":0,"kCGPatternTilingConstantSpacingMinimalDistortion":1,"kCGPatternTilingConstantSpacing":2})
+- Name: 'CGPatternCallbacks'
+  JsName: 'CGPatternCallbacks'
+  Module: 'CoreGraphics.CGPattern'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: version
+    Signature:
+      Type: UInt
+  - Name: drawPattern
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  - Name: releaseInfo
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  Type: Struct
+- Name: 'CGPatternGetTypeID'
+  JsName: 'CGPatternGetTypeID'
+  Module: 'CoreGraphics.CGPattern'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CGPatternCreate'
+  JsName: 'CGPatternCreate'
+  Module: 'CoreGraphics.CGPattern'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+  - Type: Double
+  - Type: Double
+  - Type: UInt
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGPattern
+      Name: CGPatternCallbacks
+- Name: 'CGPatternRetain'
+  JsName: 'CGPatternRetain'
+  Module: 'CoreGraphics.CGPattern'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPatternRelease'
+  JsName: 'CGPatternRelease'
+  Module: 'CoreGraphics.CGPattern'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFontPostScriptFormat'
+  JsName: 'CGFontPostScriptFormat'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGFontPostScriptFormatType1":1,"kCGFontPostScriptFormatType3":3,"kCGFontPostScriptFormatType42":42})
+- Name: 'kCGFontIndexMax'
+  JsName: 'kCGFontIndexMax'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65534
+- Name: 'kCGFontIndexInvalid'
+  JsName: 'kCGFontIndexInvalid'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65535
+- Name: 'kCGGlyphMax'
+  JsName: 'kCGGlyphMax'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 65534
+- Name: 'CGFontGetTypeID'
+  JsName: 'CGFontGetTypeID'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CGFontCreateWithDataProvider'
+  JsName: 'CGFontCreateWithDataProvider'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFontCreateWithFontName'
+  JsName: 'CGFontCreateWithFontName'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CGFontCreateCopyWithVariations'
+  JsName: 'CGFontCreateCopyWithVariations'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGFontRetain'
+  JsName: 'CGFontRetain'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFontRelease'
+  JsName: 'CGFontRelease'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFontGetNumberOfGlyphs'
+  JsName: 'CGFontGetNumberOfGlyphs'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFontGetUnitsPerEm'
+  JsName: 'CGFontGetUnitsPerEm'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFontCopyPostScriptName'
+  JsName: 'CGFontCopyPostScriptName'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFontCopyFullName'
+  JsName: 'CGFontCopyFullName'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFontGetAscent'
+  JsName: 'CGFontGetAscent'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFontGetDescent'
+  JsName: 'CGFontGetDescent'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFontGetLeading'
+  JsName: 'CGFontGetLeading'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFontGetCapHeight'
+  JsName: 'CGFontGetCapHeight'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFontGetXHeight'
+  JsName: 'CGFontGetXHeight'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFontGetFontBBox'
+  JsName: 'CGFontGetFontBBox'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFontGetItalicAngle'
+  JsName: 'CGFontGetItalicAngle'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFontGetStemV'
+  JsName: 'CGFontGetStemV'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Double
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFontCopyVariationAxes'
+  JsName: 'CGFontCopyVariationAxes'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFontCopyVariations'
+  JsName: 'CGFontCopyVariations'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFontGetGlyphAdvances'
+  JsName: 'CGFontGetGlyphAdvances'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Ushort
+  - Type: ULong
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Int
+- Name: 'CGFontGetGlyphBBoxes'
+  JsName: 'CGFontGetGlyphBBoxes'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Ushort
+  - Type: ULong
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+- Name: 'CGFontGetGlyphWithGlyphName'
+  JsName: 'CGFontGetGlyphWithGlyphName'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Ushort
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CGFontCopyGlyphNameForGlyph'
+  JsName: 'CGFontCopyGlyphNameForGlyph'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Ushort
+- Name: 'CGFontCanCreatePostScriptSubset'
+  JsName: 'CGFontCanCreatePostScriptSubset'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'CGFontCreatePostScriptSubset'
+  JsName: 'CGFontCreatePostScriptSubset'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: UInt
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Ushort
+  - Type: ULong
+  - Type: ConstantArray
+    ArrayType:
+      Type: Ushort
+    Size: 256
+- Name: 'CGFontCreatePostScriptEncoding'
+  JsName: 'CGFontCreatePostScriptEncoding'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ConstantArray
+    ArrayType:
+      Type: Ushort
+    Size: 256
+- Name: 'CGFontCopyTableTags'
+  JsName: 'CGFontCopyTableTags'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFontCopyTableForTag'
+  JsName: 'CGFontCopyTableForTag'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'kCGFontVariationAxisName'
+  JsName: 'kCGFontVariationAxisName'
+  Module: 'CoreGraphics.CGFont'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGFontVariationAxisMinValue'
+  JsName: 'kCGFontVariationAxisMinValue'
+  Module: 'CoreGraphics.CGFont'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGFontVariationAxisMaxValue'
+  JsName: 'kCGFontVariationAxisMaxValue'
+  Module: 'CoreGraphics.CGFont'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGFontVariationAxisDefaultValue'
+  JsName: 'kCGFontVariationAxisDefaultValue'
+  Module: 'CoreGraphics.CGFont'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CGGlyphMin'
+  JsName: 'CGGlyphMin'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 0
+- Name: 'CGGlyphMax'
+  JsName: 'CGGlyphMax'
+  Module: 'CoreGraphics.CGFont'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kCGGradientDrawsBeforeStartLocation'
+  JsName: 'kCGGradientDrawsBeforeStartLocation'
+  Module: 'CoreGraphics.CGGradient'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 1
+- Name: 'kCGGradientDrawsAfterEndLocation'
+  JsName: 'kCGGradientDrawsAfterEndLocation'
+  Module: 'CoreGraphics.CGGradient'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: 2
+- Name: 'CGGradientGetTypeID'
+  JsName: 'CGGradientGetTypeID'
+  Module: 'CoreGraphics.CGGradient'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CGGradientCreateWithColorComponents'
+  JsName: 'CGGradientCreateWithColorComponents'
+  Module: 'CoreGraphics.CGGradient'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Double
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Double
+  - Type: ULong
+- Name: 'CGGradientCreateWithColors'
+  JsName: 'CGGradientCreateWithColors'
+  Module: 'CoreGraphics.CGGradient'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Double
+- Name: 'CGGradientRetain'
+  JsName: 'CGGradientRetain'
+  Module: 'CoreGraphics.CGGradient'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGGradientRelease'
+  JsName: 'CGGradientRelease'
+  Module: 'CoreGraphics.CGGradient'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageAlphaInfo'
+  JsName: 'CGImageAlphaInfo'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGImageAlphaNone":0,"kCGImageAlphaPremultipliedLast":1,"kCGImageAlphaPremultipliedFirst":2,"kCGImageAlphaLast":3,"kCGImageAlphaFirst":4,"kCGImageAlphaNoneSkipLast":5,"kCGImageAlphaNoneSkipFirst":6,"kCGImageAlphaOnly":7})
+- Name: 'CGBitmapInfo'
+  JsName: 'CGBitmapInfo'
+  Module: 'CoreGraphics.CGImage'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGBitmapAlphaInfoMask":31,"kCGBitmapFloatComponents":256,"kCGBitmapByteOrderMask":28672,"kCGBitmapByteOrderDefault":0,"kCGBitmapByteOrder16Little":4096,"kCGBitmapByteOrder32Little":8192,"kCGBitmapByteOrder16Big":12288,"kCGBitmapByteOrder32Big":16384})
+- Name: 'CGImageGetTypeID'
+  JsName: 'CGImageGetTypeID'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CGImageCreate'
+  JsName: 'CGImageCreate'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: ULong
+  - Type: ULong
+  - Type: ULong
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Double
+  - Type: Bool
+  - Type: UInt
+- Name: 'CGImageMaskCreate'
+  JsName: 'CGImageMaskCreate'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: ULong
+  - Type: ULong
+  - Type: ULong
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Double
+  - Type: Bool
+- Name: 'CGImageCreateCopy'
+  JsName: 'CGImageCreateCopy'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageCreateWithJPEGDataProvider'
+  JsName: 'CGImageCreateWithJPEGDataProvider'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Double
+  - Type: Bool
+  - Type: UInt
+- Name: 'CGImageCreateWithPNGDataProvider'
+  JsName: 'CGImageCreateWithPNGDataProvider'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Double
+  - Type: Bool
+  - Type: UInt
+- Name: 'CGImageCreateWithImageInRect'
+  JsName: 'CGImageCreateWithImageInRect'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGImageCreateWithMask'
+  JsName: 'CGImageCreateWithMask'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageCreateWithMaskingColors'
+  JsName: 'CGImageCreateWithMaskingColors'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Double
+- Name: 'CGImageCreateCopyWithColorSpace'
+  JsName: 'CGImageCreateCopyWithColorSpace'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageRetain'
+  JsName: 'CGImageRetain'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageRelease'
+  JsName: 'CGImageRelease'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageIsMask'
+  JsName: 'CGImageIsMask'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageGetWidth'
+  JsName: 'CGImageGetWidth'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageGetHeight'
+  JsName: 'CGImageGetHeight'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageGetBitsPerComponent'
+  JsName: 'CGImageGetBitsPerComponent'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageGetBitsPerPixel'
+  JsName: 'CGImageGetBitsPerPixel'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageGetBytesPerRow'
+  JsName: 'CGImageGetBytesPerRow'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageGetColorSpace'
+  JsName: 'CGImageGetColorSpace'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageGetAlphaInfo'
+  JsName: 'CGImageGetAlphaInfo'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageGetDataProvider'
+  JsName: 'CGImageGetDataProvider'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageGetDecode'
+  JsName: 'CGImageGetDecode'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Double
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageGetShouldInterpolate'
+  JsName: 'CGImageGetShouldInterpolate'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageGetRenderingIntent'
+  JsName: 'CGImageGetRenderingIntent'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGImageGetBitmapInfo'
+  JsName: 'CGImageGetBitmapInfo'
+  Module: 'CoreGraphics.CGImage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGLineJoin'
+  JsName: 'CGLineJoin'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGLineJoinMiter":0,"kCGLineJoinRound":1,"kCGLineJoinBevel":2})
+- Name: 'CGLineCap'
+  JsName: 'CGLineCap'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGLineCapButt":0,"kCGLineCapRound":1,"kCGLineCapSquare":2})
+- Name: 'CGPathGetTypeID'
+  JsName: 'CGPathGetTypeID'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CGPathCreateMutable'
+  JsName: 'CGPathCreateMutable'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPathCreateCopy'
+  JsName: 'CGPathCreateCopy'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPathCreateCopyByTransformingPath'
+  JsName: 'CGPathCreateCopyByTransformingPath'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+- Name: 'CGPathCreateMutableCopy'
+  JsName: 'CGPathCreateMutableCopy'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPathCreateMutableCopyByTransformingPath'
+  JsName: 'CGPathCreateMutableCopyByTransformingPath'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+- Name: 'CGPathCreateWithRect'
+  JsName: 'CGPathCreateWithRect'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+- Name: 'CGPathCreateWithEllipseInRect'
+  JsName: 'CGPathCreateWithEllipseInRect'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+- Name: 'CGPathCreateWithRoundedRect'
+  JsName: 'CGPathCreateWithRoundedRect'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Double
+  - Type: Double
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+- Name: 'CGPathAddRoundedRect'
+  JsName: 'CGPathAddRoundedRect'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Double
+  - Type: Double
+- Name: 'CGPathCreateCopyByDashingPath'
+  JsName: 'CGPathCreateCopyByDashingPath'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+  - Type: Double
+  - Type: Pointer
+    PointerType:
+      Type: Double
+  - Type: ULong
+- Name: 'CGPathCreateCopyByStrokingPath'
+  JsName: 'CGPathCreateCopyByStrokingPath'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+  - Type: Double
+  - Type: UInt
+  - Type: UInt
+  - Type: Double
+- Name: 'CGPathRetain'
+  JsName: 'CGPathRetain'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPathRelease'
+  JsName: 'CGPathRelease'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPathEqualToPath'
+  JsName: 'CGPathEqualToPath'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPathMoveToPoint'
+  JsName: 'CGPathMoveToPoint'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+  - Type: Double
+  - Type: Double
+- Name: 'CGPathAddLineToPoint'
+  JsName: 'CGPathAddLineToPoint'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+  - Type: Double
+  - Type: Double
+- Name: 'CGPathAddQuadCurveToPoint'
+  JsName: 'CGPathAddQuadCurveToPoint'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+- Name: 'CGPathAddCurveToPoint'
+  JsName: 'CGPathAddCurveToPoint'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+- Name: 'CGPathCloseSubpath'
+  JsName: 'CGPathCloseSubpath'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPathAddRect'
+  JsName: 'CGPathAddRect'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGPathAddRects'
+  JsName: 'CGPathAddRects'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+  - Type: ULong
+- Name: 'CGPathAddLines'
+  JsName: 'CGPathAddLines'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+  - Type: IncompleteArray
+    ArrayType:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGPoint
+  - Type: ULong
+- Name: 'CGPathAddEllipseInRect'
+  JsName: 'CGPathAddEllipseInRect'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGPathAddRelativeArc'
+  JsName: 'CGPathAddRelativeArc'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+- Name: 'CGPathAddArc'
+  JsName: 'CGPathAddArc'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Bool
+- Name: 'CGPathAddArcToPoint'
+  JsName: 'CGPathAddArcToPoint'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+  - Type: Double
+- Name: 'CGPathAddPath'
+  JsName: 'CGPathAddPath'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPathIsEmpty'
+  JsName: 'CGPathIsEmpty'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPathIsRect'
+  JsName: 'CGPathIsRect'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+- Name: 'CGPathGetCurrentPoint'
+  JsName: 'CGPathGetCurrentPoint'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPathGetBoundingBox'
+  JsName: 'CGPathGetBoundingBox'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPathGetPathBoundingBox'
+  JsName: 'CGPathGetPathBoundingBox'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPathContainsPoint'
+  JsName: 'CGPathContainsPoint'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGAffineTransform
+      Name: CGAffineTransform
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+  - Type: Bool
+- Name: 'CGPathElementType'
+  JsName: 'CGPathElementType'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGPathElementMoveToPoint":0,"kCGPathElementAddLineToPoint":1,"kCGPathElementAddQuadCurveToPoint":2,"kCGPathElementAddCurveToPoint":3,"kCGPathElementCloseSubpath":4})
+- Name: 'CGPathElement'
+  JsName: 'CGPathElement'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: type
+    Signature:
+      Type: UInt
+  - Name: points
+    Signature:
+      Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreGraphics.CGGeometry
+        Name: CGPoint
+  Type: Struct
+- Name: 'CGPathApply'
+  JsName: 'CGPathApply'
+  Module: 'CoreGraphics.CGPath'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Struct
+        Module: CoreGraphics.CGPath
+        Name: CGPathElement
+- Name: 'CGPDFDocumentCreateWithProvider'
+  JsName: 'CGPDFDocumentCreateWithProvider'
+  Module: 'CoreGraphics.CGPDFDocument'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFDocumentCreateWithURL'
+  JsName: 'CGPDFDocumentCreateWithURL'
+  Module: 'CoreGraphics.CGPDFDocument'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+- Name: 'CGPDFDocumentRetain'
+  JsName: 'CGPDFDocumentRetain'
+  Module: 'CoreGraphics.CGPDFDocument'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFDocumentRelease'
+  JsName: 'CGPDFDocumentRelease'
+  Module: 'CoreGraphics.CGPDFDocument'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFDocumentGetVersion'
+  JsName: 'CGPDFDocumentGetVersion'
+  Module: 'CoreGraphics.CGPDFDocument'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Int
+- Name: 'CGPDFDocumentIsEncrypted'
+  JsName: 'CGPDFDocumentIsEncrypted'
+  Module: 'CoreGraphics.CGPDFDocument'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFDocumentUnlockWithPassword'
+  JsName: 'CGPDFDocumentUnlockWithPassword'
+  Module: 'CoreGraphics.CGPDFDocument'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'CGPDFDocumentIsUnlocked'
+  JsName: 'CGPDFDocumentIsUnlocked'
+  Module: 'CoreGraphics.CGPDFDocument'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFDocumentAllowsPrinting'
+  JsName: 'CGPDFDocumentAllowsPrinting'
+  Module: 'CoreGraphics.CGPDFDocument'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFDocumentAllowsCopying'
+  JsName: 'CGPDFDocumentAllowsCopying'
+  Module: 'CoreGraphics.CGPDFDocument'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFDocumentGetNumberOfPages'
+  JsName: 'CGPDFDocumentGetNumberOfPages'
+  Module: 'CoreGraphics.CGPDFDocument'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFDocumentGetPage'
+  JsName: 'CGPDFDocumentGetPage'
+  Module: 'CoreGraphics.CGPDFDocument'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+- Name: 'CGPDFDocumentGetCatalog'
+  JsName: 'CGPDFDocumentGetCatalog'
+  Module: 'CoreGraphics.CGPDFDocument'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFDocumentGetInfo'
+  JsName: 'CGPDFDocumentGetInfo'
+  Module: 'CoreGraphics.CGPDFDocument'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFDocumentGetID'
+  JsName: 'CGPDFDocumentGetID'
+  Module: 'CoreGraphics.CGPDFDocument'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFDocumentGetTypeID'
+  JsName: 'CGPDFDocumentGetTypeID'
+  Module: 'CoreGraphics.CGPDFDocument'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CGPDFBox'
+  JsName: 'CGPDFBox'
+  Module: 'CoreGraphics.CGPDFPage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGPDFMediaBox":0,"kCGPDFCropBox":1,"kCGPDFBleedBox":2,"kCGPDFTrimBox":3,"kCGPDFArtBox":4})
+- Name: 'CGPDFPageRetain'
+  JsName: 'CGPDFPageRetain'
+  Module: 'CoreGraphics.CGPDFPage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFPageRelease'
+  JsName: 'CGPDFPageRelease'
+  Module: 'CoreGraphics.CGPDFPage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFPageGetDocument'
+  JsName: 'CGPDFPageGetDocument'
+  Module: 'CoreGraphics.CGPDFPage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFPageGetPageNumber'
+  JsName: 'CGPDFPageGetPageNumber'
+  Module: 'CoreGraphics.CGPDFPage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFPageGetBoxRect'
+  JsName: 'CGPDFPageGetBoxRect'
+  Module: 'CoreGraphics.CGPDFPage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'CGPDFPageGetRotationAngle'
+  JsName: 'CGPDFPageGetRotationAngle'
+  Module: 'CoreGraphics.CGPDFPage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Int
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFPageGetDrawingTransform'
+  JsName: 'CGPDFPageGetDrawingTransform'
+  Module: 'CoreGraphics.CGPDFPage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGAffineTransform
+    Name: CGAffineTransform
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Int
+  - Type: Bool
+- Name: 'CGPDFPageGetDictionary'
+  JsName: 'CGPDFPageGetDictionary'
+  Module: 'CoreGraphics.CGPDFPage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFPageGetTypeID'
+  JsName: 'CGPDFPageGetTypeID'
+  Module: 'CoreGraphics.CGPDFPage'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CGPDFDictionaryGetCount'
+  JsName: 'CGPDFDictionaryGetCount'
+  Module: 'CoreGraphics.CGPDFDictionary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFDictionaryGetBoolean'
+  JsName: 'CGPDFDictionaryGetBoolean'
+  Module: 'CoreGraphics.CGPDFDictionary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: CString
+- Name: 'CGPDFDictionaryGetInteger'
+  JsName: 'CGPDFDictionaryGetInteger'
+  Module: 'CoreGraphics.CGPDFDictionary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Long
+- Name: 'CGPDFDictionaryGetNumber'
+  JsName: 'CGPDFDictionaryGetNumber'
+  Module: 'CoreGraphics.CGPDFDictionary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Double
+- Name: 'CGPDFDictionaryGetName'
+  JsName: 'CGPDFDictionaryGetName'
+  Module: 'CoreGraphics.CGPDFDictionary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: CString
+- Name: 'CGPDFDictionaryGetString'
+  JsName: 'CGPDFDictionaryGetString'
+  Module: 'CoreGraphics.CGPDFDictionary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'CGPDFDictionaryGetArray'
+  JsName: 'CGPDFDictionaryGetArray'
+  Module: 'CoreGraphics.CGPDFDictionary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'CGPDFDictionaryGetDictionary'
+  JsName: 'CGPDFDictionaryGetDictionary'
+  Module: 'CoreGraphics.CGPDFDictionary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'CGPDFDictionaryGetStream'
+  JsName: 'CGPDFDictionaryGetStream'
+  Module: 'CoreGraphics.CGPDFDictionary'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'CGPDFArrayGetCount'
+  JsName: 'CGPDFArrayGetCount'
+  Module: 'CoreGraphics.CGPDFArray'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFArrayGetNull'
+  JsName: 'CGPDFArrayGetNull'
+  Module: 'CoreGraphics.CGPDFArray'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+- Name: 'CGPDFArrayGetBoolean'
+  JsName: 'CGPDFArrayGetBoolean'
+  Module: 'CoreGraphics.CGPDFArray'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: CString
+- Name: 'CGPDFArrayGetInteger'
+  JsName: 'CGPDFArrayGetInteger'
+  Module: 'CoreGraphics.CGPDFArray'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Long
+- Name: 'CGPDFArrayGetNumber'
+  JsName: 'CGPDFArrayGetNumber'
+  Module: 'CoreGraphics.CGPDFArray'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Double
+- Name: 'CGPDFArrayGetName'
+  JsName: 'CGPDFArrayGetName'
+  Module: 'CoreGraphics.CGPDFArray'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: CString
+- Name: 'CGPDFArrayGetString'
+  JsName: 'CGPDFArrayGetString'
+  Module: 'CoreGraphics.CGPDFArray'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'CGPDFArrayGetArray'
+  JsName: 'CGPDFArrayGetArray'
+  Module: 'CoreGraphics.CGPDFArray'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'CGPDFArrayGetDictionary'
+  JsName: 'CGPDFArrayGetDictionary'
+  Module: 'CoreGraphics.CGPDFArray'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'CGPDFArrayGetStream'
+  JsName: 'CGPDFArrayGetStream'
+  Module: 'CoreGraphics.CGPDFArray'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'CGPDFObjectType'
+  JsName: 'CGPDFObjectType'
+  Module: 'CoreGraphics.CGPDFObject'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGPDFObjectTypeNull":1,"kCGPDFObjectTypeBoolean":2,"kCGPDFObjectTypeInteger":3,"kCGPDFObjectTypeReal":4,"kCGPDFObjectTypeName":5,"kCGPDFObjectTypeString":6,"kCGPDFObjectTypeArray":7,"kCGPDFObjectTypeDictionary":8,"kCGPDFObjectTypeStream":9})
+- Name: 'CGPDFDataFormat'
+  JsName: 'CGPDFDataFormat'
+  Module: 'CoreGraphics.CGPDFStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"CGPDFDataFormatRaw":0,"CGPDFDataFormatJPEGEncoded":1,"CGPDFDataFormatJPEG2000":2})
+- Name: 'CGPDFStreamGetDictionary'
+  JsName: 'CGPDFStreamGetDictionary'
+  Module: 'CoreGraphics.CGPDFStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFStreamCopyData'
+  JsName: 'CGPDFStreamCopyData'
+  Module: 'CoreGraphics.CGPDFStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: UInt
+- Name: 'CGPDFStringGetLength'
+  JsName: 'CGPDFStringGetLength'
+  Module: 'CoreGraphics.CGPDFString'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFStringGetBytePtr'
+  JsName: 'CGPDFStringGetBytePtr'
+  Module: 'CoreGraphics.CGPDFString'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: CString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFStringCopyTextString'
+  JsName: 'CGPDFStringCopyTextString'
+  Module: 'CoreGraphics.CGPDFString'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFStringCopyDate'
+  JsName: 'CGPDFStringCopyDate'
+  Module: 'CoreGraphics.CGPDFString'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFDate
+    Name: NSDate
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGShadingGetTypeID'
+  JsName: 'CGShadingGetTypeID'
+  Module: 'CoreGraphics.CGShading'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CGShadingCreateAxial'
+  JsName: 'CGShadingCreateAxial'
+  Module: 'CoreGraphics.CGShading'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Bool
+  - Type: Bool
+- Name: 'CGShadingCreateRadial'
+  JsName: 'CGShadingCreateRadial'
+  Module: 'CoreGraphics.CGShading'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+  - Type: Double
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+  - Type: Double
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Bool
+  - Type: Bool
+- Name: 'CGShadingRetain'
+  JsName: 'CGShadingRetain'
+  Module: 'CoreGraphics.CGShading'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGShadingRelease'
+  JsName: 'CGShadingRelease'
+  Module: 'CoreGraphics.CGShading'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFunctionCallbacks'
+  JsName: 'CGFunctionCallbacks'
+  Module: 'CoreGraphics.CGFunction'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: version
+    Signature:
+      Type: UInt
+  - Name: evaluate
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Double
+      - Type: Pointer
+        PointerType:
+          Type: Double
+  - Name: releaseInfo
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  Type: Struct
+- Name: 'CGFunctionGetTypeID'
+  JsName: 'CGFunctionGetTypeID'
+  Module: 'CoreGraphics.CGFunction'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CGFunctionCreate'
+  JsName: 'CGFunctionCreate'
+  Module: 'CoreGraphics.CGFunction'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Double
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Double
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGFunction
+      Name: CGFunctionCallbacks
+- Name: 'CGFunctionRetain'
+  JsName: 'CGFunctionRetain'
+  Module: 'CoreGraphics.CGFunction'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGFunctionRelease'
+  JsName: 'CGFunctionRelease'
+  Module: 'CoreGraphics.CGFunction'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGBitmapContextCreateWithData'
+  JsName: 'CGBitmapContextCreateWithData'
+  Module: 'CoreGraphics.CGBitmapContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: ULong
+  - Type: ULong
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGBitmapContextCreate'
+  JsName: 'CGBitmapContextCreate'
+  Module: 'CoreGraphics.CGBitmapContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: ULong
+  - Type: ULong
+  - Type: ULong
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: UInt
+- Name: 'CGBitmapContextGetData'
+  JsName: 'CGBitmapContextGetData'
+  Module: 'CoreGraphics.CGBitmapContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGBitmapContextGetWidth'
+  JsName: 'CGBitmapContextGetWidth'
+  Module: 'CoreGraphics.CGBitmapContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGBitmapContextGetHeight'
+  JsName: 'CGBitmapContextGetHeight'
+  Module: 'CoreGraphics.CGBitmapContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGBitmapContextGetBitsPerComponent'
+  JsName: 'CGBitmapContextGetBitsPerComponent'
+  Module: 'CoreGraphics.CGBitmapContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGBitmapContextGetBitsPerPixel'
+  JsName: 'CGBitmapContextGetBitsPerPixel'
+  Module: 'CoreGraphics.CGBitmapContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGBitmapContextGetBytesPerRow'
+  JsName: 'CGBitmapContextGetBytesPerRow'
+  Module: 'CoreGraphics.CGBitmapContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGBitmapContextGetColorSpace'
+  JsName: 'CGBitmapContextGetColorSpace'
+  Module: 'CoreGraphics.CGBitmapContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGBitmapContextGetAlphaInfo'
+  JsName: 'CGBitmapContextGetAlphaInfo'
+  Module: 'CoreGraphics.CGBitmapContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGBitmapContextGetBitmapInfo'
+  JsName: 'CGBitmapContextGetBitmapInfo'
+  Module: 'CoreGraphics.CGBitmapContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: UInt
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGBitmapContextCreateImage'
+  JsName: 'CGBitmapContextCreateImage'
+  Module: 'CoreGraphics.CGBitmapContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGDataConsumerCallbacks'
+  JsName: 'CGDataConsumerCallbacks'
+  Module: 'CoreGraphics.CGDataConsumer'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Fields:
+  - Name: putBytes
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: ULong
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+      - Type: ULong
+  - Name: releaseConsumer
+    Signature:
+      Type: FunctionPointer
+      Signature:
+      - Type: Void
+      - Type: Pointer
+        PointerType:
+          Type: Void
+  Type: Struct
+- Name: 'CGDataConsumerGetTypeID'
+  JsName: 'CGDataConsumerGetTypeID'
+  Module: 'CoreGraphics.CGDataConsumer'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CGDataConsumerCreate'
+  JsName: 'CGDataConsumerCreate'
+  Module: 'CoreGraphics.CGDataConsumer'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGDataConsumer
+      Name: CGDataConsumerCallbacks
+- Name: 'CGDataConsumerCreateWithURL'
+  JsName: 'CGDataConsumerCreateWithURL'
+  Module: 'CoreGraphics.CGDataConsumer'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+- Name: 'CGDataConsumerCreateWithCFData'
+  JsName: 'CGDataConsumerCreateWithCFData'
+  Module: 'CoreGraphics.CGDataConsumer'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSMutableData
+- Name: 'CGDataConsumerRetain'
+  JsName: 'CGDataConsumerRetain'
+  Module: 'CoreGraphics.CGDataConsumer'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGDataConsumerRelease'
+  JsName: 'CGDataConsumerRelease'
+  Module: 'CoreGraphics.CGDataConsumer'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: '_CGError'
+  JsName: '_CGError'
+  Module: 'CoreGraphics.CGError'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"kCGErrorSuccess":0,"kCGErrorFailure":1000,"kCGErrorIllegalArgument":1001,"kCGErrorInvalidConnection":1002,"kCGErrorInvalidContext":1003,"kCGErrorCannotComplete":1004,"kCGErrorNotImplemented":1006,"kCGErrorRangeCheck":1007,"kCGErrorTypeCheck":1008,"kCGErrorInvalidOperation":1010,"kCGErrorNoneAvailable":1011})
+- Name: 'CGLayerCreateWithContext'
+  JsName: 'CGLayerCreateWithContext'
+  Module: 'CoreGraphics.CGLayer'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGSize
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGLayerRetain'
+  JsName: 'CGLayerRetain'
+  Module: 'CoreGraphics.CGLayer'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGLayerRelease'
+  JsName: 'CGLayerRelease'
+  Module: 'CoreGraphics.CGLayer'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGLayerGetSize'
+  JsName: 'CGLayerGetSize'
+  Module: 'CoreGraphics.CGLayer'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGSize
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGLayerGetContext'
+  JsName: 'CGLayerGetContext'
+  Module: 'CoreGraphics.CGLayer'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextDrawLayerInRect'
+  JsName: 'CGContextDrawLayerInRect'
+  Module: 'CoreGraphics.CGLayer'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGContextDrawLayerAtPoint'
+  JsName: 'CGContextDrawLayerAtPoint'
+  Module: 'CoreGraphics.CGLayer'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGLayerGetTypeID'
+  JsName: 'CGLayerGetTypeID'
+  Module: 'CoreGraphics.CGLayer'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: ULong
+- Name: 'CGPDFContentStreamCreateWithPage'
+  JsName: 'CGPDFContentStreamCreateWithPage'
+  Module: 'CoreGraphics.CGPDFContentStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFContentStreamCreateWithStream'
+  JsName: 'CGPDFContentStreamCreateWithStream'
+  Module: 'CoreGraphics.CGPDFContentStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFContentStreamRetain'
+  JsName: 'CGPDFContentStreamRetain'
+  Module: 'CoreGraphics.CGPDFContentStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFContentStreamRelease'
+  JsName: 'CGPDFContentStreamRelease'
+  Module: 'CoreGraphics.CGPDFContentStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFContentStreamGetStreams'
+  JsName: 'CGPDFContentStreamGetStreams'
+  Module: 'CoreGraphics.CGPDFContentStream'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Interface
+    Module: CoreFoundation.CFArray
+    Name: NSArray
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFContextCreate'
+  JsName: 'CGPDFContextCreate'
+  Module: 'CoreGraphics.CGPDFContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGPDFContextCreateWithURL'
+  JsName: 'CGPDFContextCreateWithURL'
+  Module: 'CoreGraphics.CGPDFContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+  - Type: Pointer
+    PointerType:
+      Type: Struct
+      Module: CoreGraphics.CGGeometry
+      Name: CGRect
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGPDFContextClose'
+  JsName: 'CGPDFContextClose'
+  Module: 'CoreGraphics.CGPDFContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFContextBeginPage'
+  JsName: 'CGPDFContextBeginPage'
+  Module: 'CoreGraphics.CGPDFContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFDictionary
+    Name: NSDictionary
+- Name: 'CGPDFContextEndPage'
+  JsName: 'CGPDFContextEndPage'
+  Module: 'CoreGraphics.CGPDFContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFContextAddDocumentMetadata'
+  JsName: 'CGPDFContextAddDocumentMetadata'
+  Module: 'CoreGraphics.CGPDFContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFData
+    Name: NSData
+- Name: 'CGPDFContextSetURLForRect'
+  JsName: 'CGPDFContextSetURLForRect'
+  Module: 'CoreGraphics.CGPDFContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFURL
+    Name: NSURL
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'CGPDFContextAddDestinationAtPoint'
+  JsName: 'CGPDFContextAddDestinationAtPoint'
+  Module: 'CoreGraphics.CGPDFContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGPoint
+- Name: 'CGPDFContextSetDestinationForRect'
+  JsName: 'CGPDFContextSetDestinationForRect'
+  Module: 'CoreGraphics.CGPDFContext'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+  - Type: Struct
+    Module: CoreGraphics.CGGeometry
+    Name: CGRect
+- Name: 'kCGPDFContextMediaBox'
+  JsName: 'kCGPDFContextMediaBox'
+  Module: 'CoreGraphics.CGPDFContext'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGPDFContextCropBox'
+  JsName: 'kCGPDFContextCropBox'
+  Module: 'CoreGraphics.CGPDFContext'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGPDFContextBleedBox'
+  JsName: 'kCGPDFContextBleedBox'
+  Module: 'CoreGraphics.CGPDFContext'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGPDFContextTrimBox'
+  JsName: 'kCGPDFContextTrimBox'
+  Module: 'CoreGraphics.CGPDFContext'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGPDFContextArtBox'
+  JsName: 'kCGPDFContextArtBox'
+  Module: 'CoreGraphics.CGPDFContext'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGPDFContextTitle'
+  JsName: 'kCGPDFContextTitle'
+  Module: 'CoreGraphics.CGPDFContext'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGPDFContextAuthor'
+  JsName: 'kCGPDFContextAuthor'
+  Module: 'CoreGraphics.CGPDFContext'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGPDFContextSubject'
+  JsName: 'kCGPDFContextSubject'
+  Module: 'CoreGraphics.CGPDFContext'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGPDFContextKeywords'
+  JsName: 'kCGPDFContextKeywords'
+  Module: 'CoreGraphics.CGPDFContext'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGPDFContextCreator'
+  JsName: 'kCGPDFContextCreator'
+  Module: 'CoreGraphics.CGPDFContext'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGPDFContextOwnerPassword'
+  JsName: 'kCGPDFContextOwnerPassword'
+  Module: 'CoreGraphics.CGPDFContext'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGPDFContextUserPassword'
+  JsName: 'kCGPDFContextUserPassword'
+  Module: 'CoreGraphics.CGPDFContext'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGPDFContextEncryptionKeyLength'
+  JsName: 'kCGPDFContextEncryptionKeyLength'
+  Module: 'CoreGraphics.CGPDFContext'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGPDFContextAllowsPrinting'
+  JsName: 'kCGPDFContextAllowsPrinting'
+  Module: 'CoreGraphics.CGPDFContext'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'kCGPDFContextAllowsCopying'
+  JsName: 'kCGPDFContextAllowsCopying'
+  Module: 'CoreGraphics.CGPDFContext'
+  IntroducedIn: 2.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: CoreFoundation.CFBase
+    Name: NSString
+- Name: 'CGPDFOperatorTableCreate'
+  JsName: 'CGPDFOperatorTableCreate'
+  Module: 'CoreGraphics.CGPDFOperatorTable'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFOperatorTableRetain'
+  JsName: 'CGPDFOperatorTableRetain'
+  Module: 'CoreGraphics.CGPDFOperatorTable'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFOperatorTableRelease'
+  JsName: 'CGPDFOperatorTableRelease'
+  Module: 'CoreGraphics.CGPDFOperatorTable'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFOperatorTableSetCallback'
+  JsName: 'CGPDFOperatorTableSetCallback'
+  Module: 'CoreGraphics.CGPDFOperatorTable'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+  - Type: FunctionPointer
+    Signature:
+    - Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+    - Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'CGPDFScannerCreate'
+  JsName: 'CGPDFScannerCreate'
+  Module: 'CoreGraphics.CGPDFScanner'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFScannerRetain'
+  JsName: 'CGPDFScannerRetain'
+  Module: 'CoreGraphics.CGPDFScanner'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFScannerRelease'
+  JsName: 'CGPDFScannerRelease'
+  Module: 'CoreGraphics.CGPDFScanner'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFScannerScan'
+  JsName: 'CGPDFScannerScan'
+  Module: 'CoreGraphics.CGPDFScanner'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFScannerGetContentStream'
+  JsName: 'CGPDFScannerGetContentStream'
+  Module: 'CoreGraphics.CGPDFScanner'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Void
+- Name: 'CGPDFScannerPopBoolean'
+  JsName: 'CGPDFScannerPopBoolean'
+  Module: 'CoreGraphics.CGPDFScanner'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: CString
+- Name: 'CGPDFScannerPopInteger'
+  JsName: 'CGPDFScannerPopInteger'
+  Module: 'CoreGraphics.CGPDFScanner'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Long
+- Name: 'CGPDFScannerPopNumber'
+  JsName: 'CGPDFScannerPopNumber'
+  Module: 'CoreGraphics.CGPDFScanner'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Double
+- Name: 'CGPDFScannerPopName'
+  JsName: 'CGPDFScannerPopName'
+  Module: 'CoreGraphics.CGPDFScanner'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: CString
+- Name: 'CGPDFScannerPopString'
+  JsName: 'CGPDFScannerPopString'
+  Module: 'CoreGraphics.CGPDFScanner'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'CGPDFScannerPopArray'
+  JsName: 'CGPDFScannerPopArray'
+  Module: 'CoreGraphics.CGPDFScanner'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'CGPDFScannerPopDictionary'
+  JsName: 'CGPDFScannerPopDictionary'
+  Module: 'CoreGraphics.CGPDFScanner'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+- Name: 'CGPDFScannerPopStream'
+  JsName: 'CGPDFScannerPopStream'
+  Module: 'CoreGraphics.CGPDFScanner'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Function
+  Signature:
+  - Type: Bool
+  - Type: Pointer
+    PointerType:
+      Type: Void
+  - Type: Pointer
+    PointerType:
+      Type: Pointer
+      PointerType:
+        Type: Void
+...

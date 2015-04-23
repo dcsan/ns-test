@@ -1,0 +1,1573 @@
+name: NetworkExtension
+items:
+- Name: 'NEVPNError'
+  JsName: 'NEVPNError'
+  Module: 'NetworkExtension.NEVPNManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"NEVPNErrorConfigurationInvalid":1,"NEVPNErrorConfigurationDisabled":2,"NEVPNErrorConnectionFailed":3,"NEVPNErrorConfigurationStale":4})
+- Name: 'NEVPNErrorDomain'
+  JsName: 'NEVPNErrorDomain'
+  Module: 'NetworkExtension.NEVPNManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'NEVPNConfigurationChangeNotification'
+  JsName: 'NEVPNConfigurationChangeNotification'
+  Module: 'NetworkExtension.NEVPNManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'NEVPNManager'
+  JsName: 'NEVPNManager'
+  Module: 'NetworkExtension.NEVPNManager'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'loadFromPreferencesWithCompletionHandler:'
+    JsName: 'loadFromPreferencesWithCompletionHandler'
+    Module: 'NetworkExtension.NEVPNManager'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'loadFromPreferencesWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v12@0:4@?8'
+  - Name: 'removeFromPreferencesWithCompletionHandler:'
+    JsName: 'removeFromPreferencesWithCompletionHandler'
+    Module: 'NetworkExtension.NEVPNManager'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'removeFromPreferencesWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v12@0:4@?8'
+  - Name: 'saveToPreferencesWithCompletionHandler:'
+    JsName: 'saveToPreferencesWithCompletionHandler'
+    Module: 'NetworkExtension.NEVPNManager'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'saveToPreferencesWithCompletionHandler:'
+    Signature:
+    - Type: Void
+    - Type: Block
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'v12@0:4@?8'
+  StaticMethods:
+  - Name: 'sharedManager'
+    JsName: 'sharedManager'
+    Module: 'NetworkExtension.NEVPNManager'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'sharedManager'
+    Signature:
+    - Type: Interface
+      Module: NetworkExtension.NEVPNManager
+      Name: NEVPNManager
+    TypeEncoding: '@8@0:4'
+  Properties:
+  - Name: 'connection'
+    JsName: 'connection'
+    Module: 'NetworkExtension.NEVPNManager'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'connection'
+      JsName: 'connection'
+      Module: 'NetworkExtension.NEVPNManager'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'connection'
+      Signature:
+      - Type: Interface
+        Module: NetworkExtension.NEVPNConnection
+        Name: NEVPNConnection
+      TypeEncoding: '@8@0:4'
+  - Name: 'enabled'
+    JsName: 'enabled'
+    Module: 'NetworkExtension.NEVPNManager'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isEnabled'
+      JsName: 'isEnabled'
+      Module: 'NetworkExtension.NEVPNManager'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setEnabled:'
+      JsName: 'setEnabled'
+      Module: 'NetworkExtension.NEVPNManager'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setEnabled:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'localizedDescription'
+    JsName: 'localizedDescription'
+    Module: 'NetworkExtension.NEVPNManager'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'localizedDescription'
+      JsName: 'localizedDescription'
+      Module: 'NetworkExtension.NEVPNManager'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'localizedDescription'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setLocalizedDescription:'
+      JsName: 'setLocalizedDescription'
+      Module: 'NetworkExtension.NEVPNManager'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLocalizedDescription:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'onDemandEnabled'
+    JsName: 'onDemandEnabled'
+    Module: 'NetworkExtension.NEVPNManager'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'isOnDemandEnabled'
+      JsName: 'isOnDemandEnabled'
+      Module: 'NetworkExtension.NEVPNManager'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'isOnDemandEnabled'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setOnDemandEnabled:'
+      JsName: 'setOnDemandEnabled'
+      Module: 'NetworkExtension.NEVPNManager'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setOnDemandEnabled:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'onDemandRules'
+    JsName: 'onDemandRules'
+    Module: 'NetworkExtension.NEVPNManager'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'onDemandRules'
+      JsName: 'onDemandRules'
+      Module: 'NetworkExtension.NEVPNManager'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'onDemandRules'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setOnDemandRules:'
+      JsName: 'setOnDemandRules'
+      Module: 'NetworkExtension.NEVPNManager'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setOnDemandRules:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'protocol'
+    JsName: 'protocol'
+    Module: 'NetworkExtension.NEVPNManager'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'protocol'
+      JsName: 'protocol'
+      Module: 'NetworkExtension.NEVPNManager'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'protocol'
+      Signature:
+      - Type: Interface
+        Module: NetworkExtension.NEVPNProtocol
+        Name: NEVPNProtocol
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setProtocol:'
+      JsName: 'setProtocol'
+      Module: 'NetworkExtension.NEVPNManager'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setProtocol:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: NetworkExtension.NEVPNProtocol
+        Name: NEVPNProtocol
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'NEVPNStatus'
+  JsName: 'NEVPNStatus'
+  Module: 'NetworkExtension.NEVPNConnection'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"NEVPNStatusInvalid":0,"NEVPNStatusDisconnected":1,"NEVPNStatusConnecting":2,"NEVPNStatusConnected":3,"NEVPNStatusReasserting":4,"NEVPNStatusDisconnecting":5})
+- Name: 'NEVPNStatusDidChangeNotification'
+  JsName: 'NEVPNStatusDidChangeNotification'
+  Module: 'NetworkExtension.NEVPNConnection'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: Var
+  Signature:
+    Type: Interface
+    Module: Foundation.NSString
+    Name: NSString
+- Name: 'NEVPNConnection'
+  JsName: 'NEVPNConnection'
+  Module: 'NetworkExtension.NEVPNConnection'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'startVPNTunnelAndReturnError:'
+    JsName: 'startVPNTunnelAndReturnError'
+    Module: 'NetworkExtension.NEVPNConnection'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'startVPNTunnelAndReturnError:'
+    Signature:
+    - Type: Bool
+    - Type: Pointer
+      PointerType:
+        Type: Interface
+        Module: Foundation.NSError
+        Name: NSError
+    TypeEncoding: 'c12@0:4^@8'
+  - Name: 'stopVPNTunnel'
+    JsName: 'stopVPNTunnel'
+    Module: 'NetworkExtension.NEVPNConnection'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'stopVPNTunnel'
+    Signature:
+    - Type: Void
+    TypeEncoding: 'v8@0:4'
+  StaticMethods: []
+  Properties:
+  - Name: 'status'
+    JsName: 'status'
+    Module: 'NetworkExtension.NEVPNConnection'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'status'
+      JsName: 'status'
+      Module: 'NetworkExtension.NEVPNConnection'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'status'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  Protocols: []
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'NEVPNProtocol'
+  JsName: 'NEVPNProtocol'
+  Module: 'NetworkExtension.NEVPNProtocol'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'disconnectOnSleep'
+    JsName: 'disconnectOnSleep'
+    Module: 'NetworkExtension.NEVPNProtocol'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'disconnectOnSleep'
+      JsName: 'disconnectOnSleep'
+      Module: 'NetworkExtension.NEVPNProtocol'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'disconnectOnSleep'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setDisconnectOnSleep:'
+      JsName: 'setDisconnectOnSleep'
+      Module: 'NetworkExtension.NEVPNProtocol'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDisconnectOnSleep:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  - Name: 'identityData'
+    JsName: 'identityData'
+    Module: 'NetworkExtension.NEVPNProtocol'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'identityData'
+      JsName: 'identityData'
+      Module: 'NetworkExtension.NEVPNProtocol'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'identityData'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setIdentityData:'
+      JsName: 'setIdentityData'
+      Module: 'NetworkExtension.NEVPNProtocol'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setIdentityData:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'identityDataPassword'
+    JsName: 'identityDataPassword'
+    Module: 'NetworkExtension.NEVPNProtocol'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'identityDataPassword'
+      JsName: 'identityDataPassword'
+      Module: 'NetworkExtension.NEVPNProtocol'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'identityDataPassword'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setIdentityDataPassword:'
+      JsName: 'setIdentityDataPassword'
+      Module: 'NetworkExtension.NEVPNProtocol'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setIdentityDataPassword:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'passwordReference'
+    JsName: 'passwordReference'
+    Module: 'NetworkExtension.NEVPNProtocol'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'passwordReference'
+      JsName: 'passwordReference'
+      Module: 'NetworkExtension.NEVPNProtocol'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'passwordReference'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setPasswordReference:'
+      JsName: 'setPasswordReference'
+      Module: 'NetworkExtension.NEVPNProtocol'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setPasswordReference:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'serverAddress'
+    JsName: 'serverAddress'
+    Module: 'NetworkExtension.NEVPNProtocol'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'serverAddress'
+      JsName: 'serverAddress'
+      Module: 'NetworkExtension.NEVPNProtocol'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'serverAddress'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setServerAddress:'
+      JsName: 'setServerAddress'
+      Module: 'NetworkExtension.NEVPNProtocol'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setServerAddress:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'username'
+    JsName: 'username'
+    Module: 'NetworkExtension.NEVPNProtocol'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'username'
+      JsName: 'username'
+      Module: 'NetworkExtension.NEVPNProtocol'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'username'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setUsername:'
+      JsName: 'setUsername'
+      Module: 'NetworkExtension.NEVPNProtocol'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setUsername:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'NEVPNIKEAuthenticationMethod'
+  JsName: 'NEVPNIKEAuthenticationMethod'
+  Module: 'NetworkExtension.NEVPNProtocolIPSec'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"NEVPNIKEAuthenticationMethodNone":0,"NEVPNIKEAuthenticationMethodCertificate":1,"NEVPNIKEAuthenticationMethodSharedSecret":2})
+- Name: 'NEVPNProtocolIPSec'
+  JsName: 'NEVPNProtocolIPSec'
+  Module: 'NetworkExtension.NEVPNProtocolIPSec'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'authenticationMethod'
+    JsName: 'authenticationMethod'
+    Module: 'NetworkExtension.NEVPNProtocolIPSec'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'authenticationMethod'
+      JsName: 'authenticationMethod'
+      Module: 'NetworkExtension.NEVPNProtocolIPSec'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'authenticationMethod'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setAuthenticationMethod:'
+      JsName: 'setAuthenticationMethod'
+      Module: 'NetworkExtension.NEVPNProtocolIPSec'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setAuthenticationMethod:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'localIdentifier'
+    JsName: 'localIdentifier'
+    Module: 'NetworkExtension.NEVPNProtocolIPSec'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'localIdentifier'
+      JsName: 'localIdentifier'
+      Module: 'NetworkExtension.NEVPNProtocolIPSec'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'localIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setLocalIdentifier:'
+      JsName: 'setLocalIdentifier'
+      Module: 'NetworkExtension.NEVPNProtocolIPSec'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLocalIdentifier:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'remoteIdentifier'
+    JsName: 'remoteIdentifier'
+    Module: 'NetworkExtension.NEVPNProtocolIPSec'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'remoteIdentifier'
+      JsName: 'remoteIdentifier'
+      Module: 'NetworkExtension.NEVPNProtocolIPSec'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'remoteIdentifier'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setRemoteIdentifier:'
+      JsName: 'setRemoteIdentifier'
+      Module: 'NetworkExtension.NEVPNProtocolIPSec'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setRemoteIdentifier:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'sharedSecretReference'
+    JsName: 'sharedSecretReference'
+    Module: 'NetworkExtension.NEVPNProtocolIPSec'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'sharedSecretReference'
+      JsName: 'sharedSecretReference'
+      Module: 'NetworkExtension.NEVPNProtocolIPSec'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'sharedSecretReference'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setSharedSecretReference:'
+      JsName: 'setSharedSecretReference'
+      Module: 'NetworkExtension.NEVPNProtocolIPSec'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSharedSecretReference:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSData
+        Name: NSData
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'useExtendedAuthentication'
+    JsName: 'useExtendedAuthentication'
+    Module: 'NetworkExtension.NEVPNProtocolIPSec'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'useExtendedAuthentication'
+      JsName: 'useExtendedAuthentication'
+      Module: 'NetworkExtension.NEVPNProtocolIPSec'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'useExtendedAuthentication'
+      Signature:
+      - Type: Bool
+      TypeEncoding: 'c8@0:4'
+    Setter:
+      Name: 'setUseExtendedAuthentication:'
+      JsName: 'setUseExtendedAuthentication'
+      Module: 'NetworkExtension.NEVPNProtocolIPSec'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setUseExtendedAuthentication:'
+      Signature:
+      - Type: Void
+      - Type: Bool
+      TypeEncoding: 'v12@0:4c8'
+  Protocols: []
+  Base:
+    Module: NetworkExtension.NEVPNProtocol
+    Name: NEVPNProtocol
+  Type: Interface
+- Name: 'NEVPNIKEv2EncryptionAlgorithm'
+  JsName: 'NEVPNIKEv2EncryptionAlgorithm'
+  Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"NEVPNIKEv2EncryptionAlgorithmDES":1,"NEVPNIKEv2EncryptionAlgorithm3DES":2,"NEVPNIKEv2EncryptionAlgorithmAES128":3,"NEVPNIKEv2EncryptionAlgorithmAES256":4})
+- Name: 'NEVPNIKEv2IntegrityAlgorithm'
+  JsName: 'NEVPNIKEv2IntegrityAlgorithm'
+  Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"NEVPNIKEv2IntegrityAlgorithmSHA96":1,"NEVPNIKEv2IntegrityAlgorithmSHA160":2,"NEVPNIKEv2IntegrityAlgorithmSHA256":3,"NEVPNIKEv2IntegrityAlgorithmSHA384":4,"NEVPNIKEv2IntegrityAlgorithmSHA512":5})
+- Name: 'NEVPNIKEv2DeadPeerDetectionRate'
+  JsName: 'NEVPNIKEv2DeadPeerDetectionRate'
+  Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"NEVPNIKEv2DeadPeerDetectionRateNone":0,"NEVPNIKEv2DeadPeerDetectionRateLow":1,"NEVPNIKEv2DeadPeerDetectionRateMedium":2,"NEVPNIKEv2DeadPeerDetectionRateHigh":3})
+- Name: 'NEVPNIKEv2DiffieHellmanGroup'
+  JsName: 'NEVPNIKEv2DiffieHellmanGroup'
+  Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"NEVPNIKEv2DiffieHellmanGroup0":0,"NEVPNIKEv2DiffieHellmanGroup1":1,"NEVPNIKEv2DiffieHellmanGroup2":2,"NEVPNIKEv2DiffieHellmanGroup5":5,"NEVPNIKEv2DiffieHellmanGroup14":14,"NEVPNIKEv2DiffieHellmanGroup15":15,"NEVPNIKEv2DiffieHellmanGroup16":16,"NEVPNIKEv2DiffieHellmanGroup17":17,"NEVPNIKEv2DiffieHellmanGroup18":18})
+- Name: 'NEVPNIKEv2SecurityAssociationParameters'
+  JsName: 'NEVPNIKEv2SecurityAssociationParameters'
+  Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'diffieHellmanGroup'
+    JsName: 'diffieHellmanGroup'
+    Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'diffieHellmanGroup'
+      JsName: 'diffieHellmanGroup'
+      Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'diffieHellmanGroup'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setDiffieHellmanGroup:'
+      JsName: 'setDiffieHellmanGroup'
+      Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDiffieHellmanGroup:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'encryptionAlgorithm'
+    JsName: 'encryptionAlgorithm'
+    Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'encryptionAlgorithm'
+      JsName: 'encryptionAlgorithm'
+      Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'encryptionAlgorithm'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setEncryptionAlgorithm:'
+      JsName: 'setEncryptionAlgorithm'
+      Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setEncryptionAlgorithm:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'integrityAlgorithm'
+    JsName: 'integrityAlgorithm'
+    Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'integrityAlgorithm'
+      JsName: 'integrityAlgorithm'
+      Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'integrityAlgorithm'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setIntegrityAlgorithm:'
+      JsName: 'setIntegrityAlgorithm'
+      Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setIntegrityAlgorithm:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'lifetimeMinutes'
+    JsName: 'lifetimeMinutes'
+    Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'lifetimeMinutes'
+      JsName: 'lifetimeMinutes'
+      Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'lifetimeMinutes'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setLifetimeMinutes:'
+      JsName: 'setLifetimeMinutes'
+      Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setLifetimeMinutes:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'NEVPNProtocolIKEv2'
+  JsName: 'NEVPNProtocolIKEv2'
+  Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'childSecurityAssociationParameters'
+    JsName: 'childSecurityAssociationParameters'
+    Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'childSecurityAssociationParameters'
+      JsName: 'childSecurityAssociationParameters'
+      Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'childSecurityAssociationParameters'
+      Signature:
+      - Type: Interface
+        Module: NetworkExtension.NEVPNProtocolIKEv2
+        Name: NEVPNIKEv2SecurityAssociationParameters
+      TypeEncoding: '@8@0:4'
+  - Name: 'deadPeerDetectionRate'
+    JsName: 'deadPeerDetectionRate'
+    Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'deadPeerDetectionRate'
+      JsName: 'deadPeerDetectionRate'
+      Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'deadPeerDetectionRate'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setDeadPeerDetectionRate:'
+      JsName: 'setDeadPeerDetectionRate'
+      Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDeadPeerDetectionRate:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'IKESecurityAssociationParameters'
+    JsName: 'IKESecurityAssociationParameters'
+    Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'IKESecurityAssociationParameters'
+      JsName: 'IKESecurityAssociationParameters'
+      Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'IKESecurityAssociationParameters'
+      Signature:
+      - Type: Interface
+        Module: NetworkExtension.NEVPNProtocolIKEv2
+        Name: NEVPNIKEv2SecurityAssociationParameters
+      TypeEncoding: '@8@0:4'
+  - Name: 'serverCertificateCommonName'
+    JsName: 'serverCertificateCommonName'
+    Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'serverCertificateCommonName'
+      JsName: 'serverCertificateCommonName'
+      Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'serverCertificateCommonName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setServerCertificateCommonName:'
+      JsName: 'setServerCertificateCommonName'
+      Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setServerCertificateCommonName:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'serverCertificateIssuerCommonName'
+    JsName: 'serverCertificateIssuerCommonName'
+    Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'serverCertificateIssuerCommonName'
+      JsName: 'serverCertificateIssuerCommonName'
+      Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'serverCertificateIssuerCommonName'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setServerCertificateIssuerCommonName:'
+      JsName: 'setServerCertificateIssuerCommonName'
+      Module: 'NetworkExtension.NEVPNProtocolIKEv2'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setServerCertificateIssuerCommonName:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSString
+        Name: NSString
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: NetworkExtension.NEVPNProtocolIPSec
+    Name: NEVPNProtocolIPSec
+  Type: Interface
+- Name: 'NEOnDemandRuleAction'
+  JsName: 'NEOnDemandRuleAction'
+  Module: 'NetworkExtension.NEOnDemandRule'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"NEOnDemandRuleActionConnect":1,"NEOnDemandRuleActionDisconnect":2,"NEOnDemandRuleActionEvaluateConnection":3,"NEOnDemandRuleActionIgnore":4})
+- Name: 'NEOnDemandRuleInterfaceType'
+  JsName: 'NEOnDemandRuleInterfaceType'
+  Module: 'NetworkExtension.NEOnDemandRule'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"NEOnDemandRuleInterfaceTypeWiFi":2,"NEOnDemandRuleInterfaceTypeCellular":3})
+- Name: 'NEOnDemandRule'
+  JsName: 'NEOnDemandRule'
+  Module: 'NetworkExtension.NEOnDemandRule'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'action'
+    JsName: 'action'
+    Module: 'NetworkExtension.NEOnDemandRule'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'action'
+      JsName: 'action'
+      Module: 'NetworkExtension.NEOnDemandRule'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'action'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  - Name: 'DNSSearchDomainMatch'
+    JsName: 'DNSSearchDomainMatch'
+    Module: 'NetworkExtension.NEOnDemandRule'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'DNSSearchDomainMatch'
+      JsName: 'DNSSearchDomainMatch'
+      Module: 'NetworkExtension.NEOnDemandRule'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'DNSSearchDomainMatch'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDNSSearchDomainMatch:'
+      JsName: 'setDNSSearchDomainMatch'
+      Module: 'NetworkExtension.NEOnDemandRule'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDNSSearchDomainMatch:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'DNSServerAddressMatch'
+    JsName: 'DNSServerAddressMatch'
+    Module: 'NetworkExtension.NEOnDemandRule'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'DNSServerAddressMatch'
+      JsName: 'DNSServerAddressMatch'
+      Module: 'NetworkExtension.NEOnDemandRule'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'DNSServerAddressMatch'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setDNSServerAddressMatch:'
+      JsName: 'setDNSServerAddressMatch'
+      Module: 'NetworkExtension.NEOnDemandRule'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setDNSServerAddressMatch:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'interfaceTypeMatch'
+    JsName: 'interfaceTypeMatch'
+    Module: 'NetworkExtension.NEOnDemandRule'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'interfaceTypeMatch'
+      JsName: 'interfaceTypeMatch'
+      Module: 'NetworkExtension.NEOnDemandRule'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'interfaceTypeMatch'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+    Setter:
+      Name: 'setInterfaceTypeMatch:'
+      JsName: 'setInterfaceTypeMatch'
+      Module: 'NetworkExtension.NEOnDemandRule'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setInterfaceTypeMatch:'
+      Signature:
+      - Type: Void
+      - Type: Int
+      TypeEncoding: 'v12@0:4i8'
+  - Name: 'probeURL'
+    JsName: 'probeURL'
+    Module: 'NetworkExtension.NEOnDemandRule'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'probeURL'
+      JsName: 'probeURL'
+      Module: 'NetworkExtension.NEOnDemandRule'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'probeURL'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setProbeURL:'
+      JsName: 'setProbeURL'
+      Module: 'NetworkExtension.NEOnDemandRule'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setProbeURL:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'SSIDMatch'
+    JsName: 'SSIDMatch'
+    Module: 'NetworkExtension.NEOnDemandRule'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'SSIDMatch'
+      JsName: 'SSIDMatch'
+      Module: 'NetworkExtension.NEOnDemandRule'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'SSIDMatch'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setSSIDMatch:'
+      JsName: 'setSSIDMatch'
+      Module: 'NetworkExtension.NEOnDemandRule'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setSSIDMatch:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v12@0:4@8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+- Name: 'NEOnDemandRuleConnect'
+  JsName: 'NEOnDemandRuleConnect'
+  Module: 'NetworkExtension.NEOnDemandRule'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: NetworkExtension.NEOnDemandRule
+    Name: NEOnDemandRule
+  Type: Interface
+- Name: 'NEOnDemandRuleDisconnect'
+  JsName: 'NEOnDemandRuleDisconnect'
+  Module: 'NetworkExtension.NEOnDemandRule'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: NetworkExtension.NEOnDemandRule
+    Name: NEOnDemandRule
+  Type: Interface
+- Name: 'NEOnDemandRuleIgnore'
+  JsName: 'NEOnDemandRuleIgnore'
+  Module: 'NetworkExtension.NEOnDemandRule'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties: []
+  Protocols: []
+  Base:
+    Module: NetworkExtension.NEOnDemandRule
+    Name: NEOnDemandRule
+  Type: Interface
+- Name: 'NEOnDemandRuleEvaluateConnection'
+  JsName: 'NEOnDemandRuleEvaluateConnection'
+  Module: 'NetworkExtension.NEOnDemandRule'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods: []
+  StaticMethods: []
+  Properties:
+  - Name: 'connectionRules'
+    JsName: 'connectionRules'
+    Module: 'NetworkExtension.NEOnDemandRule'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'connectionRules'
+      JsName: 'connectionRules'
+      Module: 'NetworkExtension.NEOnDemandRule'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'connectionRules'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setConnectionRules:'
+      JsName: 'setConnectionRules'
+      Module: 'NetworkExtension.NEOnDemandRule'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setConnectionRules:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v12@0:4@8'
+  Protocols: []
+  Base:
+    Module: NetworkExtension.NEOnDemandRule
+    Name: NEOnDemandRule
+  Type: Interface
+- Name: 'NEEvaluateConnectionRuleAction'
+  JsName: 'NEEvaluateConnectionRuleAction'
+  Module: 'NetworkExtension.NEOnDemandRule'
+  Flags:
+  - IsIosAppExtensionAvailable
+  Type: JsCode
+  JsCode: __tsEnum({"NEEvaluateConnectionRuleActionConnectIfNeeded":1,"NEEvaluateConnectionRuleActionNeverConnect":2})
+- Name: 'NEEvaluateConnectionRule'
+  JsName: 'NEEvaluateConnectionRule'
+  Module: 'NetworkExtension.NEOnDemandRule'
+  IntroducedIn: 8.0
+  Flags:
+  - IsIosAppExtensionAvailable
+  InstanceMethods:
+  - Name: 'initWithMatchDomains:andAction:'
+    JsName: 'initWithMatchDomainsAndAction'
+    Module: 'NetworkExtension.NEOnDemandRule'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    Selector: 'initWithMatchDomains:andAction:'
+    Signature:
+    - Type: Instancetype
+    - Type: Interface
+      Module: Foundation.NSArray
+      Name: NSArray
+    - Type: Int
+    TypeEncoding: '@16@0:4@8i12'
+  StaticMethods: []
+  Properties:
+  - Name: 'action'
+    JsName: 'action'
+    Module: 'NetworkExtension.NEOnDemandRule'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'action'
+      JsName: 'action'
+      Module: 'NetworkExtension.NEOnDemandRule'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'action'
+      Signature:
+      - Type: Int
+      TypeEncoding: 'i8@0:4'
+  - Name: 'matchDomains'
+    JsName: 'matchDomains'
+    Module: 'NetworkExtension.NEOnDemandRule'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    Getter:
+      Name: 'matchDomains'
+      JsName: 'matchDomains'
+      Module: 'NetworkExtension.NEOnDemandRule'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'matchDomains'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+  - Name: 'probeURL'
+    JsName: 'probeURL'
+    Module: 'NetworkExtension.NEOnDemandRule'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'probeURL'
+      JsName: 'probeURL'
+      Module: 'NetworkExtension.NEOnDemandRule'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'probeURL'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setProbeURL:'
+      JsName: 'setProbeURL'
+      Module: 'NetworkExtension.NEOnDemandRule'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setProbeURL:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSURL
+        Name: NSURL
+      TypeEncoding: 'v12@0:4@8'
+  - Name: 'useDNSServers'
+    JsName: 'useDNSServers'
+    Module: 'NetworkExtension.NEOnDemandRule'
+    IntroducedIn: 8.0
+    Flags:
+    - IsIosAppExtensionAvailable
+    - PropertyHasGetter
+    - PropertyHasSetter
+    Getter:
+      Name: 'useDNSServers'
+      JsName: 'useDNSServers'
+      Module: 'NetworkExtension.NEOnDemandRule'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'useDNSServers'
+      Signature:
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: '@8@0:4'
+    Setter:
+      Name: 'setUseDNSServers:'
+      JsName: 'setUseDNSServers'
+      Module: 'NetworkExtension.NEOnDemandRule'
+      IntroducedIn: 8.0
+      Flags:
+      - IsIosAppExtensionAvailable
+      Selector: 'setUseDNSServers:'
+      Signature:
+      - Type: Void
+      - Type: Interface
+        Module: Foundation.NSArray
+        Name: NSArray
+      TypeEncoding: 'v12@0:4@8'
+  Protocols:
+  - Module: Foundation.NSObject
+    Name: NSCopying
+  - Module: Foundation.NSObject
+    Name: NSSecureCoding
+  Base:
+    Module: ObjectiveC.NSObject
+    Name: NSObject
+  Type: Interface
+...
