@@ -23,5 +23,4 @@ var HelloWorldModel = (function (_super) {
     };
     return HelloWorldModel;
 })(observable.Observable);
-exports.HelloWorldModel = HelloWorldModel;
-exports.mainViewModel = new HelloWorldModel();
+module.exports = new HelloWorldModel();
